@@ -1,0 +1,6 @@
+{"runs":[
+ {"t":"tem","date":"2026.10","layout":"classic","palette":"navy-cyan"},
+ {"t":"pltr","date":"2026.10","layout":"classic","palette":"navy-cyan"},
+ {"t":"gpus","date":"2026.10.10","layout":"classic","palette":"navy-gold"},
+ {"t":"serv","date":"2026.10.10","layout":"split","palette":"amber-teal","variants":["split","bignum","versus"]}
+]}
