@@ -1,0 +1,44 @@
+name: YouTube upload
+# <티커>/upload.json 이 새로 올라오면 그 폴더의 영상을 유튜브에 올리고
+# 썸네일·첫 댓글까지 단 뒤 <티커>/upload_result.json 을 커밋한다.
+on:
+  push:
+    branches: [main]
+    paths: ['*/upload.json']
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/10 * * * *'   # 대기 중인 업로드를 10분마다 확인
+permissions:
+  contents: write
+concurrency:
+  group: youtube-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet google-api-python-client google-auth
+      - name: Upload pending videos
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python tools/yt_upload.py
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "kimworld-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A -- '*/upload_result.json' '*/upload_error.json' 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "유튜브 업로드 결과"
+            git pull --rebase -q origin main
+            git push -q origin main
+          fi
