@@ -1,6 +1,7 @@
 {"runs":[
- {"t":"tem","date":"2026.10","layout":"classic","palette":"navy-cyan"},
- {"t":"pltr","date":"2026.10","layout":"classic","palette":"navy-cyan"},
- {"t":"gpus","date":"2026.10.10","layout":"classic","palette":"navy-gold"},
- {"t":"serv","date":"2026.10.10","layout":"split","palette":"amber-teal","variants":["split","bignum","versus"]}
+ {"t": "tem", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
+ {"t": "pltr", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
+ {"t": "gpus", "date": "2026.10.10", "layout": "classic", "palette": "navy-gold"},
+ {"t": "serv", "date": "2026.10.10", "layout": "split", "palette": "amber-teal", "variants": ["split", "bignum", "versus"]},
+ {"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]}
 ]}
