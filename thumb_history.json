@@ -3,5 +3,6 @@
  {"t": "pltr", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
  {"t": "gpus", "date": "2026.10.10", "layout": "classic", "palette": "navy-gold"},
  {"t": "serv", "date": "2026.10.10", "layout": "split", "palette": "amber-teal", "variants": ["split", "bignum", "versus"]},
- {"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]}
+ {"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]},
+ {"t": "dnut", "date": "2026.10.11", "layout": "versus", "palette": "violet-pink", "variants": ["versus", "bignum", "split"]}
 ]}
