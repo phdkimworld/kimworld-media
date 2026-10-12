@@ -13,5 +13,6 @@
 {"t": "rdw", "date": "2026.10.11", "layout": "center", "palette": "lime-purple", "variants": ["scene", "number", "angle"]},
 {"t": "asst", "date": "2026.10.11", "layout": "center", "palette": "amber-teal", "variants": ["scene", "number", "angle"]},
 {"t": "inj", "date": "2026.10.12", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
-{"t": "laes", "date": "2026.10.12", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]}
+{"t": "laes", "date": "2026.10.12", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]},
+{"t": "ionq", "date": "2026.10.12", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]}
 ]}
