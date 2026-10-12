@@ -1,16 +1,17 @@
 {"runs":[
- {"t": "tem", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
- {"t": "pltr", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
- {"t": "gpus", "date": "2026.10.10", "layout": "classic", "palette": "navy-gold"},
- {"t": "serv", "date": "2026.10.10", "layout": "split", "palette": "amber-teal", "variants": ["split", "bignum", "versus"]},
- {"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]},
- {"t": "dnut", "date": "2026.10.11", "layout": "versus", "palette": "violet-pink", "variants": ["versus", "bignum", "split"]},
- {"t": "xndu", "date": "2026.10.11", "layout": "split", "palette": "ice-steel", "variants": ["split", "classic", "bignum"]},
- {"t": "soun", "date": "2026.10.11", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
+{"t": "tem", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
+{"t": "pltr", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
+{"t": "gpus", "date": "2026.10.10", "layout": "classic", "palette": "navy-gold"},
+{"t": "serv", "date": "2026.10.10", "layout": "split", "palette": "amber-teal", "variants": ["split", "bignum", "versus"]},
+{"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]},
+{"t": "dnut", "date": "2026.10.11", "layout": "versus", "palette": "violet-pink", "variants": ["versus", "bignum", "split"]},
+{"t": "xndu", "date": "2026.10.11", "layout": "split", "palette": "ice-steel", "variants": ["split", "classic", "bignum"]},
+{"t": "soun", "date": "2026.10.11", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
 {"t": "glnd", "date": "2026.10.11", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]},
 {"t": "roc", "date": "2026.10.11", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]},
 {"t": "arqq", "date": "2026.10.11", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"]},
 {"t": "rdw", "date": "2026.10.11", "layout": "center", "palette": "lime-purple", "variants": ["scene", "number", "angle"]},
 {"t": "asst", "date": "2026.10.11", "layout": "center", "palette": "amber-teal", "variants": ["scene", "number", "angle"]},
-{"t": "inj", "date": "2026.10.12", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]}
+{"t": "inj", "date": "2026.10.12", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
+{"t": "joby", "date": "2026.10.12", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]}
 ]}
