@@ -17,5 +17,6 @@
 {"t": "ionq", "date": "2026.10.12", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]},
 {"t": "leu", "date": "2026.10.12", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"]},
 {"t": "oklo", "date": "2026.10.12", "layout": "center", "palette": "cobalt-orange", "variants": ["scene", "number", "angle"]},
-{"t": "ses", "date": "2026.10.12", "layout": "center", "palette": "lime-indigo", "variants": ["scene", "number", "angle"]}
+{"t": "ses", "date": "2026.10.12", "layout": "center", "palette": "lime-indigo", "variants": ["scene", "number", "angle"]},
+{"t": "mp", "date": "2026.10.12", "layout": "center", "palette": "rose-teal", "variants": ["scene", "number", "angle"]}
 ]}
