@@ -8,5 +8,6 @@
  {"t": "xndu", "date": "2026.10.11", "layout": "split", "palette": "ice-steel", "variants": ["split", "classic", "bignum"]},
  {"t": "soun", "date": "2026.10.11", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
 {"t": "glnd", "date": "2026.10.11", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]},
-{"t": "roc", "date": "2026.10.11", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]}
+{"t": "roc", "date": "2026.10.11", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]},
+{"t": "arqq", "date": "2026.10.11", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"]}
 ]}
