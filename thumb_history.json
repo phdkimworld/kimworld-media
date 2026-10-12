@@ -23,5 +23,6 @@
 {"t": "dna", "date": "2026.10.12", "layout": "center", "palette": "mint-coral", "variants": ["scene", "number", "angle"]},
 {"t": "nvax", "date": "2026.10.12", "layout": "center", "palette": "plum-yellow", "variants": ["scene", "number", "angle"]},
 {"t": "dvlt", "date": "2026.10.12", "layout": "center", "palette": "steel-red", "variants": ["scene", "number", "angle"]},
-{"t": "sdgr", "date": "2026.10.12", "layout": "center", "palette": "cyan-violet", "variants": ["scene", "number", "angle"]}
+{"t": "sdgr", "date": "2026.10.12", "layout": "center", "palette": "cyan-violet", "variants": ["scene", "number", "angle"]},
+{"t": "cbrs", "date": "2026.10.12", "layout": "center", "palette": "lava-ice", "variants": ["scene", "number", "angle"]}
 ]}
