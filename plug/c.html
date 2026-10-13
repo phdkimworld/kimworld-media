@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#0b0614;font-family:'Noto Sans CJK KR',sans-serif}
+.t{position:absolute;font-weight:900;line-height:1}
+</style></head><body>
+<svg width="1280" height="720" style="position:absolute;left:0;top:0">
+<defs>
+ <radialGradient id="g1" cx="0.5" cy="0.2" r="0.8"><stop offset="0" stop-color="#ff7a00" stop-opacity="0.5"/><stop offset="1" stop-color="#0b0614" stop-opacity="0"/></radialGradient>
+ <linearGradient id="door" x1="0" x2="1"><stop offset="0" stop-color="#3a2a52"/><stop offset="1" stop-color="#1a1028"/></linearGradient>
+ <filter id="gl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="1280" height="720" fill="#0b0614"/><rect width="1280" height="720" fill="url(#g1)"/>
+<g transform="translate(130,0)"><!-- open vault door with stream of share certificates pouring out -->
+<rect x="760" y="110" width="380" height="460" rx="20" fill="#1a1028" stroke="#7a5aa0" stroke-width="6"/>
+<rect x="790" y="140" width="320" height="400" rx="14" fill="#ffefc0" filter="url(#gl)" opacity="0.9"/>
+<rect x="800" y="150" width="300" height="380" rx="12" fill="#fff6dc"/>
+<g transform="translate(760,110) skewY(8)"><rect x="-260" y="0" width="260" height="460" rx="16" fill="url(#door)" stroke="#9a7ad0" stroke-width="5"/><circle cx="-130" cy="230" r="70" fill="none" stroke="#c9a0ff" stroke-width="12"/><g stroke="#c9a0ff" stroke-width="8"><line x1="-130" y1="160" x2="-130" y2="300"/><line x1="-200" y1="230" x2="-60" y2="230"/></g></g>
+<g id="sheets"></g></g>
+<script>
+const NS='http://www.w3.org/2000/svg';const g=document.getElementById('sheets');let s=5;function r(){s=(s*9301+49297)%233280;return s/233280}
+for(let i=0;i<34;i++){const x=900+ (r()-0.5)*260 - i*14, y=380+i*9+(r()-0.5)*60; const e=document.createElementNS(NS,'rect');
+e.setAttribute('x',x);e.setAttribute('y',y);e.setAttribute('width',70);e.setAttribute('height',46);e.setAttribute('rx',4);
+e.setAttribute('fill',i%3?'#b6ffd8':'#e8fff2');e.setAttribute('stroke','#2a8a5a');e.setAttribute('stroke-width',2);
+e.setAttribute('transform',`rotate(${(r()-0.5)*70} ${x+35} ${y+23})`);g.appendChild(e);}
+</script>
+</svg>
+<div class="t" style="left:46px;top:40px;font-size:40px;color:#fff;background:#ff7a00;padding:8px 16px;border-radius:10px">플러그 파워 PLUG</div>
+<div class="t" style="left:46px;top:140px;font-size:120px;color:#fff;letter-spacing:-4px;text-shadow:0 7px 0 #3a1a00">열린 문</div>
+<div class="t" style="left:46px;top:285px;font-size:84px;color:#ffb347;letter-spacing:-3px">15억 → 30억 주</div>
+<div class="t" style="left:46px;top:420px;font-size:56px;color:#c9a0ff">발행 한도 두 배</div>
+<div class="t" style="left:46px;top:600px;font-size:46px;color:#ff6b84">고점 대비 -61%</div>
+</body></html>

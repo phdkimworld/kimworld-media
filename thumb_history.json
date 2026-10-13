@@ -28,5 +28,6 @@
 {"t": "btq", "date": "2026.10.12", "layout": "center", "palette": "emerald-magenta", "variants": ["scene", "number", "angle"]},
 {"t": "rxrx", "date": "2026.10.13", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"], "main": "angle"},
 {"t": "smr", "date": "2026.10.13", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"], "main": "number"},
-{"t": "stx", "date": "2026.10.13", "layout": "custom", "palette": "violet-orange", "variants": ["spike-vs-vault", "founder-door", "scale-korea-vs-abroad"], "main": "founder-door", "concepts": ["왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고", "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단", "가운데 저울(업비트 vs 해외) + 아래 띠 제목"], "video": "DtQcp1TJeTU"}
+{"t": "stx", "date": "2026.10.13", "layout": "custom", "palette": "violet-orange", "variants": ["spike-vs-vault", "founder-door", "scale-korea-vs-abroad"], "main": "founder-door", "concepts": ["왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고", "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단", "가운데 저울(업비트 vs 해외) + 아래 띠 제목"], "video": "DtQcp1TJeTU"},
+{"t": "plug", "date": "2026.10.13", "layout": "custom", "palette": "navy-gold-cyan", "variants": ["linked-arrows", "summit-ticket", "open-vault"], "main": "summit-ticket", "concepts": ["수소 탱크 + 사슬로 묶인 주가·손실 화살표, 오른쪽 위 큰 글자", "꼭대기 산 그래프 위 $7.75 황금 티켓, 아래 띠 질문", "왼쪽 큰 글자 + 오른쪽 열린 금고에서 쏟아지는 주권"], "video": "avygNvQ96OE"}
 ]}
