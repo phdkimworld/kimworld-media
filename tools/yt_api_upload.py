@@ -8,6 +8,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--check", action="store_true"); ap.add_argument("--meta"); ap.add_argument("--video")
 ap.add_argument("--thumbnail"); ap.add_argument("--delete"); ap.add_argument("--comment-only")
 ap.add_argument("--status", help="영상 ID의 공개 상태·예약 시각 확인")
+ap.add_argument("--publish-now", help="예약(비공개+publishAt) 영상을 지금 바로 공개로 바꾼다")
 ap.add_argument("--retag", help="이미 올린 영상의 설명란·채널 첫 댓글 링크에 UTM을 붙인다")
 a = ap.parse_args()
 out = {}
@@ -24,6 +25,12 @@ except Exception as e:
     out["error"] = f"auth: {e}"; done(2)
 if a.check:
     done()
+if a.publish_now:
+    v = yt.videos().list(part="status", id=a.publish_now).execute()["items"][0]
+    st = v["status"]; st.pop("publishAt", None); st["privacyStatus"] = "public"
+    yt.videos().update(part="status", body={"id": a.publish_now, "status": st}).execute()
+    st = yt.videos().list(part="status", id=a.publish_now).execute()["items"][0]["status"]
+    out.update(video_id=a.publish_now, privacy=st["privacyStatus"], publish_at=st.get("publishAt")); done()
 if a.status:
     st = yt.videos().list(part="status", id=a.status).execute()["items"][0]["status"]
     out.update(video_id=a.status, privacy=st["privacyStatus"], publish_at=st.get("publishAt")); done()
