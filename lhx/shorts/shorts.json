@@ -1,0 +1,43 @@
+{
+ "ticker": "LHX",
+ "name": "L3해리스 테크놀로지스",
+ "hook": [
+  "수주 잔고는 사상 최대인데",
+  "주가는 왜 38% 빠졌나?"
+ ],
+ "cta": "풀영상·무료 리포트는 drkimworld.com",
+ "frames": [
+  {
+   "img": "/home/claude/lhx/video/slides_out/p01_s3_5.png",
+   "cap": "사상 최대 수주 잔고, 그런데 주가는 -38%"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p01_s0_1.png",
+   "cap": "7월 29일 수주 잔고 $420억, 주당 순이익 +28%"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p01_s1_2.png",
+   "cap": "다음 날 하루 -8.6%"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p09_s1_4.png",
+   "cap": "미사일 사업 상장, 빨라야 2027년 중반(로이터)"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p10_s0_2.png",
+   "cap": "7월 23일 세 임원에게 $2,500만 주식 약속"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p11_s0_1.png",
+   "cap": "8월 17일 회장 겸 CEO 퇴진, 조사 내용 비공개"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p03_s0_0.png",
+   "cap": "$378.48 → $234.72, -38.0%"
+  },
+  {
+   "img": "/home/claude/lhx/video/slides_out/p17_s1_4.png",
+   "cap": "10월 29일 실적 전, 풀영상·무료 리포트: drkimworld.com"
+  }
+ ]
+}

@@ -503,6 +503,25 @@
     "청색 배경 빈 실험복과 빨간 명찰, '기술 책임자 해임 이유는?'"
    ],
    "video": "mdPcbBCAlik"
+  },
+  {
+   "ticker": "LHX",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "crimson glow + gold nameplate / teal-orange rocket / navy crossing arrows",
+   "variants": [
+    "ceo-nameplate-19days",
+    "rocket-ipo-2027",
+    "42b-vs-minus38"
+   ],
+   "main": "ceo-nameplate-19days",
+   "concepts": [
+    "붉은 빛과 금색 명패에 빨간 사선, '최대 실적 19일 뒤 CEO 퇴진'",
+    "청록·주황 로켓, '미사일 상장 2027년으로 밀렸다'",
+    "남색 배경 교차 화살표, '$420억 / -38%'"
+   ],
+   "video": "SZxWcs8gPco",
+   "shorts": "Dq3m1P_FA8A"
   }
  ]
 }

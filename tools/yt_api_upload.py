@@ -60,7 +60,7 @@ if a.delete:
 m = json.load(open(a.meta, encoding="utf-8"))
 m["description"] = utm(m["description"], m.get("utm_content", "description"))
 if m.get("first_comment"):
-    m["first_comment"] = utm(m["first_comment"], "pinned")
+    m["first_comment"] = utm(m["first_comment"], (m["utm_content"] + "_pinned") if m.get("utm_content") else "pinned")
 
 def comment(vid):
     for _ in range(3):
