@@ -1,0 +1,43 @@
+{
+ "ticker": "INOD",
+ "name": "이노데이터",
+ "hook": [
+  "사상 최대 실적 두 번인데",
+  "주가는 왜 반토막 났나?"
+ ],
+ "cta": "풀영상·무료 리포트는 drkimworld.com",
+ "frames": [
+  {
+   "img": "/home/claude/inod/video/slides_out/p01_s2_5.png",
+   "cap": "사상 최대 실적 두 번, 그런데 주가는 반토막"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p05_s1_3.png",
+   "cap": "5월 8일 1분기 실적 다음 날 하루 +86%"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p09_s0_2.png",
+   "cap": "CEO 약 123만 주, 약 $1억 2,190만 매도"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p07_s0_0.png",
+   "cap": "6월 4일 최고 $121.50 → 다음 날 -16.1%"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p10_s0_4.png",
+   "cap": "8월 6일 CEO 교체 + 최대 $3억 새 주식 계약"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p13_s2_4.png",
+   "cap": "가장 큰 고객의 2분기 매출, 1분기보다 감소"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p03_s0_1.png",
+   "cap": "$121.50 → $58.38, -52.0%"
+  },
+  {
+   "img": "/home/claude/inod/video/slides_out/p17_s1_4.png",
+   "cap": "3분기 실적 전, 풀영상·무료 리포트: drkimworld.com"
+  }
+ ]
+}
