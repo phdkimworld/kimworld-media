@@ -449,6 +449,24 @@
     "어두운 배경 코인과 주식 시소, 'DRW·ARK가 산 가격 $3.075 → $2.02 · 코인 +5.6% 주식 -45%'"
    ],
    "video": "zA_pYmyi-4M"
+  },
+  {
+   "t": "mrvl",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "teal-cyan chart / light-gray price tags / plum-paper contract",
+   "variants": [
+    "v-chart-bottom-day",
+    "two-price-tags",
+    "contract-5897"
+   ],
+   "main": "two-price-tags",
+   "concepts": [
+    "청록 선 차트 $316→$163 바닥에 빨간 점, '반토막 난 바로 그날 구글과 맺은 계약은?'",
+    "밝은 배경 회색·금색 가격표 엔비디아 $91.84 / 구글 $206.58, '같은 주식 두 개의 가격 왜 2배?'",
+    "어두운 보라 배경 계약서 2026.07.29, '구글이 받은 권리 5,897만 주 조건은 $1,200억어치 주문?'"
+   ],
+   "video": "RR4tTFkNOFo"
   }
  ]
 }

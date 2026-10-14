@@ -1,0 +1,1039 @@
+{
+ "ticker": "MRVL",
+ "name": "마벨 테크놀로지",
+ "midroll": "../kit/mrvl_youtube_midroll_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "chart",
+     "kicker": "미스터리",
+     "title": "여덟 주 만에 -48%",
+     "points": [
+      {
+       "at": 0,
+       "value": 316.43,
+       "label_value": "$316.43",
+       "label": "06.04 사상 최고 종가"
+      },
+      {
+       "at": 1,
+       "value": 163.4,
+       "label_value": "$163.40",
+       "label": "07.29"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "그 사이",
+     "stats": [
+      {
+       "at": 3,
+       "big": "악재 공시 0건",
+       "label": "회사가 낸 나쁜 소식은 없었다",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "바로 그 바닥 날, 구글과 서명\n**3주 동안 알려지지 않았다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "hero",
+     "kicker": "MRVL · 2026.10.14",
+     "bg": "thumb/bg_fx.png",
+     "lines": [
+      {
+       "at": 5,
+       "text": "반토막 난 바로 그날",
+       "tone": "white"
+      },
+      {
+       "at": 5,
+       "text": "구글과 무엇을 약속했나?",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "김박사 월드",
+     "title": "오늘의 주인공",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "마벨 테크놀로지 (나스닥: MRVL)"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "빅테크 맞춤형 AI 칩 · 광통신 칩",
+       "sub": "데이터센터 안에서 빛으로 데이터를 옮긴다"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "지난 영상: 폭등 중 경영진 매도",
+       "sub": "오늘: 반토막 바닥에서 맺은 계약"
+      },
+      {
+       "at": 4,
+       "no": "4",
+       "text": "영상 끝: 실적보다 크게 출렁인 이유 3",
+       "sub": "+ 다음 실적 전 신호 5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "질문 셋",
+     "title": "걸어 두는 질문",
+     "items": [
+      {
+       "at": 1,
+       "no": "Q1",
+       "text": "악재 없이 반토막, 범인은?"
+      },
+      {
+       "at": 2,
+       "no": "Q2",
+       "text": "바닥 날 구글 계약, 언제 어떻게 알려졌나?"
+      },
+      {
+       "at": 3,
+       "no": "Q3",
+       "text": "구글 가격은 엔비디아의 몇 배?"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "왜 실적보다\n**훨씬 크게 출렁이나**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "과거",
+     "title": "마벨이 걸어온 길",
+     "items": [
+      {
+       "at": 1,
+       "date": "1995",
+       "value": "창업",
+       "text": "수타르자 형제·웨이리 다이",
+       "tone": "white"
+      },
+      {
+       "at": 1,
+       "date": "2016",
+       "value": "교체",
+       "text": "회계 조사 뒤 매트 머피 CEO",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "지난 회계연도 · 지난 분기",
+     "left": {
+      "at": 2,
+      "head": "FY2026 매출",
+      "big": "$81.9억",
+      "lines": [
+       "+42%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "데이터센터 비중",
+      "big": "79%",
+      "lines": [
+       "2분기"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "chart",
+     "title": "넉 달 만에 4배+",
+     "points": [
+      {
+       "at": 3,
+       "value": 73.73,
+       "label_value": "$73.73",
+       "label": "02.04"
+      },
+      {
+       "at": 3,
+       "value": 316.43,
+       "label_value": "$316.43",
+       "label": "06.04"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "실적 날마다 ±20% 가까이, 전체 주가 굴곡\n**고정 댓글의 무료 리포트**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "첫 불씨",
+     "title": "2026.03.06 실적 다음 날",
+     "left": {
+      "at": 1,
+      "head": "매출 목표 상향",
+      "big": "FY28 ↑",
+      "lines": [],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "주가",
+      "big": "+18.4%",
+      "lines": [],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2026.03.31 엔비디아",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$20억",
+       "label": "마벨 보통주로 바꿀 수 있는 우선주",
+       "tone": "gold"
+      },
+      {
+       "at": 3,
+       "big": "$91.84",
+       "label": "전환 가격 (주당)",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "그날 주가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+12.8%",
+       "label": "종가 $99.05",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "quote",
+     "kicker": "폭발",
+     "text": "컴퓨텍스, 젠슨 황\n**\"다음 1조 달러 회사\"**",
+     "at": 0
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "2026.06.02",
+     "left": {
+      "at": 2,
+      "head": "하루",
+      "big": "+32.5%",
+      "lines": [
+       "$219.43 → $290.79"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "거래량",
+      "big": "1억 1,265만 주",
+      "lines": [],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "2026.06.04",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$316.43",
+       "label": "사상 최고 종가",
+       "tone": "up"
+      },
+      {
+       "at": 4,
+       "big": "+329%",
+       "label": "2월 바닥에서 넉 달",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "단서 1",
+     "title": "2026.06.05 하락의 성격",
+     "left": {
+      "at": 1,
+      "head": "반도체 지수",
+      "big": "-10.3%",
+      "lines": [],
+      "tone": "down"
+     },
+     "right": {
+      "at": 1,
+      "head": "마벨",
+      "big": "-16.7%",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "7월",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$2,050억",
+       "label": "알파벳 설비 투자 계획 → 'AI 투자 과잉' 의심",
+       "tone": "gold"
+      },
+      {
+       "at": 3,
+       "big": "-37%",
+       "label": "7월 한 달 마벨 · 회사 악재 공시 없음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "회사가 아니라\n**업종 전체에 대한 의심**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "단서 2",
+     "title": "바닥에서 회사가 한 일",
+     "left": {
+      "at": 1,
+      "head": "5월까지 자사주",
+      "big": "평균 $176",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "5월 말~8월 초",
+      "big": "0주",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2026.06.11",
+     "stats": [
+      {
+       "at": 2,
+       "big": "CFO 교체",
+       "label": "감사위원장이던 이사가 CFO로",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "timeline",
+     "title": "2026.07.29",
+     "items": [
+      {
+       "at": 3,
+       "date": "종가",
+       "value": "$163.40",
+       "text": "여름 바닥",
+       "tone": "down"
+      },
+      {
+       "at": 3,
+       "date": "같은 날",
+       "value": "구글 계약",
+       "text": "맞춤형 칩 · 서명",
+       "tone": "gold"
+      },
+      {
+       "at": 4,
+       "date": "발표",
+       "value": "인도 투자",
+       "text": "$2.5억 보도자료뿐",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "단서 3",
+     "title": "알려진 방식",
+     "items": [
+      {
+       "at": 1,
+       "date": "07.29",
+       "value": "서명",
+       "text": "보도자료 없음",
+       "tone": "white"
+      },
+      {
+       "at": 1,
+       "date": "08.19",
+       "value": "공시 한 장",
+       "text": "8-K로 처음 공개",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "구글이 받은 권리",
+     "stats": [
+      {
+       "at": 2,
+       "big": "5,897만 주",
+       "label": "주당 $206.58에 살 권리",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "그날 주가",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+9.8%",
+       "label": "2026.08.19",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "엔비디아·젠슨 황·구글 공시 뒤 며칠, 얼마\n**고정 댓글의 리포트 카드**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "조건",
+     "title": "권리가 생기는 방식",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$5억 = 1묶음",
+       "label": "구글이 맞춤형 칩을 살 때마다 · 240묶음",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "모두 채우려면",
+     "left": {
+      "at": 2,
+      "head": "FY2033까지",
+      "big": "$1,200억",
+      "lines": [],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "지난 회계연도 매출의",
+      "big": "14배+",
+      "lines": [],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "주식을 내주고\n**구글의 주문을 묶었다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "가격",
+     "title": "구글 권리 가격",
+     "left": {
+      "at": 1,
+      "head": "07.29 종가",
+      "big": "$163.40",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "권리 가격",
+      "big": "$206.58",
+      "lines": [
+       "+26%"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "넉 달 앞서",
+     "left": {
+      "at": 2,
+      "head": "엔비디아",
+      "big": "$91.84",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "구글",
+      "big": "$206.58",
+      "lines": [
+       "2배+"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "어제 종가 $268.72",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+$177 · +$62",
+       "label": "엔비디아 전환가 · 구글 권리가(대부분 아직 미발생) 대비",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "반등",
+     "title": "계약 공개 전",
+     "items": [
+      {
+       "at": 1,
+       "date": "07.30",
+       "value": "+12.2%",
+       "text": "마이크로소프트 실적 뒤 반도체 반등",
+       "tone": "up"
+      },
+      {
+       "at": 1,
+       "date": "08.04",
+       "value": "+12.8%",
+       "text": "광 트랜시버 규제 보도 · 신제품 발표",
+       "tone": "up"
+      },
+      {
+       "at": 2,
+       "date": "08.18",
+       "value": "+32%",
+       "text": "바닥 대비 · 구글 공개 전날",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "되돌린 첫 힘은\n**계약이 아니라 업종 분위기**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "같은 실적, 거꾸로",
+     "title": "실적 다음 날",
+     "left": {
+      "at": 1,
+      "head": "2026.03.06",
+      "big": "+18.4%",
+      "lines": [],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "2026.08.28",
+      "big": "-10.3%",
+      "lines": [
+       "사상 최대 매출 $27.4억"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "먼저 읽힌 것",
+     "stats": [
+      {
+       "at": 3,
+       "big": "58.9% → 57.5~58.5%",
+       "label": "매출총이익률 전망 (조정 기준)",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "사건별 날짜·반응 숫자\n**고정 댓글의 리포트 카드**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "지금 값",
+     "title": "2026.10.13",
+     "left": {
+      "at": 1,
+      "head": "시가총액",
+      "big": "≈$2,356억",
+      "lines": [
+       "$268.72 × 8.77억 주"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "이번 분기 조정 EPS 목표 ×4",
+      "big": "60배+",
+      "lines": [
+       "$1.10 × 4"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "반면",
+     "left": {
+      "at": 3,
+      "head": "데이터센터 매출",
+      "big": "+46%",
+      "lines": [
+       "1년 전 대비"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "FY2028 목표",
+      "big": "≈$200억",
+      "lines": [
+       "10.06 투자자의 날"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "chart",
+     "title": "FY2028 매출 목표",
+     "points": [
+      {
+       "at": 4,
+       "value": 13,
+       "label_value": "$130억",
+       "label": "2025.12"
+      },
+      {
+       "at": 4,
+       "value": 15,
+       "label_value": "$150억",
+       "label": "2026.03"
+      },
+      {
+       "at": 4,
+       "value": 16.5,
+       "label_value": "$165억",
+       "label": "05"
+      },
+      {
+       "at": 4,
+       "value": 18,
+       "label_value": "$180억",
+       "label": "08"
+      },
+      {
+       "at": 4,
+       "value": 20,
+       "label_value": "$200억",
+       "label": "10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "갈림길",
+     "title": "다가오는 일정",
+     "items": [
+      {
+       "at": 1,
+       "date": "12월 초",
+       "value": "실적",
+       "text": "이번 분기 목표 $31.5억",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "10.06 투자자의 날",
+     "left": {
+      "at": 2,
+      "head": "장중",
+      "big": "+11.1%",
+      "lines": [],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "종가",
+      "big": "+5.8%",
+      "lines": [
+       "일주일 안에 행사 전 아래"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "chart",
+     "title": "공매도 잔고",
+     "points": [
+      {
+       "at": 3,
+       "value": 38.2,
+       "label_value": "3,820만 주",
+       "label": "08.31"
+      },
+      {
+       "at": 3,
+       "value": 24.05,
+       "label_value": "2,405만 주",
+       "label": "09.30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 1",
+     "title": "업종의 그네",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "회사 소식보다 반도체 업종 분위기에 흔들림"
+      },
+      {
+       "at": 2,
+       "no": "+",
+       "text": "딥시크 -19.1% · 6.5 반도체 급락 -16.7% · 7월 반토막"
+      },
+      {
+       "at": 3,
+       "no": "−",
+       "text": "약점: 회사 고유 소식에도 크게 움직임",
+       "sub": "엔비디아 투자 · 젠슨 황의 한마디"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 2",
+     "title": "목표의 사다리",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "목표를 올릴 때마다 주가가 먼저 반영"
+      },
+      {
+       "at": 2,
+       "no": "+",
+       "text": "8월 실적 -10% · 투자자의 날 상승분 절반 반납"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "$268은\n**다 반영한 값일까, 중간일까?**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "국면 판단 신호 15개\n**고정 댓글의 무료 리포트**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 3",
+     "title": "고객의 무게",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "유통사 한 곳 44% · 상위 10곳 82%"
+      },
+      {
+       "at": 2,
+       "no": "+",
+       "text": "엔비디아·구글·아마존 모두 주식이나 권리 보유"
+      },
+      {
+       "at": 3,
+       "no": "−",
+       "text": "약점: 그 장치가 주문을 오래 묶어 둔다",
+       "sub": "구글 권리는 실제 주문이 들어와야 생긴다"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "답",
+     "title": "걸어 둔 질문",
+     "items": [
+      {
+       "at": 1,
+       "no": "A1",
+       "text": "업종 전체의 AI 투자 의심"
+      },
+      {
+       "at": 2,
+       "no": "A2",
+       "text": "3주 뒤 보도자료 없이 공시 한 장"
+      },
+      {
+       "at": 3,
+       "no": "A3",
+       "text": "$206.58 vs $91.84 · 2배+"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "빅테크 주문을 주식으로 묶는 회사\n**빅테크 투자 심리를 따라 출렁인다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "시나리오",
+     "title": "세 갈래 길",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "목표 재상향 + 구글 주문 확인 · 최고가 재시험"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "이익률·몸값이 발목 · 지금 근처"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "AI 투자 의심 재확산 · 업종 급락 반복"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "다음 고비",
+     "title": "지켜볼 신호 5",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "12월 초 실적 매출 · 다음 분기 목표"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "매출총이익률 58% 선"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "구글 권리 묶음이 생기기 시작하는지"
+      },
+      {
+       "at": 4,
+       "no": "4",
+       "text": "빅테크 설비 투자 계획"
+      },
+      {
+       "at": 5,
+       "no": "5",
+       "text": "자사주 매입 재개"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    0,
+    1
+   ],
+   "slides": [
+    {
+     "layout": "quote",
+     "text": "패턴 기반 전략과 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "관심 종목을 댓글로 제보해 주세요"
+      },
+      {
+       "at": 2,
+       "text": "여러분은 세 갈래 길 중 어느 쪽?"
+      },
+      {
+       "at": 3,
+       "text": "시청해 주셔서 감사합니다"
+      },
+      {
+       "at": 4,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
