@@ -1190,9 +1190,9 @@ spec.json 예시:
 ### K8. Threads 퍼널 글 (2026-10-14 운영자 지시)
 
 리포트마다 Threads 글 하나를 사이트 저장소 `threads/queue/<slug>-1.json`에 넣는다. 워크플로 `threads.yml`이 15분마다 `publish_at`이 지난 글을 게시하고 `threads/posted/`로 옮긴다(형식·토큰 갱신은 `threads/README.md`).
-- 목표는 리포트 클릭(전환율)과 끝까지 읽게 하는 흡입력. 첫 두 줄에 핵심 모순을 숫자로(피드에서 '더 보기' 전에 보이는 부분), 짧은 줄과 빈 줄로 리듬, 결과만 보이고 이유는 리포트로 미룬다. 마지막 안내 문장은 리포트 자산을 숫자로 짚는다(카드 N장 등)
-- 링크: 본문 끝과 `link_attachment`에 `https://drkimworld.com/r/<slug>/?utm_source=threads&utm_medium=social&utm_campaign=<slug>&utm_content=post`
-- 500자 이내(이모지는 4자로 센다). `python3 scripts/threads_publish.py --check`로 검사한 뒤 올린다. 끝에 면책 한 줄. 5장 금지 표현, 해시태그 남발 금지(0~1개)
+- **본문은 광고가 아니라 완결된 이야기**(2026-10-14 운영자 지시): 링크·'정리했습니다'·'👇' 같은 안내 없이 그 자체로 읽히는 글. 첫 두 줄에 핵심 모순을 숫자로(피드 '더 보기' 전), 짧은 줄과 빈 줄로 리듬, 확인된 사실만으로 사건의 흐름을 끝까지 들려주고, 마지막 줄은 앞으로 확인될 열린 질문(다음 촉매 날짜) 하나. 평서 '~다'체
+- **링크는 이어지는 댓글(`replies`)에**: 첫 댓글에 본문에 없던 숫자 하나(패턴 반응 등)로 이어 받고, 리포트가 무엇을 정리했는지 한 문장, 링크, 면책 한 줄. `link_attachment`도 같은 주소. 리포트 링크 UTM은 `utm_source=threads&utm_medium=social&utm_campaign=<slug>&utm_content=reply`
+- 본문·댓글 각 500자 이내(이모지는 4자로 센다). `python3 scripts/threads_publish.py --check`로 검사한 뒤 올린다. 5장 금지 표현, 해시태그 0~1개
 - `publish_at`: 영상 공개 직후(운영자 지시 2026-10-14). 즉시 공개 회차는 업로드 확인 직후 현재 시각으로 넣어 푸시하면 워크플로가 바로 게시한다. 예약 공개 회차는 영상 `publish_at`과 같은 시각(미국 동부시간, 시간대 오프셋 포함)
 - 2026-10-14 XTIA 첫 글을 운영자가 확인했다. 이제부터는 묻지 않고 매 회차 자동으로 넣는다. 게시는 토큰 주인 계정(`/me`)으로 한다
 
