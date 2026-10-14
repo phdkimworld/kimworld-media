@@ -1020,6 +1020,7 @@ done()
   - `synthetic`: 기본 `false`. V7.3의 `isAiGeneratedContent`와 같은 기준으로 정한다
 - 실행: `python3 /home/claude/yt_api_upload.py --meta /home/claude/<T>/video/upload_meta.json --video /home/claude/<T>/video/<T>_slide_video.mp4 --thumbnail <썸네일 JPG 경로>` (시간 제한 10분)
 - 스크립트가 하는 일: 채널 확인 → 영상 업로드(카테고리 27 교육, 아동용 아님, 구독자 알림 켬) → 맞춤 썸네일 → 15초 뒤 공개 범위 재확인 → 비공개가 아니면 고정댓글 문구를 채널 명의 첫 댓글로 단다(비공개 영상에는 유튜브가 댓글을 막는다)
+- **유입 구분자(UTM, 2026-10-14 운영자 지시)**: 스크립트가 설명란과 첫 댓글의 리포트 링크(`https://drkimworld.com/r/<slug>/`)에 `?utm_source=youtube&utm_medium=video&utm_campaign=<slug>&utm_content=<위치>`를 자동으로 붙인다. 위치는 설명란 `description`, 첫(고정) 댓글 `pinned`, 쇼츠는 meta에 `"utm_content": "shorts"`. 원고(description.txt·pinned.txt)에는 맨 주소만 쓴다. 이미 올린 영상은 `python3 /home/claude/yt_api_upload.py --retag=<영상ID>`로 설명란과 채널 첫 댓글에 붙인다(영상당 약 100단위). 사이트 관리자 화면 '유입 분석 → 캠페인(UTM)'에서 위치별 방문·계속 읽은 비율을 본다
 - 결과 JSON의 `video_id`, `url`, `privacy_after`, `thumbnail`, `comment`를 기록하고, 종료 코드와 함께 V7.1로 판정한다. 영상 ID를 얻으면 곧바로 리포트 머리말 `youtube_id`에 넣고 빌드 검사 후 푸시한다(R6.5)
 - 경로 A는 예약 없이 즉시 게시한다. 영상 파일을 미디어 저장소에 올릴 필요가 없다(`thumb_history.json` 커밋은 그대로 한다). 경로 B로 대체할 때만 V7.2대로 영상과 썸네일을 푸시한다
 - 할당량: 하루 10,000단위 가운데 업로드 한 번이 약 1,600단위(썸네일·댓글 각 50)다. 할당량 오류는 대체 조건 2번으로 처리한다
@@ -1344,3 +1345,4 @@ R7(리포트)과 K6(자산)에 더해 아래를 모두 확인하고, 어긋나�
 - 2026-10-13: 차트 라벨이 1달러 미만 가격을 반올림하던 문제 수정(make_chart.py), 썸네일 기간 한정 사실 표현 규칙(V5.1), 카드 반응 수치 기준·카드 수 검사(R3)
 - 2026-10-13: 0장(자산별 최적화 지표), V6.7(효과음·배경 드론), R3.1(리포트 체류시간), V4·K2·R1.2 클릭률·전환율 규칙, 8장(회차 후 복기와 스킬 개선), V6.6 slides.json 검사 스크립트 추가
 - 2026-10-14 (CNTN 복기): 코인 금고 종목의 mNAV 주식 수와 이연 법인세 기준 명시(3.4), '같은 뉴스' 블록 숫자 규칙(R2 4번, 자동 그림)
+- 2026-10-14: 유튜브 링크 유입 구분자(UTM) 자동 부착과 `--retag`(V7.A), 최근 영상 14편 소급 적용

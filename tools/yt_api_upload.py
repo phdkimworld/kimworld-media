@@ -8,6 +8,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--check", action="store_true"); ap.add_argument("--meta"); ap.add_argument("--video")
 ap.add_argument("--thumbnail"); ap.add_argument("--delete"); ap.add_argument("--comment-only")
 ap.add_argument("--status", help="영상 ID의 공개 상태·예약 시각 확인")
+ap.add_argument("--retag", help="이미 올린 영상의 설명란·채널 첫 댓글 링크에 UTM을 붙인다")
 a = ap.parse_args()
 out = {}
 
@@ -26,10 +27,40 @@ if a.check:
 if a.status:
     st = yt.videos().list(part="status", id=a.status).execute()["items"][0]["status"]
     out.update(video_id=a.status, privacy=st["privacyStatus"], publish_at=st.get("publishAt")); done()
+
+# 사이트 링크에 유입 구분자(UTM)를 붙인다. 설명란=description, 첫 댓글=pinned (쇼츠는 meta에 utm_content='shorts')
+import re
+def utm(text, content):
+    def f(mo):
+        slug = mo.group(1)
+        return (f"https://drkimworld.com/r/{slug}/?utm_source=youtube&utm_medium=video"
+                f"&utm_campaign={slug}&utm_content={content}")
+    return re.sub(r"https://drkimworld\.com/r/([a-z0-9-]+)/(?!\?)", f, text)
+
+if a.retag:
+    v = yt.videos().list(part="snippet", id=a.retag).execute()["items"][0]; sn = v["snippet"]
+    nd = utm(sn["description"], "description"); out["video_id"] = a.retag
+    if nd != sn["description"]:
+        yt.videos().update(part="snippet", body={"id": a.retag, "snippet": {"title": sn["title"], "description": nd,
+            "categoryId": sn["categoryId"], "tags": sn.get("tags", []), "defaultLanguage": sn.get("defaultLanguage", "ko")}}).execute()
+        out["description"] = "tagged"
+    me = yt.channels().list(part="id", mine=True).execute()["items"][0]["id"]
+    for th in yt.commentThreads().list(part="snippet", videoId=a.retag, maxResults=50, order="time").execute()["items"]:
+        c = th["snippet"]["topLevelComment"]; cs = c["snippet"]
+        if cs.get("authorChannelId", {}).get("value") == me and "drkimworld.com/r/" in cs["textOriginal"]:
+            nt = utm(cs["textOriginal"], "pinned")
+            if nt != cs["textOriginal"]:
+                yt.comments().update(part="snippet", body={"id": c["id"], "snippet": {"textOriginal": nt}}).execute()
+                out["comment"] = "tagged"
+    done()
+
 if a.delete:
     yt.videos().delete(id=a.delete).execute(); out["deleted"] = a.delete; done()
 
 m = json.load(open(a.meta, encoding="utf-8"))
+m["description"] = utm(m["description"], m.get("utm_content", "description"))
+if m.get("first_comment"):
+    m["first_comment"] = utm(m["first_comment"], "pinned")
 
 def comment(vid):
     for _ in range(3):
