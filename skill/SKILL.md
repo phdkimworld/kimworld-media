@@ -1202,7 +1202,7 @@ spec.json 예시:
 롱폼마다 50초 안팎 세로 요약 쇼츠를 만들어 유튜브 쇼츠와 인스타 릴스에 바로 올린다.
 - **대본**: `/home/claude/<T>/shorts/narration.txt`, 한 줄 = 한 문장, 8줄(빈 줄로 구분), 약 850자. 1줄 핵심 질문(영상 훅과 같은 숫자) → 2~7줄 확인된 사실의 흐름(날짜·숫자) → 8줄 '다음 촉매 날짜 전, 단서·신호는 고정 댓글의 풀영상과 무료 리포트'. 상대 날짜('엿새 전')는 기준이 앞 문장과 어긋나지 않게 기준을 적는다(LHX: '그 실적 엿새 전')
 - TTS: `st_tts.py narration.txt shorts_raw.wav 6 1.15 10`. 롱폼 TTS와 동시에 돌리지 말고 롱폼이 끝난 직후 시작한다
-- **합성**: 사이트 저장소 `tools/shorts/make_shorts.py shorts.json shorts_raw.wav <T>_shorts.mp4`. `frames[i].img`는 롱폼 `slides_out/`의 슬라이드(줄마다 그 문장과 같은 숫자가 보이는 장면, 첫 화면은 hero), `cap`은 숫자 표기 자막. `hook` 두 줄 = 롱폼 핵심 질문, `cta`는 `풀영상·무료 리포트는 drkimworld.com`(인스타에서도 통하게). `shorts_out/contact.png`로 확인하고, 1초 프레임을 `cover.jpg`로 뽑는다
+- **합성**: 사이트 저장소 `tools/shorts/make_shorts.py shorts.json shorts_raw.wav <T>_shorts.mp4`. `frames[i].img`는 롱폼 `slides_out/`의 슬라이드(줄마다 그 문장과 같은 숫자가 보이는 장면, 첫 화면은 hero), `cap`은 숫자 표기 자막 **한 줄, 18자 안팎**(운영자 지시 2026-10-14: 정보로 꽉 차 보기 어렵다 → 위아래 여백을 충분히, 간결하게. 화면 요소는 종목 태그·질문 두 줄·슬라이드·자막 한 줄·안내 한 줄뿐이고 아래 약 470px는 쇼츠·릴스 버튼이 덮는 자리라 비운다). `hook` 두 줄 = 롱폼 핵심 질문, `cta`는 `풀영상·무료 리포트는 drkimworld.com`(인스타에서도 통하게). `shorts_out/contact.png`로 확인하고, 1초 프레임을 `cover.jpg`로 뽑는다
 - **유튜브 쇼츠**: 제목·설명·고정댓글은 롱폼과 같고, 설명과 고정댓글 모두 리포트 링크 바로 다음 줄에 `🎬 10분 풀영상: https://www.youtube.com/watch?v=<롱폼 ID>`를 넣는다(운영자 지시). 설명 끝 해시태그에 `#Shorts`, 챕터는 넣지 않는다. meta에 `"utm_content":"shorts"`(설명 `shorts`, 고정댓글 `shorts_pinned`)
 - **인스타 릴스**: 사이트 저장소 `static/social/<slug>/`에 `<T>_shorts.mp4`·`cover.jpg`를 넣고 `social/queue/<slug>-reels.json`(`"channels":["instagram"]`, `media:{type:"reels",path,cover}`, `publish_at` 현재 시각)을 함께 푸시한다. 미디어 주소는 배포가 끝나야 열리므로 워크플로가 최대 6시간 기다렸다가 게시한다. 인스타 캡션은 링크가 눌리지 않으므로 URL 없이 `drkimworld.com 에서 '<회사 이름>'을 검색해 보세요`로 안내한다(운영자 지시). 첫 줄 핵심 질문, 사실 4~6줄, 면책 한 줄, 해시태그 5개
 - 게시 후 `social/posted/<slug>-reels.json`의 `results.instagram.permalink`를 전달에 적는다
@@ -1363,3 +1363,4 @@ R7(리포트)과 K6(자산)에 더해 아래를 모두 확인하고, 어긋나�
 - 2026-10-14 (XTIA 복기): 셸 pkill/패턴 종료 금지 재확인(자기 셸 종료), 주 썸네일이 밝은 배경이면 hero 배경은 어두운 시안에서 글자를 지운 것으로
 - 2026-10-14 (LHX): SNS 예약 게시를 social/(Threads·Instagram)로 통합(K8), 요약 쇼츠·유튜브 쇼츠·인스타 릴스(K9, 2장 11-1)
 - 2026-10-14 (INOD): 정기 제작도 발행 시각을 맞추지 않고 완성 즉시 공개(운영자 지시), `yt_api_upload.py --publish-now`, 백그라운드 대기는 PID로
+- 2026-10-14: 요약 쇼츠 화면 간결화(위아래 여백, 자막 한 줄, 안내 띠 → 한 줄 글자, make_shorts.py)
