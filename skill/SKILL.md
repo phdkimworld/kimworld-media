@@ -824,7 +824,7 @@ st_tts.py (사용법: python3 st_tts.py 나레이션.txt 출력.wav [화자번�
 1. 대본 점검(6장의 대본 항목)을 마치면 문단마다 한 줄씩 `/home/claude/<T>/video/narration.txt`로 저장한다
 2. 바로 백그라운드로 시작한다:
    `cd /home/claude/tts/st && (nohup python3 st_tts.py /home/claude/<T>/video/narration.txt /home/claude/<T>/video/raw.wav 6 1.15 10 > /home/claude/<T>/video/tts.log 2>&1 &)`
-   두 코어 기준 문단 하나에 40~90초, 전체 25~40분이다. 다른 무거운 작업(슬라이드 렌더링 등)은 `nice -n 10`으로 돌려 TTS를 늦추지 않게 한다. 기다리는 동안 slides.json(V6.4), 사이트 리포트, 미드롤 이미지를 진행한다. TTS를 멈춰야 하면 `pkill -f`처럼 자기 셸까지 잡는 명령 대신 `ps`로 PID를 찾아 `kill <PID>`로 끈다
+   두 코어 기준 문단 하나에 40~90초, 전체 25~40분이다. 다른 무거운 작업(슬라이드 렌더링 등)은 `nice -n 10`으로 돌려 TTS를 늦추지 않게 한다. 기다리는 동안 slides.json(V6.4), 사이트 리포트, 미드롤 이미지를 진행한다. TTS를 멈춰야 하면 `pkill -f`처럼 자기 셸까지 잡는 명령 대신 `ps`로 PID를 찾아 `kill <PID>`로 끈다. 백그라운드 작업이 끝나기를 기다릴 때도 `pgrep -f '<패턴>'`을 쓰지 않는다(기다리는 명령 자신의 명령줄이 패턴에 걸려 영원히 끝나지 않고 시간 제한에 걸려 중지된다, LHX). 시작할 때 `echo $! > x.pid`로 PID를 저장하고 `until ! kill -0 $(cat x.pid); do sleep 10; done`처럼 PID로 기다린다. `tools/yt_stats.py`는 첫 인자를 스냅숏 파일 경로로 받으므로 `--help` 같은 옵션을 붙여 실행하지 않는다(INOD에서 `--help` 파일이 생김)
 3. 대본을 TTS 시작 뒤에 고쳤다면 TTS를 다시 돌린다. 영상 음성, `raw_timing.json`, 나레이션 스니펫이 반드시 같은 대본에서 나와야 한다
 
 #### V6.4 슬라이드 설계 (`/home/claude/<T>/video/slides.json`)
