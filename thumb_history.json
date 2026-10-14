@@ -485,6 +485,24 @@
     "자홍·청록 드론과 떨어지는 선 $1.57→$0.72, '-54% CEO 떠난 뒤 사상 최저'"
    ],
    "video": "Inm4Ab_eBK0"
+  },
+  {
+   "t": "nne",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "emerald-violet split / deep red reactor glow / ice-blue lab coat",
+   "variants": [
+    "split-47-vs-300man",
+    "8387man-reactor",
+    "cto-labcoat"
+   ],
+   "main": "split-47-vs-300man",
+   "concepts": [
+    "좌우 분할 초록·보라, '투자자는 $47에 샀다 / 창업자는 아홉 달 동안 300만 주 팔았다'",
+    "붉은 원자로 노심 빛, '창업자가 판 주식 $8,387만 · 주가 -74.7%'",
+    "청색 배경 빈 실험복과 빨간 명찰, '기술 책임자 해임 이유는?'"
+   ],
+   "video": "mdPcbBCAlik"
   }
  ]
 }
