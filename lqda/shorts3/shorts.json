@@ -1,0 +1,310 @@
+{
+ "ticker": "LQDA",
+ "name": "리퀴디아",
+ "cta": "판결문 해석은 고정 댓글",
+ "scenes": [
+  {
+   "em": "57",
+   "els": [
+    {
+     "kind": "chart",
+     "pts": [
+      52,
+      61,
+      58,
+      70,
+      74,
+      71,
+      30
+     ],
+     "draw": [
+      0,
+      0.45
+     ],
+     "y": 20,
+     "h": 380,
+     "labels": {
+      "-1": "$30"
+     }
+    },
+    {
+     "kind": "num",
+     "text": "-57%",
+     "sub": "하루",
+     "at": 0.45,
+     "y": 430,
+     "color": "red",
+     "anim": "pop",
+     "sfx": "boom"
+    },
+    {
+     "kind": "doc",
+     "text": "범인은 판결문 한 장",
+     "at": 0.8,
+     "y": 120
+    }
+   ]
+  },
+  {
+   "em": "3,000억",
+   "els": [
+    {
+     "kind": "bars",
+     "vals": [
+      0.9,
+      1.3,
+      1.7,
+      2.2
+     ],
+     "labels": [
+      "25년 4Q",
+      "26년 1Q",
+      "2Q",
+      "3Q"
+     ],
+     "values": [
+      "0.9억",
+      "1.3억",
+      "1.7억",
+      "2.2억"
+     ],
+     "draw": [
+      0,
+      0.45
+     ],
+     "y": 120,
+     "h": 360,
+     "sfx": "tick"
+    },
+    {
+     "kind": "text",
+     "text": "분기 매출(달러) 사상 최대",
+     "at": 0.0,
+     "y": 0,
+     "size": 64,
+     "color": "green"
+    },
+    {
+     "kind": "text",
+     "text": "그런데 주가는",
+     "at": 0.7,
+     "y": 590,
+     "size": 72,
+     "color": "red",
+     "anim": "slide_r"
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/2",
+   "title": "9월 30일 법원",
+   "em": "침해",
+   "els": [
+    {
+     "kind": "doc",
+     "at": 0.0,
+     "until": 0.38,
+     "y": 140
+    },
+    {
+     "kind": "text",
+     "text": "\"경쟁사 특허를 침해했다\"",
+     "at": 0.38,
+     "y": 160,
+     "size": 66,
+     "box": true
+    },
+    {
+     "kind": "stamp",
+     "text": "침해",
+     "at": 0.62,
+     "y": 360,
+     "color": "red",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/2",
+   "title": "판결 날 주가",
+   "em": "오십칠",
+   "els": [
+    {
+     "kind": "num",
+     "from": 70.69,
+     "to": 30.26,
+     "fmt": "${:.2f}",
+     "at": 0.0,
+     "y": 110,
+     "color": "white",
+     "anim": "none",
+     "size": 190
+    },
+    {
+     "kind": "stamp",
+     "text": "하루 -57%",
+     "at": 0.4,
+     "y": 360,
+     "color": "red",
+     "size": 100
+    },
+    {
+     "kind": "text",
+     "text": "시가총액 63억 → 27억 달러",
+     "at": 0.72,
+     "y": 610,
+     "size": 60,
+     "color": "white"
+    }
+   ]
+  },
+  {
+   "progress": "단서 2/2",
+   "title": "최고경영자 로저 제프스",
+   "em": "사장",
+   "els": [
+    {
+     "kind": "text",
+     "text": "경쟁사에서 18년",
+     "at": 0.1,
+     "y": 170,
+     "size": 96,
+     "color": "white",
+     "anim": "slide_l"
+    },
+    {
+     "kind": "text",
+     "text": "↓",
+     "at": 0.35,
+     "y": 320,
+     "size": 90,
+     "color": "yellow"
+    },
+    {
+     "kind": "text",
+     "text": "사장·공동 CEO",
+     "at": 0.55,
+     "y": 440,
+     "size": 110,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "progress": "단서 2/2",
+   "title": "열사흘 뒤 합의",
+   "em": "현금",
+   "els": [
+    {
+     "kind": "num",
+     "text": "3.8억",
+     "sub": "합의금(달러)",
+     "at": 0.05,
+     "x": 290,
+     "y": 200,
+     "size": 150,
+     "color": "red",
+     "anim": "slide_l",
+     "sfx": "tick"
+    },
+    {
+     "kind": "num",
+     "text": "4.0억",
+     "sub": "보유 현금(달러)",
+     "at": 0.45,
+     "x": 790,
+     "y": 200,
+     "size": 150,
+     "color": "green",
+     "anim": "slide_r"
+    },
+    {
+     "kind": "text",
+     "text": "≈",
+     "at": 0.75,
+     "y": 230,
+     "size": 120,
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "title": "두 달 사이",
+   "em": "바닥",
+   "els": [
+    {
+     "kind": "chart",
+     "pts": [
+      91.03,
+      84,
+      78.8,
+      70.7,
+      30.3,
+      25.9,
+      26.8
+     ],
+     "draw": [
+      0,
+      0.45
+     ],
+     "y": 110,
+     "h": 360,
+     "labels": {
+      "0": "$91",
+      "-1": "$27"
+     },
+     "level": 30,
+     "level_label": "$30",
+     "until": 0.78
+    },
+    {
+     "kind": "text",
+     "text": "두 달 -70%",
+     "at": 0.45,
+     "y": 540,
+     "size": 96,
+     "color": "red",
+     "until": 0.78
+    },
+    {
+     "kind": "q",
+     "at": 0.78,
+     "y": 120,
+     "until": 9
+    },
+    {
+     "kind": "text",
+     "text": "$30, 바닥일까?",
+     "at": 0.82,
+     "y": 520,
+     "size": 96,
+     "color": "yellow"
+    }
+   ]
+  },
+  {
+   "em": "매출",
+   "els": [
+    {
+     "kind": "chart",
+     "pts": [
+      52,
+      61,
+      58,
+      70,
+      74,
+      71,
+      30
+     ],
+     "draw": [
+      0.2,
+      1.6
+     ],
+     "y": 20,
+     "h": 380
+    }
+   ]
+  }
+ ]
+}
