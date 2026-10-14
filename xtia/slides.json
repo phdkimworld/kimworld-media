@@ -1,0 +1,991 @@
+{
+ "ticker": "XTIA",
+ "name": "XTI 에어로스페이스",
+ "midroll": "../kit/xtia_youtube_midroll_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "미스터리",
+     "title": "2026년 8월 17일",
+     "items": [
+      {
+       "at": 0,
+       "date": "08.17",
+       "value": "사임",
+       "text": "회장 겸 CEO 스콧 포머로이",
+       "tone": "down"
+      },
+      {
+       "at": 1,
+       "date": "진행 중",
+       "value": "내부 조사",
+       "text": "바로 그 사람을 둘러싼 조사",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "떠나는 CEO에게",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$200,000",
+       "label": "분리금",
+       "tone": "gold"
+      },
+      {
+       "at": 2,
+       "big": "200만 주",
+       "label": "스톡옵션 즉시 확정",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "조사 끝, 결론은 한 줄\n**재무 왜곡은 없었다**",
+     "at": 3,
+     "sub": "무엇을 조사했는지는 밝히지 않았다",
+     "sub_at": 4
+    },
+    {
+     "from": 5,
+     "layout": "hero",
+     "kicker": "XTIA · 2026.10.14",
+     "bg": "thumb/bg_fx.png",
+     "lines": [
+      {
+       "at": 5,
+       "text": "200만 주 받고 떠난 CEO",
+       "tone": "white"
+      },
+      {
+       "at": 5,
+       "text": "무엇을 조사했나?",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "김박사 월드",
+     "title": "오늘의 주인공",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "XTI 에어로스페이스 (나스닥: XTIA)"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "본사 미국 텍사스 댈러스",
+       "sub": "지금은 드론을 들여와 파는 유통 회사"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "단서 3개 · 가설 3개",
+       "sub": "영상 끝: 한 달 안에 지켜볼 신호 5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "chart",
+     "title": "일곱 달 사이",
+     "points": [
+      {
+       "at": 0,
+       "value": 3.06,
+       "label_value": "$3.06",
+       "label": "03.11 52주 고점"
+      },
+      {
+       "at": 1,
+       "value": 1.57,
+       "label_value": "$1.57",
+       "label": "08.17 사임 직전"
+      },
+      {
+       "at": 1,
+       "value": 0.7237,
+       "label_value": "$0.72",
+       "label": "10.06 사상 최저"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "kicker": "질문 셋",
+     "title": "걸어 두는 질문",
+     "items": [
+      {
+       "at": 3,
+       "no": "Q1",
+       "text": "왜 조사 대상에게 옵션을?"
+      },
+      {
+       "at": 4,
+       "no": "Q2",
+       "text": "조사 시작 무렵 감사인은 왜 바뀌었나"
+      },
+      {
+       "at": 5,
+       "no": "Q3",
+       "text": "조사 끝난 다음 날 의장은 누구"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    3
+   ],
+   "slides": [
+    {
+     "layout": "timeline",
+     "title": "이름이 세 번 바뀐 법인",
+     "items": [
+      {
+       "at": 1,
+       "date": "2011~",
+       "value": "시소렉스",
+       "text": "출발"
+      },
+      {
+       "at": 1,
+       "date": "2017",
+       "value": "인픽슨",
+       "text": "실내 위치 추적"
+      },
+      {
+       "at": 1,
+       "date": "2024",
+       "value": "XTI 에어로스페이스",
+       "text": "항공기 회사와 합병",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "역분할",
+     "stats": [
+      {
+       "at": 2,
+       "big": "9번",
+       "label": "주식을 합친 횟수",
+       "tone": "down"
+      },
+      {
+       "at": 2,
+       "big": "1.5조 : 1",
+       "label": "인픽슨 시절 이후 누적",
+       "note": "계산치",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "2024.03",
+     "title": "트라이팬 600",
+     "stats": [
+      {
+       "at": 0,
+       "big": "합병",
+       "label": "비상장 XTI 에어크래프트"
+      },
+      {
+       "at": 1,
+       "big": "6인승",
+       "label": "수직 이착륙 항공기",
+       "tone": "blue"
+      },
+      {
+       "at": 2,
+       "big": "포머로이",
+       "label": "이때 CEO 취임",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "kicker": "2024.06.05",
+     "title": "메사 항공 조건부 주문",
+     "stats": [
+      {
+       "at": 3,
+       "big": "100대",
+       "label": "최대 조건부 주문",
+       "tone": "gold"
+      },
+      {
+       "at": 3,
+       "big": "+120%",
+       "label": "장중 고점",
+       "tone": "up"
+      },
+      {
+       "at": 4,
+       "big": "-43%",
+       "label": "닷새 뒤",
+       "note": "종가 +4.3%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "왜 이렇게\n**빨리 식었을까?**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "quote",
+     "text": "주가가 뛰면\n**그 위에 새 주식**",
+     "at": 0,
+     "sub": "같은 장면의 반복",
+     "sub_at": 1
+    },
+    {
+     "from": 2,
+     "layout": "chart",
+     "kicker": "2025 드론 행정명령",
+     "title": "사흘 +171%, 그리고 공모",
+     "points": [
+      {
+       "at": 2,
+       "value": 1.86,
+       "label_value": "$1.86",
+       "label": "06.06"
+      },
+      {
+       "at": 2,
+       "value": 5.05,
+       "label_value": "$5.05",
+       "label": "06.11"
+      },
+      {
+       "at": 3,
+       "value": 2.79,
+       "label_value": "$2.79",
+       "label": "06.24 공모 발표"
+      },
+      {
+       "at": 4,
+       "value": 1.68,
+       "label_value": "$1.68",
+       "label": "06.25 -39.8%"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "2025.11",
+     "title": "방향을 틀다",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$4,000만",
+       "label": "드론 너즈 인수",
+       "tone": "gold"
+      },
+      {
+       "at": 2,
+       "big": "$2,500만",
+       "label": "언유주얼 머신스 투자",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "kicker": "2026.04",
+     "title": "이름과 실제",
+     "left": {
+      "at": 3,
+      "head": "트라이팬 600",
+      "big": "중단",
+      "lines": [
+       "재개되지 않을 수도"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "매출",
+      "big": "100%",
+      "lines": [
+       "드론 유통"
+      ],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "title": "매출은 진짜였다",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$2,770만",
+       "label": "2026년 1분기 매출",
+       "tone": "up"
+      },
+      {
+       "at": 1,
+       "big": "$1.6억+",
+       "label": "5월 재확인한 올해 목표",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "2025년",
+     "left": {
+      "at": 2,
+      "head": "포머로이 총보수",
+      "big": "$937만",
+      "lines": [
+       "옵션 가치 포함"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 3,
+      "head": "회사 순손실",
+      "big": "-$6,880만",
+      "lines": [
+       "지배주주 기준"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "임원·이사 8명",
+     "stats": [
+      {
+       "at": 4,
+       "big": "7,851주",
+       "label": "실제 보통주",
+       "tone": "down"
+      },
+      {
+       "at": 5,
+       "big": "658만 주",
+       "label": "옵션",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "단서 1",
+     "title": "날짜",
+     "items": [
+      {
+       "at": 0,
+       "date": "06.25~",
+       "value": "조사 시작",
+       "text": "합의서: 6월 25일 또는 그 이후",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "date": "06.26",
+       "value": "감사인 교체",
+       "text": "시비즈 해임, KPMG 선임",
+       "tone": "down"
+      },
+      {
+       "at": 3,
+       "date": "08.11",
+       "value": "실적 연기",
+       "text": "2분기 발표 미뤄짐"
+      },
+      {
+       "at": 3,
+       "date": "08.18",
+       "value": "-15.9%",
+       "text": "사임 공개 다음 날",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "kicker": "2026.09.01",
+     "title": "나스닥 위반 통지",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-22.2%",
+       "label": "닷새 동안",
+       "tone": "down"
+      },
+      {
+       "at": 4,
+       "big": "$0.95",
+       "label": "09.02 처음 1달러 아래",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "quote",
+     "kicker": "단서 2",
+     "text": "추가 분쟁과 길어질 소송 비용을 피하기 위해\n**사임으로 처리한다**",
+     "at": 0,
+     "sub": "퇴임 합의서 맨 앞 문장",
+     "sub_at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "합의서가 정한 대가",
+     "left": {
+      "at": 2,
+      "head": "사유 있는 해고",
+      "big": "보다 많고",
+      "lines": [
+       "대가의 하한"
+      ],
+      "tone": "blue"
+     },
+     "right": {
+      "at": 2,
+      "head": "사유 없는 해고",
+      "big": "보다 적다",
+      "lines": [
+       "대가의 상한"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "남겨 둔 조항",
+     "items": [
+      {
+       "at": 3,
+       "no": "1",
+       "text": "조사로 드러날 불법 행위는 청구 포기 예외"
+      },
+      {
+       "at": 4,
+       "no": "2",
+       "text": "퇴임 공시 문구에 본인 의견 반영 권리"
+      },
+      {
+       "at": 5,
+       "no": "3",
+       "text": "문장 하나까지 조율한 이별"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "2026.10.13",
+     "title": "조사 완료",
+     "stats": [
+      {
+       "at": 1,
+       "big": "0건",
+       "label": "재무 왜곡 발견",
+       "tone": "up"
+      },
+      {
+       "at": 1,
+       "big": "10.26",
+       "label": "분기 보고서 제출 목표",
+       "tone": "blue"
+      },
+      {
+       "at": 2,
+       "big": "+6.0%",
+       "label": "그날 주가",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "kicker": "반전",
+     "title": "같은 발표문 아래쪽",
+     "left": {
+      "at": 3,
+      "head": "5월 재확인한 목표",
+      "big": "$1.6억+",
+      "lines": [
+       "2026년 매출"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 4,
+      "head": "상반기 실제",
+      "big": "약 $6,010만",
+      "lines": [
+       "전망 철회"
+      ],
+      "tone": "down"
+     },
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "조사의 대상은\n**이번에도 한 줄도 없었다**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "단서 3",
+     "title": "임시 CEO 제러미 슈나이더먼",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2014~",
+       "label": "드론 너즈 CEO",
+       "tone": "blue"
+      },
+      {
+       "at": 1,
+       "big": "판 사람",
+       "label": "드론 너즈 매도자",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "timeline",
+     "title": "다가오는 날짜",
+     "items": [
+      {
+       "at": 2,
+       "date": "11.10",
+       "value": "$443만",
+       "text": "인수 대금 어음 만기",
+       "tone": "gold"
+      },
+      {
+       "at": 3,
+       "date": "11.10",
+       "value": "매도 제한 해제",
+       "text": "판 사람들이 받은 지분",
+       "tone": "down"
+      },
+      {
+       "at": 3,
+       "date": "2027.02",
+       "value": "약 652만 주",
+       "text": "보통주로 자동 전환",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "2026.10.14",
+     "title": "새 이사회 의장",
+     "stats": [
+      {
+       "at": 0,
+       "big": "오늘",
+       "label": "조사 완료 다음 날",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "big": "앨런 에번스",
+       "label": "언유주얼 머신스 CEO",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "투자자 · 고객 · 의장",
+     "items": [
+      {
+       "at": 2,
+       "no": "1",
+       "text": "$2,500만 투자",
+       "sub": "선지급 워런트 약 1,531만 주, 보유 4.99%"
+      },
+      {
+       "at": 3,
+       "no": "2",
+       "text": "드론 너즈의 부품 고객"
+      },
+      {
+       "at": 4,
+       "no": "3",
+       "text": "그리고 이사회 의장"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "title": "부의장 조너선 온스타인",
+     "left": {
+      "at": 0,
+      "head": "전 메사 항공 CEO",
+      "big": "100대",
+      "lines": [
+       "2024년 조건부 주문"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "실제 구매",
+      "big": "0대",
+      "lines": [
+       "개발은 지금 멈춤"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "모든 조각은\n**하나의 그림이 될까?**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 1",
+     "title": "개인 비위·이해 충돌",
+     "items": [
+      {
+       "at": 1,
+       "no": "근거",
+       "text": "불법 행위만 따로 예외",
+       "sub": "조사 범위: 기타 지배구조 사안"
+      },
+      {
+       "at": 2,
+       "no": "근거",
+       "text": "트라이팬 설계 용역사 AVX 이사",
+       "sub": "포머로이, 2009년부터"
+      },
+      {
+       "at": 3,
+       "no": "약점",
+       "text": "불법 행위 발견 언급 0번"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 2",
+     "title": "방향 다툼",
+     "items": [
+      {
+       "at": 1,
+       "no": "해석",
+       "text": "항공기 → 드론 유통 쪽으로 주도권"
+      },
+      {
+       "at": 2,
+       "no": "근거",
+       "text": "매도자가 CEO, 투자사 수장이 의장"
+      },
+      {
+       "at": 3,
+       "no": "근거",
+       "text": "회사 소개에서 사라진 트라이팬"
+      },
+      {
+       "at": 4,
+       "no": "약점",
+       "text": "그럼 조사와 소송 비용은 왜?"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 3",
+     "title": "공시·내부 통제",
+     "items": [
+      {
+       "at": 1,
+       "no": "근거",
+       "text": "보고서 지연 · 감사인 교체",
+       "sub": "계속기업 의문 문구 예고"
+      },
+      {
+       "at": 2,
+       "no": "근거",
+       "text": "집단소송 주장",
+       "sub": "공개되지 않은 활동, 허술한 공시 통제"
+      },
+      {
+       "at": 3,
+       "no": "약점",
+       "text": "아직 소송 측 주장, 재무 왜곡 없음"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "kicker": "판단 질문",
+     "text": "사상 최저 $0.72\n**바닥일까, 다음 공모의 출발점일까?**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "답",
+     "title": "공개된 사실과 맞추면",
+     "left": {
+      "at": 0,
+      "head": "가장 잘 맞는 것",
+      "big": "가설 3",
+      "lines": [
+       "공시·내부 통제"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "지울 수 없는 것",
+      "big": "가설 1",
+      "lines": [
+       "근거 아직 없음"
+      ],
+      "tone": "blue"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "결론은 공개, 대상은 비공개\n**다음 장은 10월 26일 보고서**",
+     "at": 2,
+     "sub": "후속 사건 · 내부 통제 항목",
+     "sub_at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "지금 값",
+     "title": "2026.10.13 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$0.91",
+       "label": "종가",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "big": "약 $3,500만",
+       "label": "시가총액",
+       "note": "보통주 3,848만 주 기준",
+       "tone": "blue"
+      },
+      {
+       "at": 2,
+       "big": "$1.3억",
+       "label": "2분기 매출 연 환산",
+       "note": "약 $3,240만 × 4",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "그런데",
+     "left": {
+      "at": 3,
+      "head": "완전 희석 주식 수",
+      "big": "약 2.6배",
+      "lines": [
+       "워런트·옵션·전환 지분"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "1달러 아래 30거래일",
+      "big": "호가 통지",
+      "lines": [
+       "역분할 이력 9번"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "지켜볼 신호",
+     "title": "한 달 안의 신호 5",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "10.26 보고서 · 나스닥 이행 계획"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "계속기업 의문 · 내부 통제 문구"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "11.10 어음 상환 · 매도 제한 해제"
+      },
+      {
+       "at": 4,
+       "no": "4",
+       "text": "1달러 아래 30거래일 · 역분할 안건"
+      },
+      {
+       "at": 5,
+       "no": "5",
+       "text": "DJI 공급 계약 · 텍사스 소송",
+       "sub": "매입의 약 49%가 DJI"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    0,
+    1
+   ],
+   "slides": [
+    {
+     "layout": "quote",
+     "text": "영상은 왜,\n**리포트는 그다음 대응**",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "다음 미스터리 종목은 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "세 가설 가운데 어느 쪽에 거시겠습니까?"
+      },
+      {
+       "at": 4,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
