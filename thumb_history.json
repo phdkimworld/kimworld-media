@@ -560,6 +560,25 @@
    ],
    "video": "erpm9tTd5mE",
    "shorts": "RGIMqU9uNCc"
+  },
+  {
+   "ticker": "BURU",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "orange ticket+red stamp on dark brown / blue blocks merge on dark violet / teal-red falling line",
+   "variants": [
+    "premium-offering-halt",
+    "200-to-1-merge",
+    "minus98-tekne"
+   ],
+   "main": "premium-offering-halt",
+   "concepts": [
+    "어두운 갈색 배경 '공모가 +30%' 표와 빨간 '거래 정지' 도장, '비싸게 판 새 주식 이틀 뒤 장외로'",
+    "보라 배경 파란 블록 18개가 화살표로 하나로, '200주를 1주로 합쳤는데 또 $1 아래'",
+    "청록 배경 빨간 하락선 $41.92→$0.99, '아홉 달 사이 -98%, 방산 회사 인수는 10월 15일?'"
+   ],
+   "video": "ZPNqphDhfLc",
+   "shorts": "DCnu6ZhuGM8"
   }
  ]
 }
