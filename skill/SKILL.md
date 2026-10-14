@@ -1206,6 +1206,7 @@ spec.json 예시:
 - **유튜브 쇼츠**: 제목·설명·고정댓글은 롱폼과 같고, 설명과 고정댓글 모두 리포트 링크 바로 다음 줄에 `🎬 10분 풀영상: https://www.youtube.com/watch?v=<롱폼 ID>`를 넣는다(운영자 지시). 설명 끝 해시태그에 `#Shorts`, 챕터는 넣지 않는다. meta에 `"utm_content":"shorts"`(설명 `shorts`, 고정댓글 `shorts_pinned`)
 - **인스타 릴스**: 사이트 저장소 `static/social/<slug>/`에 `<T>_shorts.mp4`·`cover.jpg`를 넣고 `social/queue/<slug>-reels.json`(`"channels":["instagram"]`, `media:{type:"reels",path,cover}`, `publish_at` 현재 시각)을 함께 푸시한다. 미디어 주소는 배포가 끝나야 열리므로 워크플로가 최대 6시간 기다렸다가 게시한다. 인스타 캡션은 링크가 눌리지 않으므로 URL 없이 `drkimworld.com 에서 '<회사 이름>'을 검색해 보세요`로 안내한다(운영자 지시). 첫 줄 핵심 질문, 사실 4~6줄, 면책 한 줄, 해시태그 5개
 - 게시 후 `social/posted/<slug>-reels.json`의 `results.instagram.permalink`를 전달에 적는다
+- 유튜브 쇼츠는 API로 썸네일을 바꿀 수 없을 때가 있다(LQDA: 403 forbidden). 업로드 결과의 thumbnail 오류는 무시해도 되며 영상·첫 댓글은 정상 처리된다
 
 ## 5. 공통 금지 사항
 
