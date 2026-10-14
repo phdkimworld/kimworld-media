@@ -1,38 +1,454 @@
-{"runs":[
-{"t": "tem", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
-{"t": "pltr", "date": "2026.10", "layout": "classic", "palette": "navy-cyan"},
-{"t": "gpus", "date": "2026.10.10", "layout": "classic", "palette": "navy-gold"},
-{"t": "serv", "date": "2026.10.10", "layout": "split", "palette": "amber-teal", "variants": ["split", "bignum", "versus"]},
-{"t": "amc", "date": "2026.10.11", "layout": "bignum", "palette": "crimson-black", "variants": ["bignum", "versus", "split"]},
-{"t": "dnut", "date": "2026.10.11", "layout": "versus", "palette": "violet-pink", "variants": ["versus", "bignum", "split"]},
-{"t": "xndu", "date": "2026.10.11", "layout": "split", "palette": "ice-steel", "variants": ["split", "classic", "bignum"]},
-{"t": "soun", "date": "2026.10.11", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
-{"t": "glnd", "date": "2026.10.11", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]},
-{"t": "roc", "date": "2026.10.11", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]},
-{"t": "arqq", "date": "2026.10.11", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"]},
-{"t": "rdw", "date": "2026.10.11", "layout": "center", "palette": "lime-purple", "variants": ["scene", "number", "angle"]},
-{"t": "asst", "date": "2026.10.11", "layout": "center", "palette": "amber-teal", "variants": ["scene", "number", "angle"]},
-{"t": "inj", "date": "2026.10.12", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"]},
-{"t": "laes", "date": "2026.10.12", "layout": "center", "palette": "magenta-cyan", "variants": ["scene", "number", "angle"]},
-{"t": "ionq", "date": "2026.10.12", "layout": "center", "palette": "emerald-violet", "variants": ["scene", "number", "angle"]},
-{"t": "leu", "date": "2026.10.12", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"]},
-{"t": "oklo", "date": "2026.10.12", "layout": "center", "palette": "cobalt-orange", "variants": ["scene", "number", "angle"]},
-{"t": "ses", "date": "2026.10.12", "layout": "center", "palette": "lime-indigo", "variants": ["scene", "number", "angle"]},
-{"t": "mp", "date": "2026.10.12", "layout": "center", "palette": "rose-teal", "variants": ["scene", "number", "angle"]},
-{"t": "poet", "date": "2026.10.12", "layout": "center", "palette": "sky-amber", "variants": ["scene", "number", "angle"]},
-{"t": "dna", "date": "2026.10.12", "layout": "center", "palette": "mint-coral", "variants": ["scene", "number", "angle"]},
-{"t": "nvax", "date": "2026.10.12", "layout": "center", "palette": "plum-yellow", "variants": ["scene", "number", "angle"]},
-{"t": "dvlt", "date": "2026.10.12", "layout": "center", "palette": "steel-red", "variants": ["scene", "number", "angle"]},
-{"t": "sdgr", "date": "2026.10.12", "layout": "center", "palette": "cyan-violet", "variants": ["scene", "number", "angle"]},
-{"t": "cbrs", "date": "2026.10.12", "layout": "center", "palette": "lava-ice", "variants": ["scene", "number", "angle"]},
-{"t": "btq", "date": "2026.10.12", "layout": "center", "palette": "emerald-magenta", "variants": ["scene", "number", "angle"]},
-{"t": "rxrx", "date": "2026.10.13", "layout": "center", "palette": "orange-electricblue", "variants": ["scene", "number", "angle"], "main": "angle"},
-{"t": "smr", "date": "2026.10.13", "layout": "center", "palette": "crimson-gold", "variants": ["scene", "number", "angle"], "main": "number"},
-{"t": "stx", "date": "2026.10.13", "layout": "custom", "palette": "violet-orange", "variants": ["spike-vs-vault", "founder-door", "scale-korea-vs-abroad"], "main": "founder-door", "concepts": ["왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고", "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단", "가운데 저울(업비트 vs 해외) + 아래 띠 제목"], "video": "DtQcp1TJeTU"},
-{"t": "plug", "date": "2026.10.13", "layout": "custom", "palette": "navy-gold-cyan", "variants": ["linked-arrows", "summit-ticket", "open-vault"], "main": "summit-ticket", "concepts": ["수소 탱크 + 사슬로 묶인 주가·손실 화살표, 오른쪽 위 큰 글자", "꼭대기 산 그래프 위 $7.75 황금 티켓, 아래 띠 질문", "왼쪽 큰 글자 + 오른쪽 열린 금고에서 쏟아지는 주권"], "video": "avygNvQ96OE"},
-{"t": "lcid", "date": "2026.10.13", "layout": "custom", "palette": "navy-ice", "variants": ["warehouse-rows", "inventory-vs-cap", "minus57-day"], "main": "warehouse-rows", "concepts": ["조명 아래 끝없이 늘어선 차 창고 + 왼쪽 위 '창고 > 회사'", "팔지 못한 차가 회사보다 비싸다? 재고·시총 비교", "-57% 하루에 무슨 일이? 7월 14일 장중"], "video": "6EAcG_I4NeI"},
-{"t": "agnc", "date": "2026.10.13", "layout": "custom", "palette": "green-gold", "variants": ["melting-premium-house", "converging-lines-paper", "summit-sale-stamp"], "main": "melting-premium-house", "concepts": ["초록 장부 집 위 금색 웃돈 지붕이 지폐로 흩어짐, 왼쪽 큰 '웃돈 증발'", "밝은 종이 위 주가 곡선과 장부 점선이 수렴, 1.37배→1.01배", "어두운 산 꼭대기 깃발 + '70만 주 매도' 도장, '꼭대기 이틀 뒤 회장은?'"], "video": "I3sjmKN_JeY"},
-{"t": "cifr", "date": "2026.10.13", "layout": "custom", "palette": "amber-charcoal / teal / paper-blue", "variants": ["contract-stack-vs-price", "crane-cost-overrun", "google-key-baseline"], "main": "google-key-baseline", "concepts": ["금색 계약서 더미를 가르는 빨간 하락선, 왼쪽 '계약 +46% / 주가 -47%'", "청록 데이터센터와 크레인, '공사비 +37%' 누가 내나?", "밝은 종이 위 $17.78 기준선 아래로 떨어진 주가선과 열쇠, '주가가 내릴수록 구글에 더 준다?'"], "video": "Ud3XTOTi5ao"},
-{"t": "ntla", "date": "2026.10.13", "layout": "custom", "palette": "magenta-violet / paper-red / green-red split", "variants": ["dna-scissors-short-third", "calendar-pdufa", "split-same-numbers"], "main": "dna-scissors-short-third", "concepts": ["보라 배경 DNA 이중나선과 가위, 왼쪽 '3상 성공했는데 공매도 1/3'", "밝은 배경 2027.3.10 달력, '3상 성공 뒤 공매도 늘었다'", "녹·적 좌우 분할 +23% vs -4.3%, '같은 숫자 다른 반응?'"], "video": "K35EdjRdO68"},
-{"t": "crml", "date": "2026.10.14", "layout": "custom", "palette": "arctic-blue-red / paper-stamp / dark-amber", "variants": ["greenland-ice-price", "denied-stamp", "sell-tags-peaks"], "main": "greenland-ice-price", "concepts": ["그린란드 빙산 위 빨간 주가선, 왼쪽 '1년 전 오늘 $29.97 → $6.54'", "문서 위 '부인됨' 도장, '미국 정부 지분? 엿새 +276%'", "어두운 배경 꼭대기마다 SELL 꼬리표, '오를 때마다 누가 팔았나'"], "video": "WLbHGeT3SxA"}
-]}
+{
+ "runs": [
+  {
+   "t": "tem",
+   "date": "2026.10",
+   "layout": "classic",
+   "palette": "navy-cyan"
+  },
+  {
+   "t": "pltr",
+   "date": "2026.10",
+   "layout": "classic",
+   "palette": "navy-cyan"
+  },
+  {
+   "t": "gpus",
+   "date": "2026.10.10",
+   "layout": "classic",
+   "palette": "navy-gold"
+  },
+  {
+   "t": "serv",
+   "date": "2026.10.10",
+   "layout": "split",
+   "palette": "amber-teal",
+   "variants": [
+    "split",
+    "bignum",
+    "versus"
+   ]
+  },
+  {
+   "t": "amc",
+   "date": "2026.10.11",
+   "layout": "bignum",
+   "palette": "crimson-black",
+   "variants": [
+    "bignum",
+    "versus",
+    "split"
+   ]
+  },
+  {
+   "t": "dnut",
+   "date": "2026.10.11",
+   "layout": "versus",
+   "palette": "violet-pink",
+   "variants": [
+    "versus",
+    "bignum",
+    "split"
+   ]
+  },
+  {
+   "t": "xndu",
+   "date": "2026.10.11",
+   "layout": "split",
+   "palette": "ice-steel",
+   "variants": [
+    "split",
+    "classic",
+    "bignum"
+   ]
+  },
+  {
+   "t": "soun",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "orange-electricblue",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "glnd",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "emerald-violet",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "roc",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "magenta-cyan",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "arqq",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "crimson-gold",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "rdw",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "lime-purple",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "asst",
+   "date": "2026.10.11",
+   "layout": "center",
+   "palette": "amber-teal",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "inj",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "orange-electricblue",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "laes",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "magenta-cyan",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "ionq",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "emerald-violet",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "leu",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "crimson-gold",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "oklo",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "cobalt-orange",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "ses",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "lime-indigo",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "mp",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "rose-teal",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "poet",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "sky-amber",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "dna",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "mint-coral",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "nvax",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "plum-yellow",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "dvlt",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "steel-red",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "sdgr",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "cyan-violet",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "cbrs",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "lava-ice",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "btq",
+   "date": "2026.10.12",
+   "layout": "center",
+   "palette": "emerald-magenta",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ]
+  },
+  {
+   "t": "rxrx",
+   "date": "2026.10.13",
+   "layout": "center",
+   "palette": "orange-electricblue",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ],
+   "main": "angle"
+  },
+  {
+   "t": "smr",
+   "date": "2026.10.13",
+   "layout": "center",
+   "palette": "crimson-gold",
+   "variants": [
+    "scene",
+    "number",
+    "angle"
+   ],
+   "main": "number"
+  },
+  {
+   "t": "stx",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "violet-orange",
+   "variants": [
+    "spike-vs-vault",
+    "founder-door",
+    "scale-korea-vs-abroad"
+   ],
+   "main": "founder-door",
+   "concepts": [
+    "왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고",
+    "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단",
+    "가운데 저울(업비트 vs 해외) + 아래 띠 제목"
+   ],
+   "video": "DtQcp1TJeTU"
+  },
+  {
+   "t": "plug",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "navy-gold-cyan",
+   "variants": [
+    "linked-arrows",
+    "summit-ticket",
+    "open-vault"
+   ],
+   "main": "summit-ticket",
+   "concepts": [
+    "수소 탱크 + 사슬로 묶인 주가·손실 화살표, 오른쪽 위 큰 글자",
+    "꼭대기 산 그래프 위 $7.75 황금 티켓, 아래 띠 질문",
+    "왼쪽 큰 글자 + 오른쪽 열린 금고에서 쏟아지는 주권"
+   ],
+   "video": "avygNvQ96OE"
+  },
+  {
+   "t": "lcid",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "navy-ice",
+   "variants": [
+    "warehouse-rows",
+    "inventory-vs-cap",
+    "minus57-day"
+   ],
+   "main": "warehouse-rows",
+   "concepts": [
+    "조명 아래 끝없이 늘어선 차 창고 + 왼쪽 위 '창고 > 회사'",
+    "팔지 못한 차가 회사보다 비싸다? 재고·시총 비교",
+    "-57% 하루에 무슨 일이? 7월 14일 장중"
+   ],
+   "video": "6EAcG_I4NeI"
+  },
+  {
+   "t": "agnc",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "green-gold",
+   "variants": [
+    "melting-premium-house",
+    "converging-lines-paper",
+    "summit-sale-stamp"
+   ],
+   "main": "melting-premium-house",
+   "concepts": [
+    "초록 장부 집 위 금색 웃돈 지붕이 지폐로 흩어짐, 왼쪽 큰 '웃돈 증발'",
+    "밝은 종이 위 주가 곡선과 장부 점선이 수렴, 1.37배→1.01배",
+    "어두운 산 꼭대기 깃발 + '70만 주 매도' 도장, '꼭대기 이틀 뒤 회장은?'"
+   ],
+   "video": "I3sjmKN_JeY"
+  },
+  {
+   "t": "cifr",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "amber-charcoal / teal / paper-blue",
+   "variants": [
+    "contract-stack-vs-price",
+    "crane-cost-overrun",
+    "google-key-baseline"
+   ],
+   "main": "google-key-baseline",
+   "concepts": [
+    "금색 계약서 더미를 가르는 빨간 하락선, 왼쪽 '계약 +46% / 주가 -47%'",
+    "청록 데이터센터와 크레인, '공사비 +37%' 누가 내나?",
+    "밝은 종이 위 $17.78 기준선 아래로 떨어진 주가선과 열쇠, '주가가 내릴수록 구글에 더 준다?'"
+   ],
+   "video": "Ud3XTOTi5ao"
+  },
+  {
+   "t": "ntla",
+   "date": "2026.10.13",
+   "layout": "custom",
+   "palette": "magenta-violet / paper-red / green-red split",
+   "variants": [
+    "dna-scissors-short-third",
+    "calendar-pdufa",
+    "split-same-numbers"
+   ],
+   "main": "dna-scissors-short-third",
+   "concepts": [
+    "보라 배경 DNA 이중나선과 가위, 왼쪽 '3상 성공했는데 공매도 1/3'",
+    "밝은 배경 2027.3.10 달력, '3상 성공 뒤 공매도 늘었다'",
+    "녹·적 좌우 분할 +23% vs -4.3%, '같은 숫자 다른 반응?'"
+   ],
+   "video": "K35EdjRdO68"
+  },
+  {
+   "t": "crml",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "arctic-blue-red / paper-stamp / dark-amber",
+   "variants": [
+    "greenland-ice-price",
+    "denied-stamp",
+    "sell-tags-peaks"
+   ],
+   "main": "greenland-ice-price",
+   "concepts": [
+    "그린란드 빙산 위 빨간 주가선, 왼쪽 '1년 전 오늘 $29.97 → $6.54'",
+    "문서 위 '부인됨' 도장, '미국 정부 지분? 엿새 +276%'",
+    "어두운 배경 꼭대기마다 SELL 꼬리표, '오를 때마다 누가 팔았나'"
+   ],
+   "video": "WLbHGeT3SxA"
+  },
+  {
+   "t": "cntn",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "vault-green-gold / paper-red-stamp / dark-amber seesaw",
+   "variants": [
+    "vault-coins-buyback-zero",
+    "buyback-doc-zero-stamp",
+    "seesaw-pipe-price"
+   ],
+   "main": "seesaw-pipe-price",
+   "concepts": [
+    "녹색 금고 안 금색 코인 더미, '코인보다 싼 주식 회사는 왜 안 샀나?' + '자사주 매입 0주' 배지",
+    "밝은 종이 문서 '$50,000,000' 위 빨간 '0주' 도장, '5천만 달러 사겠다더니 한 주도 안 샀다?'",
+    "어두운 배경 코인과 주식 시소, 'DRW·ARK가 산 가격 $3.075 → $2.02 · 코인 +5.6% 주식 -45%'"
+   ],
+   "video": "zA_pYmyi-4M"
+  }
+ ]
+}

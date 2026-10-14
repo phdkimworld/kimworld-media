@@ -1,0 +1,995 @@
+{
+ "ticker": "CNTN",
+ "name": "캔톤 스트래티직 홀딩스",
+ "midroll": "../kit/cntn_youtube_midroll_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "미스터리",
+     "title": "2025년 11월",
+     "stats": [
+      {
+       "at": 0,
+       "big": "$5.45억",
+       "label": "월가 큰손들이 작은 신약 회사를 코인 금고로",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "그 뒤 (2025.11.10 → 2026.10.13)",
+     "left": {
+      "at": 1,
+      "head": "캔톤 코인 가격",
+      "big": "+5.6%",
+      "lines": [
+       "$0.118 → $0.125"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "주가",
+      "big": "-45%",
+      "lines": [
+       "$3.67 → $2.02"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "어제 종가",
+     "left": {
+      "at": 2,
+      "head": "큰손 매입가",
+      "big": "$3.075",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "10.13 종가",
+      "big": "$2.02",
+      "lines": [
+       "-34%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "주가 < 주당 코인 + 현금\n**$5,000만 자사주 매입 승인 → 0주**",
+     "at": 3
+    },
+    {
+     "from": 5,
+     "layout": "hero",
+     "kicker": "CNTN · 2026.10.14",
+     "bg": "thumb/bg_fx.png",
+     "lines": [
+      {
+       "at": 5,
+       "text": "코인보다 싸진 주식",
+       "tone": "white"
+      },
+      {
+       "at": 5,
+       "text": "회사는 왜 안 샀나?",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "김박사 월드",
+     "title": "오늘의 주인공",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "캔톤 스트래티직 홀딩스 (나스닥: CNTN)",
+       "sub": "옛 이름 타림뮨 (THAR) · 신약 개발 회사"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "지금은 캔톤 코인(CC) 금고 회사",
+       "sub": "디지털 자산 트레저리"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "캔톤 네트워크",
+       "sub": "DTCC와 대형 금융사들이 시험해 온 블록체인"
+      },
+      {
+       "at": 4,
+       "no": "4",
+       "text": "영상 끝: 주가가 코인을 못 따라간 이유 3",
+       "sub": "+ 다음 고비 전 신호 5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "질문 셋",
+     "title": "걸어 두는 질문",
+     "items": [
+      {
+       "at": 1,
+       "no": "Q1",
+       "text": "$5.45억 가운데 실제 현금은 얼마?"
+      },
+      {
+       "at": 2,
+       "no": "Q2",
+       "text": "코인보다 싸진 뒤, 샀나 팔았나?"
+      },
+      {
+       "at": 3,
+       "no": "Q3",
+       "text": "경영진은 자기 회사 주식을 몇 주?"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "코인이 버티는 동안\n**왜 주가만 무너졌나**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "과거",
+     "title": "2022.01 상장",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$4.00",
+       "label": "힐스트림 바이오파마 (HILS) 공모가",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "두 번의 주식 병합",
+     "left": {
+      "at": 2,
+      "head": "2023.11",
+      "big": "25 → 1",
+      "lines": [],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "2024.05",
+      "big": "15 → 1",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "바닥",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$1.05",
+       "label": "2025.04.09 · 상장 이후 최저 종가",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "두 번의 병합, 신약에서 코인으로\n**고정 댓글의 무료 리포트**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "판이 뒤집힌 날",
+     "title": "2025.11.03 장 전",
+     "stats": [
+      {
+       "at": 0,
+       "big": "$3.075",
+       "label": "주당 가격 · 5억 4천만 달러+ 조달 · 캔톤 코인 매입",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "timeline",
+     "title": "그날 주가",
+     "items": [
+      {
+       "at": 2,
+       "date": "전날 종가",
+       "value": "$2.95",
+       "text": "10.31",
+       "tone": "white"
+      },
+      {
+       "at": 2,
+       "date": "시가",
+       "value": "$6.76",
+       "text": "+129%",
+       "tone": "up"
+      },
+      {
+       "at": 3,
+       "date": "종가",
+       "value": "$3.20",
+       "text": "+8.5%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "거래량 4,671만 주\n**큰손 매입가 근처로 되돌아왔다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "단서 1",
+     "title": "돈을 낸 사람들",
+     "items": [
+      {
+       "at": 1,
+       "no": "주도",
+       "text": "DRW · 리버티 시티 벤처스"
+      },
+      {
+       "at": 1,
+       "no": "참여",
+       "text": "아크 인베스트 · 크라켄 · 폴리체인 · 캔톤 재단"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "$5.45억의 모양",
+     "left": {
+      "at": 2,
+      "head": "현금",
+      "big": "$9,940만",
+      "lines": [],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 3,
+      "head": "코인 현물",
+      "big": "$4억 4,620만",
+      "lines": [
+       "넣은 코인으로 주식을 받음"
+      ],
+      "tone": "blue"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "단서 2",
+     "title": "누가 움직이나",
+     "items": [
+      {
+       "at": 1,
+       "no": "CEO",
+       "text": "마크 웬들랜드",
+       "sub": "DRW 최고운영책임자 출신"
+      },
+      {
+       "at": 2,
+       "no": "자문",
+       "text": "DRW 계열 전략 자문사",
+       "sub": "전체 주식 5%를 주당 $0.001에 살 권리"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "자문사의 권리",
+     "items": [
+      {
+       "at": 3,
+       "no": "1",
+       "text": "이사 보수 동의권"
+      },
+      {
+       "at": 3,
+       "no": "2",
+       "text": "CEO 교체 때 협의"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "회사 이름 변경 요구권"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "2026년 6월 주총 안내서",
+     "stats": [
+      {
+       "at": 4,
+       "big": "0주",
+       "label": "CEO · 사장 · CFO · COO 보통주 보유",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "단서 3",
+     "title": "코인을 어디서 샀나",
+     "stats": [
+      {
+       "at": 1,
+       "big": "5% 이상 주주 쪽",
+       "label": "그 주주가 지배하는 유동성 공급 회사 · 장외 거래",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "거래액",
+     "left": {
+      "at": 2,
+      "head": "2025년",
+      "big": "$7,760만",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "2026년 상반기",
+      "big": "$4,920만",
+      "lines": [],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "코인 1개 값",
+     "left": {
+      "at": 3,
+      "head": "평균 매입 단가",
+      "big": "$0.157",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "10.13 가격",
+      "big": "$0.125",
+      "lines": [
+       "-20%"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "꼭대기",
+     "title": "2026년 1~2월",
+     "items": [
+      {
+       "at": 1,
+       "date": "01.26",
+       "value": "승인",
+       "text": "슈퍼 밸리데이터 (핵심 운영자)",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "date": "닷새",
+       "value": "+65%",
+       "text": "주가",
+       "tone": "up"
+      },
+      {
+       "at": 2,
+       "date": "02.02",
+       "value": "$5.48",
+       "text": "전환 이후 최고 종가 · 코인도 $0.188 정점",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "그 뒤",
+     "left": {
+      "at": 3,
+      "head": "코인",
+      "big": "-33%",
+      "lines": [],
+      "tone": "down"
+     },
+     "right": {
+      "at": 3,
+      "head": "주가",
+      "big": "-63%",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "증자·승인·코인 급등락 뒤 며칠, 얼마\n**고정 댓글의 리포트 카드**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "높을 때 판 주식",
+     "title": "2026년",
+     "items": [
+      {
+       "at": 1,
+       "date": "01.20",
+       "value": "$5,500만",
+       "text": "주당 $2.92 · 한 기관",
+       "tone": "gold"
+      },
+      {
+       "at": 2,
+       "date": "03.03",
+       "value": "$3억",
+       "text": "시장 판매 한도 · 그날 -10.1%",
+       "tone": "down"
+      },
+      {
+       "at": 3,
+       "date": "상반기",
+       "value": "911만 주",
+       "text": "$3,979만 시장 판매",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "방향 전환?",
+     "title": "2026.06.16",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$5,000만",
+       "label": "자기 주식 매입 승인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "그 뒤 주가",
+     "left": {
+      "at": 2,
+      "head": "06.24 하루",
+      "big": "-17.5%",
+      "lines": [],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "06.18부터 닷새",
+      "big": "-24%",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "2분기 보고서",
+     "left": {
+      "at": 3,
+      "head": "자사주 매입",
+      "big": "0주",
+      "lines": [],
+      "tone": "down"
+     },
+     "right": {
+      "at": 3,
+      "head": "새 주식 판매",
+      "big": "약 119만 주",
+      "lines": [],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "stat",
+     "kicker": "신약 사업 정리",
+     "title": "2026.07.17",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$350만 어음",
+       "label": "예전 이사들 관련 회사에 신약 자회사 매각 · 무담보",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "그 예전 이사 한 명",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 10만 주",
+       "label": "2026년 5월 · 주당 $3.40 안팎 매도",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "바닥",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$1.85",
+       "label": "07.30 · 전환 이후 최저 종가",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "같은 증자, 거꾸로",
+     "title": "2026년",
+     "left": {
+      "at": 1,
+      "head": "01.20 $5,500만 증자",
+      "big": "0.0%",
+      "lines": [
+       "전날 종가와 같은 가격",
+       "엿새 뒤 승인 → 고점으로"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "03.03 $3억 판매 한도",
+      "big": "-10.1%",
+      "lines": [
+       "닷새 -13.4%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "사건별 날짜·반응 숫자\n**고정 댓글의 리포트 카드**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "compare",
+     "kicker": "지금 값",
+     "title": "가진 것",
+     "left": {
+      "at": 1,
+      "head": "캔톤 코인 37.14억 개",
+      "big": "≈$4.65억",
+      "lines": [
+       "10.13 가격 기준"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "+ 현금 (6.30)",
+      "big": "$3,720만",
+      "lines": [
+       "합계 ≈$5.02억"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "시장이 매긴 값",
+     "left": {
+      "at": 3,
+      "head": "시가총액",
+      "big": "≈$4.41억",
+      "lines": [
+       "미리 낸 주식 권리 포함"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "가진 것 대비",
+      "big": "≈88%",
+      "lines": [],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "2분기",
+     "left": {
+      "at": 4,
+      "head": "첫 매출",
+      "big": "$150만",
+      "lines": [],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "순손실",
+      "big": "-$1,930만",
+      "lines": [],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "timeline",
+     "kicker": "갈림길",
+     "title": "다가오는 일정",
+     "items": [
+      {
+       "at": 1,
+       "date": "10.21",
+       "value": "설명회",
+       "text": "CEO 공개 웨비나 11:00 ET",
+       "tone": "gold"
+      },
+      {
+       "at": 2,
+       "date": "10월 말",
+       "value": "DTCC",
+       "text": "토큰화 서비스 출시 (회사 발표)",
+       "tone": "gold"
+      },
+      {
+       "at": 2,
+       "date": "11월 중순",
+       "value": "3분기 보고서",
+       "text": "예상",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "chart",
+     "title": "공매도 잔고",
+     "points": [
+      {
+       "at": 3,
+       "value": 3.16,
+       "label_value": "316만 주",
+       "label": "05.29"
+      },
+      {
+       "at": 3,
+       "value": 7.82,
+       "label_value": "782만 주",
+       "label": "09.30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 1",
+     "title": "풀린 물량",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "큰손 주식, 세 번에 나눠 매도 가능",
+       "sub": "마지막 차례: 계약상 2026년 6월 중순"
+      },
+      {
+       "at": 2,
+       "no": "+",
+       "text": "6월 말 급락이 그 직후"
+      },
+      {
+       "at": 3,
+       "no": "−",
+       "text": "약점: 대량 매도 공시는 아직 없음",
+       "sub": "아크: 지분율 ↓, 주식 수는 ↑"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 2",
+     "title": "주식을 찍는 기계",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "주가 > 코인 값: 새 주식 팔아 코인 매입"
+      },
+      {
+       "at": 2,
+       "no": "−",
+       "text": "주가 < 코인 값: 팔수록 기존 주주 몫 감소",
+       "sub": "자사주를 사려면 현금 필요"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "$2.02는\n**바닥일까, 중간일까?**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "국면 판단 신호 15개\n**고정 댓글의 무료 리포트**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "가설 3",
+     "title": "숨은 부채와 지배 구조",
+     "items": [
+      {
+       "at": 1,
+       "no": "+",
+       "text": "이연 법인세 부채 $1.07억",
+       "sub": "빼면 할인 거의 사라짐"
+      },
+      {
+       "at": 2,
+       "no": "+",
+       "text": "경영진 0주 · 자문사 큰 권한 · 대주주 쪽 코인 매입"
+      },
+      {
+       "at": 3,
+       "no": "−",
+       "text": "약점: 네트워크는 성장 중",
+       "sub": "3분기 새 슈퍼 밸리데이터 6곳 · 런던증권거래소 그룹·신한자산운용 등"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "답",
+     "title": "걸어 둔 질문",
+     "items": [
+      {
+       "at": 1,
+       "no": "A1",
+       "text": "현금 $9,940만 · 나머지는 코인"
+      },
+      {
+       "at": 2,
+       "no": "A2",
+       "text": "2분기 자사주 0주 · 새 주식 약 119만 주 판매"
+      },
+      {
+       "at": 3,
+       "no": "A3",
+       "text": "경영진 네 명 보통주 0주"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "코인을 쌓은 회사이면서\n**그 코인을 넣은 사람들이 이끄는 회사**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "시나리오",
+     "title": "세 갈래 길",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "실제 자사주 매입 + 코인 상승 · 할인 해소"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "코인 따라 움직이되 할인 유지"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "코인 하락 + 더 낮은 증자 · 할인 확대"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "list",
+     "kicker": "다음 고비",
+     "title": "지켜볼 신호 5",
+     "items": [
+      {
+       "at": 1,
+       "no": "1",
+       "text": "10.21 설명회 · 자사주 매입 언급"
+      },
+      {
+       "at": 2,
+       "no": "2",
+       "text": "3분기 자사주 매입 실적 · 새 주식 판매량"
+      },
+      {
+       "at": 3,
+       "no": "3",
+       "text": "9월 말 코인 보유량 · 평가 손실"
+      },
+      {
+       "at": 4,
+       "no": "4",
+       "text": "공매도 잔고 감소 여부"
+      },
+      {
+       "at": 5,
+       "no": "5",
+       "text": "DTCC 토큰화가 캔톤 위에서 거래를 늘리는지"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    0,
+    1
+   ],
+   "slides": [
+    {
+     "layout": "quote",
+     "text": "패턴 기반 전략과 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "관심 종목을 댓글로 제보해 주세요"
+      },
+      {
+       "at": 2,
+       "text": "여러분은 세 갈래 길 중 어느 쪽?"
+      },
+      {
+       "at": 3,
+       "text": "시청해 주셔서 감사합니다"
+      },
+      {
+       "at": 4,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
