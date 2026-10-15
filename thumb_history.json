@@ -807,6 +807,22 @@
    ],
    "video": "mg211yX6to0",
    "shorts": "DGmeU1dhcm4"
+  },
+  {
+   "t": "iova",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "amber-violet-sky on deep indigo / cells bokeh / amber CEO-buy card",
+   "variants": [
+    "number",
+    "person",
+    "dilution"
+   ],
+   "concepts": [
+    "보라 카드 매출 전망 막대(첫 약속 4.75억 vs 지금 4.2억), '약속보다 낮은 전망 주가 8배?'",
+    "금색 카드 '2025.05.14 2.5만 주 1.69달러 / 2026.10.14 14.21', '임시 대표가 산 값 1.69달러' (주 썸네일)",
+    "분홍 카드 '회사가 판 값 3.07 / 지금 14.21', '싸게 판 1억 주 평균 3달러'"
+   ]
   }
  ]
 }
