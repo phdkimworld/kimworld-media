@@ -13,5 +13,5 @@
 | 5 | KITE 카이트 | 코인 (업비트, 크라켄 없음) | 68 | 완료 (e1VPt629QP0 · 쇼츠 uHec6bEqmZw) |
 | 6 | PSQL 파스칼 | 미국 주식 | 67 | 완료 (LVl6NzS9c0k · 쇼츠 pv2wu9_Kk-c) |
 | 7 | KOD 코디악 사이언스 | 미국 주식 | 66 | 완료 (n4NOozuL6gg · 쇼츠 YS0M2E7Rf0s) |
-| 8 | STRK 스타크넷 | 코인 (크라켄, 업비트 미상장) | 66 | 제작 중 |
-| 9 | AAVE 에이브 | 코인 (업비트) | 65 | 대기 |
+| 8 | STRK 스타크넷 | 코인 (크라켄, 업비트 미상장) | 66 | 완료 (leqQaVYahEg · 쇼츠 5TXUur4wkb8) |
+| 9 | AAVE 에이브 | 코인 (업비트) | 65 | 완료 (IpV00GDBvAw · 쇼츠 5e8HlDJCjH0) |

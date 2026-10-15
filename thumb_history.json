@@ -750,6 +750,44 @@
    ],
    "video": "n4NOozuL6gg",
    "shorts": "YS0M2E7Rf0s"
+  },
+  {
+   "ticker": "STRK",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "teal-red-gold on dark plum / L2 quote box with +150/-37 / orange hack card / gold unlock card",
+   "variants": [
+    "leave-150-then-37",
+    "hacked-then-up",
+    "staking10x-price-83"
+   ],
+   "main": "leave-150-then-37",
+   "concepts": [
+    "보라 테두리 '이더리움 L2 \"떠나겠다\"' 아래 +150%(나흘)·-37%(사흘), '떠나겠다는 말에 나흘 150% 그리고 -37%'",
+    "주황 테두리 '해킹 다음 날 +53% 2년 중 최대 상승', '털렸는데 올랐다? 이상한 코인'",
+    "금색 테두리 '매달 15일 1.27억 개 물량 해제 2027년 3월까지', '스테이킹 10배 가격 -83% 범인은 물량?'"
+   ],
+   "video": "leqQaVYahEg",
+   "shorts": "5TXUur4wkb8"
+  },
+  {
+   "ticker": "AAVE",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "teal-red-gold on dark plum / revenue vs price bars / red bad-debt card / gold buyback card",
+   "variants": [
+    "revenue-quarter-price-2.7x",
+    "not-hacked-biggest-loss",
+    "bought-high-stopped-low"
+   ],
+   "main": "revenue-quarter-price-2.7x",
+   "concepts": [
+    "월 수익 막대($1,533만→$394만, 빨강)와 가격 막대(9.2만→24.9만, 청록), '수익 1/4 가격 2.7배 디파이 1위의 역설'",
+    "빨간 테두리 '남의 해킹 부실채권 맡긴 돈 -80억$ 사흘 만에', '뚫리지 않았는데 최대 피해 그리고 2.7배'",
+    "금색 테두리 '되사기 평균가 $205 / 바닥 직전 중단 2026.04', '비싸게 사고 쌀 때 멈춘 되사기'"
+   ],
+   "video": "IpV00GDBvAw",
+   "shorts": "5e8HlDJCjH0"
   }
  ]
 }
