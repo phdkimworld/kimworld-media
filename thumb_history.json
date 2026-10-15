@@ -693,6 +693,25 @@
    ],
    "video": "e1VPt629QP0",
    "shorts": "uHec6bEqmZw"
+  },
+  {
+   "ticker": "PSQL",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "cyan-teal-red on navy / two bars / gold floor card",
+   "variants": [
+    "day1-2x-minus70",
+    "90pct-left-yet-2x",
+    "hidden-floor-7.80"
+   ],
+   "main": "day1-2x-minus70",
+   "concepts": [
+    "청록 막대 $19.11(첫날)과 빨간 막대 $5.82(10월 14일), '상장 첫날 2배 한 달 반 뒤 -70%'",
+    "하늘색 테두리 '스팩 주주 90.6% 돈 돌려받고 떠남', '열에 아홉이 떠났는데 첫날 2배?'",
+    "금색 테두리 '전환 가격 하한 $7.80' 점선 아래 '$5.82', '숨은 선 $7.80 못 넘는 이유'"
+   ],
+   "video": "LVl6NzS9c0k",
+   "shorts": "pv2wu9_Kk-c"
   }
  ]
 }
