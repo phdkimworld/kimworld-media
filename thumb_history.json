@@ -579,6 +579,25 @@
    ],
    "video": "ZPNqphDhfLc",
    "shorts": "DCnu6ZhuGM8"
+  },
+  {
+   "ticker": "BEAM",
+   "date": "2026.10.14",
+   "layout": "custom",
+   "palette": "teal-red DNA strands on dark navy / teal cash bar vs market cap / teal data card with red falling arrow",
+   "variants": [
+    "same-founder-lost",
+    "half-cash-vault",
+    "good-data-drop"
+   ],
+   "main": "same-founder-lost",
+   "concepts": [
+    "남색 배경 DNA 가닥과 '?' 아래 갈라진 빔·프라임 블록, '같은 창업자 회사에 졌다', 5일 -18.5%",
+    "시총 막대 안 청록 현금 48%, '금고는 반 찼는데 -36%'",
+    "'임상 데이터 👍 29명' 카드 아래 빨간 하락 화살표, '좋은 소식 나온 날 -9.5%'"
+   ],
+   "video": "l7_M_1_8M4M",
+   "shorts": "vCVuSrDWYl4"
   }
  ]
 }

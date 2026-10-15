@@ -1,0 +1,295 @@
+{
+ "ticker": "BEAM",
+ "name": "빔 테라퓨틱스",
+ "cta": "단서 정리는 고정 댓글",
+ "scenes": [
+  {
+   "em": "절반",
+   "els": [
+    {
+     "kind": "chart",
+     "pts": [
+      21.9,
+      26,
+      30.7,
+      31.8,
+      35.5,
+      37.92,
+      30.9,
+      26.6,
+      28.4,
+      29.4,
+      25.3,
+      24.43
+     ],
+     "draw": [
+      0,
+      0.45
+     ],
+     "y": 20,
+     "h": 380,
+     "labels": {
+      "5": "$37.92",
+      "-1": "$24.43"
+     }
+    },
+    {
+     "kind": "num",
+     "text": "-36%",
+     "at": 0.42,
+     "y": 440,
+     "color": "red",
+     "anim": "pop",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "em": "염기 편집",
+   "els": [
+    {
+     "kind": "text",
+     "text": "A T G C",
+     "at": 0.0,
+     "y": 100,
+     "size": 120,
+     "color": "white",
+     "anim": "slide_l"
+    },
+    {
+     "kind": "text",
+     "text": "글자 하나만 → 교정",
+     "at": 0.4,
+     "y": 290,
+     "size": 80,
+     "color": "green",
+     "anim": "slide_r"
+    },
+    {
+     "kind": "text",
+     "text": "유전병 치료제 개발",
+     "at": 0.7,
+     "y": 480,
+     "size": 70,
+     "color": "white",
+     "box": true
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/3",
+   "title": "7월 8일",
+   "em": "중재",
+   "els": [
+    {
+     "kind": "num",
+     "text": "$37.92",
+     "sub": "7월 7일 올해 최고가",
+     "at": 0.0,
+     "y": 110,
+     "size": 150,
+     "color": "green",
+     "anim": "pop",
+     "sfx": "tick"
+    },
+    {
+     "kind": "stamp",
+     "text": "다음 날: 중재 판정",
+     "at": 0.5,
+     "y": 480,
+     "color": "yellow",
+     "size": 80
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/3",
+   "title": "같은 창업자",
+   "em": "같은 과학자",
+   "els": [
+    {
+     "kind": "text",
+     "text": "빔 테라퓨틱스",
+     "at": 0.0,
+     "y": 170,
+     "size": 84,
+     "color": "green",
+     "anim": "slide_l"
+    },
+    {
+     "kind": "text",
+     "text": "vs",
+     "at": 0.25,
+     "y": 290,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "프라임 메디슨",
+     "at": 0.35,
+     "y": 400,
+     "size": 84,
+     "color": "red",
+     "anim": "slide_r"
+    },
+    {
+     "kind": "text",
+     "text": "같은 희귀병 AATD",
+     "at": 0.65,
+     "y": 560,
+     "size": 64,
+     "color": "yellow",
+     "box": true
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/3",
+   "title": "판정 뒤 닷새",
+   "em": "십팔",
+   "els": [
+    {
+     "kind": "stamp",
+     "text": "빔 패소",
+     "at": 0.0,
+     "y": 110,
+     "color": "red",
+     "size": 110,
+     "sfx": "boom"
+    },
+    {
+     "kind": "num",
+     "from": 0,
+     "to": -18,
+     "fmt": "{:+.0f}%",
+     "at": 0.35,
+     "y": 340,
+     "size": 180,
+     "color": "red"
+    }
+   ]
+  },
+  {
+   "progress": "단서 2/3",
+   "title": "9월 8일 최신 데이터",
+   "em": "하루",
+   "els": [
+    {
+     "kind": "text",
+     "text": "환자 29명 · 최장 18개월",
+     "at": 0.0,
+     "y": 180,
+     "size": 68,
+     "color": "green",
+     "box": true
+    },
+    {
+     "kind": "num",
+     "text": "하루 -10%",
+     "sub": "좋은 데이터 날",
+     "at": 0.45,
+     "y": 360,
+     "size": 160,
+     "color": "red",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "progress": "단서 3/3",
+   "title": "돈의 흐름",
+   "em": "일억 달러",
+   "els": [
+    {
+     "kind": "num",
+     "text": "12억 달러",
+     "sub": "6월 말 현금 · 약 1.6조 원",
+     "at": 0.0,
+     "y": 170,
+     "size": 150,
+     "color": "green",
+     "anim": "pop",
+     "sfx": "tick"
+    },
+    {
+     "kind": "num",
+     "text": "-1.2억 달러",
+     "sub": "2분기 순손실 · 약 1,600억 원",
+     "at": 0.5,
+     "y": 470,
+     "size": 130,
+     "color": "red",
+     "anim": "slide_r"
+    }
+   ]
+  },
+  {
+   "title": "첫 승인 신청",
+   "em": "바닥",
+   "els": [
+    {
+     "kind": "text",
+     "text": "빨라야 올해 말",
+     "at": 0.0,
+     "y": 180,
+     "size": 96,
+     "color": "yellow",
+     "until": 0.6
+    },
+    {
+     "kind": "q",
+     "at": 0.6,
+     "y": 110
+    },
+    {
+     "kind": "text",
+     "text": "$24.43, 바닥일까?",
+     "at": 0.62,
+     "y": 520,
+     "size": 90,
+     "color": "white"
+    }
+   ]
+  },
+  {
+   "em": "대출 계약서",
+   "els": [
+    {
+     "kind": "stamp",
+     "text": "대출 계약서",
+     "at": 0.0,
+     "until": 0.5,
+     "y": 200,
+     "color": "yellow",
+     "size": 110
+    },
+    {
+     "kind": "chart",
+     "pts": [
+      21.9,
+      26,
+      30.7,
+      31.8,
+      35.5,
+      37.92,
+      30.9,
+      26.6,
+      28.4,
+      29.4,
+      25.3,
+      24.43
+     ],
+     "draw": [
+      0.3,
+      1.6
+     ],
+     "y": 20,
+     "h": 380,
+     "at": 0.5
+    }
+   ]
+  }
+ ]
+}
