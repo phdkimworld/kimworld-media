@@ -85,10 +85,14 @@ def shorts(v):
     rgt = gray_frames(v, 'crop=iw*0.15:ih*0.55:iw*0.85:ih*0.45,', 16, 53, 2)
     nb = sum(1 for x in bot if sum(1 for b in x if b > 150) > 8); nr = sum(1 for x in rgt if sum(1 for b in x if b > 150) > 6)
     (nb > 2 or nr > 2) and fails.append(f'안전 영역 글자 프레임 하단 {nb}·오른쪽 {nr}(0.5초 단위)')
-    cuts = sorted(set([0.0] + scene_times(v, 0.03) + [dur]))
-    lg = max((b - a for a, b in zip(cuts, cuts[1:])), default=0); lg > 3 and fails.append(f'정지 {lg:.1f}초')
+    # 쇼츠 요소는 튀어나오는 애니메이션으로 들어와 장면 전환 점수로는 잡히지 않는다.
+    # 0.25초 간격 프레임을 비교해 화소 1% 이상이 눈에 띄게(밝기 25 이상) 바뀌면 화면이 바뀐 것으로 센다.
+    fq = gray_frames(v, '', 54, 96, 4); n = 54 * 96
+    ch = [i / 4 for i in range(1, len(fq)) if sum(1 for x, y in zip(fq[i], fq[i - 1]) if abs(x - y) > 25) > n * 0.01]
+    cuts = sorted(set([0.0] + ch + [dur])); ev = [cuts[0]] + [t for p, t in zip(cuts, cuts[1:]) if t - p > 0.3] + [dur]
+    lg = max((b - a for a, b in zip(ev, ev[1:])), default=0); lg > 3 and fails.append(f'정지 {lg:.1f}초')
     sil = tail_silence(v, dur); sil > 0.3 and fails.append(f'끝 무음 {sil}초')
-    line = f"검증(쇼츠): {w}×{h}@{fr.split('/')[0]} · {dur:.0f}초 · 시각 변화 {len(cuts)-2}회 · 최장 정지 {lg:.1f}초 · 끝 무음 {sil}초 · 안전 영역 침범 {nb + nr}"
+    line = f"검증(쇼츠): {w}×{h}@{fr.split('/')[0]} · {dur:.0f}초 · 시각 변화 {len(ev)-2}회 · 최장 정지 {lg:.1f}초 · 끝 무음 {sil}초 · 안전 영역 침범 {nb + nr}"
     return line, fails
 
 if __name__ == '__main__':
