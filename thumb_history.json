@@ -617,6 +617,25 @@
    ],
    "video": "Ug4RhlPJxEM",
    "shorts": "S_ri3Mduixc"
+  },
+  {
+   "ticker": "AXTI",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "green-red on dark green / green spike line / red-bordered permit card",
+   "variants": [
+    "ceo-sold-minus56",
+    "121x-then-half",
+    "china-permit"
+   ],
+   "main": "ceo-sold-minus56",
+   "concepts": [
+    "짙은 녹색 배경 InP 웨이퍼 원과 'CEO 매도 $2,200만 고점 열흘 뒤' 메모, '실적은 최대 사장은 팔고 -56%'",
+    "녹색 급등락선 $1.16→$140.83→$61.59, '121배 오른 뒤 반토막'",
+    "빨간 테두리 '수출 허가 대기 중 중국 상무부' 카드, '매출 66% 중국', 'AI 공장은 중국에 기회? 족쇄?'"
+   ],
+   "video": "1P9DowNxYJM",
+   "shorts": "LxUPHcfqxmI"
   }
  ]
 }
