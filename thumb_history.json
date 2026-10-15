@@ -636,6 +636,25 @@
    ],
    "video": "1P9DowNxYJM",
    "shorts": "LxUPHcfqxmI"
+  },
+  {
+   "ticker": "ERAS",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "purple-red on dark plum / purple-red bar pair / cream letter card",
+   "variants": [
+    "footnote-one-line",
+    "half-then-2x",
+    "morning-letter"
+   ],
+   "main": "footnote-one-line",
+   "concepts": [
+    "짙은 자주 배경 '임상 데이터 62% 폐암 반응률' 카드와 빨간 '각주: 5등급 1건', 아래 화살표 '다음 날 -48%', '숫자는 이겼는데 작은 각주 한 줄'",
+    "빨간 $9.90 막대와 보라 $17.50 막대, '반토막 석 달 뒤 약 2배 값에 $6억 베팅'",
+    "기울어진 '경고장' 종이 '특허 침해 · 영업 비밀 · from 1위 경쟁사', '데이터 날 아침 도착한 편지'"
+   ],
+   "video": "9T6bgTTKcBY",
+   "shorts": "E76_Cm70F1k"
   }
  ]
 }
