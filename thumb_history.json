@@ -731,6 +731,25 @@
    ],
    "video": "KmyRwpVBop0",
    "shorts": "gLuMrC3SQ90"
+  },
+  {
+   "ticker": "KOD",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "teal-gold-red on dark teal / stop→+178% arrow / low-high card / gold insider card",
+   "variants": [
+    "abandoned-drug-178",
+    "minus99-to-71x",
+    "insiders-bought"
+   ],
+   "main": "abandoned-drug-178",
+   "concepts": [
+    "빨간 '2023년 7월 개발 중단' 상자에서 금색 화살표로 청록 '2026년 9월 +178%', '포기한 약이 하루 178% 3년 만의 반전'",
+    "청록 테두리 '최저 종가 $1.40 / 최고 종가 $99.87', '-99%에서 71배 눈 주사 하나로'",
+    "금색 테두리 '발표 사흘 전 CEO 128만 주 행사 / 발표 당일 대주주 194만 주 매수', '가장 잘 아는 사람들이 샀다'"
+   ],
+   "video": "n4NOozuL6gg",
+   "shorts": "YS0M2E7Rf0s"
   }
  ]
 }
