@@ -2,8 +2,12 @@
 # 인증: 업로드·yt_stats.py 와 같은 환경 변수 YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (youtube.force-ssl 범위). 값은 출력하지 않는다.
 # 사용:
 #   python3 yt_reply.py --list [--days 7] [--video VIDEO_ID] [--search 글자]
-#       내 채널 영상의 댓글 스레드 가운데 내 채널 답글이 아직 없는 것을 JSON 으로 출력한다.
+#       내 채널 영상의 댓글 가운데 답할 차례인 것을 JSON 으로 출력한다.
+#         kind=top      : 시청자 댓글에 내 채널 답글이 아직 없다.
+#         kind=followup : 내 채널 답글(또는 내 채널이 쓴 고정 댓글 등) 뒤에 시청자 대댓글이 새로 달렸다.
+#                         followups 에 내 마지막 답글 뒤의 시청자 대댓글, context 에 스레드 대화 전체(시간순)가 들어 있다.
 #       my_replies_24h 는 최근 24시간에 내 채널이 단 답글 수(하루 한도 확인용, 읽은 스레드 범위 안에서 센다).
+#       유튜브 답글은 한 단계뿐이라 대댓글에 답할 때도 --reply 에는 스레드 ID 를 준다(본문 앞에 @이름을 붙여 상대를 가리킨다).
 #   python3 yt_reply.py --reply THREAD_ID --text-file 답글.txt
 #       답글 1개를 단다. 성공하면 답글 ID 를 출력한다. 실패하면 다시 시도하지 않고 오류만 출력하고 1 로 끝난다.
 import os, sys, json, argparse, datetime, urllib.request, urllib.parse, urllib.error
@@ -34,24 +38,45 @@ def list_open(tok, days, video=None, search=None):
     q = dict(part='snippet,replies', order='time', maxResults=100, textFormat='plainText')
     q.update({'videoId': video} if video else {'allThreadsRelatedToChannelId': me})
     if search: q['searchTerms'] = search
-    out, mine24, pt = [], 0, None
+    def item(c):
+        sn = c['snippet']
+        return {'commentId': c['id'], 'author': sn.get('authorDisplayName'), 'authorChannelId': sn.get('authorChannelId', {}).get('value'),
+                'isMe': sn.get('authorChannelId', {}).get('value') == me, 'text': sn.get('textOriginal') or sn.get('textDisplay'),
+                'likeCount': sn.get('likeCount', 0), 'publishedAt': sn['publishedAt']}
+    out, mine24, pt, pages = [], 0, None, 0
     while True:
-        r = call(tok, 'commentThreads', **q, **({'pageToken': pt} if pt else {}))
-        old = False
+        r = call(tok, 'commentThreads', **q, **({'pageToken': pt} if pt else {})); pages += 1
+        fresh = False
         for t in r.get('items', []):
-            top = t['snippet']['topLevelComment']['snippet']
-            if not search and ts(top['publishedAt']) < since: old = True; continue
+            topc = t['snippet']['topLevelComment']; top = topc['snippet']
             reps = t.get('replies', {}).get('comments', [])
             if t['snippet'].get('totalReplyCount', 0) > len(reps):  # 답글이 5개를 넘으면 전부 받아 확인
-                reps = call(tok, 'comments', part='snippet', parentId=t['id'], maxResults=100, textFormat='plainText').get('items', [])
-            mine = [c for c in reps if c['snippet'].get('authorChannelId', {}).get('value') == me]
-            mine24 += sum(1 for c in mine if ts(c['snippet']['publishedAt']) >= now - datetime.timedelta(hours=24))
-            if top.get('authorChannelId', {}).get('value') == me or mine: continue
-            out.append({'threadId': t['id'], 'videoId': top.get('videoId'), 'author': top.get('authorDisplayName'),
-                        'authorChannelId': top.get('authorChannelId', {}).get('value'), 'text': top.get('textOriginal') or top.get('textDisplay'),
-                        'likeCount': top.get('likeCount', 0), 'publishedAt': top['publishedAt'], 'replyCount': t['snippet'].get('totalReplyCount', 0)})
+                reps, rpt = [], None
+                while True:
+                    rr = call(tok, 'comments', part='snippet', parentId=t['id'], maxResults=100, textFormat='plainText', **({'pageToken': rpt} if rpt else {}))
+                    reps += rr.get('items', []); rpt = rr.get('nextPageToken')
+                    if not rpt: break
+            conv = sorted([item(topc)] + [item(c) for c in reps], key=lambda x: x['publishedAt'])
+            if max(ts(c['publishedAt']) for c in conv) < since and not search: continue
+            fresh = True
+            mine = [c for c in conv if c['isMe']]
+            mine24 += sum(1 for c in mine if c['commentId'] != topc['id'] and ts(c['publishedAt']) >= now - datetime.timedelta(hours=24))
+            base = {'threadId': t['id'], 'videoId': top.get('videoId'), 'replyCount': t['snippet'].get('totalReplyCount', 0)}
+            if not mine:
+                if ts(top['publishedAt']) < since and not search: continue
+                out.append({**base, 'kind': 'top', **{k: v for k, v in item(topc).items() if k not in ('isMe', 'commentId')}})
+                continue
+            last = max(ts(c['publishedAt']) for c in mine)
+            fu = [c for c in conv if not c['isMe'] and ts(c['publishedAt']) > last and (search or ts(c['publishedAt']) >= since)]
+            if not fu: continue
+            out.append({**base, 'kind': 'followup', 'author': fu[-1]['author'], 'authorChannelId': fu[-1]['authorChannelId'],
+                        'text': fu[-1]['text'], 'likeCount': max(c['likeCount'] for c in fu), 'publishedAt': fu[-1]['publishedAt'],
+                        'topIsMe': top.get('authorChannelId', {}).get('value') == me, 'followups': fu,
+                        'my_replies_in_thread_24h': sum(1 for c in mine if ts(c['publishedAt']) >= now - datetime.timedelta(hours=24)),
+                        'context': [{k: c[k] for k in ('author', 'isMe', 'text', 'publishedAt')} for c in conv][-12:]})
         pt = r.get('nextPageToken')
-        if not pt or old: break
+        # order=time 은 스레드 시작 시각 순이라, 오래된 스레드의 새 대댓글을 놓치지 않도록 새 활동이 없는 페이지가 나올 때까지(최대 10쪽) 더 읽는다
+        if not pt or (not fresh and not search) or pages >= 10: break
     ids = sorted({c['videoId'] for c in out if c['videoId']}); titles = {}
     for k in range(0, len(ids), 50):
         for v in call(tok, 'videos', part='snippet', id=','.join(ids[k:k + 50])).get('items', []): titles[v['id']] = v['snippet']['title']
