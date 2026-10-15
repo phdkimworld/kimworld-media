@@ -655,6 +655,25 @@
    ],
    "video": "9T6bgTTKcBY",
    "shorts": "E76_Cm70F1k"
+  },
+  {
+   "ticker": "ZRO",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "cyan-red-gold on navy / vote cards / gold unlock card",
+   "variants": [
+    "bad-news-up-3x",
+    "fee-zero-3x",
+    "unlock-after-3x"
+   ],
+   "main": "bad-news-up-3x",
+   "concepts": [
+    "남색 배경 빨간 상자 '해킹 $2.9억 · 고객 이탈 · 소송'과 위로 뻗는 하늘색 화살표, '악재가 터지면 올랐다 두 달 3배'",
+    "'1~4차 투표 ×' 카드와 '수수료 스위치 OFF', '수수료 몫 0원 그런데 3배'",
+    "금색 테두리 '10월 20일 언락 약 2,400만~3,100만 개', '3배 오른 뒤 닷새 뒤 물량 폭탄?'"
+   ],
+   "video": "M9wG2zt1W_w",
+   "shorts": "OJwUtij12IU"
   }
  ]
 }

@@ -1,0 +1,279 @@
+{
+ "ticker": "ZRO",
+ "name": "레이어제로",
+ "cta": "단서 정리는 고정 댓글",
+ "scenes": [
+  {
+   "em": "세 배",
+   "els": [
+    {
+     "kind": "chart",
+     "pts": [
+      2644,
+      1850,
+      1367,
+      1026,
+      1181,
+      1368,
+      1664,
+      1867,
+      2191,
+      2708,
+      3051,
+      2553
+     ],
+     "draw": [
+      0,
+      0.5
+     ],
+     "y": 20,
+     "h": 380,
+     "labels": {
+      "3": "1,026원",
+      "10": "3,051원"
+     }
+    },
+    {
+     "kind": "num",
+     "text": "두 달 3배",
+     "at": 0.5,
+     "y": 440,
+     "size": 140,
+     "color": "green",
+     "anim": "pop",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "em": "연결망",
+   "els": [
+    {
+     "kind": "text",
+     "text": "블록체인 A",
+     "at": 0.0,
+     "y": 120,
+     "size": 84,
+     "color": "white",
+     "anim": "slide_l"
+    },
+    {
+     "kind": "text",
+     "text": "⇅ 레이어제로",
+     "at": 0.3,
+     "y": 270,
+     "size": 84,
+     "color": "green",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "블록체인 B",
+     "at": 0.55,
+     "y": 420,
+     "size": 84,
+     "color": "white",
+     "anim": "slide_r"
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/3",
+   "title": "2026년 4월 18일",
+   "em": "털렸습니다",
+   "els": [
+    {
+     "kind": "stamp",
+     "text": "해킹",
+     "at": 0.0,
+     "y": 170,
+     "color": "red",
+     "size": 120,
+     "sfx": "boom"
+    },
+    {
+     "kind": "num",
+     "text": "약 2.9억$",
+     "sub": "약 3,900억 원",
+     "at": 0.4,
+     "y": 400,
+     "size": 140,
+     "color": "red",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "progress": "단서 1/3",
+   "title": "수수료 스위치 투표",
+   "em": "무산",
+   "els": [
+    {
+     "kind": "text",
+     "text": "1차·2차 무산",
+     "at": 0.0,
+     "y": 170,
+     "size": 96,
+     "color": "white",
+     "anim": "slide_l"
+    },
+    {
+     "kind": "text",
+     "text": "3차·4차 무산",
+     "at": 0.35,
+     "y": 320,
+     "size": 96,
+     "color": "white",
+     "anim": "slide_r"
+    },
+    {
+     "kind": "stamp",
+     "text": "토큰 몫 OFF",
+     "at": 0.65,
+     "y": 480,
+     "color": "red",
+     "size": 90
+    }
+   ]
+  },
+  {
+   "progress": "단서 2/3",
+   "title": "8월 19일 고객 이탈 보도",
+   "em": "올랐습니다",
+   "els": [
+    {
+     "kind": "num",
+     "text": "+7%",
+     "sub": "그날 업비트 가격",
+     "at": 0.3,
+     "y": 200,
+     "size": 180,
+     "color": "green",
+     "anim": "pop",
+     "sfx": "tick"
+    }
+   ]
+  },
+  {
+   "progress": "단서 3/3",
+   "title": "새 이야기 두 개",
+   "em": "은행",
+   "els": [
+    {
+     "kind": "text",
+     "text": "수수료 75%로 매입·소각",
+     "at": 0.0,
+     "y": 170,
+     "size": 72,
+     "color": "yellow",
+     "box": true
+    },
+    {
+     "kind": "text",
+     "text": "은행이 고른 연결망",
+     "at": 0.5,
+     "y": 380,
+     "size": 84,
+     "color": "green",
+     "anim": "slide_r"
+    }
+   ]
+  },
+  {
+   "title": "업비트 가격",
+   "em": "세 배",
+   "els": [
+    {
+     "kind": "bars",
+     "vals": [
+      1026,
+      3051
+     ],
+     "labels": [
+      "8월 2일",
+      "10월 6일"
+     ],
+     "values": [
+      "1,026원",
+      "3,051원"
+     ],
+     "draw": [
+      0,
+      0.5
+     ],
+     "y": 200,
+     "h": 330
+    },
+    {
+     "kind": "num",
+     "text": "×3",
+     "at": 0.55,
+     "y": 560,
+     "size": 130,
+     "color": "green",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "title": "10월 20일",
+   "em": "물량",
+   "els": [
+    {
+     "kind": "num",
+     "text": "2,400만~3,100만 개",
+     "sub": "하루에 풀리는 물량",
+     "at": 0.0,
+     "y": 200,
+     "size": 100,
+     "color": "red",
+     "anim": "pop",
+     "until": 0.65
+    },
+    {
+     "kind": "q",
+     "at": 0.65,
+     "y": 150
+    }
+   ]
+  },
+  {
+   "em": "닷새",
+   "els": [
+    {
+     "kind": "stamp",
+     "text": "해제 뒤 닷새",
+     "at": 0.0,
+     "until": 0.5,
+     "y": 200,
+     "color": "yellow",
+     "size": 100
+    },
+    {
+     "kind": "chart",
+     "pts": [
+      2644,
+      1850,
+      1367,
+      1026,
+      1181,
+      1368,
+      1664,
+      1867,
+      2191,
+      2708,
+      3051,
+      2553
+     ],
+     "draw": [
+      0.3,
+      1.6
+     ],
+     "y": 20,
+     "h": 380,
+     "at": 0.5
+    }
+   ]
+  }
+ ]
+}
