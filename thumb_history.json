@@ -712,6 +712,25 @@
    ],
    "video": "LVl6NzS9c0k",
    "shorts": "pv2wu9_Kk-c"
+  },
+  {
+   "ticker": "CRWV",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "lime-red on dark navy / backlog vs price bars / green-red twin cards / gold insider card",
+   "variants": [
+    "orders3x-price-half",
+    "debt-two-faces",
+    "bigmoney-bought-insiders-sold"
+   ],
+   "main": "orders3x-price-half",
+   "concepts": [
+    "주문 잔고 막대($301억→$1,040억, 연두)와 주가 막대($138→$66, 빨강), '주문 3배 주가 반토막 AI 클라우드의 역설'",
+    "초록 '담보 대출 A3 투자 등급'과 빨강 '회사채 15% 수익률' 두 카드, '같은 회사 빚의 두 얼굴 하루 -15%'",
+    "금색 카드 '엔비디아 $87.20 · 제인 스트리트 $109 / 내부자·대주주 $48억 매도', '큰손은 샀고 내부자는 팔았다'"
+   ],
+   "video": "KmyRwpVBop0",
+   "shorts": "gLuMrC3SQ90"
   }
  ]
 }
