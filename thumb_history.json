@@ -598,6 +598,25 @@
    ],
    "video": "l7_M_1_8M4M",
    "shorts": "vCVuSrDWYl4"
+  },
+  {
+   "ticker": "QNT",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "gold-red on near-black / gold spike line / gold gauge",
+   "variants": [
+    "press-release-zero",
+    "4x-then-minus29",
+    "one-hour-64"
+   ],
+   "main": "press-release-zero",
+   "concepts": [
+    "검은 배경 기울어진 '미국 은행 결제망 발표문' 종이에 빨간 '\"QNT\" 0번' 도장, 금색 Q 코인, '발표문에 코인 이름 0번, 그런데 일주일 만에 4배'",
+    "금색 급등선 $71→$287→$205, '일주일 4배 그 다음 -29%'",
+    "금색 시계 게이지 '1시간', '$229 → $375', '단 한 시간 +64% 빌린 돈?'"
+   ],
+   "video": "Ug4RhlPJxEM",
+   "shorts": "S_ri3Mduixc"
   }
  ]
 }
