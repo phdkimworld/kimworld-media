@@ -674,6 +674,25 @@
    ],
    "video": "M9wG2zt1W_w",
    "shorts": "OJwUtij12IU"
+  },
+  {
+   "ticker": "KITE",
+   "date": "2026.10.15",
+   "layout": "custom",
+   "palette": "violet-gold-red on navy / chain arrow / gold unlock card",
+   "variants": [
+    "own-chain-pay-elsewhere",
+    "no-dollars-on-chain",
+    "unlock-test"
+   ],
+   "main": "own-chain-pay-elsewhere",
+   "concepts": [
+    "보라 'KITE 체인' 상자에서 금색 화살표로 파란 'BASE' 상자, '자기 체인 열고 결제는 남에게 고점 -62%'",
+    "보라 테두리 '체인 위 달러 $1.9 스테이블코인', 'AI 결제 코인 결제가 없다?'",
+    "금색 테두리 '11월 3일 첫 해제 팀·투자자 32억 개 대기', '고점 -62% 진짜 시험은 이제부터'"
+   ],
+   "video": "e1VPt629QP0",
+   "shorts": "uHec6bEqmZw"
   }
  ]
 }
