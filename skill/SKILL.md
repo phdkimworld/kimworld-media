@@ -1116,7 +1116,7 @@ done()
   - `synthetic`: 기본 `false`. V7.3의 `isAiGeneratedContent`와 같은 기준으로 정한다
 - 실행: `python3 /home/claude/yt_api_upload.py --meta /home/claude/<T>/video/upload_meta.json --video /home/claude/<T>/video/<T>_slide_video.mp4 --thumbnail <썸네일 JPG 경로>` (시간 제한 10분)
 - 스크립트가 하는 일: 채널 확인 → 영상 업로드(카테고리 27 교육, 아동용 아님, 구독자 알림 켬) → 맞춤 썸네일 → 15초 뒤 공개 범위 재확인 → 비공개가 아니면 고정댓글 문구를 채널 명의 첫 댓글로 단다(비공개 영상에는 유튜브가 댓글을 막는다)
-- **유입 구분자(UTM, 2026-10-14 운영자 지시)**: 스크립트가 설명란과 첫 댓글의 리포트 링크(`https://drkimworld.com/r/<slug>/`)에 `?utm_source=youtube&utm_medium=video&utm_campaign=<slug>&utm_content=<위치>`를 자동으로 붙인다. 위치는 설명란 `description`, 첫(고정) 댓글 `pinned`, 쇼츠는 meta에 `"utm_content": "shorts"`. 원고(description.txt·pinned.txt)에는 맨 주소만 쓴다. 이미 올린 영상은 `python3 /home/claude/yt_api_upload.py --retag=<영상ID>`로 설명란과 채널 첫 댓글에 붙인다(영상당 약 100단위). 사이트 관리자 화면 '유입 분석 → 캠페인(UTM)'에서 위치별 방문·계속 읽은 비율을 본다
+- **유입 구분자(UTM, 2026-10-14 운영자 지시)**: 스크립트가 설명란과 첫 댓글의 리포트 링크(`https://drkimworld.com/r/<slug>/`)에 `?utm_source=youtube&utm_medium=video&utm_campaign=<slug>&utm_content=<위치>`를 자동으로 붙인다. 위치는 설명란 `description`, 첫(고정) 댓글 `pinned`, 쇼츠는 meta에 `"utm_content": "shorts"`. 원고(description.txt·pinned.txt)에는 맨 주소만 쓴다. 이미 올린 영상은 `python3 /home/claude/yt_api_upload.py --retag=<영상ID>`로 설명란과 채널 첫 댓글에 붙인다(영상당 약 100단위). 사이트 관리자 화면 '유입 분석 → 캠페인(UTM)'에서 위치별 방문·계속 읽은 비율을 본다. **댓글 답글 링크(운영자 지시 2026-10-16 '대댓글도 따로 추적')**: `utm_medium=comment`, `utm_content`는 시청자 댓글 답글 `reply`, 대댓글 답글 `followup`, 종목 요청 답글 `request`. 유튜브는 `tools/yt_reply.py --kind top|followup|request`, SNS는 답글 파일 항목의 `"kind"`로 도구가 자동으로 붙인다(원고에는 맨 주소)
 - 결과 JSON의 `video_id`, `url`, `privacy_after`, `thumbnail`, `comment`를 기록하고, 종료 코드와 함께 V7.1로 판정한다. 영상 ID를 얻으면 곧바로 리포트 머리말 `youtube_id`에 넣고 빌드 검사 후 푸시한다(R6.5)
 - 경로 A는 예약 없이 즉시 게시한다. 영상 파일을 미디어 저장소에 올릴 필요가 없다(`thumb_history.json` 커밋은 그대로 한다). 경로 B로 대체할 때만 V7.2대로 영상과 썸네일을 푸시한다
 - 할당량: 하루 10,000단위 가운데 업로드 한 번이 약 1,600단위(썸네일·댓글 각 50)다. 할당량 오류는 대체 조건 2번으로 처리한다
@@ -1444,6 +1444,7 @@ R7(리포트)과 K6(자산)에 더해 아래를 모두 확인하고, 어긋나�
 ## 변경 이력
 
 - 2026-10-16 (운영자 지시 '지난 걸 수정하지 말고 앞으로 지침에 반영'): 지난 발행물 수정 금지, 승인 항목 반영 — 제목 틀 '<짧은 이름>(<티커>) 주가 미스터리, …', 롱폼 하루 4편 공개 상한·쇼츠 별도 제목, 쇼츠 설명 첫 줄 링크, 베팅 표현 금지, 댓글 답글 150자+질문
+- 2026-10-16 (운영자 지시 '대댓글도 따로 추적되도록, 링크 위치별 유입(UTM)'): 댓글 답글 링크에 utm_medium=comment·utm_content=reply|followup|request 자동 부착(yt_reply.py --kind, social_comments.py kind)
 - 2026-10-16 (운영자 지시 '하루 몇 편 상한 같은 건 없어, 제작된 건 바로 공개'): G1 하루 4편 공개 상한·다음 날 미루기 삭제 — 모든 회차 완성 즉시 공개
 - 2026-10-16 (운영자 지시 '3 4 반영'): 페이스북 본문 투표 보기 글 삭제(인스타만 유지), 사이트 share_desc·첫 화면·종목 페이지의 '회원 가입 없이' 삭제
 - 2026-10-16 (운영자 지시 '플랫폼 알고리즘에 선택될 가능성 기준으로 평가'): G6 신설 — 제3자 검토를 플랫폼별(롱폼·쇼츠·SNS·사이트) 알고리즘 선택 가능성 점수로, 공식 신호 기준표·신호별 점수·개선안 반영

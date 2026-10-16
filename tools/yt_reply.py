@@ -8,9 +8,12 @@
 #                         followups 에 내 마지막 답글 뒤의 시청자 대댓글, context 에 스레드 대화 전체(시간순)가 들어 있다.
 #       my_replies_24h 는 최근 24시간에 내 채널이 단 답글 수(하루 한도 확인용, 읽은 스레드 범위 안에서 센다).
 #       유튜브 답글은 한 단계뿐이라 대댓글에 답할 때도 --reply 에는 스레드 ID 를 준다(본문 앞에 @이름을 붙여 상대를 가리킨다).
-#   python3 yt_reply.py --reply THREAD_ID --text-file 답글.txt
+#   python3 yt_reply.py --reply THREAD_ID --text-file 답글.txt [--kind top|followup|request]
+#       답글 본문의 리포트 링크(drkimworld.com/r/<slug>/)에 위치별 UTM 을 붙인다(운영자 지시 2026-10-16):
+#       utm_source=youtube&utm_medium=comment&utm_campaign=<slug>&utm_content=reply|followup|request
+#       (--kind 기본 top → reply, 대댓글에 답하면 followup, 종목 요청 답글은 request). 이미 있던 utm 값은 덮어쓴다.
 #       답글 1개를 단다. 성공하면 답글 ID 를 출력한다. 실패하면 다시 시도하지 않고 오류만 출력하고 1 로 끝난다.
-import os, sys, json, argparse, datetime, urllib.request, urllib.parse, urllib.error
+import os, re, sys, json, argparse, datetime, urllib.request, urllib.parse, urllib.error
 
 API = 'https://www.googleapis.com/youtube/v3/'
 
@@ -83,11 +86,23 @@ def list_open(tok, days, video=None, search=None):
     for c in out: c['videoTitle'] = titles.get(c['videoId'], '')
     return {'channelId': me, 'since': since.isoformat(timespec='seconds'), 'my_replies_24h': mine24, 'open': out}
 
+LINK_RE = re.compile(r'https?://(?:www\.)?drkimworld\.com/r/([a-z0-9-]+)/(\?[^\s]*)?')
+UTM_CONTENT = {'top': 'reply', 'followup': 'followup', 'request': 'request'}
+
+def tag_links(text, kind='top'):
+    content = UTM_CONTENT.get(kind, 'reply')
+    def sub(m):
+        slug, q = m.group(1), (m.group(2) or '')[1:]
+        keep = [kv for kv in q.split('&') if kv and not kv.startswith('utm_')]
+        return f'https://drkimworld.com/r/{slug}/?' + '&'.join(keep + ['utm_source=youtube', 'utm_medium=comment', f'utm_campaign={slug}', f'utm_content={content}'])
+    return LINK_RE.sub(sub, text)
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--list', action='store_true'); ap.add_argument('--days', type=int, default=7)
     ap.add_argument('--video'); ap.add_argument('--search')
     ap.add_argument('--reply'); ap.add_argument('--text-file')
+    ap.add_argument('--kind', choices=['top', 'followup', 'request'], default='top')
     a = ap.parse_args()
     if not all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN')):
         print('유튜브 인증값 없음', file=sys.stderr); sys.exit(2)
@@ -97,7 +112,7 @@ def main():
         try: print(json.dumps(list_open(tok, a.days, a.video, a.search), ensure_ascii=False, indent=1))
         except urllib.error.HTTPError as e: print('목록 실패:', err(e), file=sys.stderr); sys.exit(1)
     elif a.reply and a.text_file:
-        text = open(a.text_file, encoding='utf-8').read().strip()
+        text = tag_links(open(a.text_file, encoding='utf-8').read().strip(), a.kind)
         if not text: print('답글이 비어 있음', file=sys.stderr); sys.exit(1)
         try: r = call(tok, 'comments', {'snippet': {'parentId': a.reply, 'textOriginal': text}}, part='snippet')
         except urllib.error.HTTPError as e: print('답글 실패(재시도 안 함):', err(e), file=sys.stderr); sys.exit(1)
