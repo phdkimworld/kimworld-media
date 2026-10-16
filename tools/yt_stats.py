@@ -19,6 +19,8 @@ def dur(s):
     m = re.match(r'P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', s); d, h, mi, se = (int(x or 0) for x in m.groups())
     return d * 86400 + h * 3600 + mi * 60 + se
 
+RED_DAYS = 5  # 마지막 롱폼이 5일 이상 지나면 🔴 업데이트 요망, 3~5일은 🟡 곧 만료 (운영자 지시 2026-10-15, 이전 7일)
+
 ALIAS = {'GRHL': 'GRML', 'VS': 'VST', 'SDEOV': 'SDEV'}  # 제목 해시태그 오기·옛 표기를 같은 종목으로 묶는다
 
 def ticker(title):
@@ -62,11 +64,11 @@ def main():
     rows = []
     for tk, vs in by.items():
         vs.sort(key=lambda x: x['pub']); last = vs[-1]; age_d = last['age_h'] / 24
-        old = [x for x in vs if x['age_h'] > 7 * 24]
-        grade = '🔴' if age_d > 7 else ('🟡' if age_d >= 5 else '✅')
+        old = [x for x in vs if x['age_h'] >= RED_DAYS * 24]
+        grade = '🔴' if age_d >= RED_DAYS else ('🟡' if age_d >= RED_DAYS - 2 else '✅')
         best_old = max(old, key=lambda x: (x['vph_recent'] if x['vph_recent'] is not None else x['vph_avg'])) if old else None
         rows.append({'ticker': tk, 'grade': grade, 'last_pub': last['pub'], 'days': round(age_d, 1),
-                     'expires': (datetime.datetime.fromisoformat(last['pub'].replace('Z', '+00:00')) + datetime.timedelta(days=7)).isoformat(),
+                     'expires': (datetime.datetime.fromisoformat(last['pub'].replace('Z', '+00:00')) + datetime.timedelta(days=RED_DAYS)).isoformat(),
                      'latest_vph_recent': last['vph_recent'], 'latest_vph_avg': round(last['vph_avg'], 2), 'latest_views': last['views'],
                      'old_vph_recent': best_old['vph_recent'] if best_old else None, 'old_vph_avg': round(best_old['vph_avg'], 2) if best_old else None,
                      'total_views': sum(x['views'] for x in vs), 'n': len(vs)})
