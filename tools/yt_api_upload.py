@@ -100,11 +100,17 @@ if a.status:
 # 사이트 링크에 유입 구분자(UTM)를 붙인다. 설명란=description, 첫 댓글=pinned (쇼츠는 meta에 utm_content='shorts')
 import re
 def utm(text, content):
+    # 설명란(content='description')은 링크 위치별로 desc_top·desc_mid·desc_end를 붙인다(성장 검토 2026-10-16 G2)
+    pat = r"https://drkimworld\.com/r/([a-z0-9-]+)/(?!\?)"
+    n = len(re.findall(pat, text)); i = [0]
     def f(mo):
-        slug = mo.group(1)
+        slug = mo.group(1); c = content
+        if content == "description" and n > 1:
+            c = "desc_top" if i[0] == 0 else ("desc_end" if i[0] == n - 1 else "desc_mid")
+        i[0] += 1
         return (f"https://drkimworld.com/r/{slug}/?utm_source=youtube&utm_medium=video"
-                f"&utm_campaign={slug}&utm_content={content}")
-    return re.sub(r"https://drkimworld\.com/r/([a-z0-9-]+)/(?!\?)", f, text)
+                f"&utm_campaign={slug}&utm_content={c}")
+    return re.sub(pat, f, text)
 
 if a.retag:
     v = yt.videos().list(part="snippet", id=a.retag).execute()["items"][0]; sn = v["snippet"]
