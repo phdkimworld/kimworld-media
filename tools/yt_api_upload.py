@@ -97,24 +97,32 @@ if a.status:
     st = yt.videos().list(part="status", id=a.status).execute()["items"][0]["status"]
     out.update(video_id=a.status, privacy=st["privacyStatus"], publish_at=st.get("publishAt")); done()
 
-# 사이트 링크에 유입 구분자(UTM)를 붙인다. 설명란=description, 첫 댓글=pinned (쇼츠는 meta에 utm_content='shorts')
+# 사이트 링크에 유입 구분자(UTM)를 붙인다. 설명란=description(위치별 desc_top·desc_mid·desc_end), 첫 댓글=pinned
+# 롱폼·쇼츠 구분(운영자 지시 2026-10-16): utm_medium=video(롱폼) / shorts(쇼츠). 이미 붙은 유튜브 UTM은 새 값으로 바꾼다
 import re
-def utm(text, content):
-    # 설명란(content='description')은 링크 위치별로 desc_top·desc_mid·desc_end를 붙인다(성장 검토 2026-10-16 G2)
-    pat = r"https://drkimworld\.com/r/([a-z0-9-]+)/(?!\?)"
+def is_shorts(meta=None, desc="", seconds=None):
+    if meta and (meta.get("shorts") or meta.get("utm_content") == "shorts"): return True
+    if re.search(r"#shorts\b", desc or "", re.I): return True
+    return seconds is not None and seconds <= 180
+def utm(text, content, medium="video"):
+    pat = r"https://drkimworld\.com/r/([a-z0-9-]+)/(?:\?utm_source=youtube[^\s)]*)?(?![?\w])"
     n = len(re.findall(pat, text)); i = [0]
     def f(mo):
         slug = mo.group(1); c = content
         if content == "description" and n > 1:
             c = "desc_top" if i[0] == 0 else ("desc_end" if i[0] == n - 1 else "desc_mid")
         i[0] += 1
-        return (f"https://drkimworld.com/r/{slug}/?utm_source=youtube&utm_medium=video"
+        return (f"https://drkimworld.com/r/{slug}/?utm_source=youtube&utm_medium={medium}"
                 f"&utm_campaign={slug}&utm_content={c}")
     return re.sub(pat, f, text)
+def iso_sec(d):
+    mo = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", d or "")
+    return sum(int(x or 0) * k for x, k in zip(mo.groups(), (3600, 60, 1))) if mo else None
 
 if a.retag:
-    v = yt.videos().list(part="snippet", id=a.retag).execute()["items"][0]; sn = v["snippet"]
-    nd = utm(sn["description"], "description"); out["video_id"] = a.retag
+    v = yt.videos().list(part="snippet,contentDetails", id=a.retag).execute()["items"][0]; sn = v["snippet"]
+    med = "shorts" if is_shorts(desc=sn["description"], seconds=iso_sec(v["contentDetails"].get("duration"))) else "video"
+    nd = utm(sn["description"], "description", med); out["video_id"] = a.retag; out["utm_medium"] = med
     if nd != sn["description"]:
         yt.videos().update(part="snippet", body={"id": a.retag, "snippet": {"title": sn["title"], "description": nd,
             "categoryId": sn["categoryId"], "tags": sn.get("tags", []), "defaultLanguage": sn.get("defaultLanguage", "ko")}}).execute()
@@ -123,7 +131,7 @@ if a.retag:
     for th in yt.commentThreads().list(part="snippet", videoId=a.retag, maxResults=50, order="time").execute()["items"]:
         c = th["snippet"]["topLevelComment"]; cs = c["snippet"]
         if cs.get("authorChannelId", {}).get("value") == me and "drkimworld.com/r/" in cs["textOriginal"]:
-            nt = utm(cs["textOriginal"], "pinned")
+            nt = utm(cs["textOriginal"], "pinned", med)
             if nt != cs["textOriginal"]:
                 yt.comments().update(part="snippet", body={"id": c["id"], "snippet": {"textOriginal": nt}}).execute()
                 out["comment"] = "tagged"
@@ -133,9 +141,11 @@ if a.delete:
     yt.videos().delete(id=a.delete).execute(); out["deleted"] = a.delete; done()
 
 m = json.load(open(a.meta, encoding="utf-8"))
-m["description"] = utm(m["description"], m.get("utm_content", "description"))
+MED = "shorts" if is_shorts(m, m.get("description", "")) else "video"
+_pos = m.get("utm_content") if m.get("utm_content") not in (None, "shorts") else None
+m["description"] = utm(m["description"], _pos or "description", MED)
 if m.get("first_comment"):
-    m["first_comment"] = utm(m["first_comment"], (m["utm_content"] + "_pinned") if m.get("utm_content") else "pinned")
+    m["first_comment"] = utm(m["first_comment"], (_pos + "_pinned") if _pos else "pinned", MED)
 
 if a.edit:
     v = yt.videos().list(part="snippet", id=a.edit).execute()["items"][0]; sn = v["snippet"]; out["video_id"] = a.edit

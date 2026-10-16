@@ -516,7 +516,7 @@ chart.json 예시:
 - **끝 화면·카드(필수)**: 전달 체크리스트에 '끝 화면(마지막 20초): 지난 같은 종목 영상 또는 관련 영상 + 구독' 추가. 운영자가 Studio에서 넣는다.
 - **쇼츠 설명 첫 줄(필수, 운영자 승인)**: 1줄 `📊 <종목> 무료 리포트 👉 <링크>`, 2줄 면책 전문, 3줄 `🎬 풀영상: <롱폼 링크>`. K9의 '설명 첫 줄은 면책'을 대신한다.
 - **페이스북 릴스 링크(필수)**: 릴스 대기열 파일에 페이스북이 있으면 캡션 끝을 '무료 리포트는 첫 댓글 링크에 있습니다.'로 하고, 게시 뒤 첫 댓글에 utm 링크(utm_content=reels_comment)를 단다(social_publish.py 지원 전까지는 replies 파일로 단다).
-- **링크 위치별 UTM(필수)**: 설명 링크는 desc_top·desc_mid·desc_end, 고정댓글은 pinned(yt_api_upload.py utm()이 차례로 붙인다).
+- **링크 위치별 UTM(필수)**: 설명 링크는 desc_top·desc_mid·desc_end, 고정댓글은 pinned(yt_api_upload.py utm()이 차례로 붙인다). **롱폼·쇼츠 구분(운영자 지시 2026-10-16)**: `utm_medium=video`(롱폼) / `utm_medium=shorts`(쇼츠). 업로드 스크립트가 meta의 `"shorts": true`·`utm_content: shorts`나 설명의 `#Shorts`로 쇼츠를 알아보고 붙이며, `--retag=<ID>`는 길이 180초 이하나 `#Shorts`면 shorts로 다시 붙인다(이미 붙은 유튜브 UTM도 바꾼다). 쇼츠 meta에는 `"shorts": true`를 넣는다. 사이트 '유입 분석 → 캠페인(UTM)'에서 medium으로 롱폼·쇼츠 유입을 나눠 본다.
 
 ### G3. 체류 (시청 지속·리포트 읽기)
 - **훅 5초(필수)**: 첫 문장은 모순 한 문장, 5초 안에 끝난다. 날짜·출처는 둘째 문장으로. (쇼츠 첫 문장 형태를 롱폼 첫 문장으로 쓴다.)
