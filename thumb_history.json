@@ -877,6 +877,25 @@
    ],
    "video": "MBDknI3-ics",
    "shorts": "Kda8ugxDkv4"
+  },
+  {
+   "t": "sls",
+   "date": "2026.10.16",
+   "layout": "custom",
+   "palette": "green-amber-crimson on deep navy / translucent hourglass at right",
+   "variants": [
+    "delay-5x",
+    "same-news",
+    "filing"
+   ],
+   "main": "delay-5x",
+   "concepts": [
+    "초록 카드 막대(2025.10.15 2.18 vs 2026.10.15 11.34), '3상 결과 2년 지연 주가 5배 늦을수록 올랐다?' (주 썸네일)",
+    "빨강 카드 막대(2022.11 -44% vs 2025.12 +74%), '결과 늦어진다는데 닷새 +74%'",
+    "노랑 카드 막대(06.24 9.17 vs 07.01 13.27), '공시 한 장에 닷새 +45% 인수설, 회사는 말이 없다'"
+   ],
+   "video": "H6Ib_74o6Hk",
+   "shorts": "JlRgiEFjfIY"
   }
  ]
 }
