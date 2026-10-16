@@ -12,6 +12,7 @@ ap.add_argument("--publish-now", help="예약(비공개+publishAt) 영상을 지
 ap.add_argument("--retag", help="이미 올린 영상의 설명란·채널 첫 댓글 링크에 UTM을 붙인다")
 ap.add_argument("--fix-recent", type=int, help="최근 N개 업로드의 언어를 한국어로 맞추고 롱폼(3분 초과)을 재생목록에 넣는다")
 ap.add_argument("--dry-run", action="store_true", help="--fix-recent에서 바꾸지 않고 대상 수만 센다")
+ap.add_argument("--edit", help="이미 올린 영상 ID: --meta의 제목·설명·첫 댓글로 고친다(독립 검토 반영용, 2026-10-16)")
 ap.add_argument("--playlist-title", default="나스닥 내러티브 팟캐스트", help="롱폼을 넣을 재생목록 이름(운영자 지시 2026-10-15)")
 a = ap.parse_args()
 out = {}
@@ -129,6 +130,23 @@ m = json.load(open(a.meta, encoding="utf-8"))
 m["description"] = utm(m["description"], m.get("utm_content", "description"))
 if m.get("first_comment"):
     m["first_comment"] = utm(m["first_comment"], (m["utm_content"] + "_pinned") if m.get("utm_content") else "pinned")
+
+if a.edit:
+    v = yt.videos().list(part="snippet", id=a.edit).execute()["items"][0]; sn = v["snippet"]; out["video_id"] = a.edit
+    yt.videos().update(part="snippet", body={"id": a.edit, "snippet": {"title": m["title"][:100], "description": m["description"][:5000],
+        "categoryId": sn["categoryId"], "tags": m.get("tags", sn.get("tags", [])), "defaultLanguage": sn.get("defaultLanguage", "ko"),
+        "defaultAudioLanguage": sn.get("defaultAudioLanguage", "ko")}}).execute()
+    out["snippet"] = "updated"
+    if m.get("first_comment"):
+        me = yt.channels().list(part="id", mine=True).execute()["items"][0]["id"]
+        for th in yt.commentThreads().list(part="snippet", videoId=a.edit, maxResults=50, order="time").execute()["items"]:
+            c = th["snippet"]["topLevelComment"]; cs = c["snippet"]
+            if cs.get("authorChannelId", {}).get("value") == me and "drkimworld.com/r/" in cs["textOriginal"]:
+                if cs["textOriginal"] != m["first_comment"]:
+                    yt.comments().update(part="snippet", body={"id": c["id"], "snippet": {"textOriginal": m["first_comment"]}}).execute()
+                    out["comment"] = "updated"
+                break
+    done()
 
 def comment(vid):
     for _ in range(3):
