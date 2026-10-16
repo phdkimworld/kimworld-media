@@ -14,6 +14,7 @@
 #       (--kind 기본 top → reply, 대댓글에 답하면 followup, 종목 요청 답글은 request). 이미 있던 utm 값은 덮어쓴다.
 #       답글 1개를 단다. 성공하면 답글 ID 를 출력한다. 실패하면 다시 시도하지 않고 오류만 출력하고 1 로 끝난다.
 import os, re, sys, json, argparse, datetime, urllib.request, urllib.parse, urllib.error
+from zoneinfo import ZoneInfo
 
 API = 'https://www.googleapis.com/youtube/v3/'
 
@@ -46,7 +47,8 @@ def list_open(tok, days, video=None, search=None):
         return {'commentId': c['id'], 'author': sn.get('authorDisplayName'), 'authorChannelId': sn.get('authorChannelId', {}).get('value'),
                 'isMe': sn.get('authorChannelId', {}).get('value') == me, 'text': sn.get('textOriginal') or sn.get('textDisplay'),
                 'likeCount': sn.get('likeCount', 0), 'publishedAt': sn['publishedAt']}
-    out, mine24, pt, pages = [], 0, None, 0
+    et_start = datetime.datetime.now(ZoneInfo('America/New_York')).replace(hour=0, minute=0, second=0, microsecond=0)  # 하루 한도는 ET 0시 기준
+    out, mine24, mine_today, pt, pages = [], 0, 0, None, 0
     while True:
         r = call(tok, 'commentThreads', **q, **({'pageToken': pt} if pt else {})); pages += 1
         fresh = False
@@ -64,6 +66,7 @@ def list_open(tok, days, video=None, search=None):
             fresh = True
             mine = [c for c in conv if c['isMe']]
             mine24 += sum(1 for c in mine if c['commentId'] != topc['id'] and ts(c['publishedAt']) >= now - datetime.timedelta(hours=24))
+            mine_today += sum(1 for c in mine if c['commentId'] != topc['id'] and ts(c['publishedAt']) >= et_start)
             base = {'threadId': t['id'], 'videoId': top.get('videoId'), 'replyCount': t['snippet'].get('totalReplyCount', 0)}
             if not mine:
                 if ts(top['publishedAt']) < since and not search: continue
@@ -84,7 +87,7 @@ def list_open(tok, days, video=None, search=None):
     for k in range(0, len(ids), 50):
         for v in call(tok, 'videos', part='snippet', id=','.join(ids[k:k + 50])).get('items', []): titles[v['id']] = v['snippet']['title']
     for c in out: c['videoTitle'] = titles.get(c['videoId'], '')
-    return {'channelId': me, 'since': since.isoformat(timespec='seconds'), 'my_replies_24h': mine24, 'open': out}
+    return {'channelId': me, 'since': since.isoformat(timespec='seconds'), 'my_replies_24h': mine24, 'my_replies_today_et': mine_today, 'open': out}
 
 LINK_RE = re.compile(r'https?://(?:www\.)?drkimworld\.com/r/([a-z0-9-]+)/(\?[^\s]*)?')
 UTM_CONTENT = {'top': 'reply', 'followup': 'followup', 'request': 'request'}
