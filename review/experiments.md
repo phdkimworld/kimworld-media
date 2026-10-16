@@ -18,3 +18,4 @@
 |---|---|---|---|---|---|
 | 1 | 10-16 | AEHR | B | bigtext (메인 a) / card b / scene c | 운영자 '하나 더' · G장 첫 적용 · 숨긴 답 = 수주 발표 8번 닷새 뒤 (리포트 3부) |
 | 2 | 10-16 | NNDM | A | card (메인 a) / bigtext b / card c | 시청자 요청 · 숨긴 답 = 등록직접공모 5번 닷새 뒤 (리포트 3부) · 고정댓글 E2 A · 마지막 질문 E8 A |
+| 3 | 10-16 | ANRO | B | bigtext (메인 a) / card b / bigtext c | MSI 대기열 · 숨긴 답 = 할인 증자 3번 닷새 뒤 (리포트 3부) · 고정댓글 E2 B · 마지막 질문 E8 B · SNS 첫 줄 E6 B · ailWb4IvnUM |

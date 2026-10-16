@@ -941,6 +941,19 @@
    ],
    "main": "a",
    "experiment": "E1-A"
+  },
+  {
+   "t": "anro",
+   "date": "2026.10.16",
+   "layout": "bigtext",
+   "palette": "navy-brainwave",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B"
   }
  ]
 }
