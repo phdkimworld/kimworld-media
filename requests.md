@@ -9,3 +9,4 @@
 
 | 상태 | 티커 | 종목명 | 요청 스레드(threadId@videoId) | 요청자 | 요청일(ET) | 제작 예약 | 결과 |
 |---|---|---|---|---|---|---|---|
+| 대기 | NNDM | 나노 디멘션 | UgxE5BqRT7UDxhKAk6t4AaABAg@jhSUaCEJV2k | @jhyun2672 | 2026-10-16 | 10/16 10:22 ET · trig_01624taitUrFaaM7VB6dHefx | |
