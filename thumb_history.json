@@ -915,6 +915,19 @@
    ],
    "video": "Pk713RlsJn8",
    "shorts": "X6z6RdPO6Hg"
+  },
+  {
+   "t": "aehr",
+   "date": "2026.10.16",
+   "layout": "bigtext",
+   "palette": "navy-wafer",
+   "variants": [
+    "bigtext",
+    "card",
+    "scene"
+   ],
+   "main": "a",
+   "experiment": "E1-B"
   }
  ]
 }
