@@ -954,6 +954,19 @@
    ],
    "main": "a",
    "experiment": "E1-B"
+  },
+  {
+   "t": "render",
+   "date": "2026.10.16",
+   "layout": "card",
+   "palette": "navy-gpu-grid",
+   "variants": [
+    "card",
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A"
   }
  ]
 }
