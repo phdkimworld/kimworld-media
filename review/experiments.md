@@ -21,3 +21,4 @@
 | 3 | 10-16 | ANRO | B | bigtext (메인 a) / card b / bigtext c | MSI 대기열 · 숨긴 답 = 할인 증자 3번 닷새 뒤 (리포트 3부) · 고정댓글 E2 B · 마지막 질문 E8 B · SNS 첫 줄 E6 B · ailWb4IvnUM |
 | 4 | 10-16 | RENDER | A | card (메인 a) / bigtext b / bigtext c | MSI 대기열(8종목 채우기로 앞당김) · 코인 · 숨긴 답 = 자체 호재 3번 닷새 뒤 (리포트 3부) · 고정댓글 E2 A · 마지막 질문 E8 A · SNS 첫 줄 E6 A · uNPJdhyyvrk |
 | 5 | 10-16 | RKLB | B | bigtext (메인 a) / card b / bigtext c | 운영자 '하나 더' · 채널 옛 영상 14편 → 새 각도(뉴트론 2027 연기·증자가·내부자) · 숨긴 답 = 뉴트론 지연 6번 반응일 상승 횟수 (리포트 3부) · 고정댓글 E2 B · 마지막 질문 E8 B · SNS 첫 줄 E6 B · 쇼츠 utm_medium=shorts 첫 적용 · hY23281FQD8 |
+| 6 | 10-16 | NEAR | A | card (메인 a) / bigtext b / bigtext c | 8종목 채우기 8편째 · 코인 · 옛 영상 2편(1월) → 새 각도(활성 계정 -75.4% vs 가격 5배) · 숨긴 답 = ETF 소식 7번 닷새 뒤 (리포트 3부) · 고정댓글 E2 A · 마지막 질문 E8 A · SNS 첫 줄 E6 A · pqrwmXSM6QQ |
