@@ -839,6 +839,25 @@
     "청록 카드 '학회 예고 +43% / 실제 발표 -30%', '예고엔 오르고 발표엔 빠졌다' (주 썸네일)",
     "라임 카드 '얀센 최대 30억 / 종료 다음 날 -62%', '30억 달러 협업을 스스로 거절?'"
    ]
+  },
+  {
+   "t": "tao",
+   "date": "2026.10.16",
+   "layout": "custom",
+   "palette": "orange-green-white on charcoal black / glowing node network (subnets) at edges",
+   "variants": [
+    "contrast",
+    "subsidy",
+    "other-news"
+   ],
+   "main": "contrast",
+   "concepts": [
+    "주황 카드 막대(반감기 닷새 -17.6% 빨강 아래 vs 06.13 하루 +24.3% 초록 위), '반감기엔 -18% 남의 소식 +24%' (주 썸네일)",
+    "하늘색 카드 막대(슈츠 보조금 260만$ vs 매출 39만$), '인공지능 네트워크 보조금 7배'",
+    "초록 카드 막대(06.12 32만 vs 06.13 39.8만), '남의 AI가 멈춘 날 하루 +24%'"
+   ],
+   "video": "AtP-Bvjrb5Y",
+   "shorts": "V0InmSUMPGE"
   }
  ]
 }
