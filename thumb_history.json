@@ -1006,6 +1006,19 @@
    ],
    "main": "a",
    "experiment": "E1-B"
+  },
+  {
+   "t": "goss",
+   "date": "2026.10.17",
+   "layout": "card",
+   "palette": "violet-gold",
+   "variants": [
+    "card",
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A"
   }
  ]
 }

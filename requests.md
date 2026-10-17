@@ -10,4 +10,4 @@
 | 상태 | 티커 | 종목명 | 요청 스레드(threadId@videoId) | 요청자 | 요청일(ET) | 제작 예약 | 결과 |
 |---|---|---|---|---|---|---|---|
 | 완료 | NNDM | 나노 디멘션 | UgxE5BqRT7UDxhKAk6t4AaABAg@jhSUaCEJV2k | @jhyun2672 | 2026-10-16 | 10/16 10:22 ET · trig_01624taitUrFaaM7VB6dHefx | N-XVM74ZIJs · 쇼츠 GRU4-aILSXg · 답글 UgxE5BqRT7UDxhKAk6t4AaABAg.Ac0JQmKchRBAc1Od3AKDC_ |
-| 제작 중 | GOSS | 고사머 바이오 | Ugz7XIsIiaw6j4DUk3x4AaABAg@rFhdA826Xiw | @문무-f9w | 2026-10-16 | 10/17 01:22 ET · trig_017WURtJ29BLqL8VHipTK4Yv | |
+| 완료 | GOSS | 고사머 바이오 | Ugz7XIsIiaw6j4DUk3x4AaABAg@rFhdA826Xiw | @문무-f9w | 2026-10-16 | 10/17 01:22 ET · trig_017WURtJ29BLqL8VHipTK4Yv | TCiZrydRrHU · 쇼츠 dzKk9zSHBo8 · 답글 Ugz7XIsIiaw6j4DUk3x4AaABAg.AaRIPzSGtwBAc31bqNefnL |
