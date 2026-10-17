@@ -1030,7 +1030,7 @@ make_slide_video.py (사용: `python3 make_slide_video.py slides.json raw.wav �
   1. 환경변수가 없거나 `--check`가 실패한다(종료 코드 2. `invalid_grant`, 401, 네트워크 차단 등)
   2. 업로드 자체가 실패해 영상 ID가 생기지 않았다(종료 코드 3. `quotaExceeded`, `uploadLimitExceeded`, 재시도 뒤에도 5xx 등)
   3. 업로드는 됐지만 공개 범위가 요청과 다르다(종료 코드 4, 출력에 `"locked": true`). API 감사를 통과하지 않은 프로젝트에서 공개 요청이 비공개로 잠긴 경우다. 이때는 먼저 `python3 /home/claude/yt_api_upload.py --delete <영상 ID>`로 그 영상을 지운 뒤 경로 B로 올린다
-- **쿼터가 이미 바닥난 걸 알면 바로 경로 B(운영자 지시 2026-10-16 "이런 경우 메트리쿨로 바로 될 것 같으면 그걸로 처리해 줘")**: 같은 날(쿼터는 태평양 0시 = ET 3시에 풀림) 앞선 호출에서 `quotaExceeded`가 나왔으면 다음 업로드(쇼츠 포함)는 경로 A를 시도하지 말고 바로 경로 B로 올린다. 쿼터가 풀리길 기다리지 않는다. 공개 URL은 미디어 저장소 작업 브랜치에 `<t>/<파일>`을 커밋·푸시해 `https://raw.githubusercontent.com/phdkimworld/kimworld-media/claude/kim-world-stock-studio-laes-ovy09b/<t>/<파일>`로 만든다(GitHub contents API로 크기 확인). 사이트 주소(drkimworld.com/static/…)는 Metricool이 'Failed to normalize media'로 거절한다(2026-10-16 MBOT). 쇼츠는 `youtubeData.type` `short`. 설명·첫 댓글 링크의 UTM은 yt_api_upload.py의 `utm()`을 불러 그대로 붙인다(쇼츠 medium=shorts). 재생목록 추가처럼 쿼터 때문에 빠진 일은 ET 3시 뒤 `--fix-recent`로 채운다
+- **쿼터 소진 때는 Metricool을 쓰지 않는다(운영자 지시 2026-10-16 "메트리쿨은 잊어버리고 원래 하려던 대로 해")**: Metricool 계정 한도 초과로 유튜브 게시가 안 된다(2026-10-16 MBOT 쇼츠 'You have reached your Metricool account limit.'). `quotaExceeded`가 나오면 남은 업로드(쇼츠 포함)와 재생목록 추가는 쿼터가 풀리는 ET 3시 뒤로 미루고, `send_later`로 03:05 ET에 이 세션을 깨워 `yt_api_upload.py`(경로 A)로 올린 뒤 `--fix-recent`로 재생목록을 채운다. 릴스·Threads는 기다리지 않고 그대로 낸다
 - **대체하지 않는 경우**: 영상이 요청한 공개 범위로 올라갔는데 썸네일이나 첫 댓글만 실패했다. 경로 B로 다시 올리지 않는다
   - 썸네일 실패 사유가 맞춤 썸네일 권한(전화번호 인증)이면 V7.3의 `VIDEO_THUMBNAIL_NOT_APPLICABLE`과 같은 안내를 한 줄 남긴다
   - 첫 댓글 실패는 `python3 /home/claude/yt_api_upload.py --meta <upload_meta.json> --comment-only <영상 ID>`로 한 번 더 시도하고, 그래도 실패하면 오류 문구와 함께 "YouTube Studio에서 고정댓글 문구를 첫 댓글로 달아 주세요"를 한 줄 남긴다
@@ -1456,7 +1456,7 @@ R7(리포트)과 K6(자산)에 더해 아래를 모두 확인하고, 어긋나�
 - 2026-10-16 (운영자 지시 '3 4 반영'): 페이스북 본문 투표 보기 글 삭제(인스타만 유지), 사이트 share_desc·첫 화면·종목 페이지의 '회원 가입 없이' 삭제
 - 2026-10-16 (운영자 지시 '플랫폼 알고리즘에 선택될 가능성 기준으로 평가'): G6 신설 — 제3자 검토를 플랫폼별(롱폼·쇼츠·SNS·사이트) 알고리즘 선택 가능성 점수로, 공식 신호 기준표·신호별 점수·개선안 반영
 - 2026-10-16 (성장 검토 1회차, 운영자 지시 'CTR·전환율·체류시간·반응 극대화'): G장 신설 — CTR(축소 시험·빈 감정어 금지·낯선 종목 꼬리표), 전환(숨긴 답·쇼츠 경로·끝 화면·페북 릴스 링크·위치별 UTM), 체류(훅 5초·소개 12초·첫 단서 90초·안내 40초·끝 줄이기), 반응(고정댓글 두 줄·요청 회차 표시·투표 보기), 실험 E1~E8(review/experiments.md)
-- 2026-10-16 (운영자 지시): 유튜브 쿼터가 바닥났으면 기다리지 말고 바로 Metricool로 올림(V7.1)
+- 2026-10-16 (운영자 지시): 유튜브 쿼터 소진 시 Metricool 대신 ET 3시 뒤 API로 다시 올림(V7.1, Metricool 계정 한도 초과 확인)
 - 2026-10-17 (운영자 지시): 쇼츠 마지막 두 장면에 투표 카드(`poll` 요소, make_shorts.py가 없으면 멈춤)(G4)
 - 2026-10-16 (운영자 지시): 롱폼 끝에서 두 번째 문단에 Threads 같은 투표 화면(`poll` 레이아웃, 세 가설 ①②③, 댓글에 번호로) 필수 — check_slides.py POLL 검사, 실험 E8 종료(G4)
 - 2026-10-16 (독립 검토 1회차): 확정 종가만·영상 전용 숫자 금지·최상급/개수 검산·사건일(EDGAR 시각) 기준·비율 분모·미확인 보도 조건문·2차 출처 표시(3.5), 후속편 판정표 규칙(3.4.1), 후속편 발행 시 같은 종목 옛 SNS 대기열 취소(7장), 매일 08:37 ET 독립 검토(review/log.md)
