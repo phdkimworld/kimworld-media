@@ -13,6 +13,8 @@
 #       utm_source=youtube&utm_medium=comment&utm_campaign=<slug>&utm_content=reply|followup|request
 #       (--kind 기본 top → reply, 대댓글에 답하면 followup, 종목 요청 답글은 request). 이미 있던 utm 값은 덮어쓴다.
 #       답글 1개를 단다. 성공하면 답글 ID 를 출력한다. 실패하면 다시 시도하지 않고 오류만 출력하고 1 로 끝난다.
+#   python3 yt_reply.py --moderate COMMENT_ID [--ban]
+#       홍보·스팸·외부 링크 댓글을 거절(시청자에게 숨김)하고, --ban 이면 작성자를 채널에서 차단한다(운영자 지시 2026-10-17).
 import os, re, sys, json, argparse, datetime, urllib.request, urllib.parse, urllib.error
 from zoneinfo import ZoneInfo
 
@@ -106,6 +108,8 @@ def main():
     ap.add_argument('--video'); ap.add_argument('--search')
     ap.add_argument('--reply'); ap.add_argument('--text-file')
     ap.add_argument('--kind', choices=['top', 'followup', 'request'], default='top')
+    ap.add_argument('--moderate', help='홍보·스팸 댓글 ID 를 거절(숨김)한다. --ban 이면 작성자도 채널에서 차단')
+    ap.add_argument('--ban', action='store_true')
     a = ap.parse_args()
     if not all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN')):
         print('유튜브 인증값 없음', file=sys.stderr); sys.exit(2)
@@ -120,6 +124,12 @@ def main():
         try: r = call(tok, 'comments', {'snippet': {'parentId': a.reply, 'textOriginal': text}}, part='snippet')
         except urllib.error.HTTPError as e: print('답글 실패(재시도 안 함):', err(e), file=sys.stderr); sys.exit(1)
         print(r['id'])
+    elif a.moderate:
+        q = urllib.parse.urlencode({'id': a.moderate, 'moderationStatus': 'rejected', 'banAuthor': 'true' if a.ban else 'false'})
+        req = urllib.request.Request(API + 'comments/setModerationStatus?' + q, data=b'', method='POST', headers={'Authorization': 'Bearer ' + tok})
+        try: urllib.request.urlopen(req)
+        except urllib.error.HTTPError as e: print('조치 실패:', err(e), file=sys.stderr); sys.exit(1)
+        print('rejected' + (' +ban' if a.ban else ''))
     else: ap.print_usage(); sys.exit(2)
 
 if __name__ == '__main__': main()
