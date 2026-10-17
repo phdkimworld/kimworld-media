@@ -1045,6 +1045,29 @@
    ],
    "main": "a",
    "experiment": "E1-A"
+  },
+  {
+   "t": "tia",
+   "date": "2026.10.17",
+   "layout": "bigtext",
+   "palette": "violet-emerald-magenta-datablocks",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "하루 60달러 / 일주일 +44% 큰 글자 + 데이터 블록 탑",
+    "버는 건 이것뿐인데 + 60달러·+44% 카드",
+    "사실상 공짜인데 / 일주일 +44% (창업자 글 인용 각도)"
+   ]
   }
  ]
 }
