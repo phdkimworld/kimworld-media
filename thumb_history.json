@@ -1019,6 +1019,19 @@
    ],
    "main": "a",
    "experiment": "E1-A"
+  },
+  {
+   "t": "sldp",
+   "date": "2026.10.17",
+   "layout": "bigtext",
+   "palette": "navy-skyblue-amber-battery",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B"
   }
  ]
 }
