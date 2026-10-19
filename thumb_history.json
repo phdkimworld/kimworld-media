@@ -1125,6 +1125,29 @@
     "로켓랩 -25% / 여긴 -12% 큰 글자",
     "남은 판매 한도 4,176만 주"
    ]
+  },
+  {
+   "t": "laes",
+   "date": "2026.10.19",
+   "layout": "bigtext",
+   "palette": "midnight-cyan-gold-vault",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "매출 +65% / 다음 날 -7% 큰 글자 + 금고",
+    "현금보다 싼 주식? + 주당 현금 $2.07·주가 $1.79 카드",
+    "현금 4.63억 / 시총 4억"
+   ]
   }
  ]
 }
