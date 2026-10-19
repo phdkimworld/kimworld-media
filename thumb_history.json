@@ -1084,6 +1084,29 @@
     "같은 큰손 93→40달러 큰 글자",
     "반값에 또 20억 / 왜 웃돈?"
    ]
+  },
+  {
+   "t": "sui",
+   "date": "2026.10.18",
+   "layout": "bigtext",
+   "palette": "aqua-blue-orange-droplet",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "구글·삼성 손잡고 / 2주 -18% 큰 글자 + 물방울·휴대폰",
+    "구글·삼성 손잡았는데 + 2주 -18%·첫날 대비 -25% 카드",
+    "ETF 3개 생겼는데 / 상장가 -25%"
+   ]
   }
  ]
 }
