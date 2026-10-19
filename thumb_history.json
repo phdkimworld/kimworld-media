@@ -1148,6 +1148,24 @@
     "현금보다 싼 주식? + 주당 현금 $2.07·주가 $1.79 카드",
     "현금 4.63억 / 시총 4억"
    ]
+  },
+  {
+   "t": "soun",
+   "date": "2026.10.19",
+   "layout": "custom",
+   "palette": "violet-gold-soundwave",
+   "styles": [
+    "card",
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "소식 없는데 왜 신저가? + SEC 공시 0건·한 주 -12% 카드",
+    "2024년 9월 이후 최저 / $4.53 큰 글자",
+    "숨은 새 주식 / 3,689만 주"
+   ]
   }
  ]
 }
