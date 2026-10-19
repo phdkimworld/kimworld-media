@@ -57,12 +57,15 @@ def list_open(tok, days, video=None, search=None):
         for t in r.get('items', []):
             topc = t['snippet']['topLevelComment']; top = topc['snippet']
             reps = t.get('replies', {}).get('comments', [])
-            if t['snippet'].get('totalReplyCount', 0) > len(reps):  # 답글이 5개를 넘으면 전부 받아 확인
-                reps, rpt = [], None
+            def all_replies():
+                out_r, rpt = [], None
                 while True:
                     rr = call(tok, 'comments', part='snippet', parentId=t['id'], maxResults=100, textFormat='plainText', **({'pageToken': rpt} if rpt else {}))
-                    reps += rr.get('items', []); rpt = rr.get('nextPageToken')
-                    if not rpt: break
+                    out_r += rr.get('items', []); rpt = rr.get('nextPageToken')
+                    if not rpt: return out_r
+            full = False
+            if t['snippet'].get('totalReplyCount', 0) > len(reps):  # 답글이 5개를 넘으면 전부 받아 확인
+                reps, full = all_replies(), True
             conv = sorted([item(topc)] + [item(c) for c in reps], key=lambda x: x['publishedAt'])
             if max(ts(c['publishedAt']) for c in conv) < since and not search: continue
             fresh = True
@@ -76,6 +79,14 @@ def list_open(tok, days, video=None, search=None):
                 continue
             last = max(ts(c['publishedAt']) for c in mine)
             fu = [c for c in conv if not c['isMe'] and ts(c['publishedAt']) > last and (search or ts(c['publishedAt']) >= since)]
+            if fu and reps and not full:
+                # commentThreads 의 replies·totalReplyCount 는 늦게 갱신돼 우리 최근 답글이 빠질 때가 있다(10-19 GOSS 스레드).
+                # 답할 차례로 보이면 comments API로 답글 전체를 다시 받아 확인한다.
+                reps = all_replies()
+                conv = sorted([item(topc)] + [item(c) for c in reps], key=lambda x: x['publishedAt'])
+                mine = [c for c in conv if c['isMe']]
+                last = max(ts(c['publishedAt']) for c in mine)
+                fu = [c for c in conv if not c['isMe'] and ts(c['publishedAt']) > last and (search or ts(c['publishedAt']) >= since)]
             if not fu: continue
             out.append({**base, 'kind': 'followup', 'author': fu[-1]['author'], 'authorChannelId': fu[-1]['authorChannelId'],
                         'text': fu[-1]['text'], 'likeCount': max(c['likeCount'] for c in fu), 'publishedAt': fu[-1]['publishedAt'],
