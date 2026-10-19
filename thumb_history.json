@@ -1166,6 +1166,29 @@
     "2024년 9월 이후 최저 / $4.53 큰 글자",
     "숨은 새 주식 / 3,689만 주"
    ]
+  },
+  {
+   "t": "xndu",
+   "date": "2026.10.19",
+   "layout": "bigtext",
+   "palette": "violet-magenta-photon-chip",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "공시 0건 / 한 주 -22% 큰 글자 + 빛 칩",
+    "목표가보다 더 아래? + 최저 목표가 $3.75·주가 $3.04 카드",
+    "상장 뒤 최저 / $3.04"
+   ]
   }
  ]
 }
