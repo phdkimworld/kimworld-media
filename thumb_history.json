@@ -1304,6 +1304,29 @@
     "판매는 예상 ↑ / 주가는 -25% 큰 글자",
     "실적 다음 날 31번의 기록 + 같은 카드"
    ]
+  },
+  {
+   "t": "spcx",
+   "date": "2026.10.20",
+   "layout": "bigtext",
+   "palette": "graphite-red-rocket",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "첫 흑자인데 / 13억 주 풀린다 큰 글자 + 로켓·급등 뒤 꺾이는 화살표",
+    "첫 흑자 ↑ 모레 해제 + 13억 주·매출 예상 대비 +15% 카드",
+    "$225 → $147 / 버틸까? 큰 글자"
+   ]
   }
  ]
 }
