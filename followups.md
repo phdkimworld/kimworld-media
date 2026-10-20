@@ -1,36 +1,36 @@
-# 후속편 일정표 (SKILL 3.4.2)
+# 후속편 후보 일정표 (SKILL 3.4.2 · 선정은 G7)
 
-운영자 지시 2026-10-20: "앞으로는 기존 리포트에서 지목했던 주요 이벤트가 있으면 그 이벤트 결과가 나온 시점으로 예약해서 팔로우업해."
-**일별 최대 3편(후속편 포함, 운영자 지시 2026-10-20 "일별 최대 3개 제작으로 하고 거기에 맞춰서 큐잉해").** 결과 시점이 3편 넘게 몰리는 날은 덜 급한 것을 다음 빈 날로 미룬다. 결과 시점은 미국 동부시간(11/1부터 EST). 날짜 미정 확인 예약: trig_018BGNeNK421osKe3Xu3F1fp(매일 07:47 ET).  날짜 미정은 매일 '후속편 일정 확인'이 공지를 찾아 예약한다.
+운영자 지시 2026-10-20: "팔로우도 중요하지만 결국 가장 중요한건 채널에 도움이 되는가야. 저것도 한 요소지만 머스트는 아니야. 3개밖에 못 만드니까 앞으로는 매번 선정시 채널의 성장에 최선인 것으로 선정해 줘."
+→ 아래 이벤트는 결과 시점이 지나면 **후보**가 된다. 자동 제작 예약은 모두 껐다(24건, 예약 ID는 기록용). 하루 최대 3편, 선정은 '하루 제작 점검'이 G7 점수로 한다. 조사는 제작이 결정된 시점에만 한다.
 
-## 예약됨
+## 결과 시점이 정해진 후보 (자동 예약 꺼짐)
 
 | 결과 시점(ET) | 종목 | 원 리포트 | 이벤트 | 예약 ID | 상태 |
 |---|---|---|---|---|---|
-| 10-22 16:45 | TSLA | tsla-2026-10 | 10/21 장 마감 뒤 3분기 실적 → 22일 반응 | trig_01SCMa6zNvMdN4PPrGtSpLrU | 대기 |
-| 10-22 18:15 | CRML | crml-2026-10 | 10/22 합병 투표 | trig_01ShKQBeoMTKu1tkqAZTt87V | 대기 |
-| 10-22 19:45 | CNTN | cntn-2026-10 | 10/21 설명회 → 22일 반응 | trig_01BAgMccxA9WngwCuCb62SUm | 대기 |
-| 10-21 09:15 | AGNC | agnc-2026-10 | 10/19 3분기 실적(지난 이벤트) | trig_01GDuUcVJ8hfKWw7vTVUCpdA | 대기 |
-| 10-21 12:15 | CBRS | cbrs-2026-10 | 10/14 해제 결과(지난 이벤트) | trig_01RMdKZ2WzBF5X98K9abTMVf | 대기 |
-| 10-21 15:15 | STRK | strk-2026-10 | 10/15 언락 결과(지난 이벤트) | trig_014KAFQxBT8nbqJQmtpao1ax | 대기 |
-| 10-23 09:15 | BURU | buru-2026-10 | 10/15 테크네 인수 마감 결과(지난 이벤트) | trig_01P13qyUbVevMtKx6qTR6PVW | 대기 |
-| 10-23 12:15 | RUBI | rubi-2026-10 | 10/19 전환사채 1차 납입 결과(지난 이벤트) | trig_01RgWqLwDZDit5SxBzHv7gSW | 대기 |
-| 10-23 16:45 | SLDP | sldp-2026-10-2 | 10/21 퀀텀스케이프 실적(10/22에서 한도로 미룸) | trig_01YMD6WimAjUEB9xNqsZnBv7 | 대기 |
-| 10-25 18:00 | ZRO | zro-2026-10 | 10/20 해제 닷새 뒤 | trig_0111GirDJz419nm8zExem6RY | 대기 |
-| 10-27 16:45 | XTIA | xtia-2026-10 | 10/26 2분기 보고서 | trig_01A4XmqxFpbC1yvT9Lzjwrc2 | 대기 |
-| 10-28 16:45 | SPCX | spcx-2026-10 | 10/22 약 13억 주 해제 뒤 다섯 거래일 | trig_01EHtLnECvCAmcsgqBJyqTVd | 대기 |
-| 10-29 16:45 | LHX | lhx-2026-10 | 10/29 3분기 실적 | trig_01KtFS1SQDLrF2ycGZoj5LWi | 대기 |
-| 10-30 16:45 | AXTI | axti-2026-10 | 10/29 장 마감 뒤 3분기 실적 → 30일 반응 | trig_01CkEWDCeaQa1evAxjZ1c19L | 대기 |
-| 10-30 18:15 | TAO | tao-2026-10 | 10/25 비트와이즈 ETF 효력 닷새 뒤 | trig_016PBnDax71efEKTAN6eajRh | 대기 |
-| 11-03 16:45 | CBRS | cbrs-2026-10 | 10/28 해제 뒤 다섯 거래일 | trig_015X84Wj7xKsGHRiYFnqnHui | 대기 |
-| 11-03 18:15 | RXRX | rxrx-2026-10 | 11/2 데이터 | trig_019xM3LqVSsiY1efzZ5MEdAE | 대기 |
-| 11-04 16:45 | SMCI | smci-2026-10 | 11/3 장 마감 뒤 정식 실적 → 4일 반응 | trig_0155oRyCHyRhrmKHNHMg36gV | 대기 |
-| 11-04 18:15 | TIA | tia-2026-10 | 10/30 언락 종료 닷새 뒤 | trig_01LvzRMV35X4BwF9suh4WKth | 대기 |
-| 11-06 18:00 | SUI | sui-2026-10 | 11/1 해제 닷새 뒤 | trig_019eVDW4bv3cazTjtehLt1Xh | 대기 |
-| 11-08 18:00 | KITE | kite-2026-10 | 11/3 팀·투자자 첫 해제 닷새 뒤 | trig_016m2JDdfxhACGMDNj6CRxdf | 대기 |
-| 11-10 16:45 | LCID | lcid-2026-10 | 11/9 3분기 실적 | trig_01SU3poMqCwokLAptNUGoV73 | 대기 |
-| 11-20 18:00 | STRK | strk-2026-10 | 11/15 언락 닷새 뒤 | trig_01JAUaGJDR4yjheYcfzjN5fJ | 대기 |
-| 11-23 16:45 | ERAS | eras-2026-10 | 11/20 ENA 학회 발표 | trig_01Bu3PEtbLKozCyBUTHXsxEB | 대기 |
+| 10-22 16:45 | TSLA | tsla-2026-10 | 10/21 장 마감 뒤 3분기 실적 → 22일 반응 | trig_01SCMa6zNvMdN4PPrGtSpLrU | 후보 |
+| 10-22 18:15 | CRML | crml-2026-10 | 10/22 합병 투표 | trig_01ShKQBeoMTKu1tkqAZTt87V | 후보 |
+| 10-22 19:45 | CNTN | cntn-2026-10 | 10/21 설명회 → 22일 반응 | trig_01BAgMccxA9WngwCuCb62SUm | 후보 |
+| 10-21 09:15 | AGNC | agnc-2026-10 | 10/19 3분기 실적(지난 이벤트) | trig_01GDuUcVJ8hfKWw7vTVUCpdA | 후보 |
+| 10-21 12:15 | CBRS | cbrs-2026-10 | 10/14 해제 결과(지난 이벤트) | trig_01RMdKZ2WzBF5X98K9abTMVf | 후보 |
+| 10-21 15:15 | STRK | strk-2026-10 | 10/15 언락 결과(지난 이벤트) | trig_014KAFQxBT8nbqJQmtpao1ax | 후보 |
+| 10-23 09:15 | BURU | buru-2026-10 | 10/15 테크네 인수 마감 결과(지난 이벤트) | trig_01P13qyUbVevMtKx6qTR6PVW | 후보 |
+| 10-23 12:15 | RUBI | rubi-2026-10 | 10/19 전환사채 1차 납입 결과(지난 이벤트) | trig_01RgWqLwDZDit5SxBzHv7gSW | 후보 |
+| 10-23 16:45 | SLDP | sldp-2026-10-2 | 10/21 퀀텀스케이프 실적(10/22에서 한도로 미룸) | trig_01YMD6WimAjUEB9xNqsZnBv7 | 후보 |
+| 10-25 18:00 | ZRO | zro-2026-10 | 10/20 해제 닷새 뒤 | trig_0111GirDJz419nm8zExem6RY | 후보 |
+| 10-27 16:45 | XTIA | xtia-2026-10 | 10/26 2분기 보고서 | trig_01A4XmqxFpbC1yvT9Lzjwrc2 | 후보 |
+| 10-28 16:45 | SPCX | spcx-2026-10 | 10/22 약 13억 주 해제 뒤 다섯 거래일 | trig_01EHtLnECvCAmcsgqBJyqTVd | 후보 |
+| 10-29 16:45 | LHX | lhx-2026-10 | 10/29 3분기 실적 | trig_01KtFS1SQDLrF2ycGZoj5LWi | 후보 |
+| 10-30 16:45 | AXTI | axti-2026-10 | 10/29 장 마감 뒤 3분기 실적 → 30일 반응 | trig_01CkEWDCeaQa1evAxjZ1c19L | 후보 |
+| 10-30 18:15 | TAO | tao-2026-10 | 10/25 비트와이즈 ETF 효력 닷새 뒤 | trig_016PBnDax71efEKTAN6eajRh | 후보 |
+| 11-03 16:45 | CBRS | cbrs-2026-10 | 10/28 해제 뒤 다섯 거래일 | trig_015X84Wj7xKsGHRiYFnqnHui | 후보 |
+| 11-03 18:15 | RXRX | rxrx-2026-10 | 11/2 데이터 | trig_019xM3LqVSsiY1efzZ5MEdAE | 후보 |
+| 11-04 16:45 | SMCI | smci-2026-10 | 11/3 장 마감 뒤 정식 실적 → 4일 반응 | trig_0155oRyCHyRhrmKHNHMg36gV | 후보 |
+| 11-04 18:15 | TIA | tia-2026-10 | 10/30 언락 종료 닷새 뒤 | trig_01LvzRMV35X4BwF9suh4WKth | 후보 |
+| 11-06 18:00 | SUI | sui-2026-10 | 11/1 해제 닷새 뒤 | trig_019eVDW4bv3cazTjtehLt1Xh | 후보 |
+| 11-08 18:00 | KITE | kite-2026-10 | 11/3 팀·투자자 첫 해제 닷새 뒤 | trig_016m2JDdfxhACGMDNj6CRxdf | 후보 |
+| 11-10 16:45 | LCID | lcid-2026-10 | 11/9 3분기 실적 | trig_01SU3poMqCwokLAptNUGoV73 | 후보 |
+| 11-20 18:00 | STRK | strk-2026-10 | 11/15 언락 닷새 뒤 | trig_01JAUaGJDR4yjheYcfzjN5fJ | 후보 |
+| 11-23 16:45 | ERAS | eras-2026-10 | 11/20 ENA 학회 발표 | trig_01Bu3PEtbLKozCyBUTHXsxEB | 후보 |
 
 ## 날짜 미정 (공지되면 예약)
 
@@ -75,4 +75,4 @@
 
 ## 이미 지난 이벤트
 
-운영자 지시 2026-10-20 "지난 것도 다 만들어" → AGNC·CBRS·STRK는 10/21, BURU·RUBI는 10/23로 예약(위 표).
+AGNC·CBRS·STRK·BURU·RUBI는 결과가 나와 있어 지금부터 후보다(위 표).
