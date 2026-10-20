@@ -1212,6 +1212,29 @@
     "7거래일 / -37.8% 큰 글자 + 자물쇠",
     "NATO 계약 땄는데 / 왜 폭락?"
    ]
+  },
+  {
+   "t": "btq",
+   "date": "2026.10.20",
+   "layout": "bigtext",
+   "palette": "cyan-gold-shield",
+   "variants": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "첫 계약 뒤 / 바닥 1센트 위 큰 글자 + 방패 자물쇠·바닥선 $2.15",
+    "계약 따고 왜 바닥? + 올해 최저 $2.15·10.16 $2.16 카드",
+    "열흘 -17% / $2.16 큰 글자"
+   ]
   }
  ]
 }
