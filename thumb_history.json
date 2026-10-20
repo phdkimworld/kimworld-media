@@ -1189,6 +1189,29 @@
     "목표가보다 더 아래? + 최저 목표가 $3.75·주가 $3.04 카드",
     "상장 뒤 최저 / $3.04"
    ]
+  },
+  {
+   "t": "arqq",
+   "date": "2026.10.19",
+   "layout": "card",
+   "palette": "emerald-gold-lock",
+   "variants": [
+    "card",
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "매출 2배인데 -38%? + 실적 전날 $22.55·7거래일 뒤 $14.02 카드",
+    "7거래일 / -37.8% 큰 글자 + 자물쇠",
+    "NATO 계약 땄는데 / 왜 폭락?"
+   ]
   }
  ]
 }
