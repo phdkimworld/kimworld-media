@@ -1350,6 +1350,26 @@
     "미리 알린 숫자 / 시간외 +15% 큰 글자",
     "잠정 실적 12번의 기록 + 같은 카드"
    ]
+  },
+  {
+   "t": "nflx",
+   "date": "2026.10.21",
+   "layout": "bigtext",
+   "palette": "graphite-red-tv",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "이익은 느는데 / 5연속 하락 큰 글자 + TV·계단식 하락 화살표",
+    "$134 → $69 / 6번째? 큰 글자"
+   ]
   }
  ]
 }

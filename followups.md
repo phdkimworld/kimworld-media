@@ -29,6 +29,7 @@
 | 11-06 18:00 | SUI | sui-2026-10 | 11/1 해제 닷새 뒤 | trig_019eVDW4bv3cazTjtehLt1Xh | 후보 |
 | 11-08 18:00 | KITE | kite-2026-10 | 11/3 팀·투자자 첫 해제 닷새 뒤 | trig_016m2JDdfxhACGMDNj6CRxdf | 후보 |
 | 11-10 16:45 | LCID | lcid-2026-10 | 11/9 3분기 실적 | trig_01SU3poMqCwokLAptNUGoV73 | 후보 |
+| 11-18 16:45 | NFLX | nflx-2026-10 | 10/20 실적 뒤 스무 거래일(발표 날 종가 68.69달러 회복 여부) | — | 후보 |
 | 11-20 18:00 | STRK | strk-2026-10 | 11/15 언락 닷새 뒤 | trig_01JAUaGJDR4yjheYcfzjN5fJ | 후보 |
 | 11-23 16:45 | ERAS | eras-2026-10 | 11/20 ENA 학회 발표 | trig_01Bu3PEtbLKozCyBUTHXsxEB | 후보 |
 
