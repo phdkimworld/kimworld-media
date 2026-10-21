@@ -1370,6 +1370,26 @@
     "이익은 느는데 / 5연속 하락 큰 글자 + TV·계단식 하락 화살표",
     "$134 → $69 / 6번째? 큰 글자"
    ]
+  },
+  {
+   "t": "isrg",
+   "date": "2026.10.21",
+   "layout": "card",
+   "palette": "graphite-red-robot",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "예상 넘었는데 / 왜 빠졌나 + 예상↑·장 전 -7.6% 카드 + 수술 로봇 팔·하락 화살표",
+    "미국 수술 10% / 장 전 -7.6% 큰 글자"
+   ]
   }
  ]
 }
