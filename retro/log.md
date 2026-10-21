@@ -377,3 +377,4 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 무엇: ISRG 영상 연결 커밋 때 `test_build.py | tail -1 && build && commit` 순서였는데, 테스트가 디스크 부족(/tmp/kws-* 복사 중 Errno 28)으로 실패했어도 파이프 때문에 다음 단계로 넘어가 커밋·푸시됐다(빌드는 통과, 리포트 99개).
 - 조치: /home/claude/<종목>/ 의 slides_out·shorts_out·mp4·wav(이미 업로드한 것)와 /tmp/tmp*(렌더 임시, 500여 개)를 지워 8GB 넘게 확보. 테스트 다시 통과(EXIT=0), 엄격 빌드 통과.
 - 앞으로: 검사→커밋 명령은 `python3 tests/test_build.py > log 2>&1 || exit 1`처럼 실패 코드를 그대로 쓴다(파이프 금지). 영상 업로드가 끝난 종목은 같은 회차 안에서 slides_out·wav·mp4를 지운다.
+- 추가 실수: 정리 명령을 /home/claude/*/ 에 돌렸는데, 그 안의 kimworld-media·kimworld-site는 저장소로 가는 바로가기라 media 저장소의 추적 영상 22개(<종목>/*_slide_video.mp4 등)까지 지웠다. `git checkout -- .`로 모두 되살렸다(사이트 저장소는 깊이 제한으로 영향 없음). 앞으로 정리는 종목 폴더 이름을 직접 지정하고, 바로가기(kimworld-media·kimworld-site·tts·slidekit·bin)는 건너뛴다.
