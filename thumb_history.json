@@ -1390,6 +1390,26 @@
     "예상 넘었는데 / 왜 빠졌나 + 예상↑·장 전 -7.6% 카드 + 수술 로봇 팔·하락 화살표",
     "미국 수술 10% / 장 전 -7.6% 큰 글자"
    ]
+  },
+  {
+   "t": "infq",
+   "date": "2026.10.21",
+   "layout": "bigtext",
+   "palette": "navy-red-atoms",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "정부 1억 달러 / 상장 뒤 최저 + 원자 격자·하락 화살표",
+    "$19.87 → $8.66 / 10% 급등 16번"
+   ]
   }
  ]
 }
