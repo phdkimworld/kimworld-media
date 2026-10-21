@@ -1410,6 +1410,26 @@
     "정부 1억 달러 / 상장 뒤 최저 + 원자 격자·하락 화살표",
     "$19.87 → $8.66 / 10% 급등 16번"
    ]
+  },
+  {
+   "t": "cbrs-2",
+   "date": "2026.10.21",
+   "layout": "card",
+   "palette": "graphite-red-chip",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "풀린 날보다 / 앞뒤가 더 + 해제 날 -5.1%·앞뒤 -10%대 카드 + 칩 격자·하락 화살표",
+    "여드레 -28% / 공모가 아래 큰 글자"
+   ]
   }
  ]
 }
