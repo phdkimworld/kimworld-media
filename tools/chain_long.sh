@@ -16,6 +16,7 @@ if [ -n "$S" ] && [ -f "$S/narration.txt" ]; then
 fi
 cd "$V"
 python3 /home/claude/slidekit/check_slides.py . > check_slides.log 2>&1; tail -1 check_slides.log | grep -q OK || { echo "CHAIN_FAIL check_slides"; grep -v "^ad " check_slides.log | tail -8; exit 1; }
+python3 /home/user/kimworld-media/tools/still_check.py . || { echo "CHAIN_FAIL still_check(합성 전 정지 화면 위험)"; exit 1; }
 python3 /home/claude/bin/hero_check.py . | tail -1
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])")
 nice -n 10 python3 /home/claude/slidekit/make_slide_video.py slides.json raw.wav "${T}_slide_video.mp4" > synth.log 2>&1 || { echo "CHAIN_FAIL synth"; tail -5 synth.log; exit 1; }
