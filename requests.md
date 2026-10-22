@@ -14,3 +14,4 @@
 | 완료 | RUBI | 루비코 | UgwFof6fProoSDz_D1l4AaABAg@Hyen4S0C0BA | @Mancivil503 | 2026-10-17 | 8종목 채우기로 10/17 06:45 ET 앞당김(예약 삭제) | 9g7adaDUau0 · 쇼츠 xBq6-LPMUco · 답글 UgwFof6fProoSDz_D1l4AaABAg.AQ5I6DdoZ7KAc3YzuoEB8D |
 | 완료 | INFQ | 인플렉션 | Ugz_OGjBXOGtJH0UPfh4AaABAg@q3ZeuTnfFfM | @아름-i6f | 2026-10-20 | 예약 없음(G7 후보) | 요청 안내 답글 Ugz_OGjBXOGtJH0UPfh4AaABAg.AcCZueF63uqAcCcMPz7kTR(QBTS·RGTI 리포트 링크 함께) · 완료 답글 Ugz_OGjBXOGtJH0UPfh4AaABAg.AcCZueF63uqAcELWBKtuJp(SfQxjoWvBSs·infq-2026-10) |
 | 대기 | QNT.US | 퀀티넘(나스닥 QNT, 2026-06-04 상장, 조사 메모 /home/claude/qntus/research) | Ugz_OGjBXOGtJH0UPfh4AaABAg@q3ZeuTnfFfM | @아름-i6f | 2026-10-20 | 예약 없음(G7 후보) | 나스닥 시세에서 상장 종목을 찾지 못함 |
+| 대기 | QS | 퀀텀스케이프 | UgzZvzS7OHP50ZpOoWF4AaABAg@Vpj6EK7NUY0 | @피카츄닭강정 | 2026-10-22 | 예약 없음(G7 후보) | 솔리드파워 영상 대댓글에서 실적 뒤 전망 영상 요청(10/21 3분기 실적). 사이트 리포트 없음 |
