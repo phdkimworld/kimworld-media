@@ -1430,6 +1430,26 @@
     "풀린 날보다 / 앞뒤가 더 + 해제 날 -5.1%·앞뒤 -10%대 카드 + 칩 격자·하락 화살표",
     "여드레 -28% / 공모가 아래 큰 글자"
    ]
+  },
+  {
+   "t": "plug-2",
+   "date": "2026.10.22",
+   "layout": "bigtext",
+   "palette": "teal-orange-h2",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "0주 팔았는데 / 새 저점? + 수소 탱크·H2 분자·하락 화살표, $1.62 → $1.37",
+    "11월 실적 / 5번 중 몇 번?"
+   ]
   }
  ]
 }
