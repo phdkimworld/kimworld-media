@@ -69,3 +69,7 @@ TOP 5만 봄. 주식 IOVA·KOD·ANRO·ERAS·AXTI, 코인 QNT·TAO·HYPE·NEAR·Z
 # 대기열 MSI 2026-10-21
 
 TOP 5만 봄. 주식 IOVA·KOD·ANRO·ERAS·SLS, 코인 QNT·TAO·HYPE·NEAR·ZRO 모두 최근 7일 안에 사이트 리포트(데이터 기준 10-14~10-15)가 있어 편성 없음. 전날 '대기'로 남은 MSI 종목 없음. (제작은 '하루 제작 점검' 일별 최대 3편·G7 선정)
+
+# 대기열 MSI 2026-10-22
+
+TOP 5만 봄. 주식 IOVA·KOD·AXTI·ANRO·SLS, 코인 QNT·TAO·HYPE·NEAR·AAVE 모두 사이트 리포트가 60일 안(데이터 기준 10-14~10-15)에 있어 편성 없음. 전날 '대기'로 남은 MSI 종목 없음. (제작은 '하루 제작 점검' 일별 최대 3편·G7 선정)
