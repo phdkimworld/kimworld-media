@@ -16,3 +16,4 @@
 | 완료 | INFQ | 인플렉션 | Ugz_OGjBXOGtJH0UPfh4AaABAg@q3ZeuTnfFfM | @아름-i6f | 2026-10-20 | 예약 없음(G7 후보) | 요청 안내 답글 Ugz_OGjBXOGtJH0UPfh4AaABAg.AcCZueF63uqAcCcMPz7kTR(QBTS·RGTI 리포트 링크 함께) · 완료 답글 Ugz_OGjBXOGtJH0UPfh4AaABAg.AcCZueF63uqAcELWBKtuJp(SfQxjoWvBSs·infq-2026-10) |
 | 대기 | QNT.US | 퀀티넘(나스닥 QNT, 2026-06-04 상장, 조사 메모 /home/claude/qntus/research) | Ugz_OGjBXOGtJH0UPfh4AaABAg@q3ZeuTnfFfM | @아름-i6f | 2026-10-20 | 예약 없음(G7 후보) | 나스닥 시세에서 상장 종목을 찾지 못함 |
 | 완료(qs-2026-10, VtfmODQ9jKM) | QS | 퀀텀스케이프 | UgzZvzS7OHP50ZpOoWF4AaABAg@Vpj6EK7NUY0 | @피카츄닭강정 | 2026-10-22 | 예약 없음(G7 후보) | 솔리드파워 영상 대댓글에서 실적 뒤 전망 영상 요청(10/21 3분기 실적). 사이트 리포트 없음 · 완료 답글 UgzZvzS7OHP50ZpOoWF4AaABAg.AcFvHEnSviEAcJ4mIbms0W(10-23) |
+| 대기 | EU | 엔코어 에너지(enCore Energy, 우라늄) | Ugxey31nvEIjEEkiqIx4AaABAg@6MGjhhl_qRI | @Nazarene-J | 2026-10-23 | 예약 없음(요청 큐) | BTQ 영상 댓글 '우라늄 섹터 중 EU도 부탁'. 사이트 리포트 없음 · 접수 답글 Ugxey31nvEIjEEkiqIx4AaABAg.AcJDzkp34bMAcJGzRLdhVd(10-23, LEU 리포트 링크) |
