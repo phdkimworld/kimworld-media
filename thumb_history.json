@@ -1510,6 +1510,26 @@
     "양자주 0% vs 씰에스큐 -13% 대비 카드, 칩 실루엣",
     "혼자 -13% 큰 글자 + 같은 칩"
    ]
+  },
+  {
+   "t": "eu",
+   "date": "2026.10.24",
+   "layout": "custom",
+   "palette": "navy-amber-red",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "우라늄 캐는데 / 1달러 아래, $4.90 → $0.70 화살표",
+    "사서 팔았다 / 팔수록 손해, $81.85 vs $70.10"
+   ]
   }
  ]
 }
