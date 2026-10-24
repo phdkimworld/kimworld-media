@@ -89,3 +89,7 @@ TOP 5만 봄. 주식 IOVA·KOD·ANRO·ERAS·SLS, 코인 QNT·TAO·HYPE·NEAR·AA
 # 요청 편 추가 (운영자 지시 2026-10-23 "요청 큐가 있는 날은 정규 1개 요청 1개를 제작할 것")
 
 정규 1편(G7)에 더해, 요청 큐(requests.md '대기' + 사이트 업데이트 요청 /v1/requests/top)가 있는 날은 요청 1편을 만든다. 하루 제작 점검이 매번 웹 요청을 읽어 큐를 갱신한다. 2026-10-23: 사이트 요청 0건(30일), 댓글 요청 QS 1건 → QS 제작 시작(정규 IREN 공개 뒤).
+
+# 대기열 MSI 2026-10-24
+
+편성 없음. TOP 5 주식 IOVA·KOD·ERAS·SLS·ANRO, 코인 HYPE·QNT·TAO·NEAR·AAVE 모두 사이트 리포트가 60일 안(data_as_of 10/14~15). 전날 '대기'로 남은 MSI 종목 없음.
