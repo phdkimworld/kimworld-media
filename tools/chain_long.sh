@@ -1,7 +1,7 @@
 #!/bin/sh
 # 롱폼 제작의 긴 단계를 끊김 없이 잇는다(운영자 지시 2026-10-20 "이런 일 없게 해" — TTS가 끝났는데 25분 멈춰 있었음).
 # 사용: sh tools/chain_long.sh <작업 폴더(video)> [쇼츠 폴더]
-#   TTS 끝 대기 → check_slides·still_check·num_check·hero_check → 롱폼 합성 → video_check long
+#   TTS 끝 대기 → check_slides·still_check·num_check·thumb_biz_check·hero_check → 롱폼 합성 → video_check long
 #   (쇼츠 폴더가 있으면) 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
 # 반드시 세션 도구의 '백그라운드 실행(완료 알림)'으로 부른다. nohup 만으로 띄우고 끝내지 않는다.
 set -u
@@ -24,6 +24,7 @@ if [ -n "$R" ]; then
 else
   echo "num_check 건너뜀: ../report/*.md 없음"
 fi
+python3 /home/user/kimworld-media/tools/thumb_biz_check.py thumb/custom || { echo "CHAIN_FAIL thumb_biz_check(썸네일에 사업 시각화 없음, 운영자 지시 10-24)"; exit 1; }
 python3 /home/claude/bin/hero_check.py . | tail -1
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])")
 nice -n 10 python3 /home/claude/slidekit/make_slide_video.py slides.json raw.wav "${T}_slide_video.mp4" > synth.log 2>&1 || { echo "CHAIN_FAIL synth"; tail -5 synth.log; exit 1; }

@@ -21,6 +21,7 @@
 |---|---|---|---|
 | 32~ | 20거래일 뒤 날짜를 11/19로 셈(QS 31) | `tools/tdays.py add <기준일> N` | 대본·리포트·followups 날짜를 손으로 세지 않음 |
 | 33~ | compare→compare 연속이 정지로 잡힘(LAES 32: 16초) | `tools/still_check.py` compare 연속 합 15초 | chain_long.sh 합성 전 자동(이미 연결됨) |
+| 34~ | 썸네일·hero에서 사업이 안 보임(EU 33: 우라늄 회사 hero에 서버 랙, 운영자 지시 10-24) | `tools/thumb_biz_check.py thumb/custom` 사업 그림(id=biz) 12% 이상·사업 칩·bg에도 | chain_long.sh 합성 전 자동 |
 | 34~ | B그룹 대본이 A 조건으로 쓰임(EU 33: 안내 위치·길이) | `tools/group_check.py narration.txt <A|B>` 안내 문단 위치(E10)·대본 길이(E12) | 대본 확정 직후·TTS 전(지난 회차에 돌려 보니 QS 31 B도 10.06KB로 길이 미달, IREN 30 A는 10.95KB로 초과) |
 | 32~ | 화면 숫자·사실 오류가 합성 뒤에 잡힘(QS 31: '≥20% 날 모두 기술 발표' 오류, 용어 오역) | `tools/num_check.py` 화면 숫자 ↔ 리포트, A→B와 %·배수 계산 | chain_long.sh 합성 전 자동(FAIL이면 합성 안 함) |
 
