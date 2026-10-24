@@ -22,3 +22,4 @@
 | 대기 | ZS | 지스케일러(Zscaler) | UgwBVEWpMhfa6CUuKCZ4AaABAg@p8Htg9Uyg1M | @bebeom-k3f | 2026-10-24 | 예약 없음(요청 큐) | LEU 영상 댓글. 사이트 리포트 없음 · 접수 답글 UgwBVEWpMhfa6CUuKCZ4AaABAg.AcLYzrx2pHUAcLcy9WGZck(10-24) |
 | 대기 | TNXP | 토닉스 파마슈티컬스(Tonix) | UgyfXfSCxIa3AuiyTL94AaABAg@PnJZEOG5hHE | @charonrhie1452 | 2025-12-05 | 예약 없음(요청 큐) | 큐씨 테크놀로지스 영상 댓글(재무 건전성·추세 분석 요청). 2026-04 영상은 있으나 사이트 리포트 없음 · 늦은 접수 답글 UgyfXfSCxIa3AuiyTL94AaABAg.AQMuUlfg7I7AcLxXgZD-2U(10-24) |
 | 대기 | SNDK | 샌디스크(Sandisk) | UgwizohIlQdGmo5WhkJ4AaABAg@GmtF1mi7sUU | @peterkwak7629 | 2025-12-02 | 예약 없음(요청 큐) | 실스크 영상 댓글(주가 하락 이유 질문). 2025-12 영상은 있으나 사이트 리포트 없음 · 늦은 접수 답글 UgwizohIlQdGmo5WhkJ4AaABAg.AQEmVyIR7oeAcM3Pgl7krL(10-24) |
+| 대기 | SLNH | 솔루나 홀딩스(Soluna Holdings) | Ugxo5DUm6de5w5mM7Ml4AaABAg@SsUgLnFJesI | @김진호-i3k | 2025-12-03 | 예약 없음(요청 큐) | 뉴 에라 에너지 앤드 디지털 영상 댓글. 사이트 리포트 없음 · 늦은 접수 답글 Ugxo5DUm6de5w5mM7Ml4AaABAg.AQG_le_r9hrAcMACo9fm9H(10-24) |
