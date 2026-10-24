@@ -1490,6 +1490,26 @@
     "1년 전 $18 → 지금 $4 + 화살표, 층층이 쌓인 전고체 셀(단자·분리막)",
     "실적 다음 날 +4.3% / 이번엔 지킬까? + 같은 셀"
    ]
+  },
+  {
+   "t": "laes3",
+   "date": "2026.10.24",
+   "layout": "custom",
+   "palette": "navy-red-cyan",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "양자주 0% vs 씰에스큐 -13% 대비 카드, 칩 실루엣",
+    "혼자 -13% 큰 글자 + 같은 칩"
+   ]
   }
  ]
 }

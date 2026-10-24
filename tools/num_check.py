@@ -128,7 +128,9 @@ def main(slides_path, report_path):
                 if key in seen:
                     continue
                 seen.add(key); n += 1
-                if not in_report(rep, 'price', num(m.group(1)), None):
+                v = num(m.group(1))
+                # $250,000,000 같은 원문 인용 금액은 '2억 5,000만'으로도 찾는다
+                if not in_report(rep, 'price', v, None) and not (v >= 1e6 and in_report(rep, 'money', v, None)):
                     miss.append(f'p{pi} s{si} 가격 ${m.group(1)}')
             for m in MONEY.finditer(text):
                 key = ('money', m.group(0))
