@@ -2,7 +2,7 @@
 # 롱폼 제작의 긴 단계를 끊김 없이 잇는다(운영자 지시 2026-10-20 "이런 일 없게 해" — TTS가 끝났는데 25분 멈춰 있었음).
 # 사용: sh tools/chain_long.sh <작업 폴더(video)> [쇼츠 폴더]
 #   TTS 끝 대기 → check_slides·still_check·num_check·thumb_biz_check·hero_check → 롱폼 합성 → video_check long
-#   (쇼츠 폴더가 있으면) 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
+#   (쇼츠 폴더가 있으면) shorts_check → 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
 # 반드시 세션 도구의 '백그라운드 실행(완료 알림)'으로 부른다. nohup 만으로 띄우고 끝내지 않는다.
 set -u
 V=$1; S=${2:-}
@@ -12,6 +12,7 @@ until grep -q "^done" "$V/tts.log" 2>/dev/null; do
 done
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
 if [ -n "$S" ] && [ -f "$S/narration.txt" ]; then
+  python3 /home/user/kimworld-media/tools/shorts_check.py "$S" || { echo "CHAIN_FAIL shorts_check(쇼츠 문장·장면 수)"; exit 1; }
   (cd /home/claude/tts/st && python3 st_tts.py "$S/narration.txt" "$S/shorts_raw.wav" 6 1.15 10 > "$S/tts.log" 2>&1) &
 fi
 cd "$V"

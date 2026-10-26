@@ -3,6 +3,7 @@
 #  - 정적 화면(stat·quote·compare) 하나가 15초를 넘거나, 같은 layout(stat·quote) 화면이 이어져 합이 17초를 넘으면 알려 주고 종료 코드 1
 #    (INFQ 실패 사례: stat 12.7초+12초=25초, stat 8.5초+9.5초=18초. 목록·타임라인·hero는 항목이 문장마다 나타나 제외)
 #  - compare→compare 도 화면 변화로 안 잡힌다(2026-10-24 LAES 32회차: compare 6.4초+9.7초=16초로 video_check 실패). 합 15초 넘으면 알린다
+#  - 항목이 하나뿐인 timeline이 이어져도 화면 변화로 안 잡힌다(2026-10-25 BTBT 35회차: 일정 문단 tl×3 = 17초로 video_check 실패). 연속 합 16.5초 넘으면 알린다(LAES 32의 16.2초는 통과)
 import json, os, sys
 V = sys.argv[1] if len(sys.argv) > 1 else '.'
 deck = json.load(open(os.path.join(V, 'slides.json'))); tm = json.load(open(os.path.join(V, 'raw_timing.json')))
@@ -13,8 +14,17 @@ for pi, (p, t) in enumerate(zip(deck['paras'], P)):
         f = s.get('from', s.get('at', 0)); nf = sl[k + 1].get('from', sl[k + 1].get('at', 0)) if k + 1 < len(sl) else None
         t0 = sents[min(f, len(sents) - 1)]['start']
         t1 = sents[nf]['start'] if nf is not None and nf < len(sents) else t['end']
-        segs.append((pi, f, s.get('layout'), t0, t1))
+        lay = s.get('layout')
+        if lay == 'timeline' and len(s.get('items', [])) <= 1: lay = 'timeline1'
+        segs.append((pi, f, lay, t0, t1))
 bad = []
+i = 0
+while i < len(segs):
+    j = i
+    while j + 1 < len(segs) and segs[j + 1][2] == 'timeline1' and segs[i][2] == 'timeline1' and segs[j + 1][0] == segs[i][0]: j += 1
+    if j > i and segs[j][4] - segs[i][3] > 16.5:  # LAES 32 p21 16.2초는 video_check 통과
+        bad.append(f'p{segs[i][0]} s{segs[i][1]}→s{segs[j][1]} 한 항목 timeline 연속 {j - i + 1}개 합 {segs[j][4] - segs[i][3]:.1f}초')
+    i = j + 1
 for i, (pi, f, lay, t0, t1) in enumerate(segs):
     if lay not in ('stat', 'quote', 'compare'):
         continue

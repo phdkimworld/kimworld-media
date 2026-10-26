@@ -1530,6 +1530,46 @@
     "우라늄 캐는데 / 1달러 아래, $4.90 → $0.70 화살표",
     "사서 팔았다 / 팔수록 손해, $81.85 vs $70.10"
    ]
+  },
+  {
+   "t": "smr2",
+   "date": "2026.10.25",
+   "layout": "custom",
+   "palette": "teal-orange",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "공시 0건인데 9거래일 -19.7% 카드 + 소형 원자로 모듈",
+    "목표가 5달러 / 주가 아래로 / 낮췄다 + 같은 원자로"
+   ]
+  },
+  {
+   "t": "btbt",
+   "date": "2026.10.25",
+   "layout": "custom",
+   "palette": "violet-red-cyan",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "이더리움 -11% / 주가는 -48% + 이더리움 코인 더미와 자회사 서버 랙",
+    "자회사가 / 끌어내렸다? + 같은 그림"
+   ]
   }
  ]
 }
