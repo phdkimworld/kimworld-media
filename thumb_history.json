@@ -1590,6 +1590,26 @@
     "원자력 봄인데 10거래일 -24.1% 카드 + 눈 내리는 밤의 소형 원자로",
     "증권사 4곳이 / 나흘 만에 / 목표가 하향 + 같은 원자로"
    ]
+  },
+  {
+   "t": "wimi",
+   "date": "2026.10.26",
+   "layout": "custom",
+   "palette": "black-magenta-lime",
+   "variants": [
+    "bigtext",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "현금 4.6억$ / 몸값 0.1억$ / 왜? + 홀로그램 투사기·금고",
+    "흑자라는데 / 상장 뒤 / 최저가? + 같은 그림"
+   ]
   }
  ]
 }
