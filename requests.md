@@ -24,4 +24,4 @@
 | 대기 | SNDK | 샌디스크(Sandisk) | UgwizohIlQdGmo5WhkJ4AaABAg@GmtF1mi7sUU | @peterkwak7629 | 2025-12-02 | 예약 없음(요청 큐) | 실스크 영상 댓글(주가 하락 이유 질문). 2025-12 영상은 있으나 사이트 리포트 없음 · 늦은 접수 답글 UgwizohIlQdGmo5WhkJ4AaABAg.AQEmVyIR7oeAcM3Pgl7krL(10-24) |
 | 대기 | SLNH | 솔루나 홀딩스(Soluna Holdings) | Ugxo5DUm6de5w5mM7Ml4AaABAg@SsUgLnFJesI | @김진호-i3k | 2025-12-03 | 예약 없음(요청 큐) | 뉴 에라 에너지 앤드 디지털 영상 댓글. 사이트 리포트 없음 · 늦은 접수 답글 Ugxo5DUm6de5w5mM7Ml4AaABAg.AQG_le_r9hrAcMACo9fm9H(10-24) |
 | 완료 | WIMI | 위마이 홀로그램(WiMi Hologram Cloud) | UgwN63n3eaHshH7rTgF4AaABAg@GqmJWLt0rfs | @배기태-c7l | 2025-11-30 | 예약 없음(요청 큐) | 비트팜스 영상 댓글(실적은 좋은데 주가 반영이 안 되는 이유 질문). 사이트 리포트 없음 · 늦은 접수 답글 UgwN63n3eaHshH7rTgF4AaABAg.AQ9FpZKSQz-AcMO2yXMwMy(10-24) · 완료 2026-10-26 z_9NFAic0q4·쇼츠 o89VbVx5orI·wimi-2026-10, 완료 답글 UgwN63n3eaHshH7rTgF4AaABAg.AQ9FpZKSQz-AcQOLXjNzpo(10-26) |
-| 대기 | SLDP | 솔리드 파워(Solid Power) | - | 웹 요청 1명 | 2026-10-25 | 예약 없음(요청 큐) | 사이트 업데이트 요청(최근 30일 1명). 최신 리포트 sldp-2026-10-2(10/17), 11/3 장 마감 뒤 3분기 실적 후보(followups) |
+| 완료 | SLDP | 솔리드 파워(Solid Power) | - | 웹 요청 1명 | 2026-10-25 | 예약 없음(요청 큐) | 사이트 업데이트 요청(최근 30일 1명). 완료 2026-10-26 7QxU15r2WFU·쇼츠 dIem2ItMVxY·sldp-2026-10-3(웹 요청이라 답글 대신 리포트 발행으로 갈음) |

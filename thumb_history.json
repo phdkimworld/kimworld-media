@@ -1610,6 +1610,26 @@
     "현금 4.6억$ / 몸값 0.1억$ / 왜? + 홀로그램 투사기·금고",
     "흑자라는데 / 상장 뒤 / 최저가? + 같은 그림"
    ]
+  },
+  {
+   "t": "sldp3",
+   "date": "2026.10.26",
+   "layout": "custom",
+   "palette": "graphite-cobalt-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "새 라인 돌렸는데 / 1.08배 + 전고체 셀·전해질 분말",
+    "주가 = 통장 값 / 실적 19번 뒤 / 몇 번 올랐나? + 같은 그림"
+   ]
   }
  ]
 }
