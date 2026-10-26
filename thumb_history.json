@@ -1630,6 +1630,26 @@
     "새 라인 돌렸는데 / 1.08배 + 전고체 셀·전해질 분말",
     "주가 = 통장 값 / 실적 19번 뒤 / 몇 번 올랐나? + 같은 그림"
    ]
+  },
+  {
+   "t": "glnd2",
+   "date": "2026.10.26",
+   "layout": "custom",
+   "palette": "arctic-teal-crimson",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "트럼프 글 한 줄에 / +76.5% 카드 + 얼음 땅 시추 리그",
+    "+76.5% / 7거래일 뒤 3달러 / 남은 건 뭘까? + 같은 그림"
+   ]
   }
  ]
 }
