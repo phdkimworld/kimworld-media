@@ -18,6 +18,6 @@ for i, sc in enumerate(scenes):
     for e in sc.get('els', []):
         if e.get('kind') == 'poll':
             o = e.get('opts', [])
-            if not 2 <= len(o) <= 4 or any(len(x) > 10 for x in o): bad.append(f'장면 {i+1} 투표 보기는 2~4개·각 10자 이하: {o}')
+            if not 2 <= len(o) <= 4 or any(len(x) > 10 or len(x.encode()) > 25 for x in o): bad.append(f'장면 {i+1} 투표 보기는 2~4개·각 10자·25바이트 이하(Threads 제한): {o}')
 print('\n'.join(bad) if bad else f'SHORTS_OK 문장·장면 {len(sents)}개')
 sys.exit(1 if bad else 0)
