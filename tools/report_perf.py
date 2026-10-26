@@ -49,6 +49,11 @@ def main():
     line('전체', sec.get('all'))
     for p, c in (sec.get('reports') or {}).items():
         line(p.strip('/').split('/')[-1], c)
+    # 요청 큐 재료: 1순위 = 업데이트 요청 버튼, 2순위 = 결과 없던 검색어(운영자 지시 2026-10-26 "결과 없던 검색어도 세컨티어 요청종목으로 간주")
+    up = s.get('updReq') or []
+    print('\n## 사이트 요청(1순위, 업데이트 요청 버튼 30일): ' + (', '.join(f"{x['ticker']} {x['n']}명" for x in up) or '없음'))
+    sm = s.get('search_miss_top')
+    print('## 결과 없던 검색어(2순위 요청, 7일): ' + ('운영 요약에 아직 없음(다음 analytics-report 실행부터)' if sm is None else (', '.join(f"{x['q']} {x['n']}회" for x in sm) or '없음')))
 
 if __name__ == '__main__':
     main()
