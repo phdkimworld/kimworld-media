@@ -21,6 +21,8 @@ MONEY = re.compile(r'\$(\d[\d,]*(?:\.\d+)?)(?:~\d[\d,]*(?:\.\d+)?)?\s*(million|b
 PCT = re.compile(r'([+\-−]?\d[\d,]*(?:\.\d+)?)%')
 DATE = re.compile(r'(20\d\d)\.(\d{1,2})\.(\d{1,2})')
 ARROW = re.compile(r'\$(\d[\d,]*(?:\.\d+)?)\s*→\s*\$(\d[\d,]*(?:\.\d+)?)')
+# '807억$'·'46.6억$어치'·'1,316.5억 달러' 같은 억 단위 달러 금액(2026-10-26 앤트로픽 40회차: 리포트에 없는 46.6억·89억이 화면에 있었는데 검사가 세지 않음)
+EOK = re.compile(r'(\d[\d,]*(?:\.\d+)?)(?:조)?억\s*(?:\$|달러)')
 TIMES = re.compile(r'(\d+(?:\.\d+)?)배')
 
 
@@ -140,6 +142,16 @@ def main(slides_path, report_path):
                 mult = 1e6 if m.group(2) in ('million', 'M') else 1e9
                 if not in_report(rep, 'money', num(m.group(1)) * mult, None):
                     miss.append(f'p{pi} s{si} 금액 {m.group(0)} ({korean_money(num(m.group(1)) * mult)} 달러)')
+            for m in EOK.finditer(text):
+                key = ('eok', m.group(1))
+                if key in seen:
+                    continue
+                seen.add(key); n += 1
+                # 화면의 '약 596억$'는 리포트 595.97억을 반올림한 값이면 통과(같은 소수 자릿수로 반올림해 대조)
+                dp = len(m.group(1).split('.')[1]) if '.' in m.group(1) else 0
+                reps = {round(num(x), dp) for x in re.findall(r'(?<![\d.,])(\d[\d,]*(?:\.\d+)?)억', rep)}
+                if round(num(m.group(1)), dp) not in reps:
+                    miss.append(f'p{pi} s{si} 억 달러 {m.group(1)}억')
             for m in PCT.finditer(text):
                 key = ('pct', m.group(1))
                 if key in seen:

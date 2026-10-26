@@ -19,5 +19,10 @@ for i, sc in enumerate(scenes):
         if e.get('kind') == 'poll':
             o = e.get('opts', [])
             if not 2 <= len(o) <= 4 or any(len(x) > 10 or len(x.encode()) > 25 for x in o): bad.append(f'장면 {i+1} 투표 보기는 2~4개·각 10자·25바이트 이하(Threads 제한): {o}')
+# 첫 장면: 큰 숫자는 0초, 다음 요소는 0.3 이하(2026-10-26 앤트로픽 40회차: 6.8초 첫 문장에서 도장 0.45 → 3.25초 정지로 video_check 실패, 재렌더)
+if scenes:
+    ats = sorted(e.get('at', 0) for e in scenes[0].get('els', []) if e.get('kind') != 'poll')
+    if ats and ats[0] > 0: bad.append(f'장면 1 첫 요소 at {ats[0]}: 큰 숫자는 at 0(썸네일 숫자)')
+    if len(ats) > 1 and ats[1] > 0.3: bad.append(f'장면 1 둘째 요소 at {ats[1]}: 0.3 이하(첫 문장이 6초를 넘으면 3초 정지)')
 print('\n'.join(bad) if bad else f'SHORTS_OK 문장·장면 {len(sents)}개')
 sys.exit(1 if bad else 0)
