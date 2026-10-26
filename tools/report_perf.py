@@ -49,6 +49,12 @@ def main():
     line('전체', sec.get('all'))
     for p, c in (sec.get('reports') or {}).items():
         line(p.strip('/').split('/')[-1], c)
+    ch = s.get('channels') or []
+    if ch:
+        print('\n## 유입 채널(세션 · 초/세션): ' + ', '.join(f"{c.get('ch')} {c.get('sess')}·{c.get('secs/sess') or 0:.0f}초" for c in ch[:6]))
+    cp = s.get('campaigns') or []
+    if cp:
+        print('## 캠페인(utm 위치별 세션): ' + ', '.join(f"{c.get('src')}/{c.get('cont')} {c.get('sess')}" for c in cp[:8]))
     # 요청 큐 재료: 1순위 = 업데이트 요청 버튼, 2순위 = 결과 없던 검색어(운영자 지시 2026-10-26 "결과 없던 검색어도 세컨티어 요청종목으로 간주")
     up = s.get('updReq') or []
     print('\n## 사이트 요청(1순위, 업데이트 요청 버튼 30일): ' + (', '.join(f"{x['ticker']} {x['n']}명" for x in up) or '없음'))
