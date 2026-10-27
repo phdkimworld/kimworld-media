@@ -13,7 +13,12 @@ done
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
 if [ -n "$S" ] && [ -f "$S/narration.txt" ]; then
   python3 /home/user/kimworld-media/tools/shorts_check.py "$S" || { echo "CHAIN_FAIL shorts_check(쇼츠 문장·장면 수)"; exit 1; }
-  (cd /home/claude/tts/st && python3 st_tts.py "$S/narration.txt" "$S/shorts_raw.wav" 6 1.15 10 > "$S/tts.log" 2>&1) &
+  # 이미 녹음된 쇼츠 음성(대본보다 새 wav + tts.log 'done')은 다시 녹음하지 않는다(10-27 XNDU: 재실행마다 쇼츠 TTS가 다시 돌아 기다림이 꼬임)
+  if [ -f "$S/shorts_raw.wav" ] && [ "$S/shorts_raw.wav" -nt "$S/narration.txt" ] && grep -q "^done" "$S/tts.log" 2>/dev/null; then
+    echo "쇼츠 TTS 건너뜀: 기존 음성 사용"
+  else
+    (cd /home/claude/tts/st && python3 st_tts.py "$S/narration.txt" "$S/shorts_raw.wav" 6 1.15 10 > "$S/tts.log" 2>&1) &
+  fi
 fi
 cd "$V"
 python3 /home/claude/slidekit/check_slides.py . > check_slides.log 2>&1; tail -1 check_slides.log | grep -q OK || { echo "CHAIN_FAIL check_slides"; grep -v "^ad " check_slides.log | tail -8; exit 1; }
