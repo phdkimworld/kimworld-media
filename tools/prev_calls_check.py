@@ -6,14 +6,15 @@
 import sys, re, os, json
 V, R = sys.argv[1], sys.argv[2]; Q = sys.argv[3:]
 rep = open(R, encoding='utf-8').read(); bad = []
-m = re.search(r'^### 5\.6.*?(?=^##)', rep, re.S | re.M)
-if not m: bad.append('리포트에 5.6 절이 없음')
+# 시나리오 절: 옛 형식 '### 5.6 …' 또는 R1.6 말로 쭉 형식 '### 앞으로 일어날 수 있는 일'(2026-10-27, 소제목 번호 없음)
+m = re.search(r'^### (?:5\.6|앞으로 일어날).*?(?=^##)', rep, re.S | re.M)
+if not m: bad.append("리포트에 시나리오 절('### 5.6' 또는 '### 앞으로 일어날 수 있는 일')이 없음")
 else:
     sec = m.group(0)
-    sc = re.findall(r'시나리오 \d', sec); sc = sorted(set(sc))
+    sc = sorted(set(re.findall(r'시나리오 \d', sec)))
     pr = re.findall(r'가능성\(추정\)[^%\n]*?\d+%', sec)
-    if not sc: bad.append('5.6에 시나리오가 없음')
-    elif len(pr) < len(sc): bad.append(f'5.6 시나리오 {len(sc)}개 중 가능성 % {len(pr)}개')
+    if sc and len(pr) < len(sc): bad.append(f'시나리오 {len(sc)}개 중 가능성 % {len(pr)}개')
+    elif not sc and len(pr) < 3: bad.append(f'시나리오 절에 가능성(추정) % {len(pr)}개(3개 이상)')
 follow = '## 지난 리포트 이후' in rep
 if follow:
     nar = os.path.join(V, 'narration.txt')
