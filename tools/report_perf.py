@@ -2,7 +2,7 @@
 # 리포트별 페이지뷰·페이지뷰당 초·스크롤과 구간별 도달·체류 곡선을 읽고, 리포트 모양(글자 수·카드 수·후속편 여부)과 함께 보인다.
 # 사용: python3 report_perf.py [사이트 저장소=/home/claude/kimworld-site]
 #  - 최신 실행이 오래됐으면 먼저 GitHub MCP actions_run_trigger(analytics-report.yml, ref main)로 새로 돌린다
-#  - 주석은 공개 API로 읽는다(집계 숫자만 들어 있다)
+#  - 비공개 저장소 stats/analytics.json 이 있으면 그것을, 없으면 공개 주석을 읽는다(2026-10-28)
 import os, re, sys, json, glob, urllib.request
 
 SITE = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/kimworld-site'
@@ -13,7 +13,22 @@ NAMES = {'top': '머리(요약)', 'ans': '짧은 답', 'can': '이 리포트에�
 def get(u):
     return json.load(urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'kimworld-report-perf'})))
 
+PRIVATE = os.environ.get('OPS_DIR', '/home/claude/kimworld-ops')  # 비공개 저장소 phdkimworld/kimworld ops-data 브랜치(2026-10-28 운영자 요청: 통계 비공개)
+
 def summary():
+    # 1순위: 비공개 저장소 stats/analytics.json(공개 주석에는 숫자가 없을 수 있다). 받기: add_repo(phdkimworld/kimworld) 후
+    #   git clone --depth 1 -b ops-data https://github.com/phdkimworld/kimworld /home/claude/kimworld-ops (있으면 git pull)
+    pf = os.path.join(PRIVATE, 'stats', 'analytics.json')
+    if os.path.exists(pf):
+        os.system(f'git -C {PRIVATE} pull -q 2>/dev/null')
+        import datetime as _dt
+        when = _dt.datetime.utcfromtimestamp(os.path.getmtime(pf)).strftime('%Y-%m-%dT%H:%M:%SZ')
+        try:
+            when = os.popen(f'git -C {PRIVATE} log -1 --format=%cI -- stats/analytics.json').read().strip() or when
+        except Exception:
+            pass
+        return when, json.load(open(pf, encoding='utf-8'))
+    # 2순위: 공개 주석(비공개 저장소 토큰이 없을 때. 수익 숫자는 빠져 있다)
     run = get(API + '/actions/workflows/analytics-report.yml/runs?per_page=1')['workflow_runs'][0]
     job = get(API + f"/actions/runs/{run['id']}/jobs")['jobs'][0]
     out = {}
