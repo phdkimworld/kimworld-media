@@ -101,3 +101,11 @@ TOP 5만 봄. 주식 IOVA·KOD·ANRO·ERAS·SLS, 코인 QNT·TAO·HYPE·NEAR·AA
 # 대기열 MSI 2026-10-27
 
 편성 없음. TOP 5 주식 IOVA·KOD·ERAS·SLS·AXTI, 코인 QNT·HYPE·TAO·KITE·NEAR 모두 사이트 리포트가 60일 안(data_as_of 10/14~15). 전날 '대기'로 남은 MSI 종목 없음.
+
+# 대기열 MSI 2026-10-28
+
+| # | 종목 | 구분 | MSI | 예약 | 상태 |
+|---|---|---|---|---|---|
+| 1 | ZEC 지캐시 | 코인 | 61 | 하루 2종목 제작 점검이 순서대로 처리 | 대기 |
+
+TOP 5 중 사이트 리포트가 없는 종목은 ZEC(🆕)뿐. 주식 IOVA·KOD·ERAS·SLS·AXTI, 코인 HYPE·QNT·TAO·KITE는 사이트 리포트가 60일 안(data_as_of 10/14~15). 전날 '대기'로 남은 MSI 종목 없음.
