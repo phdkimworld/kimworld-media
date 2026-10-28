@@ -29,6 +29,8 @@ def summary():
             pass
         return when, json.load(open(pf, encoding='utf-8'))
     # 2순위: 공개 주석(비공개 저장소 토큰이 없을 때. 수익 숫자는 빠져 있다)
+    print(f'[report_perf] 비공개 통계({pf})가 없어 공개 주석을 읽습니다. 공개 주석이 비어 있으면: add_repo(phdkimworld/kimworld, push) 후 '
+          f'git clone --depth 1 -b ops-data https://github.com/phdkimworld/kimworld {PRIVATE} 를 먼저 하세요.', file=sys.stderr)
     run = get(API + '/actions/workflows/analytics-report.yml/runs?per_page=1')['workflow_runs'][0]
     job = get(API + f"/actions/runs/{run['id']}/jobs")['jobs'][0]
     out = {}
