@@ -13,6 +13,11 @@ else:
     sec = m.group(0)
     sc = sorted(set(re.findall(r'시나리오 \d', sec)))
     pr = re.findall(r'가능성\(추정\)[^%\n]*?\d+%', sec)
+    # R1.7 시나리오 표(2026-10-28): 머리 줄에 '가능성'이 있는 표면 그 표의 행마다 % 하나로 센다
+    for t in re.findall(r'(?:^\|.*\n)+', sec, re.M):
+        ln = t.strip().split('\n')
+        if '가능성' in ln[0]:
+            pr += [r for r in ln[2:] if re.search(r'\d+%', r)]
     if sc and len(pr) < len(sc): bad.append(f'시나리오 {len(sc)}개 중 가능성 % {len(pr)}개')
     elif not sc and len(pr) < 3: bad.append(f'시나리오 절에 가능성(추정) % {len(pr)}개(3개 이상)')
 follow = '## 지난 리포트 이후' in rep
