@@ -1,6 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
-#  - 1~6부마다 '**쉽게 말하면**' 한 줄(그 부를 중학생도 알게 1~2문장)
+#  - 1~6부 제목 아래 '> **핵심:**' 콜아웃, 끝에 다음 부 예고 문장 없음, ## 위계, ① 나열 없음, 시나리오 표, 표·### 5개 이하(SKILL R1.7, 2026-10-28). --legacy면 옛 '쉽게 말하면' 검사
 #  - 본문 문장(표·제목·인용·출처 제외) 가운데 90자 넘는 문장 비율 10% 이하, 날짜를 뺀 숫자 4개 이상 든 문장 5% 이하
 #  - 영어 약어(대문자 2자 이상)는 처음 나올 때 괄호 풀이나 용어 사전 항목이 있어야 한다(티커·단위 제외)
 #  - 말로 쭉 이어 쓰기(운영자 지시 2026-10-26 "리포트가 너무 읽기 어려워 섹션이나 카드를 너무 쪼개지 말고 그냥 차라리 말로 쭉 친절하게 설명해", SKILL R1.6):
@@ -16,8 +16,17 @@ ticker = (re.search(r'^ticker:\s*"?([A-Z0-9.]+)', fm, re.M) or [None, ''])[1]
 terms = set(re.findall(r'term:\s*"([^"]+)"', open(gl, encoding='utf-8').read())) if os.path.exists(gl) else set()
 bad = []
 parts = re.split(r'^## (\d)부', body, flags=re.M)
+R17 = '--legacy' not in sys.argv
 for i in range(1, len(parts), 2):
-    if '쉽게 말하면' not in parts[i + 1][:1500]:
+    sec = parts[i + 1]
+    if R17:
+        # R1.7(2026-10-28 운영자 "작성 지침에도 반영"): 부 제목 아래 첫 줄은 '> **핵심:** …', 끝은 다음 부 예고 문장 없이
+        first = next((l for l in sec.split('\n')[1:] if l.strip()), '')
+        if not first.startswith('> **핵심:**'): bad.append(f'R1.7 {parts[i]}부 제목 바로 아래 > **핵심:** 콜아웃이 없음')
+        if re.match(r'\s*쉽게 말하면', '\n'.join(sec.split('\n')[1:]).replace(first, '', 1).lstrip()): bad.append(f"R1.7 {parts[i]}부 본문이 '쉽게 말하면'으로 시작(콜아웃으로 대신)")
+        tail = [l for l in sec.split('\n') if l.strip() and not l.lstrip().startswith(('|', '#', '>', '!', '-'))][-1:] or ['']
+        if re.search(r'[1-6]부(에서|가|의)[^.]{0,30}(보겠|모아|정리합|답합|이어|살펴)', tail[0]): bad.append(f'R1.7 {parts[i]}부 끝이 다음 부 예고 문장: {tail[0][:50]}…')
+    elif '쉽게 말하면' not in sec[:1500]:
         bad.append(f'{parts[i]}부 첫머리(1500자 안)에 쉽게 말하면 문장이 없음')
 lines = [re.sub(r'\]\([^)]*\)|https?://\S+', ']', l) for l in body.split('\n') if l.strip() and not l.lstrip().startswith(('|', '#', '>', '!', '<'))]
 sents = [s.strip() for l in lines for s in re.split(r'(?<=[.?!다])\s+(?=\S)', re.sub(r'^\s*[-*\d.□]+\s*', '', l)) if len(s.strip()) > 5]
@@ -42,10 +51,14 @@ if '--legacy' not in sys.argv:
     tables = re.findall(r'(?:^\|.*\n)+', body, re.M)
     paras = [x.strip() for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '>', '!', '-', '*', '<')) and not re.match(r'\d+\.\s', x.strip())]
     one = [x for x in paras if len(re.findall(r'[.?!다요]\s', x + ' ')) <= 1]
-    if len(h3) > 4: bad.append(f'R1.6 ### 소제목 {len(h3)}개 > 4(쪼개지 말고 문단으로 이어 쓰기)')
+    if len(h3) > 5: bad.append(f'R1.6·R1.7 ### 소제목 {len(h3)}개 > 5(쪼개지 말고 문단으로 이어 쓰기)')
+    for h in re.findall(r'^## (.+)$', body, re.M):
+        if not re.match(r'(짧은 답|지난 리포트 이후|[1-6]부)', h): bad.append(f"R1.7 '## {h[:20]}'는 ###로(## 는 짧은 답·지난 리포트 이후·1~6부만)")
+    if '①' in body: bad.append('R1.7 ① 나열 대신 6부 체크리스트로 일원화')
+    if '가능성(추정)' in body and not re.search(r'^\|[^\n]*가능성[^\n]*\|', body, re.M): bad.append('R1.7 시나리오 표(가능성·계기·예상 반응·판정 날짜 열)가 없음')
     if cards: bad.append(f'R1.6 사건 카드 머리 {len(cards)}개(카드 대신 시간순 문단)')
     if len(bullets) > 8: bad.append(f'R1.6 글머리 목록 {len(bullets)}줄 > 8(체크리스트 외에는 문장으로)')
-    if len(tables) > 3: bad.append(f'R1.6 표 {len(tables)}개 > 3')
+    if len(tables) > 5: bad.append(f'R1.7 표 {len(tables)}개 > 5')
     for sec in ('## 이 리포트에서 확인할 수 있는 것', '## 먼저 알아둘 용어'):
         if sec in body: bad.append(f"R1.6 '{sec[3:]}' 절은 빼기(용어는 처음 쓰는 문장 안에서 풀기)")
     if paras and len(one) / len(paras) > 0.25: bad.append(f'R1.6 한 문장짜리 문단 {len(one)}/{len(paras)} > 25%(2~4문장으로 이어 쓰기)')
