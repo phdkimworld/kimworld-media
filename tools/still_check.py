@@ -33,13 +33,13 @@ while i < len(segs):
         bad.append(f'p{segs[i][0]} s{segs[i][1]}→s{segs[j][1]} 한 항목 timeline 연속 {j - i + 1}개 합 {segs[j][4] - segs[i][3]:.1f}초')
     i = j + 1
 for i, (pi, f, lay, t0, t1) in enumerate(segs):
-    if lay not in ('stat', 'quote', 'compare', 'source'):  # source도 한꺼번에 뜨는 정지 화면(2026-10-29 IREN 45회차: source 15.7초, video_check에서야 걸림)
+    if lay not in ('stat', 'quote', 'compare', 'source', 'hero'):  # hero는 줄이 더해져도 화면 변화로 안 잡힘(2026-10-29 SLNH 46회차 0~18초 정지), source도 한꺼번에 뜨는 정지 화면(2026-10-29 IREN 45회차: source 15.7초, video_check에서야 걸림)
         continue
-    if t1 - t0 > 15:
+    if t1 - t0 > 14:  # 15→14(2026-10-29 SLNH 46회차: stat 14.6초가 video_check '정지 15초' 실패)
         bad.append(f'p{pi} s{f} {lay} 혼자 {t1 - t0:.1f}초')
     if i + 1 < len(segs) and segs[i + 1][2] == lay and segs[i + 1][0] == pi:
         tot = segs[i + 1][4] - t0
-        if tot > (15 if lay == 'compare' else 17):
+        if tot > (15 if lay == 'compare' else 16):  # 17→16(2026-10-29 SLNH 46회차 stat→stat 16.2초가 video_check 정지 17초)
             bad.append(f'p{pi} s{f}→s{segs[i + 1][1]} {lay}→{lay} 합 {tot:.1f}초')
 print('\n'.join(bad) if bad else 'STILL_OK')
 sys.exit(1 if bad else 0)
