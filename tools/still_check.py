@@ -33,7 +33,7 @@ while i < len(segs):
         bad.append(f'p{segs[i][0]} s{segs[i][1]}→s{segs[j][1]} 한 항목 timeline 연속 {j - i + 1}개 합 {segs[j][4] - segs[i][3]:.1f}초')
     i = j + 1
 for i, (pi, f, lay, t0, t1) in enumerate(segs):
-    if lay not in ('stat', 'quote', 'compare'):
+    if lay not in ('stat', 'quote', 'compare', 'source'):  # source도 한꺼번에 뜨는 정지 화면(2026-10-29 IREN 45회차: source 15.7초, video_check에서야 걸림)
         continue
     if t1 - t0 > 15:
         bad.append(f'p{pi} s{f} {lay} 혼자 {t1 - t0:.1f}초')
