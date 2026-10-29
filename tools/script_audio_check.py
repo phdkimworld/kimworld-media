@@ -1,0 +1,32 @@
+# 대본이 '귀로 들을 때' 틀리게 들릴 표현과 영상·리포트 개수 어긋남을 TTS 전에 본다(운영자 영상 검토 2026-10-29, CBRS 43회차).
+#  - '리포트 일부/오부의 표' → '일부(some)·오부'로 들림 → '리포트 N번째 부분'으로
+#  - '국면 비/씨' → '국면비·국면시'로 뭉개짐 → '두 번째 국면(공급 소화 단계)'처럼 풀어 읽기
+#  - '닷새'(다세), '쌓인 일감'(사인 일감), '신고서에 적힌 시가'(시간) → '다섯 거래일', '수주 잔고', '시장 가격'
+#  - 가설 세 개를 말한 뒤 '네 시나리오마다' → 개수 어긋남. 리포트 시나리오가 더 많으면 다리 문장('영상에서 다룬 세 가설 외에 …까지 네 가지')
+#  - '몇 번이었을까요?'로 묻고 답 숫자를 영상에서 하나도 말하지 않음 → 결론 한 줄(N번 중 M번)은 영상에서, 상세 표는 리포트로
+# 사용: python3 script_audio_check.py <narration.txt>   → AUDIO_OK / AUDIO_FAIL
+import re, sys
+paras = [p.strip() for p in open(sys.argv[1], encoding='utf-8').read().split('\n') if p.strip()]
+txt = '\n'.join(paras); bad = []
+NUM = '일|이|삼|사|오|육|칠|팔|구|십'
+for m in re.finditer(r'리포트\s*(' + NUM + r')\s*부', txt):
+    bad.append(f"'{m.group(0)}' → '리포트 {['첫', '두', '세', '네', '다섯', '여섯'][('일이삼사오육'.index(m.group(1)) if m.group(1) in '일이삼사오육' else 0)]} 번째 부분'(일부·오부로 들림)")
+for m in re.finditer(r'(?<![가-힣])(' + NUM + r')\s*부(의|에|에서|에는|의 표|로)\b', txt):
+    if not re.search(r'리포트\s*$', txt[:m.start()]): bad.append(f"'{m.group(0)}' → 'N번째 부분'(일부·오부로 들림)")
+for m in re.finditer(r'국면\s*(에이|비|씨|디)\b', txt):
+    bad.append(f"'{m.group(0)}' → '두 번째 국면(공급 소화 단계)'처럼 풀어 읽기(국면비·국면시로 뭉개짐)")
+for w, alt in (('닷새', '다섯 거래일'), ('쌓인 일감', '수주 잔고'), ('적힌 시가', '적힌 시장 가격')):
+    if w in txt: bad.append(f"'{w}' → '{alt}'(TTS·자막이 다르게 들림)")
+KN = {'두': 2, '세': 3, '네': 4, '다섯': 5}
+hyp = len(set(re.findall(r'(첫|두|세|네) 번째 가설', txt)))
+for m in re.finditer(r'(두|세|네|다섯) (시나리오|가설)마다|(두|세|네|다섯) (가지 )?시나리오', txt):
+    n = KN[m.group(1) or m.group(3)]
+    if hyp and n != hyp and not re.search(r'영상에서 다룬', txt):
+        bad.append(f"가설 {hyp}개를 말했는데 '{m.group(0)}' — 다리 문장 '영상에서 다룬 {['', '', '두', '세', '네'][hyp]} 가설 외에 … 모두 {m.group(1) or m.group(3)} 가지는 리포트 표에'")
+for i, p in enumerate(paras):
+    if re.search(r'몇 번(이었|일)을?까요\?', p):
+        near = re.sub(r'[^.?!]*\?', '', ' '.join(paras[i:i + 3]))  # 질문 문장 자체는 빼고
+        if not re.search(r'(번|차례) (중|가운데) [가-힣]+ 번|[가-힣]+ 번 모두|[가-힣]+ 번 중', near):
+            bad.append(f"문단 {i + 1} '몇 번이었을까요?' 뒤 두 문단 안에 결론 한 줄(N번 중 M번)이 없음 — 상세 표만 리포트로")
+print('\n'.join('AUDIO ' + b for b in bad) if bad else 'AUDIO_OK')
+sys.exit(1 if bad else 0)

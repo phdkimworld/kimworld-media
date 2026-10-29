@@ -1,7 +1,7 @@
 #!/bin/sh
 # 롱폼 제작의 긴 단계를 끊김 없이 잇는다(운영자 지시 2026-10-20 "이런 일 없게 해" — TTS가 끝났는데 25분 멈춰 있었음).
 # 사용: sh tools/chain_long.sh <작업 폴더(video)> [쇼츠 폴더]
-#   TTS 끝 대기 → check_slides·still_check·num_check·prev_calls_check·thumb_biz_check·chart_check·thumb_name_check·hero_check → 롱폼 합성 → video_check long
+#   TTS 끝 대기 → tts_asr_check → check_slides·still_check·num_check·prev_calls_check·thumb_biz_check·chart_check·thumb_name_check·hero_check → 롱폼 합성 → video_check long
 #   (쇼츠 폴더가 있으면) shorts_check → 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
 # 반드시 세션 도구의 '백그라운드 실행(완료 알림)'으로 부른다. nohup 만으로 띄우고 끝내지 않는다.
 set -u
@@ -21,6 +21,11 @@ if [ -n "$S" ] && [ -f "$S/narration.txt" ]; then
   fi
 fi
 cd "$V"
+# 녹음 숫자 듣기 검사(2026-10-29 CBRS '약 스물한 배'가 뭉개짐): 고칠 문단은 st_redo.py로 다시 녹음, 인식기 한계로 판단해 넘기면 asr_check.ok에 이유
+if [ -f raw_timing.json ] && [ ! -f asr_check.ok ]; then
+  python3 /home/user/kimworld-media/tools/tts_asr_check.py narration.txt raw.wav raw_timing.json > asr_check.log 2>&1 || { echo "CHAIN_FAIL tts_asr_check(녹음에서 숫자가 안 들림)"; grep -v LIMIT asr_check.log | tail -6; exit 1; }
+  tail -1 asr_check.log
+fi
 python3 /home/claude/slidekit/check_slides.py . > check_slides.log 2>&1; tail -1 check_slides.log | grep -q OK || { echo "CHAIN_FAIL check_slides"; grep -v "^ad " check_slides.log | tail -8; exit 1; }
 python3 /home/user/kimworld-media/tools/still_check.py . || { echo "CHAIN_FAIL still_check(합성 전 정지 화면 위험)"; exit 1; }
 R=$(ls ../report/*-20*.md 2>/dev/null | head -1)
