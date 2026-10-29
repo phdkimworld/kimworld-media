@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - 통합 제작·검수 지침(2026-10-29): 억$ 혼합 표기·본문 $ 금지, (10-30~) 기록표 열 스키마, 체크리스트 [시점][수치]
 #  - R1.8(2026-10-29): key_points 개조식, 짧은 답 숫자 반복, 용어 병기(EV·RPO·중앙값), 수급 분모 셋, 국면 정의, 표 칸 수·열 자료형, 판정표 머리, 체크리스트, 2×2 시나리오·구간 가능성
 #  - 1~6부 제목 아래 '> **핵심:**' 콜아웃, 끝에 다음 부 예고 문장 없음, ## 위계, ① 나열 없음, 시나리오 표, 표·### 5개 이하(SKILL R1.7, 2026-10-28). --legacy면 옛 '쉽게 말하면' 검사
 #  - 본문 문장(표·제목·인용·출처 제외) 가운데 90자 넘는 문장 비율 10% 이하, 날짜를 뺀 숫자 4개 이상 든 문장 5% 이하
@@ -119,5 +120,23 @@ if '--legacy' not in sys.argv:
             if rows and not lo <= 100 <= hi: bad.append(f'R1.8 구간 아래끝 합 {lo} ≤ 100 ≤ 위끝 합 {hi}가 아님')
             before = body[:st.start()][-600:]
             if not re.search(r'\d+번 중 \d+번|\d+회 중 \d+회|\d+번 모두', before): bad.append('R1.8 시나리오 표 앞 문단에 과거 빈도(N번 중 M번)를 먼저')
+    # 통합 제작·검수 지침(2026-10-29) 1.4·2.2·2.4
+    for m in re.finditer(r'\d[\d,.]*\s*[만억조]\s*\$|\$\s*\d[\d,.]*\s*[만억조]', body): bad.append(f"통합 1.4 '억$'·'$N억' 혼합 표기 금지 → '254억 달러' 또는 '254억 달러($25.4B)': {m.group(0)}")
+    for l in body.split('\n'):
+        if '$' in l and not l.lstrip().startswith(('|', '!', '<')) and not re.search(r'\(\$[\d.,]+[BMK]?\)', l): bad.append(f"통합 1.4 본문 서술은 '112.56달러'(기호 $는 표·괄호 축약에만): {l.strip()[:40]}")
+    if asof >= '2026-10-30':
+        for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|\n((?:\|[^\n]*\|\n?)+)', body, re.M):
+            h = [c.strip() for c in tb.group(1).strip('|').split('|')]
+            di = next((i for i, c in enumerate(h) if c.startswith('당일')), None); ni = next((i for i, c in enumerate(h) if '거래일 뒤' in c), None)
+            if di is None or ni is None: continue
+            rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb.group(2).strip().split('\n')]
+            if not re.search(r'일|날짜', h[0]) or any(not re.match(r'\d{4}\.\d{2}\.\d{2}', r[0]) for r in rows): bad.append(f"통합 2.2 기록표 첫 열은 이벤트 일자(YYYY.MM.DD): {' | '.join(h)[:50]}")
+            if not any(re.search(r'규모|물량|주식|금액|수량', c) for c in h[1:di]): bad.append(f"통합 2.2 기록표에 물량·규모 열(일자와 당일 사이)이 없음: {' | '.join(h)[:50]}")
+            if di > ni: bad.append('통합 2.2 기록표 열 순서는 당일 → N거래일 뒤')
+            if not re.search(r'함께|동반|내용|이벤트', h[-1]): bad.append(f"통합 2.2 기록표 마지막 열은 동반 이벤트(텍스트): {h[-1]}")
+        for l in body.split('\n'):
+            m = re.match(r'- [□☐] (.*)', l)
+            if m and not (re.match(r'(\d+월|\d+일|\d{4}년|다음 실적|분기 보고서|실적|매일|주간)', m.group(1)) and len(re.findall(r'\d[\d,.]*', m.group(1))) >= 2):
+                bad.append(f"통합 2.4 체크리스트는 '□ [점검 시점] [수치 기준] 달성 여부': {m.group(1)[:40]}")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
