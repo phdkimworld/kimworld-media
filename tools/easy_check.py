@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v2.1 Master(2026-10-29, data_as_of 10-30~): 표 3열 이하·기록표 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'·판정표 3열·한 칸 수치 둘·'빚' 금지
 #  - 통합 제작·검수 지침(2026-10-29): 억$ 혼합 표기·본문 $ 금지, (10-30~) 기록표 열 스키마, 체크리스트 [시점][수치]
 #  - R1.8(2026-10-29): key_points 개조식, 짧은 답 숫자 반복, 용어 병기(EV·RPO·중앙값), 수급 분모 셋, 국면 정의, 표 칸 수·열 자료형, 판정표 머리, 체크리스트, 2×2 시나리오·구간 가능성
 #  - 1~6부 제목 아래 '> **핵심:**' 콜아웃, 끝에 다음 부 예고 문장 없음, ## 위계, ① 나열 없음, 시나리오 표, 표·### 5개 이하(SKILL R1.7, 2026-10-28). --legacy면 옛 '쉽게 말하면' 검사
@@ -105,7 +106,11 @@ if '--legacy' not in sys.argv:
     pt = re.search(r'^## 지난 리포트 이후\n(.*?)(?=^## )', body, re.S | re.M)
     if pt and '|' in pt.group(1):
         h = [c.strip() for c in re.search(r'^\|(.*)\|\s*$', pt.group(1), re.M).group(1).split('|')]
-        if h[:2] != ['지난 점검 항목', '당시 판단 기준'] or not h[2].startswith('실제 결과') or h[-1] != '판정':
+        _asof = (re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
+        if _asof >= '2026-10-30':
+            if len(h) != 3 or not h[0].startswith('지난 점검 항목 · 당시 기준') or not h[1].startswith('실제 결과') or h[2] != '판정':
+                bad.append('v2.1 지난 리포트 판정표 머리는 3열 | 지난 점검 항목 · 당시 기준 | 실제 결과(<날짜>) | 판정 |')
+        elif h[:2] != ['지난 점검 항목', '당시 판단 기준'] or not h[2].startswith('실제 결과') or h[-1] != '판정':
             bad.append('R1.8 지난 리포트 판정표 머리는 | 지난 점검 항목 | 당시 판단 기준 | 실제 결과(<날짜>) | 판정 |')
         for r in re.findall(r'^\|(?!\s*-)(.*)\|\s*$', pt.group(1), re.M)[1:]:
             j = r.split('|')[-1].strip()
@@ -118,7 +123,9 @@ if '--legacy' not in sys.argv:
         if st:
             rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in st.group(0).strip().split('\n')[2:]]
             ax = [i for i in range(len(rows[0])) if all(r[i] in ('○', '×') for r in rows if i < len(r))]
-            if len(ax) < 2 or len({tuple(r[i] for i in ax[:2]) for r in rows}) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 축(○/×) 2×2 네 칸')
+            cx = [i for i in range(len(rows[0])) if all(re.fullmatch(r'[○×]\s*/\s*[○×]', r[i]) for r in rows if i < len(r))]
+            pairs = {tuple(r[i] for i in ax[:2]) for r in rows} if len(ax) >= 2 else {tuple(re.split(r'\s*/\s*', r[cx[0]])) for r in rows} if cx else set()
+            if len(pairs) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 축(○/×) 2×2 네 칸(조건 한 열이면 ○ / ×)')
             lo = hi = 0
             for r in rows:
                 m = re.search(r'(높음|중간|낮음)\s*\((\d+)~(\d+)%\)', ' '.join(r))
@@ -132,15 +139,20 @@ if '--legacy' not in sys.argv:
     for l in body.split('\n'):
         if '$' in l and not l.lstrip().startswith(('|', '!', '<')) and not re.search(r'\(\$[\d.,]+[BMK]?\)', l): bad.append(f"통합 1.4 본문 서술은 '112.56달러'(기호 $는 표·괄호 축약에만): {l.strip()[:40]}")
     if asof >= '2026-10-30':
+        # v2.1 Master(2026-10-29): 모바일 375px에서 오른쪽 열이 잘리지 않게 모든 표 3열 이하, 기록표는 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'
         for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|\n((?:\|[^\n]*\|\n?)+)', body, re.M):
             h = [c.strip() for c in tb.group(1).strip('|').split('|')]
-            di = next((i for i, c in enumerate(h) if c.startswith('당일')), None); ni = next((i for i, c in enumerate(h) if '거래일 뒤' in c), None)
-            if di is None or ni is None: continue
             rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb.group(2).strip().split('\n')]
-            if not re.search(r'일|날짜', h[0]) or any(not re.match(r'\d{4}\.\d{2}\.\d{2}', r[0]) for r in rows): bad.append(f"통합 2.2 기록표 첫 열은 이벤트 일자(YYYY.MM.DD): {' | '.join(h)[:50]}")
-            if not any(re.search(r'규모|물량|주식|금액|수량', c) for c in h[1:di]): bad.append(f"통합 2.2 기록표에 물량·규모 열(일자와 당일 사이)이 없음: {' | '.join(h)[:50]}")
-            if di > ni: bad.append('통합 2.2 기록표 열 순서는 당일 → N거래일 뒤')
-            if not re.search(r'함께|동반|내용|이벤트', h[-1]): bad.append(f"통합 2.2 기록표 마지막 열은 동반 이벤트(텍스트): {h[-1]}")
+            if len(h) > 3: bad.append(f"v2.1 표는 3열 이하(모바일 잘림): {' | '.join(h)[:50]}")
+            for r in rows:
+                for c in r:
+                    if re.search(r'[+-−]?\d[\d.]*%\s+[+-−]\d[\d.]*%', re.sub(r'<br>|\(.*?\)', ' | ', c)): bad.append(f'v2.1 한 칸에 수치 두 개(| 누락?): {c[:30]}')
+            di = next((k for k, c in enumerate(h) if c.startswith('당일')), None); ni = next((k for k, c in enumerate(h) if '거래일 뒤' in c), None)
+            if di is None or ni is None: continue
+            if not (h[0].startswith('이벤트일') and di == 1 and ni == 2): bad.append(f"v2.1 기록표 머리는 | 이벤트일 · 공시 내용 | 당일 | N거래일 뒤 |: {' | '.join(h)[:50]}")
+            for r in rows:
+                if not re.match(r'\**\d{4}\.\d{2}\.\d{2}\**<br>\S', r[0]): bad.append(f"v2.1 기록표 첫 칸은 '**YYYY.MM.DD**<br>공시 내용': {r[0][:30]}")
+        for m in re.finditer(r'[^\n]{0,15}빚[^\n]{0,10}', body): bad.append(f"v2.1 1.2 '빚' 금지(빛 오인) → 부채·차입금: {m.group(0).strip()}")
         for l in body.split('\n'):
             m = re.match(r'- [□☐] (.*)', l)
             if m and not (re.match(r'(\d+월|\d+일|\d{4}년|다음 실적|분기 보고서|실적|매일|주간)', m.group(1)) and len(re.findall(r'\d[\d,.]*', m.group(1))) >= 2):

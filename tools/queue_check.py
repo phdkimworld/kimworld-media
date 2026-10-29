@@ -28,6 +28,8 @@ for f in sys.argv[1:]:
     for r in d.get('replies', []):
         if 'drkimworld.com/r/' in r.get('text', '') and not re.search(r'[1-6]부', r['text']):
             bad.append(f'{f}: 링크 답글에 \'답은 리포트 N부 <표 이름>\' 위치 안내 없음(K8.0)')
+    for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
+        if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
     # SNS 스레드 지침 6장(2026-10-29, SLNH 스레드 조회 11회 진단)
     if 'threads' in d.get('channels', []):
         first = re.split(r'(?<=[.?!다])\s', t.strip(), maxsplit=1)[0]
