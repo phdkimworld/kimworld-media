@@ -30,6 +30,13 @@ for i in range(1, len(parts), 2):
         if re.search(r'[1-6]부(에서|가|의)[^.]{0,30}(보겠|모아|정리합|답합|이어|살펴)', tail[0]): bad.append(f'R1.7 {parts[i]}부 끝이 다음 부 예고 문장: {tail[0][:50]}…')
     elif '쉽게 말하면' not in sec[:1500]:
         bad.append(f'{parts[i]}부 첫머리(1500자 안)에 쉽게 말하면 문장이 없음')
+if R17 and (re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', txt, re.M) or [0, '0'])[1] >= '2026-10-27':
+    # 운영자 형식 검토 재확인(2026-10-29, INOD): 부 첫머리만이 아니라 짧은 답·본문 어디서든 대본체 '쉽게 말하면', 짧은 답의 '그렇다면 ~일까요' 다리 문단을 막는다
+    for m in re.finditer(r'(?m)^(?![>|#]).*쉽게 말하면.*$', body): bad.append(f"R1.7 대본체 '쉽게 말하면'(핵심 콜아웃·평서문으로): {m.group(0).strip()[:40]}")
+    sa = re.search(r'^## 짧은 답\n(.*?)(?=^## )', body, re.M | re.S)
+    if sa:
+        for para in [x.strip() for x in sa.group(1).split('\n\n') if x.strip()]:
+            if re.match(r'그렇다면', para) and re.search(r'까요[.?]', para): bad.append(f'R1.7 짧은 답에 예고 다리 문단(질문 대신 표 위치 한 줄): {para[:40]}…')
 lines = [re.sub(r'\]\([^)]*\)|https?://\S+', ']', l) for l in body.split('\n') if l.strip() and not l.lstrip().startswith(('|', '#', '>', '!', '<'))]
 sents = [s.strip() for l in lines for s in re.split(r'(?<=[.?!다])\s+(?=\S)', re.sub(r'^\s*[-*\d.□]+\s*', '', l)) if len(s.strip()) > 5]
 longs = [s for s in sents if len(s) > 90]
