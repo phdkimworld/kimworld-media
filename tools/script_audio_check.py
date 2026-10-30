@@ -42,5 +42,11 @@ for w, alt in ((r'빚', '부채·차입금(빛으로 오인, v2.1 1.2)'), (r'팔
 for m in re.finditer(r'(?:^|[.?!]\s+|\n)(희석[^\s]*)', txt): bad.append(f"문장 첫머리 '{m.group(1)}' → '주식 희석 …'('피석'으로 들림)")
 # 1달러 미만 가격은 소수 두 자리(영 점 오오 달러): '영 점 오 달러'는 0.55가 0.5로 들린 것일 수 있다
 for m in re.finditer(r'영 점 [영일이삼사오육칠팔구] (달러|센트)', txt): bad.append(f"'{m.group(0)}' → 1달러 미만은 소수 두 자리('영 점 오오 달러', v2.1 3.3)")
+# 한 문장에 금액·주식 수 두 개(46회차 복기: IREN 문단 7 '삼십사 달러 팔십 센트 … 이십오 달러 오십일 센트', SLNH 문단 4·12·20이
+# 녹음에서 숫자가 빠져 tts_asr_check 뒤 다시 녹음) → TTS 전에 두 문장으로 나눈다
+_N = r'(?:[영일이삼사오육칠팔구십백천만억]+(?: 점 [영일이삼사오육칠팔구]+)?)'
+for _sen in re.split(r'(?<=[.?!])\s+', txt):
+    _am = re.findall(_N + r' (?:달러(?: ' + _N + r' 센트)?|만 주|억 주|주)(?![가-힣])', _sen)
+    if len(_am) >= 2: bad.append(f"한 문장에 금액·주식 수 {len(_am)}개(녹음에서 숫자 누락 위험) → 두 문장으로: {_sen.strip()[:50]}")
 print('\n'.join('AUDIO ' + b for b in bad) if bad else 'AUDIO_OK')
 sys.exit(1 if bad else 0)

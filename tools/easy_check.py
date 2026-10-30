@@ -107,7 +107,9 @@ if '--legacy' not in sys.argv:
     if pt and '|' in pt.group(1):
         h = [c.strip() for c in re.search(r'^\|(.*)\|\s*$', pt.group(1), re.M).group(1).split('|')]
         _asof = (re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
-        if _asof >= '2026-10-30':
+        # v2.1은 공개일(date) 10-30 이후 리포트에도 적용(47회차 LEU: 기준일 10-29라 옛 4열 판정표를 요구받음)
+        _pub = (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
+        if max(_asof, _pub) >= '2026-10-30':
             if len(h) != 3 or not h[0].startswith('지난 점검 항목 · 당시 기준') or not h[1].startswith('실제 결과') or h[2] != '판정':
                 bad.append('v2.1 지난 리포트 판정표 머리는 3열 | 지난 점검 항목 · 당시 기준 | 실제 결과(<날짜>) | 판정 |')
         elif h[:2] != ['지난 점검 항목', '당시 판단 기준'] or not h[2].startswith('실제 결과') or h[-1] != '판정':
@@ -138,7 +140,7 @@ if '--legacy' not in sys.argv:
     for m in re.finditer(r'\d[\d,.]*\s*[만억조]\s*\$|\$\s*\d[\d,.]*\s*[만억조]', body): bad.append(f"통합 1.4 '억$'·'$N억' 혼합 표기 금지 → '254억 달러' 또는 '254억 달러($25.4B)': {m.group(0)}")
     for l in body.split('\n'):
         if '$' in l and not l.lstrip().startswith(('|', '!', '<')) and not re.search(r'\(\$[\d.,]+[BMK]?\)', l): bad.append(f"통합 1.4 본문 서술은 '112.56달러'(기호 $는 표·괄호 축약에만): {l.strip()[:40]}")
-    if asof >= '2026-10-30':
+    if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-10-30':
         # v2.1 Master(2026-10-29): 모바일 375px에서 오른쪽 열이 잘리지 않게 모든 표 3열 이하, 기록표는 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'
         for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|\n((?:\|[^\n]*\|\n?)+)', body, re.M):
             h = [c.strip() for c in tb.group(1).strip('|').split('|')]
