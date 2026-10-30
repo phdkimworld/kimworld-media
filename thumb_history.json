@@ -1811,6 +1811,27 @@
     "큰 반등 12번 / 8번 꺾였다 / 이번 +11.2%는? + 같은 그림"
    ],
    "video": "1ETBsq2vFWM"
+  },
+  {
+   "t": "tnxp",
+   "date": "2026.10.30",
+   "layout": "custom",
+   "palette": "teal-pink-rose",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "현금보다 싼 회사 / 1년 주가 -72% 카드 / 매출은 10배인데? + 약병·혀 밑 알약·처방전",
+    "좋은 소식 7번 / 5번 내렸다 / 현금은 몸값보다 많다 + 같은 그림"
+   ],
+   "video": "O8temUyKQE4"
   }
  ]
 }

@@ -70,6 +70,9 @@ def long(v, slides, meta):
     desc = json.load(open(meta, encoding='utf-8'))['description']
     ch = re.findall(r'^\d{1,2}:\d{2}\s', desc, re.M); out['chap'] = len(ch)
     (len(ch) < 3 or not desc.count('00:00')) and fails.append('설명란 챕터 부족')
+    # 48회차 TNXP: 설명란의 '>'(현금 > 시가총액)로 업로드가 invalidDescription 400 → 유튜브는 제목·설명에 < > 를 받지 않는다
+    _m = json.load(open(meta, encoding='utf-8'))
+    any(c in _m.get('title', '') + desc for c in '<>') and fails.append('제목·설명에 < > 기호(유튜브 400 invalidDescription)')
     # A10 outro
     out['outro'] = round(seg.get('outro_sec', 0)); out['outro'] < 20 and fails.append(f'outro {out["outro"]}초 < 20초')
     line = (f"검증: 해상도 {out['res']} · 10초 훅 확인 필요(check_10s.png) · 빈 화면 {out['empty']}초 · 최장 정지 {out['still']}초 · "

@@ -24,6 +24,8 @@ for i, sc in enumerate(scenes):
 if scenes:
     ats = sorted(e.get('at', 0) for e in scenes[0].get('els', []) if e.get('kind') != 'poll')
     if ats and ats[0] > 0: bad.append(f'장면 1 첫 요소 at {ats[0]}: 큰 숫자는 at 0(썸네일 숫자)')
+    # 47·48회차(LEU·TNXP): 첫 장면 요소가 둘(0·0.3)뿐이면 6초 넘는 첫 문장에서 뒤 70%가 정지(4.8·5.0초) → 0.6~0.7 지점에 하나 더
+    if len(ats) < 3: bad.append(f'장면 1 요소 {len(ats)}개: 0.6~0.7 지점에 도장 하나를 더(첫 문장 뒤쪽 정지 방지)')
     if len(ats) > 1 and ats[1] > 0.3: bad.append(f'장면 1 둘째 요소 at {ats[1]}: 0.3 이하(첫 문장이 6초를 넘으면 3초 정지)')
 # 통합 제작·검수 지침(2026-10-29) 4장
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
