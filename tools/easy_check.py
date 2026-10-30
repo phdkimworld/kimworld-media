@@ -152,6 +152,11 @@ if '--legacy' not in sys.argv:
             if not (h[0].startswith('이벤트일') and di == 1 and ni == 2): bad.append(f"v2.1 기록표 머리는 | 이벤트일 · 공시 내용 | 당일 | N거래일 뒤 |: {' | '.join(h)[:50]}")
             for r in rows:
                 if not re.match(r'\**\d{4}\.\d{2}\.\d{2}\**<br>\S', r[0]): bad.append(f"v2.1 기록표 첫 칸은 '**YYYY.MM.DD**<br>공시 내용': {r[0][:30]}")
+        # K10 블로거 티저 SEO(2026-10-29): 블로그 전용 고유 도입·질문 3개·영문 주소
+        bi = (re.search(r'^blog_intro:\s*"?(.+?)"?\s*$', fm, re.M) or [None, ''])[1]
+        if len(bi) < 200: bad.append(f'K10 머리말 blog_intro {len(bi)}자 < 200(블로그 전용 서술형 도입)')
+        if len(re.findall(r'^\s+- q:', fm, re.M)) != 3: bad.append('K10 머리말 blog_faq 질문 3개(q·a)')
+        if not re.search(r'^blog_slug:', fm, re.M): bad.append('K10 머리말 blog_slug(티커 + 사건 영문 키워드 + stock analysis)')
         for m in re.finditer(r'[^\n]{0,15}빚[^\n]{0,10}', body): bad.append(f"v2.1 1.2 '빚' 금지(빛 오인) → 부채·차입금: {m.group(0).strip()}")
         for l in body.split('\n'):
             m = re.match(r'- [□☐] (.*)', l)
