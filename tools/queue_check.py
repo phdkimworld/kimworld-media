@@ -30,6 +30,17 @@ for f in sys.argv[1:]:
             bad.append(f'{f}: 링크 답글에 \'답은 리포트 N부 <표 이름>\' 위치 안내 없음(K8.0)')
     for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
         if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
+    # 인스타 카드뉴스 전환(운영자 지시 2026-10-29 "인스타는 릴스 폐기하고 카드뉴스로 완전히 전환")
+    m = d.get('media') or {}
+    if 'instagram' in d.get('channels', []):
+        if m.get('type') == 'reels': bad.append(f'{f}: 인스타 릴스는 폐기 — 인스타는 카드뉴스(carousel, tools/cardnews/make_cards.py), 릴스는 facebook 채널만')
+        if m.get('type') == 'carousel':
+            ps = m.get('paths') or []
+            if not 7 <= len(ps) <= 10: bad.append(f'{f}: 카드뉴스 {len(ps)}장 — 7~10장')
+            if any(not str(x).lower().endswith(('.jpg', '.jpeg')) for x in ps): bad.append(f'{f}: 인스타 캐러셀은 JPEG만')
+            cap = (d.get('channel_text') or {}).get('instagram') or t
+            if 'http' in cap: bad.append(f'{f}: 인스타 캡션에 URL 금지(프로필 링크 → 사이트 검색)')
+            if '검색' not in cap or '저장' not in cap: bad.append(f'{f}: 인스타 캡션에 사이트 검색 안내와 저장 유도가 있어야 함')
     # SNS 스레드 지침 6장(2026-10-29, SLNH 스레드 조회 11회 진단)
     if 'threads' in d.get('channels', []):
         first = re.split(r'(?<=[.?!다])\s', t.strip(), maxsplit=1)[0]
