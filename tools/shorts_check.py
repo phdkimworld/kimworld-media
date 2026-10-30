@@ -33,6 +33,9 @@ for i, (s, sc) in enumerate(zip(sents, scenes)):
     # 4.1 화면 자막은 아라비아 숫자(subtitle), 음성은 한글 독음(narration) — 두 칸을 나눈다
     sub = sc.get('subtitle')
     if not sub: bad.append(f'장면 {i+1} "subtitle"(화면 자막, 아라비아 숫자·기호) 칸이 없음 — 4.1 tts_script/subtitle_text 이원화'); continue
+    ls = sub.split('\n')
+    if len(ls) > 2 or any(len(x.replace('**', '')) > 20 for x in ls): bad.append(f'장면 {i+1} 자막은 1문장 1프레임 — \\n으로 2줄 이하·줄당 20자 이하(4.1): {sub[:30]}')
+    if i > 0 and any(e.get('kind') == 'stamp' and 0 < e.get('at', 0) < 0.5 for e in sc.get('els', [])): bad.append(f'장면 {i+1} 스탬프 at < 0.5 — 문장 후반 키워드에서 찍는다(4.4)')
     if re.search(r'퍼센트|(?<![가-힣])점 [영일이삼사오육칠팔구]|센트', sub): bad.append(f'장면 {i+1} 자막에 한글 독음: {sub[:30]}')
     if script_nums(s) and not re.search(r'\d', sub): bad.append(f'장면 {i+1} 음성에 숫자가 있는데 자막에 아라비아 숫자가 없음: {sub[:30]}')
     # 4.2 상단 카드의 큰 숫자(가장 큰 num)는 그 장면 내레이션에서 말한다
