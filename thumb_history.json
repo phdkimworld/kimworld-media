@@ -1832,6 +1832,48 @@
     "좋은 소식 7번 / 5번 내렸다 / 현금은 몸값보다 많다 + 같은 그림"
    ],
    "video": "O8temUyKQE4"
+  },
+  {
+   "t": "btq3",
+   "date": "2026.11.01",
+   "layout": "custom",
+   "palette": "violet-lime-red",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "올해 바닥 깨졌다 / 상장 뒤 최저 종가 $1.98 카드 / 소식은 1건뿐인데? + 자물쇠 박힌 보안 칩·큐비트 궤도",
+    "발표 없는 급락 / 22번 중 4번 / 만 되찾았다 + 같은 그림"
+   ],
+   "video": "atbo6XnK2Tw"
+  },
+  {
+   "t": "qntus2",
+   "date": "2026.11.01",
+   "layout": "custom",
+   "palette": "navy-cyan-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "공모가 $60 → $33.6 / 매출의 385배 카드 / 왜 아직 비쌀까? + 이온트랩 칩·이온 줄·레이저·진공 챔버",
+    "급등 6번 뒤 / 5번 더 낮았다 / 11월 시험 두 개 + 같은 그림"
+   ],
+   "video": "umlKjLg6EsA"
   }
  ]
 }
