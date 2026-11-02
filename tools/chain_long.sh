@@ -11,6 +11,12 @@ until grep -q "^done" "$V/tts.log" 2>/dev/null; do
   sleep 15
 done
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
+# E12 녹음 길이(BTQ 49회차: B그룹 녹음 9분 50초를 합성 뒤에야 알아 보강·재녹음). video 폴더에 group 파일(A|B)이 있으면 녹음 직후 확인
+if [ -f "$V/group" ]; then
+  G=$(tr -d ' \n' < "$V/group"); D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav" | cut -d. -f1)
+  if [ "$G" = "B" ] && [ "$D" -lt 600 ]; then echo "CHAIN_FAIL tts_length(E12 B 녹음 ${D}초, 600초 이상 — 문단 보강 뒤 st_redo)"; exit 1; fi
+  if [ "$G" = "A" ] && [ "$D" -gt 600 ]; then echo "CHAIN_FAIL tts_length(E12 A 녹음 ${D}초, 약 8분 목표 — 600초 이하)"; exit 1; fi
+fi
 if [ -n "$S" ] && [ -f "$S/narration.txt" ]; then
   python3 /home/user/kimworld-media/tools/shorts_check.py "$S" || { echo "CHAIN_FAIL shorts_check(쇼츠 문장·장면 수)"; exit 1; }
   python3 /home/user/kimworld-media/tools/script_audio_check.py "$S/narration.txt" || { echo "CHAIN_FAIL script_audio_check(쇼츠 대본 귀로 듣는 말)"; exit 1; }
