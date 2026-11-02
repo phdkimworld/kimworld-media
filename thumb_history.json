@@ -1874,6 +1874,48 @@
     "급등 6번 뒤 / 5번 더 낮았다 / 11월 시험 두 개 + 같은 그림"
    ],
    "video": "umlKjLg6EsA"
+  },
+  {
+   "t": "laes4",
+   "date": "2026.11.02",
+   "layout": "custom",
+   "palette": "forest-orange-red",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "보안 시험 통과했는데 / 2024.12 이후 최저 종가 $1.47 카드 / 주가는 왜 내렸나? + 방패·합격 체크 박힌 보안 칩·회로선",
+    "함께 오른 +7.2% / 나흘 만에 0 / 64번 중 11번 + 같은 그림"
+   ],
+   "video": "8iHv7k2iACg"
+  },
+  {
+   "t": "rzlv",
+   "date": "2026.11.02",
+   "layout": "custom",
+   "palette": "black-pink-gold",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "매출은 20배 늘었는데 / 52주 최저 종가 $1.46 카드 / 주가는 왜 바닥? + 장바구니·상품 상자·AI 돋보기",
+    "주식 판매 4번 / 4번 다 / 급등 직후였다 + 같은 그림"
+   ],
+   "video": "Z_X6tH9pwK4"
   }
  ]
 }
