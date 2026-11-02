@@ -58,5 +58,29 @@ for s in sents[-3:]:
 for i, s in enumerate(sents):
     if re.search(r'몇 번', s) and not re.search(r'[가-힣]+ 번 (중|가운데)|번 (중|가운데) [가-힣]+ 번|[가-힣]+ 번 모두', ' '.join(sents[i + 1:i + 3])):
         bad.append(f'문장 {i+1} "몇 번"을 묻고 다음 두 문장 안에 답(N번 중 M번)이 없음')
+# v2.5(2026-11-02 운영자 TNXP 쇼츠 검토): 위 카드·스탬프와 아래 자막의 같은 문구 반복, 첫 장면 배지와 첫 문장 불일치, 첫 문장 법인 접미사
+import difflib
+_n = lambda t: re.sub(r'[\s*()·,]|약|은|는', '', str(t or ''))
+for i, (s, sc) in enumerate(zip(sents, scenes)):
+    sub = sc.get('subtitle') or ''; sn = _n(sub.replace('\n', ''))
+    for e in sc.get('els', []):
+        t = e.get('text')
+        if not t or e.get('kind') not in ('num', 'stamp', 'text'): continue
+        if e.get('kind') == 'stamp' and re.search(r'\d', t) and _n(t) and (_n(t) in sn or difflib.SequenceMatcher(None, _n(t), sn).find_longest_match(0, len(_n(t)), 0, len(sn)).size >= max(5, len(_n(t)) - 1)):
+            bad.append(f"장면 {i+1} 스탬프 '{t}'가 아래 자막과 같은 문구(v2.5 반복) → 보충 사실로 바꾸거나 자막을 말하는 문장으로")
+    lab = [e.get('text') for e in sc.get('els', []) if e.get('kind') == 'text' and e.get('text')]
+    num = [e.get('text') for e in sc.get('els', []) if e.get('kind') == 'num' and e.get('text')]
+    l1 = _n(sub.split('\n')[0])
+    if num and _n(num[0]) in sn and not any(re.search(r'([다요]|\?)[.!]?$', x.strip()) for x in sub.split('\n')):
+        bad.append(f"장면 {i+1} 위 카드 숫자 '{num[0]}'와 명사구 자막 '{sub.replace(chr(10), ' / ')}'가 같은 명사구(v2.5) → 자막은 말하는 문장(아라비아 숫자)으로")
+if sents and scenes:
+    said = [x for x, _ in script_nums(sents[0])]
+    for e in scenes[0].get('els', []):
+        m = re.search(r'(\d[\d,.]*)\s*(배|%|번|만|억)', str(e.get('text') or ''))
+        if m and '$' not in str(e.get('text')):
+            v = val(m.group(1).replace(',', ''))
+            if v and not any(abs(abs(x) - v) <= 0.03 * v for x in said): bad.append(f"장면 1 배지 '{e.get('text')}'가 첫 문장에 없음(v2.5 시각·청각 일치) → 첫 문장과 맞는 배지로")
+    m = re.search(r'파마슈티컬스|홀딩스|코퍼레이션|테크놀로지스|인더스트리스|바이오사이언스|커뮤니케이션스', sents[0])
+    if m: bad.append(f"첫 문장 법인 접미사 '{m.group(0)}'(빠른 첫 호흡에서 뭉개짐, v2.5) → '미국 제약사 토닉스는'처럼 업종 + 짧은 이름")
 print('\n'.join(bad) if bad else f'SHORTS_OK 문장·장면 {len(sents)}개')
 sys.exit(1 if bad else 0)

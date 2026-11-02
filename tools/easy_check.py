@@ -130,7 +130,7 @@ if '--legacy' not in sys.argv:
             if len(pairs) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 축(○/×) 2×2 네 칸(조건 한 열이면 ○ / ×)')
             lo = hi = 0
             for r in rows:
-                m = re.search(r'(높음|중간|낮음)\s*\((\d+)~(\d+)%\)', ' '.join(r))
+                m = re.search(r'(높음|중간|낮음)\s*(?:<br>)?\s*\((\d+)~(\d+)%\)', ' '.join(r))
                 if not m: bad.append(f'R1.8 가능성은 높음(35~45%)·중간(20~30%)·낮음(10~20%) 구간: {r[0][:20]}'); continue
                 lo += int(m.group(2)); hi += int(m.group(3))
             if rows and not lo <= 100 <= hi: bad.append(f'R1.8 구간 아래끝 합 {lo} ≤ 100 ≤ 위끝 합 {hi}가 아님')
@@ -164,5 +164,20 @@ if '--legacy' not in sys.argv:
             m = re.match(r'- [□☐] (.*)', l)
             if m and not (re.match(r'(\d+월|\d+일|\d{4}년|다음 실적|분기 보고서|실적|매일|주간)', m.group(1)) and len(re.findall(r'\d[\d,.]*', m.group(1))) >= 2):
                 bad.append(f"통합 2.4 체크리스트는 '□ [점검 시점] [수치 기준] 달성 여부': {m.group(1)[:40]}")
+    if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-02' or '--v23' in sys.argv:
+        # v2.3(2026-11-02 운영자 TNXP 리포트 검토): 모바일 표 칸 너비·기록표 날짜 순서·공통 판정일·병합 전 가격·목차 아래 문단
+        if re.sub(r'\s+', '', body.split('\n## ', 1)[0]): bad.append('v2.3 목차와 짧은 답 사이에 소속 없는 문단 → 짧은 답 핵심 콜아웃 아래로')
+        for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|\n((?:\|[^\n]*\|\n?)+)', body, re.M):
+            h = [c.strip() for c in tb.group(1).strip('|').split('|')]
+            rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb.group(2).strip().split('\n')]
+            ds = [re.match(r'\**(\d{4}\.\d{2}\.\d{2})', r[0]) for r in rows]
+            ds = [d.group(1) for d in ds if d]
+            if len(ds) >= 3 and ds != sorted(ds): bad.append(f'v2.3 기록표 날짜가 오름차순이 아님: {" → ".join(ds)[:60]}')
+            if '가능성' in ' '.join(h) and len(rows) >= 3:
+                tails = {(re.search(r'·\s*(\d+월 \d+일)\s*$', r[0]) or [None, None])[1] for r in rows}
+                if len(tails) == 1 and None not in tails: bad.append(f'v2.3 시나리오 판정일이 모두 {tails.pop()} → 칸마다 반복하지 말고 머리에 한 번')
+            if '액면병합' in body and h[0].startswith('이벤트일'):
+                for r in rows:
+                    if re.search(r'\d[\d.,]*달러', r[0]) and '병합' not in r[0]: bad.append(f"v2.3 병합 종목 기록표의 과거 가격은 '(병합 전 기준)' 또는 금액 빼기: {r[0][:30]}")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
