@@ -121,3 +121,7 @@ TOP 5 중 사이트 리포트가 없는 종목은 ZEC(🆕)뿐. 주식 IOVA·KOD
 | 1 | KNSA 키닉사 파마슈티컬스 | 주식 | 63 | 하루 2종목 제작 점검이 순서대로 처리 | 대기 |
 
 ZEC는 10-28 대기열에 '대기'로 남아 있고 오늘도 TOP 5(4위)라 그대로 둔다. KOD·ERAS·AXTI·RKLB·HYPE·QNT·TAO·NEAR는 사이트 리포트가 60일 안(data_as_of 10/14~15).
+
+# 대기열 MSI 2026-11-02
+
+편성 없음. KNSA(10-30)·ZEC(10-28)는 '대기'로 남아 있고 오늘도 TOP 5라 그대로 둔다. KOD·ERAS·RKLB·AXTI·HYPE·QNT·TAO·ZRO는 사이트 리포트가 60일 안.
