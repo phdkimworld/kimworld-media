@@ -40,7 +40,11 @@ for f in sys.argv[1:]:
             if any(not str(x).lower().endswith(('.jpg', '.jpeg')) for x in ps): bad.append(f'{f}: 인스타 캐러셀은 JPEG만')
             cap = (d.get('channel_text') or {}).get('instagram') or t
             if 'http' in cap: bad.append(f'{f}: 인스타 캡션에 URL 금지(프로필 링크 → 사이트 검색)')
-            if '검색' not in cap or '저장' not in cap: bad.append(f'{f}: 인스타 캡션에 사이트 검색 안내와 저장 유도가 있어야 함')
+            if not re.search(r'검색|바로 보기', cap) or '저장' not in cap: bad.append(f'{f}: 인스타 캡션에 사이트 첫 화면·검색 안내와 저장 유도가 있어야 함')
+            # 캡션 첫 줄(...더 보기 앞)이 표지 제목을 되풀이하면 피드에서 같은 말을 두 번 본다(운영자 TNXP 카드 검토 11-02) → 넘기기·투표 유도로 시작
+            l1 = cap.strip().split('\n')[0]
+            if len(l1) > 45: bad.append(f'{f}: 인스타 캡션 첫 줄 {len(l1)}자 > 45(더 보기 앞에 잘림)')
+            if not re.search(r'넘겨|장[)\]]|\d장|스와이프|투표', l1): bad.append(f'{f}: 인스타 캡션 첫 줄은 표지 반복 대신 넘기기·투표 유도(예: \'7장 기록과 8장 투표까지 넘겨 보세요 👉\'): {l1[:40]}')
     # SNS 스레드 지침 6장(2026-10-29, SLNH 스레드 조회 11회 진단)
     if 'threads' in d.get('channels', []):
         first = re.split(r'(?<=[.?!다])\s', t.strip(), maxsplit=1)[0]
