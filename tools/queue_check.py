@@ -52,7 +52,7 @@ for f in sys.argv[1:]:
         bl = [l.strip() for l in t.split('\n') if re.match(r'\s*[·•\-]\s', l)]
         if len(bl) > 3: bad.append(f'{f}: 숫자 불릿 {len(bl)}개 > 3(6.2② 모바일 첫 화면에 투표가 잘림)')
         for l in bl:
-            if len(l) > 40: bad.append(f'{f}: 불릿 {len(l)}자 > 35~40(6.2② 한 줄): {l[:30]}…')
+            if len(l.lstrip('·- ')) > 35: bad.append(f'{f}: 불릿 {len(l.lstrip("·- "))}자 > 35(v2.8 5.1 한 줄 35자, 투표 보기 4개가 첫 화면에): {l[:30]}…')
         if re.search(r'시청자 (질문|요청)|\d{4}년 \d{1,2}월 접수|접수\)', t): bad.append(f'{f}: 제작 배경(시청자 요청·접수 시점)은 본문 말고 2/2 답글 끝으로(6.2③)')
         reps = [r.get('text', '') for r in d.get('replies', [])]
         if o and reps and not re.search(r'투표', re.split(r'(?<=[.?!다])\s', reps[0].strip(), maxsplit=1)[0]): bad.append(f'{f}: 2/2 첫 문장이 1/2 투표 질문과 이어지지 않음(6.2④ "투표하신 시나리오의 …")')

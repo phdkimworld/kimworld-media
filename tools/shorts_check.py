@@ -47,6 +47,14 @@ for i, (s, sc) in enumerate(zip(sents, scenes)):
         m = re.search(r'\d[\d,.]*(?:\s*[만억조천](?:\s*\d[\d,.]*)?)*', str(main['text'])); v = val(m.group(0).replace(',', ''))
         said = [x for x, _ in script_nums(s)]
         if v and not any(abs(x - v) <= 0.03 * v for x in said): bad.append(f"장면 {i+1} 큰 숫자 '{main['text']}'를 내레이션에서 말하지 않음(4.2 시각·청각 일치): {s[:30]}")
+# v2.8 4.2(운영자 11-02 LAES 쇼츠): 위쪽 흰 소제목(text)과 노란 배지(stamp)를 같은 높이에 겹쳐 띄우지 않는다(Echo·레이어 충돌)
+for i, sc in enumerate(scenes):
+    els = [e for e in sc.get('els', []) if e.get('kind') not in ('poll', 'chart')]
+    for a in range(len(els)):
+        for b in range(a + 1, len(els)):
+            ya, yb = els[a].get('y', 0), els[b].get('y', 0)
+            if abs(ya - yb) < 100 and {els[a].get('kind'), els[b].get('kind')} & {'stamp'}:
+                bad.append(f"장면 {i+1} '{els[a].get('text','')}'(y {ya})와 '{els[b].get('text','')}'(y {yb})가 같은 높이 — 위 소제목과 배지를 겹치지 않게(v2.8 4.2)")
 # 4.3 마지막 문장이 쉼표로 끊기지 않게(끝음절 잘림) — '…바로 이 숫자입니다.' 또는 '…바로...'
 if sents and sents[-1].rstrip().endswith(','): bad.append(f'마지막 문장이 쉼표로 끝남(4.3 끝음절 잘림): {sents[-1][-20:]}')
 # 4.4 엔딩 CTA는 댓글 투표 + 관련 영상(풀영상) 둘만. 리포트·사이트 검색은 롱폼과 고정 댓글 몫

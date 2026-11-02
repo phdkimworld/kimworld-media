@@ -179,5 +179,15 @@ if '--legacy' not in sys.argv:
             if '액면병합' in body and h[0].startswith('이벤트일'):
                 for r in rows:
                     if re.search(r'\d[\d.,]*달러', r[0]) and '병합' not in r[0]: bad.append(f"v2.3 병합 종목 기록표의 과거 가격은 '(병합 전 기준)' 또는 금액 빼기: {r[0][:30]}")
+if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-03' or '--v28' in sys.argv:
+    # v2.8 Master(운영자 11-02): 시나리오 표 둘째 머리글 8자 이하(모바일에서 셋째 '가능성' 칸이 잘림), 체크리스트는 '☐'
+    for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|', body, re.M):
+        h = [c.strip() for c in tb.group(1).strip('|').split('|')]
+        if any('가능성' in c for c in h) and len(h) >= 3 and len(h[1]) > 8: bad.append(f"v2.8 시나리오 표 둘째 머리글 '{h[1]}' {len(h[1])}자 → 8자 이하('조건(성장·무증자)')")
+        if len(h) > 3: bad.append(f"v2.8 표 {len(h)}열 → 3열 이하: {' | '.join(h)[:50]}")
+    for l in body.split('\n'):
+        if re.match(r'- □ ', l): bad.append(f"v2.8 체크리스트 기호는 '☐': {l[:40]}")
+    for w, alt in (('빚', '부채·차입금'), ('ETF', '상장지수펀드(ETF)')):
+        if w == 'ETF' and 'ETF' in body and '상장지수펀드' not in body: bad.append("v2.8 'ETF' 첫 등장은 '상장지수펀드(ETF)'로 병기")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
