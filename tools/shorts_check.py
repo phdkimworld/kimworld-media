@@ -55,6 +55,14 @@ for i, sc in enumerate(scenes):
             ya, yb = els[a].get('y', 0), els[b].get('y', 0)
             if abs(ya - yb) < 100 and {els[a].get('kind'), els[b].get('kind')} & {'stamp'}:
                 bad.append(f"장면 {i+1} '{els[a].get('text','')}'(y {ya})와 '{els[b].get('text','')}'(y {yb})가 같은 높이 — 위 소제목과 배지를 겹치지 않게(v2.8 4.2)")
+# v2.9(운영자 11-02 LAES 쇼츠): 장면당 스탬프 1개(첫 장면만 업종 배지 + 핵심 스탬프 2개), 스탬프 14자 이내, 질문 자막에 '몇 번' 스탬프 중복 금지
+for i, (s, sc) in enumerate(zip(sents, scenes)):
+    st = [e for e in sc.get('els', []) if e.get('kind') == 'stamp']
+    lim = 2 if i == 0 else 1
+    if len(st) > lim: bad.append(f"장면 {i+1} 스탬프 {len(st)}개 > {lim}(v2.9 1장면 1스탬프{', 첫 장면은 배지+스탬프' if i == 0 else ''})")
+    for e in st:
+        if len(e.get('text', '')) > 14: bad.append(f"장면 {i+1} 스탬프 '{e['text']}' {len(e['text'])}자 > 14(오른쪽 끝 잘림, v2.9)")
+        if '몇 번' in e.get('text', '') and '몇 번' in sc.get('subtitle', ''): bad.append(f"장면 {i+1} 스탬프 '{e['text']}'가 질문 자막과 중복 → '상장 이후 전수 조사' 같은 보충 사실(v2.9)")
 # 4.3 마지막 문장이 쉼표로 끊기지 않게(끝음절 잘림) — '…바로 이 숫자입니다.' 또는 '…바로...'
 if sents and sents[-1].rstrip().endswith(','): bad.append(f'마지막 문장이 쉼표로 끝남(4.3 끝음절 잘림): {sents[-1][-20:]}')
 # 4.4 엔딩 CTA는 댓글 투표 + 관련 영상(풀영상) 둘만. 리포트·사이트 검색은 롱폼과 고정 댓글 몫

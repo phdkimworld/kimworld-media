@@ -189,5 +189,15 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
         if re.match(r'- □ ', l): bad.append(f"v2.8 체크리스트 기호는 '☐': {l[:40]}")
     for w, alt in (('빚', '부채·차입금'), ('ETF', '상장지수펀드(ETF)')):
         if w == 'ETF' and 'ETF' in body and '상장지수펀드' not in body: bad.append("v2.8 'ETF' 첫 등장은 '상장지수펀드(ETF)'로 병기")
+if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-03' or '--v29' in sys.argv:
+    # v2.9 1.6(운영자 11-02 LAES 블로그 검수): 원문(리포트·blog_intro·blog_faq) 단계에서 금지 어휘를 막아 블로그·대본까지 한 번에
+    full = fm + '\n' + body
+    for w, alt in ((r'(?<![가-힣])(이틀|사흘|나흘|닷새|열흘|열하루)', '2·3·4·5·10거래일'), (r'하루 만에', '1거래일 만에'),
+                   (r'(?<![가-힣])(스무|스물|서른|마흔|쉰|예순|일흔|여든|아흔)(\s?(한|두|세|네|다섯|여섯|일곱|여덟|아홉))?\s?(번째|번|곳|개|거래일|회)', '20번째·36곳·53번·64번'),
+                   (r'몫', '상승분·추가 상승 효과(TTS가 목숨으로)'), (r'빚', '부채·차입금'), (r'하는 안입니다', '하는 안건입니다'),
+                   (r'(?<![가-힣\d])[123]상(?![가-힣])', '임상 1·2·3단계'), (r'특허 이의', '특허 분쟁')):
+        for m in re.finditer(w, full): bad.append(f"v2.9 원문 금지 '{m.group(0)}' → {alt}")
+    kp = re.findall(r'^\s*-\s*"?(.+?)"?\s*$', (re.search(r'^key_points:\n((?:\s+-.*\n)+)', fm, re.M) or [None, ''])[1], re.M)
+    if len(kp) >= 3 and not re.search(r'일정|\d+/\d+|\d+월 \d+일', kp[2]): bad.append(f"v2.9 핵심 3줄의 셋째는 '향후 일정'(실적·해제일·전시회·증자 기한): {kp[2][:40]}")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
