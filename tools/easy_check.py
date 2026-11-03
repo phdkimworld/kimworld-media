@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.1(2026-11-03 운영자 PLUG 가독성 분석, 공개일 11-04~·--v31): 국면 쉬운 말 병기, 5부 가능성 뜻·사실/과거/추정 구분, 같은 소수% 4번↑ 반복, 숫자 10개↑ 문단
 #  - v3.0 Patch(2026-11-03 운영자 PLUG 검수, 공개일 11-03~·--v30): 숫자 3열 표 1열 줄당 18자, 판정표 2열+배지, 음수 범위 '~-' 붙여 쓰기·단독 '~숫자%' 금지
 #  - v2.1 Master(2026-10-29, data_as_of 10-30~): 표 3열 이하·기록표 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'·판정표 3열·한 칸 수치 둘·'빚' 금지
 #  - 통합 제작·검수 지침(2026-10-29): 억$ 혼합 표기·본문 $ 금지, (10-30~) 기록표 열 스키마, 체크리스트 [시점][수치]
@@ -221,5 +222,25 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     # 2: 음수 범위 '-1.2~-4.0%'는 물결표와 마이너스가 붙어 '~~'로 보임 → '-1.2%에서 -4.0% 사이' 또는 '-1.2% ~ -4.0%'
     for m in re.finditer(r'\d%?~-\d', fm + '\n' + body): bad.append(f"v3.0 음수 범위 붙여 쓰기 '{m.group(0)}' → '-1.2% ~ -4.0%' 또는 '…에서 … 사이'")
     for m in re.finditer(r'(?:^|[\s(])~\d+(?:\.\d+)?%', body, re.M): bad.append(f"v3.0 단독 '~숫자%'(마이너스 오타?): '{m.group(0).strip()}'")
+if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-04' or '--v31' in sys.argv:
+    # v3.1 가독성 공통 지침(운영자 11-03 PLUG 가독성 분석 7.4/10): 깊이는 그대로, 읽는 부담은 절반으로
+    secs = re.split(r'^## ', body, flags=re.M)
+    for sec in secs[1:]:
+        name = sec.split('\n', 1)[0][:12]
+        prose = '\n'.join(l for l in sec.split('\n')[1:] if l.strip() and not l.lstrip().startswith(('|', '#', '!')) and not l.startswith('> **국면 정의'))
+        m = re.search(r'국면 [A-Z](?![A-Za-z])(.{0,2})', prose)
+        if m and not m.group(1).startswith('('): bad.append(f"v3.1 '{name}' 첫 '국면 X'에 쉬운 말 병기 → '국면 C(매수세가 서서히 사라지는 단계)'")
+    p5 = re.search(r'^## 5부.*?(?=^## )', body, re.M | re.S)
+    if '가능성(추정)' in body and p5:
+        t5 = p5.group(0)
+        if '주관적' not in t5 or not re.search(r'(주가|가격)(가|이)? (오를|상승|방향)', t5): bad.append("v3.1 5부에 가능성의 뜻(분석자의 주관적 추정, 주가가 오를 확률이 아님)을 밝히는 문장이 없음")
+        if not all(k in t5 for k in ('**확인된 사실:**', '**과거 기록:**', '**추정:**')): bad.append("v3.1 5부에 '**확인된 사실:** · **과거 기록:** · **추정:**' 구분 문단이 없음")
+    prose_all = '\n'.join(l for l in body.split('\n') if l.strip() and not l.lstrip().startswith(('|', '#', '!')))
+    from collections import Counter
+    for num, c in Counter(re.findall(r'[-+]?\d+\.\d+%', prose_all)).items():
+        if c > 3: bad.append(f"v3.1 같은 숫자 {num}가 본문 문단에 {c}번 → 한 번 정의하고 뒤에서는 뜻으로 부르기(3번 이하)")
+    for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
+        n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
+        if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
