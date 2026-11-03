@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.0 Patch(2026-11-03 운영자 PLUG 검수, 공개일 11-03~·--v30): 숫자 3열 표 1열 줄당 18자, 판정표 2열+배지, 음수 범위 '~-' 붙여 쓰기·단독 '~숫자%' 금지
 #  - v2.1 Master(2026-10-29, data_as_of 10-30~): 표 3열 이하·기록표 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'·판정표 3열·한 칸 수치 둘·'빚' 금지
 #  - 통합 제작·검수 지침(2026-10-29): 억$ 혼합 표기·본문 $ 금지, (10-30~) 기록표 열 스키마, 체크리스트 [시점][수치]
 #  - R1.8(2026-10-29): key_points 개조식, 짧은 답 숫자 반복, 용어 병기(EV·RPO·중앙값), 수급 분모 셋, 국면 정의, 표 칸 수·열 자료형, 판정표 머리, 체크리스트, 2×2 시나리오·구간 가능성
@@ -109,13 +110,19 @@ if '--legacy' not in sys.argv:
         _asof = (re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
         # v2.1은 공개일(date) 10-30 이후 리포트에도 적용(47회차 LEU: 기준일 10-29라 옛 4열 판정표를 요구받음)
         _pub = (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
-        if max(_asof, _pub) >= '2026-10-30':
+        _v30 = max(_asof, _pub) >= '2026-11-03' or '--v30' in sys.argv
+        if _v30:
+            # v3.0 Patch 1.2(운영자 11-03 PLUG 검수): 3열 판정표는 오른쪽 '진행 중'이 '진'으로 잘림 → 2열 + 배지
+            if len(h) != 2 or not h[0].startswith('지난 점검 항목 · 당시 기준') or not h[1].startswith('판정 및 실제 결과'):
+                bad.append('v3.0 지난 리포트 판정표는 2열 | 지난 점검 항목 · 당시 기준 | 판정 및 실제 결과(<날짜>) |, 판정은 2열 첫 줄 배지 **[적중]**')
+        elif max(_asof, _pub) >= '2026-10-30':
             if len(h) != 3 or not h[0].startswith('지난 점검 항목 · 당시 기준') or not h[1].startswith('실제 결과') or h[2] != '판정':
                 bad.append('v2.1 지난 리포트 판정표 머리는 3열 | 지난 점검 항목 · 당시 기준 | 실제 결과(<날짜>) | 판정 |')
         elif h[:2] != ['지난 점검 항목', '당시 판단 기준'] or not h[2].startswith('실제 결과') or h[-1] != '판정':
             bad.append('R1.8 지난 리포트 판정표 머리는 | 지난 점검 항목 | 당시 판단 기준 | 실제 결과(<날짜>) | 판정 |')
         for r in re.findall(r'^\|(?!\s*-)(.*)\|\s*$', pt.group(1), re.M)[1:]:
             j = r.split('|')[-1].strip()
+            if _v30: j = (re.match(r'\*\*\[([^\]]+)\]\*\*<br>', j) or [None, '배지 없음'])[1]
             if not re.match(r'(적중|빗나감|부분 적중|진행 중)', j): bad.append(f'R1.8 판정은 적중/빗나감/부분 적중/진행 중: {j[:20]}')
     for l in body.split('\n'):
         if re.search(r'[□☐]', l) and not re.match(r'- [□☐] \S', l): bad.append(f'R1.8 체크리스트는 한 단계 "- □ 항목": {l.strip()[:40]}')
@@ -199,5 +206,20 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
         for m in re.finditer(w, full): bad.append(f"v2.9 원문 금지 '{m.group(0)}' → {alt}")
     kp = re.findall(r'^\s*-\s*"?(.+?)"?\s*$', (re.search(r'^key_points:\n((?:\s+-.*\n)+)', fm, re.M) or [None, ''])[1], re.M)
     if len(kp) >= 3 and not re.search(r'일정|\d+/\d+|\d+월 \d+일', kp[2]): bad.append(f"v2.9 핵심 3줄의 셋째는 '향후 일정'(실적·해제일·전시회·증자 기한): {kp[2][:40]}")
+if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-03' or '--v30' in sys.argv:
+    # v3.0 Patch(운영자 11-03 PLUG 검수) 1.1: 숫자가 든 3열 표(기록표·비교표)는 1열이 길면 2·3열이 화면 밖으로 밀린다
+    #   → 1열은 <br>로 끊어 줄당 18자 이하(** · * 꾸밈 제외, 공백 포함). 사이트는 3열 표를 56:22:22로 고정(build.py table-3)
+    for tb in re.finditer(r'^(\|.*\|)\n\|[\s:|-]+\|\n((?:\|.*\|\n?)+)', body, re.M):
+        h = [c.strip() for c in tb.group(1).strip('|').split('|')]
+        rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb.group(2).strip().split('\n')]
+        if len(h) != 3 or not rows: continue
+        if sum(1 for r in rows if len(r) > 1 and re.search(r'\d', r[1]) and re.search(r'[%원$달러배]', r[1])) < len(rows) * 0.6: continue
+        for r in rows:
+            for seg in r[0].split('<br>'):
+                v = re.sub(r'[*]', '', seg).strip()
+                if len(v) > 18: bad.append(f"v3.0 3열 숫자 표 1열 한 줄 {len(v)}자 → <br>로 끊어 18자 이하: {v[:30]}")
+    # 2: 음수 범위 '-1.2~-4.0%'는 물결표와 마이너스가 붙어 '~~'로 보임 → '-1.2%에서 -4.0% 사이' 또는 '-1.2% ~ -4.0%'
+    for m in re.finditer(r'\d%?~-\d', fm + '\n' + body): bad.append(f"v3.0 음수 범위 붙여 쓰기 '{m.group(0)}' → '-1.2% ~ -4.0%' 또는 '…에서 … 사이'")
+    for m in re.finditer(r'(?:^|[\s(])~\d+(?:\.\d+)?%', body, re.M): bad.append(f"v3.0 단독 '~숫자%'(마이너스 오타?): '{m.group(0).strip()}'")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
