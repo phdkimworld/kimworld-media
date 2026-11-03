@@ -1916,6 +1916,48 @@
     "주식 판매 4번 / 4번 다 / 급등 직후였다 + 같은 그림"
    ],
    "video": "Z_X6tH9pwK4"
+  },
+  {
+   "t": "plug",
+   "date": "2026.11.03",
+   "layout": "custom",
+   "palette": "navy-lime",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "업종 -20.5% vs 플러그 -7.1% / 1.31달러 새 저점 카드 / 덜 빠졌는데 왜? + 수소 탱크·전해조",
+    "11월 실적 다섯 번 / 첫날 모두 하락 + 같은 그림"
+   ],
+   "video": "ebxwE4NYVY4"
+  },
+  {
+   "t": "sand",
+   "date": "2026.11.03",
+   "layout": "custom",
+   "palette": "amber-green-teal",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "유의 해제 날 +53% / 60.2원 카드 / 한 달 만에 왜 제자리? + 메타버스 블록·게임 패드",
+    "15번 중 6번 / 30일 안에 제자리 + 같은 그림"
+   ],
+   "video": "1q1BOvgr8cg"
   }
  ]
 }
