@@ -11,6 +11,8 @@ until grep -q "^done" "$V/tts.log" 2>/dev/null; do
   sleep 15
 done
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
+# 녹음이 지금 대본에서 나왔나(53회차 PLUG: TTS 시작 뒤 대본을 고쳐 다시 녹음) — 옛 녹음 + 새 slides.json 합성을 막는다
+python3 /home/user/kimworld-media/tools/tts_fresh_check.py "$V" || { echo "CHAIN_FAIL tts_fresh_check(녹음과 대본 불일치 — st_redo 또는 TTS 재실행)"; exit 1; }
 # E12 녹음 길이(BTQ 49회차: B그룹 녹음 9분 50초를 합성 뒤에야 알아 보강·재녹음). video 폴더에 group 파일(A|B)이 있으면 녹음 직후 확인
 if [ -f "$V/group" ]; then
   G=$(tr -d ' \n' < "$V/group"); D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav" | cut -d. -f1)
