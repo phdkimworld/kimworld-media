@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.2(2026-11-04 운영자 SLDP 가독성 분석, 공개일 11-05~·--v32): 짧은 답 문제 제기형 첫 문단, 국면 정의는 5부, 3부 기준의 이유, 4부 끝 확인 조건 두 가지, 시나리오 조건은 말로
 #  - v3.1(2026-11-03 운영자 PLUG 가독성 분석, 공개일 11-04~·--v31): 국면 쉬운 말 병기, 5부 가능성 뜻·사실/과거/추정 구분, 같은 소수% 4번↑ 반복, 숫자 10개↑ 문단
 #  - v3.0 Patch(2026-11-03 운영자 PLUG 검수, 공개일 11-03~·--v30): 숫자 3열 표 1열 줄당 18자, 판정표 2열+배지, 음수 범위 '~-' 붙여 쓰기·단독 '~숫자%' 금지
 #  - v2.1 Master(2026-10-29, data_as_of 10-30~): 표 3열 이하·기록표 '이벤트일 · 공시 내용 | 당일 | N거래일 뒤'·판정표 3열·한 칸 수치 둘·'빚' 금지
@@ -22,6 +23,8 @@ terms = set(re.findall(r'term:\s*"([^"]+)"', open(gl, encoding='utf-8').read()))
 bad = []
 parts = re.split(r'^## (\d)부', body, flags=re.M)
 R17 = '--legacy' not in sys.argv
+_dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1], (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1])
+_v32 = _dt >= '2026-11-05' or '--v32' in sys.argv  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
     if R17:
@@ -134,8 +137,11 @@ if '--legacy' not in sys.argv:
             rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in st.group(0).strip().split('\n')[2:]]
             ax = [i for i in range(len(rows[0])) if all(r[i] in ('○', '×') for r in rows if i < len(r))]
             cx = [i for i in range(len(rows[0])) if all(re.fullmatch(r'[○×]\s*/\s*[○×]', r[i]) for r in rows if i < len(r))]
-            pairs = {tuple(r[i] for i in ax[:2]) for r in rows} if len(ax) >= 2 else {tuple(re.split(r'\s*/\s*', r[cx[0]])) for r in rows} if cx else set()
-            if len(pairs) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 축(○/×) 2×2 네 칸(조건 한 열이면 ○ / ×)')
+            # v3.2(2026-11-04 SLDP 가독성 검토): 조건은 기호 대신 말로 '발행 없음 · 합작 발표'(가운뎃점 둘로 나뉜 한 칸)
+            wx = [i for i in range(len(rows[0])) if all(len(re.split(r'\s+·\s+', r[i])) == 2 and not re.search(r'[○×]', r[i]) for r in rows if i < len(r))]
+            pairs = {tuple(r[i] for i in ax[:2]) for r in rows} if len(ax) >= 2 else {tuple(re.split(r'\s*/\s*', r[cx[0]])) for r in rows} if cx else {tuple(re.split(r'\s+·\s+', r[wx[0]])) for r in rows} if wx else set()
+            if len(pairs) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 조건 2×2 네 칸(조건 칸은 말로 "발행 없음 · 합작 발표")')
+            if _v32 and (ax or cx): bad.append('v3.2 시나리오 조건은 ○/× 기호 대신 말로("발행 없음 · 합작 발표")')
             lo = hi = 0
             for r in rows:
                 m = re.search(r'(높음|중간|낮음)\s*(?:<br>)?\s*\((\d+)~(\d+)%\)', ' '.join(r))
@@ -242,5 +248,18 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v32:
+    # v3.2(운영자 11-04 SLDP 가독성 분석): 독자가 궁금해하는 순서대로 — 문제 제기형 도입, 기록표 기준의 이유, 4→5부 다리
+    sa = re.search(r'^## 짧은 답\n(.*?)(?=^## )', body, re.S | re.M)
+    if sa:
+        ps = [x.strip() for x in sa.group(1).split('\n\n') if x.strip() and not x.lstrip().startswith(('>', '|', '#'))]
+        if not ps or '?' not in ps[0]: bad.append("v3.2 짧은 답 첫 문단은 핵심 모순을 묻는 질문으로 시작(예: '매출은 93% 줄었습니다. 그런데 주가는 왜 무너지지 않았을까요?')")
+        if '국면 정의' in sa.group(1): bad.append('v3.2 국면 정의 상자는 짧은 답이 아니라 국면을 처음 진단하는 5부에')
+    p3 = re.search(r'^## 3부[^\n]*\n(.*?)(?=^\|)', body, re.S | re.M)
+    if p3 and not re.search(r'때문|비슷한 조건|같은 조건', p3.group(1)): bad.append('v3.2 3부 기록표 앞에 사례를 고른 기준과 그 이유(지금과 비슷한 조건이기 때문)를 한 문장')
+    p4 = re.search(r'^## 4부[^\n]*\n(.*?)(?=^## )', body, re.S | re.M)
+    if p4:
+        last = [x for x in p4.group(1).strip().split('\n\n') if x.strip()][-1]
+        if not re.search(r'(확인할|볼) (것|조건)은|두 가지', last): bad.append('v3.2 4부 마지막 문단은 과거 기록 → 앞으로 확인할 조건 두 가지로 5부 시나리오 축을 미리 세움')
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
