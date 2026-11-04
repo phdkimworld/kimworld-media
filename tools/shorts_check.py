@@ -98,5 +98,25 @@ if sents and scenes:
             if v and not any(abs(abs(x) - v) <= 0.03 * v for x in said): bad.append(f"장면 1 배지 '{e.get('text')}'가 첫 문장에 없음(v2.5 시각·청각 일치) → 첫 문장과 맞는 배지로")
     m = re.search(r'파마슈티컬스|홀딩스|코퍼레이션|테크놀로지스|인더스트리스|바이오사이언스|커뮤니케이션스', sents[0])
     if m: bad.append(f"첫 문장 법인 접미사 '{m.group(0)}'(빠른 첫 호흡에서 뭉개짐, v2.5) → '미국 제약사 토닉스는'처럼 업종 + 짧은 이름")
+# 쇼츠 v3.1(운영자 11-04 MRVL 쇼츠 검수)
+for i, sc in enumerate(scenes):
+    els = sc.get('els', []); sub = sc.get('subtitle') or ''
+    # 1) 괴리율·할인율을 일간 하락처럼 빨간 '-12.1%'로 쓰지 않는다
+    if re.search(r'가치보다|할인|괴리|환산', sub):
+        for e in els:
+            t = str(e.get('text') or '')
+            if e.get('kind') in ('num', 'text') and re.match(r'^-\d', t):
+                bad.append(f"장면 {i+1} 괴리율 '{t}'를 하락률처럼 표기 → 큰 숫자 '12.1% 낮음'(노란색), 위 라벨 '합병 가치 대비 괴리율'")
+        tops = [str(e.get('text') or '') for e in els if e.get('kind') == 'text' and (e.get('y') or 999) < 200]
+        if tops and not any(re.search(r'합병 가치 대비|환산가 대비|괴리율', t) for t in tops):
+            bad.append(f"장면 {i+1} 괴리율 장면 위 라벨에 '합병 가치 대비'·'합병 환산가 대비' 명시(종가 라벨 금지): {tops[0]}")
+    # 2) 위 라벨을 장면 중간에 무음으로 바꾸지 않는다(until 뒤 같은 자리 새 글자)
+    top = [e for e in els if e.get('kind') == 'text' and (e.get('y') or 999) < 200]
+    if any(e.get('until') is not None for e in top) and len(top) > 1:
+        bad.append(f"장면 {i+1} 위 라벨 교체('{top[0].get('text')}' → '{top[-1].get('text')}') 깜빡임 → 장면 내내 한 라벨로")
+    # 3) 자막 마지막 줄은 완결된 말하는 문장
+    last = re.sub(r'\*\*', '', sub.split('\n')[-1]).strip()
+    if last and not re.search(r'([다요]|\?)[.!]?$', last):
+        bad.append(f"장면 {i+1} 자막 끝 '{last}'가 숫자·명사로 끝남 → '31.7% 내렸습니다'처럼 서술문")
 print('\n'.join(bad) if bad else f'SHORTS_OK 문장·장면 {len(sents)}개')
 sys.exit(1 if bad else 0)
