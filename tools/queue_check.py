@@ -27,7 +27,7 @@ for f in sys.argv[1:]:
         if m: bad.append(f'{f}: 내부 약어 \'{m.group()}\'는 풀어 쓴다(K8.0)')
     for r in d.get('replies', []):
         if 'drkimworld.com/r/' in r.get('text', '') and not re.search(r'[1-6]부', r['text']):
-            bad.append(f'{f}: 링크 답글에 \'답은 리포트 N부 <표 이름>\' 위치 안내 없음(K8.0)')
+            bad.append(f'{f}: 링크 답글에 리포트 N부 <표 이름> 위치 안내 없음(K8.0, 1/2이 질문으로 끝났을 때만 '답은')')
     for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
         if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
     # 인스타 카드뉴스 전환(운영자 지시 2026-10-29 "인스타는 릴스 폐기하고 카드뉴스로 완전히 전환")
@@ -45,6 +45,27 @@ for f in sys.argv[1:]:
             l1 = cap.strip().split('\n')[0]
             if len(l1) > 45: bad.append(f'{f}: 인스타 캡션 첫 줄 {len(l1)}자 > 45(더 보기 앞에 잘림)')
             if not re.search(r'넘겨|장[)\]]|\d장|스와이프|투표', l1): bad.append(f'{f}: 인스타 캡션 첫 줄은 표지 반복 대신 넘기기·투표 유도(예: \'7장 기록과 8장 투표까지 넘겨 보세요 👉\'): {l1[:40]}')
+    # SNS v3.2 (2026-11-04 MRVL 스레드 검수): 투표 축 주어, 1/2 문장 형태별 2/2 안내, 쌍방 티커, M&A 낱말
+    allx = [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values())
+    for x in allx:
+        m = re.search(r'사들였|사들인다|사들이는|사들인 ', x)
+        if m: bad.append(f"{f}: '{m.group().strip()}' → '인수했' (K9.0 M&A 낱말)"); break
+    combo = [x for x in o if re.search(r'[+·]', x)]
+    sp = [re.split(r'\s*[+·]\s*', x, maxsplit=1) for x in combo]
+    # 2×2 매트릭스(왼쪽 축·오른쪽 축이 각각 두 값으로 되풀이)일 때만 축 주어를 본다
+    if len(combo) >= 3 and all(len(a) == 2 for a in sp) and len({a[0] for a in sp}) <= 2 and len({a[1] for a in sp}) <= 2:
+        for x in combo:
+            for seg in re.split(r'\s*[+·]\s*', x):
+                w = re.sub(r'[↑↓]', '', seg.split()[0]) if seg.split() else ''
+                if not w or w not in t:
+                    bad.append(f'{f}: 투표 보기 \'{x}\'의 축 \'{seg}\'에 주어가 없거나 본문에 없는 주어(v3.2 1: \'실적↑·합병 신뢰\'처럼 주어+상태, 주어는 본문에도)'); break
+    qn = len(re.findall(r'\?', t))
+    for x in [r.get('text', '') for r in d.get('replies', [])]:
+        if re.search(r'(은|는) 답은', x): bad.append(f"{f}: 답글 'X는 답은 …' 비문 → 'X는 리포트 N부 …에 있다'"); 
+        if '답은' in x and qn <= 1 and o: bad.append(f"{f}: 1/2이 투표 질문 하나뿐인데 2/2에 '답은' — 묻지 않은 질문에 답하는 꼴(v3.2 2 Case B: '상세 비교는 3부 기록표, … 계산은 4부에 정리했다')")
+    if re.search(r'합병|합작 ?투자|맞대결', t):
+        tk = set(re.findall(r'\(([A-Z]{1,5}(?:\.[A-Z]{1,2})?)\)', t))
+        if len(tk) < 2 and not d.get('single_ticker_ok'): bad.append(f'{f}: 합병·합작·비교 글인데 티커 {len(tk)}개 — 상대 기업 티커도 첫 문단에(v3.2 3, 예: 루멘텀(LITE)). 상대가 비상장이면 "single_ticker_ok": true')
     # SNS 스레드 지침 6장(2026-10-29, SLNH 스레드 조회 11회 진단)
     if 'threads' in d.get('channels', []):
         first = re.split(r'(?<=[.?!다])\s', t.strip(), maxsplit=1)[0]
