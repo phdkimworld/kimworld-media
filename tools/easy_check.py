@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.3(2026-11-04 운영자 MRVL 분석, 공개일 11-05~·--v33): 시나리오 대표값 '약 N%' 합 100, 'N거래일 동안 X%'에 기준 종가, 6부 끝 판단 기준 세 가지
 #  - v3.2(2026-11-04 운영자 SLDP 가독성 분석, 공개일 11-05~·--v32): 짧은 답 문제 제기형 첫 문단, 국면 정의는 5부, 3부 기준의 이유, 4부 끝 확인 조건 두 가지, 시나리오 조건은 말로
 #  - v3.1(2026-11-03 운영자 PLUG 가독성 분석, 공개일 11-04~·--v31): 국면 쉬운 말 병기, 5부 가능성 뜻·사실/과거/추정 구분, 같은 소수% 4번↑ 반복, 숫자 10개↑ 문단
 #  - v3.0 Patch(2026-11-03 운영자 PLUG 검수, 공개일 11-03~·--v30): 숫자 3열 표 1열 줄당 18자, 판정표 2열+배지, 음수 범위 '~-' 붙여 쓰기·단독 '~숫자%' 금지
@@ -24,7 +25,8 @@ bad = []
 parts = re.split(r'^## (\d)부', body, flags=re.M)
 R17 = '--legacy' not in sys.argv
 _dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1], (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1])
-_v32 = _dt >= '2026-11-05' or '--v32' in sys.argv  # v3.2(운영자 11-04 SLDP 가독성 분석)
+_v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
+_v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
     if R17:
@@ -142,12 +144,18 @@ if '--legacy' not in sys.argv:
             pairs = {tuple(r[i] for i in ax[:2]) for r in rows} if len(ax) >= 2 else {tuple(re.split(r'\s*/\s*', r[cx[0]])) for r in rows} if cx else {tuple(re.split(r'\s+·\s+', r[wx[0]])) for r in rows} if wx else set()
             if len(pairs) != 4 or len(rows) != 4: bad.append('R1.8 시나리오는 두 조건 2×2 네 칸(조건 칸은 말로 "발행 없음 · 합작 발표")')
             if _v32 and (ax or cx): bad.append('v3.2 시나리오 조건은 ○/× 기호 대신 말로("발행 없음 · 합작 발표")')
-            lo = hi = 0
+            lo = hi = 0; mids = []
             for r in rows:
-                m = re.search(r'(높음|중간|낮음)\s*(?:<br>)?\s*\((\d+)~(\d+)%\)', ' '.join(r))
+                m = re.search(r'(높음|중간|낮음)(?:\s*약\s*(\d+)%)?\s*(?:<br>)?\s*\((\d+)~(\d+)%\)', ' '.join(r))
                 if not m: bad.append(f'R1.8 가능성은 높음(35~45%)·중간(20~30%)·낮음(10~20%) 구간: {r[0][:20]}'); continue
-                lo += int(m.group(2)); hi += int(m.group(3))
+                lo += int(m.group(3)); hi += int(m.group(4))
+                if m.group(2):
+                    mids.append(int(m.group(2)))
+                    if not int(m.group(3)) <= int(m.group(2)) <= int(m.group(4)): bad.append(f'v3.3 대표값 약 {m.group(2)}%가 구간 밖: {r[0][:20]}')
             if rows and not lo <= 100 <= hi: bad.append(f'R1.8 구간 아래끝 합 {lo} ≤ 100 ≤ 위끝 합 {hi}가 아님')
+            # v3.3(운영자 11-04 MRVL 분석): 구간만 쓰면 '하한 합 80·상한 합 115를 어떻게 읽나' 혼란 → 대표값 '약 N%'를 적고 합 100
+            if mids and len(mids) == len(rows) and sum(mids) != 100: bad.append(f'v3.3 시나리오 대표값(약 N%) 합 {sum(mids)}% → 100%로 맞추기')
+            if _v33 and len(mids) != len(rows): bad.append("v3.3 시나리오 가능성에 대표값 '높음 약 40%<br>(35~45%)'를 적고 합 100%")
             before = body[:st.start()][-600:]
             if not re.search(r'\d+번 중 \d+번|\d+회 중 \d+회|\d+번 모두', before): bad.append('R1.8 시나리오 표 앞 문단에 과거 빈도(N번 중 M번)를 먼저')
     # 통합 제작·검수 지침(2026-10-29) 1.4·2.2·2.4
@@ -248,6 +256,13 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v33:
+    # v3.3(운영자 11-04 MRVL 분석): 기간 등락률은 기준 종가를 밝히고, 6부 끝은 '기억할 판단 기준'으로 닫는다
+    for sent in re.split(r'(?<=[.?!])\s+', body):
+        if re.search(r'\d+거래일 (동안|만에)[^.]*?[-+]?\d+(\.\d+)?%', sent) and '종가' not in sent:
+            bad.append(f"v3.3 'N거래일 동안 X%'에는 기준 종가(○월 ○일 종가 대비)를 같은 문장에: {sent[:40]}…")
+    p6 = re.search(r'^## 6부[^\n]*\n(.*)', body, re.S | re.M)
+    if p6 and '판단 기준' not in p6.group(1): bad.append("v3.3 6부 끝에 '**기억할 판단 기준 세 가지:**' 한 문단(이번 사건의 핵심 차이 3개)")
 if _v32:
     # v3.2(운영자 11-04 SLDP 가독성 분석): 독자가 궁금해하는 순서대로 — 문제 제기형 도입, 기록표 기준의 이유, 4→5부 다리
     sa = re.search(r'^## 짧은 답\n(.*?)(?=^## )', body, re.S | re.M)
