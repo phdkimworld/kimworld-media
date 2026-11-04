@@ -114,7 +114,7 @@ if '--legacy' not in sys.argv:
         _asof = (re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
         # v2.1은 공개일(date) 10-30 이후 리포트에도 적용(47회차 LEU: 기준일 10-29라 옛 4열 판정표를 요구받음)
         _pub = (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]
-        _v30 = max(_asof, _pub) >= '2026-11-03' or '--v30' in sys.argv
+        _v30 = True  # v3.0은 공개일과 무관하게 모든 리포트(11-04 운영자 v3.0 재검수: 옛 리포트 19편 일괄 교정)
         if _v30:
             # v3.0 Patch 1.2(운영자 11-03 PLUG 검수): 3열 판정표는 오른쪽 '진행 중'이 '진'으로 잘림 → 2열 + 배지
             if len(h) != 2 or not h[0].startswith('지난 점검 항목 · 당시 기준') or not h[1].startswith('판정 및 실제 결과'):
@@ -213,7 +213,7 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
         for m in re.finditer(w, full): bad.append(f"v2.9 원문 금지 '{m.group(0)}' → {alt}")
     kp = re.findall(r'^\s*-\s*"?(.+?)"?\s*$', (re.search(r'^key_points:\n((?:\s+-.*\n)+)', fm, re.M) or [None, ''])[1], re.M)
     if len(kp) >= 3 and not re.search(r'일정|\d+/\d+|\d+월 \d+일', kp[2]): bad.append(f"v2.9 핵심 3줄의 셋째는 '향후 일정'(실적·해제일·전시회·증자 기한): {kp[2][:40]}")
-if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-03' or '--v30' in sys.argv:
+if True:  # v3.0 음수 범위 검사도 모든 리포트
     # v3.0 Patch(운영자 11-03 PLUG 검수) 1.1: 숫자가 든 3열 표(기록표·비교표)는 1열이 길면 2·3열이 화면 밖으로 밀린다
     #   → 1열은 <br>로 끊어 줄당 18자 이하(** · * 꾸밈 제외, 공백 포함). 사이트는 3열 표를 56:22:22로 고정(build.py table-3)
     for tb in re.finditer(r'^(\|.*\|)\n\|[\s:|-]+\|\n((?:\|.*\|\n?)+)', body, re.M):
