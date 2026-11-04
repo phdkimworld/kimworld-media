@@ -2000,6 +2000,27 @@
     "1분기 실적 8번 중 3번 + 같은 그림"
    ],
    "video": "lAEV-0AMIKk"
+  },
+  {
+   "t": "mrvl",
+   "date": "2026.11.04",
+   "layout": "custom",
+   "palette": "emerald-orange",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "인수 4번 중 3번 상승 / 루멘텀 합병엔 -31.7% 카드 / 왜 이번엔? + 칩 두 개를 빛줄기가 잇는 그림",
+    "루멘텀 가격 -12.1% / 합병 못 믿나 + 같은 그림"
+   ],
+   "video": "_GjsfMEqZlw"
   }
  ]
 }
