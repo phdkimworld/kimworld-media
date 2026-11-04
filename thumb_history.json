@@ -1979,6 +1979,27 @@
     "실적 10번 중 3번 / 20거래일 뒤 + 같은 그림"
    ],
    "video": "8LFbFBgyHMI"
+  },
+  {
+   "t": "zs",
+   "date": "2026.11.04",
+   "layout": "custom",
+   "palette": "crimson-slate",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "AI 공포 118 / AI 기대 260 / 지금은 연초 자리? + 클라우드 방패",
+    "1분기 실적 8번 중 3번 + 같은 그림"
+   ],
+   "video": "lAEV-0AMIKk"
   }
  ]
 }
