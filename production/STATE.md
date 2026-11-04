@@ -9,3 +9,4 @@
 | 11-03 | 요청 | SAND 더 샌드박스(54회차) | /home/claude/sand | 완료: 롱폼 1q1BOvgr8cg·쇼츠 vYPmj-nLFso·요청자 답글·SNS 6개 23d0b5b·기록. 블로거 slug=sand-2026-11 실행 | 블로거 결과 확인만 | 11-03 10:00 |
 | 11-04 | 정규 | SLDP 솔리드파워(4번째 업데이트, 55회차, A그룹) | /home/claude/sldp4 | 완료 · 영상 8LFbFBgyHMI · 쇼츠 XBapjBwgD28 · SNS 대기열 6건 · 블로거 실행 · 기록 | 12-03 판정(followups) | 11-04 08:20 |
 | 11-04 | 요청 | ZS 지스케일러(56회차, B그룹, 요청 트래픽 1위) | /home/claude/zs | 완료 · 영상 lAEV-0AMIKk · 쇼츠 cpSu2xyVxeM · 완료 답글 · SNS 대기열 6건 · 블로거 실행 · 기록 | 12-23 판정(followups) · 11-05 몫은 3시간 점검에서 선정 | 11-04 09:10 |
+| 11-04 | 하나 더 | MRVL 마벨 루멘텀 합병 후속편(57회차, A그룹, 운영자 '만들어') | /home/claude/mrvl2 | 리포트 발행(push) · 대본 작성 중 | 대본 → TTS → 슬라이드·썸네일·미드롤·쇼츠 → chain_long → 업로드 → 쇼츠·SNS·블로거·기록 | 11-04 11:20 |
