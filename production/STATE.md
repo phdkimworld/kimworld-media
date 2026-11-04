@@ -8,5 +8,5 @@
 | - | 대기 | AEHR(요청 장부 대기) | /home/claude/aehr2 | 실적 조사 완료(재사용) | 요청 큐 순서대로 | 11-03 08:30 |
 | 11-03 | 요청 | SAND 더 샌드박스(54회차) | /home/claude/sand | 완료: 롱폼 1q1BOvgr8cg·쇼츠 vYPmj-nLFso·요청자 답글·SNS 6개 23d0b5b·기록. 블로거 slug=sand-2026-11 실행 | 블로거 결과 확인만 | 11-03 10:00 |
 | - | 대기 | ZS(요청 트래픽 2위) | /home/claude/zs | 조사 완료(재사용) | 다음 요청 차례 | 11-03 08:50 |
-| 11-04 | 정규 | SLDP 솔리드파워(4번째 업데이트, 55회차, A그룹) | /home/claude/sldp4 | 리포트 02894b7 · TTS 487초 · chain_long 진행 중(video/chain.log: asr 검사→합성→쇼츠 렌더) | chain 끝나면 /home/claude/yt_api_upload.py로 롱폼 업로드 → youtube_id → 쇼츠 mk_meta.py <ID> 업로드 → SNS → 블로거 → 기록 | 11-04 03:05 |
-| 11-04 | 요청 | ZS 지스케일러(56회차, B그룹, 요청 트래픽 1위) | /home/claude/zs | 리포트 05e0af3(고객·ARR 목표 문장 추가분은 로컬, youtube_id 때 같이 푸시) · 대본 11.30KB·슬라이드·썸네일·미드롤·쇼츠·메타 완료 · TTS 진행 중(video/tts.log) | TTS 끝나면 chain_long.sh video shorts → 업로드 → 요청자 완료 답글(UgwBVEWpMhfa6CUuKCZ4AaABAg) → requests.md 완료 → 쇼츠·SNS·블로거·기록 | 11-04 03:05 |
+| 11-04 | 정규 | SLDP 솔리드파워(4번째 업데이트, 55회차, A그룹) | /home/claude/sldp4 | 완료 · 영상 8LFbFBgyHMI · 쇼츠 XBapjBwgD28 · SNS 대기열 6건 · 블로거 실행 · 기록 | 12-03 판정(followups) | 11-04 08:20 |
+| 11-04 | 요청 | ZS 지스케일러(56회차, B그룹, 요청 트래픽 1위) | /home/claude/zs | 리포트 5feab3b · TTS 610초(17문단 재녹음, ASR_OK) · chain_long 진행 중(video/chain.log) | chain 끝나면 업로드 → youtube_id → 요청자 완료 답글(UgwBVEWpMhfa6CUuKCZ4AaABAg) → requests.md 완료 → 쇼츠·SNS·블로거·기록 | 11-04 08:20 |

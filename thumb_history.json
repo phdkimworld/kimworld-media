@@ -1958,6 +1958,27 @@
     "15번 중 6번 / 30일 안에 제자리 + 같은 그림"
    ],
    "video": "1q1BOvgr8cg"
+  },
+  {
+   "t": "sldp",
+   "date": "2026.11.04",
+   "layout": "custom",
+   "palette": "violet-cyan",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "3분기 매출 -93% / 현금값의 1.17배 / 왜 현금값 위일까? + 배터리·전해질",
+    "실적 10번 중 3번 / 20거래일 뒤 + 같은 그림"
+   ],
+   "video": "8LFbFBgyHMI"
   }
  ]
 }
