@@ -2084,6 +2084,27 @@
     "해제일 9번 중 / 6번 / 더 떨어졌다 + 같은 그림"
    ],
    "video": "TULwdVnuvNU"
+  },
+  {
+   "t": "smr",
+   "date": "2026.11.05",
+   "layout": "custom",
+   "palette": "green-yellow",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "주가 = 금고 속 현금? / 한 주당 현금 $4.34 카드 / 실적 뒤엔? + 수조 속 원자로 모듈 세 기",
+    "실적 17번 중 / 7번만 / 한 달 뒤 더 높았다 + 같은 그림"
+   ],
+   "video": "6sh1eCsdPgw"
   }
  ]
 }
