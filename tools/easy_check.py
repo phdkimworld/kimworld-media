@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.4(2026-11-05 운영자 IREN 가독성 분석 7.5/10, 공개일 11-06~·--v34): 중간 논리 계단·숫자보다 패턴·부 끝 질문 — '이 말은 곧' 1번, 1부 4문단(회사·돈 버는 법·왜 중요·몸값), 2부 사건 묶는 문장, 3부 비교 기준 '예를 들어', 기록표 '이번' 행 분리, 5부 판정 기준 먼저, 6부 위험 세 갈래, 거래일 조사
 #  - v3.3(2026-11-04 운영자 MRVL 분석, 공개일 11-05~·--v33): 시나리오 대표값 '약 N%' 합 100, 'N거래일 동안 X%'에 기준 종가, 6부 끝 판단 기준 세 가지
 #  - v3.2(2026-11-04 운영자 SLDP 가독성 분석, 공개일 11-05~·--v32): 짧은 답 문제 제기형 첫 문단, 국면 정의는 5부, 3부 기준의 이유, 4부 끝 확인 조건 두 가지, 시나리오 조건은 말로
 #  - v3.1(2026-11-03 운영자 PLUG 가독성 분석, 공개일 11-04~·--v31): 국면 쉬운 말 병기, 5부 가능성 뜻·사실/과거/추정 구분, 같은 소수% 4번↑ 반복, 숫자 10개↑ 문단
@@ -26,6 +27,7 @@ parts = re.split(r'^## (\d)부', body, flags=re.M)
 R17 = '--legacy' not in sys.argv
 _dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1], (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1])
 _v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
+_v34 = _dt >= '2026-11-06' or '--v34' in sys.argv
 _v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
@@ -256,6 +258,36 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v34:
+    # v3.4(운영자 11-05 IREN 가독성 분석): 중간 논리를 건너뛰지 않고, 숫자보다 패턴, 부마다 다음 부로 잇는 질문
+    def _sec(n):
+        m = re.search(r'^## %s부[^\n]*\n(.*?)(?=^## |\Z)' % n, body, re.S | re.M)
+        return m.group(1) if m else ''
+    def _prose(s):
+        return [x.strip() for x in s.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '>', '!', '-'))]
+    c = body.count('이 말은 곧')
+    if c > 1: bad.append(f"v3.4 '이 말은 곧' {c}번 → 1번까지('…라는 흔적입니다', '기록이 보여 주는 것은 여기까지입니다'처럼 바꿔 쓰기)")
+    if re.search(r'거래일(와|가) ', body): bad.append("v3.4 '거래일와/거래일가' 조사 오류 → '거래일과/거래일이'")
+    s1 = _sec(1)
+    pre = _prose(s1.split('\n### ')[0])
+    if s1 and len(pre) < 4: bad.append(f"v3.4 1부 표 앞 문단 {len(pre)}개 → 4문단(어떤 회사 · 무엇으로 돈을 버나 · 왜 그 고객·변수가 중요한가 · 지금 몸값)")
+    if s1 and not re.search(r'돈을 (버|벌)|버는 방식|매출은 .{0,20}(에서|로) 나옵', s1): bad.append("v3.4 1부에 '무엇으로 돈을 버는가' 문단(돈을 버는 방식은 …)")
+    s2 = _sec(2)
+    if s2 and not re.search(r'공통점|겹쳤|겹친|묶어 보면|나란히 놓으면', s2): bad.append("v3.4 2부 끝에 사건들을 하나로 묶는 문장(예: '세 사건을 나란히 놓으면 공통점이 하나 보입니다. 모두 …에서 비롯된 것은 아니라는 점입니다')")
+    s3 = _sec(3)
+    t3 = s3.split('\n|')[0]
+    if s3 and '예를 들어' not in t3: bad.append("v3.4 3부 기록표 앞에 비교 기준을 이번 숫자로 푼 예시('예를 들어 이번에는 11월 4일 종가 …를 다섯 거래일 전 …와 비교해 -24.7%')")
+    for row in re.findall(r'^\|.*\|$', s3, re.M):
+        if re.search(r'\(이번\)|판정 \|', row): bad.append("v3.4 3부 기록표에 아직 결과가 없는 '이번' 행 → 표 밖 '> **이번(미확정):** …' 상자로 분리"); break
+    s5 = _sec(5)
+    if s5:
+        tb = s5.find('\n| 시나리오')
+        if tb < 0 or '판정 기준' not in s5[:tb]: bad.append("v3.4 5부 시나리오 표 앞에 '**판정 기준 두 가지:** 첫째 … 둘째 …' 문단(날짜·가격·사건)")
+    s6 = _sec(6)
+    if s6 and not all(k in s6 for k in ('사업 실행', '조달', '외부 환경')): bad.append("v3.4 6부 위험은 세 갈래(사업 실행 · 자금 조달 · 외부 환경)로 묶어 각 문단으로")
+    for n in range(1, 6):
+        ps = _prose(_sec(n))
+        if ps and not ps[-1].rstrip().endswith('?'): bad.append(f"v3.4 {n}부 마지막 문장은 다음 부가 답할 질문으로: …{ps[-1][-30:]}")
 if _v33:
     # v3.3(운영자 11-04 MRVL 분석): 기간 등락률은 기준 종가를 밝히고, 6부 끝은 '기억할 판단 기준'으로 닫는다
     for sent in re.split(r'(?<=[.?!])\s+', body):
