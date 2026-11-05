@@ -133,3 +133,7 @@ ZEC는 10-28 대기열에 '대기'로 남아 있고 오늘도 TOP 5(4위)라 그
 # 대기열 MSI 2026-11-04
 
 편성 없음. KNSA(10-30)·ZEC(10-28)는 '대기'로 남아 있고 오늘도 TOP 5라 그대로 둔다. KOD·ERAS·ANRO·RKLB·HYPE·QNT·ZRO·TAO는 사이트 리포트가 60일 안.
+
+# 대기열 MSI 2026-11-05
+
+편성 없음. KNSA(10-30)·ZEC(10-28)는 '대기'로 남아 있고 오늘도 TOP 5라 그대로 둔다. KOD·ERAS·ANRO·RKLB·HYPE·QNT·ZRO·TAO는 사이트 리포트가 60일 안.
