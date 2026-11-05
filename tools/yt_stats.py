@@ -43,13 +43,16 @@ def main():
         for v in r['items']:
             if v['status'].get('privacyStatus') != 'public': continue
             vids.append({'id': v['id'], 'title': v['snippet']['title'], 'pub': v['snippet']['publishedAt'],
-                         'views': int(v['statistics'].get('viewCount', 0)), 'sec': dur(v['contentDetails']['duration'])})
+                         'views': int(v['statistics'].get('viewCount', 0)), 'sec': dur(v['contentDetails']['duration']),
+                         'likes': int(v['statistics'].get('likeCount', 0)), 'comments': int(v['statistics'].get('commentCount', 0))})
     prev = {}
     if os.path.exists(snap):
         lines = [json.loads(l) for l in open(snap) if l.strip()]
         if lines: prev = lines[-1]
     with open(snap, 'a') as f:
         f.write(json.dumps({'t': now.isoformat(), 'v': {x['id']: x['views'] for x in vids}}) + '\n')
+    # 인게이지먼트(운영자 지시 11-05 "종목 컷오프 및 랭킹 시에 인게이지먼트 지표도 반영"): 영상별 최신 좋아요·댓글 수
+    json.dump({'t': now.isoformat(), 'e': {x['id']: [x['likes'], x['comments']] for x in vids}}, open(os.path.join(os.path.dirname(snap), 'stats_engagement.json'), 'w'))
     dt_prev = (now - datetime.datetime.fromisoformat(prev['t'])).total_seconds() / 3600 if prev else None
     for x in vids:
         p = datetime.datetime.fromisoformat(x['pub'].replace('Z', '+00:00'))

@@ -16,21 +16,23 @@ for l in vt.splitlines()[2:]:
 v=json.loads(open(os.path.join(MEDIA,'stats_snapshots.jsonl')).readlines()[-1])['v']
 perf=subprocess.run(['python3',os.path.join(HERE,'report_perf.py')],cwd=MEDIA,capture_output=True,text=True,timeout=300).stdout
 sys.path.insert(0,HERE); from traffic_cut import load, verdict
-avg,med=load()
+S=load()
 rows=[]
 for l in open(os.path.join(MEDIA,'requests.md')):
     if not re.match(r'\|\s*대기',l): continue
     c=[x.strip() for x in l.strip().strip('|').split('|')]
     st,tk,name,threads,who,date=c[:6]; tier=2 if '2순위' in st else 1
     tids=[t for t in re.split(r'[ ,·]+',threads) if '@' in t]
-    src=sum(v.get(t.split('@')[1],0) for t in tids if t.split('@')[1] in v)
+    from traffic_cut import engagement, eng_points
+    E=engagement()
+    src=sum(v.get(t.split('@')[1],0)+10*eng_points(t.split('@')[1],E) for t in tids if t.split('@')[1] in v)
     web=sum(int(n) for n in re.findall(r'웹 요청\s*(\d+)',l))
     srch=sum(int(n) for n in re.findall(r'검색[^|]*?(\d+)\s*회',l))
     score=own.get(tk.upper(),0)+src+(len(tids)+web)*100+srch*10
-    low=not verdict(tk,avg,med)[0]
-    rows.append((low,tier,-score,date,tk,score,own.get(tk.upper(),0),src,len(tids)+web,srch,round(avg.get(tk.upper(),0)) if tk.upper() in avg else '신규'))
+    low=not verdict(tk,S)[0]
+    rows.append((low,tier,-score,date,tk,score,own.get(tk.upper(),0),src,len(tids)+web,srch,verdict(tk,S)[1]))
 rows.sort()
-print(f'편당 평균 조회 중앙값(공개 3일 지난 롱폼, 종목 {len(avg)}개): {round(med)} — 미만이면 제외(컷오프)')
-print('순위 | 단계 | 종목 | 점수 | 편당 평균 조회 | 종목 트래픽 | 요청 영상 조회 | 요청 수 | 검색 | 접수일')
+print(f"컷오프 지수 = 0.7×편당 조회/중앙값 {round(S['mv'])} + 0.3×편당 참여/중앙값 {S['me']:.1f}(좋아요+댓글×2) — 1.0 미만 제외(컷오프)")
+print('순위 | 단계 | 종목 | 점수 | 편당 조회·참여·지수 | 종목 트래픽 | 요청 영상 조회 | 요청 수 | 검색 | 접수일')
 for i,r in enumerate(rows,1): print(f"{i} | {'제외(컷오프)' if r[0] else ('1순위' if r[1]==1 else '2순위')} | {r[4]} | {r[5]} | {r[10]} | {r[6]} | {r[7]} | {r[8]} | {r[9]} | {r[3]}")
 if not any(not r[0] for r in rows): print('통과한 요청 종목 없음 → 오늘 요청 슬롯은 정규 한 편 더(verified_table.py의 다음 적격 종목)')
