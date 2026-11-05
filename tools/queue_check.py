@@ -27,7 +27,7 @@ for f in sys.argv[1:]:
         if m: bad.append(f'{f}: 내부 약어 \'{m.group()}\'는 풀어 쓴다(K8.0)')
     for r in d.get('replies', []):
         if 'drkimworld.com/r/' in r.get('text', '') and not re.search(r'[1-6]부', r['text']):
-            bad.append(f'{f}: 링크 답글에 리포트 N부 <표 이름> 위치 안내 없음(K8.0, 1/2이 질문으로 끝났을 때만 '답은')')
+            bad.append(f'{f}: 링크 답글에 리포트 N부 <표 이름> 위치 안내 없음(K8.0, 1/2이 질문으로 끝났을 때만 "답은")')
     for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
         if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
     # 인스타 카드뉴스 전환(운영자 지시 2026-10-29 "인스타는 릴스 폐기하고 카드뉴스로 완전히 전환")
