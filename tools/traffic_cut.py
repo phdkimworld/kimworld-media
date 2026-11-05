@@ -2,8 +2,8 @@
 """트래픽 컷오프(운영자 지시 11-05 "정규와 요청 모두에 트래픽 컷오프를 적용해서 트래픽 실적 안 좋은건 못 만들도록 해",
 "할수 있으면 종목 컷오프 및 랭킹 시에 인게이지먼트 지표도 반영 해").
 이미 만든 종목: 공개 3일 지난 롱폼 기준으로
-  지수 = 0.7 × (편당 평균 조회 ÷ 종목별 중앙값) + 0.3 × (편당 인게이지먼트 ÷ 종목별 중앙값)
-  인게이지먼트 = 좋아요 + 댓글×2 (stats_engagement.json, yt_stats.py가 매번 갱신)
+  지수 = 0.7 × (편당 평균 조회 ÷ 종목별 중앙값) + 0.3 × (참여율 ÷ 종목별 중앙값)
+  참여율 = (좋아요 + 댓글×2) ÷ 조회 수(운영자 11-05 "뷰나 좋아요는 조회수당으로 정규화") — stats_engagement.json, yt_stats.py가 매번 갱신
 평균 시청 비율(stats_retention.json, yt-analytics 범위 토큰이 있을 때)이 있으면 조회 0.5·참여 0.25·시청 비율 0.25로 바꾼다.
 지수 < 1.0 이면 컷오프(제작 불가). 만든 적 없거나 3일 지난 영상이 없으면 '신규'로 통과.
 사용: python3 tools/traffic_cut.py [티커…]
@@ -31,7 +31,8 @@ def load():
         if (today - datetime.date.fromisoformat(d.group(1))).days < 3: continue
         per.setdefault(tk.group(1).upper(), []).append((v[y.group(1)], eng_points(y.group(1), E)))
         if y.group(1) in RT: ret.setdefault(tk.group(1).upper(), []).append(RT[y.group(1)][1])
-    stat = {k: (sum(a for a, _ in x) / len(x), sum(b for _, b in x) / len(x)) for k, x in per.items()}
+    # (편당 평균 조회, 참여율 = 참여 합 ÷ 조회 합)
+    stat = {k: (sum(a for a, _ in x) / len(x), sum(b for _, b in x) / max(sum(a for a, _ in x), 1)) for k, x in per.items()}
     med = lambda xs: sorted(xs)[len(xs) // 2] if xs else 0
     mv, me = med([s[0] for s in stat.values()]), med([s[1] for s in stat.values()])
     cap = lambda r: min(r, 3.0)  # 한 종목의 튀는 값이 지수를 혼자 끌지 않게 비율은 3배까지
@@ -41,14 +42,19 @@ def load():
     else:
         idx = {k: 0.7 * cap(a / mv if mv else 1) + 0.3 * cap(b / me if me else 1) for k, (a, b) in stat.items()}
     return {'stat': stat, 'idx': idx, 'mv': mv, 'me': me, 'rp': rp, 'mr': mr}
+def eng_factor(tk, S):
+    # 랭킹용 참여율 배수: 0.7 + 0.3 × (참여율 ÷ 중앙값, 3배 상한). 중앙값이면 1.0, 신규는 1.0
+    tk = tk.upper()
+    if tk not in S['stat'] or not S['me']: return 1.0
+    return 0.7 + 0.3 * min(S['stat'][tk][1] / S['me'], 3.0)
 def verdict(tk, S, _=None):
     tk = tk.upper()
     if tk not in S['idx']: return True, '신규'
     a, b = S['stat'][tk]
     r = f"·시청 {S['rp'][tk]:.0f}%" if tk in S.get('rp', {}) else ''
-    return S['idx'][tk] >= 1.0, f"{round(a)}회·참여 {b:.1f}{r}·지수 {S['idx'][tk]:.2f}"
+    return S['idx'][tk] >= 1.0, f"{round(a)}회·참여율 {b*100:.1f}%{r}·지수 {S['idx'][tk]:.2f}"
 if __name__ == '__main__':
     S = load()
-    print(f"중앙값: 편당 조회 {round(S['mv'])} · 편당 참여(좋아요+댓글×2) {S['me']:.1f} (종목 {len(S['idx'])}개) · 지수 1.0 미만 컷오프")
+    print(f"중앙값: 편당 조회 {round(S['mv'])} · 참여율((좋아요+댓글×2)/조회) {S['me']*100:.1f}% (종목 {len(S['idx'])}개) · 지수 1.0 미만 컷오프")
     for t in sys.argv[1:]:
         ok, a = verdict(t, S); print(t.upper(), a, '통과' if ok else '컷오프')

@@ -25,14 +25,14 @@ for l in open(os.path.join(MEDIA,'requests.md')):
     tids=[t for t in re.split(r'[ ,·]+',threads) if '@' in t]
     from traffic_cut import engagement, eng_points
     E=engagement()
-    src=sum(v.get(t.split('@')[1],0)+10*eng_points(t.split('@')[1],E) for t in tids if t.split('@')[1] in v)
+    src=sum(v.get(t.split('@')[1],0)*(0.7+0.3*min(eng_points(t.split('@')[1],E)/max(v.get(t.split('@')[1],0),1)/S['me'],3.0) if S['me'] else 1) for t in tids if t.split('@')[1] in v); src=round(src)
     web=sum(int(n) for n in re.findall(r'웹 요청\s*(\d+)',l))
     srch=sum(int(n) for n in re.findall(r'검색[^|]*?(\d+)\s*회',l))
     score=own.get(tk.upper(),0)+src+(len(tids)+web)*100+srch*10
     low=not verdict(tk,S)[0]
     rows.append((low,tier,-score,date,tk,score,own.get(tk.upper(),0),src,len(tids)+web,srch,verdict(tk,S)[1]))
 rows.sort()
-print(f"컷오프 지수 = 0.7×편당 조회/중앙값 {round(S['mv'])} + 0.3×편당 참여/중앙값 {S['me']:.1f}(좋아요+댓글×2) — 1.0 미만 제외(컷오프)")
+print(f"컷오프 지수 = 0.7×편당 조회/중앙값 {round(S['mv'])} + 0.3×참여율/중앙값 {S['me']*100:.1f}%(참여율=(좋아요+댓글×2)/조회) — 1.0 미만 제외(컷오프)")
 print('순위 | 단계 | 종목 | 점수 | 편당 조회·참여·지수 | 종목 트래픽 | 요청 영상 조회 | 요청 수 | 검색 | 접수일')
 for i,r in enumerate(rows,1): print(f"{i} | {'제외(컷오프)' if r[0] else ('1순위' if r[1]==1 else '2순위')} | {r[4]} | {r[5]} | {r[10]} | {r[6]} | {r[7]} | {r[8]} | {r[9]} | {r[3]}")
 if not any(not r[0] for r in rows): print('통과한 요청 종목 없음 → 오늘 요청 슬롯은 정규 한 편 더(verified_table.py의 다음 적격 종목)')

@@ -37,9 +37,12 @@ for f in glob.glob(os.path.join(SITE, 'content/reports/*.md')):
 today = datetime.date.today()
 sys.path.insert(0, HERE); from traffic_cut import load as _cl, verdict as _cv
 _S = _cl()
-rows = sorted(((x['views'] + x['pv']*10 + x['eng']*10, k, x['views'], x['pv'], x['latest']) for k, x in agg.items()), reverse=True)
-print(f"검증 종목 표 · 조회 스냅샷 {snap['t'][:16]}Z · 점수=롱폼 누적 조회+7일 페이지뷰×10+참여(좋아요+댓글×2)×10")
-print(f"트래픽 컷오프: 지수(0.7×편당 조회/중앙값 {round(_S['mv'])} + 0.3×편당 참여/중앙값 {_S['me']:.1f}) 1.0 미만이면 제작 불가(운영자 11-05)")
+from traffic_cut import load as _cl0, eng_factor as _ef
+_S0 = _cl0()
+rows = sorted((((x['views'] + x['pv']*10) * _ef(k, _S0), k, x['views'], x['pv'], x['latest']) for k, x in agg.items()), reverse=True)
+rows = [(round(s), k, vw, p, lt) for s, k, vw, p, lt in rows]
+print(f"검증 종목 표 · 조회 스냅샷 {snap['t'][:16]}Z · 점수=(롱폼 누적 조회+7일 페이지뷰×10)×참여율 배수(0.7+0.3×참여율/중앙값)")
+print(f"트래픽 컷오프: 지수(0.7×편당 조회/중앙값 {round(_S['mv'])} + 0.3×참여율/중앙값 {_S['me']*100:.1f}%) 1.0 미만이면 제작 불가(운영자 11-05)")
 print("순위 | 종목 | 점수 | 조회 | 7일PV | 최신 기준일 | 경과일 | 편당 조회·참여·지수 | 정규 적격(7일↑·컷오프 통과)")
 cand = []
 for i, (s, k, vw, p, lt) in enumerate(rows, 1):
