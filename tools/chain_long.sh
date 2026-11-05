@@ -55,10 +55,15 @@ python3 /home/claude/bin/hero_check.py . | tail -1
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])")
 nice -n 10 python3 /home/claude/slidekit/make_slide_video.py slides.json raw.wav "${T}_slide_video.mp4" > synth.log 2>&1 || { echo "CHAIN_FAIL synth"; tail -5 synth.log; exit 1; }
 tail -1 synth.log
-python3 mk_meta.py > /dev/null && python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1 | tail -3
+# video_check 결과의 ✗를 CHAIN_FAIL로 올린다(11-05 IREN 58회차: 쇼츠 mk_meta.py가 없어 검사가 건너뛰어졌고, 정지 4.2초 쇼츠가 그대로 올라감)
+[ -f mk_meta.py ] || { echo "CHAIN_FAIL long mk_meta.py 없음(video_check를 못 함)"; exit 1; }
+python3 mk_meta.py > /dev/null && VC=$(python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1); echo "$VC" | tail -3
+echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }
 if [ -n "$S" ]; then
   wait
   cd "$S" && python3 /home/user/kimworld-site/tools/shorts/make_shorts.py shorts.json shorts_raw.wav "${T}_shorts.mp4" > render.log 2>&1; tail -1 render.log
-  python3 mk_meta.py PLACEHOLDER > /dev/null && python3 /home/user/kimworld-media/tools/video_check.py shorts "${T}_shorts.mp4" shorts.json upload_meta.json 2>&1 | tail -2
+  [ -f mk_meta.py ] || { echo "CHAIN_FAIL shorts mk_meta.py 없음(쇼츠 video_check를 못 함 — 업로드 전에 만들 것)"; exit 1; }
+  python3 mk_meta.py PLACEHOLDER > /dev/null && VC=$(python3 /home/user/kimworld-media/tools/video_check.py shorts "${T}_shorts.mp4" shorts.json upload_meta.json 2>&1); echo "$VC" | tail -2
+  echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check shorts"; exit 1; }
 fi
 echo CHAIN_DONE

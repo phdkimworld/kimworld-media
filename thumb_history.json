@@ -2021,6 +2021,48 @@
     "루멘텀 가격 -12.1% / 합병 못 믿나 + 같은 그림"
    ],
    "video": "_GjsfMEqZlw"
+  },
+  {
+   "t": "iren",
+   "date": "2026.11.05",
+   "layout": "custom",
+   "palette": "navy-cyan-red",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-B",
+   "concepts": [
+    "실적 하루 전 / 5거래일 만에 -24.7% 카드 / 다음 날은? + 서버 랙 세 개와 GPU 칩",
+    "떨어진 채 맞은 실적 / 4번 / 다음 날은? + 같은 그림"
+   ],
+   "video": "i0MiWn3_378"
+  },
+  {
+   "t": "aeva",
+   "date": "2026.11.05",
+   "layout": "custom",
+   "palette": "violet-lime",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "현금 많다는데 / 고점 대비 -67.6% 카드 / 왜? + 지붕 라이다가 빛줄기를 쏘는 자동차",
+    "시가총액은 현금의 / 4.48배 / 나머지는? + 같은 그림"
+   ],
+   "video": "Z8HhfUTtXrg"
   }
  ]
 }
