@@ -4,6 +4,7 @@
 이미 만든 종목: 공개 3일 지난 롱폼 기준으로
   지수 = 0.7 × (편당 평균 조회 ÷ 종목별 중앙값) + 0.3 × (편당 인게이지먼트 ÷ 종목별 중앙값)
   인게이지먼트 = 좋아요 + 댓글×2 (stats_engagement.json, yt_stats.py가 매번 갱신)
+평균 시청 비율(stats_retention.json, yt-analytics 범위 토큰이 있을 때)이 있으면 조회 0.5·참여 0.25·시청 비율 0.25로 바꾼다.
 지수 < 1.0 이면 컷오프(제작 불가). 만든 적 없거나 3일 지난 영상이 없으면 '신규'로 통과.
 사용: python3 tools/traffic_cut.py [티커…]
 """
@@ -13,11 +14,14 @@ SITE = os.path.join(os.path.dirname(MEDIA), 'kimworld-site')
 def engagement():
     p = os.path.join(MEDIA, 'stats_engagement.json')
     return json.load(open(p))['e'] if os.path.exists(p) else {}
+def retention():
+    p = os.path.join(MEDIA, 'stats_retention.json')
+    return json.load(open(p))['r'] if os.path.exists(p) else {}
 def eng_points(vid, E):
     l, c = E.get(vid, [0, 0]); return l + 2 * c
 def load():
     v = json.loads(open(os.path.join(MEDIA, 'stats_snapshots.jsonl')).readlines()[-1])['v']
-    E = engagement(); today = datetime.date.today(); per = {}
+    E = engagement(); RT = retention(); today = datetime.date.today(); per = {}; ret = {}
     for f in glob.glob(os.path.join(SITE, 'content/reports/*.md')):
         h = open(f, encoding='utf-8').read(4000)
         tk = re.search(r"^ticker:\s*['\"]?([A-Za-z0-9.]+)", h, re.M)
@@ -26,17 +30,23 @@ def load():
         if not (tk and y and d) or y.group(1) not in v: continue
         if (today - datetime.date.fromisoformat(d.group(1))).days < 3: continue
         per.setdefault(tk.group(1).upper(), []).append((v[y.group(1)], eng_points(y.group(1), E)))
+        if y.group(1) in RT: ret.setdefault(tk.group(1).upper(), []).append(RT[y.group(1)][1])
     stat = {k: (sum(a for a, _ in x) / len(x), sum(b for _, b in x) / len(x)) for k, x in per.items()}
     med = lambda xs: sorted(xs)[len(xs) // 2] if xs else 0
     mv, me = med([s[0] for s in stat.values()]), med([s[1] for s in stat.values()])
     cap = lambda r: min(r, 3.0)  # 한 종목의 튀는 값이 지수를 혼자 끌지 않게 비율은 3배까지
-    idx = {k: 0.7 * cap(a / mv if mv else 1) + 0.3 * cap(b / me if me else 1) for k, (a, b) in stat.items()}
-    return {'stat': stat, 'idx': idx, 'mv': mv, 'me': me}
+    rp = {k: sum(x) / len(x) for k, x in ret.items()}; mr = med(list(rp.values()))
+    if rp:  # 지속 시청 자료가 있으면: 조회 0.5 · 참여 0.25 · 평균 시청 비율 0.25
+        idx = {k: 0.5 * cap(a / mv if mv else 1) + 0.25 * cap(b / me if me else 1) + 0.25 * cap(rp.get(k, mr) / mr if mr else 1) for k, (a, b) in stat.items()}
+    else:
+        idx = {k: 0.7 * cap(a / mv if mv else 1) + 0.3 * cap(b / me if me else 1) for k, (a, b) in stat.items()}
+    return {'stat': stat, 'idx': idx, 'mv': mv, 'me': me, 'rp': rp, 'mr': mr}
 def verdict(tk, S, _=None):
     tk = tk.upper()
     if tk not in S['idx']: return True, '신규'
     a, b = S['stat'][tk]
-    return S['idx'][tk] >= 1.0, f"{round(a)}회·참여 {b:.1f}·지수 {S['idx'][tk]:.2f}"
+    r = f"·시청 {S['rp'][tk]:.0f}%" if tk in S.get('rp', {}) else ''
+    return S['idx'][tk] >= 1.0, f"{round(a)}회·참여 {b:.1f}{r}·지수 {S['idx'][tk]:.2f}"
 if __name__ == '__main__':
     S = load()
     print(f"중앙값: 편당 조회 {round(S['mv'])} · 편당 참여(좋아요+댓글×2) {S['me']:.1f} (종목 {len(S['idx'])}개) · 지수 1.0 미만 컷오프")

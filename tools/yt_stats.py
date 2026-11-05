@@ -4,7 +4,7 @@
 #  - 매 실행마다 영상별 누적 조회수를 스냅숏 파일에 한 줄로 추가하고,
 #    직전 스냅숏과 비교한 '최근 VPH'(시간당 조회수)와 공개 이후 평균 VPH를 함께 계산한다
 #  - 롱폼만(길이 180초 초과) 종목별로 묶어 마지막 업데이트일과 등급(🔴/🟡/✅)을 출력한다
-import os, re, sys, json, datetime, urllib.request, urllib.parse
+import urllib.parse, os, re, sys, json, datetime, urllib.request, urllib.parse
 
 def token():
     d = urllib.parse.urlencode({'client_id': os.environ['YT_CLIENT_ID'], 'client_secret': os.environ['YT_CLIENT_SECRET'],
@@ -53,6 +53,15 @@ def main():
         f.write(json.dumps({'t': now.isoformat(), 'v': {x['id']: x['views'] for x in vids}}) + '\n')
     # 인게이지먼트(운영자 지시 11-05 "종목 컷오프 및 랭킹 시에 인게이지먼트 지표도 반영"): 영상별 최신 좋아요·댓글 수
     json.dump({'t': now.isoformat(), 'e': {x['id']: [x['likes'], x['comments']] for x in vids}}, open(os.path.join(os.path.dirname(snap), 'stats_engagement.json'), 'w'))
+    # 지속 시청(운영자 질문 11-05 "지속 시청시간?"): yt-analytics.readonly 범위가 있는 토큰이면 영상별 평균 시청 비율·평균 시청 시간을 받아 둔다. 범위가 없으면(403) 조용히 건너뛴다
+    try:
+        q = urllib.parse.urlencode({'ids': 'channel==MINE', 'startDate': '2026-05-01', 'endDate': now.date().isoformat(),
+                                    'metrics': 'views,averageViewDuration,averageViewPercentage', 'dimensions': 'video', 'maxResults': '200', 'sort': '-views'})
+        rq = urllib.request.Request('https://youtubeanalytics.googleapis.com/v2/reports?' + q, headers={'Authorization': 'Bearer ' + tok})
+        rows = json.load(urllib.request.urlopen(rq, timeout=60)).get('rows', [])
+        json.dump({'t': now.isoformat(), 'r': {r[0]: [r[2], r[3]] for r in rows}}, open(os.path.join(os.path.dirname(snap), 'stats_retention.json'), 'w'))
+    except Exception:
+        pass
     dt_prev = (now - datetime.datetime.fromisoformat(prev['t'])).total_seconds() / 3600 if prev else None
     for x in vids:
         p = datetime.datetime.fromisoformat(x['pub'].replace('Z', '+00:00'))
