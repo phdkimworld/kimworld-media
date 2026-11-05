@@ -2063,6 +2063,27 @@
     "시가총액은 현금의 / 4.48배 / 나머지는? + 같은 그림"
    ],
    "video": "Z8HhfUTtXrg"
+  },
+  {
+   "t": "cbrs",
+   "date": "2026.11.05",
+   "layout": "custom",
+   "palette": "orange-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "experiment": "E1-A",
+   "concepts": [
+    "락업 해제 5거래일 / 상장 뒤 최저 -18.0% 카드 / 왜 더 빠졌나? + 웨이퍼 원판 위 큰 칩(WSE)",
+    "해제일 9번 중 / 6번 / 더 떨어졌다 + 같은 그림"
+   ],
+   "video": "TULwdVnuvNU"
   }
  ]
 }
