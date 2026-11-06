@@ -28,6 +28,7 @@ R17 = '--legacy' not in sys.argv
 _dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1], (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1])
 _v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
 _v34 = _dt >= '2026-11-06' or '--v34' in sys.argv
+_v35 = _dt >= '2026-11-07' or '--v35' in sys.argv
 _v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
@@ -258,6 +259,31 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v35:
+    # v3.5(운영자 11-06 SMR 가독성 분석 8.0/10): 새 정보보다 독자가 궁금해하는 순서로 재배치, 부마다 역할 하나
+    def _sec5(h):
+        m = re.search(r'^## %s[^\n]*\n(.*?)(?=^## |\Z)' % h, body, re.S | re.M)
+        return m.group(1) if m else ''
+    sa5 = _sec5('짧은 답')
+    if sa5 and re.search(r'현금|자산|순자산|청산', sa5) and not re.search(r'보장하지(는)? 않|바닥(이|은) 아닙|하한선(이|은) 아닙', sa5):
+        bad.append("v3.5 짧은 답에서 현금·자산을 주가와 비교하면 '그렇다고 이 현금이 주가의 바닥을 보장하지는 않습니다'처럼 오해를 막는 한 문장")
+    pr = _sec5('지난 리포트 이후')
+    if pr and re.search(r'^\|', pr, re.M): bad.append("v3.5 '지난 리포트 이후'는 결과 한 문단으로 줄이고, 항목별 채점표는 6부 끝 '### 지난 예측 채점표'로")
+    if pr and '채점표' not in pr and re.search(r'^### 지난 예측 채점표', body, re.M) is None and '지난 리포트 이후' in body:
+        bad.append("v3.5 지난 리포트 채점표 위치 안내('항목별 채점표는 6부 끝에 있습니다') 또는 6부 끝 '### 지난 예측 채점표'")
+    for sent in re.split(r'(?<=[.?!])\s+', body):
+        if re.search(r'기업가치|EV\b|사업 자체에 매긴 값|사업에 매긴 값', sent) and not re.search(r'단순 차감|부채|대출|차입|기업가치 계산(이|은) 아닙', sent):
+            bad.append(f"v3.5 '시가총액 − 현금'을 기업가치로 부르면 부채를 넣었는지 밝히기('단순 차감값', 부채 포함 여부): {sent[:40]}…"); break
+    s6 = _sec5('6부')
+    if s6 and '**핵심 확인 세 가지:**' not in s6: bad.append("v3.5 6부 체크리스트는 '**핵심 확인 세 가지:**'(가장 중요한 3개) 뒤에 '**보조 확인:**'으로 나누기")
+    if s6 and re.search(r'지난 리포트 시나리오', s6) and '따로 판정' not in s6 and '지난 리포트 점검' not in s6:
+        bad.append("v3.5 지난 리포트 시나리오 점검은 이번 시나리오 판정과 섞지 말고 '**지난 리포트 점검(따로 판정):**'으로 분리")
+    s5 = _sec5('5부')
+    if s5:
+        pp = re.search(r'추정:\*\*(.*?)(?=\n\n)', s5, re.S)
+        if pp and len(pp.group(1)) > 220: bad.append(f"v3.5 5부 가능성 설명이 {len(pp.group(1))}자 → 두 문장 안(주관적 추정 · 주가 확률 아님 · 더해서 100% · 구간은 더하지 않음)")
+        if '시나리오 1' in s5 and not re.search(r'반대(쪽|로| 방향)[^.]{0,20}요인|반면|하지만 같은 무게', s5):
+            bad.append("v3.5 5부에서 낙관 시나리오 근거를 쓰면 같은 무게로 반대 요인(현금 감소·계약 없음 등)을 함께")
 if _v34:
     # v3.4(운영자 11-05 IREN 가독성 분석): 중간 논리를 건너뛰지 않고, 숫자보다 패턴, 부마다 다음 부로 잇는 질문
     def _sec(n):
