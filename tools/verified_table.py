@@ -42,16 +42,13 @@ _S0 = _cl0()
 # 운영자 11-06 최종안 "랭킹은 과거 트래픽 하나로 줄세우고": 점수 = 롱폼 누적 조회 + 7일 페이지뷰×10 (참여 배수·컷오프 없음)
 rows = sorted(((x['views'] + x['pv']*10, k, x['views'], x['pv'], x['latest']) for k, x in agg.items()), reverse=True)
 rows = [(round(s), k, vw, p, lt) for s, k, vw, p, lt in rows]
-print(f"과거 트래픽 순위 · 조회 스냅샷 {snap['t'][:16]}Z · 점수=롱폼 누적 조회+7일 페이지뷰×10 · 위에서부터 하나씩 보며 지금 업데이트가 시급한 첫 종목(최신 리포트 7일↑)")
-print("순위 | 종목 | 점수 | 조회 | 7일PV | 최신 기준일 | 경과일 | 7일↑")
+print(f"과거 트래픽 순위 · 조회 스냅샷 {snap['t'][:16]}Z · 점수=롱폼 누적 조회+7일 페이지뷰×10 · 위에서부터 하나씩 보며 지금 업데이트가 시급한 첫 종목(경과일은 판단 재료, 제외 기준 아님)")
+print("순위 | 종목 | 점수 | 조회 | 7일PV | 최신 기준일 | 경과일")
 cand = []
 for i, (s, k, vw, p, lt) in enumerate(rows, 1):
     _ag = (today - datetime.date.fromisoformat(lt)).days if lt else 999
     if _ag >= 1: cand.append((k, _ag, s))
     if i > top and k != want: continue
     age = (today - datetime.date.fromisoformat(lt)).days if lt else 999
-    print(f"{i} | {k} | {s} | {vw} | {p} | {lt} | {age} | {'적격' if age >= 7 else '-'}")
-# 정규 후보 순서(운영자 11-05): 컷오프 통과 + 7일 이상이면 점수 순. 없으면 간격을 7일에서 줄여 가며 가장 오래된 것부터
-el = [c for c in cand if c[1] >= 7]
-order = el if el else sorted(cand, key=lambda c: (-c[1], -c[2]))
-print(('정규 후보(7일↑, 트래픽 순): ' if el else '7일↑ 통과 종목 없음 → 간격을 줄여 가장 오래된 순: ') + ', '.join(f"{k}({a}일)" for k, a, _ in order[:5]))
+    print(f"{i} | {k} | {s} | {vw} | {p} | {lt} | {age}")
+# 운영자 11-06 "7일 제한도 없애고 … 니가 시급한지 종합적으로 판단해": 자동 후보 줄은 내지 않는다(위 표를 위에서부터 보며 판단)
