@@ -29,10 +29,10 @@ for l in open(os.path.join(MEDIA,'requests.md')):
     web=sum(int(n) for n in re.findall(r'웹 요청\s*(\d+)',l))
     srch=sum(int(n) for n in re.findall(r'검색[^|]*?(\d+)\s*회',l))
     score=own.get(tk.upper(),0)+src+(len(tids)+web)*100+srch*10
-    low=not verdict(tk,S)[0]
+    low=False  # 운영자 11-06 최종안: 컷오프 없이 트래픽 순
     rows.append((low,tier,-score,date,tk,score,own.get(tk.upper(),0),src,len(tids)+web,srch,verdict(tk,S)[1]))
 rows.sort()
-print(f"컷오프: 랭크섬(편당 조회 순위 + 참여율 순위) {S['rs_cut']} 이하 통과(운영자 11-06)")
+print("요청 순위: 점수 = 그 종목 과거 트래픽 + 요청 영상 조회 + 요청 수×100 (운영자 11-06 최종안, 컷오프 없음)")
 print('순위 | 단계 | 종목 | 점수 | 편당 조회·참여·지수 | 종목 트래픽 | 요청 영상 조회 | 요청 수 | 검색 | 접수일')
 for i,r in enumerate(rows,1): print(f"{i} | {'제외(컷오프)' if r[0] else ('1순위' if r[1]==1 else '2순위')} | {r[4]} | {r[5]} | {r[10]} | {r[6]} | {r[7]} | {r[8]} | {r[9]} | {r[3]}")
 if not any(not r[0] for r in rows): print('통과한 요청 종목 없음 → 오늘 요청 슬롯은 정규 한 편 더(verified_table.py의 다음 적격 종목)')
