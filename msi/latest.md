@@ -1,29 +1,29 @@
-# MSI 최신 점수 (2026-11-05 기준, 시세 11/4 종가·코인 11/5 오전)
+# MSI 최신 점수 (2026-11-06 기준, 시세 11/5 종가·코인 11/6 오전)
 
 ## 시장 상황
-11/4(수) 성장주 대부분 하락: AXTI -7.4%, AAOI -7.3%, APLD -6.7%, AEHR -6.6%, OKLO -5.8%, LUNR -5.2%. 반대로 KNSA +3.0%, SLS +3.0%, ANRO +2.6%, ERAS +1.8%는 올랐다. 11/4 지수 마감 기사는 검색으로 확인하지 못해 개별 종목 시세(나스닥 API)로만 판단했다. BTC 약 8.04만 달러(1일 보합, 7일 +3.4%), ETH 약 2,418달러(7일 +7.5%). 알트는 STX(7일 +25.5%)·ZRO(+18.5%)·INJ(+15.0%)·QNT(+12.8%)·AAVE(+12.2%)가 강하고 HYPE(-5.6%)·TIA(-5.0%)는 약하다.
+11/5(목) 성장주가 한꺼번에 급락했다: AXTI -22.8%, AAOI -20.9%, AEHR -19.2%, PSQL -18.5%, ASTS -15.2%, APLD -14.7%, OKLO·LUNR -13.2%, RKLB -12.2%. 후보 20종목이 모두 내렸고, 가장 덜 빠진 종목도 ANRO -6.1%였다. 지수 마감 기사는 검색으로 확인하지 못해 개별 시세(나스닥 API)로만 판단했다. IONQ는 장 마감 뒤 3분기 매출 1억 7,380만 달러(+336%)와 연간 전망 상향을 발표했다. BTC 약 7.56만 달러(7일 -2.1%), ETH 약 2,225달러(7일 -0.7%). 알트는 STX(7일 +15.3%)와 INJ(+12.1%)만 강하고, HYPE(-13.6%)·NEAR(-13.3%)·TIA(-11.9%)는 약하다.
 
 ## 후보 풀
-- 주식(20): KOD, KNSA, ERAS, ANRO, RKLB, IONQ, RGTI, AXTI, IOVA, QBTS, PSQL, ASTS, SLS, POET, LUNR, AAOI, AEHR, NNE, OKLO, APLD
-- 코인(13): HYPE, QNT, ZRO, ZEC, TAO, KITE, AAVE, SUI, INJ, STX, NEAR, RENDER, TIA
+- 주식(20): KOD, KNSA, ANRO, ERAS, IONQ, RKLB, RGTI, IOVA, QBTS, SLS, AXTI, POET, AEHR, PSQL, ASTS, LUNR, NNE, OKLO, AAOI, APLD
+- 코인(13): HYPE, QNT, ZRO, ZEC, INJ, AAVE, STX, TAO, KITE, SUI, NEAR, RENDER, TIA
 
 ## 주식 점수
-TOP 5: 1 KOD 73(0) · 2 KNSA 68(+1) · 3 ERAS 63(0) · 4 ANRO 62(+1) · 5 RKLB 59(-2)
-- 탈락 없음
-- 6~10위: IONQ 58 · RGTI 58 · AXTI 54 · IOVA 54 · QBTS 54
-- 11위 이하: SLS 53, PSQL 52, ASTS 51, POET 51, LUNR 50, AAOI 48, AEHR 48, NNE 47, OKLO 47, APLD 44
+TOP 5: 1 KOD 69(-4) · 2 KNSA 64(-4) · 3 ANRO 59(-3) · 4 ERAS 58(-5) · 5 IONQ 57(-1) 🆕
+- 탈락: RKLB 54(-5, 하루 -12.2%·5일 -22.2%)
+- 6~10위: RKLB 54 · RGTI 54 · IOVA 50 · QBTS 50 · SLS 49
+- 11위 이하: AXTI 47, POET 47, PSQL 46, ASTS 45, LUNR 45, AEHR 44, NNE 43, OKLO 43, AAOI 42, APLD 39
 
 ## 코인 점수
-TOP 5: 1 HYPE 73(-2) · 2 QNT 70(+1) · 3 ZRO 65(+2) · 4 ZEC 62(+1) · 5 TAO 58(0)
-- 탈락 없음
-- 6~10위: AAVE 57 · INJ 57 · STX 56 · KITE 55 · SUI 54
-- 밖: NEAR 52, RENDER 49, TIA 43
+TOP 5: 1 HYPE 70(-3) · 2 QNT 69(-1) · 3 ZRO 63(-2) · 4 ZEC 62(0) · 5 INJ 58(+1) 🆕
+- 탈락: TAO 56(-2, 7일 -7.9%)
+- 6~10위: AAVE 57 · STX 57 · TAO 56 · KITE 55 · SUI 53
+- 밖: NEAR 49, RENDER 48, TIA 41
 
 ## 종목별 핵심 근거
-- KOD 0: 11/4 98.51달러(-0.4%), 5일 +1.5%. KNSA +1: 96.12달러(+3.0%). ERAS 0: 14.91달러(+1.8%), 5일 -1.4%. ANRO +1: 23.30달러(+2.6%). RKLB -2: 52.37달러(-3.8%), 5일 -10.6%.
-- IONQ -1(-1.5%, 11/5 장후 실적), AXTI -3(-7.4%, 5일 -26.2%), IOVA -1(5일 -41.3%, 11/5 실적).
-- 코인: HYPE -2(7일 -5.6%), QNT +1(7일 +12.8%), ZRO +2(7일 +18.5%), ZEC +1(7일 +8.3%), INJ +3(1일 +6.0%), STX +2(7일 +25.5%), AAVE +2(7일 +12.2%). KITE는 크라켄 시세가 없어 점수 유지.
+- KOD -4: 11/5 91.02달러(-7.6%). KNSA -4: 88.34달러(-8.1%). ANRO -3: 21.87달러(-6.1%, 후보 중 가장 작은 하락). ERAS -5: 13.27달러(-11.0%). IONQ -1: 26.43달러(-10.5%)였지만 장후 실적 매출 +336%·전망 상향.
+- RKLB -5(5일 -22.2%), AXTI -7(-22.8%, 5일 -39.7%), AAOI -6(-20.9%), AEHR -4(-19.2%).
+- 코인: HYPE -3(7일 -13.6%), QNT -1(-1.7%), ZRO -2(-6.5%), ZEC 0(-0.5%), INJ +1(+12.1%), STX +1(+15.3%), TAO -2(-7.9%), NEAR -3(-13.3%). KITE는 크라켄 시세가 없어 점수 유지.
 
 ## 다음 업데이트 주의
-- 실적: IONQ·IOVA·IREN 11/5 장후, OKLO 11/6, RKLB 11/9.
-- 성장주 하락이 AI 데이터센터·광통신 종목(AXTI·AAOI·APLD)에 몰린 흐름이 이어지는지, BTC 8만 달러 유지 여부.
+- 실적: OKLO 11/6, RKLB 11/9. IONQ 실적 뒤 첫 거래일(11/6)에 양자주가 함께 반등하는지.
+- 11/5 급락이 하루로 끝나는지, BTC 7.5만 달러 유지 여부.
