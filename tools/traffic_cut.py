@@ -5,9 +5,7 @@
   지수 = 0.7 × (편당 평균 조회 ÷ 종목별 중앙값) + 0.3 × (참여율 ÷ 종목별 중앙값)
   참여율 = (좋아요 + 댓글×2) ÷ 조회 수(운영자 11-05 "뷰나 좋아요는 조회수당으로 정규화") — stats_engagement.json, yt_stats.py가 매번 갱신
 평균 시청 비율(stats_retention.json, yt-analytics 범위 토큰이 있을 때)이 있으면 조회 0.5·참여 0.25·시청 비율 0.25로 바꾼다.
-판정(운영자 지시 11-06 "서로 보완하는게 아니라 둘다 통과해야 되도록 변경해", 같은 날 "참여율 기준 재량"): 편당 조회 ≥ 중앙값 **그리고**
-조회 대비 참여 비율(같은 조회 수준의 기대 참여율 대비, log-log 회귀) ≥ 하위 25%선
-(시청 비율 자료가 있으면 그것도 ≥ 중앙값)일 때만 통과. 지수는 순위·표시용으로만 쓰고 통과 여부에는 쓰지 않는다.
+판정(운영자 지시 11-06 "그냥 랭크섬으로 처리해"): 편당 조회 순위 + 참여율 순위의 합이 전체 중앙값 이하면 통과.
 만든 적 없거나 3일 지난 영상이 없으면 '신규'로 통과.
 사용: python3 tools/traffic_cut.py [티커…]
 """
@@ -44,37 +42,27 @@ def load():
         idx = {k: 0.5 * cap(a / mv if mv else 1) + 0.25 * cap(b / me if me else 1) + 0.25 * cap(rp.get(k, mr) / mr if mr else 1) for k, (a, b) in stat.items()}
     else:
         idx = {k: 0.7 * cap(a / mv if mv else 1) + 0.3 * cap(b / me if me else 1) for k, (a, b) in stat.items()}
-    # 조회 대비 참여(운영자 11-06 "참여율 기준 재량을 줄테니 최선의 랭킹법"): 참여율은 조회가 많을수록 낮아지는 경향
-    # (log 참여율 = a + b·log 조회, 97종목 기울기 약 -0.56)이 있어, 같은 조회 수준에서 기대되는 참여율과 비교한다.
-    import math
-    pts = [(math.log(a), math.log(b)) for a, b in stat.values() if a > 0 and b > 0]
-    if len(pts) >= 10:
-        mx = sum(x for x, _ in pts) / len(pts); my = sum(y for _, y in pts) / len(pts)
-        sxx = sum((x - mx) ** 2 for x, _ in pts) or 1
-        b1 = sum((x - mx) * (y - my) for x, y in pts) / sxx; a1 = my - b1 * mx
-    else:
-        a1, b1 = math.log(me) if me else 0, 0.0
-    er = {k: (b / math.exp(a1 + b1 * math.log(a)) if a > 0 and b > 0 else 0.0) for k, (a, b) in stat.items()}
-    q = sorted(er.values()); e_cut = q[len(q) // 4] if q else 0  # 하위 25%선
-    # 순위 점수: 조회 비율^0.7 × 조회 대비 참여 비율^0.3 (각 3배 상한) — 지수(1.0 = 중앙 수준)
-    idx = {k: min(a / mv if mv else 1, 3.0) ** 0.7 * min(er[k], 3.0) ** 0.3 for k, (a, b) in stat.items()}
-    return {'stat': stat, 'idx': idx, 'mv': mv, 'me': me, 'rp': rp, 'mr': mr, 'er': er, 'e_cut': e_cut, 'fit': (a1, b1)}
+    # 랭크섬(운영자 11-06 "너무 복잡하네. 그냥 랭크섬으로 처리해"): 편당 조회 순위 + 참여율 순위(둘 다 높을수록 1위).
+    # 합이 작을수록 좋다. 판정: 랭크섬 ≤ 전체 중앙값(상위 절반)이면 통과.
+    ks = list(stat); n = len(ks)
+    rv = {k: i + 1 for i, k in enumerate(sorted(ks, key=lambda k: -stat[k][0]))}
+    re_ = {k: i + 1 for i, k in enumerate(sorted(ks, key=lambda k: -stat[k][1]))}
+    rs = {k: rv[k] + re_[k] for k in ks}
+    rs_cut = sorted(rs.values())[n // 2] if n else 0
+    idx = {k: rs[k] for k in ks}  # 순위용(작을수록 좋음)
+    return {'stat': stat, 'idx': idx, 'mv': mv, 'me': me, 'rp': rp, 'mr': mr, 'rv': rv, 're': re_, 'rs_cut': rs_cut, 'n': n}
 def eng_factor(tk, S):
-    # 랭킹용 참여율 배수: 0.7 + 0.3 × (참여율 ÷ 중앙값, 3배 상한). 중앙값이면 1.0, 신규는 1.0
+    # 랭킹용 참여 배수: 참여율 순위 1위 1.3 ~ 꼴찌 0.7, 신규 1.0
     tk = tk.upper()
-    if tk not in S['stat']: return 1.0
-    return 0.7 + 0.3 * min(S['er'].get(tk, 1.0), 3.0)  # 조회 대비 참여 비율 기준(11-06)
+    if tk not in S['re'] or S['n'] < 2: return 1.0
+    return 1.3 - 0.6 * (S['re'][tk] - 1) / (S['n'] - 1)
 def verdict(tk, S, _=None):
     tk = tk.upper()
     if tk not in S['idx']: return True, '신규'
     a, b = S['stat'][tk]
-    r = f"·시청 {S['rp'][tk]:.0f}%" if tk in S.get('rp', {}) else ''
-    ok_v = a >= S['mv']; ok_e = S['er'][tk] >= S['e_cut']
-    ok_r = (S['rp'][tk] >= S['mr']) if tk in S.get('rp', {}) and S.get('mr') else True
-    why = '' if (ok_v and ok_e and ok_r) else '(' + '·'.join(x for x, o in (('조회 미달', ok_v), ('참여 미달', ok_e), ('시청 미달', ok_r)) if not o) + ')'
-    return ok_v and ok_e and ok_r, f"{round(a)}회·참여율 {b*100:.1f}%(조회 대비 {S['er'][tk]:.2f}배){r}·지수 {S['idx'][tk]:.2f}{why}"
+    return S['idx'][tk] <= S['rs_cut'], f"{round(a)}회({S['rv'][tk]}위)·참여율 {b*100:.1f}%({S['re'][tk]}위)·랭크섬 {S['idx'][tk]}/{S['rs_cut']}"
 if __name__ == '__main__':
     S = load()
-    print(f"중앙값: 편당 조회 {round(S['mv'])} · 참여율((좋아요+댓글×2)/조회) {S['me']*100:.1f}% (종목 {len(S['idx'])}개) · 통과 = 조회 ≥ 중앙값 그리고 조회 대비 참여 ≥ 하위 25%선({S['e_cut']:.2f}배)")
+    print(f"랭크섬 = 편당 조회 순위 + 참여율((좋아요+댓글×2)/조회) 순위 · 종목 {S['n']}개 · 통과 = 랭크섬 {S['rs_cut']} 이하(상위 절반)")
     for t in sys.argv[1:]:
         ok, a = verdict(t, S); print(t.upper(), a, '통과' if ok else '컷오프')
