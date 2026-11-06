@@ -41,5 +41,8 @@ for i, (pi, f, lay, t0, t1) in enumerate(segs):
         tot = segs[i + 1][4] - t0
         if tot > (15 if lay == 'compare' else 16):  # 17→16(2026-10-29 SLNH 46회차 stat→stat 16.2초가 video_check 정지 17초)
             bad.append(f'p{pi} s{f}→s{segs[i + 1][1]} {lay}→{lay} 합 {tot:.1f}초')
+# 투표(poll) 화면도 보기가 작게 떠서 화면 변화로 안 잡힌다(2026-11-06 LAES 62회차 poll 16초 정지) — 혼자 14초 넘으면 알린다
+for pi, f, lay, t0, t1 in segs:
+    if lay == 'poll' and t1 - t0 > 14: bad.append(f'p{pi} s{f} poll 혼자 {t1 - t0:.1f}초(질문 문장은 quote로 따로)')
 print('\n'.join(bad) if bad else 'STILL_OK')
 sys.exit(1 if bad else 0)
