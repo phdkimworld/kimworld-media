@@ -5,7 +5,9 @@
   지수 = 0.7 × (편당 평균 조회 ÷ 종목별 중앙값) + 0.3 × (참여율 ÷ 종목별 중앙값)
   참여율 = (좋아요 + 댓글×2) ÷ 조회 수(운영자 11-05 "뷰나 좋아요는 조회수당으로 정규화") — stats_engagement.json, yt_stats.py가 매번 갱신
 평균 시청 비율(stats_retention.json, yt-analytics 범위 토큰이 있을 때)이 있으면 조회 0.5·참여 0.25·시청 비율 0.25로 바꾼다.
-지수 < 1.0 이면 컷오프(제작 불가). 만든 적 없거나 3일 지난 영상이 없으면 '신규'로 통과.
+판정(운영자 지시 11-06 "서로 보완하는게 아니라 둘다 통과해야 되도록 변경해"): 편당 조회 ≥ 중앙값 **그리고** 참여율 ≥ 중앙값
+(시청 비율 자료가 있으면 그것도 ≥ 중앙값)일 때만 통과. 지수는 순위·표시용으로만 쓰고 통과 여부에는 쓰지 않는다.
+만든 적 없거나 3일 지난 영상이 없으면 '신규'로 통과.
 사용: python3 tools/traffic_cut.py [티커…]
 """
 import glob, re, os, json, datetime, sys
@@ -52,9 +54,12 @@ def verdict(tk, S, _=None):
     if tk not in S['idx']: return True, '신규'
     a, b = S['stat'][tk]
     r = f"·시청 {S['rp'][tk]:.0f}%" if tk in S.get('rp', {}) else ''
-    return S['idx'][tk] >= 1.0, f"{round(a)}회·참여율 {b*100:.1f}%{r}·지수 {S['idx'][tk]:.2f}"
+    ok_v = a >= S['mv']; ok_e = b >= S['me']
+    ok_r = (S['rp'][tk] >= S['mr']) if tk in S.get('rp', {}) and S.get('mr') else True
+    why = '' if (ok_v and ok_e and ok_r) else '(' + '·'.join(x for x, o in (('조회 미달', ok_v), ('참여 미달', ok_e), ('시청 미달', ok_r)) if not o) + ')'
+    return ok_v and ok_e and ok_r, f"{round(a)}회·참여율 {b*100:.1f}%{r}·지수 {S['idx'][tk]:.2f}{why}"
 if __name__ == '__main__':
     S = load()
-    print(f"중앙값: 편당 조회 {round(S['mv'])} · 참여율((좋아요+댓글×2)/조회) {S['me']*100:.1f}% (종목 {len(S['idx'])}개) · 지수 1.0 미만 컷오프")
+    print(f"중앙값: 편당 조회 {round(S['mv'])} · 참여율((좋아요+댓글×2)/조회) {S['me']*100:.1f}% (종목 {len(S['idx'])}개) · 조회와 참여율 둘 다 중앙값 이상이어야 통과")
     for t in sys.argv[1:]:
         ok, a = verdict(t, S); print(t.upper(), a, '통과' if ok else '컷오프')
