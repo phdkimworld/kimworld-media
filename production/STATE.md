@@ -16,3 +16,5 @@
 | 11-05 | 요청 | AEVA 에이바 테크놀로지스(59회차, A그룹, @피카츄닭강정) | /home/claude/aeva | 완료 · 영상 Z8HhfUTtXrg · 쇼츠 QhuJudc0itE · 완료 답글 · SNS 대기열 6건 · 카드 9장 · 블로거 실행 · 기록 | 12-03 판정(followups) | 11-05 03:20 |
 | 11-05 | 하나 더(정규) | SMR 뉴스케일 파워(후속편 60회차, B그룹) | /home/claude/smr3 | 완료 · 리포트 smr-2026-11 · 영상 6sh1eCsdPgw · 쇼츠 Ox6EYgtup3s · SNS 대기열 6건 281abde · 카드 8장 · 블로거 실행 · 기록 | 11-06 첫 반응·12-04 판정(followups) | 11-05 17:05 |
 | 11-05 | 하나 더(정규) | CBRS 세레브라스(후속편 61회차, A그룹) | /home/claude/cbrs4 | 완료 · 리포트 cbrs-2026-11 · 영상 TULwdVnuvNU · 쇼츠 We9SpRIo-aw · SNS 대기열 6건 49ed574 · 카드 8장 · 블로거 실행 · 기록 | 11-13 판정(followups) | 11-05 13:10 |
+| 11-06 | 정규 | LAES 실스크(5번째 업데이트, 62회차, B그룹, 검증 2위·사이트 요청 2) | /home/claude/laes5 | 진행 중: 조사 시작 | 조사 → 리포트 | 11-06 01:50 |
+| 11-06 | 요청 | AEHR 에어 테스트 시스템즈(실적 뒤 후속편, 63회차, A그룹, @astro-lv8dr) | /home/claude/aehr3 | 진행 중: 조사 시작(aehr2 실적 조사 재사용) | 조사 → 리포트 | 11-06 01:50 |
