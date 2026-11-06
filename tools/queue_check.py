@@ -2,7 +2,7 @@
 # 2026-10-26 OKLO 36회차: Threads 투표 보기 '남아 있는 10억 달러'가 26바이트(제한 25)라 04:20 ET 글이 7시간 동안 매 회 실패.
 # 2026-10-29 SNS 스레드 지침 6장: 첫 문장 티커·불릿 3개 한 줄·제작 배경 위치·2/2 투표 연결·내부 용어 괄호
 # 사용: python3 queue_check.py <queue json>...
-import json, re, sys
+import json, os, re, sys
 bad = []
 for f in sys.argv[1:]:
     d = json.load(open(f, encoding='utf-8'))
@@ -86,6 +86,23 @@ for f in sys.argv[1:]:
             if re.search(r'\d{4}년 \d{1,2}월 접수', x): bad.append(f'{f}: 답글에 과거 접수 시점(6.2③ "다음 분석 원하는 종목은 댓글로"로)')
             m = re.search(r'\([^)\n]*(×|가능성 구간|평소 거래량 대비|분모)[^)\n]*\)', x)
             if m: bad.append(f'{f}: 답글에 내부 기획 용어 괄호 노출(6.2④ 문장으로 풀기): {m.group(0)[:40]}')
+# 쇼츠 표지(cover) 빈 화면 검사(SMR 60회차: ffmpeg -ss 1.5 프레임이 4KB 빈 화면) — 릴스 cover는 15KB 이상이고 밝기 변화가 있어야 한다
+SITE = os.environ.get('KW_SITE', '/home/user/kimworld-site')
+for f in sys.argv[1:]:
+    try: d = json.load(open(f, encoding='utf-8'))
+    except Exception: continue
+    m = d.get('media') or {}
+    cv = m.get('cover') if m.get('type') == 'reels' else None
+    if not cv: continue
+    pth = cv if os.path.isabs(cv) else os.path.join(SITE, cv)
+    if not os.path.exists(pth): bad.append(f'{f}: 릴스 cover 파일 없음 {cv}'); continue
+    if os.path.getsize(pth) < 15000: bad.append(f'{f}: 릴스 cover {os.path.getsize(pth)//1024}KB — 빈 화면 의심(ffmpeg -ss 4 이후 프레임으로 다시)')
+    else:
+        try:
+            from PIL import Image, ImageStat
+            st = ImageStat.Stat(Image.open(pth).convert('L').resize((64, 64)))
+            if st.stddev[0] < 8: bad.append(f'{f}: 릴스 cover 밝기 변화 {st.stddev[0]:.1f} < 8 — 단색 화면 의심')
+        except ImportError: pass
 # 회차 묶음 검사(운영자 지시 2026-11-06): 카드뉴스가 있으면 인스타 릴스·페이스북 릴스·페이스북 카드뉴스도 같은 폴더에 있어야 한다
 import os
 for f in sys.argv[1:]:
