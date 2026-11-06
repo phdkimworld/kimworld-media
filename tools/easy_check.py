@@ -29,6 +29,7 @@ _dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None
 _v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
 _v34 = _dt >= '2026-11-06' or '--v34' in sys.argv
 _v35 = _dt >= '2026-11-07' or '--v35' in sys.argv
+_v36 = _dt >= '2026-11-07' or '--v36' in sys.argv
 _v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
@@ -259,6 +260,38 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v36:
+    # v3.6(운영자 11-06 LAES 가독성 분석 8.1/10): 압축과 시각화 — 요약 먼저, 통계 한계, 기준 시점, 같은 결론 반복 줄이기
+    import datetime as _d
+    def _s6(h):
+        m = re.search(r'^## %s[^\n]*\n(.*?)(?=^## |\Z)' % h, body, re.S | re.M)
+        return m.group(1) if m else ''
+    s3 = _s6('3부')
+    rows3 = [r for r in re.findall(r'^\|.*\|$', s3, re.M) if re.search(r'20\d\d\.\d\d\.\d\d', r)]
+    if len(rows3) >= 8:
+        tb = s3.find('\n|')
+        if '**한눈에:**' not in s3[:tb]: bad.append(f"v3.6 3부 기록표 {len(rows3)}줄 → 표 앞에 '**한눈에:** 다음 날 상승 a번 · 20거래일 뒤 상승 b번 · 가운데 값 c%' 한 줄(모바일)")
+        ds = sorted(_d.date(*map(int, re.search(r'(20\d\d)\.(\d\d)\.(\d\d)', r).groups())) for r in rows3)
+        if any((b - a).days <= 28 for a, b in zip(ds, ds[1:])) and not re.search(r'겹(치|칩|친)', s3):
+            bad.append("v3.6 3부 기록표에 20거래일 안에 붙은 날짜가 있음 → '측정 기간이 서로 겹쳐 독립된 N번이 아니다, 참고 자료로 본다' 한 문장")
+    s5 = _s6('5부')
+    if re.search(r'더한 약 \d+%', s5) and '**한눈에:**' not in s5:
+        bad.append("v3.6 5부 시나리오를 더한 값(첫날 · 한 달 뒤)은 '**한눈에:** 첫날 상승 약 a% · 판정일 ○달러 위 약 b% — 주관적 추정을 더한 값' 한 줄로 분리")
+    for row in re.findall(r'^\|[^\n]*주당[^\n]*\|$', _s6('1부'), re.M):
+        mm = re.search(r'(\d+)월 말 주식', row); mc = re.search(r'(\d+)월 말 현금', _s6('1부'))
+        if mm and mc and mm.group(1) != mc.group(1) and '잠정' not in row:
+            bad.append(f"v3.6 1부 주당 값이 {mc.group(1)}월 말 현금 ÷ {mm.group(1)}월 말 주식 → 그 칸에 '잠정 계산(최신 주식 수 미반영)'")
+    KN = {'세': 3, '네': 4, '다섯': 5, '여섯': 6, '일곱': 7, '여덟': 8}
+    s2 = _s6('2부')
+    m2 = re.search(r'(세|네|다섯|여섯|일곱|여덟) 종목이 모두', s2)
+    if m2:
+        n2 = len([r for r in re.findall(r'^\|.*\|$', s2, re.M) if not re.match(r'^\|\s*-', r)]) - 1
+        if n2 > 0 and n2 != KN[m2.group(1)] and '포함' not in s2[max(0, m2.start() - 30):m2.end()]:
+            bad.append(f"v3.6 2부 '{m2.group(1)} 종목이 모두' ↔ 아래 표 {n2}종목 → '실스크를 포함한 {n2}종목' 또는 '실스크 외 {n2 - 1}종목'처럼 셈을 맞추기")
+    pr6 = '\n'.join(l for l in body.split('\n') if l.strip() and not l.lstrip().startswith(('|', '#', '!')))
+    from collections import Counter as _C
+    for num, c in _C(re.findall(r'약 (\d{2})%', pr6)).items():
+        if c > 3: bad.append(f"v3.6 같은 결론 숫자 '약 {num}%'가 본문 문단에 {c}번 → 정의한 부 한 곳과 짧은 답에만 두고 나머지는 '현금 아래'처럼 뜻으로")
 if _v35:
     # v3.5(운영자 11-06 SMR 가독성 분석 8.0/10): 새 정보보다 독자가 궁금해하는 순서로 재배치, 부마다 역할 하나
     def _sec5(h):
