@@ -7,7 +7,7 @@
   2) 참여율((좋아요+댓글×2)/조회)                       — 만든 적 없는 종목은 가운데 순위
   3) MSI 점수(주식·코인 같은 0~100 척도)                — 점수 없는 종목은 공동 꼴찌
   4) 요청 수(댓글 스레드 수 + 사이트 업데이트 요청 수) — 요청 없는 종목은 공동 꼴찌
-  5) 마지막 리포트 뒤 지난 일수(오래될수록 위)          — 만든 적 없는 종목은 가운데 순위(운영자 11-06 "신규는 일수 중앙으로")
+  5) 마지막 리포트 뒤 지난 일수(오래될수록 위)          — 만든 적 없는 종목은 무한대 일수로 공동 1위(운영자 11-06 "신규종목은 무한대로 처리")
 제외: 최신 리포트 data_as_of가 7일 안인 종목, 이미 만든 종목 중 트래픽 컷(traffic_cut 랭크섬 상위 절반 밖).
 사용: python3 tools/unified_rank.py [--top 15] [--no-web]
 """
@@ -83,10 +83,10 @@ def main():
     re_ = ranks({k: (st[k][1] if k in st else None) for k in rows}, missing='mid')
     rm = ranks({k: msi.get(k) for k in rows}, missing='last')
     rq = ranks({k: (req.get(k) or None) for k in rows}, missing='last')
-    rd = ranks({k: rows[k] for k in rows}, missing='mid')
+    rd = ranks({k: (rows[k] if rows[k] is not None else float('inf')) for k in rows})  # 신규 = 무한대 일수(공동 1위)
     tot = {k: rv[k] + re_[k] + rm[k] + rq[k] + rd[k] for k in rows}
     top = int(sys.argv[sys.argv.index('--top') + 1]) if '--top' in sys.argv else 15
-    print(f"정규 통합 랭크섬 · 후보 {len(rows)}종목(7일 안 업데이트·트래픽 컷 제외) · 조회·참여·일수는 만든 적 없으면 가운데, MSI·요청은 없으면 공동 꼴찌")
+    print(f"정규 통합 랭크섬 · 후보 {len(rows)}종목(7일 안 업데이트·트래픽 컷 제외) · 조회·참여는 만든 적 없으면 가운데, 일수는 신규면 무한대(공동 1위), MSI·요청은 없으면 공동 꼴찌")
     print('순위 | 종목 | 랭크섬 | 조회 순위 | 참여 순위 | MSI(순위) | 요청(순위) | 최신 리포트(일수 순위)')
     for i, k in enumerate(sorted(rows, key=lambda k: (tot[k], -(msi.get(k) or 0))), 1):
         if i > top: break
