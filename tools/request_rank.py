@@ -32,7 +32,7 @@ for l in open(os.path.join(MEDIA,'requests.md')):
     low=not verdict(tk,S)[0]
     rows.append((low,tier,-score,date,tk,score,own.get(tk.upper(),0),src,len(tids)+web,srch,verdict(tk,S)[1]))
 rows.sort()
-print(f"컷오프 지수 = 0.7×편당 조회/중앙값 {round(S['mv'])} + 0.3×참여율/중앙값 {S['me']*100:.1f}%(참여율=(좋아요+댓글×2)/조회) — 판정은 조회·참여율 둘 다 중앙값 이상(운영자 11-06), 지수는 순위용")
+print(f"컷오프 지수 = (편당 조회/중앙값 {round(S['mv'])})^0.7 × (조회 대비 참여)^0.3 — 판정: 조회 ≥ 중앙값 그리고 조회 대비 참여 ≥ 하위 25%선(운영자 11-06), 지수 = 조회비^0.7 × 조회 대비 참여비^0.3")
 print('순위 | 단계 | 종목 | 점수 | 편당 조회·참여·지수 | 종목 트래픽 | 요청 영상 조회 | 요청 수 | 검색 | 접수일')
 for i,r in enumerate(rows,1): print(f"{i} | {'제외(컷오프)' if r[0] else ('1순위' if r[1]==1 else '2순위')} | {r[4]} | {r[5]} | {r[10]} | {r[6]} | {r[7]} | {r[8]} | {r[9]} | {r[3]}")
 if not any(not r[0] for r in rows): print('통과한 요청 종목 없음 → 오늘 요청 슬롯은 정규 한 편 더(verified_table.py의 다음 적격 종목)')
