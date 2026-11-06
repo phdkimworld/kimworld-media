@@ -30,10 +30,15 @@ for f in sys.argv[1:]:
             bad.append(f'{f}: 링크 답글에 리포트 N부 <표 이름> 위치 안내 없음(K8.0, 1/2이 질문으로 끝났을 때만 "답은")')
     for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
         if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
-    # 인스타 카드뉴스 전환(운영자 지시 2026-10-29 "인스타는 릴스 폐기하고 카드뉴스로 완전히 전환")
+    # 인스타·페이스북 = 릴스 + 카드뉴스 둘 다(운영자 지시 2026-11-06 "둘다 해 페북도" — 10-29 '릴스 폐기'를 되돌림.
+    # 근거: 30일 인스타 릴스 34개 조회 평균 17.8·최고 146 vs 카드 12개 평균 7.9·최고 약 10, 릴스는 비팔로워 도달, 카드는 중앙값 7로 꾸준)
     m = d.get('media') or {}
     if 'instagram' in d.get('channels', []):
-        if m.get('type') == 'reels': bad.append(f'{f}: 인스타 릴스는 폐기 — 인스타는 카드뉴스(carousel, tools/cardnews/make_cards.py), 릴스는 facebook 채널만')
+        if m.get('type') == 'reels':
+            cap = (d.get('channel_text') or {}).get('instagram') or t
+            if 'http' in cap: bad.append(f'{f}: 인스타 릴스 캡션에 URL 금지(프로필 링크 → 사이트 검색)')
+            if not re.search(r'검색|프로필', cap): bad.append(f'{f}: 인스타 릴스 캡션에 프로필 링크·사이트 검색 안내가 있어야 함')
+            if not m.get('path', '').endswith('.mp4'): bad.append(f'{f}: 인스타 릴스 media.path는 쇼츠 mp4')
         if m.get('type') == 'carousel':
             ps = m.get('paths') or []
             if not 7 <= len(ps) <= 10: bad.append(f'{f}: 카드뉴스 {len(ps)}장 — 7~10장')
@@ -81,5 +86,15 @@ for f in sys.argv[1:]:
             if re.search(r'\d{4}년 \d{1,2}월 접수', x): bad.append(f'{f}: 답글에 과거 접수 시점(6.2③ "다음 분석 원하는 종목은 댓글로"로)')
             m = re.search(r'\([^)\n]*(×|가능성 구간|평소 거래량 대비|분모)[^)\n]*\)', x)
             if m: bad.append(f'{f}: 답글에 내부 기획 용어 괄호 노출(6.2④ 문장으로 풀기): {m.group(0)[:40]}')
+# 회차 묶음 검사(운영자 지시 2026-11-06): 카드뉴스가 있으면 인스타 릴스·페이스북 릴스·페이스북 카드뉴스도 같은 폴더에 있어야 한다
+import os
+for f in sys.argv[1:]:
+    b = os.path.basename(f)
+    if b.endswith('-cards.json'):
+        base = f[:-len('-cards.json')]
+        for suf, what in (('-igreels.json', '인스타 릴스'), ('-reels.json', '페이스북 릴스'), ('-fbcards.json', '페이스북 카드뉴스')):
+            if not any(os.path.exists(base.replace(x, y) + suf) for x, y in (('/queue/', '/queue/'), ('/queue/', '/posted/'), ('/posted/', '/queue/'))):
+                bad.append(f'{f}: {what} 파일 {os.path.basename(base + suf)} 없음 — 인스타·페이스북은 릴스와 카드뉴스 둘 다')
+
 for b in bad: print('BAD', b)
 print('QUEUE_OK' if not bad else f'QUEUE_FAIL {len(bad)}'); sys.exit(1 if bad else 0)
