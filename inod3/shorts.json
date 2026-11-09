@@ -1,0 +1,240 @@
+{
+ "ticker": "INOD",
+ "name": "이노데이터",
+ "group": "B",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "-4.1%",
+   "subtitle": "전망을 올린 다음 날\n**-4.1%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "AI 데이터 이노데이터",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-4.1%",
+     "at": 0.0,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "11.06 실적 다음 날",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "전망 올린 다음 날",
+     "at": 0.3,
+     "y": 470,
+     "size": 50,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "stamp",
+     "text": "$38.62→$37.03",
+     "at": 0.55,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "15%",
+   "subtitle": "3분기 매출은 예상보다\n**15%** 많았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "3분기 매출 9,560만 달러",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+15%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "시장 예상 대비"
+    },
+    {
+     "kind": "stamp",
+     "text": "1년 전보다 +53%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "+86.0%",
+   "subtitle": "5월에는 같은 전망 상향에\n하루 **+86.0%** 올랐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2026년 5월 전망 상향",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+86.0%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "다음 날",
+     "sfx": "boom"
+    },
+    {
+     "kind": "stamp",
+     "text": "$45.64→$84.89",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "-6.5%",
+   "subtitle": "하루 전 나스닥 100 ETF가\n**-6.5%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.05 나스닥 100 ETF",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-6.5%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "실적 발표 전"
+    },
+    {
+     "kind": "stamp",
+     "text": "이노데이터 -10.8%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "프로그램 종료",
+   "subtitle": "가장 컸던 고객의\n**프로그램 종료**도 발표됐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "오랫동안 가장 컸던 고객",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "프로그램 종료",
+     "at": 0.25,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "10월 중순",
+     "sfx": "boom"
+    },
+    {
+     "kind": "stamp",
+     "text": "4분기 매출 감소",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 52
+    }
+   ]
+  },
+  {
+   "em": "5번",
+   "subtitle": "실적 다음 날 내린 것은\n8번 중 **5번**입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2025년 이후 실적 8번 중",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "5번 하락",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "다음 날 기준"
+    },
+    {
+     "kind": "stamp",
+     "text": "이번 포함",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "왜",
+   "subtitle": "전망을 올렸는데\n왜 내렸을까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "전망 올렸는데 왜 내렸나?",
+     "opts": [
+      "시장 매도",
+      "고객 빈자리",
+      "이익률 축소"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.62
+     ],
+     "foot_at": 2
+    }
+   ]
+  }
+ ]
+}
