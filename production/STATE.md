@@ -18,3 +18,4 @@
 | 11-05 | 하나 더(정규) | CBRS 세레브라스(후속편 61회차, A그룹) | /home/claude/cbrs4 | 완료 · 리포트 cbrs-2026-11 · 영상 TULwdVnuvNU · 쇼츠 We9SpRIo-aw · SNS 대기열 6건 49ed574 · 카드 8장 · 블로거 실행 · 기록 | 11-13 판정(followups) | 11-05 13:10 |
 | 11-06 | 정규 | LAES 실스크(5번째 업데이트, 62회차, B그룹, 검증 2위·사이트 요청 2) | /home/claude/laes5 | 완료 · 리포트 laes-2026-11-2 · 영상 wIb7C7FazCY · 쇼츠 Cba_eIVi3tk · SNS 7건(인스타 릴스 포함) · 카드 8장 · 블로거 게시 | - | 11-06 03:10 |
 | 11-06 | 요청 | AEHR 에어 테스트 시스템즈(실적 뒤 후속편, 63회차, A그룹, @astro-lv8dr) | /home/claude/aehr3 | 완료 · 리포트 aehr-2026-11 · 영상 MLNfdWxTvq8 · 쇼츠 H1TDncFzGJY · 완료 답글 · SNS 7건 · 카드 8장 · 블로거 실행 | - | 11-06 03:50 |
+| 11-08 | 정규 | INOD 이노데이터(실적 뒤 후속편, 64회차, B그룹) | /home/claude/inod3 | 조사·떡밥 시트 완료(data_as_of 11-06) | 대본·TTS → 리포트 | 11-08 |

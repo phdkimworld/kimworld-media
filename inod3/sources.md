@@ -1,0 +1,15 @@
+- 8-K 첨부 99.1: 2026년 3분기 실적(매출 9,560만 달러 +53%, 전망 42% 이상) | https://www.sec.gov/Archives/edgar/data/903651/000110465926123324/tm2628333d1_ex99-1.htm | 2026-11-05 (접수 21:07 UTC = 16:07 ET, 장 마감 뒤)
+- 10-Q 2026년 3분기(고객 31%·43%, ATM 판매 없음, 주식 수 34,412,692주 10/30) | https://www.sec.gov/Archives/edgar/data/903651/000110465926123437/inod-20260930x10q.htm | 2026-11-05
+- 8-K 첨부 99.1: 2026년 2분기 실적(현금·단기투자 2억 5,040만, 선수금 뺀 약 1억 3,400만) | https://www.sec.gov/Archives/edgar/data/903651/000110465926092010/tm2621499d1_ex99-1.htm | 2026-08-06
+- 8-K 첨부 99.1: 2025년 4분기·연간 실적(2025 매출 2억 5,166만 달러) | https://www.sec.gov/Archives/edgar/data/903651/000110465926020514/tm265812d1_ex99-1.htm | 2026-02-26
+- 8-K: 최대 3억 달러 주식 수시 판매 계약 | https://www.sec.gov/Archives/edgar/data/903651/000110465926092133/tm2622364d1_8k.htm | 2026-08-06
+- 나스닥 INOD 일별 시세 | https://api.nasdaq.com/api/quote/INOD/historical?assetclass=stocks&fromdate=2022-12-01&limit=9999 | 2026-11-06
+- 나스닥 QQQ·IGV·PLTR·BBAI·SOUN·AI 일별 시세 | https://api.nasdaq.com/api/quote/PLTR/historical?assetclass=stocks&fromdate=2026-07-01&limit=9999 | 2026-11-06
+- MarketBeat(TradingView 게재): What Innodata (INOD) Said on Its Q3 Earnings Call(옛 최대 고객 프로그램 10월 중순 종료, 4분기 약 1,200만 달러 감소, 컨센서스 8,330만) | https://www.tradingview.com/news/marketbeat:f980c6212094b:0-what-innodata-inod-said-on-its-q3-earnings-call/ | 2026-11-06
+- Zacks(TradingView 게재): Innodata Q3 Earnings & Revenues Top Estimates(시간외 +8.8%, 조정 총마진 44→40%, 영업이익 11.8→8.7M) | https://www.tradingview.com/news/zacks:67fac379f094b:0-innodata-q3-earnings-revenues-top-estimates-on-strong-ai-data-demand/ | 2026-11-06
+- TradingView: INOD Q3'26 Earnings: revenue estimate is 83.32M USD | https://www.tradingview.com/news/tradingview:192d147347249:0-inod-q3-26-earnings-revenue-estimate-is-83-32m-usd/ | 2026-10-29
+- Stocktwits(TradingView 게재): Semiconductor ETF worst week as Democratic sweep raises data center skepticism(11/5 반도체 지수 -9.2%) | https://www.tradingview.com/news/stocktwits:dbcabf63e094b:0-this-semiconductor-etf-is-set-for-its-worst-week-in-over-18-months-as-democratic-sweep-raises-data-center-skepticism/ | 2026-11-05
+- 김박사 월드 지난 리포트(10-27 기준) | https://drkimworld.com/r/inod-2026-10-2/ | 2026-10-28
+- 김박사 월드 첫 리포트(10-13 기준) | https://drkimworld.com/r/inod-2026-10/ | 2026-10-14
+- India Today: Innodata lays off nearly 550 employees | https://www.indiatoday.in/jobs/story/innodata-layoffs-nearly-550-india-employees-fired-philippines-job-cuts-microsoft-3025864-2026-10-27 | 2026-10-27
+- SEC 이노데이터 공시 목록 | https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903651&type=&dateb=&owner=include&count=40 | 2026-11-08
