@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.7(2026-11-09 운영자 RDW 가독성 분석 8.2/10, 공개일·기준일 11-10~·--v37): 'YYYY년 N분기 실적' 연도 검산, '(미확정)' 단독 금지, 6부 핵심 체크 3개 이하, 1부 '숫자로 본' 표에 자금 조달 행 금지, 표 상한 8
 #  - v3.4(2026-11-05 운영자 IREN 가독성 분석 7.5/10, 공개일 11-06~·--v34): 중간 논리 계단·숫자보다 패턴·부 끝 질문 — '이 말은 곧' 1번, 1부 4문단(회사·돈 버는 법·왜 중요·몸값), 2부 사건 묶는 문장, 3부 비교 기준 '예를 들어', 기록표 '이번' 행 분리, 5부 판정 기준 먼저, 6부 위험 세 갈래, 거래일 조사
 #  - v3.3(2026-11-04 운영자 MRVL 분석, 공개일 11-05~·--v33): 시나리오 대표값 '약 N%' 합 100, 'N거래일 동안 X%'에 기준 종가, 6부 끝 판단 기준 세 가지
 #  - v3.2(2026-11-04 운영자 SLDP 가독성 분석, 공개일 11-05~·--v32): 짧은 답 문제 제기형 첫 문단, 국면 정의는 5부, 3부 기준의 이유, 4부 끝 확인 조건 두 가지, 시나리오 조건은 말로
@@ -30,6 +31,7 @@ _v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
 _v34 = _dt >= '2026-11-06' or '--v34' in sys.argv
 _v35 = _dt >= '2026-11-07' or '--v35' in sys.argv
 _v36 = _dt >= '2026-11-07' or '--v36' in sys.argv
+_v37 = _dt >= '2026-11-10' or '--v37' in sys.argv  # v3.7(운영자 11-09 RDW 가독성 분석 8.2/10)
 _v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
@@ -79,7 +81,8 @@ if '--legacy' not in sys.argv:
     if '가능성(추정)' in body and not re.search(r'^\|[^\n]*가능성[^\n]*\|', body, re.M): bad.append('R1.7 시나리오 표(가능성·계기·예상 반응·판정 날짜 열)가 없음')
     if cards: bad.append(f'R1.6 사건 카드 머리 {len(cards)}개(카드 대신 시간순 문단)')
     if len(bullets) > 8: bad.append(f'R1.6 글머리 목록 {len(bullets)}줄 > 8(체크리스트 외에는 문장으로)')
-    if len(tables) > 5: bad.append(f'R1.7 표 {len(tables)}개 > 5')
+    # v3.7: 1부 용어 표·4부 '과거 vs 이번' 비교표·5부 자금 표를 더하므로 8개까지
+    if len(tables) > (8 if _v37 else 5): bad.append(f'R1.7 표 {len(tables)}개 > {8 if _v37 else 5}')
     for sec in ('## 이 리포트에서 확인할 수 있는 것', '## 먼저 알아둘 용어'):
         if sec in body: bad.append(f"R1.6 '{sec[3:]}' 절은 빼기(용어는 처음 쓰는 문장 안에서 풀기)")
     if paras and len(one) / len(paras) > 0.25: bad.append(f'R1.6 한 문장짜리 문단 {len(one)}/{len(paras)} > 25%(2~4문장으로 이어 쓰기)')
@@ -260,6 +263,31 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v37:
+    # v3.7(운영자 11-09 RDW 가독성 분석 8.2/10): 원인은 본문에서, 비교는 표로, 체크리스트는 셋 — 기계로 잡을 수 있는 것만
+    def _s7(h):
+        m = re.search(r'^## %s[^\n]*\n(.*?)(?=^## |\Z)' % h, body, re.S | re.M)
+        return m.group(1) if m else ''
+    _a7 = (re.search(r'^data_as_of:\s*"?(\d{4})-(\d{2})', fm, re.M) or [None, '0', '0'])
+    ay, am = int(_a7[1]), int(_a7[2])
+    # (a) 연도 검산: data_as_of 2026-11 리포트의 '2027년 4분기 실적'처럼 아직 한참 남은 분기를 실적 발표로 적은 표기
+    for m in re.finditer(r'(\d{4})년 ([1-4])분기 (실적|매출|보고서)', fm + '\n' + body):
+        y, q = int(m.group(1)), int(m.group(2))
+        if ay and y >= ay + 1 and (y - ay) * 12 + q * 3 - am > 9:
+            bad.append(f"v3.7 연도 검산: '{m.group(0)}'은 기준일({ay}-{am:02d})보다 {(y - ay) * 12 + q * 3 - am}개월 뒤 끝나는 분기 → 'YYYY년 N분기 실적 발표(발표 연월)'로 다시 확인(예: 2026년 4분기 실적 발표(2027년 2~3월))")
+    # (b) '(미확정)' 단독 표기 금지 — 무엇이 미확정인지 밝힌다
+    for m in re.finditer(r'[^\s(]{0,8}\(미확정\)', body): bad.append(f"v3.7 '{m.group(0)}' → '이번 사례(20거래일 결과 미확정)'처럼 무엇이 미확정인지 밝히기")
+    # (c) 6부 핵심 체크리스트 3개 이하('**핵심…**'과 '**보조…**' 소제목이 있으면 핵심만 센다)
+    s6 = _s7('6부').split('\n### ')[0]
+    mk = re.search(r'^\*\*핵심[^\n]*\*\*\s*$', s6, re.M)
+    core = s6[mk.end():] if mk and re.search(r'^\*\*보조', s6, re.M) else s6
+    if mk and re.search(r'^\*\*보조', s6, re.M): core = re.split(r'^\*\*', core, maxsplit=1, flags=re.M)[0]
+    nc = len(re.findall(r'^- [□☐] ', core, re.M))
+    if nc > 3: bad.append(f"v3.7 6부 핵심 체크 {nc}개 > 3 → 판정을 바꾸는 셋만 '**핵심 확인 세 가지:**'에, 나머지는 '**보조 확인:**'으로")
+    # (d) 1부 '숫자로 본' 표에는 사업·실적만 — 현금·자금 조달(판매 한도·ATM·4분기 필요 매출)은 5부 표로
+    m1 = re.search(r'^### 숫자로 본[^\n]*\n(.*?)(?=^### |\Z)', _s7('1부'), re.S | re.M)
+    for row in (re.findall(r'^\|.*\|$', m1.group(1), re.M) if m1 else []):
+        if re.search(r'판매 한도|ATM|4분기 필요', row): bad.append(f"v3.7 1부 '숫자로 본' 표에 자금 조달 행 → 5부 표로: {row[:40]}")
 if _v36:
     # v3.6(운영자 11-06 LAES 가독성 분석 8.1/10): 압축과 시각화 — 요약 먼저, 통계 한계, 기준 시점, 같은 결론 반복 줄이기
     import datetime as _d
