@@ -2145,6 +2145,48 @@
     "크게 오른 실적 7번 / 이번이 처음 / 3거래일 만에 다 내줬다 + 같은 그림"
    ],
    "video": "MLNfdWxTvq8"
+  },
+  {
+   "t": "inod",
+   "date": "2026.11.08",
+   "layout": "custom",
+   "palette": "teal-pink",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "전망 올렸는데 / 실적 다음 날 -4.1% 카드 / 5월엔 +86.0% + 이름표 붙은 데이터 카드 더미 → 신경망(회색 카드 = 끝난 프로그램)",
+    "같은 전망 상향 / 5월 +86.0% / 11월 -4.1% + 같은 그림"
+   ],
+   "video": "dKJa4FE723E",
+   "shorts": "trPzYOg7klA"
+  },
+  {
+   "t": "stx",
+   "date": "2026.11.08",
+   "layout": "custom",
+   "palette": "espresso-orange",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "bigtext",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "본드는 2배 / 가격은 4주 만에 / -21.3% 큰 글자 + 자물쇠 채운 비트코인·사슬·스택스 코인 더미",
+    "새 상품 켜진 날 7번 / 5번은 / 한 달 뒤 더 낮았다 + 같은 그림"
+   ],
+   "video": "miE5i-JZjNo",
+   "note": "65회차 요청 · 몫 11-08 · INOD 청록·분홍과 겹쳐 업로드 직후 썸네일 교체"
   }
  ]
 }
