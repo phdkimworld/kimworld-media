@@ -141,3 +141,7 @@ ZEC는 10-28 대기열에 '대기'로 남아 있고 오늘도 TOP 5(4위)라 그
 # 대기열 MSI 2026-11-06
 
 편성 없음. KNSA(10-30)·ZEC(10-28)는 '대기'로 남아 있고 오늘도 TOP 5라 그대로 둔다. KOD·ANRO·ERAS·IONQ(🆕, data_as_of 10/16)·HYPE·QNT·ZRO·INJ(🆕, data_as_of 10/10)는 사이트 리포트가 60일 안. 전날 '대기'로 남은 MSI 종목 중 TOP 5 밖으로 나간 종목 없음.
+
+# 대기열 MSI 2026-11-09
+
+편성 없음. KNSA(10-30)·ZEC(10-28)는 '대기'로 남아 있고 오늘도 TOP 5라 그대로 둔다. KOD·IONQ·ANRO·ERAS·QNT·HYPE·ZRO·INJ는 사이트 리포트가 60일 안(data_as_of 10/09~10/16). 전날 '대기'로 남은 MSI 종목 중 TOP 5 밖으로 나간 종목 없음.
