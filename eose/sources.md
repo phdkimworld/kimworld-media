@@ -1,0 +1,43 @@
+# EOSE 출처 (열어 본 페이지만)
+
+- 8-K 첨부 99.1: 2026년 3분기 실적(매출 8,270만 달러, 현금 3억 4,410만 달러, 수주잔고 7억 6,500만 달러) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026070528/eoseq3fy26earningsreleas.htm | 2026-11-05
+- 8-K 2.05: Turtle Creek·Thorn Hill 공장 통합, 구조조정 비용 1,600만~1,800만 달러 | https://www.sec.gov/Archives/edgar/data/1805077/000162828026070528/eose-20261104.htm | 2026-11-05
+- 10-Q 2026년 3분기(관계사 매출 6,845만 달러, FPUSA 지분 36%, 주식 수 3억 6,636만 주) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026070529/eose-20260930.htm | 2026-11-05
+- 8-K 첨부: 3분기 예비 실적(매출 8,200만~8,300만, 전망 3억~3억 5천만 달러 하단) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026066229/q326prerelease_101926xfo.htm | 2026-10-19
+- DOE 대출 8,700만 달러 2차 인출(누적 약 1억 7,800만 달러) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026061689/eosdoeloanguarantee_fina.htm | 2026-09-14
+- 8-K 1.01: Frontier Power USA 합작 LLC 계약(이오스 1억 1,264만 달러 출자) | https://www.sec.gov/Archives/edgar/data/1805077/000095010326012019/dp251424_8k.htm | 2026-08-06
+- 8-K 첨부 99.1: 2026년 2분기 실적(매출 6,880만, 전망 3억~3억 5천만으로 조정) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026052903/eoseq2fy26earningsreleas.htm | 2026-08-05
+- 권리 공모 결과(2,737만 단위 중 689만 단위, 3,770만 달러) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026049296/eos-rightsofferingpressr.htm | 2026-07-23
+- 2분기 예비 실적(매출 6,800만~6,900만, 수주잔고 8억 700만) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026048253/earningsprerelease_0714x.htm | 2026-07-15
+- 권리 공모 시작(단위당 5.481달러) | https://www.sec.gov/Archives/edgar/data/1805077/000095010326010023/dp249395_ex9907.htm | 2026-07-02
+- 8-K: 허드슨베이 직접 공모 1,368만 주·5.481달러 | https://www.sec.gov/Archives/edgar/data/1805077/000095010326009976/dp249372_8k.htm | 2026-07-01
+- 8-K 1.01: 합작 수정 조건표(세르베루스·허드슨베이) | https://www.sec.gov/Archives/edgar/data/1805077/000095010326009739/dp249222_8k.htm | 2026-06-30
+- 8-K 첨부: 2026년 1분기 실적(매출 5,700만, 현금 4억 7,240만) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026034367/eoseq1fy26earningsreleas.htm | 2026-05-13
+- Frontier Power USA 설립 발표(2GWh 예약, 세르베루스 1억 달러) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026034367/eosepressreleasefrontier.htm | 2026-05-13
+- 1분기 예비 매출(5,600만~5,700만) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026024345/q12026businessupdate_040.htm | 2026-04-09
+- 2026 위임장(마스트란젤로 CEO 이력) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026025071/eose-20260414.htm | 2026-04-14
+- 8-K 첨부: 2025년 4분기·연간 실적(2025 매출 1억 1,420만, 2026 전망 3억~4억) | https://www.sec.gov/Archives/edgar/data/1805077/000162828026011958/eoseq4fy25earningsreleas.htm | 2026-02-26
+- 8-K 1.01: DOE 대출 약정(매출·EBITDA) 적용을 2027년 1분기로 미룸 | https://www.sec.gov/Archives/edgar/data/1805077/000162828026008648/eose-20260213.htm | 2026-02-17
+- 8-K: 6억 달러 1.75% 전환사채(전환가 약 16.29달러)·12.78달러 직접 공모 3,586만 주 | https://www.sec.gov/Archives/edgar/data/1805077/000121390025114153/ea0266865-8k_eos.htm | 2025-11-24
+- 8-K 첨부: 2025년 3분기 실적(2025 전망 1억 5천만~1억 6천만) | https://www.sec.gov/Archives/edgar/data/1805077/000162828025049552/eoseq32025earningsreleas.htm | 2025-11-05
+- 8-K: 세르베루스 신용계약 수정·공모·2030 전환사채 면제 | https://www.sec.gov/Archives/edgar/data/1805077/000121390025048485/ea0243621-8k_eosenergy.htm | 2025-05-29
+- 8-K: 세르베루스 신용·지분 투자(2억 1,050만 달러 대출) | https://www.sec.gov/Archives/edgar/data/1805077/000121390024054998/ea0208318-8k_eosener.htm | 2024-06-24
+- SEC XBRL companyfacts(주식 수·현금·영업현금흐름) | https://data.sec.gov/api/xbrl/companyfacts/CIK0001805077.json | 2026-11-09
+- 나스닥 EOSE 일별 시세(2020-11-02~2026-11-06) | https://api.nasdaq.com/api/quote/EOSE/historical?assetclass=stocks&fromdate=2020-11-01&limit=9999 | 2026-11-06
+- 나스닥 FLNC·ICLN·ENVX 일별 시세 | https://api.nasdaq.com/api/quote/FLNC/historical?assetclass=stocks&fromdate=2025-12-01&limit=9999 | 2026-11-06
+- MarketBeat(TradingView): What Eos Energy Enterprises Said on Its Q3 Earnings Call | https://www.tradingview.com/news/marketbeat:d53047d72094b:0/ | 2026-11-05
+- Reuters(TradingView): Eos Energy Q3 revenue jumps on higher cube shipments | https://www.tradingview.com/news/tag:reuters.com,2026:newsml_L2N46M0KT:0/ | 2026-11-05
+- Seeking Alpha(TradingView): Clean energy, solar stocks surge after Democrats sweep midterms | https://www.tradingview.com/news/seekingalpha:8c97f161e094b:0/ | 2026-11-04
+- Seeking Alpha(TradingView): Eos slips following preliminary Q3 results | https://www.tradingview.com/news/seekingalpha:91a580ef1094b:0/ | 2026-10-19
+- Dow Jones(TradingView): Needham 목표가 10→6달러 | https://www.tradingview.com/news/DJN_DN20261020001854:0/ | 2026-10-20
+- Benzinga(TradingView): Eos Energy Stock Surges On Google Clean Energy Deal | https://www.tradingview.com/news/benzinga:c6f837c67094b:0/ | 2026-09-02
+- Reuters(TradingView): Eos Energy Q2 revenue misses; tightens forecast | https://www.tradingview.com/news/tag:reuters.com,2026:newsml_L1N4420GW:0/ | 2026-08-05
+- Stocktwits(TradingView): Why Is EOSE Stock Falling Today? (직접 공모) | https://www.tradingview.com/news/stocktwits:6a05bb23a094b:0/ | 2026-06-30
+- Stocktwits(TradingView): EOSE Stock Records Worst Day Ever (Roth 목표가 12→6) | https://www.tradingview.com/news/stocktwits:4c8f51c06094b:0/ | 2026-02-27
+- Stocktwits(TradingView): EOSE Stock Crashes 40% (4분기 예상 9,370만, 2026 예상 4억 7,130만) | https://www.tradingview.com/news/stocktwits:da4d855c3094b:0/ | 2026-02-26
+- Reuters(TradingView): Eos Energy's Q4 revenue rises but annual revenue misses | https://www.tradingview.com/news/tag:reuters.com,2026:newsml_L1N3ZM0JS:0/ | 2026-02-26
+- Reuters(TradingView): Eos Energy slides on planned $500 mln convertible bond sale | https://www.tradingview.com/news/tag:reuters.com,2025:newsml_L6N3WU17X:0/ | 2025-11-18
+- Reuters(TradingView): Eos Energy wobbles on Fuzzy Panda short position | https://www.tradingview.com/news/tag:reuters.com,2025:newsml_L4N3WB21D:0/ | 2025-10-30
+- TradingView: CEO 15만 9,154주 3.61달러(세금 원천징수) | https://www.tradingview.com/news/tradingview:c3fc3f4a585e6:0/ | 2026-07-28
+- Stocktwits(TradingView): EYPT, CRWV, EOSE 52주 최저 | https://www.tradingview.com/news/stocktwits:2efe4fcf6094b:0/ | 2026-10-20
+- 확인 못함: 2026-10-14(-15.9%)·10-16(-15.7%)의 이유(회사 발표·보도 찾지 못함)

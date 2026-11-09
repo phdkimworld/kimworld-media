@@ -1,0 +1,315 @@
+{
+ "ticker": "EOSE",
+ "name": "이오스 에너지",
+ "group": "B",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "-90.9%",
+   "subtitle": "1년 전 고점보다\n**-90.9%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "아연 배터리 이오스 에너지",
+     "at": 0.0,
+     "y": 100,
+     "size": 54,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-90.9%",
+     "at": 0.0,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "2025.11.10 최고 종가 → 2026.11.06",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "주가 $1.74",
+     "at": 0.3,
+     "y": 470,
+     "size": 60,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "stamp",
+     "text": "$19.19→$1.74",
+     "at": 0.55,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "+171%",
+   "subtitle": "3분기 매출은 1년 전보다\n**+171%** 늘었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "3분기 매출 8,273만 달러",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+171%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "1년 전 대비"
+    },
+    {
+     "kind": "stamp",
+     "text": "회사 역사상 최대",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "82.7%",
+   "subtitle": "그 매출의 **82.7%**는\n합작사가 산 것이었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "3분기 관계사 매출",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "82.7%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "합작사 프론티어 파워",
+     "sfx": "boom"
+    },
+    {
+     "kind": "stamp",
+     "text": "이오스 지분 36%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "-53%",
+   "subtitle": "바깥 고객 매출은 1년 전보다\n**-53%** 줄었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "바깥 고객 매출(3분기)",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-53%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "1년 전 대비"
+    },
+    {
+     "kind": "stamp",
+     "text": "1,428만 달러",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "새 주식",
+   "subtitle": "합작사에 넣은 돈은\n**새 주식**을 팔아 마련했습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "이오스 현금 출자",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1억 1,264만",
+     "at": 0.25,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "달러 · 합작사에"
+    },
+    {
+     "kind": "text",
+     "text": "= 신주 발행",
+     "at": 0.45,
+     "y": 470,
+     "size": 60,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "stamp",
+     "text": "권리 공모 25.2%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "$5.481",
+   "subtitle": "새 주식 가격은 7개월 사이\n**$5.481**로 내려왔습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "새 주식 가격",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "$5.481",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "2026년 6월",
+     "sfx": "boom"
+    },
+    {
+     "kind": "stamp",
+     "text": "2025.11 $12.78",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "4번",
+   "subtitle": "올해 매출 발표 7번 중\n첫날 하락은 **4번**입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2026년 매출 발표 7번 중",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "4번 하락",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "첫날 기준"
+    },
+    {
+     "kind": "stamp",
+     "text": "4분기 목표 9,153만",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "4번",
+   "subtitle": "20거래일 뒤 5번 중\n**4번**은 더 낮았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "20거래일 결과 5번 중",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "4번 더 낮음",
+     "at": 0.25,
+     "y": 260,
+     "size": 150,
+     "color": "red",
+     "anim": "pop",
+     "sub": "발표 전 종가 대비"
+    },
+    {
+     "kind": "stamp",
+     "text": "2.26 -54.2%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "왜",
+   "subtitle": "매출은 늘었는데\n주가는 왜 무너졌을까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "매출 늘었는데 왜 무너졌나?",
+     "opts": [
+      "합작사 매출 의심",
+      "계속된 신주 발행",
+      "4분기 목표 부담"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.62
+     ],
+     "foot_at": 2
+    }
+   ]
+  }
+ ]
+}
