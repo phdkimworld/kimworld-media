@@ -2229,6 +2229,47 @@
    ],
    "video": "qDznLvFhJl8",
    "shorts": "6DRSByhzNtY"
+  },
+  {
+   "t": "joby",
+   "date": "2026.11.09",
+   "layout": "custom",
+   "palette": "emerald-coral",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "기술주 -6.5%인 날 / 실적 뒤 2거래일 +17.4% 카드 / 새 주식 2,017만 주? + 틸트 프로펠러 전기 에어택시·블레이드 헬리콥터·상승 화살표",
+    "새 주식 팔면서 / +17.4% / 한 달 갈까? + 같은 그림"
+   ],
+   "video": "5HB8eoP2AcY"
+  },
+  {
+   "t": "rxrx",
+   "date": "2026.11.09",
+   "layout": "custom",
+   "palette": "scarlet-emerald",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "임상 호재 다음 날 / -16.7% 카드 / 같은 아침 2억 달러 공모 + 세포 사진 웰 플레이트·신경망·알약 캡슐·쌓이는 새 주식 증서·하락 화살표",
+    "호재 +11.2% / 다음 날 -16.7% / 왜 더 크게 빠졌나? + 같은 그림"
+   ],
+   "video": "bBye6yTQX90",
+   "shorts": ""
   }
  ]
 }
