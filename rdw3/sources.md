@@ -1,0 +1,12 @@
+# RDW 66회차 출처 (열어 본 페이지만)
+- SEC 8-K 첨부 99.1: Redwire 2026년 3분기 실적 | https://www.sec.gov/Archives/edgar/data/1819810/000181981026000139/exhibit991redwire09302026e.htm | 2026-11-04 (EDGAR 접수 16:21 ET, 장 마감 뒤)
+- SEC 10-Q 2026년 3분기 | https://www.sec.gov/Archives/edgar/data/1819810/000181981026000142/rdw-20260930.htm | 2026-11-05 (접수 16:15 ET)
+- SEC 제출 목록(CIK 1819810) | https://data.sec.gov/submissions/CIK0001819810.json | 2026-11-09 (실적 8-K item 2.02 날짜·시각)
+- 나스닥 API RDW·RKLB·ASTS·LUNR·SPCX 일별 시세 | https://api.nasdaq.com/api/quote/RDW/historical?assetclass=stocks | 2026-11-06
+- 나스닥 API QQQ·UFO 일별 시세 | https://api.nasdaq.com/api/quote/UFO/historical?assetclass=etf | 2026-11-06
+- 24/7 Wall St.(Yahoo 게재): Redwire Plunges 21% as Revenue Miss Overshadows Record Margins and Backlog | https://finance.yahoo.com/markets/stocks/articles/redwire-plunges-21-revenue-miss-185709004.html | 2026-11-05
+- StockStory(Yahoo 게재): 5 revealing analyst questions from Redwire's Q3 2026 earnings call | https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-redwire-215736676.html | 2026-11-08
+- Motley Fool(Yahoo 게재): Why Redwire Stock Is Plummeting Today | https://finance.yahoo.com/markets/stocks/articles/why-redwire-stock-plummeting-today-183511202.html | 2026-11-05
+- 24/7 Wall St.: SpaceX Rises 4% as Tech Stocks Rebound From Post-Election Rout | https://247wallst.com/investing/2026/11/06/spacex-rises-4-as-tech-stocks-rebound-from-post-election-rout-ast-spacemobile-sinks-8-rocket-lab-gains-2/ | 2026-11-06
+- 김박사 월드 지난 리포트 rdw-2026-10-2(10/16 기준) | https://drkimworld.com/r/rdw-2026-10-2/ | 2026-10-19
+- 김박사 월드 첫 리포트 rdw-2026-10(10/09 기준) | https://drkimworld.com/r/rdw-2026-10/ | 2026-10-10

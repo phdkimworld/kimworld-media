@@ -1,0 +1,321 @@
+{
+ "ticker": "RDW",
+ "name": "레드와이어",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "-19.8%",
+   "subtitle": "레드와이어 주가가 실적 첫날\n**-19.8%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "우주·방산 레드와이어",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-19.8%",
+     "at": 0.0,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "11.05 실적 첫날",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "올해 최저 종가",
+     "at": 0.3,
+     "y": 470,
+     "size": 50,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "stamp",
+     "text": "$7.72→$6.19",
+     "at": 0.55,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "사상 최대",
+   "subtitle": "수주잔고는 약 6.2억 달러로\n**사상 최대**였습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "9월 말 수주잔고",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "6.2억 달러",
+     "at": 0.25,
+     "y": 260,
+     "size": 150,
+     "color": "green",
+     "anim": "pop",
+     "sub": "사상 최대"
+    },
+    {
+     "kind": "stamp",
+     "text": "1년 전보다 약 +75%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "14%",
+   "subtitle": "그런데 매출은 시장 예상보다\n약 **14%** 적었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "3분기 매출 1억 903만 달러",
+     "at": 0.0,
+     "y": 100,
+     "size": 52,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "약 -14%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "시장 예상 대비"
+    },
+    {
+     "kind": "stamp",
+     "text": "방산 무인기 출하 지연",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 52
+    }
+   ]
+  },
+  {
+   "em": "-12.2%",
+   "subtitle": "같은 날 로켓랩도 **-12.2%**\n시장 전체가 무너졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.05 같은 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-12.2%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "로켓랩"
+    },
+    {
+     "kind": "stamp",
+     "text": "QQQ -6.5%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 52
+    },
+    {
+     "kind": "text",
+     "text": "우주 ETF -5.6%",
+     "at": 0.85,
+     "y": 470,
+     "size": 50,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "+16.5%",
+   "subtitle": "다음 날에는 **+16.5%**\n다시 올랐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.06 다음 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 58,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+16.5%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "$7.21",
+     "sfx": "boom"
+    },
+    {
+     "kind": "stamp",
+     "text": "로켓랩 +15.4%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "-18.1%",
+   "subtitle": "1년 전 같은 실적 날에도\n**-18.1%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2025.11.06 3분기 실적",
+     "at": 0.0,
+     "y": 100,
+     "size": 56,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-18.1%",
+     "at": 0.25,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "1년 전 실적 첫날"
+    },
+    {
+     "kind": "stamp",
+     "text": "로켓랩 -12.1%",
+     "at": 0.6,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  },
+  {
+   "em": "1번",
+   "subtitle": "첫날 -10% 넘은 5번 중\n회복은 **1번**뿐이었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "첫날 -10% 넘게 빠진 5번",
+     "at": 0.0,
+     "y": 100,
+     "size": 54,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "5번 중 1번",
+     "at": 0.15,
+     "y": 240,
+     "size": 150,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "20거래일 뒤 실적 전 위"
+    },
+    {
+     "kind": "text",
+     "text": "다음 날 반등 4번",
+     "at": 0.45,
+     "y": 500,
+     "size": 90,
+     "color": "green",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "이번 +16.5%",
+     "at": 0.72,
+     "y": 640,
+     "size": 90,
+     "color": "green",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "무엇이",
+   "subtitle": "수주잔고가 사상 최대인데\n무엇이 끌어내렸을까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "무엇이 끌어내렸나?",
+     "opts": [
+      "시장 전체 매도",
+      "방산 출하 지연",
+      "현금 소진"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.3,
+      0.5
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "무엇이 끌어내렸나?",
+     "opts": [
+      "시장 전체 매도",
+      "방산 출하 지연",
+      "현금 소진"
+     ],
+     "y": 20,
+     "opt_at": [
+      0,
+      0,
+      0
+     ],
+     "foot_at": 0
+    },
+    {
+     "kind": "stamp",
+     "text": "12월 3일 판정",
+     "at": 0.5,
+     "y": 610,
+     "color": "white",
+     "size": 56
+    }
+   ]
+  }
+ ]
+}
