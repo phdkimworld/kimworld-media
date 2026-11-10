@@ -16,7 +16,7 @@ def cells(l): return [c.strip() for c in l.strip().strip("|").split("|")]
 today = [cells(l) for l in rows if cells(l)[0] == D]
 done = {c[1] for c in today if "완료" in c[2]}
 pending = [f"{c[0]} {c[1]}: {c[2][:40]}" for c in map(cells, rows)
-           if len(c) > 2 and (("진행" in c[2] and "완료" not in c[2]) or re.search(r"\|\s*대기\s*\|?\s*$", "|".join(c)))]
+           if len(c) > 2 and ((("진행" in c[2] or "대기" in c[2]) and "완료" not in c[2]) or re.search(r"\|\s*대기\s*\|?\s*$", "|".join(c)))]
 r = "정규" in done; q = "요청" in done; r2 = "정규2" in done
 rank = subprocess.run([sys.executable, "tools/request_rank.py"], cwd=M, capture_output=True, text=True).stdout
 tiers = {t: len(re.findall(rf"^\d+ \| {t} \|", rank, re.M)) for t in ("0순위", "1순위", "2순위")}
