@@ -27,4 +27,4 @@
 | 11-09 | 하나 더 | IONQ 아이온큐(70회차, 0순위, 운영자 하나 더) 완료 | /home/claude/ionq3 | 완료 · 리포트 ionq-2026-11 · 롱폼 q7ZHQ1FeMTw · 쇼츠 fsFoet-fO-k · SNS 대기열 7건 · 카드 9장 · 블로거 자동 · 기록 | 11-12·12-04 판정(followups) | 자동 루프 |
 | 11-10 | 밀린 쇼츠 | 11-09 업로드 한도 초과로 미게시: RXRX /home/claude/rxrx2/shorts/RXRX_shorts.mp4 · JOBY /home/claude/joby3 쇼츠 → 11-10 첫 점검에서 업로드 | 완료: RXRX A3Y-Tfa748Y · JOBY s6w-cgncNvY (11-10 02:36 UTC). 업로드 확인 버그로 중복 4편(OSSPI4ILUyk·c9Mo99jYBKc·GYn_lD3uoMo·RLwnFxC6m9Q) 생김 → 11-10 운영자 지시로 4편 삭제 완료 |
 | 11-10 | 요청 | LCID 루시드(72회차, 몫 11-10, 0순위) 진행 중 | /home/claude/lcid2 | 조사·대본·TTS(맥 501초)·리포트(EASY_OK)·썸네일·카드·SNS 원고 완료, 합성·사이트 테스트 중 → 리포트 발행·업로드 루프 | - | 11-10 |
-| 11-10 | 정규 | IREN (71회차, 몫 11-10) 진행 중 · 아이렌 6번째 업데이트(11/5 장후 실적 뒤 반응 미반영) | /home/claude/iren6 | 조사·대본·TTS(맥 254.8초)·리포트 발행(iren-2026-11-2, 8c2b034)·썸네일·쇼츠 TTS·카드 9장 | 롱폼 합성(chain) → 업로드 | 11-10 02:20 |
+| 11-10 | 정규 | IREN (71회차, 몫 11-10) 진행 중 · 아이렌 6번째 업데이트(11/5 장후 실적 뒤 반응 미반영) | /home/claude/iren6 | 조사·대본·TTS(맥 254.8초)·리포트 발행(iren-2026-11-2, 8c2b034)·썸네일·쇼츠 TTS·카드 9장 · 블로거 게시(iren-q1-fy27-earnings-20-percent-jump) | 롱폼 재합성(정지 17초 timeline 교체) → 업로드 | 11-10 03:50 |
