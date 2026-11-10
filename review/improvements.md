@@ -37,6 +37,7 @@
 |---|---|---|---|
 | 70 IONQ | TTS를 맥으로(kwa tts) | relay tools/mac.py | 41.0만·198회 (JOBY 58.2만·204, RXRX 54.5만·196) |
 | 72 LCID | ① 조사 서브에이전트 3개를 띄우지 않고 SEC 원문(8-K·10-Q·Form 4)·나스닥 API를 직접 받아 grep으로 필요한 줄만 읽음 ② 직전 IONQ 회차 스크립트(mk_slides·mk_meta·쇼츠 meta·mk_queue·publish_loop)를 복사해 종목 부분만 치환 ③ 리포트는 easy_check 지적 줄만 고침(전문 다시 읽지 않음) | 회차 작업 방식 | 도구 호출 약 110회(IONQ 198회 대비 약 -45%), 토큰은 세션 집계 전(대본·리포트 각 1회 작성) |
+| 71 IREN | ① 직전 회차(IONQ) 자동화 스크립트(mk_slides·mk_meta·쇼츠 meta·mk_queue·publish_loop)와 같은 종목 직전 편(iren5) 리포트 틀을 복제해 바뀐 부분만 치환 ② 녹음 전 긴 금액 검사(num_speak_check)로 녹음 뒤 splice 재녹음 예방 ③ SKILL.md는 장 제목 grep 후 T·1~2장·R6·K5만 읽음 | /home/claude/iren6/bin·video·sns, tools/num_speak_check.py | 도구 호출 약 130회(IONQ 198회 대비 약 -34%), 토큰은 종료 기록 기준(IONQ 41.0만) · 손실: timeline 정지로 재합성 1회 |
 | 운영 11-10 | 매시간 댓글 점검을 tools/hourly.py로, 제작 점검 첫 단계를 tools/prod_check.py로, 긴 지침은 skill/runbooks로 분리, SNS 목록 파일화 | 예약 작업 2개·사이트 워크플로 | 추정 하루 약 30만 절약(실측 예정) |
 
 ## 실수 → 검사 (SKILL 8.0, 회차마다 하나 이상)
