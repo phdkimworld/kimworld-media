@@ -113,7 +113,7 @@ def sns():
     f = f"{SITE}/social/open/latest.json"
     if not os.path.exists(f): R["notes"].append("SNS 목록 파일 아직 없음(매시 12분 워크플로)"); return
     d = json.load(open(f))
-    age = (datetime.datetime.utcnow() - datetime.datetime.strptime(d.get("saved_utc", "2000-01-01T00:00Z"), "%Y-%m-%dT%H:%MZ")).total_seconds() / 3600
+    age = (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.strptime(d.get("saved_utc", "2000-01-01T00:00Z"), "%Y-%m-%dT%H:%MZ").replace(tzinfo=datetime.timezone.utc)).total_seconds() / 3600
     if age > 3: R["notes"].append(f"SNS 목록이 {age:.0f}시간 전 것")
     done = set()
     for g in glob.glob(f"{SITE}/social/replies/*.json") + glob.glob(f"{SITE}/social/replies/done/*.json"):
