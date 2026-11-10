@@ -122,8 +122,14 @@ def sns():
             for it in x.get("replies", []) + x.get("results", []): done.add(str(it.get("to")))
         except Exception: pass
     reps = []
-    for o in d.get("open", []):
-        if str(o.get("replyTo")) in done: continue
+    items = list(d.get("open", []))
+    for pl, v in (d.get("platforms") or {}).items():      # 워크플로는 채널별 open 에 담는다(11-10 누락 수정)
+        if isinstance(v, dict):
+            for o in v.get("open", []): items.append({**o, "platform": o.get("platform") or pl})
+    seen = set()
+    for o in items:
+        if str(o.get("replyTo")) in done or str(o.get("replyTo")) in seen: continue
+        seen.add(str(o.get("replyTo")))
         act, kind = classify(o.get("text", ""), o.get("kind") == "followup")
         base = {"ch": o.get("platform"), "kind": kind, "replyTo": o.get("replyTo"), "author": o.get("author"),
                 "text": (o.get("text") or "")[:200], "slug": o.get("slug"), "post": (o.get("postText") or "")[:60]}
