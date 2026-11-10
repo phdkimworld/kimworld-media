@@ -23,5 +23,8 @@ if g == 'B' and kb < 11.3: bad.append(f'E12 B: 대본 {kb:.2f}KB, 11.3KB 이상'
 import subprocess as _sp
 _a = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'script_audio_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _a.returncode: bad += [l for l in _a.stdout.split('\n') if l.startswith('AUDIO ')]
+# 녹음 전 긴 금액 줄임(71회차 IREN, 70회차 IONQ '사억 삼천이백만' ASR 뭉개짐 → splice 두 번)
+_n = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'num_speak_check.py'), sys.argv[1]], capture_output=True, text=True)
+if _n.returncode: bad += [l for l in _n.stdout.split('\n') if l.startswith('NUMSPEAK ')]
 print('\n'.join(bad) if bad else f'GROUP_OK {g} {kb:.2f}KB 안내 p{guide[0]+1}')
 sys.exit(1 if bad else 0)
