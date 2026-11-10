@@ -2291,6 +2291,27 @@
    ],
    "video": "",
    "shorts": ""
+  },
+  {
+   "t": "lcid",
+   "date": "2026.11.10",
+   "layout": "custom",
+   "palette": "amber-teal",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "상장 후 최저 뒤 / 두 거래일 +20.8% 카드 / 사우디 돈, 이번엔? + 전기 세단·돈다발·바닥 찍고 오르는 화살표",
+    "사우디 지원 뒤 한 달 / 7번 중 6번 / 더 낮았다 + 같은 그림"
+   ],
+   "video": "",
+   "shorts": ""
   }
  ]
 }
