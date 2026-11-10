@@ -1,0 +1,38 @@
+# 하루 제작 점검 지침 (3시간마다 · `tools/prod_check.py`가 ACTION을 냈을 때만 읽는다)
+
+2026-11-10 토큰 절약 개편: 예약 작업은 먼저 `python3 tools/prod_check.py`를 돌린다. `NOTHING`이면 그 줄만 보고하고 끝낸다. `ACTION`이면 이 문서대로 한다. 묻지 말고 끝까지, 한국어로. 완성된 것은 바로 공개한다. 이 점검이 하루 제작의 유일한 선정 창구다.
+
+## 지연 금지·재시작 복구 (최우선, 11-03 "어떤 상황에서도 스케줄된 제작이 지연되지 않도록")
+1. 그날 몫(R·Q)이 비어 있으면 **즉시** 제작을 시작한다. 실적·이벤트 결과를 기다리지 않는다(결과 전이면 그 시점 확정 숫자로, 결과는 다음 후속편에서). 정규·요청은 조사를 병렬로. 두 제작이 동시에 돌면 사이트 저장소는 각자 git worktree(`git -C /home/user/kimworld-site worktree add /home/claude/site-<x> origin/main`, 푸시 `HEAD:main`).
+2. production/STATE.md에 단계마다(조사·리포트 발행·대본·TTS·합성·업로드·쇼츠·SNS·블로거·기록) 한 줄씩 적고 커밋·푸시. '진행 중' 항목은 그 단계부터 이어서 끝낸다(살아 있는 에이전트가 맡고 있으면 건드리지 않는다). 긴 작업은 백그라운드, 결과 파일(raw.wav·최종 mp4) 존재로 완료 판정. '대기' 행(예: 밀린 쇼츠 업로드)은 처리하고 '완료'로 바꾼다.
+3. 23:59 ET까지 공개 못 할 위험이 보이면 쇼츠·SNS·블로거·기록을 미루고 리포트와 롱폼 공개를 먼저.
+4. 운영자 수동 작업 없음(11-08): Studio 전용 작업은 건너뛰고 '운영자 할 일'을 적지 않는다.
+
+## 0) 블로거
+blogger.yml이 매시간 3건씩 자동 게시(docs/blogger-guide.md). posted.json으로 진행을 보고, 실패·'블로거 한도 403|429'가 이어지면 4장대로 원인 보고.
+
+## 1) 몫 세기와 요청 큐
+- 몫: STATE.md 오늘 행의 정규·요청·정규2 '완료'(prod_check가 셈). experiments.md '몫 MM-DD'는 공개 시각과 무관하게 그 날짜 몫. 운영자 '하나 더'는 몫 밖.
+- 요청 큐 갱신(매 점검): 1순위 ① 사이트 업데이트 요청 버튼(`curl -s -A 'Mozilla/5.0 research' "https://api.drkimworld.com/v1/requests/top?x=$(date +%s)"`) ② 사이트 댓글·종토방의 종목 요청 ③ requests.md '대기'(유튜브·SNS). 2순위 ④ `python3 tools/report_perf.py`의 결과 없던 검색어(최근 7일, 실제 상장 종목·코인만 웹 검색 1회로 확인, 리포트가 없거나 data_as_of 60일 초과). 1순위 웹 요청은 '대기'(출처 '웹 요청 n명'·'사이트 댓글 <id>'), 2순위는 '대기(2순위)'(출처 '검색 결과 없음 n회'). '대기(0순위)'(운영자 지정 레거시 상위)는 손대지 않는다. 최근 리포트 종목도 그 뒤 새 요청만 센다.
+
+## 2) 하루 2편 결정
+R=0이면 정규 한 편(그날 첫 점검에서 바로). 두 번째 자리는 요청 후보(0순위 → 1순위 → 2순위 → MSI 10위 안 신규)가 있고 Q=0이면 요청 한 편, 후보가 하나도 없으면 정규 한 편 더('정규2'). 둘 다 찼으면 만들지 않는다. 남은 시간이 적어도 그날 몫은 만든다(10-25).
+
+## 3) 정규 선정 (11-06 최종안: 과거 트래픽 하나로 줄 세우고 하나씩 보며 시급성 종합 판단, 기계적 제외 기준 없음)
+`python3 tools/verified_table.py --top 30`(연결 롱폼 누적 조회 + 사이트 7일 페이지뷰×10)을 위에서부터 하나씩 본다. msi/latest.md 주식·코인 10위 안이고 이미 리포트가 있는 종목도 정규 후보(MSI 상위는 시급성 재료). 재료: 지난 리포트 뒤 날수, 지난 기준일 뒤 주가(나스닥 API·업비트), 결과 시점이 지난 이벤트(followups.md), 새 공시·큰 소식, 사이트 요청, MSI 10위 안. 시급한 첫 종목(정규2면 다음 종목도). 오늘 요청 슬롯 0순위와 겹치면 다음. 확인한 종목마다 review/selection.md에 시급/아님과 이유 한 줄. 상위 30에 시급한 게 없으면 가장 오래된 종목. 같은 날 같은 종목 두 번 금지.
+
+## 3-1) 요청 선정
+`python3 tools/request_rank.py`(0순위 맨 앞; 점수 = 과거 트래픽 + 요청 영상 조회 + 요청 수×100 + 0순위 레거시 조회)를 위에서부터 하나씩 종합 판단. 순서 0순위(다 소진될 때까지) → 1순위 → (1순위 없을 때만) 2순위 → (요청 큐가 완전히 빌 때만) MSI: 최신 msi/latest.md 주식·코인 각 10위 안이고 리포트를 한 번도 안 만든 종목(queue.md '대기'라도 지금 10위 밖이면 '취소(10위 밖)'). 넷 다 없으면 정규2. 오늘 정규와 겹치면 다음. 비상장·자료 부족은 '보류' + 그 행의 댓글 스레드마다 "공개 자료가 부족해 지금은 다루기 어렵다, 자료가 쌓이면 이 댓글로 알려 드리겠다" 1~2문장. 소개 문단·고정댓글 첫머리에 출처('시청자 요청 종목'·'사이트 요청 종목'·'사이트에서 많이 찾은 종목'·'문샷지수 상위 종목'·0순위는 '시청자 반응이 컸던 종목의 업데이트'). MSI 편이면 queue.md '완료(<slug>, <영상ID>)'.
+
+## 3-2) 요청 팔로우업 (요청 편 공개 직후, 필수)
+requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 tools/yt_reply.py --reply <threadId> --text-file f --kind request`(맨 앞 @요청자, "요청하신 <종목> 영상과 리포트를 올렸습니다" + 답이 있는 자리(리포트 N부 <표 이름>) + 짧은 질문 + `https://youtu.be/<영상ID>` + 리포트 맨 주소, 150자 이내·링크 제외). SNS는 사이트 social/replies/<YYYYMMDD-HHMM>.json kind "request"(Threads·페이스북 맨 주소, 인스타는 '프로필 링크의 무료 리포트'). 중복 금지. 웹 요청·0순위·2순위·MSI는 리포트 발행으로 갈음. 행을 '완료(<slug>, <영상ID>)' + 결과 칸에 답글 ID, 커밋·푸시.
+
+## 4) 제작
+- 조사는 지금 처음부터. 시작 전 SKILL 8.0: ① improvements.md '다음 회차에 적용'·직전 2회차 retro·report_learning.md·insights.md를 읽고 영상·리포트·포스트·제목·설명·썸네일 각각 개선 하나 이상(제목·설명·썸네일은 stats_snapshots.jsonl 24시간 조회와 직전 같은 그룹 편 근거). 리포트 운영 통계: `python3 tools/report_perf.py`(요약이 하루 넘게 지났으면 analytics-report.yml days 7 먼저), 그 숫자로 최소 하나를 바꾸고 improvements.md 근거 칸에. ② 그중 최소 하나는 직전 복기 '고친 실수'를 막는 자동 검사(tools/, chain_long.sh 등에 넣고 과거 폴더로 오탐 확인, '실수 → 검사' 표). ③ '판정 대기 실험' 조건이 찼으면 판정(채택·기각·보류 + 숫자), 채택은 SKILL로. ④ 날짜는 `python3 tools/tdays.py`, num_check FAIL이면 화면·리포트·num_check.ok로 해결. ⑤ 대본 확정 직후 `python3 tools/group_check.py narration.txt <A|B>`, `python3 tools/prev_calls_check.py <video> <리포트.md>`. 녹음 뒤 문단 수정은 `st_redo.py`. ⑥ 썸네일 SKILL V5.0 사업 시각화(`<g id="biz" data-biz>` 12% 이상 + 사업 칩 + hero), thumb_biz_check FAIL이면 합성 금지. 회사명 표기는 SKILL V4(LAES = 실스크). ⑦ 지난 예측 성적표(SKILL 3.4.1·R3 5.6): 영상 첫 단서 앞(40~90초) 성적표 문단과 list 슬라이드, 리포트 '지난 리포트 이후'에 '지난 예측 성적' 한 줄, Threads·릴스 캡션·설명란·첫 댓글에 '지난 예측(○월 ○일): 적중 a · 빗나감 b — 대표 한 줄'. 모든 시나리오에 '가능성(추정): 약 N%' + 근거 + 판정 날짜. 대기열 json도 prev_calls_check·`queue_check.py`. ⑧ 비전문가도 알아듣게(R1.5~R1.7·V3.5~V3.7): 존댓말 문단, ##는 '짧은 답'·'지난 리포트 이후'·'1부'~'6부'만, 카드·용어 목록 없이 이야기 문단, 표 상한(easy_check 기준), 글머리 목록은 6부 체크리스트만, 각 부 `> **핵심:**`, 기본 숫자는 1부 표에서 한 번, 한 문장 90자 이하. 발행 전 `python3 tools/easy_check.py <리포트.md>` EASY_OK. ⑨ 통합 인사이트(SKILL 8.0): `python3 tools/insights.py` + 댓글·요청·SNS를 함께 보고 두 아웃렛 이상을 잇는 관찰 3~5개를 insights.md에, 그 근거로 영상 대본·쇼츠·제목·썸네일·설명·고정댓글·리포트·Threads·릴스·페이스북·블로거·댓글 답글 각 지침 문장을 최소 하나씩 SKILL에서 고치고 '(통합 인사이트 MM-DD)', '지침 수정 기록' 표. 표본 3 미만은 '관찰 중'.
+- 흐름(kim-world-stock-studio 스킬, VIDEO_GUIDE_v1.md): 조사 → 리포트(EASY_OK) 발행 → 미스터리 영상·맞춤 썸네일 → check_slides·num_check·prev_calls_check·thumb_biz_check OK → video_check long·shorts → 바로 공개·첫 댓글 → 리포트 youtube_id → (요청 편이면 3-2) → 쇼츠 → Threads·인스타(릴스+카드)·페이스북(릴스+카드) social/queue(queue_check OK) → 블로거(Build and deploy 성공 뒤 blogger-guide 2-1로 그 slug 게시, 2-4로 주소 확인) → thumb_history → experiments.md → improvements.md → insights.md → SendUserFile('검증:'·'이번 회차 개선:' 줄) → 8장 복기·커밋.
+- **토큰 절약(11-09·11-10)**: TTS는 맥으로(`/home/user/kimworld-relay/tools/mac.py submit|wait|get`, kind tts, flac+timing 반환; 30분 넘게 결과 없으면 클라우드 TTS). 큰 파일·공시 원문은 grep·head로 필요한 부분만. 폴링은 백그라운드 until 루프.
+- 새 리포트가 지목한 날짜 있는 이벤트는 followups.md 후보 일정표(자동 예약 금지). 시작 때 `df -h /`와 /tmp/kws-* 정리. chain_long.sh는 백그라운드 timeout 7200000, 쇼츠 렌더·TTS·사이트 테스트와 겹치지 않게.
+- 유튜브 uploadLimitExceeded면 나머지를 끝내 두고 업로드는 백그라운드 until(30분 간격, 최대 12시간)로 재시도, 성공하면 이후 단계까지 이어서.
+
+## 5) 보고
+오늘 정규 n · 요청 n / 2(요청 후보 0순위 a · 1순위 m · 2순위 k · MSI j), 고른 종목과 순위·시급한 이유(건너뛴 종목 한 줄씩), 영상 ID, 팔로우업 답글 수, 블로거 주소와 남은 미게시 수, 지난 예측 성적, 이번 회차 개선(근거 통계·새 자동 검사·판정한 실험), 통합 인사이트와 아웃렛별 지침 수정, 다음 후보 2개. 만들 필요가 없으면 prod_check 한 줄. 보유 여부·AI 활용·회원 가입·베팅 표현 금지, 토큰 값 출력 금지.
