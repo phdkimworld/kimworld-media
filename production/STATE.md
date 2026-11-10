@@ -26,3 +26,4 @@
 | 11-09 | 하나 더 | JOBY 조비(69회차, 운영자 '레거시 성적 좋은 종목 2개 더', B그룹) 완료 | /home/claude/joby3 | 완료 · 리포트 joby-2026-11 · 롱폼 5HB8eoP2AcY · 쇼츠 유튜브 업로드 한도 초과(미게시) · SNS 대기열 7건 119fb17 · 카드 9장 · 블로거 실행 · 기록 | 11-11·12-03 판정(followups) | 11-09 16:10 |
 | 11-09 | 하나 더 | IONQ 아이온큐(70회차, 0순위, 운영자 하나 더) 완료 | /home/claude/ionq3 | 완료 · 리포트 ionq-2026-11 · 롱폼 q7ZHQ1FeMTw · 쇼츠 fsFoet-fO-k · SNS 대기열 7건 · 카드 9장 · 블로거 자동 · 기록 | 11-12·12-04 판정(followups) | 자동 루프 |
 | 11-10 | 밀린 쇼츠 | 11-09 업로드 한도 초과로 미게시: RXRX /home/claude/rxrx2/shorts/RXRX_shorts.mp4 · JOBY /home/claude/joby3 쇼츠 → 11-10 첫 점검에서 업로드 | 완료: RXRX A3Y-Tfa748Y · JOBY s6w-cgncNvY (11-10 02:36 UTC). 업로드 확인 버그로 중복 4편(OSSPI4ILUyk·c9Mo99jYBKc·GYn_lD3uoMo·RLwnFxC6m9Q) 생김 → 11-10 운영자 지시로 4편 삭제 완료 |
+| 11-10 | 요청 | LCID 루시드(72회차, 몫 11-10, 0순위) 진행 중 | /home/claude/lcid2 | 조사 시작 | - | 11-10 |
