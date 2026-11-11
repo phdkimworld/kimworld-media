@@ -129,6 +129,12 @@ def sns():
     seen = set()
     for o in items:
         if str(o.get("replyTo")) in done or str(o.get("replyTo")) in seen: continue
+        # 인스타 댓글은 인스타팀 담당(skill/instagram/INSTAGRAM.md 7장, 11-11). 20시간 안 된 것은 넘기고, 그때까지 답이 없으면 여기서 받는다(누락 방지)
+        if o.get("platform") == "instagram":
+            try:
+                age = (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.strptime(o.get("publishedAt", ""), "%Y-%m-%dT%H:%M:%S%z")).total_seconds() / 3600
+                if age < 20: R["notes"].append("인스타 댓글 1건 인스타팀 몫(20시간 대기)") if not any("인스타팀" in n for n in R["notes"]) else None; continue
+            except Exception: pass
         seen.add(str(o.get("replyTo")))
         act, kind = classify(o.get("text", ""), o.get("kind") == "followup")
         base = {"ch": o.get("platform"), "kind": kind, "replyTo": o.get("replyTo"), "author": o.get("author"),
