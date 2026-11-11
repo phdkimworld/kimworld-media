@@ -2396,6 +2396,27 @@
    ],
    "video": "t3iCYCzmz5A",
    "shorts": "yOkGCQ0PYSk"
+  },
+  {
+   "t": "rum",
+   "date": "2026.11.11",
+   "layout": "custom",
+   "palette": "emerald-orange",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "매출 +290%인데 / 8월 고점 뒤 주가 -50.0%(파랑) 카드 / 137억 달러 주문, 돈은? + 재생 화면·GPU 격자·서버 랙·250MW 번개",
+    "실적 첫날 +10% 넘은 / 한 달 뒤 3/3 + 같은 그림"
+   ],
+   "video": "JT4ubTIjjFM",
+   "shorts": "ivLiWOth6FU"
   }
  ]
 }
