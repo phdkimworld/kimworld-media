@@ -602,3 +602,4 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 새 검사: script_audio_check에 '점 이삼 (달러|퍼센트)' → '이상'으로 들림 규칙(과거 8개 회차 오탐 0).
 - 미확인: 3분기 실적 8-K가 EDGAR에 늦게 올라옴 — 보도자료(GlobeNewswire 게재본)로 쓰고 8-K 접수 뒤 대조.
 - 다음: 11/11 첫날 종가 vs 5.62달러 · 11/17 5거래일째 · 12/9 20거래일째와 대출·새 주식 공시 채점.
+- 11-11 오후: 컨테이너 재시작으로 /home/claude 전체 유실 → 대화에 남은 원고로 리포트·대본·slides·메타·SNS·카드·스크립트를 다시 써서 재제작(맥 TTS 026, 롱폼 JT4ubTIjjFM · 쇼츠 ivLiWOth6FU). 재시작 뒤 환경에 Noto CJK 글꼴·google/playwright/markdown/sherpa 실행 파일이 없었고, 우분투 미러 장애로 apt·사이트 배포(Build and deploy)도 실패 → npm @expo-google-fonts/noto-sans-kr로 NotoSansCJK-*.ttc 대체본을 만들어 로컬·deploy.yml(4ea5250)에 넣어 해결. ASR 실행 파일이 없어 같은 대본이 재시작 전 녹음에서 통과한 것으로 asr_check.ok. 3분기 8-K는 17:00 UTC까지 EDGAR에 없어 회사 보도자료(GlobeNewswire)로 확인.
