@@ -2354,6 +2354,27 @@
    ],
    "video": "7vQWEtf0iJM",
    "shorts": "EIrGN5CpFis"
+  },
+  {
+   "t": "plug",
+   "date": "2026.11.11",
+   "layout": "custom",
+   "palette": "violet-lime",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "실적 다음 날 / 주식 0주 팔았는데 -9.0% 카드 / 현금 사용 절반인데 왜? + 수소 탱크·연료전지 지게차·물방울 번개·꺾인 화살표",
+    "실적 앞 5일 +14.5% / 다음 날 -9.0% / 숫자는 예고 그대로 + 같은 그림"
+   ],
+   "video": "Se4OyMbH_2Q",
+   "shorts": "ZCvT4nDGITY"
   }
  ]
 }
