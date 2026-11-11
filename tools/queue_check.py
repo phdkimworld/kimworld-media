@@ -113,5 +113,9 @@ for f in sys.argv[1:]:
             if not any(os.path.exists(base.replace(x, y) + suf) for x, y in (('/queue/', '/queue/'), ('/queue/', '/posted/'), ('/posted/', '/queue/'))):
                 bad.append(f'{f}: {what} 파일 {os.path.basename(base + suf)} 없음 — 인스타·페이스북은 릴스와 카드뉴스 둘 다')
 
+# 가독성(운영자 지시 2026-11-11 "모든 컨텐츠에 가독성 개선 지침"): SNS 글도 화살표·가운뎃점 나열·기호 계산·긴 문장 검사(tools/plain_check.py)
+import subprocess
+pc = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plain_check.py')] + [f for f in sys.argv[1:] if f.endswith('.json')], capture_output=True, text=True).stdout
+if 'PLAIN_FAIL' in pc: bad += ['가독성(plain_check): ' + l.strip() for l in pc.splitlines() if l.startswith(('FAIL', '   '))]
 for b in bad: print('BAD', b)
 print('QUEUE_OK' if not bad else f'QUEUE_FAIL {len(bad)}'); sys.exit(1 if bad else 0)
