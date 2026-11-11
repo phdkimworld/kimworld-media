@@ -68,3 +68,5 @@
 사이트 저장소에 만든 것: `scripts/yt_shop.py`·`.github/workflows/yt-shop.yml`·`data/yt_shop.yaml`(선택·후보), `tools/midroll/make_shop_card.py`(영상 속 카드), `make_slide_video.py` `"shop"` 지원·`check_slides.py` SHOP 검사, 쿠팡 통계 '유튜브' 칸(D1 0030)·비공개 요약 `yt_by_cat`. 미디어 저장소: `tools/yt_api_upload.py`가 `paid_promo`면 유료 프로모션 표시.
 
 다음 제작 세션이 할 일: SKILL V3.9 절차대로 첫 회차 적용 → 카드·설명란·고정댓글·유료 프로모션 표시가 실제 영상에 들어갔는지 확인하고 이 항목을 '처리(첫 적용 회차)'로.
+
+- F5 추가(2026-11-11 운영자 "짧게 여러번으로 하고 지침 수정"): 쿠팡 짧은 띠 — slides.json `"shop_strip"`(28자 이하, '설명란' 포함). 1/3·2/3·카드 직전 6초씩 자동 배치(make_slide_video.py), check_slides.py가 문구 검사. SKILL V3.9 4.5번.
