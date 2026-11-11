@@ -5,6 +5,8 @@
 #   (쇼츠 폴더가 있으면) shorts_check → 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
 # 반드시 세션 도구의 '백그라운드 실행(완료 알림)'으로 부른다. nohup 만으로 띄우고 끝내지 않는다.
 set -u
+# 합성의 numpy 효과음 섞기가 다른 제작과 겹치면 OpenBLAS 스레드가 서로 기다려 50분 넘게 멈춤(74회차 PLUG, 평소 4분) → 한 스레드로
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 V=$1; S=${2:-}
 until grep -q "^done" "$V/tts.log" 2>/dev/null; do
   grep -q "Traceback\|Error" "$V/tts.log" 2>/dev/null && { echo "CHAIN_FAIL tts"; tail -5 "$V/tts.log"; exit 1; }
