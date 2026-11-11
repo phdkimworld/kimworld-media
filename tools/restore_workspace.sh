@@ -17,4 +17,16 @@ ln -sfn $M $W/kimworld-media
 ln -sf $M/tools/wait_live.sh $W/bin/wait_live.sh
 ln -sf $M/tools/yt_api_upload.py $W/yt_api_upload.py
 [ -f $W/bin/hero_check.py ] || printf 'import sys\nprint("HERO_SKIP (도구 유실, 눈으로 확인)")\n' > $W/bin/hero_check.py
+# 파이썬 패키지(재시작 뒤 빠져 있던 것, 76회차)
+pip install -q google-auth google-auth-oauthlib google-api-python-client playwright markdown pyyaml jinja2 fonttools >/dev/null 2>&1 || true
+# 한글 글꼴: apt 먼저, 미러 장애면 npm Noto Sans KR 로 같은 파일 이름을 만든다(사이트 deploy.yml 과 같은 방식)
+if [ ! -f /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc ]; then
+  apt-get install -y -q fonts-noto-cjk >/dev/null 2>&1 || true
+fi
+if [ ! -f /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc ]; then
+  mkdir -p /tmp/fnt /usr/share/fonts/opentype/noto && (cd /tmp/fnt && npm pack -q @expo-google-fonts/noto-sans-kr@0.4.4 >/dev/null && tar xzf *.tgz) && python3 -c "
+from fontTools.ttLib import TTFont, TTCollection
+for w,f in [('Regular','400Regular/NotoSansKR_400Regular'),('Medium','500Medium/NotoSansKR_500Medium'),('Bold','700Bold/NotoSansKR_700Bold'),('Black','900Black/NotoSansKR_900Black')]:
+    c=TTCollection(); src='/tmp/fnt/package/'+f+'.ttf'; c.fonts=[TTFont(src),TTFont(src)]; c.save('/usr/share/fonts/opentype/noto/NotoSansCJK-'+w+'.ttc')" || echo "글꼴 대체 실패"
+fi
 echo "RESTORED /home/claude -> $W"
