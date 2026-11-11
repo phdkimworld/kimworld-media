@@ -23,7 +23,7 @@ def episodes():
         ids = re.findall(r'· ([\w-]{11}) · 쇼츠 ([\w-]{11}) \|\s*$', l)
         if not ids: continue
         name = m.group(3).strip()
-        rows.append({'no': int(m.group(1)), 'date': m.group(2), 'name': name, 'tk': re.match(r'[A-Z]+', name).group(0),
+        rows.append({'no': int(m.group(1)), 'date': m.group(2), 'name': name, 'tk': (re.search(r'[A-Z]{2,}', name) or re.match(r'', name)).group(0),
                      'group': m.group(4), 'long': ids[0][0], 'short': ids[0][1],
                      'kind': '요청' if '요청' in name else ('후속' if '업데이트' in name else '신규')})
     return rows[-N:]

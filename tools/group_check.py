@@ -26,5 +26,8 @@ if _a.returncode: bad += [l for l in _a.stdout.split('\n') if l.startswith('AUDI
 # 녹음 전 긴 금액 줄임(71회차 IREN, 70회차 IONQ '사억 삼천이백만' ASR 뭉개짐 → splice 두 번)
 _n = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'num_speak_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _n.returncode: bad += [l for l in _n.stdout.split('\n') if l.startswith('NUMSPEAK ')]
+# 'AI 느낌' 틀(문단 끝 질문 반복·'그렇다면'·상투어) — SKILL 8.0.2, 74회차 PLUG
+_f = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), sys.argv[1]], capture_output=True, text=True)
+if _f.returncode: bad += [l for l in _f.stdout.split('\n') if l.startswith('AIFEEL ')]
 print('\n'.join(bad) if bad else f'GROUP_OK {g} {kb:.2f}KB 안내 p{guide[0]+1}')
 sys.exit(1 if bad else 0)
