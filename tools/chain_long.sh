@@ -37,6 +37,7 @@ if [ -f raw_timing.json ] && [ ! -f asr_check.ok ]; then
 fi
 python3 /home/claude/slidekit/check_slides.py . > check_slides.log 2>&1; tail -1 check_slides.log | grep -q OK || { echo "CHAIN_FAIL check_slides"; grep -v "^ad " check_slides.log | tail -8; exit 1; }
 python3 /home/user/kimworld-media/tools/still_check.py . || { echo "CHAIN_FAIL still_check(합성 전 정지 화면 위험)"; exit 1; }
+python3 /home/user/kimworld-media/tools/poll_sync_check.py . "$S" || { echo "CHAIN_FAIL poll_sync_check(투표 보기 25바이트·롱폼=쇼츠, 72회차 LCID 교훈)"; exit 1; }
 R=$(ls ../report/*-20*.md 2>/dev/null | head -1)
 if [ -n "$R" ]; then
   python3 /home/user/kimworld-media/tools/num_check.py slides.json "$R" > num_check.log 2>&1 || { echo "CHAIN_FAIL num_check(화면 숫자가 리포트에 없음·계산 불일치)"; cat num_check.log | tail -10; exit 1; }
