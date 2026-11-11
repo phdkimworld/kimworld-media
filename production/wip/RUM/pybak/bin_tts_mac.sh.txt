@@ -1,0 +1,14 @@
+#!/bin/bash
+set -u
+W=/home/claude/rum; V=$W/video; SH=$W/shorts; M=/home/user/kimworld-relay/tools/mac.py
+cp $SH/narration.txt $W/kit/shorts_narration.txt
+echo '{"id":"rum_tts2","tasks":[{"id":"raw","kind":"tts","path":"$IN/narration.txt","speaker":6,"speed":1.15,"steps":10},{"id":"shorts_raw","kind":"tts","path":"$IN/shorts_narration.txt","speaker":6,"speed":1.15,"steps":10}]}' > $V/batch.json
+cp $V/narration.txt $V/narration.submitted.txt
+ID=$(python3 $M submit $V/batch.json $V/narration.txt $W/kit/shorts_narration.txt | tail -1); echo "id $ID"; echo $ID > $V/mac_id
+bash /home/user/kimworld-media/tools/wip_save.sh RUM /home/claude/rum "맥 TTS $ID" >/dev/null 2>&1
+python3 $M wait $ID --timeout 1800 > $V/mac_wait.log 2>&1 || { echo "MAC_TIMEOUT"; exit 2; }
+cd $V && python3 $M get $ID raw.flac $V/raw.flac && python3 $M get $ID raw_timing.json $V/raw_timing.json
+cd $SH && python3 $M get $ID shorts_raw.flac $SH/shorts_raw.flac && python3 $M get $ID shorts_raw_timing.json $SH/shorts_raw_timing.json
+ffmpeg -loglevel error -y -i $V/raw.flac $V/raw.wav && ffmpeg -loglevel error -y -i $SH/shorts_raw.flac $SH/shorts_raw.wav
+echo "mac kwa $ID" > $V/tts.log; echo done >> $V/tts.log; echo "mac kwa $ID" > $SH/tts.log; echo done >> $SH/tts.log
+ls -la $V/raw.wav $SH/shorts_raw.wav; echo TTS_DONE

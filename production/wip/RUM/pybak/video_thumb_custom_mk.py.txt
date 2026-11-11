@@ -1,0 +1,61 @@
+import asyncio, os
+D = '/home/claude/rum/video/thumb/custom'
+BGC = "#07140f"
+MG, SK = "#fb923c", "#34d399"
+
+def biz(x, y, s, op=1.0):
+    play = f'<rect x="20" y="40" width="330" height="220" rx="26" fill="#0f1a2e" stroke="{MG}" stroke-width="10"/><path d="M 150 100 L 150 200 L 240 150 Z" fill="{MG}"/>'
+    chips = ''
+    for r in range(3):
+        for c in range(3):
+            xx = 400 + c * 95; yy = 40 + r * 75
+            chips += f'<rect x="{xx}" y="{yy}" width="80" height="60" rx="8" fill="#0f1a2e" stroke="{SK}" stroke-width="5"/><text x="{xx+40}" y="{yy+40}" text-anchor="middle" font-size="24" font-weight="900" fill="{SK}" font-family="sans-serif">GPU</text>'
+    racks = ''
+    for k in range(2):
+        xx = 60 + k * 190
+        racks += f'<rect x="{xx}" y="300" width="160" height="260" rx="10" fill="#0f1a2e" stroke="{SK}" stroke-width="8"/>'
+        for j in range(6):
+            racks += f'<rect x="{xx+18}" y="{320+j*38}" width="124" height="22" rx="4" fill="{SK}" opacity=".55"/><circle cx="{xx+130}" cy="{331+j*38}" r="5" fill="{MG}"/>'
+    bolt = f'<path d="M 520 300 L 460 430 L 520 430 L 490 560 L 600 400 L 535 400 L 575 300 Z" fill="{MG}"/><text x="530" y="610" text-anchor="middle" font-size="44" font-weight="900" fill="{MG}" font-family="sans-serif">250MW</text>'
+    return f'<g id="biz" data-biz="동영상 플랫폼 + GPU 클라우드: 재생 화면 + 그래픽 칩 격자 + 서버 랙 + 데이터센터 전력" opacity="{op}" transform="translate({x},{y}) scale({s})">{play}{chips}{racks}{bolt}</g>'
+
+HEAD = '''<!doctype html><html><head><meta charset="utf-8"><style>
+html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:%s;font-family:"Noto Sans CJK KR",sans-serif}
+.t{position:absolute;font-weight:900;line-height:1;white-space:nowrap;text-shadow:0 6px 18px rgba(0,0,0,.9)}
+.card{position:absolute;border-radius:22px;background:rgba(11,16,32,.93);border:5px solid;text-align:center;font-weight:900}
+.namebar{position:absolute;display:flex;align-items:center;gap:18px;white-space:nowrap}
+.name-tag{font-weight:900;font-size:84px;line-height:1;color:#fff;letter-spacing:-3px;text-shadow:0 6px 18px rgba(0,0,0,.9)}
+.ticker-tag{font-weight:900;font-size:64px;line-height:1;padding:8px 18px;border-radius:14px;color:#0b1020;background:%s;letter-spacing:1px}
+.biz-chip{position:absolute;font-weight:900;font-size:46px;color:#0b1020;background:%s;padding:10px 22px;border-radius:12px;white-space:nowrap}
+</style></head><body><svg width="1280" height="720" style="position:absolute;left:0;top:0"><defs>
+<radialGradient id="r1" cx="80%%" cy="40%%" r="55%%"><stop offset="0" stop-color="#047857" stop-opacity=".55"/><stop offset="1" stop-color="%s" stop-opacity="0"/></radialGradient>
+<radialGradient id="r2" cx="5%%" cy="100%%" r="60%%"><stop offset="0" stop-color="#c2410c" stop-opacity=".4"/><stop offset="1" stop-color="%s" stop-opacity="0"/></radialGradient></defs>
+<rect width="1280" height="720" fill="%s"/><rect width="1280" height="720" fill="url(#r1)"/><rect width="1280" height="720" fill="url(#r2)"/>''' % (BGC, SK, MG, BGC, BGC, BGC)
+NB = '<div class="namebar" style="left:40px;top:30px"><span class="name-tag">럼블</span><span class="ticker-tag">RUM</span></div>'
+a = HEAD + biz(700, 175, .74) + '</svg>' + NB + '''
+<div class="biz-chip" style="left:720px;top:100px">GPU 클라우드</div>
+<div class="t" style="left:44px;top:160px;font-size:78px;color:#fff;letter-spacing:-4px">매출 +290%%인데</div>
+<div class="card" style="left:40px;top:285px;width:640px;height:380px;border-color:%s">
+<div style="position:absolute;left:0;top:26px;width:640px;font-size:50px;color:#a7f3d0">8월 고점 뒤 주가</div>
+<div style="position:absolute;left:0;top:108px;width:640px;font-size:158px;color:#60a5fa;letter-spacing:-6px;line-height:1">-50.0%%</div>
+<div style="position:absolute;left:0;top:285px;width:640px;font-size:54px;color:#fed7aa">137억 달러 주문, 돈은?</div></div>
+</body></html>''' % (MG,)
+b = HEAD + biz(20, 215, .6) + '</svg>' + NB + '''
+<div class="biz-chip" style="left:40px;top:150px">GPU 클라우드</div>
+<div class="t" style="left:600px;top:180px;font-size:76px;color:#a7f3d0;letter-spacing:-4px">실적 첫날 +10%% 넘은</div>
+<div class="t" style="left:600px;top:300px;font-size:84px;color:#fff;letter-spacing:-4px">한 달 뒤</div>
+<div class="t" style="left:600px;top:420px;font-size:150px;color:%s;letter-spacing:-5px">3/3</div>
+</body></html>''' % MG
+bg = HEAD + biz(300, 80, .95, .85) + '</svg></body></html>'
+for n, h in (('a', a), ('b', b), ('bg', bg)):
+    open(os.path.join(D, n + '.html'), 'w').write(h)
+
+async def shot():
+    from playwright.async_api import async_playwright
+    async with async_playwright() as p:
+        br = await p.chromium.launch(); pg = await br.new_page(viewport={'width': 1280, 'height': 720})
+        for n in ('a', 'b', 'bg'):
+            await pg.goto('file://' + os.path.join(D, n + '.html')); await pg.wait_for_timeout(300)
+            await pg.screenshot(path=os.path.join(D, n + '.png'))
+        await br.close()
+asyncio.run(shot())

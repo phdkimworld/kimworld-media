@@ -1,0 +1,1168 @@
+{
+ "ticker": "RUM",
+ "name": "럼블",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "경제지표 해설서 · 링크는 설명란에",
+ "midroll": "../kit/rum_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/rum_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "RUM · 럼블 · 3분기 실적 날",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "매출 3.9배",
+       "tone": "white"
+      },
+      {
+       "at": 0.3,
+       "text": "주가는 -50%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 매출(1년 전 대비)",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+290%",
+       "label": "9,658만 달러",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "회사 기준 이익\n**처음으로 흑자**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.10 종가",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$5.11",
+       "label": "8월 25일 $10.23의 절반",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "8월에 받은 주문",
+     "stats": [
+      {
+       "at": 4,
+       "big": "137억 달러",
+       "label": "6년 · GPU 서비스",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "무엇이 주가를\n**반으로** 만들었나",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**첫 추적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "동영상에서 클라우드로",
+     "stats": [
+      {
+       "at": 1,
+       "big": "럼블",
+       "label": "RUM Group Inc. · 나스닥 RUM",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실시간 인기 종목",
+     "stats": [
+      {
+       "at": 2,
+       "big": "1위",
+       "label": "11월 11일 아침",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "오늘의 순서",
+     "items": [
+      {
+       "no": "1",
+       "text": "실적 날 아침의 기록",
+       "sub": "8월 고점부터 오늘까지",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "실적 16번의 갈림길",
+       "sub": "첫날과 20거래일 뒤",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2022년 9월",
+     "stats": [
+      {
+       "at": 1,
+       "big": "나스닥 상장",
+       "label": "동영상 플랫폼으로 시작",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2026.06.17",
+     "stats": [
+      {
+       "at": 2,
+       "big": "노던데이터 인수",
+       "label": "이름을 럼 그룹으로",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "엔비디아 그래픽 칩(GPU)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 2만 2천 개",
+       "label": "계산 능력을 빌려주는 클라우드",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 클라우드(퀘이크) 매출",
+     "stats": [
+      {
+       "at": 4,
+       "big": "6,820만 달러",
+       "label": "전체 매출의 70% 이상",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "큰 주주\n**테더**",
+     "at": 5
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "2025년 테더 투자",
+     "stats": [
+      {
+       "at": 7,
+       "big": "7억 7,500만 달러",
+       "label": "스테이블코인 회사",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "처음 다루는 종목\n**지난 성적표 없음**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "상장 뒤 정기 실적",
+     "stats": [
+      {
+       "at": 1,
+       "big": "16번",
+       "label": "첫날과 20거래일 뒤를 모두 셈",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "기록표는\n**홈페이지에 무료로**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**8월 후반의 두 주**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "08.10 2분기 실적 날 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$6.21",
+       "label": "장 마감 뒤 발표",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "다음 날",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+11.4%",
+       "label": "08.11 · $6.92",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "그날 나온 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "노던데이터 인수 완료",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "첫 다음 분기 매출 전망",
+       "sub": "8,700만~9,300만 달러",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "08.24 아침\n**더 큰 공시**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "조지아주 마이스빌",
+     "stats": [
+      {
+       "at": 1,
+       "big": "GPU 서비스 계약",
+       "label": "미국 클라우드 손님",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "6년 동안",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 137억 달러",
+       "label": "세 번에 나눠 구매",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "08.25 종가 · 올해 최고",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$10.23",
+       "label": "하루 +9.3%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "2분기 실적 날 종가 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+64.7%",
+       "label": "$6.21 → $10.23",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**주문서 뒤쪽 한 문장**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "source",
+     "kind": "8-K 위험 항목",
+     "orig": "We do not currently have financing to fund these expenditures",
+     "tr": "지금은 이 지출을 감당할 자금이 없다",
+     "src": "RUM Group 8-K",
+     "date": "2026.08.24",
+     "at": 1
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "자금을 못 구해도\n**계약 의무는 그대로**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "손님 워런트",
+     "stats": [
+      {
+       "at": 4,
+       "big": "5,080만 주",
+       "label": "최대 5,080만 8,408주 · 한 주 1센트",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주문을 살 때마다\n**나눠서 생기는 권리**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "그 뒤 석 달",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "8.25 → 11.10",
+     "stats": [
+      {
+       "at": 1,
+       "big": "-50.0%",
+       "label": "$10.23 → $5.11",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "같은 기간(8.25 → 11.10)",
+     "items": [
+      {
+       "no": "1",
+       "text": "아이렌(IREN)",
+       "sub": "-53.3%",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "코어위브(CRWV)",
+       "sub": "-44.7%",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "네비우스(NBIS)",
+       "sub": "-39.6%",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종이 함께 무너졌다\n**럼블은 한가운데**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**오늘 아침 실적 자료**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 매출",
+     "stats": [
+      {
+       "at": 1,
+       "big": "9,658만 달러",
+       "label": "1년 전보다 +290%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "회사 전망 위쪽 끝(9,300만 달러)보다",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+3.8%",
+       "label": "8월에 낸 전망 8,700만~9,300만",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "GPU 가동률",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 85%",
+       "label": "약 2만 2천 개",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "동영상 럼블 매출",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 2,838만 달러",
+       "label": "1년 전보다 360만 달러 증가",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "동영상 쪽\n**비용 다시 짜기**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "여기까지는\n**좋은 소식**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "결이 다른\n**문장 두 개**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "8월 자료",
+     "stats": [
+      {
+       "at": 2,
+       "big": "250MW",
+       "label": "2027년 목표 설비",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "source",
+     "kind": "3분기 실적 자료",
+     "orig": "a certain portion ... may be pushed out beyond 2027",
+     "tr": "일부가 2027년 뒤로 밀릴 수 있다",
+     "src": "RUM Group 실적 발표",
+     "date": "2026.11.11",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "주식 등록",
+     "stats": [
+      {
+       "at": 4,
+       "big": "자동 등록 방식",
+       "label": "이번 주 전환 예정",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "등록은 판매가 아니다\n**길을 열어 둔 것**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "현금",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "9월 말 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "1억 3,440만 달러",
+       "label": "비트코인 790만 달러 별도",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "석 달 사이",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 6,890만 달러",
+       "label": "6월 말 2억 327만 달러에서 감소",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "4분기 매출 전망 중간값",
+     "stats": [
+      {
+       "at": 3,
+       "big": "9,100만 달러",
+       "label": "3분기 실제 9,658만 달러보다 낮음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 순손실",
+     "stats": [
+      {
+       "at": 4,
+       "big": "8,985만 달러",
+       "label": "1년 전 1,626만 달러",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    1
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "실적 날 첫 반응은\n**한 달을 어떻게 갈랐나**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "날짜별 숫자는\n**고정 댓글의 리포트 표**",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "깔끔하게\n**갈렸다**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "첫날 10% 넘게 오른 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3/3",
+       "label": "20거래일 뒤에도 발표 전보다 위",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "첫날 0~10% 오른 날",
+     "stats": [
+      {
+       "at": 2,
+       "big": "0/5",
+       "label": "20거래일 뒤 모두 발표 전보다 아래",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "16번 20거래일 뒤 중앙값",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-6.6%",
+       "label": "가운데 값",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "첫날 내린 7번 중 한 달 뒤 위",
+     "stats": [
+      {
+       "at": 0,
+       "big": "2번",
+       "label": "2023.05 · 2024.11",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "올해 두 번",
+     "left": {
+      "at": 1,
+      "head": "2026.03.05",
+      "big": "-12.5%",
+      "lines": [
+       "20거래일 뒤 -11.2%"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 1,
+      "head": "2026.05.14",
+      "big": "-11.8%",
+      "lines": [
+       "20거래일 뒤 -12.4%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "그다음 2026.08.10",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+11.4%",
+       "label": "20거래일 뒤 +35.1%",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "크게 오른 세 번의\n**공통점**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2025.05.08 · 엘살바도르 정부 클라우드 계약",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+19.5%",
+       "label": "20거래일 뒤 +18.4%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2025.11.10 · 같은 날 노던데이터 인수 발표",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+11.4%",
+       "label": "20거래일 뒤 +22.2%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "2026.08.10 · 인수 완료, 첫 분기 전망",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+11.4%",
+       "label": "20거래일 뒤 +35.1%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "세 번 모두\n**새 사업의 크기가 처음 나온 날**",
+     "at": 4,
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "조금 오른 다섯 번은\n**매출 기록이 머리기사**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "반토막의 이유\n**두 갈래**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "가설 1",
+     "stats": [
+      {
+       "at": 1,
+       "big": "업종 매도",
+       "label": "인공지능 데이터센터 주식 전체",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "비슷한 회사들(8.25 → 11.10)",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-39.6~-53.3%",
+       "label": "네비우스 · 코어위브 · 아이렌",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "11월 5일 하루",
+     "left": {
+      "at": 3,
+      "head": "럼블",
+      "big": "-8.1%",
+      "lines": [
+       "덜 내림"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 3,
+      "head": "반도체 ETF",
+      "big": "-12.1%",
+      "lines": [
+       "SOXX"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "이 설명이 맞다면\n**럼블만의 문제는 작다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "가설 2",
+     "stats": [
+      {
+       "at": 0,
+       "big": "돈의 출처",
+       "label": "주문은 6년 매출, 설비 돈은 먼저",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "대출일까\n**새 주식일까**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "손님 워런트",
+     "stats": [
+      {
+       "at": 3,
+       "big": "5,080만 주",
+       "label": "최대 · 한 주 1센트",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "8월 6일 A주 2억 7,633만 주 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 18%",
+       "label": "다 생겼을 때",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "반론",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "GPU 가동률",
+     "stats": [
+      {
+       "at": 6,
+       "big": "약 85%",
+       "label": "처음 흑자 · 거의 다 팔림",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "하나만 고르기는\n**어렵다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "업종이 큰 흐름\n**자금 질문이 그 위에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "대출·새 주식 시나리오와 가능성\n**리포트에 정리**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "shop": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지켜볼 것\n**날짜로**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.11 종가 기준선",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$5.62",
+       "label": "전날 $5.11보다 +10%",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 2,
+       "big": "12.09",
+       "label": "20번째 거래일",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "12월 9일까지",
+     "items": [
+      {
+       "no": "1",
+       "text": "마이스빌 대출 확정",
+       "sub": "대출·리스 계약 공시",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "새 주식 판매",
+       "sub": "회사 발행 공시",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    1,
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "매출은 커졌다\n**시장은 지을 돈을 묻는다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "체크리스트는\n**고정 댓글**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "영상은 왜\n**리포트는 다음 한 달**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "럼블 주가 반토막, 가장 큰 이유는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "업종 전체 매도"
+      },
+      {
+       "at": 3,
+       "text": "설비 지을 돈"
+      },
+      {
+       "at": 4,
+       "text": "손님 주식 권리"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 3,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

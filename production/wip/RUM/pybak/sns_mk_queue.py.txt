@@ -1,0 +1,45 @@
+import json, sys, datetime, os
+T0 = datetime.datetime.fromisoformat(sys.argv[1])
+at = lambda h: (T0 + datetime.timedelta(hours=h)).isoformat(timespec='seconds')
+S = "rum-2026-11"; U = f"https://drkimworld.com/r/{S}/"
+Q = '/home/claude/site-rum/social/queue'; os.makedirs(Q, exist_ok=True)
+cards = [f"static/social/{S}/cards/card-0{i}.jpg" for i in range(1, 10)]
+POLL4 = ["둘 다 아직", "대출만 확정", "새 주식만 판매", "대출·새 주식 함께"]
+POLLTXT = "① 대출도 새 주식도 아직 ② 대출만 확정 ③ 새 주식만 판매 ④ 대출 확정, 새 주식도"
+DIS = "※ 공개 공시와 시세를 정리한 교육용 분석이며 매수·매도 권유가 아닙니다"
+TG = "텔레그램 @drkimworld"
+AL = "실시간 알림은 인스타그램 김박사 월드 채널 참여(https://instagram.com/drkimworld) 또는 홈페이지(https://drkimworld.com)에서 앱 설치"
+IG = "🔔 실시간 알림: 프로필의 채널 참여 또는 프로필 링크에서 앱 설치"
+F = {}
+F[f"{S}.json"] = {
+ "text": "럼블(RUM). 3분기 매출이 1년 전보다 290% 늘었다고 발표한 아침, 전날 종가는 8월 고점의 절반이었다.\n\n숫자로 보면:\n· 8월 25일 고점 뒤 주가 -50.0%(5.11달러)\n· 8월에 받은 GPU 주문 약 137억 달러, 6년짜리\n· 같은 공시에 '지금은 이 지출을 감당할 자금이 없다'\n\n12월 9일까지 럼블이 마이스빌을 지을 대출을 확정할까, 새 주식을 팔까?",
+ "channels": ["threads"], "poll": POLL4,
+ "replies": [{"text": f"투표하신 시나리오의 판정 기준과 가능성 구간은 리포트 5부 표에 있다. 상장 뒤 실적 16번의 첫날과 20거래일 뒤는 3부 기록표에 정리했다.\n{U}\n\n{AL}\n\n※ 공개 자료를 정리한 교육용 분석이며 매수·매도 권유가 아님"}],
+ "publish_at": at(0.05), "topic_tag": "주식"}
+F[f"{S}-th2.json"] = {
+ "text": "럼블(RUM)이 8월에 받은 주문은 약 137억 달러였다. 그 공시 뒤쪽에는 이런 문장이 있었다. 지금은 이 지출을 감당할 자금이 없고, 계약 의무에는 자금 조달 조건이 없다.\n\n손님은 럼블 주식 최대 5,080만 8,408주를 한 주 1센트에 살 권리도 받는다. 8월 초 A주의 약 18%다.\n\n주가 반토막의 가장 큰 이유는? 업종 전체 매도 / 설비 지을 돈 / 손님 주식 권리 중 하나만 댓글로.",
+ "channels": ["threads"], "threads_media": {"paths": cards}, "topic_tag": "주식",
+ "replies": [{"text": f"8월 고점 뒤 같은 업종 네 종목과 나란히 놓은 비교표는 리포트 2부에 있다.\n{U}?utm_source=threads&utm_medium=social&utm_campaign={S}\n\n{AL}"}],
+ "publish_at": at(2)}
+F[f"{S}-th3.json"] = {
+ "text": "럼블(RUM)은 2022년 상장 뒤 실적을 16번 냈다.\n\n첫날 10% 넘게 오른 세 번은 20거래일 뒤에도 모두 발표 전보다 높았다. 0~10% 오른 다섯 번은 모두 낮았다. 크게 오른 세 번은 새 사업의 크기가 처음 나온 날이었다.\n\n이번 3분기 실적 날 종가는 5.62달러 위에서 끝날까? 그렇게 보는 근거 하나만 댓글로.",
+ "channels": ["threads"], "topic_tag": "주식",
+ "replies": [{"text": f"실적 16번의 날짜별 숫자는 리포트 3부 기록표에 정리했다.\n{U}?utm_source=threads&utm_medium=social&utm_campaign={S}\n\n{AL}\n{TG}"}],
+ "publish_at": at(5)}
+cap_body = "· 3분기 매출 9,658만 달러, 1년 전보다 290% 증가\n· 8월 25일 고점에서 11월 10일까지 주가 -50.0%\n· 같은 기간 아이렌 -53.3%, 코어위브 -44.7%\n\n12월 9일까지 여러분은 몇 번? 댓글에 번호 하나\n" + POLLTXT
+F[f"{S}-cards.json"] = {
+ "text": f"📊 7장 기록과 8장 시나리오까지 넘겨 보세요 👉\n\n실시간 인기 종목 1위, 럼블(RUM) 첫 리포트입니다.\n{cap_body}\n\n실적 16번 기록표는 무료 리포트에 있습니다. 프로필 링크(drkimworld.com) 첫 화면에서 'RUM' 바로 보기\n🔖 저장해 두고 12월 9일 20거래일째에 다시 보세요\n{IG}\n\n{DIS}\n\n#럼블 #RUM #GPU클라우드 #데이터센터 #미국주식\n{TG}",
+ "channels": ["instagram"], "media": {"type": "carousel", "paths": cards}, "publish_at": at(0.1)}
+F[f"{S}-igreels.json"] = {
+ "text": f"매출 +290% 실적 아침인데 주가는 8월 고점의 절반. 럼블(RUM), 137억 달러 주문을 지을 돈은 어디서 올까?\n\n동영상 플랫폼에서 GPU 클라우드 회사로 바뀐 럼블입니다.\n{cap_body}\n\n실적 16번 기록표는 무료 리포트에 있습니다. 프로필 링크(drkimworld.com) 첫 화면에서 'RUM' 바로 보기\n🔖 저장해 두고 12월 9일 20거래일째에 다시 보세요\n{IG}\n\n{DIS}\n\n#럼블 #RUM #GPU클라우드 #데이터센터 #미국주식\n{TG}",
+ "channels": ["instagram"], "media": {"type": "reels", "path": f"static/social/{S}/RUM_shorts.mp4", "cover": f"static/social/{S}/cover.jpg"}, "publish_at": at(3)}
+fb_reels = f"매출 +290% 실적 아침인데 주가는 8월 고점의 절반. 럼블(RUM), 137억 달러 주문을 지을 돈은 어디서 올까?\n\n동영상 플랫폼에서 GPU 클라우드 회사로 바뀐 럼블입니다. 8월에 약 137억 달러 GPU 주문을 받았지만, 같은 공시에 '지금은 이 지출을 감당할 자금이 없다'는 문장이 있었습니다. 고점 뒤 비슷한 데이터센터 주식도 40~53% 내렸습니다.\n\n{DIS}\n답: 리포트 3부 '실적 16번, 첫날과 20거래일 뒤' 기록표\n이 리포트에서 확인할 수 있는 것: 실적 16번 기록표(3부), 업종 비교표(2부), 돈의 흐름 표(5부)\n무료 리포트: {U}?utm_source=facebook&utm_medium=social&utm_campaign={S}&utm_content=reels_caption\n{AL}\n\n#럼블 #RUM #김박사월드"
+F[f"{S}-reels.json"] = {
+ "text": fb_reels, "channel_text": {"facebook": fb_reels}, "poll": ["업종 전체 매도", "설비 지을 돈", "손님 주식 권리"],
+ "replies": [{"text": f"럼블 실적 16번의 첫날과 20거래일 뒤를 무료 리포트 3부에 정리했습니다.\n{U}?utm_source=facebook&utm_medium=social&utm_campaign={S}&utm_content=reels_comment"}],
+ "channels": ["facebook"], "media": {"type": "reels", "path": f"static/social/{S}/RUM_shorts.mp4", "cover": f"static/social/{S}/cover.jpg"}, "publish_at": at(0.15)}
+fb_cards = f"럼블(RUM) 매출 +290%인데 주가는 8월 고점의 절반. 9장 넘겨 보기\n\n{cap_body}\n\n이 리포트에서 확인할 수 있는 것: 실적 16번 기록표(3부), 업종 비교표(2부), 돈의 흐름 표(5부)\n무료 리포트: {U}?utm_source=facebook&utm_medium=social&utm_campaign={S}&utm_content=cards_caption\n{AL}\n\n{DIS}\n\n#럼블 #RUM #GPU클라우드 #미국주식"
+F[f"{S}-fbcards.json"] = {"text": fb_cards, "channel_text": {"facebook": fb_cards}, "channels": ["facebook"], "media": {"type": "carousel", "paths": cards}, "publish_at": at(6)}
+for n, d in F.items():
+    json.dump(d, open(os.path.join(Q, n), 'w'), ensure_ascii=False, indent=1)
+print(' '.join(F))

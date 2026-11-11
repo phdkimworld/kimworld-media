@@ -1,0 +1,51 @@
+#!/bin/bash
+# RUM 76회차: 롱폼 업로드(한도 초과면 30분마다, 최대 12시간) → youtube_id 연결 → SNS 대기열 → 쇼츠 업로드 → 기록
+set -u
+W=/home/claude/rum; V=$W/video; SH=$W/shorts; SITE=/home/claude/site-rum; MED=/home/user/kimworld-media; SLUG=rum-2026-11
+LOG=$W/publish.log; UP=/home/user/kimworld-media/tools/yt_api_upload.py
+GC="git -c user.name=phdkimworld"
+CO=$'\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X'
+log(){ echo "$(date -u +%FT%TZ) $*" >> $LOG; }
+push_site(){ cd $SITE; $GC commit -qm "$1$CO"; for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && return 0; sleep 20; done; log "site push 실패"; }
+push_med(){ cd $MED; F="production/STATE.md review/experiments.md followups.md thumb_history.json"; git add $F; $GC commit -qm "$1$CO" -- $F; for i in 1 2 3 4; do git pull -q --rebase --autostash origin claude/kim-world-stock-studio-laes-ovy09b && git push -q origin HEAD:claude/kim-world-stock-studio-laes-ovy09b && return 0; sleep 20; done; log "media push 실패"; }
+END=$(( $(date +%s) + 12*3600 ))
+for k in $(seq 1 6); do sh /home/claude/bin/wait_live.sh $SLUG 럼블 >> $LOG 2>&1 && break
+  log "리포트 아직 안 열림($k)"; [ $k = 3 ] && { cd $SITE; git pull -q --rebase origin main; $GC commit -q --allow-empty -m "배포 다시 실행($SLUG)$CO"; git push -q origin HEAD:main; }
+done
+gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/blogger.yml/dispatches -f ref=main -f "inputs[slug]=$SLUG" >> $LOG 2>&1 && log "블로거 실행($SLUG)" || log "블로거 실행 실패"
+upl(){ # $1 meta $2 video $3 thumb $4 idfile
+  local ID=""; [ -f $4 ] && ID=$(cat $4)
+  while [ -z "$ID" ]; do
+    GD=$(python3 $MED/tools/upload_guard.py $1 2>&1); GR=$?
+    if [ $GR = 1 ]; then ID=$(echo "$GD" | awk '{print $2}'); echo $ID > $4; log "이미 있음(중복 방지) $ID"; break; fi
+    if [ $GR = 2 ]; then log "guard 오류: $GD"; sleep 300; continue; fi
+    OUT=$(python3 $UP --meta $1 --video $2 --thumbnail $3 2>&1 | tail -1); echo "$OUT" >> $4.log
+    ID=$(echo "$OUT" | python3 -c "import json,sys;
+try: print(json.loads(sys.stdin.read()).get('video_id',''))
+except Exception: print('')")
+    if [ -n "$ID" ]; then echo $ID > $4; log "업로드 $ID"; bash $MED/tools/wip_save.sh RUM $W "업로드 $ID" >/dev/null 2>&1; break; fi
+    log "업로드 실패: $(echo "$OUT" | cut -c1-200)"
+    [ $(date +%s) -gt $END ] && { log "12시간 초과"; return 1; }
+    sleep 1800
+  done; echo $ID; }
+VID=$(upl $V/upload_meta.json $V/RUM_slide_video.mp4 $V/thumb/RUM_thumbnail.jpg $V/video_id | tail -1)
+[ -z "$VID" ] && exit 1
+if ! grep -q "^youtube_id:" $SITE/content/reports/$SLUG.md; then
+  cd $SITE; git pull -q --rebase origin main
+  sed -i "s/^draft: false$/youtube_id: \"$VID\"\ndraft: false/" content/reports/$SLUG.md
+  git add content/reports/$SLUG.md; push_site "리포트: $SLUG youtube_id 연결($VID)"; log "youtube_id 연결"
+fi
+python3 $SH/mk_meta.py $VID > /dev/null
+[ -f $SH/cover.jpg ] || ffmpeg -loglevel error -y -ss 0.8 -i $SH/RUM_shorts.mp4 -frames:v 1 -q:v 3 $SH/cover.jpg
+if [ ! -f $W/sns/queued ]; then
+  cd $SITE; git pull -q --rebase origin main; mkdir -p static/social/$SLUG/cards
+  cp $W/cards/out/card-0*.jpg static/social/$SLUG/cards/; cp $SH/RUM_shorts.mp4 $SH/cover.jpg static/social/$SLUG/
+  T0=$(TZ=America/New_York date +%FT%T%:z); python3 $W/sns/mk_queue.py $T0 >> $LOG
+  if KW_SITE=$SITE python3 $MED/tools/queue_check.py social/queue/$SLUG*.json >> $LOG 2>&1; then
+    git add static/social/$SLUG social/queue/$SLUG*.json; push_site "SNS 대기열: $SLUG 7건(Threads 3·인스타 카드·릴스·페이스북 릴스·카드)"; touch $W/sns/queued; log "SNS 대기열 올림"
+  else log "SNS 대기열 검사 실패 — 올리지 않음"; git checkout -q -- . ; fi
+fi
+SID=$(upl $SH/upload_meta.json $SH/RUM_shorts.mp4 $SH/cover.jpg $SH/video_id | tail -1)
+cd $MED; git pull -q --rebase --autostash origin claude/kim-world-stock-studio-laes-ovy09b
+python3 $W/bin/record.py "$VID" "${SID:-미게시}" >> $LOG 2>&1
+push_med "RUM 76회차 완료 기록(롱폼 $VID · 쇼츠 ${SID:-미게시})"; log "기록 완료"

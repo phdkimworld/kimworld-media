@@ -1,0 +1,24 @@
+import json, sys, os
+os.chdir('/home/claude/rum/shorts')
+L = sys.argv[1]; U = "https://drkimworld.com/r/rum-2026-11/"
+d = f"""📊 럼블(RUM) 무료 리포트 👉 {U}
+※ 공개 공시와 시세를 정리한 교육용 분석이며 특정 종목의 매수·매도 권유나 수익 보장이 아닙니다.
+🎬 풀영상: https://www.youtube.com/watch?v={L}
+📢 https://t.me/drkimworld
+
+실시간 인기 종목 1위에서 고른 첫 리포트입니다. 럼블은 3분기 매출이 1년 전보다 290% 늘었다고 발표했습니다. 그런데 전날 종가 5.11달러는 8월 25일 고점 10.23달러의 절반이었습니다. 8월에 받은 약 137억 달러 주문에는, 지금은 그 설비를 지을 자금이 없다는 문장이 붙어 있었습니다.
+
+🗳️ 주가 반토막의 가장 큰 이유는? ① 업종 전체 매도 ② 설비 지을 돈 ③ 손님 주식 권리. 댓글에 번호로
+🔔 실시간 알림: 인스타그램 김박사 월드 채널 참여 또는 drkimworld.com에서 앱 설치
+
+#Shorts #RUM #럼블 #럼블주가 #GPU클라우드 #미국주식"""
+fc = """🎬 풀영상: 채널에서 '럼블(RUM) 주가 미스터리, 매출 +290% 실적 아침인데' 영상
+🗳️ 몇 번일까요? ① 업종 전체 매도 ② 설비 지을 돈 ③ 손님 주식 권리
+
+※ 공개 공시와 시세를 정리한 교육용 분석이며 매수·매도 권유나 수익 보장이 아닙니다."""
+m = {"title": "럼블 매출 +290%인데 주가는 8월 고점의 절반, 왜?", "description": d,
+     "tags": ["럼블", "RUM", "럼블 주가", "GPU 클라우드", "데이터센터", "미국주식", "김박사월드", "Shorts"],
+     "privacy": "public", "first_comment": fc, "synthetic": False, "shorts": True, "utm_content": "shorts"}
+for k in ('title', 'description', 'first_comment'):
+    assert '<' not in m[k] and '>' not in m[k]
+json.dump(m, open('upload_meta.json', 'w'), ensure_ascii=False, indent=1); print(len(m['title']))

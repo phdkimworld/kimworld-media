@@ -1,0 +1,65 @@
+import json, os, re
+os.chdir('/home/claude/rum/video')
+t = json.load(open('raw_timing.json'))['paras']
+ts = lambda i: '%02d:%02d' % (t[i-1]['start']//60, t[i-1]['start'] % 60)
+U = "https://drkimworld.com/r/rum-2026-11/"
+SHOP = json.load(open('/home/claude/rum/kit/shop/candidates.json'))
+SURL = SHOP['candidates'][3]['url']; SNAME = "투자의 시그널: 93개 핵심 경제지표 실전분석"
+ch = [(1, "매출 3.9배인데 주가는 고점의 절반"), (3, "럼블은 어떤 회사"), (5, "단서 1: 8월 후반의 두 주"), (7, "단서 2: 주문서 뒤쪽 한 문장"),
+      (9, "단서 3: 3분기 실적 자료"), (12, "실적 16번, 첫날과 한 달 뒤"), (16, "두 가설"), (19, "지켜볼 날짜"), (21, "투표")]
+chap = "\n".join(f"{ts(i)} {s}" for i, s in ch)
+Q = "실적 첫날 10% 넘게 오른 세 번, 한 달 뒤에는 어땠을까?"
+A = "(답: 리포트 3부 '실적 16번, 첫날과 20거래일 뒤' 기록표)"
+AL = "🔔 실시간 알림: 인스타그램 김박사 월드 채널 참여(https://instagram.com/drkimworld) 또는 홈페이지(https://drkimworld.com)에서 앱 설치"
+TAGS = "#럼블 #RUM #럼블주가 #퀘이크AI #GPU클라우드 #데이터센터 #실적발표 #미국주식 #주가분석 #김박사월드"
+desc = f"""📊 럼블(RUM) 3분기 실적 날 무료 리포트 👉 {U}
+3분기 매출 9,658만 달러로 1년 전보다 290% 늘었습니다. 그런데 11월 10일 종가 5.11달러는 8월 25일 고점의 절반입니다.
+📌 {Q} {A}
+
+실시간 인기 종목 순위 1위에서 고른 첫 리포트입니다. 럼블(RUM Group Inc.)은 동영상 플랫폼 럼블과 GPU 클라우드 회사 퀘이크 AI를 함께 거느린 회사입니다. 2026년 6월 독일 노던데이터를 인수했습니다.
+
+⚡ 8월 24일 공시: 조지아주 마이스빌 GPU 서비스 주문 약 137억 달러(6년). 같은 공시에 '지금은 이 지출을 감당할 자금이 없다'는 문장이 있습니다.
+⚡ 8월 25일 고점 뒤 럼블은 -50.0%였습니다. 같은 기간 아이렌은 -53.3%, 코어위브는 -44.7%였습니다.
+💵 3분기 조정 EBITDA는 회사 역사상 처음 흑자였습니다. 9월 말 현금은 1억 3,440만 달러입니다.
+🛒 영상 속 산업과 이어지는 물건: {SNAME}
+{SURL}
+
+🗓️ 11월 11일 종가가 5.62달러(전날보다 +10%) 위인지 봅니다. 12월 9일까지는 대출 확정과 새 주식 판매 공시를 확인합니다.
+
+세 개의 단서와 두 가설로 '매출은 커졌는데 주가는 왜 반이 됐나'를 추적합니다 🧩
+{AL}
+
+🗳️ 마지막 투표: ① 업종 전체 매도 ② 설비 지을 돈 ③ 손님 주식 권리. 댓글에 번호로 남겨 주세요
+
+📚 실적 16번 기록표, 업종 비교표, 돈의 흐름 표, 대출과 새 주식 시나리오별 가능성 구간
+
+※ {SHOP['disclosure']}
+※ 이 영상은 공개 공시와 시세를 정리한 교육용 분석이며 특정 종목의 매수·매도 권유나 수익 보장이 아닙니다. 시나리오 가능성은 분석자의 추정입니다.
+
+{chap}
+
+👉 {U}
+{TAGS}"""
+fc = f"""📌 {Q}
+👉 {U}
+{A[1:-1]}
+🆕 실시간 인기 종목 1위, 첫 리포트입니다
+⚡ 8월 25일 10.23달러에서 11월 10일 5.11달러로 -50.0%
+🗓️ 12월 9일 20거래일째 판정. 대출과 새 주식 시나리오 4개와 가능성 구간(추정)
+🛒 {SNAME}: {SURL}
+※ 교육용 분석이며 매수·매도 권유나 수익 보장이 아닙니다.
+가장 큰 이유는 몇 번일까요? ① 업종 전체 매도 ② 설비 지을 돈 ③ 손님 주식 권리. 숫자로 답글 주세요
+다음 미스터리 종목은 이 댓글 답글로 요청받습니다
+🔔 실시간 알림: 인스타그램 채널 참여(https://instagram.com/drkimworld) 또는 홈페이지(https://drkimworld.com)에서 앱 설치
+※ 쿠팡 파트너스 활동으로 일정액의 수수료를 받습니다."""
+m = {"title": "럼블(RUM) 주가 미스터리, 매출 +290% 실적 아침인데 주가는 왜 8월 고점의 절반일까?",
+     "description": desc,
+     "tags": ["럼블", "RUM", "럼블 주가", "럼 그룹", "퀘이크 AI", "GPU 클라우드", "데이터센터", "실적 발표", "미국주식", "김박사월드"],
+     "privacy": "public", "first_comment": fc, "synthetic": False, "paid_promo": True}
+for k in ('title', 'description', 'first_comment'):
+    assert '<' not in m[k] and '>' not in m[k], k
+json.dump(m, open('upload_meta.json', 'w'), ensure_ascii=False, indent=1)
+open('youtube.txt', 'w').write(m['title'] + '\n' + TAGS + '\n')
+open('description.txt', 'w').write(desc + '\n')
+open('pinned.txt', 'w').write(fc + '\n')
+print(len(m['title']), len(desc), len(fc.splitlines())); print(chap)
