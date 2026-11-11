@@ -6,6 +6,9 @@
   - 유튜브·SNS의 이모지만·한두 글자 → SMALL 문장(사이트는 규칙대로 건너뜀)
   - ET 시각이 3의 배수면 yt_stats.py 실행 후 stats_snapshots.jsonl 커밋
 세션(모델)에 넘기는 것: 질문·의견·투표·종목 요청·대댓글·AI 여부·홍보 의심·새 사이트 요청
+AI 답글(사이트 comment-ai.yml, 매시 15분, 2026-11-11): 사이트 social/llm/comments/state.json 장부가 살아 있으면(status ok, 4시간 안)
+  유튜브·Threads·페이스북 첫 댓글 질문·의견 가운데 posted 는 건너뛰고, left 는 사유와 함께 넘기고, 아직 시도 전(2시간 안)인 것은 기다린다.
+  키가 없거나 크레딧·예산이 없으면 장부가 ok 가 아니므로 지금 동작 그대로다.
 출력 첫 줄: "NOTHING <요약>"(세션은 이 줄만 보고하고 끝) 또는 "ACTION <요약>" 다음 줄부터 넘길 항목 JSON.
 사용: python3 tools/hourly.py [--dry]
 """
@@ -65,6 +68,27 @@ def commit_push(repo, branch, paths, msg):
 
 R = {"auto": [], "escalate": [], "notes": []}
 
+def ai_state():
+    try: st = json.load(open(f"{SITE}/social/llm/comments/state.json"))
+    except Exception: return None
+    try: last = datetime.datetime.fromisoformat(st.get("last_run", "").replace("Z", "+00:00"))
+    except ValueError: return None
+    if st.get("status") != "ok" or (datetime.datetime.now(datetime.timezone.utc) - last).total_seconds() > 4 * 3600: return None
+    return st
+AI = None
+
+def ai_gate(key, base, published):
+    """질문·의견 첫 댓글을 AI 답글 장부와 맞춘다. True 면 이번에는 넘기지 않는다."""
+    if AI is None: return False
+    it = (AI.get("items") or {}).get(key)
+    if it and it.get("status") == "posted": R["notes"].append("AI 답글 완료 1건 건너뜀") if not any("AI 답글 완료" in n for n in R["notes"]) else None; return True
+    if it and it.get("status") == "left": base["ai"] = "AI 넘김: " + str(it.get("reason", ""))[:80]; return False
+    try: age = (datetime.datetime.now(datetime.timezone.utc) - datetime.datetime.fromisoformat(str(published).replace("Z", "+00:00"))).total_seconds() / 3600
+    except ValueError: return False
+    if age < float(AI.get("hold_hours", 2)):
+        R["hold"] = R.get("hold", 0) + 1; return True
+    return False
+
 def youtube():
     if not os.environ.get("YT_REFRESH_TOKEN"): R["notes"].append("유튜브 인증값 없음"); return
     p = run(sys.executable, "tools/yt_reply.py", "--list")
@@ -76,6 +100,8 @@ def youtube():
         base = {"ch": "youtube", "kind": kind, "threadId": o["threadId"], "videoId": o.get("videoId"),
                 "author": o.get("author"), "text": (o.get("text") or "")[:200], "video": (o.get("videoTitle") or "")[:50]}
         if o.get("kind") == "followup": base["context"] = o.get("context") or o.get("followups")
+        if act == "escalate" and kind == "질문·의견·요청" and o.get("kind") != "followup" and ai_gate(f"youtube:{o['threadId']}", base, o.get("publishedAt")):
+            continue
         if act in ("thanks", "small") and used < LIMIT:
             body = pick(THANKS if act == "thanks" else SMALL, o["threadId"])
             f = "/tmp/kw_hourly_reply.txt"; open(f, "w").write(body)
@@ -139,6 +165,9 @@ def sns():
         act, kind = classify(o.get("text", ""), o.get("kind") == "followup")
         base = {"ch": o.get("platform"), "kind": kind, "replyTo": o.get("replyTo"), "author": o.get("author"),
                 "text": (o.get("text") or "")[:200], "slug": o.get("slug"), "post": (o.get("postText") or "")[:60]}
+        if act == "escalate" and kind == "질문·의견·요청" and o.get("kind") != "followup" and o.get("platform") in ("threads", "facebook") \
+                and ai_gate(f"{o.get('platform')}:{o.get('replyTo')}", base, o.get("publishedAt")):
+            continue
         if act in ("thanks", "small"):
             body = pick(THANKS if act == "thanks" else SMALL, str(o.get("replyTo")))
             reps.append({"platform": o["platform"], "to": o["replyTo"], "text": body, "kind": "top"})
@@ -180,9 +209,11 @@ def stats():
 if __name__ == "__main__":
     run("git", "pull", "-q", "--rebase", "origin", BR)
     run("git", "pull", "-q", "--rebase", "origin", "main", cwd=SITE)
+    AI = ai_state()
     for fn in (youtube, site, sns, site_requests, stats):
         try: fn()
         except Exception as e: R["notes"].append(f"{fn.__name__} 오류 {type(e).__name__}: {str(e)[:100]}")
+    if R.get("hold"): R["notes"].append(f"AI 답글 대기 {R['hold']}")
     auto_n = sum(1 for a in R["auto"] if a.get("reply"))
     head = f"{NOW:%m/%d %H:%M} ET · 자동 답글 {auto_n} · " + " · ".join(R["notes"])
     if not R["escalate"]:
