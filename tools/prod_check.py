@@ -6,6 +6,11 @@
 """
 import re, os, json, glob, subprocess, datetime, sys
 from zoneinfo import ZoneInfo
+
+# 컨테이너 재시작으로 작업 도구가 사라졌으면 저장소에서 다시 깐다(11-11)
+if not os.path.exists("/home/claude/slidekit/make_slide_video.py"):
+    subprocess.run(["bash", os.path.join(os.path.dirname(os.path.abspath(__file__)), "restore_workspace.sh")], capture_output=True)
+
 M = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.environ.get("KW_SITE", "/home/user/kimworld-site")
 NOW = datetime.datetime.now(ZoneInfo("America/New_York")); D = NOW.strftime("%m-%d")
@@ -16,7 +21,7 @@ def cells(l): return [c.strip() for c in l.strip().strip("|").split("|")]
 today = [cells(l) for l in rows if cells(l)[0] == D]
 done = {c[1] for c in today if "완료" in c[2]}
 pending = [f"{c[0]} {c[1]}: {c[2][:40]}" for c in map(cells, rows)
-           if len(c) > 2 and ((("진행" in c[2] or "대기" in c[2]) and "완료" not in c[2]) or re.search(r"\|\s*대기\s*\|?\s*$", "|".join(c)))]
+           if len(c) > 2 and ((any(re.search(r"(^|[\s·(])(진행|대기)(?!열)", x) for x in c[2:]) and not any("완료" in x or "정리" in x for x in c[2:])) or re.search(r"\|\s*대기\s*\|?\s*$", "|".join(c)))]
 r = "정규" in done; q = "요청" in done; r2 = "정규2" in done
 rank = subprocess.run([sys.executable, "tools/request_rank.py"], cwd=M, capture_output=True, text=True).stdout
 tiers = {t: len(re.findall(rf"^\d+ \| {t} \|", rank, re.M)) for t in ("0순위", "1순위", "2순위")}

@@ -15,6 +15,11 @@ AI 답글(사이트 comment-ai.yml, 매시 15분, 2026-11-11): 사이트 social/
 import json, os, re, subprocess, sys, time, hashlib, datetime, glob, urllib.request
 from zoneinfo import ZoneInfo
 
+# 컨테이너 재시작으로 작업 도구가 사라졌으면 저장소에서 다시 깐다(11-11)
+if not os.path.exists("/home/claude/slidekit/make_slide_video.py"):
+    subprocess.run(["bash", os.path.join(os.path.dirname(os.path.abspath(__file__)), "restore_workspace.sh")], capture_output=True)
+
+
 MEDIA = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.environ.get("KW_SITE", "/home/user/kimworld-site")
 BR = "claude/kim-world-stock-studio-laes-ovy09b"
