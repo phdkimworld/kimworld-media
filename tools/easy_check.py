@@ -1,5 +1,6 @@
 # 리포트가 비전문가도 읽히는지 발행 전에 본다(운영자 지시 2026-10-26: "리포트가 좀 어려운거 같아. 딥다이브는 좋은데. 설명을 앞으로는 비전문가도 알아먹게 좀 해줘").
 # 사용: python3 easy_check.py <리포트.md> [--glossary <사이트 data/glossary.yaml>]
+#  - v3.8(2026-11-11 운영자 NBIS 가독성 분석 8.2/10, 공개일·기준일 11-12~·--v38): key_points 4줄 판단(업종·회사·확인할 것·종합), 3부 기록표 위 굵은 핵심 숫자 3개, 확률 표 바로 위 '무엇의 주관적 추정인지' 문장, 6부 핵심 체크 1·2·3순위, 현금+한도·대출 '약 N억 달러' 합산 금지, FAQ 5개 초과 금지
 #  - v3.7(2026-11-09 운영자 RDW 가독성 분석 8.2/10, 공개일·기준일 11-10~·--v37): 'YYYY년 N분기 실적' 연도 검산, '(미확정)' 단독 금지, 6부 핵심 체크 3개 이하, 1부 '숫자로 본' 표에 자금 조달 행 금지, 표 상한 8
 #  - v3.4(2026-11-05 운영자 IREN 가독성 분석 7.5/10, 공개일 11-06~·--v34): 중간 논리 계단·숫자보다 패턴·부 끝 질문 — '이 말은 곧' 1번, 1부 4문단(회사·돈 버는 법·왜 중요·몸값), 2부 사건 묶는 문장, 3부 비교 기준 '예를 들어', 기록표 '이번' 행 분리, 5부 판정 기준 먼저, 6부 위험 세 갈래, 거래일 조사
 #  - v3.3(2026-11-04 운영자 MRVL 분석, 공개일 11-05~·--v33): 시나리오 대표값 '약 N%' 합 100, 'N거래일 동안 X%'에 기준 종가, 6부 끝 판단 기준 세 가지
@@ -32,6 +33,7 @@ _v34 = _dt >= '2026-11-06' or '--v34' in sys.argv
 _v35 = _dt >= '2026-11-07' or '--v35' in sys.argv
 _v36 = _dt >= '2026-11-07' or '--v36' in sys.argv
 _v37 = _dt >= '2026-11-10' or '--v37' in sys.argv  # v3.7(운영자 11-09 RDW 가독성 분석 8.2/10)
+_v38 = _dt >= '2026-11-12' or '--v38' in sys.argv  # v3.8(운영자 11-11 NBIS 가독성 분석 8.2/10)
 _v33 = _dt >= '2026-11-05' or '--v33' in sys.argv  # v3.3(운영자 11-04 MRVL 블로그·리포트 분석)  # v3.2(운영자 11-04 SLDP 가독성 분석)
 for i in range(1, len(parts), 2):
     sec = parts[i + 1]
@@ -190,7 +192,7 @@ if '--legacy' not in sys.argv:
         if not re.search(r'^blog_slug:', fm, re.M): bad.append('K10 머리말 blog_slug(티커 + 사건 영문 키워드 + stock analysis)')
         for m in re.finditer(r'[^\n]{0,15}빚[^\n]{0,10}', body): bad.append(f"v2.1 1.2 '빚' 금지(빛 오인) → 부채·차입금: {m.group(0).strip()}")
         for l in body.split('\n'):
-            m = re.match(r'- [□☐] (.*)', l)
+            m = re.match(r'- [□☐] (?:[1-3]순위\s*·\s*)?(.*)', l)  # v3.8: '☐ 1순위 · 11월 12일 …' 순위 머리는 건너뛰고 시점을 본다
             if m and not (re.match(r'(\d+월|\d+일|\d{4}년|다음 실적|분기 보고서|실적|매일|주간)', m.group(1)) and len(re.findall(r'\d[\d,.]*', m.group(1))) >= 2):
                 bad.append(f"통합 2.4 체크리스트는 '□ [점검 시점] [수치 기준] 달성 여부': {m.group(1)[:40]}")
     if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-02' or '--v23' in sys.argv:
@@ -263,6 +265,45 @@ if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '
     for para in [x for x in body.split('\n\n') if x.strip() and not x.lstrip().startswith(('|', '#', '!', '>', '-'))]:
         n = len(re.findall(r'\d[\d,.]*', re.sub(DATE, '', para)))
         if n >= 10: bad.append(f"v3.1 숫자 {n}개 몰린 문단 → 핵심 숫자는 표 한 줄로 올리고 문단은 뜻 설명: {para[:40]}…")
+if _v38:
+    # v3.8(운영자 11-11 NBIS 가독성 분석 8.2/10): 결론은 첫 화면 4줄, 근거 숫자는 크게, 확률은 무엇의 확률인지, 돈은 성격별로
+    def _s8(h):
+        m = re.search(r'^## %s[^\n]*\n(.*?)(?=^## |\Z)' % h, body, re.S | re.M)
+        return m.group(1) if m else ''
+    # (a) key_points 4줄 = 업종 요인 / 회사 요인 / 확인할 것 / 종합 ('확인할 것' 중심, 매수·매도 표현 없이)
+    kp8 = re.findall(r'^\s*-\s*"?(.+?)"?\s*$', (re.search(r'^key_points:\n((?:\s+-.*\n)+)', fm, re.M) or [None, ''])[1], re.M)
+    heads8 = [k.split(':', 1)[0] for k in kp8 if ':' in k]
+    if len(kp8) != 4 or not (any('업종' in h for h in heads8) and any('회사' in h for h in heads8) and any('확인' in h for h in heads8) and any('종합' in h for h in heads8)):
+        bad.append("v3.8 key_points는 판단 4줄 '업종 요인: … / 회사 요인: … / 확인할 것: (날짜) … / 종합: …'")
+    for k in kp8:
+        if re.search(r'(매수|매도)\s*(추천|권유|권해|기회|타이밍|시점)|사야 할|팔아야|추천', k): bad.append(f"v3.8 key_points에 매수·매도 권유로 읽히는 말 → '확인할 것' 중심으로: {k[:30]}")
+    # (b) 3부 기록표(8줄 이상) 위 '**한눈에:**'에 굵은 핵심 숫자 3개(사이트가 큰 숫자 칸으로 바꾼다)
+    s38 = _s8('3부')
+    rows38 = [r for r in re.findall(r'^\|.*\|$', s38, re.M) if re.search(r'20\d\d\.\d\d\.\d\d', r)]
+    if len(rows38) >= 6:
+        hn = re.search(r'^\*\*한눈에:\*\*(.*)$', s38[:s38.find('\n|')], re.M)
+        if not hn or len(re.findall(r'\*\*[^*\n]{1,14}\*\*', hn.group(1))) < 3:
+            bad.append("v3.8 3부 기록표 위 '**한눈에:** **6/8** 첫날 상승 · **7/8** 방향 일치 · **+18.0%** 20거래일 뒤 중앙값' — 핵심 숫자 셋을 굵게(사이트가 큰 숫자 칸으로)")
+    # (c) 확률(가능성) 표 바로 위 문단에 '무엇의 주관적 추정인지'(주가 확률이 아님)
+    for tb in re.finditer(r'^(\|[^\n]*가능성[^\n]*\|)\n\|[\s:|-]+\|', body, re.M):
+        prev = [x for x in body[:tb.start()].split('\n\n') if x.strip()][-1:] or ['']
+        if not ('주관적' in prev[0] and re.search(r'(주가|가격)[^.\n]{0,25}(아니라|아닙니다)', prev[0])):
+            bad.append("v3.8 확률 표 바로 위에 '아래 확률은 주가 상승·하락 가능성이 아니라 (판정 조건)에 대한 분석자의 주관적 추정입니다' 문장")
+    # (d) 6부 핵심 체크 1·2·3순위
+    s68 = _s8('6부')
+    mk8 = re.search(r'^\*\*핵심 확인[^\n]*$', s68, re.M)
+    if mk8:
+        core8 = re.split(r'^\*\*', s68[mk8.end():], maxsplit=1, flags=re.M)[0]
+        items8 = re.findall(r'^- [□☐] (.*)$', core8, re.M)
+        if items8 and [re.match(r'([1-3])순위', x).group(1) if re.match(r'[1-3]순위', x) else '' for x in items8] != [str(i + 1) for i in range(len(items8))]:
+            bad.append("v3.8 6부 핵심 체크는 '☐ 1순위 · (연간 목표 유지)', '☐ 2순위 · (추가 조달 공시)', '☐ 3순위 · (주가 반응)'처럼 순위 머리")
+    # (e) 현금과 대출 한도·조달을 한 문장에서 더해 '약 N억 달러'로 합산 금지(한도는 인출 전 돈일 수 있다)
+    for sent in re.split(r'(?<=[.?!])\s+|\n', '\n'.join(l for l in body.split('\n') if not l.lstrip().startswith('|'))):
+        if '현금' in sent and re.search(r'한도|대출|시설|조달|차입', sent) and re.search(r'더하면|합치면|합하면|합산|더한|합계', sent) and re.search(r'약 \d[\d,.]*억( \d[\d,.]*천만)? 달러', sent):
+            bad.append(f"v3.8 현금과 대출 한도·조달을 더한 '약 N억 달러' → 실제 보유 현금 · 실제 유입 · 인출 미공개 한도를 따로 적고 더하지 않기: {sent.strip()[:50]}…")
+    # (f) FAQ는 3~4개(5개 초과 금지)
+    nq = len(re.findall(r'^\s+- q:', fm, re.M))
+    if nq > 5: bad.append(f'v3.8 FAQ {nq}개 > 5 → 핵심 3~4개만')
 if _v37:
     # v3.7(운영자 11-09 RDW 가독성 분석 8.2/10): 원인은 본문에서, 비교는 표로, 체크리스트는 셋 — 기계로 잡을 수 있는 것만
     def _s7(h):
