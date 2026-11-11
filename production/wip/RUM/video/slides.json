@@ -1092,9 +1092,16 @@
     },
     {
      "from": 2,
-     "layout": "quote",
-     "text": "영상은 왜\n**리포트는 다음 한 달**",
-     "at": 2
+     "layout": "stat",
+     "title": "영상은 왜, 리포트는",
+     "stats": [
+      {
+       "at": 2,
+       "big": "다음 한 달",
+       "label": "숫자로 대응",
+       "tone": "gold"
+      }
+     ]
     },
     {
      "from": 3,
