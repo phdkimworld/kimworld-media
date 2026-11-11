@@ -190,8 +190,11 @@ if m.get("synthetic"):
 body = {"snippet": {"title": m["title"][:100], "description": m["description"][:5000], "tags": m["tags"],
                     "categoryId": "27", "defaultLanguage": "ko", "defaultAudioLanguage": "ko"},
         "status": status}
+parts = "snippet,status"
+if m.get("paid_promo"):  # SKILL V3.9 쿠팡 상품 안내(2026-11-10): 유료 프로모션 표시
+    body["paidProductPlacementDetails"] = {"hasPaidProductPlacement": True}; parts += ",paidProductPlacementDetails"
 try:
-    req = yt.videos().insert(part="snippet,status", body=body, notifySubscribers=True,
+    req = yt.videos().insert(part=parts, body=body, notifySubscribers=True,
         media_body=MediaFileUpload(a.video, chunksize=8 * 1024 * 1024, resumable=True, mimetype="video/mp4"))
     resp = None
     while resp is None:
