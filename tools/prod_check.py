@@ -19,7 +19,7 @@ subprocess.run(["git", "pull", "-q", "--rebase", "origin", "main"], cwd=SITE, ca
 rows = [l for l in open(f"{M}/production/STATE.md") if l.startswith("| ")]
 def cells(l): return [c.strip() for c in l.strip().strip("|").split("|")]
 today = [cells(l) for l in rows if cells(l)[0] == D]
-done = {c[1] for c in today if "완료" in c[2]}
+done = {c[1] for c in today if any(x.startswith("완료") or " 완료" in x or x == "완료" for x in c[2:]) or "완료" in c[2]}  # 상태 칸이 뒤로 옮겨진 행(11-11~)도 센다
 pending = [f"{c[0]} {c[1]}: {c[2][:40]}" for c in map(cells, rows)
            if len(c) > 2 and ((any(re.search(r"(^|[\s·(])(진행|대기)(?!열)", x) for x in c[2:]) and not any("완료" in x or "정리" in x for x in c[2:])) or re.search(r"\|\s*대기\s*\|?\s*$", "|".join(c)))]
 r = "정규" in done; q = "요청" in done; r2 = "정규2" in done
