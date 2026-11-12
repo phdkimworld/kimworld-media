@@ -107,7 +107,7 @@ def main():
     se = s.get('sentiment') or {}
     if se: obs.append(f"사이트 투표 {se.get('votes')}표(지난 기간 {se.get('prevVotes')}) · 종목 {se.get('tickers')}개")
     tt = s.get('totals') or {}
-    if tt: obs.append('사이트 합계: ' + ', '.join(f"{k} {v['now']}({v['chg_pct']:+.0f}%)" for k, v in tt.items() if isinstance(v, dict) and 'now' in v))
+    if tt: obs.append('사이트 합계: ' + ', '.join((f"{k} {v['now']}({v['chg_pct']:+.0f}%)" if v.get('chg_pct') is not None else f"{k} {v['now']}") for k, v in tt.items() if isinstance(v, dict) and 'now' in v))
     for o in obs: print('  - ' + o)
 
 if __name__ == '__main__':

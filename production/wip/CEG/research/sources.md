@@ -1,6 +1,0 @@
-- 8-K 99.1 3Q26 https://www.sec.gov/Archives/edgar/data/1868275/000186827526000116/ceg-20261109991.htm (5.06 vs 3.04, GAAP 5.19, 가이던스 12.50-12.80, RISEC 715M 609MW, Amazon 690MW, Google 890MW·$4.3B, DOE $5B 조건부, Peak+ 270MW 2028, 매출 9,550 vs 6,570, 희석주식 354 vs 313, 자사주 9M $3,001M)
-- 10-Q 3Q26 https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm (자사주 3분기 380만 주·약 10억, 9개월 1,090만 주·30억, 남은 한도 약 20억; 칼파인 5,000만 주 50% 2026.6.30·50% 2027.6.30 해제, 6월 1,100만 주 공모; PJM 가격 상하한 약 325/175 MW-day 2028/29·2029/30 연장 FERC 4월 승인; 비상 조달 2027.3.1~3.28, 결과 5.10)
-- 과거 실적 8-K 19건 머리기사(er_hl.json), 시세 나스닥 API
-- PJM 일정표 2029/30 BRA Dec. 9, 2026 https://www.pjm.com/-/media/DotCom/markets-ops/large-load/large-load-registry-and-byonc-schedule.pdf
-- Dow Jones via Tiger 11-05 https://www.itiger.com/news/2681097675 (11/4 VST ~14%, NRG 13.5%, CEG 6.7%, 민주당 중간선거 압승, 레이먼드 제임스 'significant policy shock', 텍사스 주지사)
-- 시장 예상 약 3.89달러: Stocktwits https://stocktwits.com/news-articles/markets/equity/constellation-energy-raises-2026-earnings-outlook-after-q3-beat-ceo-highlights-growing-demand-for-reliable-power/cNGrQIqR9ew

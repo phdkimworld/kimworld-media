@@ -603,3 +603,11 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 미확인: 3분기 실적 8-K가 EDGAR에 늦게 올라옴 — 보도자료(GlobeNewswire 게재본)로 쓰고 8-K 접수 뒤 대조.
 - 다음: 11/11 첫날 종가 vs 5.62달러 · 11/17 5거래일째 · 12/9 20거래일째와 대출·새 주식 공시 채점.
 - 11-11 오후: 컨테이너 재시작으로 /home/claude 전체 유실 → 대화에 남은 원고로 리포트·대본·slides·메타·SNS·카드·스크립트를 다시 써서 재제작(맥 TTS 026, 롱폼 JT4ubTIjjFM · 쇼츠 ivLiWOth6FU). 재시작 뒤 환경에 Noto CJK 글꼴·google/playwright/markdown/sherpa 실행 파일이 없었고, 우분투 미러 장애로 apt·사이트 배포(Build and deploy)도 실패 → npm @expo-google-fonts/noto-sans-kr로 NotoSansCJK-*.ttc 대체본을 만들어 로컬·deploy.yml(4ea5250)에 넣어 해결. ASR 실행 파일이 없어 같은 대본이 재시작 전 녹음에서 통과한 것으로 asr_check.ok. 3분기 8-K는 17:00 UTC까지 EDGAR에 없어 회사 보도자료(GlobeNewswire)로 확인.
+
+## 78회차 CEG 컨스텔레이션 에너지(11-12, 요청 0순위 · 시청자 반응이 컸던 종목의 업데이트 · 후속편 · A그룹)
+- 잘된 점: 3분기 8-K(11/9 장 시작 전, 주당 조정 이익 5.06달러, 전망 12.50~12.80달러)를 원문으로 확인하고, 같은 날 NRG +10.3%·비스트라 +7.3%를 나란히 놓아 '실적 덕인가 업종 덕인가'를 숨긴 질문으로. 실적 8-K 19건 접수 시각(모두 장 시작 전)을 SEC 제출 목록 한 번으로 뽑아 첫날·20거래일 기록표(첫날 +5% 넘은 6번 중 5번 위). 새 전망에서 4분기 이익 가운데 값 2.30달러 = 1년 전 4분기를 계산으로 찾음. 리포트 → 롱폼 VkCMvnN_JWo → 쇼츠 NxMm73q_dUs → SNS 7건 → 블로거(https://phdkimworld.blogspot.com/2026/11/constellation-energy-ceg-q3-2026.html)까지 재시작 없이 약 40분.
+- 지난 예측(10/11) 성적: 6개 중 적중 1 · 부분 적중 1 · 빗나감 3 · 확인 전 1. 가장 큰 빗나감은 '국면 A 경계' 진단(정치 일정을 신호에 안 넣음) → 이번부터 업종 비교를 판정 기준에.
+- 고친 실수: ① easy_check v3.x 지적 31건(업종 비교표 5열, '몫' 9번, 미확정 행이 표 안, 1부 4문단 미달 등)을 한 번에 다시 써서 통과 ② 대본 센트 읽기 4곳(script_audio_check) → 소수 읽기 ③ 쇼츠 em을 자막 굵은 글씨와 맞춤 ④ 썸네일 name-tag '컨스텔레이션' → '컨스텔레이션 에너지'(thumb_name_check) ⑤ still_check p17·p18 연속 정지 → compare·list로 바꿔 재합성 ⑥ 카드 7 '5번 중 6번' n·m 뒤바뀜 → 눈으로 확인해 고침.
+- 새 검사: tools/josa_check.py(숫자+단위 조사 받침, RUM '십육 회이' 재발 방지, group_check에 연결) · ai_feel_check에 리포트 서수 문단 3개 이상 경고 · insights.py chg_pct None 오류 수정.
+- 미확인: llm_judge 결과 없음(no_key, judge.yml 결과 파일 없음) → easy_check·쓰는 자리 점검으로 발행. hero_check 도구는 여전히 유실(HERO_SKIP) — hero 첫 화면에서 '%'가 배경 냉각탑 윤곽에 살짝 닿음(읽는 데 지장 없음).
+- 다음: 11/13 5거래일째 · 12/7 20거래일째(249.95달러, 비스트라·NRG 평균 대비) · 12/9 PJM 경매 채점.

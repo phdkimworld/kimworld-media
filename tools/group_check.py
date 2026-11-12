@@ -29,5 +29,8 @@ if _n.returncode: bad += [l for l in _n.stdout.split('\n') if l.startswith('NUMS
 # 'AI 느낌' 틀(문단 끝 질문 반복·'그렇다면'·상투어) — SKILL 8.0.2, 74회차 PLUG
 _f = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _f.returncode: bad += [l for l in _f.stdout.split('\n') if l.startswith('AIFEEL ')]
+# 숫자+단위 뒤 조사 받침(76회차 RUM '십육 회이' — 일괄 치환 뒤 녹음 직전까지 남음)
+_j = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'josa_check.py'), sys.argv[1]], capture_output=True, text=True)
+if _j.returncode: bad += [l for l in _j.stdout.split('\n') if l.startswith('JOSA ')]
 print('\n'.join(bad) if bad else f'GROUP_OK {g} {kb:.2f}KB 안내 p{guide[0]+1}')
 sys.exit(1 if bad else 0)
