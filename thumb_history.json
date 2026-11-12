@@ -2417,6 +2417,27 @@
    ],
    "video": "JT4ubTIjjFM",
    "shorts": "ivLiWOth6FU"
+  },
+  {
+   "t": "ceg",
+   "date": "2026.11.12",
+   "layout": "custom",
+   "palette": "navy-yellow",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "이익 +66%인데 / 실적 날 주가 +10.5%(빨강) 카드 / 같은 날 NRG도 +10.3% + 냉각탑·원자 기호·송전탑·가스 불꽃·55GW",
+    "실적 첫날 +5% 넘은 날 / 한 달 뒤 위 5/6 + 같은 그림"
+   ],
+   "video": "VkCMvnN_JWo",
+   "shorts": "NxMm73q_dUs"
   }
  ]
 }
