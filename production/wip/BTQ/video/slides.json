@@ -1,0 +1,1416 @@
+{
+ "ticker": "BTQ",
+ "name": "BTQ 테크놀로지스",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "루테인 제품 · 링크는 설명란에",
+ "midroll": "../kit/btq_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/btq_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "BTQ · 비티큐 테크놀로지스 · 3분기 보고서 앞",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "아이온큐 +13.4%",
+       "tone": "up"
+      },
+      {
+       "at": 1,
+       "text": "BTQ -12.1%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "상장 뒤 줄곧",
+     "stats": [
+      {
+       "at": 2,
+       "big": "업종 × 1.3~2.7",
+       "label": "업종보다 크게 움직이던 종목",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "8거래일 정반대\n**상장 뒤 처음**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.11 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "$1.74",
+       "label": "10.30 $1.98에서 -12.1%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "무엇이 BTQ만\n**떼어 놓았나**",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**네 번째 추적**",
+     "at": 0
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "곧 나올 것",
+     "stats": [
+      {
+       "at": 2,
+       "big": "3분기 보고서",
+       "label": "날짜는 아직 미공지",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "오늘의 순서",
+     "items": [
+      {
+       "no": "1",
+       "text": "업종과 갈라진 여덟 거래일",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "현금과 주식 판매",
+       "sub": "보고서 앞 단서",
+       "at": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "캐나다 밴쿠버",
+     "stats": [
+      {
+       "at": 1,
+       "big": "양자 보안",
+       "label": "양자컴퓨터에도 안 뚫리는 보안 기술",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "한국 보안 반도체 ICTK와",
+     "stats": [
+      {
+       "at": 2,
+       "big": "보안 칩",
+       "label": "함께 개발 중",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "2026.07 완전 인수",
+     "stats": [
+      {
+       "at": 3,
+       "big": "큐퍼펙트",
+       "label": "프랑스 양자 소프트웨어 · 에뮬레이터",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "2025.09 나스닥 상장",
+     "stats": [
+      {
+       "at": 4,
+       "big": "매출 0",
+       "label": "2026년 상반기 · 주력 제품 매출 없음",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 성적표",
+     "at": 0,
+     "kicker": "11월 2일 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "11월 2일 리포트의 예측",
+     "items": [
+      {
+       "no": "적",
+       "text": "1.98달러 아래 새 최저",
+       "sub": "가장 높게 본 시나리오",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.05 종가 · 상장 뒤 최저",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$1.67",
+       "label": "가격 쪽 예측 적중",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "채점",
+     "items": [
+      {
+       "no": "O",
+       "text": "새 최저",
+       "sub": "적중",
+       "at": 4
+      },
+      {
+       "no": "X",
+       "text": "업종 따라 회복",
+       "sub": "지금까지 빗나감",
+       "at": 4
+      },
+      {
+       "no": "?",
+       "text": "매출·주식 판매",
+       "sub": "보고서 뒤 확인",
+       "at": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**11월 5일부터 세 거래일**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "11.05\n**양자주 동반 급락**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "11월 5일 하루",
+     "left": {
+      "at": 2,
+      "head": "BTQ",
+      "big": "-13.9%",
+      "lines": [
+       "$1.67"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "아이온큐",
+      "big": "-10.5%",
+      "lines": [
+       "업종 대표"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "급락한 날 BTQ 낙폭",
+     "stats": [
+      {
+       "at": 3,
+       "big": "1.3배",
+       "label": "아이온큐 대비 · 늘 더 크게",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "날짜별 비교표\n**홈페이지에 무료로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "11.06\n**업종 반등**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.05 장 마감 뒤",
+     "stats": [
+      {
+       "at": 1,
+       "big": "아이온큐 실적",
+       "label": "3분기 실적 발표",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.06 아이온큐",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+23.4%",
+       "label": "하루",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.06 BTQ",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+11.7%",
+       "label": "아이온큐의 절반",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "그다음 거래일\n**차이가 더 벌어졌다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "11월 9일 하루",
+     "left": {
+      "at": 5,
+      "head": "아이온큐",
+      "big": "+8.3%",
+      "lines": [
+       "$35.34"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 5,
+      "head": "BTQ",
+      "big": "+0.8%",
+      "lines": [
+       "$1.88"
+      ],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "내릴 땐 함께\n**오를 땐 반만**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.11 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$1.74",
+       "label": "11.10 -5.9% · 11.11 -1.7%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "하루 거래량",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 167만 주",
+       "label": "30거래일 평균 약 174만 주",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "10.30 뒤 SEC 제출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0건",
+       "label": "회사 공시 없음",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "회사 소식 없이\n**업종과 반대로**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "시장이 보는 것\n**3분기 보고서**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**현금**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2025.09 말 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3,939만",
+       "label": "캐나다달러",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "그때 회사는\n**'여러 해를 버틸 현금'**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "석 달마다 줄어든 현금(캐나다달러)",
+     "items": [
+      {
+       "no": "1",
+       "text": "2025.12 말",
+       "sub": "2,094만",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "2026.03 말",
+       "sub": "1,213만",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "2026.06 말 현금",
+     "stats": [
+      {
+       "at": 5,
+       "big": "973만",
+       "label": "1년 전의 약 4분의 1",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "2026.06.18 캔터 피츠제럴드",
+     "stats": [
+      {
+       "at": 0,
+       "big": "시장 판매 계약",
+       "label": "새 주식을 조금씩 파는 계약",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "판매 한도",
+     "stats": [
+      {
+       "at": 1,
+       "big": "최대 1.5억",
+       "label": "캐나다달러 · 팔 수 있는 상한",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "다음 거래일(6.22)",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-21.8%",
+       "label": "$5.675 → $4.44",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "7.1 ~ 8.13 실제 판매",
+     "stats": [
+      {
+       "at": 3,
+       "big": "227만 주",
+       "label": "2,272,768주",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "손에 쥔 돈(순)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "1,263만",
+       "label": "캐나다달러",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "매출은?",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2026년 상반기 매출",
+     "stats": [
+      {
+       "at": 1,
+       "big": "0",
+       "label": "1년 전 상반기 31만 캐나다달러",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "상반기 영업 현금 유출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "1,391만",
+       "label": "캐나다달러 · 분기 약 696만",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "source",
+     "kind": "2분기 재무제표 계속기업 문구",
+     "orig": "a material uncertainty that may cast significant doubt",
+     "tr": "계속 운영할 수 있을지에 중대한 불확실성",
+     "src": "BTQ 6-K",
+     "date": "2026.08.13",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**첫 반복 매출 계약**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2026.09.30 발표",
+     "stats": [
+      {
+       "at": 1,
+       "big": "카이아 재단",
+       "label": "3년 계약",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "라인 · 카카오를 잇는 블록체인",
+     "stats": [
+      {
+       "at": 2,
+       "big": "수수료 일부",
+       "label": "거래가 늘면 매출도",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "첫해 매출(회사 예상)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "수십만 달러",
+       "label": "여섯 자리 미국 달러",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "발표일은\n**3분기 마지막 날**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "본격적인 숫자는\n**4분기 이후**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "보고서 날짜도\n**단서**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "지난 네 번",
+     "stats": [
+      {
+       "at": 1,
+       "big": "설명회 공지 먼저",
+       "label": "공지 → 보고서",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "작년 3분기",
+     "left": {
+      "at": 2,
+      "head": "11.13",
+      "big": "공지",
+      "lines": [
+       "설명회 날짜"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "11.14",
+      "big": "공개",
+      "lines": [
+       "장 마감 뒤"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "지난 네 번 중",
+     "stats": [
+      {
+       "at": 3,
+       "big": "3번",
+       "label": "장 마감 뒤 공개",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "올해 11.11까지",
+     "stats": [
+      {
+       "at": 4,
+       "big": "공지 없음",
+       "label": "3분기 보고서 날짜 미공지",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "보고서 다음 날\n**어떻게 움직였나**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2026.03.30 장 마감 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "연간 보고서",
+       "label": "2025년 실적",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "그날 종가 · 올해 바닥 근처",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$2.16",
+       "label": "3월 27일 올해 최저 $2.15",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "다음 날(3.31)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+23.6%",
+       "label": "$2.67",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "나머지 세 번\n**고정 댓글의 리포트 기록표**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "보고서 4번 · 20거래일 뒤",
+     "stats": [
+      {
+       "at": 0,
+       "big": "3/4",
+       "label": "보고서 전보다 위",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "낮았던 한 번은\n**가장 최근**",
+     "at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2026.08.13 장 마감 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "2분기 보고서",
+       "label": "기준 종가 $4.11",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "첫날(8.14)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-1.2%",
+       "label": "$4.06",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일 뒤(9.11)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-31.1%",
+       "label": "$2.83",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "8월 보고서에서\n**처음 나온 숫자 두 개**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "8월 보고서에서 처음 나온 숫자",
+     "items": [
+      {
+       "no": "1",
+       "text": "반기 매출 0",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "분기 뒤 판 227만 주",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "같은 20거래일 아이온큐",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-18.3%",
+       "label": "업종 하락도 컸다",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "차이는\n**그 뒤에**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "내리는 날 더 크게\n**반등은 짧게**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "앞선 세 번",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "연간 보고서 뒤 20거래일",
+     "left": {
+      "at": 1,
+      "head": "BTQ",
+      "big": "+32.4%",
+      "lines": [
+       "3.30 기준"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "아이온큐",
+      "big": "+62.0%",
+      "lines": [
+       "함께 상승"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "작년 3분기만\n**달랐다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "2025년 3분기 보고서 뒤 20거래일",
+     "left": {
+      "at": 3,
+      "head": "BTQ",
+      "big": "+16.1%",
+      "lines": [
+       "11.14 기준"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "아이온큐",
+      "big": "-2.4%",
+      "lines": [
+       "조금 하락"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "그때 현금",
+     "stats": [
+      {
+       "at": 4,
+       "big": "3,939만",
+       "label": "캐나다달러 · 지금 알려진 숫자의 4배 넘게",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "가설 1\n**판매 물량**",
+     "at": 0,
+     "kicker": "가설 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "상반기 속도",
+     "stats": [
+      {
+       "at": 1,
+       "big": "분기 약 696만",
+       "label": "캐나다달러씩 현금 유출",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "판매 계약 한도",
+     "stats": [
+      {
+       "at": 2,
+       "big": "대부분 남음",
+       "label": "최대 1.5억 캐나다달러",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종이 오르는 날\n**팔기에도 좋은 날**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "반등을 반만\n**따라간 움직임과 맞는다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "가설 2\n**숫자의 공백**",
+     "at": 0,
+     "kicker": "가설 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "마지막 공식 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "6월 말",
+       "label": "다섯 달 가까이 전 숫자",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "9월 말 현금은\n**아직 아무도 모른다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "기다리는 동안\n**새 재료도 없었다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "시나리오 네 갈래\n**리포트에 정리**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "반론",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.05 급락 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "업종과 한 몸",
+       "label": "BTQ -13.9% · 아이온큐 -10.5%",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "갈라짐의 길이",
+     "stats": [
+      {
+       "at": 2,
+       "big": "8거래일",
+       "label": "아직 짧은 기록",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종과 반대로 오른 때도\n**있었다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "기록 하나로\n**방향을 정할 수 없다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "보고서에서 볼\n**숫자 두 개**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "첫째 · 9월 말 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "973만 위?",
+       "label": "6월 말 캐나다달러 기준",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "둘째 · 8월 중순 뒤 판매",
+     "stats": [
+      {
+       "at": 2,
+       "big": "몇 주?",
+       "label": "8.13까지 227만 주",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "갈림길",
+     "left": {
+      "at": 3,
+      "head": "현금↑ 판매↓",
+      "big": "가설 1 약화",
+      "lines": [
+       "판매 멈춤"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "현금↑ 판매↑",
+      "big": "판매로 메움",
+      "lines": [
+       "주식으로 만든 현금"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "둘 다 미달이면\n**8월과 같은 길?**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "달력에 적어 둘\n**날짜**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "먼저",
+     "stats": [
+      {
+       "at": 1,
+       "big": "11.18",
+       "label": "10월 22일 급락의 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 리포트 기준선",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$2.25",
+       "label": "11.18 종가와 비교",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "다음",
+     "stats": [
+      {
+       "at": 3,
+       "big": "보고서 날",
+       "label": "설명회 공지가 먼저 나올 가능성",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "마지막",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12.10",
+       "label": "11월 11일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "11월 11일부터 세어\n**20번째 거래일**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "채점 기준선 · 11.11 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$1.74",
+       "label": "보고서 숫자 두 개와 함께 채점",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "루테인 제품\n**링크는 설명란에**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3,
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "내릴 땐 함께\n**오를 땐 처음으로 뒤처짐**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "차이를 메울 숫자\n**3분기 보고서**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "대응 전략 · 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "영상은 왜\n**리포트는 다음 한 달**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 4,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "BTQ가 업종 반등을 놓친 가장 큰 이유는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "판매 물량 걱정"
+      },
+      {
+       "at": 3,
+       "text": "현금 숫자 공백"
+      },
+      {
+       "at": 4,
+       "text": "매출 아직 없음"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 3,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
