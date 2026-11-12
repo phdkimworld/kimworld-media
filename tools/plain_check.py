@@ -62,4 +62,11 @@ for f in files(sys.argv[1:]):
         for s in L[:3]: print(f"   {tag}: {s[:80]}")
     if lr > 0.15:
         for s in long_[:3]: print(f"   LONG: {s[:80]}…")
+    # EMOJI(SKILL 8.0.2 'AI 느낌', 77회차 BTQ): 설명란 줄마다 장식 이모지 머리(📌⚡💵🧩📚…)를 다는 틀 — RUM 76 설명란 11줄. 링크·쇼핑·알림·투표 줄만 6줄까지
+    if os.path.basename(f) == 'description.txt':
+        em = [l for l in raw[0].split('\n') if re.match('[\U0001F300-\U0001FAFF☀-➿]', l)]
+        if len(em) > 6:
+            # 같은 날 동시 제작(CEG 78회차)을 막지 않도록 11-12까지는 경고만, 11-13부터 FAIL
+            hard = __import__('datetime').date.today().isoformat() >= '2026-11-13'
+            ok &= not hard; print(f"{'FAIL' if hard else 'WARN'} {f}: 이모지로 시작하는 줄 {len(em)}개 > 6 — 장식 머리는 지우고 사실 문장으로(링크·🛒·🔔·🗳️ 줄만 남김): {' '.join(l[:2] for l in em)}")
 print('PLAIN_OK' if ok else 'PLAIN_FAIL')

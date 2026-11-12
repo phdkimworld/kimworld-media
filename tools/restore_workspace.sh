@@ -29,4 +29,22 @@ from fontTools.ttLib import TTFont, TTCollection
 for w,f in [('Regular','400Regular/NotoSansKR_400Regular'),('Medium','500Medium/NotoSansKR_500Medium'),('Bold','700Bold/NotoSansKR_700Bold'),('Black','900Black/NotoSansKR_900Black')]:
     c=TTCollection(); src='/tmp/fnt/package/'+f+'.ttf'; c.fonts=[TTFont(src),TTFont(src)]; c.save('/usr/share/fonts/opentype/noto/NotoSansCJK-'+w+'.ttc')" || echo "글꼴 대체 실패"
 fi
+# ASR(tts_asr_check): 정적 sherpa-onnx-offline 바이너리가 유실되면 pip sherpa-onnx 파이썬 API 래퍼로 같은 출력을 낸다(77회차 BTQ)
+SB=$W/tts/st/sherpa-onnx-v1.13.8-linux-x64-static/bin/sherpa-onnx-offline
+if [ ! -x $SB ]; then
+  pip install -q sherpa-onnx numpy >/dev/null 2>&1 || true; mkdir -p $(dirname $SB)
+  cat > $SB <<'PYEOF'
+#!/usr/bin/env python3
+import sys, json, wave, numpy as np, sherpa_onnx
+a = dict(x[2:].split('=', 1) for x in sys.argv[1:] if x.startswith('--'))
+wav = [x for x in sys.argv[1:] if not x.startswith('--')][-1]
+r = sherpa_onnx.OfflineRecognizer.from_transducer(encoder=a['encoder'], decoder=a['decoder'], joiner=a['joiner'], tokens=a['tokens'], num_threads=int(a.get('num-threads', 4)), decoding_method='greedy_search')
+w = wave.open(wav); sr = w.getframerate(); n = w.getnchannels(); x = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+if n > 1: x = x.reshape(-1, n).mean(1)
+s = r.create_stream(); s.accept_waveform(sr, x); r.decode_stream(s)
+print(json.dumps({"text": s.result.text}, ensure_ascii=False))
+PYEOF
+  chmod +x $SB
+fi
+[ -d $W/asr/sherpa-onnx-zipformer-korean-2024-06-24 ] || { mkdir -p $W/asr && curl -sSL https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-korean-2024-06-24.tar.bz2 | tar xj -C $W/asr || echo "ASR 모델 받기 실패"; }
 echo "RESTORED /home/claude -> $W"
