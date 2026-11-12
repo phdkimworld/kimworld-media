@@ -68,7 +68,7 @@ def commit_push(repo, branch, paths, msg):
     run("git", "commit", "-qm", msg + "\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X", cwd=repo)
     for i in range(4):
         if run("git", "push", "-q", "origin", f"HEAD:{branch}", cwd=repo).returncode == 0: return True
-        run("git", "pull", "-q", "--rebase", "origin", branch, cwd=repo); time.sleep(2 ** (i + 1))
+        run("git", "pull", "-q", "--rebase", "--autostash", "origin", branch, cwd=repo); time.sleep(2 ** (i + 1))
     return False
 
 R = {"auto": [], "escalate": [], "notes": []}

@@ -36,3 +36,11 @@ line = (f"제작 점검 {NOW:%m/%d %H:%M} ET: 정규 {int(r)} · 요청 {int(q)}
         f"(요청 후보 0순위 {tiers['0순위']} · 1순위 {tiers['1순위']} · 2순위 {tiers['2순위']}), "
         f"진행 중 {'; '.join(pending) if pending else '없음'}, 블로거 {pn}/{reports}, 다음 요청 후보 {top.group(1) if top else '없음'}")
 print(("NOTHING " if full and not pending else "ACTION ") + line)
+
+# 점검 중 바뀐 통계 스냅샷은 바로 커밋·푸시(세션 종료 때 '커밋 안 된 변경' 알림이 반복되지 않게, 11-12)
+if subprocess.run(["git", "diff", "--quiet", "--", "stats_snapshots.jsonl"], cwd=M).returncode:
+    subprocess.run(["git", "add", "stats_snapshots.jsonl"], cwd=M)
+    subprocess.run(["git", "commit", "-qm", "통계 스냅샷 갱신\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X"], cwd=M, capture_output=True)
+    for _ in range(3):
+        if subprocess.run(["git", "push", "-q", "origin", "HEAD:claude/kim-world-stock-studio-laes-ovy09b"], cwd=M, capture_output=True).returncode == 0: break
+        subprocess.run(["git", "pull", "-q", "--rebase", "--autostash", "origin", "claude/kim-world-stock-studio-laes-ovy09b"], cwd=M, capture_output=True)
