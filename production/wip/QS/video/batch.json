@@ -1,1 +1,0 @@
-{"id":"qs_tts1","tasks":[{"id":"raw","kind":"tts","path":"$IN/narration.txt","speaker":6,"speed":1.15,"steps":10},{"id":"shorts_raw","kind":"tts","path":"$IN/shorts_narration.txt","speaker":6,"speed":1.15,"steps":10}]}
