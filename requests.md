@@ -44,3 +44,4 @@
 | 대기(0순위) | INJ | 인젝티브(Injective) | - | 운영자 지정(레거시 상위) | 2026-11-09 | 예약 없음(요청 큐) | 레거시 조회 1,317(1편) · 운영자 지시 11-09 '나머지는 다 소진될때까지 요청종목 0순위로' · 답글 대상 없음(리포트 발행으로 갈음) |
 | 대기 | RKLB | 로켓랩(Rocket Lab) | Ugw2j8TzvwHG0HTkh0l4AaABAg@t3iCYCzmz5A | @이준호-c3o | 2026-11-11 | 예약 없음(요청 큐) | 리포트 10-15 기준(7일 초과) · 링크 답글 Ugw2j8TzvwHG0HTkh0l4AaABAg.Ad43rsfBv9rAd45LkhsK28 · 접수 답글 Ugw2j8TzvwHG0HTkh0l4AaABAg.Ad43rsfBv9rAd48CRVP0UZ(11-11) |
 | 대기 | LAES | 실스크(SEALSQ) | - | 웹 요청 1명 | 2026-11-13 | 예약 없음(요청 큐) | 사이트 업데이트 요청 버튼 · 최신 리포트 11-05 기준(7일 초과) · 답글 대상 없음(리포트 발행으로 갈음) |
+| 대기 | QXO | QXO | Ugy0MIWRB5X125AffSt4AaABAg@ikNDuvCcGmc | @이준호-c3o | 2026-11-13 | 예약 없음(요청 큐) | 실적 발표 뒤 업데이트 요청 · 리포트 10-09 기준(7일 초과) · 접수 답글 Ugy0MIWRB5X125AffSt4AaABAg.Ad932vemIlqAd97w2d9XC8(11-13) |
