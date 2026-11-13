@@ -12,6 +12,8 @@ until grep -q "^done" "$V/tts.log" 2>/dev/null; do
   grep -q "Traceback\|Error" "$V/tts.log" 2>/dev/null && { echo "CHAIN_FAIL tts"; tail -5 "$V/tts.log"; exit 1; }
   sleep 15
 done
+# 녹음 파일이 실제로 있나(80회차 CBRS: 맥 작업이 'venv 없음'으로 실패했는데 mac.py wait가 0으로 끝나 tts_mac.sh가 tts.log에 done을 적음 → 빈 녹음으로 다음 단계)
+[ -s "$V/raw.wav" ] || { echo "CHAIN_FAIL tts_missing(tts.log는 done인데 raw.wav 없음 — mac_wait.log 확인 뒤 클라우드 TTS: cd /home/claude/tts/st && python3 st_tts.py narration.txt raw.wav 6 1.15 10)"; grep -h "✗\|exit" "$V/mac_wait.log" 2>/dev/null | tail -2; exit 1; }
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
 # 녹음이 지금 대본에서 나왔나(53회차 PLUG: TTS 시작 뒤 대본을 고쳐 다시 녹음) — 옛 녹음 + 새 slides.json 합성을 막는다
 python3 /home/user/kimworld-media/tools/tts_fresh_check.py "$V" || { echo "CHAIN_FAIL tts_fresh_check(녹음과 대본 불일치 — st_redo 또는 TTS 재실행)"; exit 1; }
