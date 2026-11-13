@@ -91,5 +91,19 @@ def main():
            'red': red, 'yellow': yel, 'fresh': sorted(r['ticker'] for r in rows if r['grade'] == '✅')}
     print(json.dumps(out, ensure_ascii=False, indent=1))
 
+def _autocommit():
+    """스냅숏을 쓴 쪽이 누구든(에이전트 포함) 바로 커밋·푸시해 작업 트리를 깨끗하게 둔다(11-13)."""
+    import subprocess as sp, time as _t
+    d = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    g = lambda *a: sp.run(['git', *a], cwd=d, capture_output=True, text=True)
+    if g('diff', '--quiet', '--', 'stats_snapshots.jsonl').returncode == 0: return
+    br = g('rev-parse', '--abbrev-ref', 'HEAD').stdout.strip()
+    g('add', 'stats_snapshots.jsonl')
+    g('commit', '-qm', '통계 스냅샷 갱신\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X', '--', 'stats_snapshots.jsonl')
+    for i in range(4):
+        if g('push', '-q', 'origin', f'HEAD:{br}').returncode == 0: return
+        g('pull', '-q', '--rebase', '--autostash', 'origin', br); _t.sleep(2 ** (i + 1))
+
 if __name__ == '__main__':
     main()
+    if os.environ.get('YT_STATS_NOCOMMIT') != '1': _autocommit()
