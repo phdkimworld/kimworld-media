@@ -618,3 +618,11 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 새 검사: plain_check EMOJI(설명란 이모지 머리) · restore_workspace.sh에 ASR 래퍼 복구.
 - 미확인: llm_judge no_key(judge.yml 결과 파일 없음) → easy_check·쓰는 자리 점검으로 발행. hero_check 도구 유실(HERO_SKIP).
 - 다음: 3분기 보고서 날(설명회 공지 먼저) · 11/18 2.25달러 · 12/3 · 12/10 20거래일째 1.74달러.
+
+## 80회차 CBRS 세레브라스(11-13 정규 · 실적 뒤 후속편 5번째 · A그룹)
+- 잘된 점: 검증 표 1~7위를 '결과 시점 전·새 공시 없음·직전 제작'으로 넘기고 8위 CBRS를 SEC 제출 목록(8-K 2.02·10-Q 11/12 장후)으로 바로 확인. 실적 8-K 세 건의 전망 문단만 grep해 '세 번 모두 전망 상회, 다음 분기 이익률 전망만 방향이 다름'을 숨긴 답으로. 나스닥 extended-trading API로 시간외 최저·최고·마지막 체결(93.19·117.11·115.68)까지 확인해 '시간외는 판정이 아님'을 반론 문단에. 리포트 → 롱폼 GFSoL3mAjAs → 쇼츠 AiqkRxUzWyo → SNS 7건 → 블로거(https://phdkimworld.blogspot.com/2026/11/cerebras-cbrs-q3-2026-earnings-beat.html)까지 약 55분.
+- 지난 예측(11/5) 성적: 적중 2(진단 국면 B 끝자락 → 해제 뒤 최저 종가 93.66 유지, 해제 날 -5.2%보다 작은 하락) · 빗나감 3(시나리오 4·3, 3분기 매출 범위 위쪽) · 확인 전 1(실적 첫 정규장 반응). 빗나간 원인은 해제 날 업종 반등(SOXX +7.5%)을 따로 보지 않은 것 → 이번 시나리오 축에 업종을 넣음.
+- 고친 실수: ① 맥 TTS가 맥 쪽 venv 없음으로 실패했는데 wait가 0으로 끝나 tts_mac.sh가 TTS_DONE을 적음 → 클라우드 TTS(모델·실행 파일 다시 받음)로 전환, chain_long에 tts_missing 검사 ② easy_check 지적 약 25건(짧은 답 첫 문단 질문, 부 끝 질문, ETF·EV·중앙값 병기, '몫'·'스무 번째', 3열 표 1열 18자) 두 번에 고침 ③ num_check MISS 4(3.3억·6월 가격 셋)를 녹음 대기 중에 리포트 문장 추가로 해결 ④ check_slides hero 줄 시각이 다음 장면보다 늦음 → hero 두 줄을 0·1문장으로 ⑤ 발행 전 심사 10건 중 8건 반영 뒤 재발행(부 끝 질문은 easy_check v3.4가 요구해 유지) ⑥ 대본 '정해진 날에 풀리는 주식은 더 없다' 과장 → st_redo로 두 문단만 다시 녹음.
+- 새 검사: chain_long.sh tts_missing(tts.log done인데 raw.wav 없음 → CHAIN_FAIL, 과거 btq4·ceg·rum 통과).
+- 미확인: ASR 문단 22 '삼번'→'싼번'(투표 번호, 인식기 한계로 asr_check.ok). hero_check 도구 유실(HERO_SKIP, 첫 화면 눈으로 확인).
+- 다음: 11/13 정규장 종가 vs 97.75달러 · 11/19 5거래일째 · 12/11 20거래일째(CBRS 97.75·SOXX 154.99) 채점 · 맥 relay venv 복구 여부 확인.
