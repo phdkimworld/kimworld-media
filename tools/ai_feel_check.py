@@ -3,6 +3,7 @@
 #  - 대본·리포트: 다리 말 '그렇다면' 2번 이하(직전 6회차 RDW·JOBY·EOSE·LCID·IREN·NBIS 대본·리포트에 2~6번씩 같은 틀)
 #  - 공통: 번역투·상투어(흥미롭게도·주목할 점은·결론적으로·~에 있어서·~를 통해·~하는 것이 중요합니다) 0개
 #  - 대본: 같은 말로 시작하는 문단이 3개 연속이면 경고
+#  - 대본(79회차 QS): '첫 번째 단서'(group_check 기준 문단)를 뺀 서수 문단('두 번째 단서는·세 번째 단서는·첫 번째 가설은') 3개 이상이면 경고(78회차 CEG 대본 4개)
 #  - 리포트(.md): 서수로 여는 문단('첫째·둘째·셋째', '첫 번째 …은') 3개 이상이면 경고(78회차 CEG: 직전 RUM 리포트 '첫 번째 힘은·두 번째 힘은·첫째 갈래는·둘째 갈래는·셋째 갈래는' 5번)
 import sys, re
 STOCK = ['흥미롭게도', '주목할 점은', '주목할 만한', '결론적으로', '에 있어서', '를 통해', '을 통해', '하는 것이 중요합니다', '라는 점입니다', '살펴보도록 하겠습니다']
@@ -21,8 +22,9 @@ for p in sys.argv[1:]:
     heads = [re.split(r'[ ,]', x, maxsplit=1)[0] for x in paras]
     for i in range(len(heads) - 2):
         if heads[i] == heads[i+1] == heads[i+2] and len(heads[i]) > 1: bad.append(f"{p}: 문단 {i+1}~{i+3}이 모두 '{heads[i]}'로 시작"); break
-    if p.endswith('.md'):
-        od = [x[:14] for x in paras if re.match(r'(첫째|둘째|셋째|넷째|(첫|두|세|네) 번째 [가-힣]+(은|는))', x)]
+    od = [x[:14] for x in paras if re.match(r'(첫째|둘째|셋째|넷째|(첫|두|세|네) 번째 [가-힣]+(은|는))', x)]
+    if not p.endswith('.md'): od = [x for x in od if not x.startswith('첫 번째 단서')]
+    if True:
         if len(od) >= 3: bad.append(f"{p}: 서수로 여는 문단 {len(od)}개 ≥ 3 — 주제 낱말·날짜·장면으로 열기: " + ' / '.join(od))
 print('\n'.join(bad) if bad else 'AI_FEEL_OK')
 sys.exit(1 if bad else 0)
