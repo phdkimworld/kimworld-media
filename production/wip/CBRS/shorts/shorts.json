@@ -1,0 +1,355 @@
+{
+ "ticker": "CBRS",
+ "name": "세레브라스",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "세 번 모두",
+   "subtitle": "실적 **세 번 모두**\n회사 전망을 넘었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "세레브라스 CBRS",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "3/3",
+     "at": 0.0,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "핵심 매출 ≥ 회사 전망",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "상장 뒤 실적 세 번",
+     "at": 0.35,
+     "y": 480,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2026.06 · 08 · 11",
+     "at": 0.65,
+     "y": 640,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "19.6%",
+   "subtitle": "첫 번째 실적 다음 날\n**19.6%** 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "1분기 실적 다음 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-19.6%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$226.72 → $182.26"
+    },
+    {
+     "kind": "text",
+     "text": "2026.06.24",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "전망은 넘었는데",
+     "at": 0.72,
+     "y": 640,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "11.8%",
+   "subtitle": "두 번째 실적 다음 날\n**11.8%** 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2분기 실적 다음 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-11.8%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$262.06 → $231.01"
+    },
+    {
+     "kind": "text",
+     "text": "2026.08.13",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "핵심 매출 전망 +8.2%",
+     "at": 0.72,
+     "y": 640,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "18.3%",
+   "subtitle": "세 번째 실적 뒤 시간외\n**18.3%** 올랐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.12 장 마감 뒤",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+18.3%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "$97.75 → $115.68",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "시간외 마지막 체결",
+     "at": 0.45,
+     "y": 480,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "정규장 판정 전",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "이익률 전망",
+   "subtitle": "앞선 두 번은 다음 분기\n**이익률 전망**이 낮았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "다음 분기 이익률 전망",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "↓ ↓",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "6월 36~38% · 8월 38~40%"
+    },
+    {
+     "kind": "text",
+     "text": "앞선 두 번",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "직전 분기보다 낮음",
+     "at": 0.72,
+     "y": 640,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "47~49%",
+   "subtitle": "이번 4분기 전망은\n**47~49%**로 높습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "4분기 이익률 전망",
+     "at": 0.0,
+     "y": 100,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "47~49%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "green",
+     "anim": "pop",
+     "sub": "3분기 41%보다 높음"
+    },
+    {
+     "kind": "text",
+     "text": "처음으로 상승",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "11.12 발표",
+     "at": 0.72,
+     "y": 640,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "$97.75",
+   "subtitle": "판정 기준은\n**$97.75** 위에서 끝나는지입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "첫 반응 판정",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "$97.75",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "11.12 실적 날 종가"
+    },
+    {
+     "kind": "text",
+     "text": "11.13 정규장 종가",
+     "at": 0.45,
+     "y": 480,
+     "size": 100,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "20거래일째 12.11",
+     "at": 0.72,
+     "y": 640,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "가장 눈여겨본",
+   "subtitle": "이번 실적에서\n**가장 눈여겨본** 대목은?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "세레브라스 실적에서 가장 크게 본 숫자는?",
+     "opts": [
+      "이익률 전망",
+      "연간 매출 상향",
+      "새 클라우드 계약"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "세레브라스 실적에서 가장 크게 본 숫자는?",
+     "opts": [
+      "이익률 전망",
+      "연간 매출 상향",
+      "새 클라우드 계약"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}

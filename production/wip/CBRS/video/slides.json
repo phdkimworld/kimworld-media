@@ -1,0 +1,1312 @@
+{
+ "ticker": "CBRS",
+ "name": "세레브라스",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "목 어깨 안마기 · 링크는 설명란에",
+ "midroll": "../kit/cbrs_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/cbrs_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "CBRS · 세레브라스 · 3분기 실적 뒤",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "실적 3번, 전망 3번 상회",
+       "tone": "up"
+      },
+      {
+       "at": 2,
+       "text": "앞선 2번은 급락",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "실적 세 번",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3/3",
+       "label": "핵심 매출이 회사 전망 이상",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "다음 날 주가",
+     "left": {
+      "at": 2,
+      "head": "1분기",
+      "big": "-19.6%",
+      "lines": [
+       "6.24"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "2분기",
+      "big": "-11.8%",
+      "lines": [
+       "8.13"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.12 장 마감 뒤",
+     "stats": [
+      {
+       "at": 3,
+       "big": "3분기 실적",
+       "label": "세 번째 실적 발표",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "시간외 마지막 체결",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+18.3%",
+       "label": "$97.75 → $115.68",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "같은 전망 상회\n**왜 이번만 반대로?**",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**세레브라스 다시 추적**",
+     "at": 0
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 편",
+     "stats": [
+      {
+       "at": 2,
+       "big": "락업 해제",
+       "label": "11.09 마지막 해제",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "오늘의 순서",
+     "items": [
+      {
+       "no": "1",
+       "text": "해제 뒤 여섯 거래일",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "실적 세 번",
+       "sub": "무엇이 달랐나",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "반도체 원판 한 장 = 칩 하나",
+     "stats": [
+      {
+       "at": 1,
+       "big": "웨이퍼 칩",
+       "label": "인공지능 반도체",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "돈 버는 방식",
+     "stats": [
+      {
+       "at": 2,
+       "big": "장비 + 클라우드",
+       "label": "인공지능 답을 빠르게 계산",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "2026.05 나스닥 상장",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$311.07",
+       "label": "공모가 $185 · 상장 첫날 종가",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.12 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "$97.75",
+       "label": "상장 첫날의 삼분의 일 아래",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 성적표",
+     "at": 0,
+     "kicker": "11월 5일 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "11월 5일 리포트가 가장 높게 본 것",
+     "items": [
+      {
+       "no": "4",
+       "text": "해제와 실적이 이어진 하락",
+       "sub": "약 35%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "이건\n**빗나갔다**",
+     "at": 2,
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.09 마지막 해제일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+7.8%",
+       "label": "하락이 아니라 상승",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.09 뒤 최저 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "$93.66",
+       "label": "지난 기준 $91.85 위 · 진단 적중",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "list",
+     "title": "채점",
+     "items": [
+      {
+       "no": "O",
+       "text": "적중 2",
+       "sub": "진단 · 해제 날 무난",
+       "at": 5
+      },
+      {
+       "no": "X",
+       "text": "빗나감 3",
+       "sub": "시나리오 4·3 · 매출 범위",
+       "at": 5
+      },
+      {
+       "no": "?",
+       "text": "확인 전 1",
+       "sub": "실적 첫 반응",
+       "at": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "빗나간 이유\n**업종**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "11월 9일 하루",
+     "left": {
+      "at": 1,
+      "head": "세레브라스",
+      "big": "+7.8%",
+      "lines": [
+       "마지막 해제일"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "SOXX",
+      "big": "+7.5%",
+      "lines": [
+       "반도체 ETF"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "해제 물량만 보고\n**업종 반등은 놓쳤다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종 비교표 · 채점표\n**홈페이지에 무료로**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**실적 앞 여섯 거래일**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.05 아침",
+     "stats": [
+      {
+       "at": 1,
+       "big": "최고경영자 반박",
+       "label": "공매도 보고서에 답한 글",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.05 반도체 ETF SOXX",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-12.1%",
+       "label": "업종 급락",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.05 세레브라스",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-11.0%",
+       "label": "$81.71",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "상장 뒤\n**가장 낮은 종가**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "11.05 → 11.12",
+     "stats": [
+      {
+       "at": 0,
+       "big": "+19.6%",
+       "label": "$81.71 → $97.75",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "여섯 거래일 중",
+     "stats": [
+      {
+       "at": 1,
+       "big": "5번",
+       "label": "업종과 같은 쪽",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "해제 날의 상승",
+     "left": {
+      "at": 2,
+      "head": "세레브라스",
+      "big": "+7.8%",
+      "lines": [
+       "11.09"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "SOXX",
+      "big": "+7.5%",
+      "lines": [
+       "거의 같은 크기"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그래도 하나는\n**분명해졌다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "정해진 날 풀리는 주식\n**이제 없다**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**실적 숫자**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 핵심 매출",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2억 3,090만",
+       "label": "달러",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "핵심 매출 = 회사 기준 매출\n**워런트 비용 등을 뺀 값**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "전망 가운데 값 대비",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+7.4%",
+       "label": "전망 2억 1,400만~2억 1,600만 달러",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "클라우드 매출 · 1년 전 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+272%",
+       "label": "1억 4,490만 달러",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "올해 전망도\n**올렸다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "올해 핵심 매출 전망(달러)",
+     "left": {
+      "at": 1,
+      "head": "8월",
+      "big": "8.8억~8.9억",
+      "lines": [
+       "2분기 발표"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "11월",
+      "big": "9.4억~9.6억",
+      "lines": [
+       "3분기 발표"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "4분기 핵심 매출 전망",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 +39%",
+       "label": "3분기보다 · 3.1억~3.3억 달러",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "새 고객",
+     "stats": [
+      {
+       "at": 3,
+       "big": "3대 클라우드 중 1곳",
+       "label": "클라우드 계약",
+       "tone": "blue"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "이름은\n**내년에 공개**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "오라클 클라우드",
+     "stats": [
+      {
+       "at": 5,
+       "big": "2027년부터",
+       "label": "세레브라스 사용 가능",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "최고경영자 목표",
+     "stats": [
+      {
+       "at": 6,
+       "big": "2027년 매출 3배",
+       "label": "다시 밝힘",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "여기까지는\n**좋은 실적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "그런데 8월도\n**똑같았다**",
+     "at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2분기 핵심 매출 · 전망 대비",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+8.2%",
+       "label": "연간 전망도 상향",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "실적 앞 다섯 거래일",
+     "left": {
+      "at": 3,
+      "head": "8월",
+      "big": "+22.3%",
+      "lines": [
+       "2분기 앞"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "11월",
+      "big": "+19.6%",
+      "lines": [
+       "3분기 앞"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "8.13 다음 날",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-11.8%",
+       "label": "$262.06 → $231.01",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**실적 세 번의 기록**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "세 번 모두",
+     "stats": [
+      {
+       "at": 1,
+       "big": "장 마감 뒤",
+       "label": "발표 시각",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "6.23 첫 실적 · 다음 날",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-19.6%",
+       "label": "$226.72 → $182.26",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "20거래일 뒤(7.22)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-7.5%",
+       "label": "$209.80",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "두 번째 실적 뒤\n**더 길게 밀렸다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "8.12 실적 뒤",
+     "items": [
+      {
+       "no": "5",
+       "text": "5거래일 뒤",
+       "sub": "-17.7%",
+       "at": 1
+      },
+      {
+       "no": "20",
+       "text": "20거래일 뒤",
+       "sub": "-27.0%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "같은 20거래일 SOXX",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-5.3%",
+       "label": "업종",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종보다\n**훨씬 더 빠졌다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "매출은 넘었는데\n**무엇이 실망시켰나**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "ad": [
+    1
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "세 번을 나란히\n**한 줄만 다르다**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "실적 세 번 기록표\n**고정 댓글의 리포트**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "그 한 줄은?",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "다음 분기\n**매출총이익률 전망**",
+     "at": 0,
+     "kicker": "숨은 답",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "매출총이익률 =\n**매출에서 원가를 빼고 남는 비율**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "6월에 나온 2분기 전망",
+     "stats": [
+      {
+       "at": 2,
+       "big": "36~38%",
+       "label": "핵심 기준",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "1분기 회계 기준",
+     "stats": [
+      {
+       "at": 3,
+       "big": "45%",
+       "label": "전망이 더 낮았다",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "8월에 나온 전망",
+     "left": {
+      "at": 4,
+      "head": "3분기 전망",
+      "big": "38~40%",
+      "lines": [
+       "다음 분기"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "2분기 실적",
+      "big": "41%",
+      "lines": [
+       "방금 끝난 분기"
+      ],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이번엔 처음으로\n**방향이 바뀌었다**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "4분기 핵심 매출총이익률 전망",
+     "stats": [
+      {
+       "at": 1,
+       "big": "47~49%",
+       "label": "11월 발표",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "3분기 실적",
+     "stats": [
+      {
+       "at": 2,
+       "big": "41%",
+       "label": "전망이 더 높다",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "4분기 핵심 영업이익률 전망",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-1%~+1%",
+       "label": "거의 손익이 맞는 수준",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 핵심 영업이익률",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-14%",
+       "label": "실적",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "데이터센터 먼저\n**매출은 나중에**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "장비 · 전기 비용이\n**매출보다 먼저**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "늘어난 매출이\n**언제 이익으로 남나**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그 시점을\n**처음 숫자로 적었다**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "남는 돈이 줄면\n**시장은 그쪽을 먼저 봤다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "반론",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "시간외 거래는\n**거래량이 적다**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "11.12 시간외 거래",
+     "left": {
+      "at": 2,
+      "head": "최저",
+      "big": "$93.19",
+      "lines": [
+       "오후 4시 5분"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "최고",
+      "big": "$117.11",
+      "lines": [
+       "오후 4시 33분"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "시간외 마지막 체결",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$115.68",
+       "label": "오후 8시 ET",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "실적 기록은 세 번뿐\n**단정할 수 없다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "돈의 자리",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "현금 · 단기 투자",
+     "left": {
+      "at": 1,
+      "head": "6월 말",
+      "big": "86억",
+      "lines": [
+       "달러"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "9월 말",
+      "big": "78억",
+      "lines": [
+       "달러"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "쌓인 일감(잔여수행의무)",
+     "stats": [
+      {
+       "at": 2,
+       "big": "261억",
+       "label": "달러 · 9월 말",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "9월 말 매출채권",
+     "stats": [
+      {
+       "at": 3,
+       "big": "80%",
+       "label": "두 고객에게서",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "큰 고객 한 곳이\n**분기를 흔든다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "오픈에이아이 운전자금 대출",
+     "stats": [
+      {
+       "at": 5,
+       "big": "8억 2,910만",
+       "label": "달러 · 9월 말 잔액",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "달력에 적어 둘\n**날짜 셋**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "먼저 오늘",
+     "stats": [
+      {
+       "at": 1,
+       "big": "11.13",
+       "label": "정규장 종가",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "첫 반응 판정 기준",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$97.75",
+       "label": "실적 날 종가 위인가",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "다음 · 5거래일째",
+     "stats": [
+      {
+       "at": 3,
+       "big": "11.19",
+       "label": "목요일",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "8월에는 이날까지",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-17.7%",
+       "label": "5거래일 뒤",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "마지막 · 20거래일째",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12.11",
+       "label": "금요일",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "12월 11일 채점",
+     "items": [
+      {
+       "no": "1",
+       "text": "세레브라스 $97.75 위?",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "SOXX $154.99 위?",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "목 어깨 안마기\n**링크는 설명란에**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "세 번 모두 전망 상회\n**이번엔 이익률 전망 상승**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "정규장에서도 이어지나\n**다음 한 달의 출발점**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "시나리오 · 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "세레브라스 실적에서 가장 크게 본 숫자는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "이익률 전망"
+      },
+      {
+       "at": 3,
+       "text": "연간 매출 상향"
+      },
+      {
+       "at": 4,
+       "text": "새 클라우드 계약"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 3,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
