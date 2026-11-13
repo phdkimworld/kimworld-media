@@ -121,6 +121,7 @@ def main():
     ap.add_argument('--kind', choices=['top', 'followup', 'request'], default='top')
     ap.add_argument('--moderate', help='홍보·스팸 댓글 ID 를 거절(숨김)한다. --ban 이면 작성자도 채널에서 차단')
     ap.add_argument('--ban', action='store_true')
+    ap.add_argument('--edit', help='내 답글 ID 의 문구를 --text-file 로 바꾼다(11-13)')
     a = ap.parse_args()
     if not all(os.environ.get(k) for k in ('YT_CLIENT_ID', 'YT_CLIENT_SECRET', 'YT_REFRESH_TOKEN')):
         print('유튜브 인증값 없음', file=sys.stderr); sys.exit(2)
@@ -135,6 +136,12 @@ def main():
         try: r = call(tok, 'comments', {'snippet': {'parentId': a.reply, 'textOriginal': text}}, part='snippet')
         except urllib.error.HTTPError as e: print('답글 실패(재시도 안 함):', err(e), file=sys.stderr); sys.exit(1)
         print(r['id'])
+    elif a.edit and a.text_file:
+        text = tag_links(open(a.text_file, encoding='utf-8').read().strip(), a.kind)
+        req = urllib.request.Request(API + 'comments?part=snippet', method='PUT', headers={'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'},
+                                     data=json.dumps({'id': a.edit, 'snippet': {'textOriginal': text}}).encode())
+        try: print(json.load(urllib.request.urlopen(req))['id'], 'edited')
+        except urllib.error.HTTPError as e: print('수정 실패:', err(e), file=sys.stderr); sys.exit(1)
     elif a.moderate:
         q = urllib.parse.urlencode({'id': a.moderate, 'moderationStatus': 'rejected', 'banAuthor': 'true' if a.ban else 'false'})
         req = urllib.request.Request(API + 'comments/setModerationStatus?' + q, data=b'', method='POST', headers={'Authorization': 'Bearer ' + tok})
