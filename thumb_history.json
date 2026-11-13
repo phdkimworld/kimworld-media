@@ -2459,6 +2459,27 @@
    ],
    "video": "k7hyGKOOpHg",
    "shorts": "FDVlcaHgs-k"
+  },
+  {
+   "t": "cbrs",
+   "date": "2026.11.13",
+   "layout": "custom",
+   "palette": "teal-orange",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "앞선 실적 2번 급락 / 3번째 실적 뒤 시간외 +18.3%(빨강) 카드 / 이번엔 무엇이 달랐나 + 웨이퍼 칩·AI 클라우드·데이터센터 랙·상승 화살표",
+    "다음 분기 이익률 전망 / 처음으로 상승 / 47~49% + 같은 그림"
+   ],
+   "video": "GFSoL3mAjAs",
+   "shorts": "AiqkRxUzWyo"
   }
  ]
 }
