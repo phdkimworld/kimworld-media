@@ -401,7 +401,7 @@ if _v34:
     if s1 and len(pre) < 4: bad.append(f"v3.4 1부 표 앞 문단 {len(pre)}개 → 4문단(어떤 회사 · 무엇으로 돈을 버나 · 왜 그 고객·변수가 중요한가 · 지금 몸값)")
     if s1 and not re.search(r'돈을 (버|벌)|버는 방식|매출은 .{0,20}(에서|로) 나옵', s1): bad.append("v3.4 1부에 '무엇으로 돈을 버는가' 문단(돈을 버는 방식은 …)")
     s2 = _sec(2)
-    if s2 and not re.search(r'공통점|겹쳤|겹친|묶어 보면|나란히 놓으면', s2): bad.append("v3.4 2부 끝에 사건들을 하나로 묶는 문장(예: '세 사건을 나란히 놓으면 공통점이 하나 보입니다. 모두 …에서 비롯된 것은 아니라는 점입니다')")
+    if s2 and not re.search(r'공통점|겹쳤|겹친|묶어 보면|나란히 놓으면', s2): bad.append("v3.4 2부 끝에 사건들을 하나로 묶는 문장(같은 틀을 베끼지 말고 이번 사건의 연결을 그 자리의 말로: '…는 따로 나온 숫자지만 한 방향으로 겹쳤습니다' 등 — ai_feel_check가 예시 그대로의 문장을 막음)")
     s3 = _sec(3)
     t3 = s3.split('\n|')[0]
     if s3 and '예를 들어' not in t3: bad.append("v3.4 3부 기록표 앞에 비교 기준을 이번 숫자로 푼 예시('예를 들어 이번에는 11월 4일 종가 …를 다섯 거래일 전 …와 비교해 -24.7%')")
@@ -442,5 +442,9 @@ if _sn:
     _items = re.findall(r'"([^"]*)"', _sn.group(1))
     if len(_items) != 2 or not all(re.search(r"\S\s+[+-−]?[$]?\d[\d,.]*\s*(%|배|달러|원)?$", x) for x in _items):
         bad.append(f"share_numbers {_items} → '<라벨> <숫자>' 두 개, 끝은 숫자(+%·배·달러·원), 예: [\"11.09 종가 $84.44\", \"4거래일 뒤 -15.2%\"]")
+# 86회차 FIG: 리포트에도 'AI 느낌' 틀 검사(ai_feel_check)를 함께 — 지금까진 대본(group_check)만 돌았음
+import subprocess as _sp2
+_af = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), p], capture_output=True, text=True)
+if _af.returncode: bad += ['AIFEEL ' + l for l in _af.stdout.split('\n') if l.strip()]
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
