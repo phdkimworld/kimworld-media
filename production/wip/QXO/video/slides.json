@@ -1,0 +1,1637 @@
+{
+ "ticker": "QXO",
+ "name": "큐엑스오",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "등산 스틱 · 링크는 설명란에",
+ "midroll": "../kit/qxo_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/qxo_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "QXO · 큐엑스오 · 비컨 통합 성적표",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "11.09 하루 +19.2%",
+       "tone": "white"
+      },
+      {
+       "at": 0.3,
+       "text": "이익 +85%, 한 주당 이익은 줄었다",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.06 → 11.09 큐엑스오",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+19.2%",
+       "label": "$11.56 → $13.78 · 2024년 8월 이후 최대",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "3분기 조정 EBITDA",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+85%",
+       "label": "5억 5,700만 달러 · 1년 전 3억 100만",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "숫자를 뜯어 보면\n**이상한 점**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "비컨 쪽 매출(계산)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 -2.4%",
+       "label": "1년 전 대비",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "조정 주당 이익",
+     "stats": [
+      {
+       "at": 5,
+       "big": "$0.13",
+       "label": "1년 전 $0.14",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "통합은 정말\n**잘되고 있나**",
+     "at": 6,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**두 번째 추적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "출처",
+     "stats": [
+      {
+       "at": 1,
+       "big": "시청자 요청 종목",
+       "label": "실적 발표 뒤 업데이트 요청",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "인수한 회사들 통합\n**잘되어 가나?**",
+     "at": 2,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그 질문 하나를\n**실적 숫자로**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "source",
+     "kind": "지난 리포트",
+     "orig": "11월 초 3분기 실적의 이익률이 다음 국면을 정할 가능성이 크다",
+     "tr": "실적의 이익률이 다음 방향을 정한다",
+     "src": "김박사 월드 리포트",
+     "date": "2026.10.11",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "시나리오 1 · 이익률 회복",
+     "stats": [
+      {
+       "at": 1,
+       "big": "15~20% 반등",
+       "label": "1년 전 수준 이익률이면",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "결과",
+     "left": {
+      "at": 2,
+      "head": "이익률",
+      "big": "11.4%",
+      "lines": [
+       "1년 전 11.0%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "11.06 → 11.11",
+      "big": "+19.5%",
+      "lines": [
+       "종가 기준"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "비용 절감 숫자 없음 · 16달러 못 감",
+     "stats": [
+      {
+       "at": 3,
+       "big": "부분 적중",
+       "label": "최고 종가 $13.81",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "시나리오 2 · 새 증자로 9.14달러",
+     "stats": [
+      {
+       "at": 4,
+       "big": "빗나감",
+       "label": "최저 종가 $10.14",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "증자 대신",
+     "stats": [
+      {
+       "at": 5,
+       "big": "자사주 매입",
+       "label": "5억 달러 승인",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "시나리오 3 · 현금 위주 새 인수",
+     "stats": [
+      {
+       "at": 6,
+       "big": "안 일어남",
+       "label": "큐엑스오 인수 없음",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "시나리오 4 · 10~14달러 등락",
+     "stats": [
+      {
+       "at": 7,
+       "big": "적중",
+       "label": "",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "10.09 이후 종가",
+     "stats": [
+      {
+       "at": 8,
+       "big": "$10.14~13.81",
+       "label": "나스닥 시세",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "회장 겸 최고경영자",
+     "stats": [
+      {
+       "at": 1,
+       "big": "브래드 제이콥스",
+       "label": "연쇄 인수로 이름난 경영자",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "차례로 인수",
+     "items": [
+      {
+       "no": "1",
+       "text": "비컨 루핑",
+       "sub": "2025.04 · 지붕재 유통",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "코디악",
+       "sub": "2026.04 · 건자재",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "탑빌드",
+       "sub": "2026.07 · 단열재",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "지붕재·단열재·목재 유통\n**+ 단열재 시공**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "고객",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 19만 4,000곳",
+       "label": "회사 발표",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**11월 9일 아침의 예비 실적**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 매출",
+     "stats": [
+      {
+       "at": 1,
+       "big": "48억 9,500만",
+       "label": "달러 · 회사 발표",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "1년 전 대비",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+79%",
+       "label": "1년 전 27억 2,800만 달러",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "조정 EBITDA",
+     "stats": [
+      {
+       "at": 3,
+       "big": "5억 5,700만",
+       "label": "달러 · 3분기",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "1년 전 조정 EBITDA",
+     "stats": [
+      {
+       "at": 4,
+       "big": "3억 100만 달러",
+       "label": "2025년 3분기",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "조정 EBITDA 이익률",
+     "left": {
+      "at": 5,
+      "head": "1년 전",
+      "big": "11.0%",
+      "lines": [
+       "2025년 3분기"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "이번",
+      "big": "11.4%",
+      "lines": [
+       "2026년 3분기"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "분기별 숫자·계산표\n**홈페이지에 무료로**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "11.09 거래량",
+     "stats": [
+      {
+       "at": 7,
+       "big": "약 2.1배",
+       "label": "직전 20거래일 평균 대비",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 숫자에는\n**새로 산 회사**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "3분기 매출 가운데",
+     "left": {
+      "at": 1,
+      "head": "탑빌드",
+      "big": "16억 4,400만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "코디악",
+      "big": "5억 8,900만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "1년 전 3분기",
+     "stats": [
+      {
+       "at": 2,
+       "big": "둘 다 없음",
+       "label": "탑빌드 7월 · 코디악 4월 인수",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "85% 증가의 대부분은\n**사서 더한 결과**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "커진 것과\n**나아진 것은 다르다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "통합은\n**오래 데리고 있던 회사에서**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "비컨 인수",
+     "stats": [
+      {
+       "at": 0,
+       "big": "1년 반",
+       "label": "2025년 4월 인수",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "비컨 쪽 실적은\n**따로 공개 안 함**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "전체 매출\n**− 탑빌드 − 코디악**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "비컨 쪽 매출(계산)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 26억 6,200만",
+       "label": "달러 · 3분기",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "1년 전 27억 2,800만 달러 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 -2.4%",
+       "label": "계산",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "지붕재 매출",
+     "left": {
+      "at": 5,
+      "head": "1년 전",
+      "big": "20억 8,600만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "이번",
+      "big": "19억 9,600만",
+      "lines": [
+       "달러 · -4.3%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "물량으로는\n**아직 효과 안 보임**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "다른 숫자들은\n**반대 방향**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "4월 지붕·방수 가격",
+     "stats": [
+      {
+       "at": 1,
+       "big": "-1.1%",
+       "label": "1년 전 대비",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "9월 지붕·방수 가격",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+4.1%",
+       "label": "1년 전 대비",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "지붕·방수 매출총이익률",
+     "stats": [
+      {
+       "at": 3,
+       "big": "상승",
+       "label": "1년 전 대비 · 폭 비공개",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "서비스",
+     "left": {
+      "at": 4,
+      "head": "정시 배송",
+      "big": "+6.5%p",
+      "lines": [
+       "3분기"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 4,
+      "head": "핵심 품절",
+      "big": "25% 넘게 감소",
+      "lines": [
+       "3분기"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "청구서 정확도",
+     "stats": [
+      {
+       "at": 5,
+       "big": "90% 초반 → 후반",
+       "label": "연초 → 3분기",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "덜 팔았지만\n**제때 보내고 값은 더 받았다**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "손님을 덜 놓치는 쪽으로\n**가게를 고쳤다**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "10월에는\n**매출까지**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10월 하루 매출 · 지붕재·보완재",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+9%",
+       "label": "가장 오래 보유한 사업",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "10월 하루 매출 · 회사 전체",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+5%",
+       "label": "1년 전 대비",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "자체 브랜드 트라이빌트",
+     "left": {
+      "at": 3,
+      "head": "3분기 매출",
+      "big": "+2.6%",
+      "lines": [
+       "2억 8,300만 달러"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "지붕·방수 매출 중",
+      "big": "10.6%",
+      "lines": [
+       "사상 최고"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "비컨 통합 성적표\n**고정 댓글의 리포트**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "세 회사를 합친 효과\n**아직 거의 없음**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "세 회사 한 해 구매",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 120억 달러",
+       "label": "10-Q",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "두 회사 이상 같은 공급사",
+     "stats": [
+      {
+       "at": 2,
+       "big": "76억 달러",
+       "label": "묶어서 협상할 금액",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "묶어 값을 깎는 일은\n**이제 시작**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "실현했다고 밝힌 절감",
+     "items": [
+      {
+       "no": "1",
+       "text": "차량",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "전산",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "폐기물",
+       "sub": "간접 구매만",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "새 주문·재고 시스템",
+     "stats": [
+      {
+       "at": 5,
+       "big": "2027년 말",
+       "label": "세 회사 매출 대부분 목표",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "다음 단서\n**주주 한 주의 이익**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "회사 전체 조정 EBITDA",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+85%",
+       "label": "1년 전 대비",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "조정 주당 이익",
+     "left": {
+      "at": 2,
+      "head": "1년 전",
+      "big": "$0.14",
+      "lines": [
+       "2025년 3분기"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "이번",
+      "big": "$0.13",
+      "lines": [
+       "2026년 3분기"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "주식 수·이자·우선주 배당\n**한꺼번에 늘었다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "조정 희석 주식 수",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 +36%",
+       "label": "8억 7,530만 → 11억 9,290만 주",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "이자 비용",
+     "stats": [
+      {
+       "at": 5,
+       "big": "약 4.4배",
+       "label": "3,700만 → 1억 6,300만 달러",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "우선주 배당(분기)",
+     "stats": [
+      {
+       "at": 6,
+       "big": "6,600만 달러",
+       "label": "1년 전 3,000만 달러",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "모두\n**인수 대가**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "인수 대가",
+     "left": {
+      "at": 1,
+      "head": "탑빌드 주주에게",
+      "big": "3억 1,160만 주",
+      "lines": [
+       "새 주식"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 1,
+      "head": "장기 부채",
+      "big": "약 89억 5,000만",
+      "lines": [
+       "달러 · 연초 30억 5,700만"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "현금",
+     "stats": [
+      {
+       "at": 2,
+       "big": "5억 2,800만 달러",
+       "label": "연초 23억 6,200만 달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "자사주 매입 승인",
+     "stats": [
+      {
+       "at": 3,
+       "big": "5억 달러",
+       "label": "만기 없음",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "걱정한 증자와\n**반대 방향**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "또 하나의 단서\n**사람**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.09 같은 날 제이콥스",
+     "stats": [
+      {
+       "at": 1,
+       "big": "아홉 번째 회사",
+       "label": "새 회사를 시작한다고 발표",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "CKX 랜즈 현금 투자",
+     "stats": [
+      {
+       "at": 2,
+       "big": "10억 달러",
+       "label": "업종 미정",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "큐엑스오 회장·최고경영자\n**그대로**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.12 장 전",
+     "stats": [
+      {
+       "at": 4,
+       "big": "재무 책임자 교체",
+       "label": "에사이드는 부회장으로",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "새 재무 책임자 데브 아후자",
+     "stats": [
+      {
+       "at": 5,
+       "big": "2027년 1월",
+       "label": "노벨리스 출신",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "compare",
+     "title": "11.12 하루",
+     "left": {
+      "at": 6,
+      "head": "큐엑스오",
+      "big": "-7.2%",
+      "lines": [
+       "$12.81"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 6,
+      "head": "주택건설 ETF(XHB)",
+      "big": "-1.7%",
+      "lines": [
+       "같은 날"
+      ],
+      "tone": "white"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "처음 질문으로",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "통합은\n**잘되고 있나?**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "숫자로 답하면",
+     "stats": [
+      {
+       "at": 2,
+       "big": "반쯤",
+       "label": "",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "이미 보이는 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "가격",
+       "sub": "9월 +4.1%",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "배송",
+       "sub": "+6.5%p",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "이익률",
+       "sub": "상승",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "물량",
+     "stats": [
+      {
+       "at": 4,
+       "big": "10월 첫 회복",
+       "label": "지붕재·보완재 +9%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "세 회사 합친 절감",
+     "stats": [
+      {
+       "at": 5,
+       "big": "아직 숫자 밖",
+       "label": "76억 달러 겹치는 구매",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "한 주당 이익은\n**주식·부채를 따라잡을 때까지**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "ad": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "하루 19% 급등은\n**얼마나 믿었나**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2024년 8월 이후 하루 +15% 넘는 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "이번 전 2번",
+       "label": "나스닥 일별 시세",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "앞선 두 번",
+     "left": {
+      "at": 2,
+      "head": "2026.01.05",
+      "big": "+18.2%",
+      "lines": [
+       "아폴로 투자"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "2026.02.11",
+      "big": "+16.6%",
+      "lines": [
+       "코디악 인수"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "20거래일 뒤 종가",
+     "stats": [
+      {
+       "at": 3,
+       "big": "2/2 낮음",
+       "label": "그날 종가 대비",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "20거래일 뒤",
+     "left": {
+      "at": 4,
+      "head": "1월",
+      "big": "-2.0%",
+      "lines": [
+       "1월 5일 종가 대비"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "2월",
+      "big": "-27.9%",
+      "lines": [
+       "2월 11일 종가 $27.06 대비"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "이번 · 11.09 → 11.13",
+     "stats": [
+      {
+       "at": 5,
+       "big": "-8.6%",
+       "label": "$13.78 → $12.60",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "날짜별 숫자\n**고정 댓글의 리포트 기록표**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 기록은\n**두 번뿐**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "다른 재료\n**투자 유치·인수**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "급등 뒤",
+     "left": {
+      "at": 2,
+      "head": "1월",
+      "big": "보통주 매각",
+      "lines": [
+       "23.80달러"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "이번",
+      "big": "자사주 매입",
+      "lines": [
+       "5억 달러 승인"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "경향일 뿐\n**규칙이 아니다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "업종도\n**함께 본다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10.09 → 11.13 큐엑스오",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+16.6%",
+       "label": "$10.81 → $12.60",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "같은 기간",
+     "left": {
+      "at": 2,
+      "head": "빌더스 퍼스트소스",
+      "big": "+14.8%",
+      "lines": [
+       "BLDR"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "주택건설 ETF",
+      "big": "+7.7%",
+      "lines": [
+       "XHB"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.09 → 11.13 빌더스 퍼스트소스",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-8.0%",
+       "label": "같은 4거래일",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "한 달 전체로는\n**주택 관련주와 같은 길**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "국면 진단",
+     "left": {
+      "at": 0,
+      "head": "10.09 지난 리포트",
+      "big": "업황 검증",
+      "lines": [
+       "국면 C"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 0,
+      "head": "11.13 지금",
+      "big": "실적이 첫 답",
+      "lines": [
+       "국면 C 이어짐"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.09 급등",
+     "stats": [
+      {
+       "at": 1,
+       "big": "절반가량 되돌림",
+       "label": "$11.56 → $13.78 → $12.60",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "국면 진단·네 갈래 시나리오\n**리포트에 정리**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "shop": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지켜볼 날\n**두 번**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "급등 뒤 10번째 거래일",
+     "stats": [
+      {
+       "at": 1,
+       "big": "11월 23일",
+       "label": "",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실적 전 종가 쪽으로 내려가나",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$11.56",
+       "label": "11.06 종가",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.13부터 20번째 거래일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12월 14일",
+       "label": "",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "12.14 판정 기준",
+     "left": {
+      "at": 4,
+      "head": "종가",
+      "big": "$12.60 위?",
+      "lines": [
+       "11.13 종가"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "그 사이 마감",
+      "big": "$13.81 위?",
+      "lines": [
+       "실적 뒤 최고 종가"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "4분기 실적",
+     "stats": [
+      {
+       "at": 5,
+       "big": "2027년 2월 무렵",
+       "label": "비컨 쪽 매출이 늘었나",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "쿠팡 링크\n**설명란·고정 댓글**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "ad": [
+    1,
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "통합은 가격·배송에서 먼저\n**물량·한 주당 이익은 아직**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "패턴 기반 대응 전략",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "매매 전 체크리스트",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 2,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "통합 효과, 어디서 먼저 확인될까?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "비컨 물량 회복"
+      },
+      {
+       "at": 3,
+       "text": "한 주당 이익"
+      },
+      {
+       "at": 4,
+       "text": "구매 비용 절감"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
