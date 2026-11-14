@@ -1,0 +1,1251 @@
+{
+ "ticker": "LAES",
+ "name": "실스크",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "양자컴퓨팅 입문서 · 링크는 설명란에",
+ "midroll": "../kit/laes_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/laes_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "LAES · 실스크 · 독일 전시회 기조연설 날",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "11.13 기조연설 날",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "text": "주가는 -5.3%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.13 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-5.3%",
+       "label": "$1.32 → $1.25",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "반등 상승분 반납",
+     "stats": [
+      {
+       "at": 3,
+       "big": "91%",
+       "label": "$1.23 → $1.45 → $1.25 · 4거래일",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "상장 뒤 같은 일",
+     "stats": [
+      {
+       "at": 4,
+       "big": "6번",
+       "label": "반등을 80% 넘게 반납",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "그 여섯 번 뒤\n**무슨 일이?**",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**실스크 다시 추적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "사이트 요청 종목",
+     "stats": [
+      {
+       "at": 1,
+       "big": "업데이트 요청",
+       "label": "홈페이지 요청 버튼",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 편",
+     "stats": [
+      {
+       "at": 2,
+       "big": "11.05",
+       "label": "양자주 동반 급락 · -14.0%",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "스위스 제네바",
+     "stats": [
+      {
+       "at": 1,
+       "big": "보안 반도체",
+       "label": "실스크(SEALSQ)",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "모회사",
+     "stats": [
+      {
+       "at": 2,
+       "big": "위즈키",
+       "label": "WISeQey",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "돈 버는 방식",
+     "stats": [
+      {
+       "at": 3,
+       "big": "보안 칩 판매",
+       "label": "계량기 · 자동차 · 의료기기",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "새 제품\n**양자내성 칩**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "올해 9개월 매출",
+     "stats": [
+      {
+       "at": 5,
+       "big": "1,630만",
+       "label": "달러 · 10월 15일 잠정 발표",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 성적표",
+     "at": 0,
+     "kicker": "11월 6일 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "11월 6일 리포트가 본 첫날",
+     "items": [
+      {
+       "no": "1·2",
+       "text": "첫날 상승 쪽",
+       "sub": "합쳐 약 60%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "첫날 상승(시나리오 1·2)",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 60%",
+       "label": "분석자 추정",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "이건\n**맞았다**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.06 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+7.3%",
+       "label": "$1.23 → $1.32",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "한 달 뒤 판정",
+     "stats": [
+      {
+       "at": 5,
+       "big": "12.04",
+       "label": "$1.23 위인가",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "list",
+     "title": "채점",
+     "items": [
+      {
+       "no": "O",
+       "text": "적중 1",
+       "sub": "첫날 반등",
+       "at": 6
+      },
+      {
+       "no": "X",
+       "text": "빗나감 0",
+       "at": 6
+      },
+      {
+       "no": "?",
+       "text": "진행 중 4",
+       "sub": "12.04 · 424B · 위성 계약 · 11.20·11.30",
+       "at": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "함께 지켜보자고 한 것",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.13 기조연설",
+     "stats": [
+      {
+       "at": 1,
+       "big": "고객 이름 · 주문 금액",
+       "label": "나오는가",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "결과는\n**나오지 않았다**",
+     "at": 2,
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "항목별 채점표\n**홈페이지에 무료로**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**반등의 크기**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.06 반등의 출발",
+     "stats": [
+      {
+       "at": 1,
+       "big": "아이온큐 실적",
+       "label": "11.05 장 마감 뒤",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "11.06 하루",
+     "left": {
+      "at": 2,
+      "head": "아이온큐",
+      "big": "+23.4%",
+      "lines": [
+       "실적 다음 날"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "실스크",
+      "big": "+7.3%",
+      "lines": [
+       "$1.32"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "11.05 → 11.09",
+     "left": {
+      "at": 3,
+      "head": "아이온큐",
+      "big": "+33.7%",
+      "lines": [
+       "반등 꼭대기"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "실스크",
+      "big": "+17.9%",
+      "lines": [
+       "$1.23 → $1.45"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "업종 대표의\n**절반쯤만 따라갔다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "회사 이유가 아니라\n**업종의 반등**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "내려올 때는\n**달랐다**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "11.09 → 11.13",
+     "items": [
+      {
+       "no": "I",
+       "text": "아이온큐",
+       "sub": "-18.3%",
+       "at": 1
+      },
+      {
+       "no": "L",
+       "text": "실스크",
+       "sub": "-13.8%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "여섯 거래일 중",
+     "stats": [
+      {
+       "at": 2,
+       "big": "5번",
+       "label": "아이온큐와 같은 쪽",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "오를 때는 반만\n**내릴 때는 거의 다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**11월 11일 하루**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "전시회 둘째 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "업계 토론",
+       "label": "대형 반도체 회사들과",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.11 장중 고점",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$1.60",
+       "label": "전날보다 +12.7%",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.11 종가",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$1.42",
+       "label": "전날과 같은 값 · 0.0%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "장중 고점 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-11.3%",
+       "label": "$1.60 → $1.42",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**일주일의 보도자료**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.06 ~ 11.13",
+     "stats": [
+      {
+       "at": 1,
+       "big": "6건",
+       "label": "보도자료",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "보도자료 6건",
+     "items": [
+      {
+       "no": "1",
+       "text": "제휴 · 수상",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "의료기기용 칩 · 투자 전략",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "뉴욕 투자 콘퍼런스 토론",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "고객 이름 붙은 새 주문 금액",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0건",
+       "label": "6건 모두",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "SEC 새 공시",
+     "stats": [
+      {
+       "at": 4,
+       "big": "없음",
+       "label": "11.03 내부자 매도 신고가 마지막",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "11.13 거래량",
+     "stats": [
+      {
+       "at": 5,
+       "big": "292만 주",
+       "label": "그 주에서 가장 적음",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "전시회에서 보여 준 것\n**칩과 시연**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "새 보안 칩",
+     "stats": [
+      {
+       "at": 1,
+       "big": "VaultIC409",
+       "label": "실제 통신 보안 시연",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "엔지니어링 샘플",
+     "stats": [
+      {
+       "at": 2,
+       "big": "2027년 2분기",
+       "label": "회사 예고",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "QS7001 정식 인증",
+     "stats": [
+      {
+       "at": 3,
+       "big": "2027년 1월",
+       "label": "현장 감사 뒤",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "주문서까지는\n**아직 시간이 남았다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    1
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "시장이 기다린 것\n**방향이 아니라 숫자**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "반납 여섯 번 기록표\n**고정 댓글의 리포트**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "여섯 번을\n**하나씩 열어 보면**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "조건",
+     "at": 0,
+     "kicker": "숨은 답"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "고른 날",
+     "items": [
+      {
+       "no": "1",
+       "text": "10거래일 최저 종가에서",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "5거래일 안 +15% 넘게",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "5거래일 안 80% 넘게 반납",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2023 ~ 2025",
+     "stats": [
+      {
+       "at": 2,
+       "big": "6번",
+       "label": "상장 뒤 기록",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결과는\n**한쪽으로 쏠렸다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일 안 출발 저점 아래 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "6/6",
+       "label": "여섯 번 모두",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "그중 바로 다음 날",
+     "stats": [
+      {
+       "at": 5,
+       "big": "4번",
+       "label": "저점 아래",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이야기는\n**거기서 끝나지 않았다**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "20거래일 뒤 반납일보다 높음",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2/6",
+       "label": "저점을 깬 뒤 되돌아옴",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "20거래일 뒤",
+     "left": {
+      "at": 2,
+      "head": "2023.11",
+      "big": "+21.9%",
+      "lines": [
+       "$1.05 기준"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "2025.02",
+      "big": "+10.6%",
+      "lines": [
+       "$3.02 기준"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "20거래일 뒤 중앙값",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-10.8%",
+       "label": "나머지 4번은 낮음",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "눈여겨볼\n**2025년 2월**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "그 뒤 20거래일 아이온큐",
+     "stats": [
+      {
+       "at": 1,
+       "big": "-33.2%",
+       "label": "업종 급락",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "같은 때 실스크",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+10.6%",
+       "label": "저점을 깬 뒤 되돌아옴",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종만으로\n**길을 정할 수 없다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이번 반등은\n**업종의 바람**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "붙잡을\n**회사 숫자가 없었다**",
+     "at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "없었던 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "고객 이름",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "주문 금액",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "정식 계약",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "저점과 지금",
+     "left": {
+      "at": 3,
+      "head": "11.05 저점",
+      "big": "$1.23",
+      "lines": [
+       "반등 출발"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 3,
+      "head": "11.13",
+      "big": "$1.25",
+      "lines": [
+       "2센트 위"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "출발한 그 자리로\n**돌아왔다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "남은 질문\n**하나**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "저점이 버티나\n**다시 깨지나**",
+     "at": 6,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "주가 아래\n**현금**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "9월 말 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 4억 6,300만",
+       "label": "달러 · 시가총액보다 많음",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "주가 ÷ 주당 현금",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 60%",
+       "label": "주당 현금 약 $2.07",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그래도 현금이\n**바닥을 보장하지 않는다**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "현금은 매 분기 쓰이고\n**새 주식은 팔 수 있다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "모회사 증권 신고서(F-3)",
+     "stats": [
+      {
+       "at": 5,
+       "big": "최대 1억",
+       "label": "달러 · 효력 전",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "위성 운영 의향서",
+     "stats": [
+      {
+       "at": 6,
+       "big": "약 1,500만",
+       "label": "달러 · 정식 계약 아님",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "가장 높게 본 시나리오",
+     "stats": [
+      {
+       "at": 0,
+       "big": "약 50%",
+       "label": "저점을 깨고 아래에 머묾",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "과거 기록",
+     "stats": [
+      {
+       "at": 1,
+       "big": "4/6",
+       "label": "저점을 깬 뒤 20거래일 뒤에도 낮음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "저점을 지키는 쪽",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 30%",
+       "label": "시나리오 1·2",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "근거\n**주가가 현금보다 한참 낮다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "분석자 추정\n**오를 확률이 아니다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "shop": [
+    7
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "달력에 적을\n**날짜 둘**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "지난 리포트 판정",
+     "stats": [
+      {
+       "at": 1,
+       "big": "12.04",
+       "label": "한 달 뒤 자리",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "12.04 판정 기준",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$1.23 위?",
+       "label": "11.05 저점",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "이번 판정 · 20거래일째",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12.14",
+       "label": "월요일",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "12월 14일 채점",
+     "items": [
+      {
+       "no": "1",
+       "text": "$1.23 아래 종가 나왔나?",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "종가가 $1.25 위?",
+       "at": 5
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "두 기준으로\n**네 가지 시나리오**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "양자컴퓨팅 입문서\n**링크는 설명란에**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "기조연설 날에도\n**숫자는 없었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "여섯 번 모두 저점을 깼지만\n**깬 뒤의 길은 갈렸다**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "시나리오 · 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "실스크 주가를 다시 붙잡을 계기는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "고객 주문 금액"
+      },
+      {
+       "at": 3,
+       "text": "위성 정식 계약"
+      },
+      {
+       "at": 4,
+       "text": "양자주 반등"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 3,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
