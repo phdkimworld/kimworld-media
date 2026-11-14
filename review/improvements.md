@@ -34,6 +34,7 @@
 
 | 회차 | 찾은 틀 | 고친 곳 | 전 → 후 예시 |
 |---|---|---|---|
+| 85 QXO | 인사 문단이 '오늘은 … 다시 추적합니다'로 같은 틀(TEM 84·SLDP 83·ASST 82 대본 3회차 연속) | 롱폼 대본 2문단 | 전 '오늘은 시청자 반응이 컸던 종목의 업데이트로, … 다시 추적합니다' → 후 '오늘은 시청자 요청 종목입니다. … 인수한 회사들 통합이 잘되어 가는지 궁금하다는 질문을 받았습니다. 오늘 영상은 그 질문 하나를 실적 숫자로 끝까지 따라가 보겠습니다.' |
 | 84 TEM | Threads 3건이 모두 '<회사>(티커).' 또는 '<회사>(티커)는'으로 시작하는 같은 첫머리(ASST 82 th1~th3, LAES 81 같은 틀) | Threads th2·th3 첫 문장 | 전 '템퍼스 AI(TEM)는 3분기에 조정 EBITDA…' → 후 '상장 뒤 가장 큰 분기 이익 2,557만 달러를 낸 템퍼스 AI(TEM).' / '올해 장중 85달러를 7번 넘은 템퍼스 AI(TEM), 종가로 그 위에서 마친 날은 2번뿐이다.' |
 | 83 SLDP | 해석 꼬리 '…셈입니다' 반복: ASST 82 대본 4번, LAES 81·CBRS 80 2번씩, 리포트 blog_intro도 같은 꼬리 | 롱폼 대본·리포트·SNS + tools/ai_feel_check.py(대본 '셈입니다' 3번 이상 경고, 과거 asst 잡음·laes·cbrs5·qs·ceg 통과) | 전 '시장은 … 값을 매기고 있는 셈입니다' → 후 '연구소와 생산 라인, 특허, 고객 관계까지 전부 합쳐서 시장이 매긴 값이 그 정도라는 말입니다'(대본 '셈입니다' 0번) |
 | 81 LAES | 반론 문단을 같은 말로 여는 틀: 직전 4회차 대본(BTQ 77·CEG 78·QS 79·CBRS 80) 모두 '반론도 있습니다.'로 반대 근거 문단을 열고, CBRS·BTQ 리포트도 같음 · QS 79 지침(첫 단서만 서수)에도 이번 초안이 '두 번째·세 번째 단서는'으로 씀 | 롱폼 대본·리포트 4부 + tools/ai_feel_check.py 상투어에 '반론도 있습니다' 추가(qs·cbrs5 대본 잡음, laes 통과) | 리포트 전 '반론도 있습니다. 주가는 주당 현금의 약 60%이고,' → 후 '주가가 현금보다 한참 낮다는 점은 반대쪽 근거입니다.' · 대본 '두 번째 단서는 십일월 십일일 하루입니다' → '다음 단서는 십일월 십일일, 단 하루에 있습니다' |
@@ -50,6 +51,7 @@
 
 | 회차 | 절약안 | 적용 위치 | 토큰·도구 호출(직전 대비) |
 |---|---|---|---|
+| 85 QXO | ① 조사 서브에이전트 0·WebFetch 0 — 실적 전화 회의 녹취가 8-K 99.1로 올라와 기사 검색 대신 녹취·10-Q 텍스트를 grep(웹 검색 1회는 결과 미사용) ② 급등 뒤 20거래일 기록표·업종 비교를 나스닥 시세 한 번 받은 daily.json으로 한 파이썬 호출 ③ 리포트 easy_check 지적(몫·빚·표 줄바꿈·숫자 문장)을 파이썬 치환 4회로 끝냄 ④ TEM 84 bin 스크립트 sed 이식 | /home/claude/qxo/research·bin | 서브에이전트 0 · 도구 호출 약 100회(TEM 약 130회 대비 약 -23%) |
 | 84 TEM | ① 조사 서브에이전트 0 — SEC 원문(8-K 99.1·10-Q·Form 4·13G/A)을 텍스트로 바꿔 grep, 웹 검색 4회·WebFetch 2회 ② 맥 녹음을 문단별 wav로 잘라 두고 ASR에 걸린 문단만 st_redo(재녹음 전체 0회) ③ share_numbers 형식을 easy_check로 옮겨 test_build 헛돌기(약 15분) 재발 방지 | /home/claude/tem/research·video/sttmp·tools/easy_check.py | 서브에이전트 0 · 도구 호출 약 130회(직전 ASST 기록 없음) |
 | 83 SLDP | ① 정규 후보 13종목의 기준일 뒤 종가와 SEC 제출 목록을 한 파이썬 호출(chk.py)로, 웹 검색은 1회 ② 숨긴 답 통계는 XBRL companyfacts 한 번 + 나스닥 시세 한 번으로 분기 말 유동성·배수·QS 비교까지 한 파일(pattern.py) ③ LAES 81 스크립트(tts_mac·mk_slides 머리·mk_meta·mk_shorts·mk_queue·record·publish_loop·썸네일 mk.py)를 sed·부분 치환으로 이식, 맥 TTS 뒤 고친 1문단은 raw.wav를 문단별로 잘라 st_redo 1문단만 | 선정·조사·제작 | 맥 TTS 약 11분, st_redo 30초 |
 | 81 LAES | ① 맥 TTS(033)는 제출만 하고 결과 없이 6분 만에 멈춘 뒤 클라우드 TTS로(30분 대기 없음), 롱폼·쇼츠 TTS를 따로 백그라운드로 돌려 쇼츠가 먼저 끝나게 ② 반납 패턴 통계는 나스닥 시세 한 번 받은 json에서 한 파이썬 파일로(웹 검색 없이 숨긴 답 확정), 보도자료는 회사 목록 html 하나에서 날짜·제목을 grep ③ CBRS 80 스크립트(mk_slides 머리·mk_meta·쇼츠·mk_queue·카드·썸네일 mk.py·publish_loop·record)를 sed로 재사용 ④ 새 검사 slides_pre_check로 슬라이드 구조 오류(문단 수·시각·ad·shop)를 녹음 전에 잡아 B그룹 전환 때 9건을 합성 전에 고침 | /home/claude/laes/bin·video·sns, tools/slides_pre_check.py | 측정 전(세션 1개 안 제작) |
@@ -71,6 +73,7 @@
 
 | 첫 적용 | 이전 실수(회차) | 검사·도구 | 흐름 |
 |---|---|---|---|
+| 85~ | yt-shop을 부르기 전에 대본 쿠팡 문장('공구 세트')을 써서 맥 TTS 제출 뒤 카테고리(취미·등산 스틱)와 어긋남 → 문단 재녹음(QXO 85) | `tools/shop_sync_check.py <video>`: 쿠팡 문장에 candidates.json keyword(낱말 앞 두 글자)가 없거나 candidates.json이 없으면 FAIL. 과거 tem·sldp5·asst·laes·cbrs5·qs·ceg 오탐 0, 제출본(공구 세트)은 잡음 | group_check가 TTS 제출 전 자동 |
 | 84~ | share_numbers '-15.2%'(한 낱말)로 test_build가 make_og ValueError로 죽고, 고친 값 '장중 85달러 3번째'도 build.py 정규식(끝은 숫자)에 걸려 발행을 두 번 다시 돌림(TEM 84) | `tools/easy_check.py` share_numbers 검사(build.py와 같은 정규식) | site_pub.sh 첫 단계 easy_check에서 막음 · 11월 리포트 전체 오탐 0 |
 | 83~ | 동시 제작 때 회차 번호 충돌(81회차 LAES: ASST가 82회차 A를 먼저 잡아 A 대본으로 시작한 TTS를 멈추고 B로 다시 씀) | `tools/episode_check.py`: STATE.md에서 같은 회차 번호가 다른 종목 행에 두 번 이상이면 EPISODE_DUP. 현재·과거 STATE 오탐 0, 일부러 겹친 행은 잡음 | wip_save.sh 끝에서 매 단계 자동(경고) |
 | 81~ | hero 둘째 줄 시각이 다음 장면보다 늦은 것을 합성 직전 check_slides가 잡아 hero를 고치고 다시 돌림(CBRS 80) · 대본 수정 뒤 ad·shop 번호가 다른 문장을 가리킴(AGNC 75 ADTEXT) | `tools/slides_pre_check.py <video>`: 문단 수 = paras, 장면·요소 시각 < 문장 수, hero 줄 at ≤ 다음 장면 from, ad 문장에 리포트·홈페이지·고정 댓글·설명란·앱, shop 문장에 쿠팡·설명란. 과거 laes·cbrs5·qs·ceg·btq4·rum 통과, 일부러 hero 줄 at 3·ad 엇갈림을 넣은 사본에서 둘 다 잡음 | group_check가 narration 옆 slides.json이 있으면 녹음 전 자동 호출 |

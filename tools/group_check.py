@@ -32,6 +32,9 @@ if _f.returncode: bad += [l for l in _f.stdout.split('\n') if l.startswith('AIFE
 # 숫자+단위 뒤 조사 받침(76회차 RUM '십육 회이' — 일괄 치환 뒤 녹음 직전까지 남음)
 _j = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'josa_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _j.returncode: bad += [l for l in _j.stdout.split('\n') if l.startswith('JOSA ')]
+# 쿠팡 문장 ↔ yt-shop 상품(85회차 QXO: yt-shop 전에 쓴 '공구 세트' 문장이 '등산 스틱' 카테고리와 어긋나 녹음 뒤 문단 재녹음)
+_c = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shop_sync_check.py'), os.path.dirname(os.path.abspath(sys.argv[1]))], capture_output=True, text=True)
+if _c.returncode: bad += [l for l in _c.stdout.split('\n') if l.startswith('SHOP_SYNC_FAIL')]
 # 슬라이드 구조(82회차 LAES, 80회차 CBRS hero 줄 시각 교훈): narration 옆에 slides.json이 있으면 녹음 전에 짝 검사
 _vd = os.path.dirname(os.path.abspath(sys.argv[1]))
 if os.path.exists(os.path.join(_vd, 'slides.json')):
