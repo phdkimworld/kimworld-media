@@ -1,0 +1,179 @@
+
+ false 
+ 0001920406 
+ 0001920406 
+ 2026-10-15 
+ 2026-10-15 
+ 0001920406 
+ ASST:ClassCommonStock0.001ParValuePerShareMember 
+ 2026-10-15 
+ 2026-10-15 
+ 0001920406 
+ ASST:VariableRateSeriesPerpetualPreferredStockParValue0.001PerShareMember 
+ 2026-10-15 
+ 2026-10-15 
+ iso4217:USD 
+ xbrli:shares 
+ iso4217:USD 
+ xbrli:shares 
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT REPORT 
+ Pursuant to Section 13 OR 15(d) of The Securities
+Exchange Act of 1934 
+ Date of Report (Date of earliest event reported):
+ October 15, 2026 
+ STRIVE, INC. 
+ (Exact name of Company as specified in its charter) 
+ Nevada 
+ 001-41612 
+ 88-1293236 
+ (State or other jurisdiction 
+ of incorporation) 
+ (Commission File Number) 
+ (IRS Employer 
+ Identification No.) 
+ 200 Crescent Ct , Suite 1400 , Dallas , TX 
+ 75201 
+ (Address of principal executive offices) 
+ (Zip Code) 
+ ( 855 ) 427-7360 
+ (Company’s telephone number, including area
+code) 
+ (Former name or former address, if changed since
+last report) 
+ Check the appropriate box below if the Form 8-K
+filing is intended to simultaneously satisfy the filing obligation of the Company under any of the following provisions: 
+ ☐ 
+ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+ ☐ 
+ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+ ☐ 
+ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+ ☐ 
+ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Securities registered pursuant to Section 12(b) of the Act: 
+ Title of each class 
+ Trading Symbol(s) 
+ Name of each exchange on which registered 
+ Class A Common Stock, $0.001 par value per share 
+ ASST 
+ The Nasdaq Stock Market LLC 
+ Variable Rate Series A Perpetual Preferred Stock, par value $0.001 per share 
+ SATA 
+ The Nasdaq Global Market 
+ Indicate by check mark whether the Company is
+an emerging growth company as defined in Rule 405 of the Securities Act of 1933 or Rule 12b-2 of the Securities Exchange Act of 1934. 
+ Emerging Growth Company ☒ 
+ If an emerging growth company, indicate by check
+mark if the Company has elected not to use the extended transition period for complying with any new or revised financial accounting standards
+provided pursuant to Section 13(a) of the Exchange Act. ☐ 
+ Item 1.01 
+ Entry into a Material Definitive Agreement 
+ On October 15, 2026 ,
+ Strive, Inc. (the “Company”) entered into an underwriting agreement (the “Underwriting
+Agreement”) with Barclays Capital Inc. and Cantor Fitzgerald & Co., as the joint book-running managers and representatives of
+the several underwriters (the “Underwriters”), relating to the issuance and sale in an underwritten offering (the “Offering”)
+of 7,000,000 shares (the “Shares”) of the Company’s 15.00% Series A Perpetual SATS Preferred Stock, $0.001 par value
+per share (the “SATS Stock”), an upsize of 2,000,000 shares over the amount previously announced, at a public offering price
+of $90 per share. The issuance and sale of the SATS Stock is scheduled to settle on October 20, 2026, subject to customary closing conditions.
+Certain terms of the SATS Stock are described in more detail in the Company’s press release announcing the pricing of the Offering,
+which is filed herewith as Exhibit 99.1 and incorporated herein by reference. 
+ The Company estimates that the gross proceeds
+from the Offering will be approximately $630 million, before deducting the underwriting discounts and commissions and the Company’s
+estimated offering expenses. The Company intends to use the net proceeds from the Offering for general corporate purposes, including,
+among other things, the acquisition of bitcoin and bitcoin-related products and for working capital, the purchase of income generating
+assets to grow the Company’s business, other capital expenditures, and/or repurchases of shares of the Company’s Class A common
+stock, par value $0.001 per share (the “Class A Common Stock”), or its Variable Rate Series A Perpetual Preferred Stock, par
+value $0.001 per share (the “SATA Stock”). The Company may also use such proceeds to fund acquisitions of businesses, assets
+or technologies that complement the Company’s current business. 
+ The Underwriting Agreement contains customary
+representations, warranties, and agreements by the Company, customary conditions to closing, indemnification obligations of the Company
+and the Underwriters, including for liabilities under the Securities Act of 1933, as amended, other obligations of the parties, and termination
+provisions. 
+ The Offering is being made pursuant to an effective
+shelf registration statement on Form S-3ASR (Registration No. 333-290252) on file with the Securities and Exchange Commission (the “SEC”).
+The Offering will be made only by means of a prospectus supplement and an accompanying prospectus. 
+ The foregoing description of the Underwriting
+Agreement does not purport to be complete and is subject to, and qualified in its entirety by, the Underwriting Agreement, which is filed
+herewith as Exhibit 1.1 and incorporated herein by reference. 
+ Item 8.01. 
+ Other Events. 
+ On October
+15, 2026, the Company issued a press release relating to the pricing of the Offering. A copy of the press
+release is filed as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated by reference. 
+ Cautionary Statement Regarding Forward-Looking
+Statements 
+ Certain statements herein and the press release
+attached hereto may constitute “forward-looking statements” within the meaning of the Private Securities Litigation Reform
+Act of 1995, Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Rule 175 promulgated thereunder,
+and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), and Rule 3b-6 promulgated thereunder,
+which statements involve inherent risks and uncertainties. Examples of forward-looking statements include, but are not limited to, express
+or implied statements regarding the outlook and expectations of Strive and its subsidiaries, the strategic benefits and financial benefits
+of the merger transaction with Semler Scientific, Inc. (the “merger transaction”), including the expected impact of the merger
+transaction on Strive’s future financial performance, the ability to successfully integrate the combined businesses, the estimated
+proceeds of the offering, the anticipated timing of settlement, the anticipated use of any proceeds from the offering and the terms of
+the securities being offered. Such statements are often characterized by the use of qualified words (and their derivatives) such as “may,”
+“will,” “anticipate,” “could,” “should,” “would,” “believe,” “contemplate,”
+“expect,” “estimate,” “continue,” “plan,” “project,” “predict,”
+“potential,” “assume,” “forecast,” “target,” “budget,” “outlook,”
+“trend,” “guidance,” “objective,” “goal,” “strategy,” “opportunity,”
+and “intend,” as well as words of similar meaning or other statements concerning opinions or judgments of Strive and its respective
+management team about future events. Forward-looking statements are based on 
+ assumptions as of the time they are made and are
+subject to risks, uncertainties and other factors that are difficult to predict with regard to timing, extent, likelihood and degree of
+occurrence, which could cause actual results to differ materially from anticipated results expressed or implied by such forward-looking
+statements as a result of various important factors. Other risks, uncertainties and assumptions, including, among others, the following: 
+ · the outcome of any legal proceedings that may be instituted against Strive or its subsidiaries; 
+ · the possibility that the anticipated benefits of the merger transaction are not realized when expected
+or at all, including as a result of changes in, or problems arising from, implementation of Bitcoin treasury strategies and risks associated
+with Bitcoin and other digital assets, general economic and market conditions, interest and exchange rates, monetary policy, and laws
+and regulations and their enforcement; 
+ · the diversion of management’s attention from ongoing business operations and opportunities; 
+ · dilution caused by Strive’s issuance of additional shares of its SATS Stock, Class A Common Stock
+or SATA Stock; 
+ · potential adverse reactions of Strive’s clients and customers or changes to business or employee
+relationships, including those resulting from the completion of the merger transaction; and 
+ · other factors that may affect future results of Strive or the future trading performance of its SATS Stock,
+Class A Common Stock or SATA Stock. 
+ These factors are not necessarily all of the factors
+that could cause Strive’s actual results, performance or achievements to differ materially from those expressed in or implied by
+any of the forward-looking statements. Other factors, including unknown or unpredictable factors, also could harm Strive’s results. 
+ Although Strive believes that its expectations
+with respect to forward-looking statements are based upon reasonable assumptions within the bounds of its existing knowledge of its business
+and operations, there can be no assurance that the actual results of Strive will not differ materially from any projected future results
+expressed or implied by such forward-looking statements. Additional factors that could cause results to differ materially from those described
+above can be found in Strive’s Annual Report on Form 10-K for the fiscal year ended December 31, 2025 and quarterly reports on Form
+10-Q, and other documents subsequently filed by Strive with the SEC. 
+ The actual results anticipated may not be realized
+or, even if substantially realized, they may not have the expected consequences to or effects on Strive or its businesses or operations.
+Investors are cautioned not to rely too heavily on any such forward-looking statements. Forward-looking statements contained herein and
+the press release attached hereto speak only as of the date hereof, and Strive undertakes no obligation to update or clarify these forward-looking
+statements, whether as a result of new information, future events or otherwise, except to the extent required by applicable law. 
+ No Offer or Solicitation 
+ Neither this Current Report on Form 8-K nor the
+press release attached hereto is intended to and shall not constitute an offer to sell or the solicitation of an offer to sell or the
+solicitation of an offer to buy any securities, nor shall there be any sale of securities in any jurisdiction in which such offer, solicitation
+or sale would be unlawful prior to registration or qualification under the securities laws of any such jurisdiction. 
+ Item 9.01 
+ Financial Statements and Exhibits. 
+ (d) Exhibits 
+ Exhibit No. 
+ Description 
+ 1.1 
+ Underwriting Agreement, dated October 15, 2026, by and between the Company, Barclays Capital Inc. and Cantor Fitzgerald & Co., as the representatives of the several underwriters with respect to the Offering. 
+ 99.1 
+ Press Release of Strive, Inc. dated October 15, 2026. 
+ 104 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document) 
+ SIGNATURES 
+ Pursuant to the requirements
+of the Securities Exchange Act of 1934, as amended, the Company has duly caused this report to be signed on its behalf by the undersigned
+hereunto duly authorized. 
+ Date: October 16, 2026 
+ Strive, Inc. 
+ /s/ Matthew Cole 
+ Name: Matthew Cole 
+ Title: Chief Executive Officer 

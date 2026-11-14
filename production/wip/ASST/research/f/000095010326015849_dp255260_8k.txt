@@ -1,0 +1,236 @@
+
+ false 
+ --12-31 
+ 0001920406 
+ 0001920406 
+ 2026-10-19 
+ 2026-10-19 
+ 0001920406 
+ ASST:ClassCommonStock0.001ParValuePerShareMember 
+ 2026-10-19 
+ 2026-10-19 
+ 0001920406 
+ ASST:VariableRateSeriesPerpetualPreferredStock0.001ParValuePerShareMember 
+ 2026-10-19 
+ 2026-10-19 
+ 0001920406 
+ ASST:Sec15.00SeriesPerpetualSatsPreferredStock0.001ParValuePerShareMember 
+ 2026-10-19 
+ 2026-10-19 
+ iso4217:USD 
+ xbrli:shares 
+ iso4217:USD 
+ xbrli:shares 
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ Washington, D.C. 20549 
+ FORM 8-K 
+ CURRENT REPORT 
+ Pursuant to Section 13 OR 15(d) of The Securities
+Exchange Act of 1934 
+ Date of Report (Date of earliest event reported):
+ October 19, 2026 
+ STRIVE, INC. 
+ (Exact name of Company as specified in its charter) 
+ Nevada 
+ 001-41612 
+ 88-1293236 
+ (State or other jurisdiction 
+ of incorporation) 
+ (Commission File Number) 
+ (IRS Employer 
+ Identification No.) 
+ 200 Crescent Ct , Suite 1400 , Dallas , TX 
+ 75201 
+ (Address of principal executive offices) 
+ (Zip Code) 
+ ( 855 ) 427-7360 
+ (Company’s telephone number, including area code) 
+ (Former name or former address, if changed since last report) 
+ Check the appropriate box below if the Form 8-K
+filing is intended to simultaneously satisfy the filing obligation of the Company under any of the following provisions: 
+ ☐ Written communications pursuant
+to Rule 425 under the Securities Act (17 CFR 230.425) 
+ ☐ Soliciting material pursuant to
+Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+ ☐ Pre-commencement communications
+pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+ ☐ Pre-commencement communications
+pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Securities registered pursuant to Section 12(b) of the Act: 
+ Title of each class 
+ Trading Symbol(s) 
+ Name of each exchange on which registered 
+ Class A Common Stock, $0.001 par value per share 
+ ASST 
+ The Nasdaq Stock Market LLC 
+ Variable Rate Series A Perpetual Preferred Stock, $0.001 par value per share 
+ SATA 
+ The Nasdaq Stock Market LLC 
+ 15.00% Series A Perpetual SATS Preferred Stock, $0.001 par value per share 
+ SATS 
+ The Nasdaq Stock Market LLC 
+ Indicate by check
+mark whether the Company is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 or Rule 12b-2 of the Securities
+Exchange Act of 1934. 
+ Emerging Growth Company ☒ 
+ If an emerging growth company, indicate by check
+mark if the Company has elected not to use the extended transition period for complying with any new or revised financial accounting standards
+provided pursuant to Section 13(a) of the Exchange Act. ☐ 
+ Item 3.03. 
+ Material Modifications to Rights of Security Holders. 
+ As previously disclosed,
+Strive, Inc. (the "Company") entered into an underwriting agreement (the “Underwriting Agreement”) with Barclays
+Capital Inc. and Cantor Fitzgerald & Co., as the joint book-running managers and representatives of the several underwriters, relating
+to the issuance and sale in an underwritten offering (the “Offering”) of 7,000,000 shares (the “Shares”) of the
+Company’s 15.00% Series A Perpetual SATS Preferred Stock, $0.001 par value per share (the “SATS Stock”). 
+ In connection with the
+issuance of the SATS Stock, Strive filed a Certificate of Designation (the “Certificate of Designation”) with the Nevada Secretary
+of State on October 19, 2026 designating 17,000,000 shares, and establishing the terms, of the SATS Stock. 
+ The SATS Stock accumulates
+cumulative dividends (“regular dividends”) at a rate per annum equal to 15.00% on the stated amount of $100 per share (the
+“stated amount”) thereof. Regular dividends will be payable when, as and if declared by Strive’s board of directors
+(“Board”) or any duly authorized committee thereof, out of funds legally available for their payment, in arrears for each
+regular dividend period on each regular dividend payment date to stockholders of record as of the close of business on the regular record
+date immediately preceding the applicable regular dividend payment date. Regular dividend dates will fall on each business day, as defined
+in the governing documentation for the SATS Stock, beginning on November 9, 2026. If declared in full, the first scheduled regular dividend
+on the SATS Stock payable will include all accrued and unpaid dividends from and after the closing date. No dividend, interest or other
+amount will accumulate or accrue on any unpaid regular dividends, regardless of whether regular dividends are declared for any future
+regular dividend period. Declared regular dividends on the SATS Stock will be payable solely in cash in the manner, and subject to the
+provisions, described in the Certificate of Designation. 
+ At the closing of the
+Offering, Strive increased its existing dividend reserve in an amount equal to the first 18 months of dividend payments calculated as
+of the date of the Offering and deposited an equivalent of $22.50 per share of SATS Stock into an account funded by the Company with a
+combination of existing cash on hand and securities (based on the value of such securities at the closing of this Offering). 
+ The SATS Stock has a
+par value of $0.001 per share and initially has a liquidation preference of $100 per share, subject to adjustment as set forth below (the
+“Liquidation Preference”). The SATS Stock ranks senior to Strive’s Class A common stock, $0.001 par value per share
+(the “Class A Common Stock”) and Class B common stock, $0.001 par value per share (the “Class B Common Stock”),
+with respect to the payment of dividends and the distribution of assets upon Strive’s liquidation, dissolution or winding up. If
+Strive liquidates, dissolves or winds up, whether voluntarily or involuntarily, then the holders of SATS Stock will be entitled to receive
+payment for the Liquidation Preference of, and all accumulated and unpaid regular dividends and any compounded dividends on, their shares
+of SATS Stock out of Strive’s assets or funds legally available for distribution to its stockholders, before any such assets or
+funds are distributed to, or set aside for the benefit of, holders of the Class A Common Stock and Class B Common Stock or other junior
+stock. The SATS Stock is junior to Strive’s Variable Rate Perpetual Preferred Stock (the “SATA Stock”) existing and
+future indebtedness and structurally junior to the liabilities of Strive’s subsidiaries and subject to the rights and preferences
+of any other class or series of preferred stock then outstanding. 
+ The Liquidation Preference of the SATS Stock is
+initially $100 per share; provided, however, that, effective immediately after the close of business on each business day after the initial
+issue date (and, if applicable, during the course of a business day on which any sale transaction to be settled by the issuance of SATS
+Stock is executed, from the exact time of the first such sale transaction during such business day until the close of business of such
+business day), the Liquidation Preference per share of SATS Stock will be adjusted to be the greatest of (i) the stated amount per share
+of SATS Stock; (ii) in the case of any business day with respect to which Strive has, on such business day or any business day during
+the ten trading day period preceding such business day, executed any sale transaction to be settled by the issuance of SATS Stock, an
+amount equal to the last reported sale price per share of SATS Stock on the trading day immediately before such business day; and (iii)
+the arithmetic average of the last reported sale prices per share of SATS Stock for each trading day of the ten consecutive trading days
+(or, if applicable, the lesser number of trading days as have elapsed during the period from, and including, the initial issue date to,
+but excluding, such business day) immediately preceding such business day. 
+ Strive has the right,
+at its election, to redeem all, but not less than all, of the SATS Stock, at any time, for cash if the total number of shares of all SATS
+Stock then outstanding is less than 25% of the total number of shares of SATS Stock originally issued in the Offering and in any future
+offering, taken together. In addition, Strive has the right to redeem all, but not less than all, of the SATS Stock if certain tax events
+occur. The redemption price for any SATS Stock to be redeemed will be a cash amount equal to the Liquidation Preference of the SATS Stock
+to be redeemed as of the business day before the date on which Strive provides the related redemption notice, plus accumulated and unpaid
+regular dividends, if any, thereon to, and including, the redemption date. 
+ If an event that constitutes
+a “Fundamental Change” under the Certificate of Designation governing the SATS Stock occurs, then holders of the SATS Stock
+will have the right to require Strive to repurchase some or all of their shares of SATS Stock at a cash repurchase price equal to the
+stated amount of the SATS Stock to be repurchased, plus accumulated and unpaid regular dividends, if any, to, and including, the Fundamental
+Change repurchase date. 
+ The SATS Stock has voting
+rights with respect to certain amendments to Strive’s articles of incorporation or the Certificate of Designation, certain business
+combination transactions and certain other matters. However, holders of the SATS Stock will not always be entitled to vote with holders
+of Class A Common Stock on matters on which holders of Class A Common Stock are entitled to vote. 
+ The above description
+of the Certificate of Designation and the terms of the SATS Stock is a summary and is not complete. A copy of the Certificate of Designation
+and the form of the certificate representing the SATS Stock are filed as Exhibits 3.1 and 4.1, respectively, to this Current Report on
+Form 8-K, and the above summary is qualified by reference to the terms of the Certificate of Designation and the SATS Stock set forth
+in such exhibits. 
+ Item 5.03. 
+ Amendments to Articles of Incorporation or Bylaws. 
+ The information set forth above
+in this Current Report under Item 3.03 is incorporated by reference into this Item 5.03. 
+ Item 8.01. 
+ Other Events. 
+ On October 20 ,
+ 2026, the Company issued a press release relating to the closing of the Offering. A copy of the press release
+is filed as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated by reference. 
+ Neither this Current Report on
+Form 8-K nor the press release attached hereto constitute an offer to sell or the solicitation of an offer to buy any securities. 
+ Cautionary Statement Regarding Forward-Looking Statements 
+ Certain statements herein and the press release
+attached hereto may constitute “forward-looking statements” within the meaning of the Private Securities Litigation Reform
+Act of 1995, Section 27A of the Securities Act of 1933, as amended (the “Securities Act”), and Rule 175 promulgated thereunder,
+and Section 21E of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), and Rule 3b-6 promulgated thereunder,
+which statements involve inherent risks and uncertainties. Examples of forward-looking statements include, but are not limited to, express
+or implied statements regarding the outlook and expectations of Strive and its subsidiaries, the strategic benefits and financial benefits
+of the merger transaction with Semler Scientific, Inc. (the “merger transaction”), including the expected impact of the merger
+transaction on Strive’s future financial performance, the ability to successfully integrate the combined businesses, and the anticipated
+use of proceeds of the offering. Such statements are often characterized by the use of qualified words (and their derivatives) such as
+“may,” “will,” “anticipate,” “could,” “should,” “would,” “believe,”
+“contemplate,” “expect,” “estimate,” “continue,” “plan,” “project,”
+“predict,” “potential,” “assume,” “forecast,” “target,” “budget,”
+“outlook,” “trend,” “guidance,” “objective,” “goal,” “strategy,”
+“opportunity,” and “intend,” as well as words of similar meaning or other statements concerning opinions or judgments
+of Strive and its respective management team about future events. Forward-looking statements are based on assumptions as of the time they
+are made and are subject to risks, uncertainties and other factors that are difficult to predict with regard to timing, extent, likelihood
+and degree of occurrence, which could cause actual results to differ materially from anticipated results expressed or implied by such
+forward-looking statements as a result of various important factors. Other risks, uncertainties and assumptions, including, among others,
+the following: 
+ · the outcome of any legal proceedings that may be instituted against Strive or its subsidiaries; 
+ · the possibility that the anticipated benefits of the merger transaction are not realized when expected
+or at all, including as a result of changes in, or problems arising from, implementation of Bitcoin treasury strategies and risks associated
+with Bitcoin and other digital assets, general economic and market conditions, interest and exchange rates, monetary policy, and laws
+and regulations and their enforcement; 
+ · the diversion of management’s attention from ongoing business operations and opportunities; 
+ · dilution caused by Strive’s issuance of additional shares of its SATS Stock, Class A Common Stock
+or SATA Stock; 
+ · potential adverse reactions of Strive’s clients and customers or changes to business or employee
+relationships, including those resulting from the completion of the merger transaction; and 
+ · other factors that may affect future results of Strive or the future trading performance of its SATS Stock,
+Class A Common Stock or SATA Stock. 
+ These factors are not necessarily all of the factors
+that could cause Strive’s actual results, performance or achievements to differ materially from those expressed in or implied by
+any of the forward-looking statements. Other factors, including unknown or unpredictable factors, also could harm Strive’s results. 
+ Although Strive believes that its expectations
+with respect to forward-looking statements are based upon reasonable assumptions within the bounds of its existing knowledge of its business
+and operations, there can be no assurance that the actual results of Strive will not differ materially from any projected future results
+expressed or implied by such forward-looking statements. Additional factors that could cause results to differ materially from those described
+above can be found in Strive’s Annual Report on Form 10-K for the fiscal year ended December 31, 2025 and quarterly reports on Form
+10-Q, and other documents subsequently filed by Strive with the SEC. 
+ The actual results anticipated may not be realized
+or, even if substantially realized, they may not have the expected consequences to or effects on Strive or its businesses or operations.
+Investors are cautioned not to rely too heavily on any such forward-looking statements. Forward-looking statements contained herein and
+the press release attached hereto speak only as of the date hereof, and Strive undertakes no obligation to update or clarify these forward-looking
+statements, whether as a result of new information, future events or otherwise, except to the extent required by applicable law. 
+ No Offer or Solicitation 
+ Neither this Current Report on Form 8-K nor the
+press release attached hereto is intended to and shall not constitute an offer to sell or the solicitation of an offer to sell or the
+solicitation of an offer to buy any securities, nor shall there be any sale of securities in any jurisdiction in which such offer, solicitation
+or sale would be unlawful prior to registration or qualification under the securities laws of any such jurisdiction. 
+ Item 9.01 
+ Financial Statements and Exhibits. 
+ (d) Exhibits 
+ Exhibit No. 
+ Description 
+ 3.1 
+ Certificate of Designation relating to the SATS Stock (incorporated herein by reference to Exhibit 4.1 to the Registrant’s Form 8-A filed with the Securities and Exchange Commission on October 19, 2026 (File No. 001-41612)). 
+ 4.1 
+ Form of certificate representing the SATS Stock (included as Exhibit A to Exhibit 3.1). 
+ 5.1 
+ Opinion of Brownstein Hyatt Farber Schreck, LLP 
+ 23.1 
+ Consent of Brownstein Hyatt Farber Schreck, LLP (include in Exhibit 5.1). 
+ 99.1 
+ Press Release of Strive, Inc. dated October 20, 2026. 
+ 104 
+ Cover Page Interactive Data File (embedded within the Inline XBRL document) 
+ SIGNATURES 
+ Pursuant to the requirements
+of the Securities Exchange Act of 1934, as amended, the Company has duly caused this report to be signed on its behalf by the undersigned
+hereunto duly authorized. 
+ Date: October 19, 2026 
+ Strive, Inc. 
+ /s/ Matthew Cole 
+ Name: Matthew Cole 
+ Title: Chief Executive Officer 
