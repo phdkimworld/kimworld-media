@@ -1,0 +1,356 @@
+{
+ "ticker": "LAES",
+ "name": "실스크",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "기조연설",
+   "subtitle": "11월 13일 독일 전시회에서\n**기조연설**을 했습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "실스크 LAES",
+     "at": 0.0,
+     "y": 100,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "기조연설",
+     "at": 0.0,
+     "y": 260,
+     "size": 160,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "electronica 2026 · 독일",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "보안 반도체 회사",
+     "at": 0.4,
+     "y": 480,
+     "size": 100,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2026.11.13",
+     "at": 0.7,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "5.3%",
+   "subtitle": "그날 주가는\n**5.3%** 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "기조연설 날 종가",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-5.3%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$1.32 → $1.25"
+    },
+    {
+     "kind": "text",
+     "text": "11.05 저점 $1.23",
+     "at": 0.45,
+     "y": 480,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "겨우 2센트 위",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "91%",
+   "subtitle": "반등 상승분의\n**91%**를 돌려줬습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "4거래일 만에",
+     "at": 0.0,
+     "y": 100,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "91%",
+     "at": 0.15,
+     "y": 260,
+     "size": 180,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$1.23 → $1.45 → $1.25",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "11.05 → 11.09 +17.9%",
+     "at": 0.45,
+     "y": 480,
+     "size": 92,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "11.09 → 11.13 -13.8%",
+     "at": 0.72,
+     "y": 640,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "주문 금액",
+   "subtitle": "보도자료 여섯 건\n**주문 금액**은 없었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.06 ~ 11.13",
+     "at": 0.0,
+     "y": 100,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "6건",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "제휴 · 수상 · 칩 소개 · 전략 · 토론"
+    },
+    {
+     "kind": "text",
+     "text": "새 주문 금액 0",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "red",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "SEC 새 공시 없음",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "6번",
+   "subtitle": "반등을 이렇게 돌려준 때가\n**6번** 있었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "상장 뒤 기록",
+     "at": 0.0,
+     "y": 100,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "6번",
+     "at": 0.15,
+     "y": 260,
+     "size": 180,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "+15% 넘는 반등 → 80% 넘게 반납"
+    },
+    {
+     "kind": "text",
+     "text": "2023 ~ 2025",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "이번이 일곱 번째",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "6번 모두",
+   "subtitle": "**6번 모두**\n저점 아래로 내려갔습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "20거래일 안에",
+     "at": 0.0,
+     "y": 100,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "6/6",
+     "at": 0.15,
+     "y": 260,
+     "size": 180,
+     "color": "red",
+     "anim": "pop",
+     "sub": "출발 저점 아래 종가",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "그중 4번은 다음 날",
+     "at": 0.45,
+     "y": 480,
+     "size": 96,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "중앙값 -10.8%",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "2번",
+   "subtitle": "그중 **2번**은\n다시 올라왔습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "20거래일 뒤 더 높음",
+     "at": 0.0,
+     "y": 100,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2/6",
+     "at": 0.15,
+     "y": 260,
+     "size": 180,
+     "color": "green",
+     "anim": "pop",
+     "sub": "+21.9% · +10.6%"
+    },
+    {
+     "kind": "text",
+     "text": "2023.11 · 2025.02",
+     "at": 0.45,
+     "y": 480,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "판정 12.14",
+     "at": 0.72,
+     "y": 640,
+     "size": 100,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "계기",
+   "subtitle": "주가를 다시 붙잡을\n**계기**는?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "실스크 주가를 다시 붙잡을 계기는?",
+     "opts": [
+      "고객 주문 금액",
+      "위성 정식 계약",
+      "양자주 반등"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "실스크 주가를 다시 붙잡을 계기는?",
+     "opts": [
+      "고객 주문 금액",
+      "위성 정식 계약",
+      "양자주 반등"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
