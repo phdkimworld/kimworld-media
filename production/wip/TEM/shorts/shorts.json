@@ -1,0 +1,323 @@
+{
+ "ticker": "TEM",
+ "name": "템퍼스 AI",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "의료 데이터",
+   "subtitle": "암 유전자 검사와\n**의료 데이터**로 돈을 법니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "템퍼스 AI(TEM)",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "암 유전자 검사",
+     "at": 0.0,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "3분기 매출의 약 74%",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "+ 익명 의료 데이터",
+     "at": 0.3,
+     "y": 480,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "제약사에 빌려줌",
+     "at": 0.6,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "11%",
+   "subtitle": "11월 9일 하루 **11%** 올라\n85달러 문턱까지 갔습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.09 하루",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+11.0%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "$84.44",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "장중 $85.75",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "85달러 문턱",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "15.2%",
+   "subtitle": "4거래일 뒤\n**15.2%**가 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.09 → 11.13",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-15.2%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$84.44 → $71.60",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "4거래일",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "실적은 약속대로였는데",
+     "at": 0.72,
+     "y": 640,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "제자리",
+   "subtitle": "시장은 **제자리**,\n회사 공시도 없었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "같은 기간",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+0.1%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "QQQ(나스닥100 ETF)"
+    },
+    {
+     "kind": "text",
+     "text": "회사 수시 공시 없음",
+     "at": 0.45,
+     "y": 480,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "나테라 -0.4%",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "일곱 번",
+   "subtitle": "올해 장중 85달러를\n**일곱 번** 넘었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2026년 장중 85달러 이상",
+     "at": 0.0,
+     "y": 100,
+     "size": 74,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "7일",
+     "at": 0.15,
+     "y": 250,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "나스닥 일별 시세",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "최고 종가 $85.08",
+     "at": 0.45,
+     "y": 500,
+     "size": 96,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "9.28 · 오래 못 버팀",
+     "at": 0.72,
+     "y": 640,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "20% 넘게",
+   "subtitle": "앞선 두 물결은 10거래일 뒤\n**20% 넘게** 낮았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "고점 종가 → 10거래일 뒤",
+     "at": 0.0,
+     "y": 100,
+     "size": 74,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2/2",
+     "at": 0.12,
+     "y": 250,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "20% 넘게 하락"
+    },
+    {
+     "kind": "text",
+     "text": "-20.1% · -23.0%",
+     "at": 0.4,
+     "y": 500,
+     "size": 92,
+     "color": "red",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "판정 11.23",
+     "at": 0.65,
+     "y": 640,
+     "size": 96,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "기준 $84.44",
+     "at": 0.85,
+     "y": 780,
+     "size": 86,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "가장 큰 이유",
+   "subtitle": "85달러 앞에서 돌아선\n**가장 큰 이유**는?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "85달러 앞에서 돌아선 가장 큰 이유는?",
+     "opts": [
+      "기다리는 물량",
+      "무거운 다음 약속",
+      "시장의 우연"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "85달러 앞에서 돌아선 가장 큰 이유는?",
+     "opts": [
+      "기다리는 물량",
+      "무거운 다음 약속",
+      "시장의 우연"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
