@@ -1,0 +1,1633 @@
+{
+ "ticker": "SLDP",
+ "name": "솔리드파워",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "오메가3 · 링크는 설명란에",
+ "midroll": "../kit/sldp_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/sldp_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "SLDP · 솔리드파워 · 실적 뒤 7거래일",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "11.13 종가 $1.76",
+       "tone": "gold"
+      },
+      {
+       "at": 1,
+       "text": "고점 대비 -21.8%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "이 값이\n**묘한 이유**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "한 주당 유동성(현금+증권)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 $1.73",
+       "label": "9월 말 유동성 ÷ 11.02 주식 수",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "주가 ÷ 한 주당 유동성",
+     "stats": [
+      {
+       "at": 4,
+       "big": "1.01배",
+       "label": "$1.76 ÷ $1.73",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "상장 뒤 이 선까지",
+     "stats": [
+      {
+       "at": 5,
+       "big": "4번",
+       "label": "1.05배 안으로 처음 들어온 날",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "그 네 번 뒤\n**무슨 일이?**",
+     "at": 6,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**솔리드파워 다시 추적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "정규편",
+     "stats": [
+      {
+       "at": 1,
+       "big": "전고체 배터리",
+       "label": "솔리드파워(SLDP)",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 편 · 3분기 실적",
+     "stats": [
+      {
+       "at": 2,
+       "big": "매출 -93%",
+       "label": "그래도 주가는 $2 안팎",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그 2달러가\n**이번 주 무너졌다**",
+     "at": 3,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "미국 콜로라도주",
+     "stats": [
+      {
+       "at": 1,
+       "big": "배터리 재료",
+       "label": "솔리드파워(Solid Power)",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "만드는 것",
+     "stats": [
+      {
+       "at": 2,
+       "big": "고체 전해질",
+       "label": "전고체 배터리의 핵심 재료",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "전해질을 파는 곳",
+     "items": [
+      {
+       "no": "1",
+       "text": "삼성SDI",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "SK온",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "3분기",
+     "left": {
+      "at": 4,
+      "head": "매출",
+      "big": "24.3만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 4,
+      "head": "순손실",
+      "big": "2,440만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "대신",
+     "stats": [
+      {
+       "at": 5,
+       "big": "부채 0",
+       "label": "예전에 모은 현금",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 성적표",
+     "at": 0,
+     "kicker": "11월 4일 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 4일 진단",
+     "stats": [
+      {
+       "at": 1,
+       "big": "국면 C",
+       "label": "현금이 주가를 받치는 단계",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "국면 C 조건",
+     "items": [
+      {
+       "no": "1",
+       "text": "유동성의 1.5배 안",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "새 주식 판매 없음",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "이건\n**맞았다**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 시장 매각",
+     "stats": [
+      {
+       "at": 4,
+       "big": "0주",
+       "label": "10-Q · 11월 4일 제출",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "빗나간 것도\n**있다**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "compare",
+     "title": "실적 첫 반응",
+     "left": {
+      "at": 6,
+      "head": "과거 범위",
+      "big": "-19.2% ~ +6.8%",
+      "lines": [
+       "지난 리포트 3부"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 6,
+      "head": "11.04 실제",
+      "big": "+10.8%",
+      "lines": [
+       "범위 위로"
+      ],
+      "tone": "up"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "10월 26일 리포트\n**판정 하나**",
+     "at": 0,
+     "kicker": "지난 판정"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "시나리오 4 · 11.20까지",
+     "left": {
+      "at": 1,
+      "head": "기준",
+      "big": "$1.84",
+      "lines": [
+       "아래 마감?"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "11.13 종가",
+      "big": "$1.76",
+      "lines": [
+       "적중"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "채점",
+     "items": [
+      {
+       "no": "O",
+       "text": "적중 3",
+       "sub": "국면 C · 주식 수·판매 0 · $1.84 아래",
+       "at": 2
+      },
+      {
+       "no": "X",
+       "text": "빗나감 1",
+       "sub": "첫 반응 범위",
+       "at": 2
+      },
+      {
+       "no": "?",
+       "text": "진행 중 4",
+       "sub": "12.03 네 가지 시나리오",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 4일 리포트 판정일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12.03",
+       "label": "네 가지 시나리오",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**실적 다음 날의 상승**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.04 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+10.8%",
+       "label": "$2.03 → $2.25",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "올해 현금 투입 전망 상단",
+     "stats": [
+      {
+       "at": 2,
+       "big": "8,500만",
+       "label": "달러 · 7,500만~8,500만으로 낮춤(전 8,500만~1억)",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그 상승은\n**하루였다**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.05 ~ 11.13 · 7거래일",
+     "stats": [
+      {
+       "at": 4,
+       "big": "상승 1일",
+       "label": "11.11 하루뿐",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "날짜별 종가 · 채점표\n**홈페이지에 무료로**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "솔리드파워\n**혼자가 아니었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "11.04 → 11.13",
+     "items": [
+      {
+       "no": "Q",
+       "text": "퀀텀스케이프",
+       "sub": "-16.9%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "11.04 → 11.13",
+     "items": [
+      {
+       "no": "Q",
+       "text": "퀀텀스케이프",
+       "sub": "-16.9%",
+       "at": 2
+      },
+      {
+       "no": "S",
+       "text": "솔리드파워",
+       "sub": "-21.8%",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "미국 중소형주 지수(IWM)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-2.3%",
+       "label": "같은 기간",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "시장 전체가 아니라\n**전고체 업종의 찬바람**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**공시**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10-Q 뒤 11.13까지 SEC 새 서류",
+     "stats": [
+      {
+       "at": 1,
+       "big": "0건",
+       "label": "11.04 → 11.13",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "없었던 것",
+     "items": [
+      {
+       "no": "X",
+       "text": "새 주식 판매 공시",
+       "at": 2
+      },
+      {
+       "no": "X",
+       "text": "나쁜 계약 소식",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "거래량",
+     "left": {
+      "at": 3,
+      "head": "11.13",
+      "big": "380만 주",
+      "lines": [
+       "하루"
+      ],
+      "tone": "blue"
+     },
+     "right": {
+      "at": 3,
+      "head": "최근 60거래일 평균",
+      "big": "306만 주",
+      "lines": [
+       "하루"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "한꺼번에 던진 날은\n**아니었다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**계산 하나**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "9월 말 유동성",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3억 9,756만",
+       "label": "달러 · 현금+증권, 부채 0",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.02 주식 수",
+     "stats": [
+      {
+       "at": 2,
+       "big": "2억 2,919만 주",
+       "label": "10-Q 표지",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "한 주당 유동성",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 $1.73",
+       "label": "나눈 값",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "주가와 현금",
+     "left": {
+      "at": 4,
+      "head": "11.13 종가",
+      "big": "$1.76",
+      "lines": [
+       "주가"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "한 주당 유동성",
+      "big": "$1.73",
+      "lines": [
+       "현금+증권"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "시가총액 − 유동성",
+     "stats": [
+      {
+       "at": 5,
+       "big": "약 580만",
+       "label": "달러 · 단순 차액",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 6,
+     "layout": "list",
+     "title": "그 580만 달러 안에",
+     "items": [
+      {
+       "no": "1",
+       "text": "연구소 · 생산 라인",
+       "at": 6
+      },
+      {
+       "no": "2",
+       "text": "특허 · 고객 관계",
+       "at": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "거꾸로 읽으면",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "현금을 사면\n**기술은 덤?**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "그래서 나오는 말\n**현금 가치는 바닥**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "과거 기록은\n**그 말을 받아 주지 않았다**",
+     "at": 3,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "ad": [
+    0
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "현금선 기록표\n**고정 댓글의 리포트**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "네 번을\n**하나씩 열어 보면**",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "조건",
+     "at": 0,
+     "kicker": "숨은 답"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "고른 날",
+     "items": [
+      {
+       "no": "1",
+       "text": "그때 공개된 분기 말 현금 기준",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "5거래일 내내 1.05배 위",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "처음 1.05배 안으로 마감",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2021.12 상장 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "4번",
+       "label": "이번이 다섯 번째",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "네 번",
+     "items": [
+      {
+       "no": "1",
+       "text": "2022.12",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "2023.03 · 2023.07",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "2026.07",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "결과는\n**한쪽으로 기울었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10거래일 안에 1배 아래 마감",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3/4",
+       "label": "현금선을 깸",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "그 3번 · 20거래일 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "3/3",
+       "label": "그날보다 낮음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "20거래일 뒤",
+     "left": {
+      "at": 3,
+      "head": "2022.12",
+      "big": "-25.8%",
+      "lines": [
+       "$3.02 기준"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 3,
+      "head": "2023.07",
+      "big": "-22.3%",
+      "lines": [
+       "$2.74 기준"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "2023.03 · 20거래일 뒤",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-1.7%",
+       "label": "$2.93 기준 · 거의 제자리",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "예를 들면\n**2022년 12월**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2022.12.05 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "$3.02",
+       "label": "한 주당 유동성의 1.05배",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "그 뒤",
+     "left": {
+      "at": 2,
+      "head": "다음 날",
+      "big": "$2.80",
+      "lines": [
+       "0.97배 · 1배 아래"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "20거래일 뒤",
+      "big": "$2.24",
+      "lines": [
+       "2023.01.04"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "현금선은 바닥이 아니라\n**지나가는 정거장**",
+     "at": 3,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "더 긴\n**이야기**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2023.08 → 2025.06.10",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 97%",
+       "label": "거래일 중 현금보다 싸게",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "가장 쌀 때 · 2024.01.18",
+     "stats": [
+      {
+       "at": 2,
+       "big": "0.49배",
+       "label": "$1.17",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "현금이 주가를\n**붙잡지 못한 긴 시간**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "그런데\n**예외가 하나**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "올해",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2026.07.29",
+       "label": "네 번째 날",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "7.29 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$2.00",
+       "label": "한 주당 유동성의 1.03배",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "20거래일 뒤 · 8.26",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+17.0%",
+       "label": "$2.34 · 선을 깨지 않음",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "무엇이\n**달랐나?**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "답은\n**업종 대표 주식**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "같은 20거래일 퀀텀스케이프",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+15.7%",
+       "label": "7.29 → 8.26",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "다른 세 번은?",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "퀀텀스케이프 · 20거래일 뒤",
+     "items": [
+      {
+       "no": "1",
+       "text": "2022.12",
+       "sub": "-24.6%",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "2023.03",
+       "sub": "-12.3%",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "2023.07",
+       "sub": "-32.7%",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "솔리드파워 · 퀀텀스케이프",
+     "stats": [
+      {
+       "at": 4,
+       "big": "4/4",
+       "label": "20거래일 뒤 같은 방향",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "방향을 정한 것은\n**현금이 아니라 업종**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 기록은\n**네 번뿐**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "한 주당 유동성",
+     "left": {
+      "at": 1,
+      "head": "2022~2023",
+      "big": "$2.6~2.9",
+      "lines": [
+       "그때"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "지금",
+      "big": "$1.73",
+      "lines": [
+       "11.13"
+      ],
+      "tone": "blue"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "업종 방향은\n**미리 알 수 없다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "앞날을 맞히는\n**공식이 아니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "다만 무엇을 함께 볼지\n**알려 준다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "현금선도\n**내려간다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "올해 현금 투입 전망 상단",
+     "stats": [
+      {
+       "at": 1,
+       "big": "8,500만",
+       "label": "달러 · 범위 7,500만~8,500만",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "현금 투입",
+     "left": {
+      "at": 2,
+      "head": "9개월",
+      "big": "5,660만",
+      "lines": [
+       "달러 · 사용"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "4분기 예상",
+      "big": "약 2,840만",
+      "lines": [
+       "달러까지 · 하단 1,840만"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "연말 한 주당 유동성(계산)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "$1.61~1.65",
+       "label": "4분기 투입 뒤",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "주가가 그대로여도\n**현금선은 조금씩 아래로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "새 주식을 팔 수 있는\n**문도 열려 있다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "시장 매각 남은 한도 · 9월 말",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 5,879만",
+       "label": "달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "회사 설명",
+     "left": {
+      "at": 2,
+      "head": "2026년 1~9월",
+      "big": "판매 0",
+      "lines": [
+       "시장 매각"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "보유 현금",
+      "big": "12개월 이상",
+      "lines": [
+       "충분하다고 밝힘"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "워런트(행사가 $7.25)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "4,561만 개",
+       "label": "지금 주가와 거리가 멂",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "네 가지 시나리오\n**두 질문을 엮었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "두 질문 · 판정 12.14",
+     "items": [
+      {
+       "no": "1",
+       "text": "$1.73 아래 마감이 나오나",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "두 질문 · 판정 12.14",
+     "items": [
+      {
+       "no": "1",
+       "text": "$1.73 아래 마감이 나오나",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "QS 종가 $3.68 위인가",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "시나리오 1 · 지키고 업종 반등",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 25%",
+       "label": "올해 7월과 같은 길",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "시나리오 2 · 홀로 버팀",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 10%",
+       "label": "지킴 · 업종 약세",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "과거 네 번에\n**한 번도 없던 모양**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "시나리오 3 · 깬 뒤 업종 반등",
+     "stats": [
+      {
+       "at": 6,
+       "big": "약 20%",
+       "label": "깸 · QS 위",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "시나리오 4 · 깨고 업종도 약세",
+     "stats": [
+      {
+       "at": 0,
+       "big": "약 45%",
+       "label": "가장 높게 봄",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "근거",
+     "items": [
+      {
+       "no": "1",
+       "text": "과거 3/4 곧 선을 깸",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "지금 선보다 3센트 위",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "QS 아직 하락 중",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "반대쪽\n**근거도 있다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "반대쪽 근거",
+     "items": [
+      {
+       "no": "1",
+       "text": "올해 쓸 돈 줄임",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "부채 0",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "1월 공모 뒤 신주 판매 없음",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "선을 지키는 쪽(1·2)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 35%",
+       "label": "합계",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "분석자 추정\n**오를 확률이 아니다**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "shop": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "달력에 적을 날짜",
+     "stats": [
+      {
+       "at": 0,
+       "big": "3개",
+       "label": "11.20 · 12.03 · 12.14",
+       "tone": "blue"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10월 리포트 마지막 판정",
+     "stats": [
+      {
+       "at": 1,
+       "big": "11.20",
+       "label": "금요일",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11월 4일 리포트 시나리오 채점",
+     "stats": [
+      {
+       "at": 2,
+       "big": "12.03",
+       "label": "수요일",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "이번 판정 · 20거래일째",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12.14",
+       "label": "월요일",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "연말까지 나올 수 있는 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "한국 전해질 합작법인",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "모비우스(MOBIUS) 시운전",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "금액이 붙으면\n**회사 자신의 재료**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "오메가3 하나\n**링크는 설명란에**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "현금 가치\n**바로 위까지**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "4번 중 3번은 선을 깼고\n**버틴 1번은 업종과 함께**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "시나리오 · 체크리스트\n**고정 댓글의 무료 리포트**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "현금 가치 위로 다시 올라설 계기는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "한국 합작법인 계약"
+      },
+      {
+       "at": 3,
+       "text": "퀀텀스케이프 반등"
+      },
+      {
+       "at": 4,
+       "text": "새 생산 라인 가동"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 3,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
