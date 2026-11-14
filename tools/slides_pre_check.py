@@ -31,6 +31,11 @@ for i, (p, sp) in enumerate(zip(paras, P)):
         if s.get('layout') == 'hero' and j + 1 < len(sl):
             nf = sl[j+1].get('from', 0); late = [l['at'] for l in s.get('lines', []) if l.get('at', 0) > nf]
             if late: bad.append(f'p{i+1} hero 줄 시각 {late}이 다음 장면 from {nf}보다 늦음(80회차 CBRS)')
+    for j, s in enumerate(sl):  # check_slides BADGE·BIG을 녹음 전에(81회차 LAES: 합성 직전 BADGE 3·BIG 1로 CHAIN_FAIL)
+        for it in s.get('items', []) or []:
+            if len(str(it.get('no', ''))) > 2: bad.append(f'p{i+1} 번호 배지 {it.get("no")!r} 2자 초과')
+        for st_ in s.get('stats', []) or []:
+            if len(str(st_.get('big', ''))) > 12: bad.append(f'p{i+1} stat big {st_.get("big")!r} 12자 초과')
     for a in sp.get('ad', []):
         if a >= n: bad.append(f'p{i+1} ad {a} ≥ 문장 수 {n}')
         elif not AD.search(sen[a]): bad.append(f'p{i+1} ad {a}번 문장이 안내 문장이 아님: {sen[a][:40]}')
