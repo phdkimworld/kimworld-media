@@ -58,6 +58,7 @@ fi
 python3 /home/user/kimworld-media/tools/thumb_biz_check.py thumb/custom || { echo "CHAIN_FAIL thumb_biz_check(썸네일에 사업 시각화 없음, 운영자 지시 10-24)"; exit 1; }
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])"); if [ -f ../report/chart.json ] && [ -f ../research/$T.json ]; then python3 /home/user/kimworld-media/tools/chart_check.py ../report/chart.json ../research/$T.json || { echo "CHAIN_FAIL chart_check(차트 날짜·종가·거래일 라벨 ↔ 시세 원자료, 42회차 교훈)"; exit 1; }; fi
 python3 /home/user/kimworld-media/tools/thumb_name_check.py thumb/custom || { echo "CHAIN_FAIL thumb_name_check(썸네일 회사명 72px·티커 60px 이상, 운영자 지시 10-27)"; exit 1; }
+python3 /home/user/kimworld-media/tools/thumb_overflow_check.py thumb/custom || { echo "CHAIN_FAIL thumb_overflow_check(썸네일 글자 상자가 1280×720 밖, 82회차 ASST)"; exit 1; }
 python3 /home/claude/bin/hero_check.py . | tail -1
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])")
 nice -n 10 python3 /home/claude/slidekit/make_slide_video.py slides.json raw.wav "${T}_slide_video.mp4" > synth.log 2>&1 || { echo "CHAIN_FAIL synth"; tail -5 synth.log; exit 1; }

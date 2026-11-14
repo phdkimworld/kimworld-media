@@ -35,6 +35,7 @@
 
 | 회차 | 찾은 틀 | 고친 곳 | 전 → 후 예시 |
 |---|---|---|---|
+| 82 ASST | Threads 끝맺음 틀: QS 79·CBRS 80 둘째·셋째 글이 '…중 하나만 댓글로.'·'그렇게 보는 근거 하나만 댓글로.'로 같은 부탁 문장으로 끝남 | Threads 둘째·셋째 글(social/queue/asst-2026-11-th2·th3) | 전 '주가가 빠진 가장 큰 이유는? 미리 오른 기대 / 고객 돈의 공백 / 업종 분위기 중 하나만 댓글로.' → 후 '현금은 있는데 29개만 산 회사. 지금 비트코인을 더 사는 게 맞을까, 배당 금고를 지키는 게 맞을까?' · 전 '그렇게 보는 근거 하나만 댓글로.' → 후 '네 번째는 다를까. 12월 14일 종가로 확인한다.' |
 | 80 CBRS | 가설 번호 틀: 직전 BTQ 77 대본·리포트가 '첫 번째 가설은 판매 물량입니다 / 두 번째 가설은 숫자의 공백입니다 / 반론도 있습니다'로 같은 뼈대(PLUG 74·IREN 71도 가설 둘+반론) | 대본 13~16문단·리포트 3~4부 | 번호 붙인 가설 둘 → 숨은 답 하나('다음 분기 이익률 전망')와 그 이유를 사업 구조로 설명하는 한 문단('데이터센터를 먼저 늘리고 매출은 나중에 거둡니다'). 리포트 6부 '첫째·둘째·셋째 갈래는' → '사업 실행 쪽 위험부터 보면 / 자금 조달 쪽에서는 / 외부 환경은' |
 | 77 BTQ | 설명란 줄마다 장식 이모지 머리를 다는 틀(RUM 76 설명란 이모지 13개·이모지로 시작하는 줄 11개: 📊📌⚡⚡💵🛒🗓️🔔🗳️📚👉) | 롱폼 설명란·고정댓글 + 새 검사 tools/plain_check.py EMOJI(설명란 이모지 머리 줄 6개 초과, 11-12 경고·11-13부터 FAIL) | 설명란 이모지 13 → 6, 머리 줄 11 → 5, 고정댓글 6 → 4. 전 '⚡ 8월 25일 고점 뒤 럼블은 -50.0%였습니다.'·'💵 3분기 조정 EBITDA는…' → 후 '11월 5일 양자주가 함께 내린 날 BTQ는 13.9% 내렸습니다.'(머리 없이 사실 문장) |
 | 78 CEG | 서수로 여는 문단 틀: 직전 RUM 리포트 '첫 번째 힘은·두 번째 힘은·첫째 갈래는·둘째 갈래는·셋째 갈래는' 5번(PLUG·IREN6 3번, NBIS·LCID 6번) | 리포트 2·6부, ai_feel_check(.md 서수 문단 3개 이상 경고) | 전 '첫째 갈래는 자금 조달입니다.' → 후 '자금 조달과 주식 수 쪽에는 2027년 6월 30일 약 2,500만 주 해제가 남아 있습니다.' · 2부 '첫 번째 힘은 업종입니다' 대신 '세 번의 하락과 실적 날 반등을 나란히 놓으면 공통점이 하나 보입니다' |
@@ -47,6 +48,7 @@
 
 | 회차 | 절약안 | 적용 위치 | 토큰·도구 호출(직전 대비) |
 |---|---|---|---|
+| 82 ASST | ① 직전 QS 회차 bin·mk_* 스크립트를 sed 한 줄과 본문 치환으로 이식(publish_loop·site_pub·record·tts_mac·mk_meta·mk_queue·shorts) ② 비트코인 시세는 코인베이스 일봉 API 한 번(300일 단위 2회)으로 받아, 급락일 통계·세 조각 분해·배수를 한 파이썬 호출에서 계산 ③ 8-K 열한 건은 Item 8.01 뒤 2,500자만 한 루프로 출력(전문 읽지 않음), 10-Q는 '15,124'·'cost basis'·'dividend reserve' 주변만 grep ④ 맥 TTS 제출과 동시에 클라우드 TTS를 바로 시작(10분 대기 없이 병행) | 조사·TTS | 도구 호출 약 95회(QS 79 약 110회 대비 약 -14%) · 손실: 두 제작이 4코어를 나눠 클라우드 TTS·사이트 테스트가 평소의 약 2.5배 걸림 |
 | 80 CBRS | ① 맥 작업 실패(맥 쪽 venv 없음)를 mac_wait.log 한 줄로 바로 확인하고 30분 기다리지 않고 클라우드 TTS로 전환(모델·실행 파일만 받아 st_tts 1회, 고친 두 문단은 st_redo) ② 화면 숫자 검사(num_check)를 녹음 대기 중에 미리 돌려 MISS 4개를 합성 전에 고침(BTQ 77은 합성 뒤 MISS 3 → 재합성) ③ 직전 회차 bin 스크립트 4개를 sed 한 줄로 이식, 조사 서브에이전트 없이 SEC index.json·나스닥 API 직접 | 조사·TTS·합성 | 도구 호출 약 120회(직전 회차 기록 없음, 재합성 0회) |
 | 77 BTQ | ① 정규 후보 9종목 기준일 뒤 종가를 나스닥 API 한 루프로(종목별 조회·웹 검색 반복 없이 선정 20분 안) ② SEC 제출 목록 index.json 한 루프로 6-K 첨부 제목 40여 건을 한 번에 뽑아 보고서 4번·설명회 공지·판매 계약을 식별, 재무제표는 grep으로 필요한 줄만 ③ ASR 바이너리 유실을 pip sherpa-onnx 래퍼로 대체하고 restore_workspace.sh에 넣어 다음 재시작 뒤 수동 복구 0 ④ 맥 TTS 롱폼·쇼츠 한 번에(4분) · RUM 스크립트(site_pub·publish_loop·mk_slides 머리·mk_meta·mk_queue·record) sed 치환 | /home/claude/btq4/bin, tools/restore_workspace.sh | 도구 호출 약 120회(RUM 약 150회 대비 약 -20%), 손실: easy_check v3.x 지적 약 30건을 두 번에 고침 |
 | 78 CEG | ① report_perf 비공개 통계를 kimworld 저장소 ops-data 브랜치에서 stats 폴더만 받아(얕은 fetch + 폴더만 checkout) 전체 클론 없이 7일 통계 사용 ② 직전 리포트는 git show 뒤 grep으로 '짧은 답·국면·P패턴·5.6 시나리오' 줄만 읽어 채점 ③ 리포트 easy_check 지적 31건을 한 번에 받아 본문을 한 번에 다시 써서 왕복 3회로 끝냄 ④ RUM 회차 스크립트(site_pub·tts_mac·publish_loop·mk_slides·mk_meta·쇼츠·mk_queue·record) sed 치환 재사용 | 회차 작업 방식 | 도구 호출 약 120회(직전 RUM 재제작 회차와 비슷, 재시작 없음) |
@@ -64,6 +66,7 @@
 
 | 첫 적용 | 이전 실수(회차) | 검사·도구 | 흐름 |
 |---|---|---|---|
+| 82~ | 썸네일 b안 큰 문구(72px, 11자)가 화면 오른쪽을 넘을지 눈대중으로 판단해 손으로 줄임(82회차 ASST — 측정해 보니 1,220px로 들어맞았음, 눈대중 판단 자체가 실수 위험) | `tools/thumb_overflow_check.py <thumb/custom>`: a·b.html을 렌더해 .t·.card·.namebar·.biz-chip 상자가 1280×720 밖이거나 칸 안에서 넘치면 FAIL. 과거 qs·cbrs5·btq4·ceg·rum 오탐 0 | chain_long.sh thumb_name_check 다음 자동 |
 | 80~ | 맥 TTS 작업이 맥 쪽 실패(venv 없음)로 끝났는데 mac.py wait가 0으로 끝나 tts_mac.sh가 tts.log에 done·TTS_DONE을 적음 — 빈 녹음으로 다음 단계가 이어질 뻔함(CBRS 80) | `tools/chain_long.sh` tts_missing: tts.log가 done이어도 raw.wav가 없거나 비었으면 CHAIN_FAIL과 mac_wait.log 오류 줄·클라우드 TTS 명령 출력 | 과거 btq4·ceg·rum 통과, 빈 폴더 잡음 |
 | 77~ | 설명란 줄마다 장식 이모지 머리(RUM 76 11줄, 8.0.2 'AI 느낌') | `tools/plain_check.py` EMOJI: description.txt에서 이모지로 시작하는 줄 6개 초과(링크·🛒·🔔·🗳️ 줄만 남김). RUM 76 설명란 11줄 잡음, BTQ 77 5줄 통과. 같은 날 동시 제작(CEG 78)을 막지 않게 11-12는 WARN, 11-13부터 FAIL | 업로드 전 plain_check(대본·설명·첫 댓글) |
 | 77~ | 재시작 뒤 ASR 실행 파일 유실로 tts_asr_check가 RUM 76에서 건너뛰어짐(asr_check.ok로 넘김) | `tools/restore_workspace.sh`가 sherpa-onnx-offline 래퍼(pip sherpa-onnx 파이썬 API, 같은 '"text"' 출력)와 한국어 모델을 다시 깖. BTQ 77 녹음 605초 ASR_OK(LIMIT 8, 새 녹음 비교로 인식기 한계) | chain_long.sh TTS 뒤 자동 |
