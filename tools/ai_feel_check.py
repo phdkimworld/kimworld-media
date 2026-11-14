@@ -22,6 +22,8 @@ for p in sys.argv[1:]:
     heads = [re.split(r'[ ,]', x, maxsplit=1)[0] for x in paras]
     for i in range(len(heads) - 2):
         if heads[i] == heads[i+1] == heads[i+2] and len(heads[i]) > 1: bad.append(f"{p}: 문단 {i+1}~{i+3}이 모두 '{heads[i]}'로 시작"); break
+    ns = len(re.findall('셈입니다', t))  # 83회차 SLDP: ASST 82 대본 4번·LAES 81·CBRS 80 2번씩 해석 꼬리 '…셈입니다'
+    if not p.endswith('.md') and ns > 2: bad.append(f"{p}: 해석 꼬리 '셈입니다' {ns}번 > 2 — 숫자 뒤 뜻은 다른 말로(…라는 말입니다·…와 같습니다) 또는 생략")
     od = [x[:14] for x in paras if re.match(r'(첫째|둘째|셋째|넷째|(첫|두|세|네) 번째 [가-힣]+(은|는))', x)]
     if not p.endswith('.md'): od = [x for x in od if not x.startswith('첫 번째 단서')]
     if True:

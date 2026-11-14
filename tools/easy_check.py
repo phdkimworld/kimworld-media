@@ -436,5 +436,11 @@ if _v32:
     if p4:
         last = [x for x in p4.group(1).strip().split('\n\n') if x.strip()][-1]
         if not re.search(r'(확인할|볼) (것|조건)은|두 가지', last): bad.append('v3.2 4부 마지막 문단은 과거 기록 → 앞으로 확인할 조건 두 가지로 5부 시나리오 축을 미리 세움')
+# share_numbers 형식(84회차 TEM: '-15.2%' 한 낱말로 test_build가 make_og에서 죽고, '3번째'로 끝나 build --strict에 걸릴 뻔 — 사이트 build.py와 같은 정규식으로 발행 전에)
+_sn = re.search(r'^share_numbers:\s*\[(.*)\]\s*$', txt, re.M)
+if _sn:
+    _items = re.findall(r'"([^"]*)"', _sn.group(1))
+    if len(_items) != 2 or not all(re.search(r"\S\s+[+-−]?[$]?\d[\d,.]*\s*(%|배|달러|원)?$", x) for x in _items):
+        bad.append(f"share_numbers {_items} → '<라벨> <숫자>' 두 개, 끝은 숫자(+%·배·달러·원), 예: [\"11.09 종가 $84.44\", \"4거래일 뒤 -15.2%\"]")
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
