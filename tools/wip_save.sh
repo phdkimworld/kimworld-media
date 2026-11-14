@@ -17,3 +17,5 @@ Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X" || { echo "WIP_NOCHANGE"; exit 0; }
 for i in 1 2 3 4; do git pull -q --rebase --autostash origin claude/kim-world-stock-studio-laes-ovy09b && git push -q origin claude/kim-world-stock-studio-laes-ovy09b && break; sleep $((i*2)); done
 echo "WIP_SAVED $T $(find $W -type f | wc -l) files"
+# 회차 번호 충돌 경고(83회차 SLDP: 동시 제작 때 STATE 행 회차 번호가 겹치면 뒤에 푸시한 쪽이 다음 번호로)
+python3 $M/tools/episode_check.py $M/production/STATE.md | grep EPISODE_DUP || true
