@@ -20,7 +20,7 @@
     {
      "kind": "text",
      "text": "데이터센터",
-     "at": 0.0,
+     "at": 0.25,
      "y": 260,
      "size": 130,
      "color": "yellow",
@@ -31,7 +31,7 @@
     {
      "kind": "text",
      "text": "미시간 데이터센터",
-     "at": 0.3,
+     "at": 0.5,
      "y": 480,
      "size": 80,
      "color": "white",
@@ -40,7 +40,7 @@
     {
      "kind": "text",
      "text": "GPUS",
-     "at": 0.6,
+     "at": 0.8,
      "y": 640,
      "size": 96,
      "color": "white",
@@ -113,8 +113,7 @@
      "size": 170,
      "color": "yellow",
      "anim": "pop",
-     "sub": "$0.1429 → $0.1895",
-     "sfx": "boom"
+     "sub": "$0.1429 → $0.1895"
     },
     {
      "kind": "text",
@@ -201,8 +200,7 @@
      "size": 170,
      "color": "yellow",
      "anim": "pop",
-     "sub": "새 우선주 액면",
-     "sfx": "boom"
+     "sub": "새 우선주 액면"
     },
     {
      "kind": "text",
