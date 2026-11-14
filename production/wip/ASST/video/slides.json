@@ -1,0 +1,1267 @@
+{
+ "ticker": "ASST",
+ "name": "스트라이브",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "차트 보기 좋은 태블릿 · 링크는 설명란에",
+ "midroll": "../kit/asst_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/asst_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "ASST · 스트라이브 · 할인 국면",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "비트코인 -9.9% 일주일",
+       "tone": "white"
+      },
+      {
+       "at": 0.3,
+       "text": "주가는 -0.4%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.06 → 11.13 스트래티지(MSTR)",
+     "stats": [
+      {
+       "at": 1,
+       "big": "-13.4%",
+       "label": "가장 큰 비트코인 회사",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.06 → 11.13 스트라이브",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-0.4%",
+       "label": "$21.45 → $21.36",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "2026년 평균 민감도",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 1.7배",
+       "label": "비트코인보다 크게 흔들리던 주식",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "이 버팀은\n**바닥의 신호였을까**",
+     "at": 4,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드\n**두 번째 추적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "시청자 반응이 컸던 종목",
+     "stats": [
+      {
+       "at": 1,
+       "big": "업데이트",
+       "label": "비트코인 금고 회사",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "10.09 지난 리포트 기준일",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$27.80",
+       "label": "11.13 종가는 $21.36",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "source",
+     "kind": "지난 리포트",
+     "orig": "순환 국면 후반, 공급 국면 진입 직전",
+     "tr": "워런트 만기 뒤 새 주식이 나온다",
+     "src": "김박사 월드 리포트",
+     "date": "2026.10.11",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "지난 진단 · 10.13 워런트 만기 앞",
+     "stats": [
+      {
+       "at": 1,
+       "big": "적중",
+       "label": "공급 국면 진입 직전",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "10.14 만기 다음 날",
+     "stats": [
+      {
+       "at": 2,
+       "big": "-10.5%",
+       "label": "주가",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "지난 시나리오 → 결과",
+     "items": [
+      {
+       "no": "1",
+       "text": "할인 국면 복귀",
+       "sub": "적중 · 배수 0.92배",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "비트코인이 평균 매입가 위로",
+       "sub": "빗나감",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "배당률 조정",
+       "sub": "확인 전 · 12월 판정",
+       "at": 5
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "지난 예측 성적",
+     "stats": [
+      {
+       "at": 6,
+       "big": "적중 3",
+       "label": "빗나감 1 · 확인 전 1",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "주식·우선주를 팔아",
+     "stats": [
+      {
+       "at": 1,
+       "big": "비트코인",
+       "label": "사 모으는 회사",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "우선주\n**보통주보다 먼저 정해진 배당**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 매출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "270만 달러",
+       "label": "자산 운용·의료기기",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "주가를 정하는 것\n**비트코인 값 × 한 주당 비트코인**",
+     "at": 4,
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주별 매입량·계산표\n**홈페이지에 무료로**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**한 달의 매입 장부**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10.09 비트코인 보유",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3만 2,773개",
+       "label": "지난 리포트 기준일",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.06 비트코인 보유",
+     "stats": [
+      {
+       "at": 2,
+       "big": "4만 3,153개",
+       "label": "회사 주간 공시",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "한 달 사이",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 1만 380개",
+       "label": "늘어난 비트코인",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "돈은\n**두 곳에서**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "워런트 행사가",
+     "stats": [
+      {
+       "at": 5,
+       "big": "27달러",
+       "label": "새 주식을 살 수 있는 권리",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "10.12~13 행사",
+     "stats": [
+      {
+       "at": 6,
+       "big": "3억 6,920만 달러",
+       "label": "1,367만 주 분량",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "새 우선주 SATS",
+     "stats": [
+      {
+       "at": 7,
+       "big": "연 15%",
+       "label": "고정 배당",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "700만 주 × 90달러",
+     "stats": [
+      {
+       "at": 8,
+       "big": "6억 3,000만 달러",
+       "label": "10.15 공모",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "한 주에 담긴 비트코인\n**늘었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "1,000주당 비트코인",
+     "left": {
+      "at": 1,
+      "head": "10.09",
+      "big": "0.297개",
+      "lines": [
+       "지난 리포트"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "11.06",
+      "big": "0.339개",
+      "lines": [
+       "+14.1%"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "회사는\n**할 일을 했다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "같은 기간 주가",
+     "left": {
+      "at": 3,
+      "head": "10.09",
+      "big": "$27.80",
+      "lines": [
+       "지난 리포트 기준일"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "11.13",
+      "big": "$21.36",
+      "lines": [
+       "최근 종가"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "10.09 → 11.13",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-23.2%",
+       "label": "주가",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**시장이 매기는 배수**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "배수 =\n**시가총액 ÷ 비트코인 가치**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "10.09 배수",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 1.13배",
+       "label": "웃돈",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "비트코인 1달러어치를\n**1.13달러에**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.13 배수",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 0.92배",
+       "label": "할인",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "이제 1달러어치가\n**92센트**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "10.09 → 11.13 비트코인",
+     "stats": [
+      {
+       "at": 6,
+       "big": "-17.3%",
+       "label": "8만 2,545달러 → 6만 8,237달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "list",
+     "title": "주가 -23.2%를 나누면",
+     "items": [
+      {
+       "no": "1",
+       "text": "주당 비트코인",
+       "sub": "+14.1%",
+       "at": 7
+      },
+      {
+       "no": "2",
+       "text": "비트코인 값",
+       "sub": "-17.3%",
+       "at": 7
+      },
+      {
+       "no": "3",
+       "text": "배수",
+       "sub": "1.13배 → 0.92배",
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "배수가 꺾인 날",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "10.21 SATS 공모 다음 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+13.6%",
+       "label": "$30.75",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "이 기간의\n**고점**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "10.21 → 11.13",
+     "left": {
+      "at": 3,
+      "head": "비트코인",
+      "big": "-18.8%",
+      "lines": [
+       "3주"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 3,
+      "head": "스트라이브",
+      "big": "-30.5%",
+      "lines": [
+       "3주"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "평균 매입가(계산)",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 8만 7,760달러",
+       "label": "지금 비트코인은 약 22.2% 아래",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 3\n**금고 속 현금**",
+     "at": 0,
+     "kicker": "단서 3",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.06 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "4억 8,760만 달러",
+       "label": "회사 주간 공시",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "주간 비트코인 매입",
+     "items": [
+      {
+       "no": "1",
+       "text": "10월 셋째 주",
+       "sub": "6,182개",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "10월 넷째 주",
+       "sub": "124개",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "11월 첫 주",
+       "sub": "29개",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "돈이 있는데\n**왜 안 샀나**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "source",
+     "kind": "10-Q",
+     "orig": "increased the reserve by an amount equal to the first 18 months of dividend payments",
+     "tr": "우선주 배당 18개월 치를 준비금으로",
+     "src": "SEC 10-Q",
+     "date": "2026.11.06",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "우선주를 팔 때마다\n**배당 18개월 치를 따로**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "두 우선주 1년 배당(계산, 달러)",
+     "stats": [
+      {
+       "at": 0,
+       "big": "약 2억 9,140만",
+       "label": "SATA + SATS",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "18개월 치 vs 현금",
+     "left": {
+      "at": 1,
+      "head": "18개월 배당",
+      "big": "4억 3,720만 달러",
+      "lines": [
+       "계산"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 1,
+      "head": "11.06 현금",
+      "big": "4억 8,760만 달러",
+      "lines": [
+       "회사 공시"
+      ],
+      "tone": "blue"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "현금 대부분이\n**배당에 묶여 있다**",
+     "at": 2,
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "SATA 배당률(11.12 발표)",
+     "left": {
+      "at": 3,
+      "head": "11월",
+      "big": "13.00%",
+      "lines": [
+       "연"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "12월부터",
+      "big": "13.25%",
+      "lines": [
+       "연"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.13 SATA 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "$97.73",
+       "label": "액면 100달러 아래",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "우선주별 배당 계산\n**고정 댓글의 리포트**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "처음 질문으로",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "지난 일주일\n**왜 버텼나**",
+     "at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "확인되는 사실\n**하나**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "10.30 이후 보통주",
+     "stats": [
+      {
+       "at": 3,
+       "big": "1억 2,733만 주",
+       "label": "한 주도 늘지 않음",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "배수 1배 아래에서 보통주를 팔면\n**주당 비트코인이 준다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "새 보통주 없음\n**파는 물량 하나가 사라짐**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "원인이라고\n**공시가 말하진 않는다**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "과거에도\n**있었나**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2026년 비트코인 하루 -3% 넘게",
+     "stats": [
+      {
+       "at": 1,
+       "big": "21일",
+       "label": "UTC 하루 종가 기준",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "주가가 더 크게 내린 날",
+     "stats": [
+      {
+       "at": 2,
+       "big": "17/21",
+       "label": "낙폭 가운데 값 약 1.5배",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "비트코인보다 덜 내린 날",
+     "stats": [
+      {
+       "at": 3,
+       "big": "3번",
+       "label": "이번 11.13 제외",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "덜 내린 날",
+     "items": [
+      {
+       "no": "1",
+       "text": "2026.01.20",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "2026.01.29",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "2026.06.02",
+       "at": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "한 달 뒤는\n**모두 같은 방향**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "20거래일 뒤 주가",
+     "items": [
+      {
+       "no": "1",
+       "text": "2026.01.20",
+       "sub": "-54.5%",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "2026.01.29",
+       "sub": "-49.4%",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "2026.06.02",
+       "sub": "-25.4%",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "같은 기간 비트코인",
+     "items": [
+      {
+       "no": "1",
+       "text": "2026.01.20",
+       "sub": "-24.8%",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "2026.01.29",
+       "sub": "-22.1%",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "2026.06.02",
+       "sub": "-10.0%",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "버틴 날은 바닥이 아니라\n**더 내리기 전의 잠깐**",
+     "at": 3,
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "날짜별 숫자\n**고정 댓글의 리포트 기록표**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 표는\n**조심해서 읽어야**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "덜 내린 날 3번뿐\n**1월 두 날은 기간이 겹침**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "비트코인 종가는\n**미국 장 마감보다 늦은 UTC 기준**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "경향일 뿐\n**규칙이 아니다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "버팀을 읽는\n**두 갈래**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "설명 하나",
+     "stats": [
+      {
+       "at": 1,
+       "big": "공급 멈춤",
+       "label": "새 보통주가 안 나옴",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "비트코인이 내려도\n**파는 쪽이 얇았다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "설명 둘",
+     "stats": [
+      {
+       "at": 3,
+       "big": "이미 싸진 값",
+       "label": "배수 0.92배",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "1배 아래로 내려온 만큼\n**더 내릴 여지가 줄었다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "반론",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "과거 3번 모두\n**비트코인이 계속 내리자 더 크게**",
+     "at": 6,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "ad": [
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "국면 진단",
+     "left": {
+      "at": 0,
+      "head": "10.09 지난 리포트",
+      "big": "공급 국면 직전",
+      "lines": [
+       "워런트 만기"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 0,
+      "head": "11.13 지금",
+      "big": "할인 국면",
+      "lines": [
+       "배수 1배 아래"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "할인 국면 신호",
+     "items": [
+      {
+       "no": "1",
+       "text": "시가총액 < 비트코인 가치",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "비트코인 < 평균 매입가",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "우선주 두 종목 액면 아래",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "두 기준, 네 갈래 시나리오\n**리포트에 정리**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "shop": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "지켜볼 날 · 11.13부터 20번째 거래일",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 14일",
+       "label": "판정",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "12.14 판정 기준",
+     "left": {
+      "at": 1,
+      "head": "주가",
+      "big": "$21.36",
+      "lines": [
+       "11.13 종가 위인가"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "비트코인",
+      "big": "6만 8,237달러",
+      "lines": [
+       "11.13 종가 위인가"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "12월 1일부터 오르는 배당률\n**우선주 값을 100달러 쪽으로?**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "ad": [
+    1,
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "비트코인은 늘었다\n**주가는 아직 비트코인 값을 따른다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "패턴 기반 대응 전략",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "매매 전 체크리스트",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 2,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "지난 일주일 버틴 가장 큰 이유는?",
+     "at": 1,
+     "options": [
+      {
+       "at": 2,
+       "text": "멈춘 보통주 공급"
+      },
+      {
+       "at": 3,
+       "text": "이미 싸진 값"
+      },
+      {
+       "at": 4,
+       "text": "잠깐의 우연"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

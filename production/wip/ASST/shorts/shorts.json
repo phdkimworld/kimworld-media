@@ -1,0 +1,365 @@
+{
+ "ticker": "ASST",
+ "name": "스트라이브",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "비트코인",
+   "subtitle": "주식과 우선주를 팔아\n**비트코인**을 사 모읍니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "스트라이브(ASST)",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "비트코인 금고",
+     "at": 0.0,
+     "y": 260,
+     "size": 150,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "4만 3,153개 보유(11.06)",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "주식·우선주를 팔아",
+     "at": 0.3,
+     "y": 480,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "비트코인을 산다",
+     "at": 0.6,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "9.9%",
+   "subtitle": "11월 6일부터 13일까지 비트코인은\n**9.9%** 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.06 → 11.13",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-9.9%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "비트코인",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "8만 달러 아래로",
+     "at": 0.45,
+     "y": 480,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "6만 8,237달러",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "13.4%",
+   "subtitle": "스트래티지는\n**13.4%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "같은 기간",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-13.4%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "스트래티지(MSTR)"
+    },
+    {
+     "kind": "text",
+     "text": "가장 큰 비트코인 회사",
+     "at": 0.45,
+     "y": 480,
+     "size": 92,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "비트코인보다 더 내림",
+     "at": 0.72,
+     "y": 640,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "0.4%",
+   "subtitle": "스트라이브 주가는\n**0.4%**만 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "그런데 스트라이브",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-0.4%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "$21.45 → $21.36",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "거의 제자리",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "평소 민감도 약 1.7배",
+     "at": 0.72,
+     "y": 640,
+     "size": 88,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "한 주도",
+   "subtitle": "보통주 수는 10월 30일 이후\n**한 주도** 늘지 않았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "10.30 이후 보통주",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1억 2,733만 주",
+     "at": 0.15,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "그대로"
+    },
+    {
+     "kind": "text",
+     "text": "새 보통주 판매 멈춤",
+     "at": 0.45,
+     "y": 480,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "배수 약 0.92배",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "세 번",
+   "subtitle": "비트코인 급락 속에 덜 내린 날은\n**세 번** 있었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "2026년 비트코인 -3% 넘은 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 74,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "21일",
+     "at": 0.15,
+     "y": 250,
+     "size": 160,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "그중 17일은 주가가 더 크게 하락"
+    },
+    {
+     "kind": "text",
+     "text": "덜 내린 날 3번",
+     "at": 0.45,
+     "y": 500,
+     "size": 100,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1.20 · 1.29 · 6.02",
+     "at": 0.72,
+     "y": 640,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "세 번 모두",
+   "subtitle": "**세 번 모두** 한 달 뒤\n주가는 그날보다 낮았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "20거래일 뒤 주가",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "0/3",
+     "at": 0.12,
+     "y": 250,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "그날 종가보다 위"
+    },
+    {
+     "kind": "text",
+     "text": "-54.5% · -49.4% · -25.4%",
+     "at": 0.4,
+     "y": 500,
+     "size": 72,
+     "color": "red",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "판정 12.14",
+     "at": 0.65,
+     "y": 640,
+     "size": 96,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "기준 $21.36",
+     "at": 0.85,
+     "y": 780,
+     "size": 86,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "가장 큰 이유",
+   "subtitle": "지난 일주일 버틴\n**가장 큰 이유**는?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "지난 일주일 버틴 가장 큰 이유는?",
+     "opts": [
+      "멈춘 보통주 공급",
+      "이미 싸진 값",
+      "잠깐의 우연"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "지난 일주일 버틴 가장 큰 이유는?",
+     "opts": [
+      "멈춘 보통주 공급",
+      "이미 싸진 값",
+      "잠깐의 우연"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
