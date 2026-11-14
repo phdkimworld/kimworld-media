@@ -2627,6 +2627,27 @@
    ],
    "video": "jwQBYhtdpgc",
    "shorts": "PeUps1IO138"
+  },
+  {
+   "t": "gpus",
+   "date": "2026.11.14",
+   "layout": "custom",
+   "palette": "cyan-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "회사는 0.26달러에 산다는데 / 시장 가격은 $0.17(빨강) 카드 / 82% 웃돈의 진짜 값 + 서버 랙·비트코인 동전·번개",
+    "0.26달러 제안 뒤 4거래일 -11.5% + 같은 그림"
+   ],
+   "video": "3_ShVMxxXzU",
+   "shorts": "4epfNR8kViQ"
   }
  ]
 }
