@@ -32,5 +32,10 @@ if _f.returncode: bad += [l for l in _f.stdout.split('\n') if l.startswith('AIFE
 # 숫자+단위 뒤 조사 받침(76회차 RUM '십육 회이' — 일괄 치환 뒤 녹음 직전까지 남음)
 _j = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'josa_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _j.returncode: bad += [l for l in _j.stdout.split('\n') if l.startswith('JOSA ')]
+# 슬라이드 구조(82회차 LAES, 80회차 CBRS hero 줄 시각 교훈): narration 옆에 slides.json이 있으면 녹음 전에 짝 검사
+_vd = os.path.dirname(os.path.abspath(sys.argv[1]))
+if os.path.exists(os.path.join(_vd, 'slides.json')):
+    _s = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'slides_pre_check.py'), _vd], capture_output=True, text=True)
+    if _s.returncode: bad += ['SLIDES ' + l for l in _s.stdout.split('\n') if l.strip()]
 print('\n'.join(bad) if bad else f'GROUP_OK {g} {kb:.2f}KB 안내 p{guide[0]+1}')
 sys.exit(1 if bad else 0)
