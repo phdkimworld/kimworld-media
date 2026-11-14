@@ -2543,6 +2543,27 @@
    ],
    "video": "fNZTziudMlY",
    "shorts": "7ubOrKuTcjE"
+  },
+  {
+   "t": "sldp",
+   "date": "2026.11.14",
+   "layout": "custom",
+   "palette": "teal-gold",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "주가 $1.76 · 현금 $1.73 / 한 주당 현금과의 차이 3센트(파랑) 카드 / 현금선은 바닥일까? + 전고체 셀·지폐 다발·현금선(점선)까지 내려온 빨강 화살표",
+    "현금선에 닿은 4번 / 곧 선을 깸 3/4 + 같은 그림"
+   ],
+   "video": "1Os_1jaoNPY",
+   "shorts": "2BrB5DXMJKc"
   }
  ]
 }
