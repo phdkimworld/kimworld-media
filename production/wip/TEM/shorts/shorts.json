@@ -13,7 +13,7 @@
      "text": "템퍼스 AI(TEM)",
      "at": 0.0,
      "y": 100,
-     "size": 90,
+     "size": 84,
      "color": "white",
      "anim": "pop"
     },
@@ -33,7 +33,7 @@
      "text": "+ 익명 의료 데이터",
      "at": 0.3,
      "y": 480,
-     "size": 96,
+     "size": 84,
      "color": "white",
      "anim": "pop"
     },
@@ -127,10 +127,10 @@
     },
     {
      "kind": "text",
-     "text": "실적은 약속대로였는데",
+     "text": "실적은 약속대로",
      "at": 0.72,
      "y": 640,
-     "size": 88,
+     "size": 84,
      "color": "white",
      "anim": "pop"
     }
@@ -164,7 +164,7 @@
      "text": "회사 수시 공시 없음",
      "at": 0.45,
      "y": 480,
-     "size": 92,
+     "size": 84,
      "color": "white",
      "anim": "pop"
     },
@@ -185,10 +185,10 @@
    "els": [
     {
      "kind": "text",
-     "text": "2026년 장중 85달러 이상",
+     "text": "올해 장중 85달러 이상",
      "at": 0.0,
      "y": 100,
-     "size": 74,
+     "size": 70,
      "color": "white",
      "anim": "pop"
     },
@@ -208,7 +208,7 @@
      "text": "최고 종가 $85.08",
      "at": 0.45,
      "y": 500,
-     "size": 96,
+     "size": 86,
      "color": "yellow",
      "anim": "pop"
     },
@@ -217,7 +217,7 @@
      "text": "9.28 · 오래 못 버팀",
      "at": 0.72,
      "y": 640,
-     "size": 88,
+     "size": 80,
      "color": "white",
      "anim": "pop"
     }
@@ -232,7 +232,7 @@
      "text": "고점 종가 → 10거래일 뒤",
      "at": 0.0,
      "y": 100,
-     "size": 74,
+     "size": 66,
      "color": "white",
      "anim": "pop"
     },
@@ -251,7 +251,7 @@
      "text": "-20.1% · -23.0%",
      "at": 0.4,
      "y": 500,
-     "size": 92,
+     "size": 78,
      "color": "red",
      "anim": "pop"
     },
