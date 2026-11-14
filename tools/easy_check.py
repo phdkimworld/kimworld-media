@@ -415,9 +415,16 @@ if _v34:
         if tb < 0 or '판정 기준' not in s5[:tb]: bad.append("v3.4 5부 시나리오 표 앞에 '**판정 기준 두 가지:** 첫째 … 둘째 …' 문단(날짜·가격·사건)")
     s6 = _sec(6)
     if s6 and not all(k in s6 for k in ('사업 실행', '조달', '외부 환경')): bad.append("v3.4 6부 위험은 세 갈래(사업 실행 · 자금 조달 · 외부 환경)로 묶어 각 문단으로")
+    # 11-14 운영자 "질문 부분은 니가 최선인거 같은걸로 결정해": 부마다 질문으로 닫으면 발행 전 심사가 'AI 느낌(문단 끝 질문 남발)'으로 짚는다.
+    # 다리 질문은 답이 바로 뒤에 있는 두 곳(2부 끝 → 3부 기록표, 4부 끝 → 5부 판정)에만 두고, 나머지 부는 그 부의 결론 문장으로 닫는다.
+    ends = {}
     for n in range(1, 6):
         ps = _prose(_sec(n))
-        if ps and not ps[-1].rstrip().endswith('?'): bad.append(f"v3.4 {n}부 마지막 문장은 다음 부가 답할 질문으로: …{ps[-1][-30:]}")
+        if ps: ends[n] = ps[-1].rstrip()
+    for n in (2, 4):
+        if n in ends and not ends[n].endswith('?'): bad.append(f"v3.6 {n}부 마지막 문장은 다음 부가 답할 질문 하나로: …{ends[n][-30:]}")
+    qn = [n for n in (1, 3, 5) if n in ends and ends[n].endswith('?')]
+    if qn: bad.append(f"v3.6 {','.join(map(str, qn))}부는 질문 말고 그 부의 결론(숫자와 이유) 한 문장으로 닫기 — 부 끝 질문은 2부·4부만")
 if _v33:
     # v3.3(운영자 11-04 MRVL 분석): 기간 등락률은 기준 종가를 밝히고, 6부 끝은 '기억할 판단 기준'으로 닫는다
     for sent in re.split(r'(?<=[.?!])\s+', body):
