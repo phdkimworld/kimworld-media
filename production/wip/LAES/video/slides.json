@@ -1277,22 +1277,53 @@
     },
     {
      "from": 8,
-     "layout": "quote",
-     "text": "같은 무게로\n**반대쪽 요인**",
-     "at": 8,
+     "layout": "stat",
+     "title": "같은 무게로 반대쪽 요인",
+     "stats": [
+      {
+       "at": 8,
+       "big": "현금 감소",
+       "label": "매 분기 쓰이는 현금",
+       "tone": "down"
+      }
+     ],
      "sfx": "boom"
     },
     {
      "from": 9,
-     "layout": "quote",
-     "text": "현금은 줄고\n**새 주문 계약은 없다**",
-     "at": 9
+     "layout": "compare",
+     "title": "남은 부담",
+     "left": {
+      "at": 9,
+      "head": "새 주문 계약",
+      "big": "없음",
+      "lines": [
+       "11.13까지"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 9,
+      "head": "모회사 F-3",
+      "big": "최대 1억",
+      "lines": [
+       "달러 · 효력 전"
+      ],
+      "tone": "gold"
+     }
     },
     {
      "from": 10,
-     "layout": "quote",
-     "text": "지키는 쪽은\n**절반보다 훨씬 낮게**",
-     "at": 10
+     "layout": "stat",
+     "title": "저점을 지키는 쪽(1·2)",
+     "stats": [
+      {
+       "at": 10,
+       "big": "약 30%",
+       "label": "절반보다 훨씬 낮게",
+       "tone": "gold"
+      }
+     ]
     },
     {
      "from": 11,
@@ -1309,9 +1340,17 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "달력에 적을\n**날짜 둘**",
-     "at": 0
+     "layout": "stat",
+     "title": "달력에 적을 날짜",
+     "stats": [
+      {
+       "at": 0,
+       "big": "2개",
+       "label": "12.04 · 12.14",
+       "tone": "blue"
+      }
+     ],
+     "sfx": "boom"
     },
     {
      "from": 1,
