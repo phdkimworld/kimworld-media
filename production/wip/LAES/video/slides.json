@@ -275,23 +275,57 @@
    ]
   },
   {
-   "ad": [
-    3
-   ],
    "slides": [
     {
      "from": 0,
      "layout": "quote",
-     "text": "함께 지켜보자고 한 것",
-     "at": 0
+     "text": "10월 30일 리포트\n**남은 판정**",
+     "at": 0,
+     "kicker": "지난 판정"
     },
     {
      "from": 1,
+     "layout": "list",
+     "title": "10월 30일 리포트 판정",
+     "items": [
+      {
+       "no": "11.20",
+       "text": "10.23 종가 $1.55 되찾았나",
+       "at": 1
+      },
+      {
+       "no": "11.30",
+       "text": "$1.42 아래인가",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.13 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$1.25",
+       "label": "두 판정 모두 걱정한 쪽",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "함께 지켜보자고 한 것",
+     "at": 3
+    },
+    {
+     "from": 4,
      "layout": "stat",
      "title": "11.13 기조연설",
      "stats": [
       {
-       "at": 1,
+       "at": 4,
        "big": "고객 이름 · 주문 금액",
        "label": "나오는가",
        "tone": "blue"
@@ -299,21 +333,35 @@
      ]
     },
     {
-     "from": 2,
+     "from": 5,
      "layout": "quote",
      "text": "결과는\n**나오지 않았다**",
-     "at": 2,
+     "at": 5,
      "sfx": "boom"
     },
     {
-     "from": 3,
-     "layout": "quote",
-     "text": "항목별 채점표\n**홈페이지에 무료로**",
-     "at": 3
+     "from": 6,
+     "layout": "list",
+     "title": "11.13까지",
+     "items": [
+      {
+       "no": "X",
+       "text": "증자 설명서(424B) 없음",
+       "at": 6
+      },
+      {
+       "no": "X",
+       "text": "위성 의향서 정식 계약 없음",
+       "at": 6
+      }
+     ]
     }
    ]
   },
   {
+   "ad": [
+    6
+   ],
    "slides": [
     {
      "from": 0,
@@ -393,6 +441,12 @@
      "layout": "quote",
      "text": "회사 이유가 아니라\n**업종의 반등**",
      "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "비교표 · 채점표\n**홈페이지에 무료로**",
+     "at": 6
     }
    ]
   },
@@ -762,6 +816,59 @@
     {
      "from": 0,
      "layout": "quote",
+     "text": "예를 들면\n**2023년 11월**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "2023.11.27 → 11.29",
+     "left": {
+      "at": 1,
+      "head": "저점",
+      "big": "$1.04",
+      "lines": [
+       "11.27 종가"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 1,
+      "head": "꼭대기",
+      "big": "$1.238",
+      "lines": [
+       "+19.0%"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.30 반납",
+     "stats": [
+      {
+       "at": 2,
+       "big": "95%",
+       "label": "$1.05 · 다음 날 저점 아래",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "지금과\n**아주 닮은 모양**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
      "text": "이야기는\n**거기서 끝나지 않았다**",
      "at": 0,
      "sfx": "boom"
@@ -856,7 +963,70 @@
     {
      "from": 3,
      "layout": "quote",
+     "text": "편한 길은\n**아니었다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일 안 최저 종가",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-24.1%",
+       "label": "$2.27 · 출발 저점 $2.99 대비",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
      "text": "업종만으로\n**길을 정할 수 없다**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 기록의\n**한계**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "표본",
+     "stats": [
+      {
+       "at": 1,
+       "big": "6번",
+       "label": "작은 표본",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "2023.08 · 상장 석 달째",
+     "stats": [
+      {
+       "at": 2,
+       "big": "$10 넘음",
+       "label": "지금과 다른 주가 수준",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "확률이 아니라\n**참고 자료**",
      "at": 3
     }
    ]
@@ -1021,25 +1191,72 @@
    "slides": [
     {
      "from": 0,
-     "layout": "stat",
-     "title": "가장 높게 본 시나리오",
-     "stats": [
-      {
-       "at": 0,
-       "big": "약 50%",
-       "label": "저점을 깨고 아래에 머묾",
-       "tone": "down"
-      }
-     ],
-     "sfx": "boom"
+     "layout": "quote",
+     "text": "네 가지 시나리오\n**두 질문을 엮었다**",
+     "at": 0
     },
     {
      "from": 1,
+     "layout": "list",
+     "title": "두 질문",
+     "items": [
+      {
+       "no": "1",
+       "text": "$1.23 저점을 지키나",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "12.14 종가 $1.25 위인가",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "저점을 지키는 쪽",
+     "items": [
+      {
+       "no": "1",
+       "text": "지키며 다시 오름",
+       "sub": "약 25%",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "지켰지만 제자리 아래",
+       "sub": "약 5%",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "저점을 깨는 쪽",
+     "items": [
+      {
+       "no": "3",
+       "text": "깬 뒤 되돌아옴",
+       "sub": "약 20%",
+       "at": 3
+      },
+      {
+       "no": "4",
+       "text": "깨고 아래에 머묾",
+       "sub": "약 50%",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
      "layout": "stat",
      "title": "과거 기록",
      "stats": [
       {
-       "at": 1,
+       "at": 5,
        "big": "4/6",
        "label": "저점을 깬 뒤 20거래일 뒤에도 낮음",
        "tone": "down"
@@ -1047,12 +1264,12 @@
      ]
     },
     {
-     "from": 2,
+     "from": 6,
      "layout": "stat",
      "title": "저점을 지키는 쪽",
      "stats": [
       {
-       "at": 2,
+       "at": 6,
        "big": "약 30%",
        "label": "시나리오 1·2",
        "tone": "gold"
@@ -1060,22 +1277,41 @@
      ]
     },
     {
-     "from": 3,
+     "from": 7,
      "layout": "quote",
      "text": "근거\n**주가가 현금보다 한참 낮다**",
-     "at": 3
+     "at": 7
     },
     {
-     "from": 4,
+     "from": 8,
+     "layout": "quote",
+     "text": "같은 무게로\n**반대쪽 요인**",
+     "at": 8,
+     "sfx": "boom"
+    },
+    {
+     "from": 9,
+     "layout": "quote",
+     "text": "현금은 줄고\n**새 주문 계약은 없다**",
+     "at": 9
+    },
+    {
+     "from": 10,
+     "layout": "quote",
+     "text": "지키는 쪽은\n**절반보다 훨씬 낮게**",
+     "at": 10
+    },
+    {
+     "from": 11,
      "layout": "quote",
      "text": "분석자 추정\n**오를 확률이 아니다**",
-     "at": 4
+     "at": 11
     }
    ]
   },
   {
    "shop": [
-    7
+    10
    ],
    "slides": [
     {
@@ -1149,9 +1385,42 @@
     },
     {
      "from": 7,
+     "layout": "stat",
+     "title": "11.17 ~ 11.19",
+     "stats": [
+      {
+       "at": 7,
+       "big": "프랑스 칸",
+       "label": "양자 행사 · 실스크 공식 후원",
+       "tone": "blue"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "11.19",
+     "stats": [
+      {
+       "at": 8,
+       "big": "퀀텀 데이즈",
+       "label": "실스크 자체 행사",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 9,
+     "layout": "quote",
+     "text": "고객 이름 · 주문 금액\n**첫 시험대**",
+     "at": 9
+    },
+    {
+     "from": 10,
      "layout": "quote",
      "text": "양자컴퓨팅 입문서\n**링크는 설명란에**",
-     "at": 7
+     "at": 10
     }
    ]
   },
