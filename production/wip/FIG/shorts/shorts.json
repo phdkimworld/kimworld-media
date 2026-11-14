@@ -1,0 +1,358 @@
+{
+ "ticker": "FIG",
+ "name": "피그마",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "디자인 도구",
+   "subtitle": "여러 사람이 함께 화면을 그리는\n**디자인 도구** 회사입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "피그마(FIG)",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "디자인 협업 도구",
+     "at": 0.0,
+     "y": 260,
+     "size": 110,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "앱·웹 화면 설계",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "여러 사람이 동시에",
+     "at": 0.3,
+     "y": 480,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "구독료 + AI 크레딧",
+     "at": 0.6,
+     "y": 640,
+     "size": 86,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "1,640만",
+   "subtitle": "전망 위쪽 끝보다\n**1,640만 달러** 더 많았습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.04 3분기 매출",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+1,640만",
+     "at": 0.15,
+     "y": 260,
+     "size": 150,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "전망 위쪽 끝보다(달러)",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "3억 9,140만 달러",
+     "at": 0.45,
+     "y": 480,
+     "size": 92,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1년 전보다 +43%",
+     "at": 0.72,
+     "y": 640,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "올렸습니다",
+   "subtitle": "매출과 이익 전망도\n**올렸습니다**",
+   "els": [
+    {
+     "kind": "text",
+     "text": "연간 전망",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "상향",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "매출 · 영업이익"
+    },
+    {
+     "kind": "text",
+     "text": "매출 +3,300만 달러",
+     "at": 0.45,
+     "y": 480,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "시장 예상도 넘음",
+     "at": 0.72,
+     "y": 640,
+     "size": 92,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "16.7%",
+   "subtitle": "다음 날 주가는\n**16.7%** 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.05 실적 다음 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-16.7%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "$22.13 → $18.44",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "하루",
+     "at": 0.45,
+     "y": 480,
+     "size": 104,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "QQQ -6.5%",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "약 6%",
+   "subtitle": "4분기 영업이익률은\n**약 6%**만 남습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "올린 전망 − 이미 번 이익",
+     "at": 0.0,
+     "y": 100,
+     "size": 66,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "약 6%",
+     "at": 0.15,
+     "y": 250,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "4분기 영업이익률(계산)",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "회사 전망 역산",
+     "at": 0.45,
+     "y": 500,
+     "size": 86,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "3분기 12%",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "절반",
+   "subtitle": "방금 끝난 3분기의\n**절반**입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "3분기 → 4분기",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "12% → 약 6%",
+     "at": 0.15,
+     "y": 260,
+     "size": 130,
+     "color": "red",
+     "anim": "pop",
+     "sub": "영업이익률",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "반토막",
+     "at": 0.45,
+     "y": 480,
+     "size": 120,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "매출총이익률 82%",
+     "at": 0.72,
+     "y": 640,
+     "size": 86,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "다섯 번 중 네 번",
+   "subtitle": "실적 반응 다섯 번 중 네 번\n20거래일 뒤 **더 낮았습니다**",
+   "els": [
+    {
+     "kind": "text",
+     "text": "상장 뒤 실적 반응 날",
+     "at": 0.0,
+     "y": 100,
+     "size": 70,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "4/5",
+     "at": 0.12,
+     "y": 250,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "20거래일 뒤 더 낮음"
+    },
+    {
+     "kind": "text",
+     "text": "판정 12.04",
+     "at": 0.45,
+     "y": 500,
+     "size": 96,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "기준 $18.44",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "어느 쪽",
+   "subtitle": "이번에는\n**어느 쪽**일까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "실적 다음 날 -16.7%, 가장 큰 이유는?",
+     "opts": [
+      "4분기 이익률 반토막",
+      "늘어나는 AI 원가",
+      "그날 시장 급락"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "실적 다음 날 -16.7%, 가장 큰 이유는?",
+     "opts": [
+      "4분기 이익률 반토막",
+      "늘어나는 AI 원가",
+      "그날 시장 급락"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
