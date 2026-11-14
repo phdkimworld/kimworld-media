@@ -626,3 +626,11 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 새 검사: chain_long.sh tts_missing(tts.log done인데 raw.wav 없음 → CHAIN_FAIL, 과거 btq4·ceg·rum 통과).
 - 미확인: ASR 문단 22 '삼번'→'싼번'(투표 번호, 인식기 한계로 asr_check.ok). hero_check 도구 유실(HERO_SKIP, 첫 화면 눈으로 확인).
 - 다음: 11/13 정규장 종가 vs 97.75달러 · 11/19 5거래일째 · 12/11 20거래일째(CBRS 97.75·SOXX 154.99) 채점 · 맥 relay venv 복구 여부 확인.
+
+## 81회차 LAES 실스크(11-13 추가편 · 사이트 요청 종목 · 후속편 6번째 · B그룹)
+- 잘된 점: 기조연설 결과를 회사 보도자료 목록(11/6~13 6건)과 SEC 제출 목록으로 바로 확인해 '새 주문 금액 0건'을 사실로 고정. 숨긴 답(반등 80% 넘게 반납 6번 → 6/6 저점 재이탈, 2/6 20거래일 뒤 위)을 나스닥 시세 한 번으로 계산. 리포트 → 롱폼 fNZTziudMlY → 쇼츠 7ubOrKuTcjE → SNS 7건 → 블로거(https://phdkimworld.blogspot.com/2026/11/sealsq-laes-stock-electronica-keynote.html).
+- 지난 예측(11/6) 성적: 적중 1(급락 다음 날 첫날 상승, 약 60%) · 빗나감 0 · 진행 중 4(12/4 한 달 뒤 자리, 424B·F-3, 위성 정식 계약, 10/30 리포트 11/20·11/30). 기조연설 고객 이름·주문 금액은 나오지 않음.
+- 고친 실수: ① 동시 제작 ASST가 82회차 A를 먼저 잡아 A 대본(9.05KB)으로 시작한 TTS를 멈추고 81회차 B로 대본 확장(11.36KB)·안내 위치 이동 뒤 재녹음 ② 맥 TTS 033 결과 없음 → 클라우드 ③ 대본 '두 번째·세 번째 단서는' 서수(QS 79 지침 위반) → st_redo ④ ASR MISS 문단 3·6·14 → 숫자 줄여 st_redo ⑤ check_slides BADGE 3·BIG 1, video_check 정지 19초(시나리오 문단 quote 4연속) → stat·compare로 바꿔 재합성 ⑥ 발행 전 심사 10건 중 9건 반영 재발행(부 끝 질문은 easy_check v3.4 요구로 유지) ⑦ num_check MISS 2(-14.0%·$10)를 합성 전에 고침.
+- 새 검사: tools/slides_pre_check.py(녹음 전 문단 수·시각·hero 줄·ad·shop·배지·big, group_check 연결) · ai_feel_check 상투어 '반론도 있습니다'.
+- 미확인: hero_check 도구 유실(HERO_SKIP, 첫 화면 눈으로 확인). 회차 번호 충돌 — 동시 제작 때 STATE 행에 회차 번호를 먼저 적는 규칙이 없음(다음 회차에 prod_check·STATE 템플릿에 '회차 번호 예약' 추가 검토).
+- 다음: 11/17~19 칸 행사 · 11/20·11/30(10/30 리포트) · 12/4(11/6 리포트) · 12/14 20거래일째 채점.
