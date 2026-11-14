@@ -113,8 +113,7 @@
      "size": 170,
      "color": "yellow",
      "anim": "pop",
-     "sub": "5억 5,700만 달러",
-     "sfx": "boom"
+     "sub": "5억 5,700만 달러"
     },
     {
      "kind": "text",
@@ -201,8 +200,7 @@
      "size": 170,
      "color": "yellow",
      "anim": "pop",
-     "sub": "9월",
-     "sfx": "boom"
+     "sub": "9월"
     },
     {
      "kind": "text",
