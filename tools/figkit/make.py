@@ -119,7 +119,7 @@ def fmt(v, unit="", dec=None, sign=False) -> str:
     if v is None:
         return ""
     if dec is None:
-        dec = 0 if abs(v) >= 1000 or (unit == "원" and abs(v) >= 100) else (1 if abs(v) >= 10 or unit == "%" else 2)
+        dec = 0 if abs(v) >= 1000 or (unit == "원" and abs(v) >= 100) else (2 if unit == "달러" else 1 if abs(v) >= 10 or unit == "%" else 2)
     s = f"{abs(v):,.{dec}f}"
     pre = ("+" if v > 0 else "-" if v < 0 else "") if sign else ("-" if v < 0 else "")
     return pre + s + unit
@@ -284,7 +284,9 @@ def hbars(fig, doc, kind: str) -> Canvas:
         hi = it.get("hi")
         cy = y + (rowh / 2 if not it.get("sub") else rowh / 2)
         # 라벨
-        if it.get("sub"):
+        if it.get("sub") and not str(it["label"]).strip():  # 짝 줄(같은 기간 비교 등): 설명만 가운데에
+            c.text(PAD, cy, it["sub"], fs, SUB, anchor="lm")
+        elif it.get("sub"):
             c.text(PAD, cy - 4, it["label"], fl, TXT, anchor="ls")
             c.text(PAD, cy + 4, it["sub"], fs, SUB, anchor="lt")
         else:
@@ -304,7 +306,11 @@ def hbars(fig, doc, kind: str) -> Canvas:
             continue
         v = it.get("value")
         if v is None:
-            c.text(zx + 14, cy, t, F("bold", 27), NOTE, anchor="lm")
+            fp = F("bold", 27)
+            if zx + 14 + c.tw(t, fp) > W - PAD:
+                c.text(zx - 14, cy, t, fp, NOTE, anchor="rm")
+            else:
+                c.text(zx + 14, cy, t, fp, NOTE, anchor="lm")
             continue
         vb = min(max(v, vmin), vmax)
         c.rect(zx, cy - bh / 2, X(vb), cy + bh / 2, col, r=6)
@@ -404,7 +410,7 @@ def price_events(fig, doc, base_dir) -> Canvas:
     probe = Canvas(10)
     hh = header_h(probe, fig)
     fe = F("reg", 27)
-    ev_lines = sum(len(wrap(probe, f"{e['label']}", fe, W - 2 * PAD - 60)) for e in events)
+    ev_lines = sum(len(wrap(probe, f"{e['label']}", fe, W - 2 * PAD - 60)) for e in events) + (1 if fig.get("ref") else 0)
     ph = fig.get("plot_h", 470)
     top = hh + 30
     bot = top + ph
@@ -420,7 +426,6 @@ def price_events(fig, doc, base_dir) -> Canvas:
     if ref:
         y = Y(ref["v"])
         c.line([(x0, y), (x1, y)], REF, 3, dash=8)
-        c.text(x0 + 10, y - 8, ref["label"], F("bold", 25), REF, anchor="ls")
     idx = {d: i for i, d in enumerate(dates)}
     for e in events:  # 사건 세로 점선
         i = idx.get(e["date"])
@@ -449,8 +454,12 @@ def price_events(fig, doc, base_dir) -> Canvas:
         c.line([(x, y), (x, by)], TXT, 2)
         c.dot(x, by, 19, HI)
         c.text(x, by, str(k), F("bold", 26), "#FFFFFF", anchor="mm")
-    # 아래 사건 목록
+    # 아래 사건 목록(기준선 설명은 맨 위 한 줄: 선 위에 쓰면 가격선과 겹친다)
     y = leg_top
+    if ref:
+        c.line([(PAD + 2, y + 20), (PAD + 36, y + 20)], REF, 4, dash=5)
+        c.text(PAD + 52, y + 2, ref["label"], F("bold", 27), REF)
+        y += 40
     for k, e in enumerate(events, 1):
         c.dot(PAD + 18, y + 19, 17, HI)
         c.text(PAD + 18, y + 19, str(k), F("bold", 23), "#FFFFFF", anchor="mm")
