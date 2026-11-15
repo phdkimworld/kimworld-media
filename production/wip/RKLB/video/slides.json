@@ -1,0 +1,1590 @@
+{
+ "ticker": "RKLB",
+ "name": "로켓랩",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "무선 이어폰 · 링크는 설명란에",
+ "midroll": "../kit/rklb_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/rklb_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "layout": "hero",
+     "kicker": "RKLB · 로켓랩 · 3분기 실적",
+     "bg": "thumb/custom/bg.png",
+     "lines": [
+      {
+       "at": 0,
+       "text": "3분기 매출",
+       "tone": "white"
+      },
+      {
+       "at": 0,
+       "text": "전망 안에 들었나?",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "시청자 요청\n**가장 먼저 볼 숫자는 매출**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "3분기 매출 전망(8월)",
+     "left": {
+      "at": 2,
+      "head": "아래쪽 끝",
+      "big": "2억 5,000만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "위쪽 끝",
+      "big": "2억 6,500만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 실제 매출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "2억 6,780만 달러",
+       "label": "11.09 발표",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "전망 위쪽 끝보다",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 +280만 달러",
+       "label": "범위 안이 아니라 위",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "11.10 정규장 전",
+     "stats": [
+      {
+       "at": 5,
+       "big": "-5% 넘게",
+       "label": "보도 기준",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "매출은 넘었는데\n**왜 먼저 팔았나**",
+     "at": 6,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "출처",
+     "stats": [
+      {
+       "at": 1,
+       "big": "시청자 요청 종목",
+       "label": "댓글로 들어온 요청",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "실적 앞뒤 한 주\n**하루씩 따라가기**",
+     "at": 2
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 예측\n**성적표**",
+     "at": 0,
+     "kicker": "10.16 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "10월 16일 리포트 · 네 갈래",
+     "items": [
+      {
+       "no": "1",
+       "text": "3분기 실적",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "새 대형 계약",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "추가 연기",
+       "at": 1
+      },
+      {
+       "no": "4",
+       "text": "이리듐·내부자 물량",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "시나리오 2 · 새 대형 계약",
+     "stats": [
+      {
+       "at": 2,
+       "big": "적중",
+       "label": "",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 새 발사 계약",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 10억 달러",
+       "label": "실적 다음 날 +6.5%",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "시나리오 4 · 이리듐·내부자",
+     "stats": [
+      {
+       "at": 4,
+       "big": "적중",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "기간 내내",
+     "stats": [
+      {
+       "at": 5,
+       "big": "67.50달러 아래",
+       "label": "11.02 내부자 매도",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "시나리오 1 · 3분기 실적",
+     "stats": [
+      {
+       "at": 6,
+       "big": "빗나감",
+       "label": "가장 크게 빗나감",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "뉴트론 발사 분기",
+     "stats": [
+      {
+       "at": 7,
+       "big": "이번에도 없음",
+       "label": "그래도 다음 날 +6.5%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "시나리오 3 · 추가 연기",
+     "stats": [
+      {
+       "at": 8,
+       "big": "확인 전",
+       "label": "새 연기 소식 없음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "어떤 회사인가",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "소형 로켓 일렉트론",
+     "stats": [
+      {
+       "at": 1,
+       "big": "발사 요금",
+       "label": "남의 위성을 우주로",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "우주 시스템",
+     "stats": [
+      {
+       "at": 2,
+       "big": "위성 몸체·부품",
+       "label": "태양전지 · 자세 제어 장치",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 매출 중 우주 시스템",
+     "stats": [
+      {
+       "at": 3,
+       "big": "80%",
+       "label": "",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "아직 매출 없는\n**미래 두 개**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "재사용 중형 로켓 뉴트론",
+     "stats": [
+      {
+       "at": 5,
+       "big": "첫 발사 2027년",
+       "label": "",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "이리듐 인수 · 현금",
+     "stats": [
+      {
+       "at": 6,
+       "big": "30억 달러 넘게",
+       "label": "위성 통신 회사",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "올해 새 주식 판매",
+     "stats": [
+      {
+       "at": 7,
+       "big": "39억 달러 넘게",
+       "label": "인수 대금 먼저 마련",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "11.13 종가 기준 시가총액(계산)",
+     "stats": [
+      {
+       "at": 8,
+       "big": "약 419억 달러",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**실적 전 2거래일**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "11.05\n**기술주 급락**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "11.05 하루",
+     "left": {
+      "at": 2,
+      "head": "QQQ",
+      "big": "-6.5%",
+      "lines": [
+       "나스닥 100 지수 펀드"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "로켓랩",
+      "big": "-12.2%",
+      "lines": [
+       "45.99달러"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.05 → 11.09 · 2거래일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+28.0%",
+       "label": "58.86달러",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "같은 기간 QQQ",
+     "stats": [
+      {
+       "at": 4,
+       "big": "+5.0%",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "실적 전에\n**기대가 먼저 가격에**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "분기별 전망·실제 숫자\n**홈페이지에 무료로**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "11.09 장 마감 뒤\n**3분기 실적**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "매출 · 1년 전 대비",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+73%",
+       "label": "",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "늘어난 매출의 대부분\n**위성과 부품**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "우주 시스템 매출 · 1년 전 대비",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+88%",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "일렉트론 발사 · 3분기",
+     "left": {
+      "at": 4,
+      "head": "1년 전",
+      "big": "4번",
+      "lines": [
+       "2025년 3분기"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "이번",
+      "big": "6번",
+      "lines": [
+       "2026년 3분기"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "매출총이익률(공시 기준)",
+     "stats": [
+      {
+       "at": 5,
+       "big": "33.6%",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "8월에 낸 전망",
+     "stats": [
+      {
+       "at": 6,
+       "big": "29~31%",
+       "label": "실제가 더 높음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "가장 큰 숫자\n**수주잔고**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "계약은 맺었지만\n**아직 매출이 아닌 일감**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "9월 말 수주잔고",
+     "stats": [
+      {
+       "at": 2,
+       "big": "35억 7,300만",
+       "label": "달러",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "6월 말 대비(회사 발표)",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+52%",
+       "label": "23억 6,000만 달러에서",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "석 달 새\n**일감이 절반 넘게**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "3분기 뉴트론 발사 계약",
+     "stats": [
+      {
+       "at": 5,
+       "big": "5억 1,500만",
+       "label": "달러 넘게",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "뉴트론 일감",
+     "stats": [
+      {
+       "at": 6,
+       "big": "16번",
+       "label": "첫 발사 전",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "일부 계약 기본 발사 가격",
+     "stats": [
+      {
+       "at": 7,
+       "big": "7,000만 달러",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**손실표**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "주당 순손실(보도)",
+     "left": {
+      "at": 1,
+      "head": "시장 예상",
+      "big": "0.07달러",
+      "lines": [
+       "손실"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "실제",
+      "big": "0.12달러",
+      "lines": [
+       "손실"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "분기 순손실",
+     "left": {
+      "at": 2,
+      "head": "1년 전",
+      "big": "1,830만 달러",
+      "lines": [
+       "2025년 3분기"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "이번",
+      "big": "7,970만 달러",
+      "lines": [
+       "2026년 3분기"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "매출은 좋고 손실은 컸다\n**장 전 첫 반응은 매도**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    8
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "손실표를\n**한 줄씩**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "부채 소멸 손실",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2,730만 달러",
+       "label": "",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "이리듐 인수용 단기 대출",
+     "stats": [
+      {
+       "at": 2,
+       "big": "36억 달러 약정",
+       "label": "쓰지 않고 해지",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "새 주식으로 대금 마련\n**대출이 필요 없어짐**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "인수 거래 비용",
+     "stats": [
+      {
+       "at": 4,
+       "big": "2,130만 달러",
+       "label": "",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "영업비용(공시 기준)",
+     "left": {
+      "at": 5,
+      "head": "전망",
+      "big": "1억 4,300만~1억 4,900만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "실제",
+      "big": "1억 6,930만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "두 항목 합계 · 순손실의 약 61%",
+     "stats": [
+      {
+       "at": 6,
+       "big": "4,860만 달러",
+       "label": "",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "11.10 종가",
+     "stats": [
+      {
+       "at": 7,
+       "big": "62.71달러",
+       "label": "하루 +6.5%",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 8,
+     "layout": "quote",
+     "text": "전망과 실제 숫자\n**리포트 끝 3분기 실적 표**",
+     "at": 8
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "돈의 흐름",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 영업활동 현금흐름",
+     "stats": [
+      {
+       "at": 1,
+       "big": "720만 달러 플러스",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "9개월 합계 · 마이너스",
+     "stats": [
+      {
+       "at": 2,
+       "big": "1억 2,730만",
+       "label": "달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "4분기 매출 전망",
+     "left": {
+      "at": 3,
+      "head": "아래쪽 끝",
+      "big": "2억 7,000만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "위쪽 끝",
+      "big": "2억 9,000만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "가운데 값 · 3분기 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 +4.5%",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "9월 말 현금과 유가증권(달러)",
+     "stats": [
+      {
+       "at": 5,
+       "big": "약 47억 400만",
+       "label": "큰 부분은 이리듐 인수 대금",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "그런데 주가는",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11.11 종가",
+     "stats": [
+      {
+       "at": 1,
+       "big": "66.15달러",
+       "label": "이번 고점",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11.13 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "61.53달러",
+       "label": "",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.11 종가 대비",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-7.0%",
+       "label": "이리듐 교환비율 하한 67.50달러 아래",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "교환비율 하한\n**이리듐 주주가 받을 주식 수의 기준선**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "67.50달러 이하이면",
+     "stats": [
+      {
+       "at": 5,
+       "big": "0.4주",
+       "label": "이리듐 한 주당 로켓랩 주식",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "선 아래에 오래 있을수록\n**새 주식은 최대치로**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "ad": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "숨겨 둔\n**답**",
+     "at": 0,
+     "kicker": "답",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "매출이 상단을 넘은 일\n**처음이었나**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "매출 전망 vs 실제",
+     "stats": [
+      {
+       "at": 2,
+       "big": "2023년 1분기부터",
+       "label": "분기마다 맞대 봄",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "이번 직전 14분기 중 상단 위",
+     "stats": [
+      {
+       "at": 3,
+       "big": "4번",
+       "label": "",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일 뒤 실적 다음 날 종가보다 높음",
+     "stats": [
+      {
+       "at": 4,
+       "big": "4/4",
+       "label": "",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "범위 안 8번은",
+     "stats": [
+      {
+       "at": 5,
+       "big": "4/8",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "분기별 숫자\n**리포트 끝 매출 전망 기록표**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "가장 큰 예\n**2026년 5월**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "1분기 매출 2억 30만 달러 · 실적 다음 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+34.2%",
+       "label": "전망 위쪽 끝 2억 달러",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "20거래일 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "+7.8%",
+       "label": "실적 다음 날 종가 대비",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "8월 · 매출이 범위 안",
+     "stats": [
+      {
+       "at": 3,
+       "big": "-0.0%",
+       "label": "실적 다음 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일 뒤",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-21.2%",
+       "label": "",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 기록의\n**한계**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "표본",
+     "stats": [
+      {
+       "at": 1,
+       "big": "4번뿐",
+       "label": "2번은 상단을 100만 달러도 안 되게",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "그 사이\n**회사 크기가 바뀌었다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "이번 · 실적 전 2거래일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "+28.0%",
+       "label": "기대가 먼저",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.13 종가 · 실적 다음 날 대비",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-1.9%",
+       "label": "61.53달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "경향일 뿐\n**규칙이 아니다**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "위험",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "가장 큰 위험",
+     "stats": [
+      {
+       "at": 1,
+       "big": "뉴트론",
+       "label": "",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "16번의 일감 · 7,000만 달러",
+     "stats": [
+      {
+       "at": 2,
+       "big": "날아야 매출",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "회사가 밝힌 남은 단계",
+     "items": [
+      {
+       "no": "1",
+       "text": "교체할 탱크 덮개 제작",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "압력 시험",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "극저온 시험",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "주식 수도\n**계속 증가**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "4분기 평균 주식 수 전망",
+     "stats": [
+      {
+       "at": 5,
+       "big": "6억 8,100만 주",
+       "label": "3분기 전망보다 4,000만 주 많음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "바깥 환경",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "compare",
+     "title": "11.05 하루",
+     "left": {
+      "at": 7,
+      "head": "QQQ",
+      "big": "-6.5%",
+      "lines": [
+       "시장"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 7,
+      "head": "로켓랩",
+      "big": "-12.2%",
+      "lines": [
+       "두 배 가까이"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "이리듐 인수",
+     "stats": [
+      {
+       "at": 8,
+       "big": "승인 대기",
+       "label": "미국 연방통신위원회",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지금은\n**어디쯤**",
+     "at": 0,
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "회사 숫자",
+     "stats": [
+      {
+       "at": 1,
+       "big": "한 걸음 앞으로",
+       "label": "",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "석 달 사이",
+     "left": {
+      "at": 2,
+      "head": "매출",
+      "big": "전망 위",
+      "lines": [
+       "2억 6,780만 달러"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "수주잔고",
+      "big": "+52%",
+      "lines": [
+       "35억 7,300만 달러"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실적 다음 날부터 20거래일째",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12월 9일",
+       "label": "",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "12.09 판정 기준",
+     "left": {
+      "at": 4,
+      "head": "종가",
+      "big": "62.71달러 위?",
+      "lines": [
+       "실적 다음 날 종가"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "뉴트론",
+      "big": "발표?",
+      "lines": [
+       "시험 완료·발사 시기"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "네 갈래 시나리오·가능성\n**리포트 끝 시나리오 표**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "shop": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "뉴트론 발표 없는 두 갈래",
+     "stats": [
+      {
+       "at": 0,
+       "big": "각각 약 35%",
+       "label": "주관적 추정 · 가장 큰 갈래",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "종가 62.71달러 위",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 55%",
+       "label": "첫째와 넷째 갈래 합",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "과거 상단 위 4번",
+     "stats": [
+      {
+       "at": 2,
+       "big": "4/4",
+       "label": "지금 가격은 이미 선 아래",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "뉴트론 발표",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 30%",
+       "label": "첫째와 둘째 갈래 합",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "10.14 연기 발표 뒤\n**한 달**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "쿠팡 링크\n**설명란·고정 댓글**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    1,
+    2
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "같은 실적, 두 개의 숫자",
+     "left": {
+      "at": 0,
+      "head": "매출",
+      "big": "전망 위",
+      "lines": [
+       "2억 6,780만 달러"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "손실표 속",
+      "big": "4,860만 달러",
+      "lines": [
+       "이리듐 일회성 비용"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "시나리오별 대응 전략",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "매매 전 체크리스트",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 2,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "장 전 하락을 뒤집은\n**가장 큰 힘은?**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "장 전 하락을 뒤집은 가장 큰 힘은?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "전망 넘은 매출"
+      },
+      {
+       "at": 3,
+       "text": "수주잔고 52%"
+      },
+      {
+       "at": 4,
+       "text": "일회성 손실"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

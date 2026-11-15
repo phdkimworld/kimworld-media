@@ -1,0 +1,315 @@
+{
+ "ticker": "RKLB",
+ "name": "로켓랩",
+ "group": "B",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "우주 회사",
+   "subtitle": "로켓을 쏘고 위성을 만드는\n**우주 회사**입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "로켓랩",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "로켓·위성",
+     "at": 0.25,
+     "y": 260,
+     "size": 140,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "소형 로켓 일렉트론",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "로켓 쏘고 위성 만들기",
+     "at": 0.5,
+     "y": 480,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "RKLB",
+     "at": 0.8,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "위쪽 끝",
+   "subtitle": "3분기 매출 전망의 **위쪽 끝**은\n약 2억 6,500만 달러였습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "8월에 낸 3분기 전망",
+     "at": 0.0,
+     "y": 100,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2억 6,500만",
+     "at": 0.15,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "위쪽 끝(달러)",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "아래쪽 끝 2억 5,000만",
+     "at": 0.45,
+     "y": 480,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "범위 안에 들었나?",
+     "at": 0.72,
+     "y": 640,
+     "size": 86,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "280만",
+   "subtitle": "실제 매출은 위쪽 끝을\n약 **280만 달러** 넘었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.09 실제 매출",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2억 6,780만",
+     "at": 0.15,
+     "y": 260,
+     "size": 130,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "달러 · 전망 위",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "상단보다 약 +280만",
+     "at": 0.45,
+     "y": 480,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1년 전 대비 +73%",
+     "at": 0.72,
+     "y": 640,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "5%",
+   "subtitle": "다음 날 정규장 전 주가는\n**5%** 넘게 빠졌습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.10 정규장 전",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-5% 넘게",
+     "at": 0.15,
+     "y": 260,
+     "size": 150,
+     "color": "red",
+     "anim": "pop",
+     "sub": "보도 기준",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "주당 순손실 0.12달러",
+     "at": 0.45,
+     "y": 480,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "예상 0.07달러",
+     "at": 0.72,
+     "y": 640,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "4,860만",
+   "subtitle": "순손실 속 일회성 비용이\n**4,860만 달러** 있었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "순손실 7,970만 달러",
+     "at": 0.0,
+     "y": 100,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "4,860만",
+     "at": 0.15,
+     "y": 260,
+     "size": 150,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "달러 · 순손실의 약 61%",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "대출 약정 해지 2,730만",
+     "at": 0.45,
+     "y": 480,
+     "size": 72,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "거래 비용 2,130만",
+     "at": 0.72,
+     "y": 640,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "6.5%",
+   "subtitle": "그날 종가는 오히려\n**6.5%** 상승했습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.10 종가",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+6.5%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "62.71달러"
+    },
+    {
+     "kind": "text",
+     "text": "수주잔고 석 달 +52%",
+     "at": 0.45,
+     "y": 480,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "35억 7,300만 달러",
+     "at": 0.72,
+     "y": 640,
+     "size": 80,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "힘",
+   "subtitle": "장 전 하락을 뒤집은\n가장 큰 **힘**은?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "장 전 하락을 뒤집은 가장 큰 힘은?",
+     "opts": [
+      "전망 넘은 매출",
+      "수주잔고 52%",
+      "일회성 손실"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "장 전 하락을 뒤집은 가장 큰 힘은?",
+     "opts": [
+      "전망 넘은 매출",
+      "수주잔고 52%",
+      "일회성 손실"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
