@@ -18,7 +18,8 @@
 #    '이 리포트에서 확인할 수 있는 것'·'먼저 알아둘 용어' 절 없음, 한 문장짜리 문단 25% 이하. --legacy를 주면 이 검사를 건너뛴다(옛 리포트 고칠 때)
 #  - 이야기형(style: story, 2026-11-15~, 운영자 11/14 "섹션이니 목차니 너무 끼어들어서 뚝뚝 끊기는데 그냥 썰 풀듯이 줄줄", SKILL R0):
 #    머리말에 style: story가 있으면 부 구조·핵심 콜아웃·부 끝 질문·짧은 답·### 개수 검사를 끄고, 대신 본문 ## 는 끝 부록 '## 숫자로 다시 보기' 하나뿐인지,
-#    본문(부록 앞)에 표·###·글머리 목록·인용 상자·'N부' 언급·화살표·가운뎃점 나열이 없는지, 그림 1개 이하, 마지막 문단이 질문이 아닌지 본다. 문장 길이·숫자 밀도·약어 검사는 그대로
+#    본문(부록 앞)에 표·###·글머리 목록·인용 상자·'N부' 언급·화살표·가운뎃점 나열이 없는지, 마지막 문단이 질문이 아닌지 본다.
+#    그림(2026-11-15 운영자 "피겨를 더 넣어서"): 본문 그림 4~6개(3개 이하 FAIL, 7개 이상 WARN), 그림마다 캡션(alt), 파일이 사이트 static/charts(또는 원고 폴더)에 있는지. --site <사이트 폴더>로 위치 지정. 문장 길이·숫자 밀도·약어 검사는 그대로
 import sys, re, os
 p = sys.argv[1]
 gl = sys.argv[sys.argv.index('--glossary') + 1] if '--glossary' in sys.argv else '/home/user/kimworld-site/data/glossary.yaml'
@@ -28,6 +29,7 @@ fm = txt[:len(txt) - len(body)]
 ticker = (re.search(r'^ticker:\s*"?([A-Z0-9.]+)', fm, re.M) or [None, ''])[1]
 terms = set(re.findall(r'term:\s*"([^"]+)"', open(gl, encoding='utf-8').read())) if os.path.exists(gl) else set()
 bad = []
+warns = []
 STORY = bool(re.search(r'^style:\s*"?story\b', fm, re.M))
 parts = re.split(r'^## (\d)부', body, flags=re.M) if not STORY else ['']
 R17 = '--legacy' not in sys.argv
@@ -88,7 +90,17 @@ if STORY:
         if not re.match(r'\*\*유의사항', m.group(1)): bad.append(f'이야기형 본문에 인용 상자(핵심·교훈·진단 상자 금지): {m.group(1)[:25]}'); break
     sb = [l for l in story.split('\n') if re.match(r'\s*([-*]|\d+\.)\s', l)]
     if sb: bad.append(f'이야기형 본문에 글머리 목록 {len(sb)}줄 → 문장으로(체크리스트는 부록에)')
-    if len(re.findall(r'^!\[', story, re.M)) > 1: bad.append('이야기형 본문 그림은 대표 차트 1개까지')
+    # 그림 4~6개(운영자 지시 2026-11-15 ET "리포트 줄글로 쓰는 대신 피겨를 더 넣어서 이해를 도와줘", SKILL R0.1): 캡션(alt) 필수, 파일이 실제로 있어야 함
+    imgs = re.findall(r'^!\[([^\]]*)\]\(\s*([^)\s]+)[^)]*\)', story, re.M)
+    if len(imgs) <= 3: bad.append(f'이야기형 본문 그림 {len(imgs)}개 → 4~6개(첫 장면 모순·사건 표시 가격·업종 비교·숨긴 답 기록·앞으로의 갈래·사업 숫자, tools/figkit/make.py)')
+    elif len(imgs) >= 7: warns.append(f'이야기형 본문 그림 {len(imgs)}개 → 6개 이하 권장(줄글을 줄인 자리에만)')
+    _site = sys.argv[sys.argv.index('--site') + 1] if '--site' in sys.argv else next((a for a in [os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(p))))] if os.path.exists(os.path.join(a, 'build.py'))), '/home/user/kimworld-site')
+    for alt, src in imgs:
+        if len(alt.strip()) < 8: bad.append(f'그림 캡션(alt) 없음·너무 짧음 → 무엇을 보면 되는지 한 줄: {src}')
+        nm = os.path.basename(src)
+        cands = [os.path.join(_site, src.lstrip('/')), os.path.join(os.path.dirname(os.path.abspath(p)), nm), os.path.join(os.path.dirname(os.path.abspath(p)), 'charts', nm)]
+        if src.startswith(('http://', 'https://')): bad.append(f'그림은 사이트 static/charts 파일로(외부 주소 금지): {src}')
+        elif not any(os.path.exists(c) for c in cands): bad.append(f'그림 파일 없음: {src} (찾은 곳: {_site}/static/charts, 원고 폴더)')
     for m in re.finditer(r'[^\n]{0,12}(?<![\d~])[1-6]부(?=[에의는가를 .,)]|$)[^\n]{0,8}', story): bad.append(f"이야기형에 'N부' 언급(부 구분 없음): {m.group(0).strip()[:30]}"); break
     if re.search(r'^\*\*\d{4}\.\d{2}\.\d{2}[^*\n]*·', story, re.M): bad.append('이야기형 본문에 사건 카드 머리 → 시간순 문단으로')
     for l in story.split('\n'):
@@ -488,5 +500,6 @@ if _sn:
 import subprocess as _sp2
 _af = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), p], capture_output=True, text=True)
 if _af.returncode: bad += ['AIFEEL ' + l for l in _af.stdout.split('\n') if l.strip()]
+if warns: print('\n'.join('WARN ' + w for w in warns))
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
