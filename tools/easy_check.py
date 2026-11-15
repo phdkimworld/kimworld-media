@@ -16,6 +16,9 @@
 #  - 말로 쭉 이어 쓰기(운영자 지시 2026-10-26 "리포트가 너무 읽기 어려워 섹션이나 카드를 너무 쪼개지 말고 그냥 차라리 말로 쭉 친절하게 설명해", SKILL R1.6):
 #    `###` 소제목 4개 이하, 사건 카드 머리(**YYYY.MM.DD · …**) 0개, 글머리 목록 줄 8개 이하, 표 3개 이하,
 #    '이 리포트에서 확인할 수 있는 것'·'먼저 알아둘 용어' 절 없음, 한 문장짜리 문단 25% 이하. --legacy를 주면 이 검사를 건너뛴다(옛 리포트 고칠 때)
+#  - 이야기형(style: story, 2026-11-15~, 운영자 11/14 "섹션이니 목차니 너무 끼어들어서 뚝뚝 끊기는데 그냥 썰 풀듯이 줄줄", SKILL R0):
+#    머리말에 style: story가 있으면 부 구조·핵심 콜아웃·부 끝 질문·짧은 답·### 개수 검사를 끄고, 대신 본문 ## 는 끝 부록 '## 숫자로 다시 보기' 하나뿐인지,
+#    본문(부록 앞)에 표·###·글머리 목록·인용 상자·'N부' 언급·화살표·가운뎃점 나열이 없는지, 그림 1개 이하, 마지막 문단이 질문이 아닌지 본다. 문장 길이·숫자 밀도·약어 검사는 그대로
 import sys, re, os
 p = sys.argv[1]
 gl = sys.argv[sys.argv.index('--glossary') + 1] if '--glossary' in sys.argv else '/home/user/kimworld-site/data/glossary.yaml'
@@ -25,7 +28,8 @@ fm = txt[:len(txt) - len(body)]
 ticker = (re.search(r'^ticker:\s*"?([A-Z0-9.]+)', fm, re.M) or [None, ''])[1]
 terms = set(re.findall(r'term:\s*"([^"]+)"', open(gl, encoding='utf-8').read())) if os.path.exists(gl) else set()
 bad = []
-parts = re.split(r'^## (\d)부', body, flags=re.M)
+STORY = bool(re.search(r'^style:\s*"?story\b', fm, re.M))
+parts = re.split(r'^## (\d)부', body, flags=re.M) if not STORY else ['']
 R17 = '--legacy' not in sys.argv
 _dt = max((re.search(r'^data_as_of:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1], (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1])
 _v32 = _dt >= '2026-11-05' or '--v32' in sys.argv
@@ -72,7 +76,36 @@ for m in re.finditer(r'(?<![A-Za-z])([A-Z][A-Z0-9]{1,6})(?![A-Za-z])', '\n'.join
     before = '\n'.join(lines)[max(0, m.start() - 2):m.start()]
     if re.fullmatch(r'P\d+', a) or any(x.startswith(a) for x in terms) or after.startswith('(') or before.endswith('('): continue
     bad.append(f"약어 '{a}' 첫 등장에 풀이 없음(괄호 풀이 또는 용어 사전)")
-if '--legacy' not in sys.argv:
+if STORY:
+    # 이야기형: 본문(부록 앞)은 소제목·표·상자 없이 이어지는 존댓말 문단, 찾아보는 자료는 끝 부록 하나로
+    APPX = '숫자로 다시 보기'
+    h2s = re.findall(r'^## (.+)$', body, re.M)
+    if [h.strip() for h in h2s] != [APPX]: bad.append(f"이야기형 ## 는 끝 부록 '## {APPX}' 하나만: {', '.join(h[:15] for h in h2s) or '부록 없음'}")
+    story = re.split(r'^## ' + APPX + r'\s*$', body, maxsplit=1, flags=re.M)[0]
+    if re.search(r'^#{1,6} ', story, re.M): bad.append('이야기형 본문에 소제목(#·###) → 장면 전환은 문단 첫 문장으로')
+    if re.search(r'^\|', story, re.M): bad.append(f"이야기형 본문에 표 → 표는 부록 '## {APPX}'로, 본문에는 숫자를 문장으로")
+    for m in re.finditer(r'^>\s*(.{0,30})', story, re.M):
+        if not re.match(r'\*\*유의사항', m.group(1)): bad.append(f'이야기형 본문에 인용 상자(핵심·교훈·진단 상자 금지): {m.group(1)[:25]}'); break
+    sb = [l for l in story.split('\n') if re.match(r'\s*([-*]|\d+\.)\s', l)]
+    if sb: bad.append(f'이야기형 본문에 글머리 목록 {len(sb)}줄 → 문장으로(체크리스트는 부록에)')
+    if len(re.findall(r'^!\[', story, re.M)) > 1: bad.append('이야기형 본문 그림은 대표 차트 1개까지')
+    for m in re.finditer(r'[^\n]{0,12}(?<![\d~])[1-6]부(?=[에의는가를 .,)]|$)[^\n]{0,8}', story): bad.append(f"이야기형에 'N부' 언급(부 구분 없음): {m.group(0).strip()[:30]}"); break
+    if re.search(r'^\*\*\d{4}\.\d{2}\.\d{2}[^*\n]*·', story, re.M): bad.append('이야기형 본문에 사건 카드 머리 → 시간순 문단으로')
+    for l in story.split('\n'):
+        if l.lstrip().startswith(('!', '>', '<')): continue
+        if re.search(r'→|⇒|->', l): bad.append(f'R1.5 화살표 나열 금지(문장으로): {l.strip()[:40]}'); break
+    for l in story.split('\n'):
+        if l.lstrip().startswith(('!', '>', '<')): continue
+        if len(re.findall(r'\S\s+·\s+\S', l)) >= 2: bad.append(f'R1.5 가운뎃점 나열 금지(문장으로): {l.strip()[:40]}'); break
+    if re.search(r'\*\*[^*\n]*진단[^*\n]*\*\*', story): bad.append("이야기형 본문에 굵은 '진단' 머리 → 문장으로 자연스럽게")
+    sps = [x.strip() for x in story.split('\n\n') if x.strip() and not x.lstrip().startswith(('!', '>', '<', '|'))]
+    if sps and sps[-1].rstrip().endswith('?'): bad.append('이야기형 마지막 문단은 질문 말고 이유가 붙은 마무리 문장으로')
+    if sps and '?' not in ' '.join(sps[:2]) and not re.search(r'그런데|이상한|왜 ', ' '.join(sps[:2])): bad.append('이야기형 첫머리는 이상한 장면(핵심 모순 숫자)으로 시작(예: …그런데 주가는 왜 …?)')
+    if not re.search(r'돈을 (버|벌)|버는 방식|매출은 .{0,20}(에서|로) 나옵', story): bad.append("이야기형 본문에 회사가 무엇으로 돈을 버는지 문장(돈을 버는 방식은 …)")
+    one_s = [x for x in sps if len(re.findall(r'[.?!다요]\s', x + ' ')) <= 1]
+    if sps and len(one_s) / len(sps) > 0.25: bad.append(f'R1.6 한 문장짜리 문단 {len(one_s)}/{len(sps)} > 25%(2~4문장으로 이어 쓰기)')
+    if '①' in story: bad.append('이야기형 ① 나열 금지(문장으로)')
+elif '--legacy' not in sys.argv:
     h3 = re.findall(r'^### ', body, re.M); cards = re.findall(r'^\*\*\d{4}\.\d{2}\.\d{2}[^*\n]*·', body, re.M)
     bullets = [l for l in body.split('\n') if re.match(r'\s*([-*]|\d+\.)\s', l)]
     tables = re.findall(r'(?:^\|.*\n)+', body, re.M)
@@ -105,7 +138,7 @@ if '--legacy' not in sys.argv:
     if re.search(r'(풀린|풀리는|해제)[^\n]{0,40}전체 주식의 약', body) or re.search(r'전체 주식의 약[^\n]{0,20}\|', body):
         if not re.search(r'(유통|거래되는)[^\n]{0,30}약 \d', body): bad.append('R1.8 수급 물량에 유통주식 대비 비율이 없음(분모 셋: 전체·유통·평균 거래량)')
         if not re.search(r'평균[^\n]{0,20}(거래량)?[^\n]{0,30}(\d[\d.]*\s*(배|일치))|일치', body): bad.append('R1.8 수급 물량에 평균 거래량 대비 배수(며칠치)가 없음')
-    if re.search(r'국면 [A-D]', body) and '국면 정의' not in body: bad.append("R1.8 '국면 A·B·C'를 쓰면 처음 나오는 자리에 > **국면 정의(…):** 상자")
+    if not STORY and re.search(r'국면 [A-D]', body) and '국면 정의' not in body: bad.append("R1.8 '국면 A·B·C'를 쓰면 처음 나오는 자리에 > **국면 정의(…):** 상자")
     T = {'date': r'\**\d{4}\.\d{2}\.\d{2}\**', 'pct': r'\**[+-−]?\d[\d.]*%\**', 'shares': r'\**(약 )?[\d,.]+(억 )?[\d,]*만 주\**', 'usd': r'\**(약 )?[\d,.]+(억 )?[\d,]*달러\**'}
     for t in re.findall(r'(?:^\|.*\n)+', body + '\n', re.M):
         rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in t.strip().split('\n')]
@@ -167,7 +200,7 @@ if '--legacy' not in sys.argv:
             # v3.3(운영자 11-04 MRVL 분석): 구간만 쓰면 '하한 합 80·상한 합 115를 어떻게 읽나' 혼란 → 대표값 '약 N%'를 적고 합 100
             if mids and len(mids) == len(rows) and sum(mids) != 100: bad.append(f'v3.3 시나리오 대표값(약 N%) 합 {sum(mids)}% → 100%로 맞추기')
             if _v33 and len(mids) != len(rows): bad.append("v3.3 시나리오 가능성에 대표값 '높음 약 40%<br>(35~45%)'를 적고 합 100%")
-            before = body[:st.start()][-600:]
+            before = body[:st.start()][-600:] if not STORY else body.split('\n## ', 1)[0]  # 이야기형: 표는 부록에, 빈도는 본문 문장에
             if not re.search(r'\d+번 중 \d+번|\d+회 중 \d+회|\d+번 모두', before): bad.append('R1.8 시나리오 표 앞 문단에 과거 빈도(N번 중 M번)를 먼저')
     # 통합 제작·검수 지침(2026-10-29) 1.4·2.2·2.4
     for m in re.finditer(r'\d[\d,.]*\s*[만억조]\s*\$|\$\s*\d[\d,.]*\s*[만억조]', body): bad.append(f"통합 1.4 '억$'·'$N억' 혼합 표기 금지 → '254억 달러' 또는 '254억 달러($25.4B)': {m.group(0)}")
@@ -199,7 +232,7 @@ if '--legacy' not in sys.argv:
                 bad.append(f"통합 2.4 체크리스트는 '□ [점검 시점] [수치 기준] 달성 여부': {m.group(1)[:40]}")
     if max(asof, (re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M) or [None, '0'])[1]) >= '2026-11-02' or '--v23' in sys.argv:
         # v2.3(2026-11-02 운영자 TNXP 리포트 검토): 모바일 표 칸 너비·기록표 날짜 순서·공통 판정일·병합 전 가격·목차 아래 문단
-        if re.sub(r'\s+', '', body.split('\n## ', 1)[0]): bad.append('v2.3 목차와 짧은 답 사이에 소속 없는 문단 → 짧은 답 핵심 콜아웃 아래로')
+        if not STORY and re.sub(r'\s+', '', body.split('\n## ', 1)[0]): bad.append('v2.3 목차와 짧은 답 사이에 소속 없는 문단 → 짧은 답 핵심 콜아웃 아래로')
         for tb in re.finditer(r'^(\|[^\n]*\|)\n\|[\s:|-]+\|\n((?:\|[^\n]*\|\n?)+)', body, re.M):
             h = [c.strip() for c in tb.group(1).strip('|').split('|')]
             rows = [[c.strip() for c in r.strip().strip('|').split('|')] for r in tb.group(2).strip().split('\n')]
@@ -371,9 +404,9 @@ if _v35:
     sa5 = _sec5('짧은 답')
     if sa5 and re.search(r'현금|자산|순자산|청산', sa5) and not re.search(r'보장하지(는)? 않|바닥(이|은) 아닙|하한선(이|은) 아닙', sa5):
         bad.append("v3.5 짧은 답에서 현금·자산을 주가와 비교하면 '그렇다고 이 현금이 주가의 바닥을 보장하지는 않습니다'처럼 오해를 막는 한 문장")
-    pr = _sec5('지난 리포트 이후')
+    pr = _sec5('지난 리포트 이후') if not STORY else ''
     if pr and re.search(r'^\|', pr, re.M): bad.append("v3.5 '지난 리포트 이후'는 결과 한 문단으로 줄이고, 항목별 채점표는 6부 끝 '### 지난 예측 채점표'로")
-    if pr and '채점표' not in pr and re.search(r'^### 지난 예측 채점표', body, re.M) is None and '지난 리포트 이후' in body:
+    if not STORY and pr and '채점표' not in pr and re.search(r'^### 지난 예측 채점표', body, re.M) is None and '지난 리포트 이후' in body:
         bad.append("v3.5 지난 리포트 채점표 위치 안내('항목별 채점표는 6부 끝에 있습니다') 또는 6부 끝 '### 지난 예측 채점표'")
     for sent in re.split(r'(?<=[.?!])\s+', body):
         if re.search(r'기업가치|EV\b|사업 자체에 매긴 값|사업에 매긴 값', sent) and not re.search(r'단순 차감|부채|대출|차입|기업가치 계산(이|은) 아닙', sent):
