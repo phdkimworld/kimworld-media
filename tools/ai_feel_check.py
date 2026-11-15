@@ -27,6 +27,10 @@ for p in sys.argv[1:]:
     if p.endswith('.md') and re.search(r'나란히 놓으면 공통점이 하나 보입니다', t): bad.append(f"{p}: 2부 묶음 문장이 easy_check 예시 그대로('나란히 놓으면 공통점이 하나 보입니다', 11월 리포트 20편) — '…는 따로 나온 숫자지만 한 방향으로 겹쳤습니다'처럼 이번 사건의 연결을 직접")
     ns = len(re.findall('셈입니다', t))  # 83회차 SLDP: ASST 82 대본 4번·LAES 81·CBRS 80 2번씩 해석 꼬리 '…셈입니다'
     if not p.endswith('.md') and ns > 2: bad.append(f"{p}: 해석 꼬리 '셈입니다' {ns}번 > 2 — 숫자 뒤 뜻은 다른 말로(…라는 말입니다·…와 같습니다) 또는 생략")
+    if p.endswith('.md') and 'style: story' in t:  # 89회차 RKLB: 88 SERV 발행 전 심사 9번 — 이야기형 리포트 결론·위치 문단이 '정리하면 …'·'이렇게 정리할 수 있습니다' 요약 틀로 앞 내용을 되풀이(GPUS 87·SERV 88, RKLB 89 초안에도 2번)
+        body = t.split('## 숫자로 다시 보기')[0]
+        sm = re.findall(r'(?m)^(?:정리하면|요약하면|한 줄로 말하면)[^\n]{0,30}|이렇게 정리할 수 있습니다', body)
+        if sm: bad.append(f"{p}: 리포트 본문 요약 틀 {len(sm)}번 {sm[:2]} — 결론은 앞 장면을 되풀이하지 말고 처음 질문의 답과 이유로 닫기")
     if not p.endswith('.md'):  # 87회차 GPUS: TEM 84·QXO 85·FIG 86 대본 세 편이 같은 마무리 틀('처음 질문으로 돌아가겠습니다'·'숫자로 정리하면, 지난 리포트가 말한 …'·'지켜볼 날은 두 번입니다')
         tpl = [w for w in ('처음 질문으로 돌아가겠습니다', '숫자로 정리하면', '지켜볼 날은 두 번입니다') if w in t]
         if tpl: bad.append(f"{p}: 마무리 틀 반복 {tpl} (TEM 84·QXO 85·FIG 86 같은 문장) — 이번 회차의 답·날짜를 그 자리의 말로")
