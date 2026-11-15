@@ -2,6 +2,7 @@
 """검증 종목 표(운영자 지시 11-03 "실시간 트래픽을 항상 최우선으로 검증"): 정규 선정 전에 반드시 돌린다.
 1) yt_stats.py로 지금 조회 수를 새로 받는다(--no-refresh로 생략 가능) 2) report_perf.py의 7일 페이지뷰를 읽는다
 3) 종목별 점수 = 연결 롱폼 누적 조회 + 7일 페이지뷰×10, 최신 data_as_of와 경과일·적격(7일 이상)을 표로 낸다.
+끝 열 ★ = 핵심 종목(권고안 R1: 롱폼 70%는 핵심 종목의 새 사건).
 사용: python3 tools/verified_table.py [--no-refresh] [--top 20] [--ticker AEHR]
 """
 import json, glob, re, subprocess, sys, datetime, os
@@ -43,12 +44,14 @@ _S0 = _cl0()
 rows = sorted(((x['views'] + x['pv']*10, k, x['views'], x['pv'], x['latest']) for k, x in agg.items()), reverse=True)
 rows = [(round(s), k, vw, p, lt) for s, k, vw, p, lt in rows]
 print(f"과거 트래픽 순위 · 조회 스냅샷 {snap['t'][:16]}Z · 점수=롱폼 누적 조회+7일 페이지뷰×10 · 위에서부터 하나씩 보며 지금 업데이트가 시급한 첫 종목(경과일은 판단 재료, 제외 기준 아님)")
-print("순위 | 종목 | 점수 | 조회 | 7일PV | 최신 기준일 | 경과일")
+from core_tickers import load as _core  # 제작팀 권고안 R1(11-16): 핵심 종목 ★(review/core_tickers.md), 끝 열이라 request_rank 파싱과 무관
+_CORE = _core()
+print("순위 | 종목 | 점수 | 조회 | 7일PV | 최신 기준일 | 경과일 | 핵심")
 cand = []
 for i, (s, k, vw, p, lt) in enumerate(rows, 1):
     _ag = (today - datetime.date.fromisoformat(lt)).days if lt else 999
     if _ag >= 1: cand.append((k, _ag, s))
     if i > top and k != want: continue
     age = (today - datetime.date.fromisoformat(lt)).days if lt else 999
-    print(f"{i} | {k} | {s} | {vw} | {p} | {lt} | {age}")
+    print(f"{i} | {k} | {s} | {vw} | {p} | {lt} | {age} | {'★' if str(k).upper() in _CORE else ''}")
 # 운영자 11-06 "7일 제한도 없애고 … 니가 시급한지 종합적으로 판단해": 자동 후보 줄은 내지 않는다(위 표를 위에서부터 보며 판단)

@@ -87,3 +87,12 @@
 - vidIQ `channel_videos`(롱폼·쇼츠 최신 50편)로 지난 2주 영상의 조회를 핵심 종목과 새 종목으로 나눠 표로 만든다.
 - 핵심 종목 목록을 갱신한다: 최근 2주 롱폼 300회 이상이면 넣고, 4주 연속 100회 미만이면 뺀다.
 - 결과는 `review/insights.md`에 한 줄로 남긴다.
+
+## 6. 반영 기록 (2026-11-15, 운영자 "반영 지시")
+- 핵심 종목 목록·기준·갱신 기록: `review/core_tickers.md` (도구는 `tools/core_tickers.py`가 이 표를 읽는다)
+- R1·R2·5장: `skill/runbooks/production.md` 2)·3)·3-1)·4), SKILL G7 첫머리
+- R3·시험 A 번갈아: SKILL V4 제목 0번, `review/experiments.md` '시험 A 회차표'
+- R4·R5: SKILL V4 설명란·K2 고정댓글, `tools/yt_api_upload.py`가 핵심 종목이면 `<회사> 미스터리 추적` 재생목록을 찾거나 만들어 넣는다
+- 하루 상한 경고·핵심 종목 ★: `tools/prod_check.py`·`verified_table.py`·`request_rank.py`
+- 시험 A·B·C: `review/experiments.md` 채널 시험 표, 판정일 `followups.md`
+- R6은 운영자 할 일(아래 그대로, 에이전트는 실행하지 않는다)

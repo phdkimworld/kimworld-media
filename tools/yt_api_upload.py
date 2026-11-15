@@ -14,6 +14,7 @@ ap.add_argument("--fix-recent", type=int, help="최근 N개 업로드의 언어�
 ap.add_argument("--dry-run", action="store_true", help="--fix-recent에서 바꾸지 않고 대상 수만 센다")
 ap.add_argument("--edit", help="이미 올린 영상 ID: --meta의 제목·설명·첫 댓글로 고친다(독립 검토 반영용, 2026-10-16)")
 ap.add_argument("--playlist-title", default="나스닥 내러티브 팟캐스트", help="롱폼을 넣을 재생목록 이름(운영자 지시 2026-10-15)")
+ap.add_argument("--series-backfill", nargs="?", const="ALL", help="핵심 종목(review/core_tickers.md) 지난 롱폼(사이트 리포트 youtube_id)을 '<시리즈> 미스터리 추적' 재생목록에 채운다. 티커 하나 또는 생략=전부. --dry-run 가능")
 a = ap.parse_args()
 out = {}
 
@@ -31,12 +32,12 @@ if a.check:
     done()
 
 # 운영자 지시(2026-10-15): 영상 언어는 항상 한국어, 롱폼만 '나스닥 내러티브 팟캐스트' 재생목록에 넣는다
-def playlist_id():
-    pt = None
+def playlist_id(title=None):
+    title = title or a.playlist_title; pt = None
     while True:
         r = yt.playlists().list(part="snippet", mine=True, maxResults=50, **({"pageToken": pt} if pt else {})).execute()
         for p in r.get("items", []):
-            if p["snippet"]["title"].strip() == a.playlist_title: return p["id"]
+            if p["snippet"]["title"].strip() == title: return p["id"]
         pt = r.get("nextPageToken")
         if not pt: return None
 
@@ -58,6 +59,40 @@ def ensure_korean(vid):
 def add_to_playlist(pid, vid):
     yt.playlistItems().insert(part="snippet", body={"snippet": {"playlistId": pid,
         "resourceId": {"kind": "youtube#video", "videoId": vid}}}).execute()
+
+# 제작팀 권고안 R4(2026-11-16): 핵심 종목 롱폼은 '<시리즈 이름> 미스터리 추적' 재생목록(없으면 공개로 만든다)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import core_tickers as _ct
+def series_playlist(tk, name, create=True):
+    t = f"{name} 미스터리 추적"; pid = playlist_id(t)
+    if pid or not create: return pid, t
+    r = yt.playlists().insert(part="snippet,status", body={"snippet": {"title": t, "defaultLanguage": "ko",
+        "description": f"{name}({tk}) 주가 미스터리를 사건 순서대로 추적합니다. 회차마다 날짜별 기록표 전체는 무료 리포트 자료실에서: https://drkimworld.com"},
+        "status": {"privacyStatus": "public"}}).execute()
+    return r["id"], t
+
+if a.series_backfill:
+    core = _ct.load(); tks = list(core) if a.series_backfill == "ALL" else [a.series_backfill.upper()]
+    import glob as _g, re as _r
+    res = {}
+    for tk in tks:
+        if tk not in core: res[tk] = "핵심 종목 아님"; continue
+        vids = []
+        for f in _g.glob(os.path.join(_ct.SITE, "content/reports/*.md")):
+            t = open(f, encoding="utf-8").read(4000)
+            k = _r.search(r"^ticker:\s*['\"]?([^'\"\s]+)", t, _r.M); y = _r.search(r"^youtube_id:\s*['\"]?([\w-]{6,})", t, _r.M)
+            d = _r.search(r"^data_as_of:\s*['\"]?(\d{4}-\d\d-\d\d)", t, _r.M)
+            if k and y and k.group(1).upper() == tk: vids.append((d.group(1) if d else "", y.group(1)))
+        vids = [v for _, v in sorted(set(vids))]
+        pid, title = series_playlist(tk, core[tk], create=not a.dry_run)
+        have = playlist_videos(pid) if pid else set(); todo = [v for v in vids if v not in have]
+        if not a.dry_run:
+            for v in todo:
+                try: add_to_playlist(pid, v)
+                except HttpError as e:
+                    res[tk] = f"error: {str(e)[:120]}"; break
+        res.setdefault(tk, f"'{title}' {'(만들 예정) ' if not pid else ''}지난 롱폼 {len(vids)}편 중 추가 {len(todo)}편")
+    out.update(dry_run=a.dry_run, series=res); done()
 
 if a.fix_recent:
     import re as _re
@@ -227,4 +262,12 @@ if m.get("playlist", True) and "#Shorts" not in m["description"]:
         else: out["playlist"] = f"'{a.playlist_title}' 재생목록 없음"
     except HttpError as e:
         out["playlist"] = f"error: {e}"
+    # R4 시리즈 재생목록: meta "series": false로 끄고, "series": "<이름>"으로 이름을 바꾼다. 티커 = meta "ticker" 또는 제목의 '(티커)'
+    core = _ct.load(); tk = (m.get("ticker") or _ct.ticker_from_title(m["title"]) or "").upper()
+    if m.get("series", True) is not False and (tk in core or isinstance(m.get("series"), str)):
+        try:
+            name = m["series"] if isinstance(m.get("series"), str) else core[tk]
+            spid, stitle = series_playlist(tk, name); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"
+        except HttpError as e:
+            out["series_playlist"] = f"error: {e}"
 done()
