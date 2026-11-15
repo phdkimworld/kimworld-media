@@ -7,7 +7,8 @@ import sys, re, os, json
 V, R = sys.argv[1], sys.argv[2]; Q = sys.argv[3:]
 rep = open(R, encoding='utf-8').read(); bad = []
 # 시나리오 절: 옛 형식 '### 5.6 …' 또는 R1.6 말로 쭉 형식 '### 앞으로 일어날 수 있는 일'(2026-10-27, 소제목 번호 없음)
-m = re.search(r'^### (?:5\.6|앞으로 일어날).*?(?=^##)', rep, re.S | re.M)
+# 이야기형(style: story, 11-15~) 부록은 '### 5부 표 · 앞으로 일어날 …'·'### 앞으로 일어날 …'처럼 앞에 이름이 붙고, 부록이 글 끝이라 다음 ##가 없을 수 있다(88회차 SERV)
+m = re.search(r'^### (?:5\.6|[^\n]*앞으로 일어날).*?(?=^##|\Z)', rep, re.S | re.M)
 if not m: bad.append("리포트에 시나리오 절('### 5.6' 또는 '### 앞으로 일어날 수 있는 일')이 없음")
 else:
     sec = m.group(0)
@@ -20,7 +21,10 @@ else:
             pr += [r for r in ln[2:] if re.search(r'\d+%', r)]
     if sc and len(pr) < len(sc): bad.append(f'시나리오 {len(sc)}개 중 가능성 % {len(pr)}개')
     elif not sc and len(pr) < 3: bad.append(f'시나리오 절에 가능성(추정) % {len(pr)}개(3개 이상)')
-follow = '## 지난 리포트 이후' in rep
+# 이야기형 후속편은 '## 지난 리포트 이후' 소제목이 없다 → 같은 티커 지난 리포트 링크(/r/<티커>-…)로 후속편을 알아본다(88회차 SERV: GPUS 87회차가 '첫 리포트'로 읽혀 대본·대기열 성적 줄 검사가 꺼져 있었음)
+_tk = (re.search(r'^ticker:\s*"?([A-Za-z0-9.]+)', rep, re.M) or [None, '#'])[1].lower()
+_slug = os.path.basename(R)[:-3]
+follow = '## 지난 리포트 이후' in rep or any(x != _slug for x in re.findall(r'\(/r/(' + re.escape(_tk) + r'-[0-9a-z-]+)/\)', rep))
 if follow:
     nar = os.path.join(V, 'narration.txt')
     if os.path.exists(nar):

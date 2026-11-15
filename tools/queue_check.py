@@ -26,7 +26,8 @@ for f in sys.argv[1:]:
         m = re.search(r'국면 ?[A-DＡ-Ｄ]\b|P[1-9]\b', x)
         if m: bad.append(f'{f}: 내부 약어 \'{m.group()}\'는 풀어 쓴다(K8.0)')
     for r in d.get('replies', []):
-        if 'drkimworld.com/r/' in r.get('text', '') and not re.search(r'[1-6]부', r['text']):
+        # 이야기형 리포트(11-15~)는 부 번호가 없다 → '리포트 끝 <부록 표 이름>'(예: '리포트 끝 급등 기록표')도 위치 안내로 인정(88회차 SERV)
+        if 'drkimworld.com/r/' in r.get('text', '') and not re.search(r'[1-6]부|리포트 끝 \S+', r['text']):
             bad.append(f'{f}: 링크 답글에 리포트 N부 <표 이름> 위치 안내 없음(K8.0, 1/2이 질문으로 끝났을 때만 "답은")')
     for x in [t] + [r.get('text', '') for r in d.get('replies', [])] + list((d.get('channel_text') or {}).values()):
         if '빚' in x: bad.append(f"{f}: '빚' 금지(빛 오인) → 부채·차입금(v2.1 1.2)"); break
