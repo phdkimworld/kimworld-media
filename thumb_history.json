@@ -2690,6 +2690,27 @@
    ],
    "video": "e4DpYMjv8QQ",
    "shorts": "CeSrIoSLr0E"
+  },
+  {
+   "t": "inj",
+   "date": "2026.11.15",
+   "layout": "custom",
+   "palette": "navy-sky-red",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "미국 ETF 상장 9일 / 상장 날 대비 -14.9%(빨강) 카드 / 새 ETF 주식 0주 + 사슬 블록·INJ 코인·나스닥 INJC 시세판",
+    "ETF 상장 첫 주 새 주식 0주 + 같은 그림"
+   ],
+   "video": "Fmetfb7YUeU",
+   "shorts": "xqkrOe5dbR8"
   }
  ]
 }
