@@ -2732,6 +2732,27 @@
    ],
    "video": "Yt_TFd7kj_s",
    "shorts": "qmpHnKG-5lY"
+  },
+  {
+   "t": "lcid",
+   "date": "2026.11.15",
+   "layout": "custom",
+   "palette": "navy-red",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "국부펀드 17.5억 달러 받고 / 그런데 3거래일 만에 -21.6%(빨강) 카드 / 상장 후 최저 종가 + 전기 세단·충전기·돈자루",
+    "빌려줄 돈이 몸값보다 크다: 대출 17.5억 vs 시총 11.7억 + 같은 그림"
+   ],
+   "video": "ayG8c1hAopc",
+   "shorts": "NagFE4c8Ur0"
   }
  ]
 }
