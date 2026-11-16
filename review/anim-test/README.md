@@ -27,7 +27,7 @@ Playwright로 장면 페이지를 열고 `scene.seek(t)`로 시간을 직접 넘
 
 ## 기존 키트 연결 시험 (scratch 복사본, 실제 키트·저장소는 안 고침)
 
-`slides.json` 슬라이드에 `"anim": "<장면.html>"`이 있으면 그 슬라이드 전체를 한 구간으로 묶고, 정지 PNG 대신 장면 프레임(1/30초씩)을 concat 목록에 넣는 최소 변경(`src/make_slide_video.anim.diff`, +20줄). 장면이 구간보다 길면 자르고, 짧으면 마지막 프레임을 유지.
+`slides.json` 슬라이드에 `"anim": "<장면.html>"`이 있으면 그 슬라이드 전체를 한 구간으로 묶고, 정지 PNG 대신 장면 프레임(1/30초씩)을 concat 목록에 넣는 최소 변경(`src/make_slide_video.anim.diff`, +24줄). 장면이 구간보다 길면 자르고, 짧으면 마지막 프레임을 유지.
 
 PLUG 93회차 실제 음성·slides.json에 훅(0~10.9초 hero 자리)과 차트(단서 1, 131.3~139.8초)를 넣어 10분 영상 전체를 다시 만들었다.
 
