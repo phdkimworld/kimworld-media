@@ -30,6 +30,33 @@ def strings(o):
     if isinstance(o, str):
         yield o
     elif isinstance(o, dict):
+        # anim 데이터 틀(11-16 확대): relative_lines는 선마다 끝의 '기준일 대비 %'만 화면에 뜬다(중간 점 %는 안 보임)
+        if isinstance(o.get('series'), list) and all(isinstance(x, dict) and isinstance(x.get('points'), list) for x in o['series']):
+            for x in o['series']:
+                pts = [q for q in x['points'] if isinstance(q, list) and len(q) > 1 and isinstance(q[1], (int, float))]
+                if len(pts) > 1 and pts[0][1]:
+                    pc = (pts[-1][1] / pts[0][1] - 1) * 100 if o.get('normalize', True) else pts[-1][1] - 100
+                    yield f"{'+' if pc > 0 else ''}{pc:.1f}%"
+                yield str(x.get('name', ''))
+            yield from strings({k: v for k, v in o.items() if k != 'series'})
+            return
+        # compare_bars·record_bars·trend_line·scenario_bars 항목: text가 없으면 value(또는 p)를 화면 표기대로 만들어 대조
+        if isinstance(o.get('items'), list) and any(isinstance(x, dict) and ('value' in x or 'p' in x) for x in o['items']):
+            unit = o.get('unit', '%' if any(isinstance(x, dict) and x.get('value') is None and 'value' in x for x in o['items']) else '')
+            dec = o.get('decimals', 1)
+            for x in o['items']:
+                if not isinstance(x, dict):
+                    continue
+                if x.get('text'):
+                    yield x['text']
+                elif isinstance(x.get('value'), (int, float)):
+                    v = x['value']; t = f'{abs(v):,.{dec}f}'
+                    yield (('+' if v > 0 else '-' if v < 0 else '') + t + '%') if unit == '%' else (('-' if v < 0 else '') + t + str(unit or ''))
+                elif isinstance(x.get('p'), (int, float)):
+                    yield f"{x['p']:g}%"
+                yield from strings({k: v for k, v in x.items() if k not in ('value', 'p', 'range', 'hi', 'text')})
+            yield from strings({k: v for k, v in o.items() if k not in ('items', 'unit', 'decimals')})
+            return
         if isinstance(o.get('points'), list) and any(isinstance(x, list) for x in o['points']):
             # anim live_chart 패널은 점마다 '기준 대비 %'를 계산해 띄운다(95회차 BTQ: -15.7% 등 리포트에 없던 값이 화면에) → 그 값도 대조
             pts = [x for x in o['points'] if isinstance(x, list) and len(x) > 1 and isinstance(x[1], (int, float))]
