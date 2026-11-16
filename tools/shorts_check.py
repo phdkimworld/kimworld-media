@@ -6,6 +6,19 @@ d = sys.argv[1]
 paras = [p.strip() for p in open(os.path.join(d, 'narration.txt'), encoding='utf-8').read().split('\n') if p.strip()]
 sents = [s for p in paras for s in re.split(r'(?<=[.?!])\s+', p) if s.strip()]
 scenes = json.load(open(os.path.join(d, 'shorts.json'), encoding='utf-8'))['scenes']
+# 움직이는 장면(anim v_stat·v_bars·v_line, 2026-11-16 "숏폼도 최대한 애니메이션"): data를 같은 뜻의 요소(text·num·stamp)로 바꿔 아래 검사를 그대로 적용한다
+#  label → 위 이름표(text, at 0), big → 큰 숫자(num, at 0), lines·items·points → beats 비율의 text, stamp → stamp. 첫 장면 anim은 표지(label·big 필수)
+def anim_els(sc):
+    a = sc.get('anim') or {}; dd = a.get('data') or {}; b = [x for x in (dd.get('beats') or []) if x is not None]; out = []
+    if not a: return out
+    if dd.get('label'): out.append({'kind': 'text', 'text': dd['label'], 'at': 0.0, 'y': 8, 'size': 64, 'anim_': 1})
+    if dd.get('big'): out.append({'kind': 'num', 'text': dd['big'], 'at': 0.0, 'y': 104, 'size': 180, 'anim_': 1})
+    seq = [('text', l.get('text', '')) for l in dd.get('lines', [])] + [('text', str(it.get('label', ''))) for it in dd.get('items', [])[1:]] + [('text', str(p[2] if len(p) > 2 else p[0])) for p in dd.get('points', [])[1:]]
+    if dd.get('stamp'): seq.append(('stamp', dd['stamp'].get('text', '')))
+    for k, (kind, t) in enumerate(seq): out.append({'kind': kind, 'text': t, 'at': b[k] if k < len(b) else round(0.1 + 0.2 * k, 2), 'y': 700 if kind == 'stamp' else 330 + 100 * min(k, 3), 'anim_': 1})
+    return out
+for _sc in scenes:
+    if _sc.get('anim'): _sc['els'] = [e for e in _sc.get('els', []) if not e.get('anim_')] + anim_els(_sc)
 bad = []
 if len(sents) != len(scenes): bad.append(f'문장 {len(sents)} / 장면 {len(scenes)} 수가 다르다(한 줄 = 한 문장 = 한 장면)')
 for i, p in enumerate(paras):
@@ -21,6 +34,9 @@ for i, sc in enumerate(scenes):
             o = e.get('opts', [])
             if not 2 <= len(o) <= 4 or any(len(x) > 10 or len(x.encode()) > 25 for x in o): bad.append(f'장면 {i+1} 투표 보기는 2~4개·각 10자·25바이트 이하(Threads 제한): {o}')
 # 첫 장면: 큰 숫자는 0초, 다음 요소는 0.3 이하(2026-10-26 앤트로픽 40회차: 6.8초 첫 문장에서 도장 0.45 → 3.25초 정지로 video_check 실패, 재렌더)
+if scenes and scenes[0].get('anim'):
+    _d = scenes[0]['anim'].get('data') or {}
+    if not _d.get('label') or not _d.get('big'): bad.append('장면 1 anim은 표지: data에 label(이름·꼬리표)과 big(160px 이상 숫자)이 모두 있어야 함(0초 프레임 = 표지, 11-16)')
 if scenes:
     ats = sorted(e.get('at', 0) for e in scenes[0].get('els', []) if e.get('kind') != 'poll')
     if ats and ats[0] > 0: bad.append(f'장면 1 첫 요소 at {ats[0]}: 큰 숫자는 at 0(썸네일 숫자)')
@@ -118,5 +134,9 @@ for i, sc in enumerate(scenes):
     last = re.sub(r'\*\*', '', sub.split('\n')[-1]).strip()
     if last and not re.search(r'([다요]|\?)[.!]?$', last):
         bad.append(f"장면 {i+1} 자막 끝 '{last}'가 숫자·명사로 끝남 → '31.7% 내렸습니다'처럼 서술문")
+# 쇼츠 anim 비율(운영자 11-16 "숏폼도 최대한 애니메이션"): 투표 장면 밖에서 anim 아닌 장면은 1개까지. 첫 장면은 anim(표지 모드) 권장
+na = sum(1 for sc in scenes if sc.get('anim')); still_sc = [i + 1 for i, sc in enumerate(scenes) if not sc.get('anim') and not any(e.get('kind') == 'poll' for e in sc.get('els', []))]
+print(f'ANIMRATIO 쇼츠 anim 장면 {na}/{len(scenes)} · 투표 밖 정지(els) 장면 {still_sc}')
+if len(still_sc) > 1: bad.append(f'SHORTS_ANIMLOW 투표 밖 els 장면 {still_sc}: v_stat·v_bars·v_line "anim"으로(1개까지 허용)')
 print('\n'.join(bad) if bad else f'SHORTS_OK 문장·장면 {len(sents)}개')
 sys.exit(1 if bad else 0)
