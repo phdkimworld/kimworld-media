@@ -2816,6 +2816,27 @@
    ],
    "video": "wY3PD2QW0Eo",
    "shorts": "YAvWecOcw5M"
+  },
+  {
+   "t": "iren",
+   "date": "2026.11.16",
+   "layout": "custom",
+   "palette": "navy-amber-sky",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "실적 다음 날 +20%, 5거래일 뒤 / 실적 날 종가 대비 +0.8%(빨강) 카드 + 서버 랙·그래픽 칩·비트코인",
+    "11.6 → 11.13 21.64 → 18.17달러 / 다 반납(빨강) + 같은 그림"
+   ],
+   "video": "C5RVB02wisg",
+   "shorts": "y8DyPbb03u4"
   }
  ]
 }
