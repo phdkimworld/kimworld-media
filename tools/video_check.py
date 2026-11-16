@@ -56,8 +56,12 @@ def long(v, slides, meta):
     out['empty'] = len(empty); len(empty) > 2 and fails.append(f'본문 빈 초 {len(empty)}초 {empty[:10]}')
     # A4 화면 전환 간격(미드롤·outro 제외)
     outro0 = seg['duration'] - seg.get('outro_sec', 0)
-    cuts = sorted(set([0.0] + scene_times(v, 0.04) + [a for a, b in ads] + [b for a, b in ads] + [outro0]))
-    gaps = [(a, b) for a, b in zip(cuts, cuts[1:]) if b <= outro0 + 0.1 and not in_ad((a + b) / 2)]
+    # 움직이는 장면(anim, 2026-11-16): make_slide_video가 segments.json 'anim'에 [시작, 움직임 끝, 구간 끝, 틀, 박자]를 남긴다.
+    # 서서히 그려지는 선은 장면 전환 점수로 안 잡히므로, 움직이는 구간은 정지로 세지 않고 시작·움직임 끝을 컷으로 본다(움직임 끝 뒤 유지 구간은 그대로 셈)
+    anims = [(x[0], x[1]) for x in seg.get('anim', [])]
+    in_anim = lambda t: any(a <= t <= b for a, b in anims)
+    cuts = sorted(set([0.0] + scene_times(v, 0.04) + [a for a, b in ads] + [b for a, b in ads] + [x for ab in anims for x in ab] + [outro0]))
+    gaps = [(a, b) for a, b in zip(cuts, cuts[1:]) if b <= outro0 + 0.1 and not in_ad((a + b) / 2) and not in_anim((a + b) / 2)]
     lg = max(gaps, key=lambda g: g[1] - g[0]) if gaps else (0, 0)
     out['still'] = round(lg[1] - lg[0]); lg[1] - lg[0] > 15 and fails.append(f'정지 {lg[1]-lg[0]:.0f}초({lg[0]:.0f}~{lg[1]:.0f})')
     # A6 미드롤
@@ -76,7 +80,7 @@ def long(v, slides, meta):
     # A10 outro
     out['outro'] = round(seg.get('outro_sec', 0)); out['outro'] < 20 and fails.append(f'outro {out["outro"]}초 < 20초')
     line = (f"검증: 해상도 {out['res']} · 10초 훅 확인 필요(check_10s.png) · 빈 화면 {out['empty']}초 · 최장 정지 {out['still']}초 · "
-            f"미드롤 전체화면 {out['ad']} · 표기 위반 {out['money']} · 챕터 {out['chap']}개 · outro {out['outro']}초")
+            f"미드롤 전체화면 {out['ad']} · 움직이는 장면 {len(anims)}컷 · 표기 위반 {out['money']} · 챕터 {out['chap']}개 · outro {out['outro']}초")
     return line, fails
 
 def shorts(v):

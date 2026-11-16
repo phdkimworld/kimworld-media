@@ -1551,6 +1551,21 @@ make_slide_video.py (사용: `python3 make_slide_video.py slides.json raw.wav �
 - 효과음 없이 만들어야 할 때만 `NO_SFX=1`을 붙여 실행한다
 - 확인: 합성 출력 끝의 `효과음 {...}` 개수를 보고, `slides_out/segments.json`의 `sfx` 시각이 화면 전환·안내 구간과 맞는지 본다. 12~15분 영상 기준 boom 6~12, whoosh 20~40, chime 6 안팎이 정상이다
 
+#### V6.8 움직이는 장면 anim (필수, 운영자 2026-11-16 "고치고 적용" — 시험 결과 review/anim-test)
+
+롱폼마다 **1~2컷**: 첫 장면 훅 1(`chalk_hook`) + 핵심 차트 1(`live_chart`, 대개 단서 1의 가격 움직임). 그 밖의 화면은 기존 슬라이드. 쇼츠에는 아직 넣지 않는다.
+- **쓰는 법**: slides.json 슬라이드에 `"anim": {"tpl": "<틀>", "data": {...}}`. 그 슬라이드 구간 전체(다음 슬라이드 `from` 전까지)가 프레임 캡처 클립이 된다(`slidekit/anim.py`, Playwright `scene.seek(t)` 1/30초씩, 매번 같은 결과). 틀은 `slidekit/templates/anim/`, GSAP 3.12.5와 손글씨 글꼴은 `templates/anim/lib/`에 동봉(네트워크 없이 렌더).
+- **박자(필수)**: data에 `"beats": [문장 번호…]`(그 문단 안 번호)를 주면 키트가 raw_timing.json의 문장 시작 시각을 장면 시각으로 바꿔 넘긴다. 사건 점·숫자는 내레이션이 그 숫자를 말하기 시작할 때 뜬다. `live_chart`는 `points[1:]`마다 한 박자 + `bracket_beat`, `chalk_hook`은 [오른쪽 숫자, 질문]. 한 문장에 두 점이면 같은 번호를 두 번(0.5초 간격으로 뜸).
+- **첫 프레임·컷**: 첫 프레임부터 제목·축·첫 점·첫 숫자(훅은 제목·왼쪽 숫자)가 보이고, 장면은 페이드인 없이 컷으로 시작한다(틀이 보장, 빈 화면·정지 판정 대비).
+- **틀**
+  - `live_chart` data: `title`, `kicker`, `points: [[날짜, 종가, 사건 문구, 작은 문구?, 'above'|'below'?], …]`(2~8개), `base: {value, label}`, `panel_note`, `bracket: {from, to, text}`, `source`, `decimals`(기본 3), `unit`(기본 '달러'), `beats`, `bracket_beat`. 패널 숫자는 점마다 그날 실제 종가로 바뀌고 굴러가는 건 마지막 0.9초뿐(사이 값을 종가처럼 보이지 않게). 색·글꼴은 slide.html과 같다.
+  - `chalk_hook` data: `top`, `left: {label, value}`, `mid`('그런데'), `right: {label, value, tone: red|gold|white}`, `question`, `beats`. 말은 손글씨, **숫자는 고딕 Black**(손글씨 0·7 판독성 문제 해결), 길면 자동으로 줄인다.
+- **검사**: ① `check_slides.py` ANIM(틀 있음·박자 범위·커지는 순서), ANIMAD(장면 구간에 ad·shop 문장 금지 — 안내 문장은 다음 슬라이드로), ANIMTAIL(마지막 박자 뒤 12초 넘는 정지 금지), ANIMBEAT(live_chart에 beats 필수), ANIMN(3컷 이상 금지) ② 합성 중 겹침 검사: 박자마다·마지막 프레임에서 글자 상자 겹침·화면 밖이면 `ANIM_FAIL`로 멈춘다 ③ `slides_out/anim_p<문단>_s<슬라이드>/preview.png`(0·25·50·75·100% 다섯 장)를 Read로 확인 ④ `segments.json`의 `anim`([시작, 움직임 끝, 구간 끝, 틀, 박자 시각])을 video_check·'최장 정지'·still_check가 읽어 움직이는 구간을 정지로 세지 않는다(움직임이 끝난 뒤 유지 구간은 센다). 쿠팡 띠는 장면 위에 얹지 않는다.
+- **미리보기**: 슬라이드를 쓰는 동안 `python3 /home/claude/slidekit/anim.py preview <틀> data.json <폴더> --dur <구간 초> --beats 1.5,3.2`로 겹침 검사와 다섯 장 미리보기(몇 초)를 먼저 본다.
+- **숫자**: 리포트에 있는 값만. `num_check.py`가 anim data의 문구와 `points` 종가도 리포트와 대조한다.
+- **효과음**: 장면 시작에 훅은 boom·차트는 whoosh, 박자마다 tick(1.2초 간격 이상). 슬라이드 `"sfx"`로 바꿀 수 있다.
+- **비용**: 영상 1초당 렌더 약 8~9초(1080p, 4코어). 2컷 합계 20~30초면 합성이 2~4분 늘어난다.
+
 ### V7. 유튜브 자동 업로드와 첫 댓글 (YouTube API 우선, Metricool 대체)
 
 > **2026-10-15 운영자 지시**: 영상 언어(제목·설명 언어와 오디오 언어)는 항상 한국어(ko)로 둔다. `yt_api_upload.py`가 업로드 뒤 다시 읽어 확인하고, 아니면 고친다(출력 `language`). 롱폼만 재생목록 「나스닥 내러티브 팟캐스트」에 넣는다(설명에 `#Shorts`가 없으면 자동 추가, 출력 `playlist: ok`). 쇼츠는 넣지 않는다. 지난 영상 정리는 `python3 /home/claude/yt_api_upload.py --fix-recent 100 [--dry-run]`(영상 수정·재생목록 추가 1건마다 할당량 50단위라 업로드가 남은 날에는 업로드 뒤에 돌린다).

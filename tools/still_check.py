@@ -15,7 +15,7 @@ for pi, (p, t) in enumerate(zip(deck['paras'], P)):
         f = s.get('from', s.get('at', 0)); nf = sl[k + 1].get('from', sl[k + 1].get('at', 0)) if k + 1 < len(sl) else None
         t0 = sents[min(f, len(sents) - 1)]['start']
         t1 = sents[nf]['start'] if nf is not None and nf < len(sents) else t['end']
-        lay = s.get('layout')
+        lay = 'anim' if s.get('anim') else s.get('layout')  # 움직이는 장면은 정지 아님(마지막 박자 뒤 정지는 check_slides ANIMTAIL)
         static_tl = lay == 'timeline' and len({it.get('at') for it in s.get('items', [])}) <= 1
         if lay == 'timeline' and len(s.get('items', [])) <= 1: lay = 'timeline1'
         segs.append((pi, f, lay, t0, t1, static_tl))

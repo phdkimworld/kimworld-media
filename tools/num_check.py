@@ -31,6 +31,14 @@ def strings(o):
         yield o
     elif isinstance(o, dict):
         for k, v in o.items():
+            if k in ('beats',) or k.endswith('_beat'):
+                continue  # anim 박자(문장 번호)
+            if k == 'points' and isinstance(v, list) and any(isinstance(x, list) for x in v):
+                # anim live_chart 점 [날짜, 종가, 문구…]: 종가 숫자도 화면에 나오므로 '$값'으로 대조(2026-11-16)
+                for x in v:
+                    if isinstance(x, list):
+                        yield from (f'${y:g}' if isinstance(y, (int, float)) else y for y in x if isinstance(y, (int, float, str)))
+                continue
             if k not in ('layout', 'tone', 'sfx', 'from', 'at', 'ad'):
                 yield from strings(v)
     elif isinstance(o, list):

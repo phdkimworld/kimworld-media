@@ -76,3 +76,6 @@ PLUG 93회차 실제 음성·slides.json에 훅(0~10.9초 hero 자리)과 차트
 4. **픽셀 RPG 상태창**(쇼츠용): HP 막대 = 주가, 버프/디버프 = 사건(실적·주식 판매 한도). 세로 1080×1920에 잘 맞는다.
 
 참고: Lemo-Opuscar 저장소는 이 세션에 GitHub 접근이 열려 있지 않아 읽지 못했다. 운영자가 본 Threads 설명(화풍 99종, Canvas·WebGL)만 참고했고, 코드는 모두 우리 키트 기준으로 새로 썼다.
+
+## 정식 반영 (2026-11-16, 운영자 "고치고 적용")
+사이트 저장소 `tools/slidekit`에 `anim.py`·`templates/anim/`(live_chart·chalk_hook, GSAP 3.12.5·손글씨 글꼴 동봉)로 넣었다. 박자 맞춤(`beats` → 문장 시작 시각), 첫 프레임 내용·컷 시작, 겹침 검사(ANIM_FAIL), segments.json `anim` 메타를 video_check·최장 정지·still_check가 읽음, 훅 숫자는 고딕. 지침은 SKILL V6.8. PLUG 93회차 음성으로 다시 합성: video_check 통과(빈 화면 0초, 최장 정지 13초, 움직이는 장면 2컷), 합성 399초.
