@@ -1,0 +1,272 @@
+{
+ "ticker": "JOBY",
+ "name": "조비",
+ "group": "A",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "전기 에어택시",
+   "subtitle": "**전기 에어택시**를\n만드는 회사입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "조비 에비에이션",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "전기 에어택시",
+     "at": 0.25,
+     "y": 260,
+     "size": 120,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "최대 주주 토요타",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "헬리콥터처럼 뜬다",
+     "at": 0.5,
+     "y": 480,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "JOBY",
+     "at": 0.8,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "22.4%",
+   "subtitle": "실적이 예상을 넘었고\n3거래일 만에 **22.4%** 올랐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.04 장 마감 뒤 실적",
+     "at": 0.0,
+     "y": 100,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+22.4%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "5.05 → 6.18달러",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "매출 예상 크게 상회",
+     "at": 0.45,
+     "y": 480,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "11.09 고점",
+     "at": 0.72,
+     "y": 640,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "97%",
+   "subtitle": "4거래일 동안 오른 폭의\n**97%**를 돌려줬습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.09 → 11.13",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "97% 반납",
+     "at": 0.15,
+     "y": 260,
+     "size": 150,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "6.18 → 5.08달러",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "실적 전 5.05달러와 3센트",
+     "at": 0.45,
+     "y": 480,
+     "size": 72,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-17.8%",
+     "at": 0.72,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "아처",
+   "subtitle": "공시는 없었고, 경쟁사\n**아처**도 함께 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "조비 새 공시 0건",
+     "at": 0.0,
+     "y": 100,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "아처 -16.2%",
+     "at": 0.15,
+     "y": 260,
+     "size": 140,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "같은 4거래일",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "이항 -10.2%",
+     "at": 0.45,
+     "y": 480,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "QQQ +0.1%",
+     "at": 0.72,
+     "y": 640,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "정반대",
+   "subtitle": "다 돌려준 두 번은 한 달 뒤\n**정반대**로 갈렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "같은 모양 두 번",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+25.4% vs -20.5%",
+     "at": 0.15,
+     "y": 260,
+     "size": 110,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "20거래일 뒤",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "2023년 11월 · 2026년 8월",
+     "at": 0.45,
+     "y": 480,
+     "size": 70,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "갈린 자리에 판매 계약",
+     "at": 0.72,
+     "y": 640,
+     "size": 72,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "제자리",
+   "subtitle": "실적은 그대로인데, 주가는\n왜 **제자리**로 돌아왔을까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "12월 14일 종가는?",
+     "opts": [
+      "5.08달러 위",
+      "5.08달러 아래",
+      "새 자금 조달 소식"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "12월 14일 종가는?",
+     "opts": [
+      "5.08달러 위",
+      "5.08달러 아래",
+      "새 자금 조달 소식"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
