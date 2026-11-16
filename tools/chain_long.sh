@@ -1,7 +1,7 @@
 #!/bin/sh
 # 롱폼 제작의 긴 단계를 끊김 없이 잇는다(운영자 지시 2026-10-20 "이런 일 없게 해" — TTS가 끝났는데 25분 멈춰 있었음).
 # 사용: sh tools/chain_long.sh <작업 폴더(video)> [쇼츠 폴더]
-#   TTS 끝 대기 → tts_asr_check → check_slides·still_check·num_check·prev_calls_check·thumb_biz_check·chart_check·thumb_name_check·hero_check → 롱폼 합성 → video_check long
+#   TTS 끝 대기 → debreath(숨소리 무음) → tts_asr_check → check_slides·still_check·num_check·prev_calls_check·thumb_biz_check·chart_check·thumb_name_check·hero_check → 롱폼 합성 → video_check long
 #   (쇼츠 폴더가 있으면) shorts_check → 쇼츠 TTS → 렌더 → video_check shorts 를 이어서 돌린다.
 # 반드시 세션 도구의 '백그라운드 실행(완료 알림)'으로 부른다. nohup 만으로 띄우고 끝내지 않는다.
 set -u
@@ -17,6 +17,8 @@ done
 echo "TTS 끝: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav")초"
 # 녹음이 지금 대본에서 나왔나(53회차 PLUG: TTS 시작 뒤 대본을 고쳐 다시 녹음) — 옛 녹음 + 새 slides.json 합성을 막는다
 python3 /home/user/kimworld-media/tools/tts_fresh_check.py "$V" || { echo "CHAIN_FAIL tts_fresh_check(녹음과 대본 불일치 — st_redo 또는 TTS 재실행)"; exit 1; }
+# 숨 들이쉬는 소리 무음 처리(F7 2026-11-16 BTQ 시청자 "코 들이마시는 소리"): 문장 사이 쉼을 0으로, 길이·문장 시각 그대로. 잔여 숨 경계 10% 넘으면 실패
+python3 /home/user/kimworld-media/tools/debreath.py "$V/raw.wav" "$V/raw_timing.json" || { echo "CHAIN_FAIL debreath(문장 사이 숨소리 잔여)"; exit 1; }
 # E12 녹음 길이(BTQ 49회차: B그룹 녹음 9분 50초를 합성 뒤에야 알아 보강·재녹음). video 폴더에 group 파일(A|B)이 있으면 녹음 직후 확인
 if [ -f "$V/group" ]; then
   G=$(tr -d ' \n' < "$V/group"); D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$V/raw.wav" | cut -d. -f1)
@@ -72,6 +74,7 @@ python3 mk_meta.py > /dev/null && VC=$(python3 /home/user/kimworld-media/tools/v
 echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }
 if [ -n "$S" ]; then
   wait
+  python3 /home/user/kimworld-media/tools/debreath.py "$S/shorts_raw.wav" "$S/shorts_raw_timing.json" || { echo "CHAIN_FAIL debreath shorts"; exit 1; }
   cd "$S" && python3 /home/user/kimworld-site/tools/shorts/make_shorts.py shorts.json shorts_raw.wav "${T}_shorts.mp4" > render.log 2>&1; tail -1 render.log
   # 87회차 GPUS: 쇼츠 렌더가 AssertionError로 죽었는데 CHAIN_DONE이 나옴(93회차 PLUG 검사로 추가) — 렌더 오류·옛 mp4를 막는다
   { [ -s "${T}_shorts.mp4" ] && [ "${T}_shorts.mp4" -nt shorts.json ] && ! grep -qE "Traceback|AssertionError" render.log; } || { echo "CHAIN_FAIL shorts_render(render.log 오류 또는 새 mp4 없음)"; tail -3 render.log; exit 1; }

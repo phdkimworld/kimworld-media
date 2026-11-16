@@ -55,6 +55,7 @@ requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 too
 - **쿠팡 상품 카드(11-11 확인)**: 롱폼마다 SKILL 쿠팡 장대로 yt-shop.yml 카테고리 → 카드 한 장(한 문장, 설명란·고정댓글 링크와 함께). check_slides SHOPMISS가 막는다(AGNC 75회차 누락).
 - **미드롤·음성 안내(11-11 운영자 '그렇게 처리해')**: 대본에 사이트 안내 문장을 영상 35~75% 구간에 하나 이상 넣고(중반 반전 직전), slides.json "ad"는 실제 안내 문장(리포트·홈페이지·고정 댓글·설명란)에만 붙인다. 문장을 고치면 ad 번호도 다시 맞춘다. check_slides ADTEXT·ADMID가 막는다(AGNC 75회차: 본문 문장에 미드롤 5초, 중반 6분 안내 공백).
 - **토큰 절약(11-09·11-10)**: TTS는 맥으로(`/home/user/kimworld-relay/tools/mac.py submit|wait|get`, kind tts, flac+timing 반환; 30분 넘게 결과 없으면 클라우드 TTS). 큰 파일·공시 원문은 grep·head로 필요한 부분만. 폴링은 백그라운드 until 루프.
+- **숨소리 무음(F7, 11-16 BTQ 시청자 "코 들이마시는 소리")**: 녹음(맥·클라우드 모두) 뒤 `python3 tools/debreath.py raw.wav raw_timing.json`(chain_long이 롱폼·쇼츠 모두 자동) — 문장 사이 쉼의 들숨을 0으로(길이·문장 시각 그대로), DEBREATH_FAIL(잔여 숨 경계 10% 초과)이면 합성하지 않는다. chain_long 없이 직접 합성할 때도 먼저 돌린다.
 - 새 리포트가 지목한 날짜 있는 이벤트는 followups.md 후보 일정표(자동 예약 금지). 시작 때 `df -h /`와 /tmp/kws-* 정리. chain_long.sh는 백그라운드 timeout 7200000, 쇼츠 렌더·TTS·사이트 테스트와 겹치지 않게.
 - 유튜브 uploadLimitExceeded면 나머지를 끝내 두고 업로드는 백그라운드 until(30분 간격, 최대 12시간)로 재시도, 성공하면 이후 단계까지 이어서.
 
