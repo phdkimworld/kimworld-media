@@ -291,9 +291,29 @@
     },
     {
      "from": 5,
-     "layout": "quote",
-     "text": "주가는 매출보다\n**현금과 주식 수에 민감**",
-     "at": 5
+     "layout": "stat",
+     "title": "주가가 민감하게 보는 것",
+     "stats": [
+      {
+       "at": 5,
+       "big": "현금 · 주식 수",
+       "label": "매출보다 더",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "새 주식을 찍으면",
+     "stats": [
+      {
+       "at": 6,
+       "big": "한 주의 비율 ↓",
+       "label": "회사가 커지지 않아도",
+       "tone": "down"
+      }
+     ]
     },
     {
      "from": 7,
@@ -332,12 +352,12 @@
     {
      "from": 2,
      "layout": "stat",
-     "title": "11.12 → 11.13",
+     "title": "11.13 하루",
      "stats": [
       {
        "at": 2,
-       "big": "-8.9% → -10.1%",
-       "label": "",
+       "big": "-10.1%",
+       "label": "11.12는 -8.9%",
        "tone": "down"
       }
      ],
@@ -574,12 +594,12 @@
     {
      "from": 2,
      "layout": "stat",
-     "title": "더 내린 4번의 폭",
+     "title": "더 내린 4번 · 가장 깊었던 폭",
      "stats": [
       {
        "at": 2,
-       "big": "-1.8% ~ -6.6%",
-       "label": "",
+       "big": "-6.6%",
+       "label": "가장 얕았던 폭 -1.8%",
        "tone": "down"
       }
      ]
