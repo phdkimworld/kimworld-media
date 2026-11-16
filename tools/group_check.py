@@ -40,5 +40,11 @@ _vd = os.path.dirname(os.path.abspath(sys.argv[1]))
 if os.path.exists(os.path.join(_vd, 'slides.json')):
     _s = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'slides_pre_check.py'), _vd], capture_output=True, text=True)
     if _s.returncode: bad += ['SLIDES ' + l for l in _s.stdout.split('\n') if l.strip()]
+# 지난 예측 성적표 문단(96회차 IREN: '지난 예측부터'로 써서 '리포트에서'가 빠져 녹음 뒤 prev_calls_check에 걸려 문단 재녹음) — 녹음 전에 같은 검사
+import glob as _g
+_rp = [f for f in _g.glob(os.path.join(_vd, '..', 'report', '*.md'))]
+if _rp:
+    _pc = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'prev_calls_check.py'), _vd, _rp[0]], capture_output=True, text=True)
+    if _pc.returncode: bad += ['PREVCALLS ' + l for l in (_pc.stdout + _pc.stderr).split('\n') if l.strip() and not l.startswith('PREV_CALLS_OK')]
 print('\n'.join(bad) if bad else f'GROUP_OK {g} {kb:.2f}KB 안내 p{guide[0]+1}')
 sys.exit(1 if bad else 0)

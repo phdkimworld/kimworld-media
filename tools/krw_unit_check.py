@@ -7,7 +7,7 @@ T = d.get('ticker', '')
 Y = os.environ.get('KW_SITE', '/home/user/kimworld-site') + '/data/tickers.yaml'
 txt = open(Y, encoding='utf-8').read() if os.path.exists(Y) else ''
 m = re.search(r'^%s:\n((?:  .*\n)+)' % re.escape(T), txt, re.M)
-coin = bool(m and re.search(r'theme:.*코인', m.group(1)))
+coin = bool(m and re.search(r'theme:\s*"?코인', m.group(1)))  # '비트코인·AI 데이터센터'(채굴주)는 코인이 아님(96회차 IREN 오탐)
 if not coin: print(f'KRW_SKIP {T} 코인 아님'); sys.exit(0)
 OK = re.compile(r'ETF|펀드|거래액|자금|순자산|출발|시가총액|매출|수수료|INJC|재단')
 bad = []
