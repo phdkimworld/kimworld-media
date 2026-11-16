@@ -20,7 +20,72 @@
 #    머리말에 style: story가 있으면 부 구조·핵심 콜아웃·부 끝 질문·짧은 답·### 개수 검사를 끄고, 대신 본문 ## 는 끝 부록 '## 숫자로 다시 보기' 하나뿐인지,
 #    본문(부록 앞)에 표·###·글머리 목록·인용 상자·'N부' 언급·화살표·가운뎃점 나열이 없는지, 마지막 문단이 질문이 아닌지 본다.
 #    그림(2026-11-15 운영자 "피겨를 더 넣어서"): 본문 그림 4~6개(3개 이하 FAIL, 7개 이상 WARN), 그림마다 캡션(alt), 파일이 사이트 static/charts(또는 원고 폴더)에 있는지. --site <사이트 폴더>로 위치 지정. 문장 길이·숫자 밀도·약어 검사는 그대로
-import sys, re, os
+#    웹 애니메이션 그림(2026-11-16 운영자 "애니메이션을 리포트에서 렌더링 되게"): 그림이 .webp면 명세 static/figs/<이름>.json(figkit make.py)이 있어야 하고,
+#    명세 숫자(제목·설명·항목 값·사건 설명·기준선·선 끝 등락률·마지막 값)가 리포트 본문·부록·머리말에 있어야 한다(지어낸 숫자 금지).
+#    공개일 11-17~ 새 리포트는 FAIL(그림도 PNG가 아니라 WebP+명세), 그 전 리포트는 WARN만(기존 결과 그대로). 옛 PNG 그림은 명세 검사를 하지 않는다
+import sys, re, os, json
+_NUM = re.compile(r'(?<![\d.])\d[\d,]*(?:\.\d+)?')
+
+
+def _num_set(s):
+    """글에 나온 숫자(쉼표 뺀 값) 집합"""
+    out = set()
+    for m in _NUM.finditer(s):
+        try: out.add(float(m.group(0).replace(',', '')))
+        except ValueError: pass
+    return out
+
+
+def _spec_nums(s):
+    """명세 글자 속 확인할 숫자: 날짜(앞머리 '6.17 …'·'11.5 → 11.9'·2026-11-13·2025.11)·'N월 N일'·한 자리 정수는 뺀다"""
+    s = re.sub(r'^\s*\d{1,2}\.\d{1,2}(?=\s)', ' ', str(s))
+    s = re.sub(r'\d{1,2}\.\d{1,2}\s*(→|~|-)\s*\d{1,2}\.\d{1,2}', ' ', s)
+    s = re.sub(r'\d{4}[.\-]\d{1,2}(?:[.\-]\d{1,2})?', ' ', s)
+    s = re.sub(r'\d+\s*(?=월|일|년)', ' ', s)
+    out = []
+    for m in _NUM.finditer(s):
+        t = m.group(0).replace(',', '')
+        try: v = float(t)
+        except ValueError: continue
+        if '.' not in t and v < 10: continue
+        out.append((m.group(0), v))
+    return out
+
+
+def _fig_round(v, unit, dec):  # figkit make.py fmt 과 같은 자릿수
+    if dec is None:
+        dec = 0 if abs(v) >= 1000 or (unit == '원' and abs(v) >= 100) else (2 if unit == '달러' else 1 if abs(v) >= 10 or unit == '%' else 2)
+    return round(abs(v), dec)
+
+
+def fig_numbers_missing(spec, text):
+    """그림 명세(figkit make.py 가 낸 static/figs/<이름>.json)의 숫자 가운데 리포트 글에 없는 것"""
+    have = _num_set(text)
+    ok = lambda v: any(abs(v - h) < 1e-9 for h in have)
+    miss = []
+    def chk(s):
+        miss.extend(raw for raw, v in _spec_nums(s) if not ok(v))
+    for fig in spec.get('figs', []):
+        ty = fig.get('type', '')
+        unit, dec = fig.get('unit', '%' if ty in ('record', 'scenarios') else ''), fig.get('decimals')
+        for t in (fig.get('title') if isinstance(fig.get('title'), list) else [fig.get('title', '')]): chk(t)
+        for k in ('sub', 'note', 'decision', 'axis_note', 'base_label'): chk(fig.get(k, ''))
+        for it in fig.get('items', []):
+            for k in ('label', 'sub'): chk(it.get(k, ''))
+            if it.get('text'): chk(it['text'])
+            elif ty == 'scenarios':
+                if not ok(abs(it['p'])): miss.append(f"{it['p']:g}%")
+            elif it.get('value') is not None and not ok(_fig_round(it['value'], unit, dec)): miss.append(f"{it['value']:g}")
+        for e in fig.get('events', []): chk(e.get('label', ''))
+        if fig.get('ref'): chk(fig['ref'].get('label', ''))
+        if ty == 'price_events' and isinstance(fig.get('series'), list) and fig['series']:
+            v = _fig_round(fig['series'][-1][1], fig.get('unit', '달러'), dec)
+            if not ok(v): miss.append(f'마지막 값 {v:g}')
+        if ty == 'relative':
+            for sr in fig.get('series', []):
+                d = [r for r in (sr.get('data') if isinstance(sr.get('data'), list) else []) if fig.get('base', '') <= r[0] <= fig.get('to', '9999')]
+                if d and not ok(round(abs(d[-1][1] / d[0][1] * 100 - 100), 1)): miss.append(f"{sr['name']} 끝 {round(d[-1][1] / d[0][1] * 100 - 100, 1):+g}%")
+    return list(dict.fromkeys(miss))
 p = sys.argv[1]
 gl = sys.argv[sys.argv.index('--glossary') + 1] if '--glossary' in sys.argv else '/home/user/kimworld-site/data/glossary.yaml'
 txt = open(p, encoding='utf-8').read()
@@ -101,6 +166,22 @@ if STORY:
         cands = [os.path.join(_site, src.lstrip('/')), os.path.join(os.path.dirname(os.path.abspath(p)), nm), os.path.join(os.path.dirname(os.path.abspath(p)), 'charts', nm)]
         if src.startswith(('http://', 'https://')): bad.append(f'그림은 사이트 static/charts 파일로(외부 주소 금지): {src}')
         elif not any(os.path.exists(c) for c in cands): bad.append(f'그림 파일 없음: {src} (찾은 곳: {_site}/static/charts, 원고 폴더)')
+        # 웹 애니메이션(2026-11-16): WebP 그림 = 명세 JSON 짝, 명세 숫자는 리포트 숫자만. 공개일 11-17~ FAIL, 그 전 리포트는 WARN
+        _new = _dt >= '2026-11-17'
+        if nm.endswith('.png') and _new and re.fullmatch(r'[a-z0-9-]+-\d\.png', nm):
+            bad.append(f'이야기형 그림은 WebP + 명세로(figkit make.py --site, 웹 애니메이션): {src}')
+        if nm.endswith('.webp'):
+            stem = nm[:-5]
+            sp = next((c for c in [os.path.join(_site, 'static', 'figs', stem + '.json'), os.path.join(os.path.dirname(os.path.abspath(p)), stem + '.json'),
+                                   os.path.join(os.path.dirname(os.path.abspath(p)), 'figs', stem + '.json')] if os.path.exists(c)), None)
+            if not sp:
+                (bad if _new else warns).append(f'그림 명세 없음: static/figs/{stem}.json (figkit make.py --site 로 WebP와 함께 만듦)')
+                continue
+            try:
+                _miss = fig_numbers_missing(json.load(open(sp, encoding='utf-8')), txt)
+            except Exception as _e:
+                bad.append(f'그림 명세 {stem}.json 을 읽지 못함: {_e}'); continue
+            if _miss: (bad if _new else warns).append(f'그림 {stem} 숫자가 리포트 본문·부록에 없음: {", ".join(_miss[:8])} (그림 숫자는 리포트 숫자만)')
     for m in re.finditer(r'[^\n]{0,12}(?<![\d~])[1-6]부(?=[에의는가를 .,)]|$)[^\n]{0,8}', story): bad.append(f"이야기형에 'N부' 언급(부 구분 없음): {m.group(0).strip()[:30]}"); break
     if re.search(r'^\*\*\d{4}\.\d{2}\.\d{2}[^*\n]*·', story, re.M): bad.append('이야기형 본문에 사건 카드 머리 → 시간순 문단으로')
     for l in story.split('\n'):

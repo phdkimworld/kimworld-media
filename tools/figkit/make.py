@@ -1,9 +1,13 @@
 """figkit — 리포트 본문 그림(피겨) 여러 장을 JSON 명세 하나로 만든다(운영자 지시 2026-11-15 ET "리포트 줄글로 쓰는 대신 피겨를 더 넣어서 이해를 도와줘").
 
-사용: python3 tools/figkit/make.py <figs.json> <out_dir>
-  → <out_dir>/<slug>-<n>.png (가로 1200px, 흰 바탕). 사이트 build.py(chart_dark.py)가 다크 화면용으로 자동 변환하므로
-    색은 chart_dark.INK 일곱 가지(글자 #0E1A2B, 설명 #5E6B7D, 막대 #C9D1DB, 강조 #E0A21B, 강조 숫자 #B07B0C, 기준선 #4F7FB8, 주석 #7F8A99)만 쓴다.
-  원고에는 ![캡션 — 무엇을 보면 되는지](/static/charts/<slug>-<n>.png). 그림 안 숫자는 리포트 본문·부록·sources 가 뒷받침하는 값만.
+사용: python3 tools/figkit/make.py <figs.json> <out_dir> [--site <사이트 폴더>] [--png]
+  → 그림마다 <out_dir>/<slug>-<n>.webp(정지 이미지: 다크 바탕, 가로 1200px, Noto Sans KR)와 <slug>-<n>.json(명세).
+    --site 면 사이트 static/charts/(WebP)·static/figs/(명세)에 바로 복사, --png 면 예전 흰 바탕 PNG 도 낸다.
+  한 명세, 세 출력(운영자 지시 2026-11-16 ET "애니메이션을 리포트에서 렌더링 되게"): 명세 = 그 그림 하나짜리 figkit 문서
+    (시세는 쓰인 구간만 [[날짜, 종가]]로 안에 넣음) + 영상 anim 틀 {tpl, data} + 웹 그리기 목록 web(1200 기준 좌표, 움직임 묶음 g).
+    리포트 웹 애니메이션(사이트 static/js/fig/fig.js)·영상 클립(slidekit anim.py fromfig <명세> <n>)·정지 이미지(명세를 이 도구에 다시 넣음).
+  색은 chart_dark.INK 일곱 가지만(흰 판: 글자 #0E1A2B, 설명 #5E6B7D, 막대 #C9D1DB, 강조 #E0A21B, 강조 숫자 #B07B0C, 기준선 #4F7FB8, 주석 #7F8A99 / 다크 판은 그 오른쪽 색).
+  원고에는 ![캡션 — 무엇을 보면 되는지](/static/charts/<slug>-<n>.webp). 그림 안 숫자는 리포트 본문·부록 숫자만(easy_check 가 명세와 대조).
 
 명세:
 {"slug": "smr-2026-11-2", "asof": "2026-11-13", "source": "나스닥 일별 종가",   # source·asof 는 그림마다 덮어쓸 수 있음
@@ -34,6 +38,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 # chart_dark.INK 와 같은 색만(다크 변환이 이 색을 기준으로 진하기를 거꾸로 구한다)
 TXT, SUB, BAR, HI, HIT, REF, NOTE = "#0E1A2B", "#5E6B7D", "#C9D1DB", "#E0A21B", "#B07B0C", "#4F7FB8", "#7F8A99"
+BG, KNOCK = "#FFFFFF", "#FFFFFF"  # 바탕, 사건 번호 동그라미 안 숫자(흰 바탕 판에서는 바탕색)
+# 다크 판(사이트 검은 바탕, chart_dark.INK 의 오른쪽 색과 같다): 정지 WebP·웹 애니메이션이 같은 색을 쓴다
+LIGHT = dict(TXT="#0E1A2B", SUB="#5E6B7D", BAR="#C9D1DB", HI="#E0A21B", HIT="#B07B0C", REF="#4F7FB8", NOTE="#7F8A99", BG="#FFFFFF", KNOCK="#FFFFFF")
+DARK = dict(TXT="#F2F4F7", SUB="#9AA5B4", BAR="#3B4554", HI="#F0B23A", HIT="#F5BC4A", REF="#7FA8DE", NOTE="#8C96A5", BG="#000000", KNOCK="#000000")
+
+
+def set_palette(dark: bool) -> None:
+    globals().update(DARK if dark else LIGHT)
 W, S, PAD = 1200, 2, 56
 FONT_DIRS = ["/usr/share/fonts/truetype/notokr/", "/usr/share/fonts/opentype/noto/"]
 
@@ -55,7 +67,11 @@ def F(weight: str, size: int):
     k = (weight, size)
     if k not in _FC:
         _FC[k] = _font(weight, size)
+        _FK[id(_FC[k])] = k
     return _FC[k]
+
+
+_FK: dict = {}  # 글꼴 객체 → (굵기, 크기): 웹 그리기 목록에 적는다
 
 
 class Canvas:
@@ -63,16 +79,34 @@ class Canvas:
 
     def __init__(self, h: int):
         self.h = h
-        self.img = Image.new("RGB", (W * S, h * S), "#FFFFFF")
+        self.img = Image.new("RGB", (W * S, h * S), BG)
         self.d = ImageDraw.Draw(self.img)
+        # 웹 애니메이션용 그리기 목록(1200px 좌표). g = 움직임 묶음(None: 처음부터 보임, 정수: 항목 차례, "line"·"end"·"ref"·"e<k>": 선 그래프)
+        self.ops: list = []
+        self.g = None
+        self.gx: dict = {}
 
-    def text(self, x, y, t, f, col=TXT, anchor="la"):
-        self.d.text((x * S, y * S), str(t), font=f, fill=col, anchor=anchor)
+    def _op(self, **o):
+        if self.g is not None:
+            o["g"] = self.g
+        self.ops.append(o)
+
+    def text(self, x, y, t, f, col=None, anchor="la"):
+        col = col or TXT
+        t = str(t)
+        self.d.text((x * S, y * S), t, font=f, fill=col, anchor=anchor)
+        if t.strip():
+            # 웹은 글자 기준선(baseline)으로 옮긴다: 기준점 anchor 의 글자 위끝 = 기준선 기준 글자 위끝
+            base = y + (f.getbbox(t, anchor=anchor)[1] - f.getbbox(t, anchor="ls")[1]) / S
+            wt, sz = _FK.get(id(f), ("reg", round(f.size / S)))
+            self._op(k="t", x=round(x, 1), y=round(base, 1), a={"l": "s", "m": "m", "r": "e"}[anchor[0]], b=1 if wt == "bold" else 0,
+                     s=sz, c=col, t=t, w=round(self.tw(t, f), 1))
 
     def tw(self, t, f) -> float:
         return self.d.textlength(str(t), font=f) / S
 
     def line(self, pts, col, w=2, dash=0):
+        self._op(k="l", p=[round(v, 1) for xy in pts for v in xy], c=col, w=w, **({"d": dash} if dash else {}))
         pts = [(x * S, y * S) for x, y in pts]
         if not dash:
             self.d.line(pts, fill=col, width=int(w * S), joint="curve")
@@ -85,6 +119,8 @@ class Canvas:
                 self.d.line([(x0 + (x1 - x0) * a, y0 + (y1 - y0) * a), (x0 + (x1 - x0) * b, y0 + (y1 - y0) * b)], fill=col, width=int(w * S))
 
     def rect(self, x0, y0, x1, y1, col, r=6):
+        # 웹: (x0, y0) 쪽이 막대의 뿌리(0 기준선) — 그 자리에서 (x1, y1) 쪽으로 자란다
+        self._op(k="r", x0=round(x0, 1), y0=round(y0, 1), x1=round(x1, 1), y1=round(y1, 1), c=col, r=r)
         if x1 < x0:
             x0, x1 = x1, x0
         if y1 < y0:
@@ -93,10 +129,18 @@ class Canvas:
         self.d.rounded_rectangle([x0 * S, y0 * S, x1 * S, y1 * S], radius=max(0, r) * S, fill=col)
 
     def dot(self, x, y, r, col, outline=None, w=0):
+        self._op(k="c", x=round(x, 1), y=round(y, 1), r=r, c=col)
         self.d.ellipse([(x - r) * S, (y - r) * S, (x + r) * S, (y + r) * S], fill=col, outline=outline, width=int(w * S))
 
     def save(self, path):
-        self.img.resize((W, self.h), Image.LANCZOS).save(path, optimize=True)
+        im = self.img.resize((W, self.h), Image.LANCZOS)
+        if path.endswith(".webp"):
+            im.save(path, "WEBP", quality=82, method=6)
+        else:
+            im.save(path, optimize=True)
+
+    def web(self) -> dict:
+        return {"w": W, "h": self.h, "ops": self.ops, **({"gx": self.gx} if self.gx else {})}
 
 
 def wrap(c: Canvas, t: str, f, maxw: float) -> list[str]:
@@ -280,6 +324,7 @@ def hbars(fig, doc, kind: str) -> Canvas:
     if neg or kind == "record":
         c.line([(zx, top - 6), (zx, top + rowh * len(items))], NOTE, 2)
     for i, (it, t) in enumerate(zip(items, texts)):
+        c.g = i
         y = top + i * rowh
         hi = it.get("hi")
         cy = y + (rowh / 2 if not it.get("sub") else rowh / 2)
@@ -317,11 +362,12 @@ def hbars(fig, doc, kind: str) -> Canvas:
         if vb != v:  # 잘린 막대: 끝에 두 줄 빗금
             for dx in (-14, -4):
                 xx = X(vb) + (dx if v > 0 else -dx)
-                c.line([(xx - 5, cy + bh / 2 + 4), (xx + 5, cy - bh / 2 - 4)], "#FFFFFF", 4)
+                c.line([(xx - 5, cy + bh / 2 + 4), (xx + 5, cy - bh / 2 - 4)], KNOCK, 4)
         if v >= 0:
             c.text(X(vb) + 12, cy, t, fv, HIT if hi else TXT, anchor="lm")
         else:
             c.text(X(vb) - 12, cy, t, fv, HIT if hi else TXT, anchor="rm")
+    c.g = None
     if fig.get("axis_note"):
         c.text(PAD, top + rowh * len(items) + 14, fig["axis_note"], F("reg", 25), SUB)
     draw_footer(c, fig, doc)
@@ -349,6 +395,7 @@ def trend(fig, doc) -> Canvas:
     bw = min(120, cw * 0.58)
     c.line([(PAD, Y(0)), (W - PAD, Y(0))], NOTE, 2)
     for i, it in enumerate(items):
+        c.g = i
         cx = PAD + cw * (i + 0.5)
         v = it["value"]
         hi = it.get("hi")
@@ -361,10 +408,12 @@ def trend(fig, doc) -> Canvas:
             c.text(cx, Y(v) + 10, t, fv, HIT if hi else TXT, anchor="mt")
         for k, ln in enumerate(wrap(c, it["label"], fl, cw - 12)):
             c.text(cx, bot + 22 + k * 36 + (0 if vmin >= 0 else 0), ln, fl, TXT, anchor="mt")
+    c.g = "ref"
     if ref:
         y = Y(ref["v"])
         c.line([(PAD, y), (W - PAD, y)], REF, 3, dash=8)
         c.text(W - PAD, y - 10, ref["label"], F("bold", 26), REF, anchor="rs")
+    c.g = None
     draw_footer(c, fig, doc)
     return c
 
@@ -424,16 +473,21 @@ def price_events(fig, doc, base_dir) -> Canvas:
     x1 = W - PAD - 120
     X, Y = _axes(c, fig, lo - pad, hi + pad, x0, x1, top, bot, unit, dec, dates)
     if ref:
+        c.g = "ref"
         y = Y(ref["v"])
         c.line([(x0, y), (x1, y)], REF, 3, dash=8)
     idx = {d: i for i, d in enumerate(dates)}
-    for e in events:  # 사건 세로 점선
+    for k, e in enumerate(events, 1):  # 사건 세로 점선
         i = idx.get(e["date"])
         if i is None:
             continue
+        c.g = f"e{k}"
+        c.gx[c.g] = round(X(i), 1)
         c.line([(X(i), top), (X(i), bot)], NOTE, 1.5, dash=5)
+    c.g = "line"
     c.line([(X(i), Y(v)) for i, v in enumerate(vals)], TXT, 4)
     # 마지막 값
+    c.g = "end"
     c.dot(X(len(vals) - 1), Y(vals[-1]), 8, HI)
     c.text(X(len(vals) - 1) + 14, Y(vals[-1]), fmt(vals[-1], unit if fig.get("last_unit", True) else "", dec), F("bold", 28), HIT, anchor="lm")
     # 사건 번호 동그라미(겹치면 위로 비켜 그림)
@@ -443,6 +497,7 @@ def price_events(fig, doc, base_dir) -> Canvas:
         if i is None:
             raise SystemExit(f"사건 날짜가 시계열에 없습니다: {e['date']}")
         x, y = X(i), Y(vals[i])
+        c.g = f"e{k}"
         c.dot(x, y, 7, TXT)
         above = e.get("pos", "above") == "above"
         by = y - 40 if above else y + 40
@@ -453,19 +508,22 @@ def price_events(fig, doc, base_dir) -> Canvas:
         placed.append((x, by))
         c.line([(x, y), (x, by)], TXT, 2)
         c.dot(x, by, 19, HI)
-        c.text(x, by, str(k), F("bold", 26), "#FFFFFF", anchor="mm")
+        c.text(x, by, str(k), F("bold", 26), KNOCK, anchor="mm")
     # 아래 사건 목록(기준선 설명은 맨 위 한 줄: 선 위에 쓰면 가격선과 겹친다)
     y = leg_top
     if ref:
+        c.g = "ref"
         c.line([(PAD + 2, y + 20), (PAD + 36, y + 20)], REF, 4, dash=5)
         c.text(PAD + 52, y + 2, ref["label"], F("bold", 27), REF)
         y += 40
     for k, e in enumerate(events, 1):
+        c.g = f"e{k}"
         c.dot(PAD + 18, y + 19, 17, HI)
-        c.text(PAD + 18, y + 19, str(k), F("bold", 23), "#FFFFFF", anchor="mm")
+        c.text(PAD + 18, y + 19, str(k), F("bold", 23), KNOCK, anchor="mm")
         for j, ln in enumerate(wrap(c, e["label"], fe, W - 2 * PAD - 60)):
             c.text(PAD + 52, y + 2, ln, F("bold", 27) if j == 0 and False else fe, TXT)
             y += 40
+    c.g = None
     draw_footer(c, fig, doc)
     return c
 
@@ -505,9 +563,11 @@ def relative(fig, doc, base_dir) -> Canvas:
     ends = []
     order = sorted(range(len(ser)), key=lambda k: -k)  # 강조선(첫 줄)을 맨 위에
     for k in order:
+        c.g = "line"
         s, r = ser[k]
         col, w = styles[min(k, len(styles) - 1)] if not s.get("color") else ({"hi": HI, "ref": REF, "sub": SUB, "note": NOTE}[s["color"]], 4)
         c.line([(X(di[d]), Y(v)) for d, v in r], col, w)
+        c.g = "end"
         c.dot(X(di[r[-1][0]]), Y(r[-1][1]), w + 2, col)
         ends.append([Y(r[-1][1]), s, r, col, k])
     ends.sort(key=lambda e: e[0])
@@ -517,6 +577,7 @@ def relative(fig, doc, base_dir) -> Canvas:
     for y, s, r, col, k in ends:
         t = f"{s['name']} {fmt(r[-1][1] - 100, '%', 1, sign=True)}"
         c.text(x1 + 16, y, t, fe, HIT if col == HI else (TXT if col != REF else REF), anchor="lm")
+    c.g = None
     draw_footer(c, fig, doc)
     return c
 
@@ -537,24 +598,110 @@ def render(fig, doc, base_dir) -> Canvas:
     return relative(fig, doc, base_dir)
 
 
+FIG2TPL = {"compare": "compare_bars", "relative": "relative_lines", "record": "record_bars", "scenarios": "scenario_bars", "trend": "trend_line", "price_events": "live_chart"}
+
+
+def _md(s: str) -> str:
+    return "%d.%d" % (int(s[5:7]), int(s[8:10])) if len(s) >= 10 and s[4] == "-" else s
+
+
+def inline_fig(fig, base_dir) -> dict:
+    """시세 파일을 읽어 그림에 쓰인 구간만 [[날짜, 종가]]로 넣는다(사이트에 올리는 명세가 혼자서 다시 그려지게)."""
+    f = json.loads(json.dumps(fig))
+    if f["type"] == "price_events":
+        f["series"] = [[d, v] for d, v in load_series(fig["series"], base_dir)]
+    elif f["type"] == "relative":
+        for s in f["series"]:
+            spec = dict(s["data"]) if isinstance(s["data"], dict) else s["data"]
+            if isinstance(spec, dict):
+                spec.setdefault("from", fig.get("base"))
+                spec.setdefault("to", fig.get("to"))
+            s["data"] = [[d, v] for d, v in load_series(spec, base_dir)]
+    return f
+
+
+def anim_data(fig, doc) -> tuple[str, dict]:
+    """영상 anim 틀 입력 {tpl, data}(slidekit anim.py fromfig 와 같은 규칙). fig 는 inline_fig 결과."""
+    t = fig["type"]
+    asof = fig.get("asof", doc.get("asof"))
+    src = " · ".join(x for x in [fig.get("source", doc.get("source")), ("기준 " + asof) if asof else ""] if x)
+    out = {"title": " ".join(fig["title"]) if isinstance(fig.get("title"), list) else fig.get("title", ""), "source": src}
+    for k in ("sub", "note", "unit", "decimals"):
+        if k in fig:
+            out[k] = fig[k]
+    if t in ("compare", "record", "trend"):
+        out["items"] = fig["items"]
+    if t == "trend" and fig.get("ref"):
+        out["ref"] = fig["ref"]
+    if t == "scenarios":
+        out["items"] = fig["items"]
+        out["decision"] = fig.get("decision", "")
+    if t == "relative":
+        ser = []
+        for s in fig["series"]:
+            rows = [(d, v) for d, v in load_series(s["data"], "") if fig["base"] <= d <= fig.get("to", "9999")]
+            ser.append({"name": s["name"], "points": [[_md(d), v] for d, v in rows], **({"hi": True} if s.get("hi") or not ser else {})})
+        out["series"] = ser
+        out["base_label"] = _md(fig["base"]) + " = 100"
+    if t == "price_events":
+        rows = dict(load_series(fig["series"], ""))
+        pts = []
+        for e in fig.get("events", [])[:8]:
+            lab = e["label"]
+            lab = lab.split(" ", 1)[1] if lab.split(" ", 1)[0].replace(".", "").isdigit() and " " in lab else lab
+            pts.append([_md(e["date"]), rows[e["date"]], lab])
+        out["points"] = pts
+        out["unit"] = fig.get("unit", "달러")
+        out.pop("decimals", None)
+        if fig.get("ref"):
+            out["base"] = {"value": fig["ref"]["v"], "label": fig["ref"].get("label", "")}
+    return FIG2TPL[t], out
+
+
 def main(argv):
-    if len(argv) < 3:
+    """그림마다 ① 정지 이미지 <slug>-<n>.webp(다크, 가로 1200) ② 명세 <slug>-<n>.json 을 낸다(--png 면 흰 바탕 PNG 도).
+    명세 = 그 그림 하나짜리 figkit 문서(시세는 쓰인 구간만 안에 넣음) + 영상 틀 {tpl, data} + 웹 그리기 목록 web.
+    그래서 같은 명세로 영상 클립(slidekit anim.py fromfig <명세> <n>)·리포트 웹 애니메이션·정지 이미지(이 도구에 명세를 다시 넣음)를 모두 만든다.
+    --site <사이트 폴더>: static/charts/(WebP)·static/figs/(명세)에 바로 복사."""
+    args = [a for a in argv[1:] if not a.startswith("--")]
+    site = argv[argv.index("--site") + 1] if "--site" in argv else ""
+    if site in args:
+        args.remove(site)
+    if len(args) < 2:
         print(__doc__)
         return 2
-    spec_p, out = argv[1], argv[2]
+    spec_p, out = args[0], args[1]
     doc = json.load(open(spec_p, encoding="utf-8"))
     os.makedirs(out, exist_ok=True)
     base_dir = os.path.dirname(os.path.abspath(spec_p))
     made = []
     for i, fig in enumerate(doc["figs"], 1):
         n = fig.get("n", i)
-        name = fig.get("file") or f"{doc['slug']}-{n}.png"
-        c = render(fig, doc, base_dir)
-        p = os.path.join(out, name)
-        c.save(p)
-        made.append(p)
-        print(f"saved {p} {W}x{c.h}")
-    print(f"FIGKIT_OK {len(made)}장")
+        stem = (fig.get("file") or f"{doc['slug']}-{n}").rsplit(".", 1)[0]
+        fig_in = inline_fig(fig, base_dir)
+        if "--png" in argv:
+            set_palette(False)
+            render(fig_in, doc, base_dir).save(os.path.join(out, stem + ".png"))
+        set_palette(True)
+        c = render(fig_in, doc, base_dir)
+        wp = os.path.join(out, stem + ".webp")
+        c.save(wp)
+        tpl, data = anim_data(fig_in, doc)
+        one = {"slug": doc["slug"], "n": n, **{k: doc[k] for k in ("asof", "source") if k in doc}, "figs": [fig_in],
+               "tpl": tpl, "data": data, "web": c.web()}
+        jp = os.path.join(out, stem + ".json")
+        with open(jp, "w", encoding="utf-8") as fh:
+            json.dump(one, fh, ensure_ascii=False, separators=(",", ":"))
+        made.append((wp, jp))
+        print(f"saved {wp} {W}x{c.h} {os.path.getsize(wp) // 1024}KB · {jp} {os.path.getsize(jp) // 1024}KB ({tpl})")
+        if site:
+            import shutil
+            for src, sub in ((wp, "charts"), (jp, "figs")):
+                d = os.path.join(site, "static", sub)
+                os.makedirs(d, exist_ok=True)
+                shutil.copyfile(src, os.path.join(d, os.path.basename(src)))
+    set_palette(False)
+    print(f"FIGKIT_OK {len(made)}장" + (f" → {site}/static/charts·figs" if site else ""))
     return 0
 
 
