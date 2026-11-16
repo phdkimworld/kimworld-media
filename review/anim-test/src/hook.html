@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- 시험 장면 2: 칠판 훅(WebGL 칠판 바탕 + Canvas 2D 분필 글씨). t초를 받아 그 순간을 그대로 그린다(결정적, 무작위는 고정 시드).
+     숫자: plug-2026-11-3.md — '11월 10~13일 SEC 공시 0건', '실적 뒤 3거래일 -18.7%' -->
+<link rel="stylesheet" href="../lib/font/package/400.css">
+<style>*{margin:0;padding:0}html,body{width:1920px;height:1080px;overflow:hidden;background:#1d3328}canvas{position:absolute;left:0;top:0}</style>
+</head><body><canvas id="gl" width="1920" height="1080"></canvas><canvas id="cv" width="1920" height="1080"></canvas>
+<script>
+const W=1920,H=1080, FONT='"Nanum Pen Script"';
+// ---------- 1) WebGL 칠판 바탕 ----------
+const glc=document.getElementById('gl'); const gl=glc.getContext('webgl',{preserveDrawingBuffer:true,antialias:false});
+let GLINFO='none', drawBoard;
+if(gl){
+  const dbg=gl.getExtension('WEBGL_debug_renderer_info'); GLINFO=dbg?gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER);
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`precision highp float;uniform vec2 R;uniform float T;
+  float h(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+  float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+  float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*n(p);p*=2.03;a*=.5;}return v;}
+  void main(){vec2 uv=gl_FragCoord.xy/R; vec2 q=uv*vec2(R.x/R.y,1.);
+    vec3 base=vec3(.105,.205,.165);
+    float smudge=fbm(q*2.2+vec2(T*.02,0.));            // 지우개 자국
+    float streak=fbm(vec2(q.x*9.,q.y*1.3)+3.);           // 가로 결
+    float dust=step(.985,h(floor(gl_FragCoord.xy/2.)));   // 분필 먼지 점
+    vec3 c=base+vec3(.06,.07,.065)*(smudge-.45)*1.6+vec3(.025)*(streak-.5)+vec3(.05)*dust;
+    float vig=smoothstep(1.25,.35,length(uv-.5)*1.4); c*=mix(.62,1.,vig);
+    gl_FragColor=vec4(c,1.);}`;
+  const sh=(t,s)=>{const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw gl.getShaderInfoLog(o);return o};
+  const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);gl.useProgram(pr);
+  const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);
+  const lp=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+  const uR=gl.getUniformLocation(pr,'R'),uT=gl.getUniformLocation(pr,'T');
+  drawBoard=t=>{gl.viewport(0,0,W,H);gl.uniform2f(uR,W,H);gl.uniform1f(uT,t);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);gl.finish();};
+}else{ // 폴백: 2D 그라데이션
+  const c2=glc.getContext('2d');drawBoard=()=>{const g=c2.createRadialGradient(W/2,H/2,200,W/2,H/2,1100);g.addColorStop(0,'#24402f');g.addColorStop(1,'#10201a');c2.fillStyle=g;c2.fillRect(0,0,W,H)};
+}
+// ---------- 2) 분필 글씨(Canvas 2D) ----------
+const cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+let seed=1;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+const ease=x=>x<0?0:x>1?1:1-Math.pow(1-x,3), clamp=x=>Math.max(0,Math.min(1,x));
+// 글자 블록: 미리 오프스크린에 그리고 분필 결(구멍)을 뚫어 둔다
+function chalkBlock(text,size,color,rot){
+  const c=document.createElement('canvas'),x=c.getContext('2d');x.font=`${size}px ${FONT}`;
+  const w=Math.ceil(x.measureText(text).width)+40,h=Math.ceil(size*1.35);c.width=w;c.height=h;
+  x.font=`${size}px ${FONT}`;x.textBaseline='middle';x.fillStyle=color;x.shadowColor=color;x.shadowBlur=size*.04;
+  x.fillText(text,20,h/2);x.globalAlpha=.35;x.fillText(text,21.5,h/2+1.2);x.globalAlpha=1;
+  x.globalCompositeOperation='destination-out';seed=text.length*97+size;
+  for(let i=0;i<w*h/55;i++){x.globalAlpha=.25+rnd()*.75;x.fillRect(rnd()*w,rnd()*h,1+rnd()*2.2,1+rnd()*1.4);}
+  return {c,w,h,rot:rot||0};
+}
+let B={};
+function build(){
+  B.top=chalkBlock('플러그 파워 · 11월 10일 → 13일',64,'#e9efe6',-.01);
+  B.l1=chalkBlock('회사 공시',96,'#f4f6f0',-.02);
+  B.l2=chalkBlock('0건',300,'#ffffff',-.03);
+  B.vs=chalkBlock('그런데',90,'#ffe08a',.02);
+  B.r1=chalkBlock('3거래일 주가',96,'#f4f6f0',.01);
+  B.r2=chalkBlock('-18.7%',270,'#ff8f8f',-.02);
+  B.q=chalkBlock('새 소식 없이, 왜?',120,'#ffe08a',-.015);
+}
+// 왼쪽에서 오른쪽으로 '써지는' 모습: 비스듬한 경계로 잘라 그린다
+function write(b,cx,cy,t0,t1,t){const p=clamp((t-t0)/(t1-t0));if(p<=0)return;
+  ctx.save();ctx.translate(cx,cy);ctx.rotate(b.rot);ctx.translate(-b.w/2,-b.h/2);
+  const xr=p*(b.w+60);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(xr,0);ctx.lineTo(xr-60,b.h);ctx.lineTo(0,b.h);ctx.closePath();ctx.clip();
+  ctx.drawImage(b.c,0,0);ctx.restore();
+  if(p<1){ctx.save();ctx.translate(cx,cy);ctx.rotate(b.rot);ctx.fillStyle='rgba(255,255,255,.9)';ctx.beginPath();ctx.arc(-b.w/2+xr-30,-b.h*.1+Math.sin(t*40)*b.h*.2,7,0,7);ctx.fill();ctx.restore();} // 분필 끝
+}
+// 손으로 그린 동그라미/밑줄: 진행률만큼만 선을 긋는다(흔들림은 고정 시드)
+function chalkStroke(ptsFn,n,p,color,lw){if(p<=0)return;const m=Math.max(2,Math.floor(n*p));
+  for(let pass=0;pass<2;pass++){ctx.beginPath();for(let i=0;i<m;i++){const [x,y]=ptsFn(i/n,pass);i?ctx.lineTo(x,y):ctx.moveTo(x,y)}
+    ctx.strokeStyle=color;ctx.globalAlpha=pass?.45:.9;ctx.lineWidth=pass?lw*.6:lw;ctx.lineCap='round';ctx.lineJoin='round';ctx.stroke();}ctx.globalAlpha=1;}
+const ring=(cx,cy,rx,ry)=>(u,pass)=>{const a=-2.6+u*Math.PI*2.25;const wob=1+.035*Math.sin(u*17+pass*2)+.02*Math.sin(u*41);return [cx+Math.cos(a)*rx*wob+pass*3,cy+Math.sin(a)*ry*wob+pass*2]};
+const under=(x0,x1,y)=>(u,pass)=>[x0+(x1-x0)*u,y+Math.sin(u*9+pass)*5+u*8+pass*3];
+function frame(t){
+  drawBoard(t); ctx.clearRect(0,0,W,H);
+  // 칠판 테두리(나무)
+  ctx.fillStyle='#5a3d24';ctx.fillRect(0,0,W,26);ctx.fillRect(0,H-26,W,26);ctx.fillRect(0,0,26,H);ctx.fillRect(W-26,0,26,H);
+  ctx.fillStyle='rgba(0,0,0,.25)';ctx.fillRect(26,26,W-52,6);
+  write(B.top,960,120,-1,0,t);  // 첫 프레임부터 보이게(빈 화면 판정 방지)
+  write(B.l1,500,300,-1,0,t);
+  write(B.l2,500,510,0.90,1.55,t);
+  write(B.vs,960,470,1.75,2.05,t);
+  write(B.r1,1420,300,1.95,2.50,t);
+  write(B.r2,1420,510,2.45,3.25,t);
+  chalkStroke(under(330,680,690),60,ease((t-3.30)/0.45),'#f4f6f0',12);
+  chalkStroke(ring(1420,515,330,170),90,ease((t-3.40)/0.70),'#ff8f8f',11);
+  write(B.q,960,880,3.95,4.60,t);
+  // 장면 끝 0.15초는 그대로 둔다(다음 컷과 잇기 쉽게)
+}
+window.GLINFO=()=>GLINFO;
+window.scene={dur:5.0,ready:(async()=>{await document.fonts.load(`100px ${FONT}`,'플러그 파워 회사 공시 0건 그런데 3거래일 주가 -18.7% 새 소식 없이, 왜? 11월 10일 → 13일 ·');await document.fonts.ready;build();frame(0);})(),
+  seek(t){frame(t)}};
+</script></body></html>
