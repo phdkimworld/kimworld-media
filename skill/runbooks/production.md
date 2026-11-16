@@ -46,7 +46,7 @@ requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 too
   ① 단계가 끝날 때마다(조사·떡밥 / 리포트 원고 / 대본·slides.json / 설명·첫 댓글·메타 / 쇼츠 대본) `bash tools/wip_save.sh <티커> [작업폴더] "<단계>"` — 텍스트 산출물을 production/wip/<티커>/ 에 커밋·푸시. 맥 TTS 작업 번호도 메모에 남긴다(음성은 중계 runs 브랜치에 남는다).
   ② 제작 점검·이어서 만들 때 작업 폴더가 없으면 먼저 `bash tools/wip_restore.sh <티커>` 로 되살리고 그 단계부터 잇는다. 영상은 slides.json+음성으로 다시 합성.
   ③ 도구(/home/claude/slidekit 등)는 hourly.py·prod_check.py가 없으면 tools/restore_workspace.sh 로 자동으로 다시 깐다.
-  ④ 리포트는 원고가 끝나면 바로 사이트 main에 발행해 두고(사이트가 곧 저장소), 업로드는 끝나는 즉시. 회차가 완료되면 production/wip/<티커>/ 는 지운다.
+  ④ 리포트는 원고가 끝나면 바로 사이트 main에 발행해 두고(사이트가 곧 저장소), 업로드는 끝나는 즉시. 회차가 완료되면 production/wip/<티커>/ 는 지우고, 자기 사이트 worktree도 `git -C /home/user/kimworld-site worktree remove --force <경로>`로 지운다(11-16: 끝난 worktree 16개가 약 13GB를 차지해 디스크 9GB까지 줄었음).
 - **인스타 DM 리포트 안내(11-12 운영자 지시 — 보류: Meta 앱 개발 모드라 일반 사용자 DM 불가, 앱 검수 전까지 캡션에 넣지 않는다)**: 인스타 캡션(카드뉴스·릴스)과 카드뉴스 마지막 장에 '💬 DM이나 댓글로 \'리포트\'(또는 종목 이름)를 남기면 무료 리포트 링크를 보내 드려요' 한 줄(프로필 링크 줄 바로 위). 단 사이트의 DM 자동 답장이 켜진 뒤부터(INSTAGRAM.md 12-3, 켜지기 전 약속 금지) — 켜졌는지는 사이트 social/dm/ 기록과 AGENTS.md로 확인.
 - **실시간 알림 안내(11-11 운영자 지시, SKILL V3 닫기)**: 롱폼 닫기 안내(ad), 설명란, 첫 댓글, Threads·페이스북 글 끝에 '실시간 알림은 인스타그램 김박사 월드 채널 참여(https://instagram.com/drkimworld) 또는 홈페이지(https://drkimworld.com)에서 앱 설치' 한 줄. 인스타 글은 '프로필의 채널 참여 또는 프로필 링크에서 앱 설치'. '가입' 대신 '참여'.
 - **모든 콘텐츠 가독성(11-11 운영자 지시, SKILL 0.2)**: R1.5 일곱 원칙을 리포트뿐 아니라 대본·쇼츠·슬라이드·제목·설명·첫 댓글·Threads·인스타·페이스북·카드뉴스·블로거·댓글 답글 모두에 쓰는 자리에서 적용. 업로드 전 `python3 tools/plain_check.py <video 폴더> <upload_meta.json>` PLAIN_OK, SNS는 queue_check(plain_check 포함) QUEUE_OK.
