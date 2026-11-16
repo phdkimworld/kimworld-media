@@ -1,0 +1,272 @@
+{
+ "ticker": "PLUG",
+ "name": "플러그 파워",
+ "group": "B",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "수소",
+   "subtitle": "**수소** 연료전지와 전해조를 파는\n미국 회사입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "플러그 파워",
+     "at": 0.0,
+     "y": 100,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "수소 연료전지",
+     "at": 0.25,
+     "y": 260,
+     "size": 120,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "전해조 · 수소 연료",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "미국 뉴욕주",
+     "at": 0.5,
+     "y": 480,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "PLUG",
+     "at": 0.8,
+     "y": 640,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "9.0%",
+   "subtitle": "실적 다음 날 주가는\n**9.0%** 하락했습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.09 장 마감 뒤 실적",
+     "at": 0.0,
+     "y": 100,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-9.0%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "1.50 → 1.365달러",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "실적 첫날",
+     "at": 0.45,
+     "y": 480,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "11월 10일",
+     "at": 0.72,
+     "y": 640,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "18.7%",
+   "subtitle": "그 뒤 3거래일 **18.7%** 더 빠졌고\n회사 공시는 없었습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.10 → 11.13",
+     "at": 0.0,
+     "y": 100,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-18.7%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "1.365 → 1.11달러",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "SEC 공시 0건",
+     "at": 0.45,
+     "y": 480,
+     "size": 84,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "2025년 6월 뒤 최저",
+     "at": 0.72,
+     "y": 640,
+     "size": 72,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "3.5%",
+   "subtitle": "같은 3거래일 블룸 에너지는\n**3.5%** 상승했습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "같은 연료전지 회사",
+     "at": 0.0,
+     "y": 100,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+3.5%",
+     "at": 0.15,
+     "y": 260,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "블룸 에너지",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "플러그 파워 -18.7%",
+     "at": 0.45,
+     "y": 480,
+     "size": 80,
+     "color": "red",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "11.10 → 11.13",
+     "at": 0.72,
+     "y": 640,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "6.6%",
+   "subtitle": "과거 6번은 첫날 뒤 3거래일\n많아야 **6.6%** 하락",
+   "els": [
+    {
+     "kind": "text",
+     "text": "실적 첫날 5% 넘게 내린 6번",
+     "at": 0.0,
+     "y": 100,
+     "size": 64,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "최대 -6.6%",
+     "at": 0.15,
+     "y": 260,
+     "size": 140,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "첫날 → 4거래일째",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "이번 -18.7%",
+     "at": 0.45,
+     "y": 480,
+     "size": 96,
+     "color": "red",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "기록 밖",
+     "at": 0.72,
+     "y": 640,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "새 소식",
+   "subtitle": "**새 소식**도 없는데\n무엇에 밀려 내려갔을까요?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "12월 8일 종가는?",
+     "opts": [
+      "1.11달러 위",
+      "1.11달러 아래",
+      "새 주식 공급 소식"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "12월 8일 종가는?",
+     "opts": [
+      "1.11달러 위",
+      "1.11달러 아래",
+      "새 주식 공급 소식"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
