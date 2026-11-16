@@ -45,6 +45,8 @@ python3 /home/user/kimworld-media/tools/poll_sync_check.py . "$S" || { echo "CHA
 # SNS 대기열 미리 검사(73회차 NBIS: queue_check 8건이 업로드 뒤에야 걸림) — ../sns/mk_queue.py가 있으면 가짜 폴더에서 queue_check
 [ -f ../sns/mk_queue.py ] && { python3 /home/user/kimworld-media/tools/queue_dry.py ../sns/mk_queue.py || { echo "CHAIN_FAIL queue_dry(SNS 대기열 문구, 73회차 NBIS 교훈)"; exit 1; }; }
 R=$(ls ../report/*-20*.md 2>/dev/null | head -1)
+# 지난 예측 성적 숫자가 리포트·설명란·고정댓글·쇼츠·SNS·카드에서 같은지(94회차 JOBY)
+[ -n "$R" ] && { python3 /home/user/kimworld-media/tools/prev_score_sync_check.py .. "$R" || { echo "CHAIN_FAIL prev_score_sync(지난 예측 성적 숫자가 산출물마다 다름)"; exit 1; }; }
 if [ -n "$R" ]; then
   python3 /home/user/kimworld-media/tools/num_check.py slides.json "$R" > num_check.log 2>&1 || { echo "CHAIN_FAIL num_check(화면 숫자가 리포트에 없음·계산 불일치)"; cat num_check.log | tail -10; exit 1; }
   tail -1 num_check.log
@@ -71,6 +73,8 @@ echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }
 if [ -n "$S" ]; then
   wait
   cd "$S" && python3 /home/user/kimworld-site/tools/shorts/make_shorts.py shorts.json shorts_raw.wav "${T}_shorts.mp4" > render.log 2>&1; tail -1 render.log
+  # 87회차 GPUS: 쇼츠 렌더가 AssertionError로 죽었는데 CHAIN_DONE이 나옴(93회차 PLUG 검사로 추가) — 렌더 오류·옛 mp4를 막는다
+  { [ -s "${T}_shorts.mp4" ] && [ "${T}_shorts.mp4" -nt shorts.json ] && ! grep -qE "Traceback|AssertionError" render.log; } || { echo "CHAIN_FAIL shorts_render(render.log 오류 또는 새 mp4 없음)"; tail -3 render.log; exit 1; }
   [ -f mk_meta.py ] || { echo "CHAIN_FAIL shorts mk_meta.py 없음(쇼츠 video_check를 못 함 — 업로드 전에 만들 것)"; exit 1; }
   python3 mk_meta.py PLACEHOLDER > /dev/null && VC=$(python3 /home/user/kimworld-media/tools/video_check.py shorts "${T}_shorts.mp4" shorts.json upload_meta.json 2>&1); echo "$VC" | tail -2
   echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check shorts"; exit 1; }

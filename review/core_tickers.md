@@ -28,7 +28,7 @@
 시리즈 이름은 재생목록 `<시리즈 이름> 미스터리 추적`과 제목 앞부분 `<시리즈 이름>(<티커>) 미스터리`에 그대로 쓴다(R4, 제목 앞부분 고정).
 
 ## 매주 월요일 갱신 (권고안 5장 · 월요일 첫 제작 점검에서)
-1. vidIQ `channel_videos`(롱폼·쇼츠 최신 50편씩)로 지난 2주 영상 조회를 받는다. 세션에 vidIQ가 없으면 `stats_snapshots.jsonl` 마지막 줄과 사이트 리포트의 `youtube_id`로 대신한다.
+1. `python3 tools/core_weekly.py`(STATE 롱폼 ID + stats_snapshots.jsonl 마지막 줄로 2·3번 표와 넣기·빼기 후보를 한 번에, 93회차) 또는 vidIQ `channel_videos`(롱폼·쇼츠 최신 50편씩)로 지난 2주 영상 조회를 받는다. 세션에 vidIQ가 없으면 `stats_snapshots.jsonl` 마지막 줄과 사이트 리포트의 `youtube_id`로 대신한다.
 2. 핵심 종목 / 새 종목으로 나눈 표(편수·조회 합·편당 중앙값)를 `review/insights.md`에 한 줄 요약과 함께 남긴다.
 3. 기준대로 넣고 뺀 뒤 아래 갱신 기록에 한 줄. 표가 바뀌면 커밋·푸시.
 
