@@ -79,3 +79,10 @@ PLUG 93회차 실제 음성·slides.json에 훅(0~10.9초 hero 자리)과 차트
 
 ## 정식 반영 (2026-11-16, 운영자 "고치고 적용")
 사이트 저장소 `tools/slidekit`에 `anim.py`·`templates/anim/`(live_chart·chalk_hook, GSAP 3.12.5·손글씨 글꼴 동봉)로 넣었다. 박자 맞춤(`beats` → 문장 시작 시각), 첫 프레임 내용·컷 시작, 겹침 검사(ANIM_FAIL), segments.json `anim` 메타를 video_check·최장 정지·still_check가 읽음, 훅 숫자는 고딕. 지침은 SKILL V6.8. PLUG 93회차 음성으로 다시 합성: video_check 통과(빈 화면 0초, 최장 정지 13초, 움직이는 장면 2컷), 합성 399초.
+
+## anim 확대 합성 시간 (2026-11-16, 운영자 "도움이 될 거 같은 장면 전부")
+같은 IREN 96회차 롱폼(약 10분 2초, 장면 140개, anim 11컷·프레임 4,480장)을 4코어 컨테이너에서 두 방식으로 합성했다.
+- 예전 방식(한 브라우저, 프레임 전부 순서대로): **2,046초(약 34분)** — 앞 10분쯤은 사이트 테스트와 겹침
+- 새 방식(코어 수만큼 브라우저 4개로 나눠 찍기 + 움직임 없는 프레임은 앞 프레임 재사용, 4,480장 중 1,588장만 새로 찍음): **630초(약 10.5분)**, 그중 anim 캡처 266초
+- 정리: 10분 영상 anim 11컷 기준 합성 약 3.2배 빨라짐. 컷 수가 늘수록 anim 캡처는 '새로 찍는 프레임 수 ÷ 코어 수'에 비례한다
+- 새 틀 5개(compare_bars·relative_lines·record_bars·scenario_bars·trend_line)는 BTQ 95·SERV 회차 그림 명세(figs.json)로 `anim.py fromfig` → `preview` 시험, 모두 ANIM_OK(겹침 3건을 이때 잡아 틀에서 고침)
