@@ -30,6 +30,15 @@ def strings(o):
     if isinstance(o, str):
         yield o
     elif isinstance(o, dict):
+        if isinstance(o.get('points'), list) and any(isinstance(x, list) for x in o['points']):
+            # anim live_chart 패널은 점마다 '기준 대비 %'를 계산해 띄운다(95회차 BTQ: -15.7% 등 리포트에 없던 값이 화면에) → 그 값도 대조
+            pts = [x for x in o['points'] if isinstance(x, list) and len(x) > 1 and isinstance(x[1], (int, float))]
+            ref = (o.get('base') or {}).get('value') if isinstance(o.get('base'), dict) else None
+            ref = ref or (pts[0][1] if pts else None)
+            for x in pts[1:] if not o.get('base') else pts:
+                if ref and x[1] != ref:
+                    pc = (x[1] / ref - 1) * 100
+                    yield f"{'+' if pc > 0 else ''}{pc:.1f}%"
         for k, v in o.items():
             if k in ('beats',) or k.endswith('_beat'):
                 continue  # anim 박자(문장 번호)
