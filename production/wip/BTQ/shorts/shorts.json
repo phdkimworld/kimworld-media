@@ -1,0 +1,246 @@
+{
+ "ticker": "BTQ",
+ "name": "BTQ 테크놀로지스",
+ "group": "B",
+ "cta": "풀영상 ▶ 관련 영상",
+ "scenes": [
+  {
+   "em": "보안 칩",
+   "subtitle": "양자컴퓨터 시대의 **보안 칩**을\n만드는 캐나다 회사입니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "비티큐 테크놀로지스",
+     "at": 0.0,
+     "y": 60,
+     "size": 76,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "보안 칩",
+     "at": 0.2,
+     "y": 170,
+     "size": 140,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "양자컴퓨터 시대의 암호",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "캐나다 밴쿠버",
+     "at": 0.45,
+     "y": 390,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "BTQ",
+     "at": 0.65,
+     "y": 500,
+     "size": 100,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "나스닥 상장",
+     "at": 0.85,
+     "y": 610,
+     "size": 72,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "17.8%",
+   "subtitle": "두 거래일 **17.8%** 내려\n상장 뒤 최저 1.43달러",
+   "els": [
+    {
+     "kind": "text",
+     "text": "11.11 → 11.13",
+     "at": 0.0,
+     "y": 60,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-17.8%",
+     "at": 0.15,
+     "y": 170,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "1.74 → 1.43달러",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "상장 뒤 최저",
+     "at": 0.4,
+     "y": 420,
+     "size": 90,
+     "color": "yellow",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "1.43달러",
+     "at": 0.65,
+     "y": 540,
+     "size": 90,
+     "color": "white",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "15.2%",
+   "subtitle": "같은 두 거래일 아이온큐도\n**15.2%** 내렸습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "업종 대표",
+     "at": 0.0,
+     "y": 60,
+     "size": 80,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "-15.2%",
+     "at": 0.15,
+     "y": 170,
+     "size": 170,
+     "color": "red",
+     "anim": "pop",
+     "sub": "아이온큐",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "양자 종목 일곱 개",
+     "at": 0.4,
+     "y": 420,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "모두 하락",
+     "at": 0.62,
+     "y": 530,
+     "size": 90,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "5.3%",
+   "subtitle": "판매 계약 뒤 업종 반등 날\n평균 **5.3%**만 올랐습니다",
+   "els": [
+    {
+     "kind": "text",
+     "text": "6.18 시장 판매 계약 뒤",
+     "at": 0.0,
+     "y": 60,
+     "size": 70,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "+5.3%",
+     "at": 0.15,
+     "y": 170,
+     "size": 170,
+     "color": "yellow",
+     "anim": "pop",
+     "sub": "비티큐 평균",
+     "sfx": "boom"
+    },
+    {
+     "kind": "text",
+     "text": "아이온큐 +9.4%",
+     "at": 0.4,
+     "y": 420,
+     "size": 96,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "15번 평균",
+     "at": 0.62,
+     "y": 530,
+     "size": 84,
+     "color": "white",
+     "anim": "pop"
+    },
+    {
+     "kind": "text",
+     "text": "반쯤만",
+     "at": 0.82,
+     "y": 620,
+     "size": 90,
+     "color": "yellow",
+     "anim": "pop"
+    }
+   ]
+  },
+  {
+   "em": "보고서",
+   "subtitle": "오늘 밤 3분기 **보고서**\n7월 뒤 판 주식은?",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "오늘 밤 보고서, 7월 뒤 판 주식은?",
+     "opts": [
+      "더 많다",
+      "그대로다",
+      "다른 자금 마련 먼저"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.1,
+      0.35,
+      0.6
+     ],
+     "foot_at": 2
+    }
+   ]
+  },
+  {
+   "em": "풀영상",
+   "subtitle": "풀영상은 아래 관련 영상에서\n이어집니다",
+   "els": [
+    {
+     "kind": "poll",
+     "q": "오늘 밤 보고서, 7월 뒤 판 주식은?",
+     "opts": [
+      "더 많다",
+      "그대로다",
+      "다른 자금 마련 먼저"
+     ],
+     "y": 20,
+     "opt_at": [
+      0.15,
+      0.4,
+      0.65
+     ],
+     "foot_at": 0
+    }
+   ]
+  }
+ ]
+}
