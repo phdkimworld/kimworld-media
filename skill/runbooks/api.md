@@ -16,6 +16,10 @@
 - GitHub 예약 실행은 몇 시간씩 밀린다(comment-ai는 매시 예약인데 실제 6~10시간 간격). 그래서 매시 댓글 점검이 3시간마다 `comment-ai.yml`도 실행 요청한다. 제작 에이전트는 리포트 push 뒤 judge 결과를 `llm_judge.py --wait`로 받아 반영한다.
 - 실행 요청 뒤 기다릴 때는 결과 파일을 `git pull`로 확인하고, 270초 단위로 끊어 기다린다(`tools/wait_short.sh`).
 
+## 2-1. 운영 숫자는 요약 한 장부터 (2026-11-17 "주간한도 사용을 줄여")
+- 사이트 통계·수익·실험 현황이 필요하면 비공개 저장소 `phdkimworld/kimworld`(ops-data) **`stats/digest.md`** 를 먼저 읽는다. `analytics-report.yml` 실행 때마다 LLM 없이 스크립트(`scripts/ops_digest.py`)가 만든다(7일 핵심·채널·투표·애드핏·쿠팡 하위 ID·유튜브 쿠팡 실험·블로거 비교 글·애드센스 기준·이상 신호).
+- `stats/analytics.json` 같은 큰 JSON은 요약에 없는 값이 꼭 필요할 때만 jq로 그 값만 뽑는다.
+
 ## 3. 예산 (사이트 `scripts/llm.py` BUDGETS, 월 단위)
 - comments 40달러 · judge 25달러 · weekly 10달러 · 전체 상한 120달러. 사이트 '리포트에 질문하기'는 워커가 따로 관리(월 80달러).
 - 현황: 사이트 저장소에서 `git pull` 뒤 `python3 scripts/llm.py status`. 예산을 넘으면 그 기능만 건너뛰고(status budget) 세션이 예전 방식으로 처리한다.
