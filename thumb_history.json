@@ -2839,27 +2839,6 @@
    "shorts": "y8DyPbb03u4"
   },
   {
-   "t": "laes",
-   "date": "2026.11.17",
-   "layout": "custom",
-   "palette": "navy-amber-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "23개월 만의 최저인데 / 9월 말 현금 ÷ 시가총액 1.8배(앰버) 카드 + 보안 칩 위 자물쇠 방패·양자 궤도",
-    "반등 출발점을 깼다 1.23 → 1.145달러 / 6번 중 5번(빨강) + 같은 그림 왼쪽"
-   ],
-   "video": "W3vcgET5izw",
-   "shorts": ""
-  },
-  {
    "t": "rxrx",
    "date": "2026.11.17",
    "layout": "custom",
@@ -2879,6 +2858,27 @@
    ],
    "video": "fv2lJbchupw",
    "shorts": "xI69f49kCj0"
+  },
+  {
+   "t": "laes",
+   "date": "2026.11.17",
+   "layout": "custom",
+   "palette": "navy-amber-sky",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "23개월 만의 최저인데 / 9월 말 현금 ÷ 시가총액 1.8배(앰버) 카드 + 보안 칩 위 자물쇠 방패·양자 궤도",
+    "반등 출발점을 깼다 1.23 → 1.145달러 / 6번 중 5번(빨강) + 같은 그림 왼쪽"
+   ],
+   "video": "W3vcgET5izw",
+   "shorts": "w0l2EBi4FT8"
   }
  ]
 }
