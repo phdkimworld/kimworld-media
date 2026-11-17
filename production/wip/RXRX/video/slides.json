@@ -1,0 +1,1174 @@
+{
+ "ticker": "RXRX",
+ "name": "리커전",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "투자 고전 한 권 · 링크는 설명란에",
+ "midroll": "../kit/rxrx_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/rxrx_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "리커전 · 공모 한 달 뒤",
+       "left": {
+        "label": "10월 공모가",
+        "value": "3.25달러"
+       },
+       "mid": "그런데",
+       "right": {
+        "label": "11.16 종가",
+        "value": "2.905달러",
+        "tone": "red"
+       },
+       "question": "공모가 아래로?",
+       "beats": [
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "공모로 산 사람",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-10.6%",
+       "label": "공모가 대비 손실",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "그사이 회사의\n**나쁜 소식은 없었다**",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 9일 영상",
+     "stats": [
+      {
+       "at": 1,
+       "big": "다음 날 -16.7%",
+       "label": "호재와 공모가 같은 아침",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "공모가 3.25달러\n**공급이 소화되는지 가늠하는 선**",
+     "at": 2
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "호재·공모 뒤 한 달, 공모가 위에서 버텼다",
+       "kicker": "그날",
+       "decimals": 3,
+       "unit": "달러",
+       "points": [
+        [
+         "10.14",
+         3.74,
+         "공모 전날"
+        ],
+        [
+         "10.15",
+         4.16,
+         "+11.2%",
+         "",
+         "above"
+        ],
+        [
+         "10.16",
+         3.465,
+         "-16.7%"
+        ],
+        [
+         "10.28",
+         4.35,
+         "4.35달러",
+         "",
+         "above"
+        ],
+        [
+         "11.06",
+         3.52,
+         "지난 리포트"
+        ]
+       ],
+       "base": {
+        "value": 3.25,
+        "label": "공모가 3.25달러"
+       },
+       "panel_note": "공모가 3.25달러 대비",
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-16",
+       "beats": [
+        5,
+        6,
+        7,
+        8
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 예측\n**성적표**",
+     "at": 0,
+     "kicker": "11.6 기준 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "진단 · 공급과 반납 단계",
+     "stats": [
+      {
+       "at": 1,
+       "big": "적중",
+       "label": "11.9 +8.1%를 4거래일에 다 반납",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11.11 종가 vs 급등 전날 3.74달러",
+     "stats": [
+      {
+       "at": 3,
+       "big": "적중",
+       "label": "3.59달러, 과거 기록과 같은 방향",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "진행 중 3",
+     "items": [
+      {
+       "no": "1",
+       "text": "12월 31일 3.25달러 위 · 불리",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "연말 허가용 임상 계획",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "보호예수 뒤 매도 공시",
+       "at": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "아직 파는 약이 없다",
+     "stats": [
+      {
+       "at": 0,
+       "big": "리커전",
+       "label": "나스닥 RXRX · 신약 개발",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "세포 사진 + 인공지능\n**신약 후보를 찾는다**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "돈을 버는 방식 두 갈래",
+     "left": {
+      "at": 2,
+      "head": "공동 연구",
+      "big": "단계마다 받는 돈",
+      "lines": [
+       "사노피·로슈"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "자체 약",
+      "big": "허가까지 키우기",
+      "lines": [
+       "아직 허가 0건"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "3분기 매출보다 훨씬 큰 손실",
+       "sub": "2026년 3분기",
+       "unit": "",
+       "items": [
+        {
+         "label": "매출",
+         "value": 18.6,
+         "text": "1,860만 달러"
+        },
+        {
+         "label": "순손실",
+         "value": 119,
+         "text": "1억 1,900만 달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 리커전 3분기 실적 보도자료(2026-11-02)",
+       "beats": [
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "연구비는\n**새 주식으로**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "몸값 가운데 현금은 얼마",
+       "sub": "11월 16일 종가 × 10월 26일 주식 수",
+       "unit": "",
+       "items": [
+        {
+         "label": "시가총액",
+         "sub": "2.905달러 × 6억 2,276만 주",
+         "value": 18.09,
+         "text": "약 18억 900만 달러"
+        },
+        {
+         "label": "현금(잠정)",
+         "sub": "한 주 약 1.20달러",
+         "value": 7.487,
+         "text": "약 7억 4,870만 달러"
+        },
+        {
+         "label": "시가총액 − 현금",
+         "value": 10.6,
+         "text": "약 10억 6,000만 달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 · 리커전 10-Q",
+       "beats": [
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "약 후보와 연구 방식에\n**시장이 매긴 값**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "지금의 크기 표\n**홈페이지에 무료로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**하락의 모양**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "4거래일에 -23.7%, 공모가 아래로",
+       "kicker": "단서 1",
+       "decimals": 3,
+       "unit": "달러",
+       "points": [
+        [
+         "11.9",
+         3.805,
+         "+8.1%",
+         "",
+         "above"
+        ],
+        [
+         "11.10",
+         3.55,
+         "-6.7%"
+        ],
+        [
+         "11.11",
+         3.59,
+         "+1.1%",
+         "",
+         "above"
+        ],
+        [
+         "11.12",
+         3.33,
+         "-7.2%"
+        ],
+        [
+         "11.13",
+         3.185,
+         "-4.4%"
+        ],
+        [
+         "11.16",
+         2.905,
+         "-8.8%"
+        ]
+       ],
+       "base": {
+        "value": 3.25,
+        "label": "공모가 3.25달러"
+       },
+       "panel_note": "공모가 대비",
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-16",
+       "beats": [
+        2,
+        2,
+        2,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11.9 ~ 11.16 회사가 낸 SEC 서류",
+     "stats": [
+      {
+       "at": 4,
+       "big": "2건",
+       "label": "9월 말 기준 지분 보고",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "둘 다 9월 30일 기준",
+     "left": {
+      "at": 5,
+      "head": "아크 인베스트먼트",
+      "big": "8.36%",
+      "lines": [
+       "11.13 정정 보고"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "스테이트 스트리트",
+      "big": "5.6%",
+      "lines": [
+       "11.10 보고"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "석 달 전 지분\n**이번 하락을 설명 못 한다**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "같은 기간 새 보도자료",
+     "stats": [
+      {
+       "at": 7,
+       "big": "못 찾음",
+       "label": "회사 쪽 새 소식 없음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "거래량도\n**늘지 않았다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 16일 거래량은 평소와 비슷",
+       "sub": "주(株)",
+       "unit": "",
+       "items": [
+        {
+         "label": "11월 16일",
+         "value": 1979,
+         "text": "약 1,979만 주",
+         "hi": true
+        },
+        {
+         "label": "직전 20거래일 평균",
+         "value": 2088,
+         "text": "약 2,088만 주"
+        }
+       ],
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-16",
+       "beats": [
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "사는 쪽이 조금씩 물러나며\n**값이 미끄러졌다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "받쳐 줄 가격이\n**한 칸씩 아래로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**함께 내린 회사들**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 6일 뒤, 인공지능 신약 무리가 함께 내렸다",
+       "source": "나스닥 일별 종가 · 기준 2026-11-16",
+       "sub": "11월 6일 종가 대비 11월 16일 종가",
+       "unit": "%",
+       "items": [
+        {
+         "label": "리커전",
+         "sub": "3.52 → 2.905달러",
+         "value": -17.5,
+         "hi": true
+        },
+        {
+         "label": "앱사이",
+         "value": -26.5
+        },
+        {
+         "label": "슈뢰딩거",
+         "value": -8.2
+        },
+        {
+         "label": "앱셀레라",
+         "value": -6.4
+        },
+        {
+         "label": "바이오 ETF(XBI)",
+         "value": -4.2
+        },
+        {
+         "label": "나스닥 100(QQQ)",
+         "value": 0.9
+        }
+       ],
+       "beats": [
+        2,
+        3,
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "시장 전체가 아니라\n**이 무리가 함께**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "compare",
+     "title": "인공지능 신약 무리",
+     "left": {
+      "at": 6,
+      "head": "약 판매",
+      "big": "대부분 아직",
+      "lines": [
+       ""
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 6,
+      "head": "연구비",
+      "big": "주식으로 채움",
+      "lines": [
+       ""
+      ],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "리커전에만 있는\n**짐**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "남은 시장 판매 한도",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 2억 1,330만 달러",
+       "label": "공모 뒤에도 열려 있음",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "한도를 지금 값으로 다 쓰면",
+       "sub": "2.905달러 기준 · 주(株)",
+       "unit": "",
+       "items": [
+        {
+         "label": "팔 수 있는 주식",
+         "sub": "주식 수의 약 11.8%",
+         "value": 7340,
+         "text": "약 7,340만 주",
+         "hi": true
+        },
+        {
+         "label": "평소 하루 거래량",
+         "value": 2088,
+         "text": "약 2,088만 주"
+        }
+       ],
+       "callout": "약 3.5거래일치",
+       "callout_beat": 3,
+       "source": "자료: 리커전 10-Q · 나스닥",
+       "beats": [
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "값이 낮을수록",
+     "stats": [
+      {
+       "at": 4,
+       "big": "더 많은 주식",
+       "label": "같은 돈을 구하려면",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "시세 모양과 공시에서 나온\n**해석**",
+     "at": 5,
+     "sub": "회사가 이유를 밝힌 적은 없음",
+     "sub_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 가격은\n**처음일까**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "올해 2.84~2.95달러 바닥에 네 번째로 닿았다",
+       "source": "나스닥 일별 종가 · 기준 2026-11-16",
+       "sub": "리커전 종가(달러), 2026년",
+       "unit": "달러",
+       "points": [
+        [
+         "3.30",
+         2.84,
+         "2.84달러"
+        ],
+        [
+         "5.19",
+         2.85,
+         "2.85달러"
+        ],
+        [
+         "7.20",
+         2.89,
+         "2.89달러"
+        ],
+        [
+         "11.16",
+         2.905,
+         "2.905달러"
+        ]
+       ],
+       "base": {
+        "value": 3.25,
+        "label": "공모가 3.25달러"
+       },
+       "beats": [
+        2,
+        3,
+        4
+       ],
+       "kicker": "올해 바닥"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "ad": [
+    9
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "숨겨 둔\n**답**",
+     "at": 0,
+     "kicker": "답",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "record_bars",
+      "data": {
+       "title": "앞의 세 번은 20거래일 뒤 모두 더 높았다",
+       "source": "나스닥 일별 종가 · 기준 2026-11-16",
+       "sub": "2.95달러 아래로 처음 닫은 날 대비 20거래일 뒤 종가",
+       "note": "세 번 모두 그 사이 주식 수가 지금보다 적었고, 공모가 같은 새 기준선은 없었음",
+       "unit": "%",
+       "items": [
+        {
+         "label": "2026.03",
+         "sub": "2.94 → 3.48달러",
+         "value": 18.4
+        },
+        {
+         "label": "2026.05",
+         "sub": "2.93 → 3.29달러",
+         "value": 12.3
+        },
+        {
+         "label": "2026.07",
+         "sub": "2.945 → 3.16달러",
+         "value": 7.3
+        },
+        {
+         "label": "이번 2026.11",
+         "value": null,
+         "text": "12월 15일 판정",
+         "hi": true
+        }
+       ],
+       "tally": "3번 중 3번 더 높았다",
+       "beats": [
+        2,
+        2,
+        3
+       ],
+       "tally_beat": 3
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "다만\n**이번은 다르다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "그때와 지금",
+     "left": {
+      "at": 5,
+      "head": "그때",
+      "big": "주식 수 적음",
+      "lines": [
+       "위에 천장 없음"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "지금",
+      "big": "주식 수 많음",
+      "lines": [
+       "공모가 3.25달러 천장"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 8,
+     "layout": "quote",
+     "text": "세 번뿐인 작은 표본\n**방향의 근거로는 약하다**",
+     "at": 8
+    },
+    {
+     "from": 9,
+     "layout": "quote",
+     "text": "세 번의 날짜와 숫자\n**고정 댓글 리포트 끝 표**",
+     "at": 9
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 진단\n**공급과 반납 단계**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "공모가 아래로",
+     "stats": [
+      {
+       "at": 1,
+       "big": "가장 분명한 신호",
+       "label": "새 주식이 아직 소화되지 않았다",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "단계가 바뀌었다고 볼 신호",
+     "items": [
+      {
+       "no": "1",
+       "text": "시장 판매 없이 공모가 되찾기",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "at": 3,
+       "text": "허가용 임상 계획 구체화"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "지금",
+     "stats": [
+      {
+       "at": 4,
+       "big": "아직 없음",
+       "label": "",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정 1",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 15일",
+       "label": "11.16 뒤 20번째 거래일 · 2.905달러보다 높은가",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "판정 2",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12월 31일",
+       "label": "공모가 3.25달러 · 허가 계획 발표",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 31일, 공모가 아래 두 갈래가 무거워졌다",
+       "source": "나스닥 일별 종가 · 기준 2026-11-16",
+       "note": "가능성은 주가 확률이 아니라 종가 자리와 발표 여부 조합에 대한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "1 · 공모가 회복, 계획 발표",
+         "sub": "3.25달러 위 · 발표",
+         "p": 20,
+         "range": [
+          15,
+          25
+         ]
+        },
+        {
+         "label": "2 · 공모가 회복, 발표 없음",
+         "sub": "3.25달러 위 · 없음",
+         "p": 10,
+         "range": [
+          5,
+          15
+         ]
+        },
+        {
+         "label": "3 · 공모가 아래, 계획 발표",
+         "sub": "3.25달러 아래 · 발표",
+         "p": 35,
+         "range": [
+          30,
+          40
+         ],
+         "hi": true
+        },
+        {
+         "label": "4 · 공모가 아래, 발표 없음",
+         "sub": "3.25달러 아래 · 없음",
+         "p": 35,
+         "range": [
+          30,
+          40
+         ]
+        }
+       ],
+       "decision": "판정: 12월 31일 종가 · 기준선 3.25달러 · 허가용 임상 계획 발표 여부",
+       "beats": [
+        4,
+        4,
+        5
+       ],
+       "decision_beat": 6
+      }
+     }
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "가능성",
+     "stats": [
+      {
+       "at": 7,
+       "big": "주관적 추정",
+       "label": "주가가 오를 확률이 아님",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "틀릴 수 있는 곳",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "허가용 임상",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2027년 하반기",
+       "label": "FDA와 협의 중 · 설계가 좋으면",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "무리의 방향",
+     "left": {
+      "at": 3,
+      "head": "앱사이 · 슈뢰딩거",
+      "big": "먼저 반등하면",
+      "lines": [
+       ""
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "리커전",
+      "big": "따라 바뀔 가능성",
+      "lines": [
+       ""
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "시장 판매가 다시 확인되면",
+     "stats": [
+      {
+       "at": 4,
+       "big": "위쪽 갈래 ↓",
+       "label": "공모가 회복 쪽이 가벼워짐",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "쿠팡 링크\n**설명란·고정 댓글**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "한 달 전의 공모가\n**이제 천장**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "다시 올라갈 열쇠",
+     "items": [
+      {
+       "no": "1",
+       "text": "회사의 다음 발표",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "인공지능 신약 무리의 방향",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "네 갈래 판정 기준",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "바닥 3번 기록표",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 31일\n**리커전 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 31일, 리커전 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "3.25달러 위"
+      },
+      {
+       "at": 3,
+       "text": "두 가격 사이"
+      },
+      {
+       "at": 4,
+       "text": "2.905달러 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
