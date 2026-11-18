@@ -21,6 +21,20 @@ else:
             pr += [r for r in ln[2:] if re.search(r'\d+%', r)]
     if sc and len(pr) < len(sc): bad.append(f'시나리오 {len(sc)}개 중 가능성 % {len(pr)}개')
     elif not sc and len(pr) < 3: bad.append(f'시나리오 절에 가능성(추정) % {len(pr)}개(3개 이상)')
+    # 유력 갈래 보정(운영자 11-18 "유력 갈래가 계속 틀리는 이유 분석해서 예측 방식 고쳐", review/predictions/README '유력 갈래 오답 분석'):
+    # 가장 높은 갈래는 40% 이하가 기본. 넘기려면 장부 기저율(n≥5)이 받쳐야 하고, 모든 회차는 research/prob_basis.md(기저율·조정·사전 부검)가 있어야 한다
+    nums = [max(int(x) for x in re.findall(r'(\d+)\s*%', p)) for p in pr if re.findall(r'(\d+)\s*%', p)]
+    top = max(nums) if nums else 0
+    pb = os.path.join(os.path.dirname(os.path.abspath(V)), 'research', 'prob_basis.md')
+    if os.environ.get('PROB_BASIS') != 'skip':
+        if not os.path.exists(pb):
+            bad.append("research/prob_basis.md 없음: 갈래마다 '기저율(장부 n)', '조정 근거(±15%p 이내)', 유력 갈래 '틀린다면 이유' 한 줄(사전 부검)")
+        else:
+            t = open(pb, encoding='utf-8').read()
+            for k in ('기저율', '틀린다면'):
+                if k not in t: bad.append(f"prob_basis.md에 '{k}' 줄 없음")
+            if top > 40 and not re.search(r'n\s*[=≥]\s*([5-9]|\d\d)', t):
+                bad.append(f'유력 갈래 {top}% > 40%: 장부 기저율 n≥5 근거가 prob_basis.md에 없음(없으면 40% 이하로)')
 # 이야기형 후속편은 '## 지난 리포트 이후' 소제목이 없다 → 같은 티커 지난 리포트 링크(/r/<티커>-…)로 후속편을 알아본다(88회차 SERV: GPUS 87회차가 '첫 리포트'로 읽혀 대본·대기열 성적 줄 검사가 꺼져 있었음)
 _tk = (re.search(r'^ticker:\s*"?([A-Za-z0-9.]+)', rep, re.M) or [None, '#'])[1].lower()
 _slug = os.path.basename(R)[:-3]
