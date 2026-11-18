@@ -1,5 +1,0 @@
-LAES SCHEDULE 13G/A https://www.sec.gov/Archives/edgar/data/1951222/000144658026000111/xslSCHEDULE_13G_X02/primary_doc.xml
-PLUG 144 https://www.sec.gov/Archives/edgar/data/1093691/000100027526000132/xsl144X01/primary_doc.xml
-IREN SCHEDULE 13G https://www.sec.gov/Archives/edgar/data/1878848/000144658026000110/xslSCHEDULE_13G_X02/primary_doc.xml
-SMR SCHEDULE 13G https://www.sec.gov/Archives/edgar/data/1822966/000090514826005003/xslSCHEDULE_13G_X02/primary_doc.xml
-SMR SCHEDULE 13G/A https://www.sec.gov/Archives/edgar/data/1822966/000086917826000111/xslSCHEDULE_13G_X02/primary_doc.xml
