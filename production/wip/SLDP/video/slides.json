@@ -1,0 +1,1214 @@
+{
+ "ticker": "SLDP",
+ "name": "솔리드파워",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "쿠팡 가실 때 설명란 링크로 · 채널 응원",
+ "sub_text": "주가가 이상하게 움직인 미국 종목을 추적합니다",
+ "midroll": "../kit/sldp_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/sldp_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "솔리드파워 · 회사를 통째로 사면",
+       "left": {
+        "label": "값(11.17 시가총액)",
+        "value": "약 3억 5,753만 달러"
+       },
+       "mid": "그런데",
+       "right": {
+        "label": "따라오는 현금·증권",
+        "value": "3억 9,756만 달러",
+        "tone": "up"
+       },
+       "question": "산 값보다 더 많은 현금?",
+       "beats": [
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "산 값보다 더 많은 현금",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 4,003만 달러",
+       "label": "9월 말 유동성 − 11.17 시가총액",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "지금 솔리드파워가\n**이런 모양**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "기술·공장·계약을\n**0보다 낮게?**",
+     "at": 5,
+     "kicker": "미스터리",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "지난 토요일 영상",
+     "stats": [
+      {
+       "at": 1,
+       "big": "현금선 바로 위",
+       "label": "11월 13일 기준 리포트",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "3센트 차이에서, 다음 거래일 현금선 아래로",
+       "kicker": "지난 편",
+       "decimals": 2,
+       "unit": "달러",
+       "points": [
+        [
+         "11.4",
+         2.25,
+         "실적 다음 날",
+         "",
+         "above"
+        ],
+        [
+         "11.13",
+         1.76,
+         "지난 리포트",
+         "",
+         "above"
+        ],
+        [
+         "11.16",
+         1.62,
+         "1.62달러"
+        ]
+       ],
+       "base": {
+        "value": 1.73,
+        "label": "한 주당 현금 1.73달러"
+       },
+       "panel_note": "1.73달러 대비",
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-17",
+       "beats": [
+        3,
+        6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 예측\n**성적표**",
+     "at": 0,
+     "kicker": "11.13 기준 리포트"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "현금선을 깨는 두 갈래",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 65%",
+       "label": "과거 4번 중 3번 곧 이탈",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "결과 · 11월 16일",
+     "stats": [
+      {
+       "at": 2,
+       "big": "적중",
+       "label": "1.62달러로 첫 이탈",
+       "tone": "up"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "진단 · 현금이 주가를 받치는 단계",
+     "stats": [
+      {
+       "at": 4,
+       "big": "적중",
+       "label": "새 주식 발행 공시 0건",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "list",
+     "title": "진행 중 2",
+     "items": [
+      {
+       "no": "1",
+       "text": "11월 4일 리포트 시나리오 · 12월 3일",
+       "at": 6
+      },
+      {
+       "no": "2",
+       "text": "11월 13일 리포트 시나리오 · 12월 14일",
+       "at": 6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "전고체 배터리 재료",
+     "stats": [
+      {
+       "at": 0,
+       "big": "솔리드파워",
+       "label": "나스닥 SLDP · 콜로라도",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "액체 대신 고체로\n**불이 잘 붙지 않는 배터리**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "돈을 버는 방식",
+     "left": {
+      "at": 2,
+      "head": "재료 판매",
+      "big": "고체 전해질",
+      "lines": [
+       "배터리 회사에"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "기술 계약",
+      "big": "셀 설계",
+      "lines": [
+       "빌려주기"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "3분기, 매출보다 훨씬 큰 손실",
+       "sub": "2026년 3분기",
+       "unit": "",
+       "items": [
+        {
+         "label": "매출",
+         "value": 0.243,
+         "text": "24만 3,000달러"
+        },
+        {
+         "label": "순손실",
+         "value": 24.4,
+         "text": "2,440만 달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 솔리드파워 3분기 실적(2026-11-03)",
+       "beats": [
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "버티는 힘은\n**모아 둔 현금**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "현금과 몸값, 11월 17일",
+       "sub": "9월 말 유동성 · 11월 2일 주식 수 2억 2,919만 주",
+       "unit": "",
+       "items": [
+        {
+         "label": "9월 말 유동성",
+         "sub": "부채 0",
+         "value": 397.56,
+         "text": "3억 9,756만 달러"
+        },
+        {
+         "label": "11.17 시가총액",
+         "sub": "1.56달러 × 주식 수",
+         "value": 357.53,
+         "text": "약 3억 5,753만 달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 솔리드파워 10-Q(2026-11-04) · 나스닥",
+       "beats": [
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "한 주당 유동성",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 1.73달러",
+       "label": "유동성 ÷ 주식 수",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 17일 종가 1.56달러",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 0.90배",
+       "label": "현금선 아래",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "계산과 지금의 크기 표\n**홈페이지에 무료로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 1\n**하락의 모양**",
+     "at": 0,
+     "kicker": "단서 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "2거래일에 -11.4%, 현금선 아래로",
+       "kicker": "단서 1",
+       "decimals": 2,
+       "unit": "달러",
+       "points": [
+        [
+         "11.13",
+         1.76,
+         "1.76달러",
+         "",
+         "above"
+        ],
+        [
+         "11.16",
+         1.62,
+         "-8.0%"
+        ],
+        [
+         "11.17",
+         1.56,
+         "-3.7%"
+        ]
+       ],
+       "base": {
+        "value": 1.73,
+        "label": "현금선 1.73달러"
+       },
+       "panel_note": "현금선 대비",
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-17",
+       "beats": [
+        2,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 16일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "상장 뒤 6번째",
+       "label": "현금선 아래 첫 마감",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "11월 4일 2.25달러 대비",
+     "stats": [
+      {
+       "at": 5,
+       "big": "-30.7%",
+       "label": "실적 다음 날부터",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "11.4 ~ 11.17 회사가 낸 새 SEC 서류",
+     "stats": [
+      {
+       "at": 6,
+       "big": "0건",
+       "label": "11월 4일 10-Q가 마지막",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "새 주식 판매도, 계약 해지도\n**소식 없음**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "거래량은\n**조금 늘었다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "이틀 연속 평소보다 많았다",
+       "sub": "주(株)",
+       "unit": "",
+       "items": [
+        {
+         "label": "직전 60거래일 평균",
+         "value": 306,
+         "text": "약 306만 주"
+        },
+        {
+         "label": "11월 16일",
+         "value": 518,
+         "text": "약 518만 주",
+         "hi": true
+        },
+        {
+         "label": "11월 17일",
+         "value": 448,
+         "text": "약 448만 주"
+        }
+       ],
+       "source": "자료: 나스닥 일별 종가 · 기준 2026-11-17",
+       "beats": [
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "한꺼번에 던진 날보다\n**이틀 내내 파는 쪽이 조금 더**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "회사 소식이 없으니\n**이유는 회사 밖에서**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "단서 2\n**함께 내린 회사들**",
+     "at": 0,
+     "kicker": "단서 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 13일 뒤, 배터리 소형주가 함께 내렸다",
+       "source": "나스닥 일별 종가 · SEC 10-Q · 기준 2026-11-17",
+       "sub": "11월 13일 종가 대비 11월 17일 종가",
+       "unit": "%",
+       "items": [
+        {
+         "label": "솔리드파워",
+         "sub": "1.76 → 1.56달러",
+         "value": -11.4,
+         "hi": true
+        },
+        {
+         "label": "퀀텀스케이프",
+         "sub": "3.68 → 3.28달러",
+         "value": -10.9
+        },
+        {
+         "label": "에노빅스",
+         "value": -14.4
+        },
+        {
+         "label": "앰프리우스",
+         "value": -14.6
+        },
+        {
+         "label": "리튬·배터리 ETF(LIT)",
+         "value": -4.0
+        },
+        {
+         "label": "중소형주 지수(IWM)",
+         "value": -3.1
+        }
+       ],
+       "beats": [
+        2,
+        3,
+        3,
+        5,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "시장보다\n**세 배 넘게**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "compare",
+     "title": "배터리 소형주 무리",
+     "left": {
+      "at": 7,
+      "head": "매출",
+      "big": "대부분 아직 작다",
+      "lines": [
+       ""
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 7,
+      "head": "개발비",
+      "big": "쌓아 둔 현금으로",
+      "lines": [
+       ""
+      ],
+      "tone": "gold"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "현금보다 싸다는 건\n**정말 이상한 일일까**",
+     "at": 0
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "회사는",
+     "stats": [
+      {
+       "at": 2,
+       "big": "매 분기 현금을 쓴다",
+       "label": "4분기 약 1,840만~2,840만 달러",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "현금선도 조금씩 내려온다",
+       "sub": "한 주당 유동성(달러)",
+       "unit": "",
+       "items": [
+        {
+         "label": "9월 말",
+         "value": 1.73,
+         "text": "약 1.73달러"
+        },
+        {
+         "label": "연말 예상",
+         "sub": "4분기 투입을 뺀 값",
+         "value": 1.65,
+         "text": "약 1.61~1.65달러"
+        },
+        {
+         "label": "11.17 종가",
+         "value": 1.56,
+         "text": "1.56달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 솔리드파워 10-Q(2026-11-04) · 나스닥",
+       "beats": [
+        3,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "더 줄어들 현금까지\n**미리 값에?**",
+     "at": 6,
+     "sub": "시세에서 읽은 해석",
+     "sub_at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이런 장면은\n**처음이 아니다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "주가 ÷ 한 주당 현금, 오르내린 폭",
+       "sub": "그날 공개된 직전 분기 말 유동성 기준",
+       "unit": "",
+       "items": [
+        {
+         "label": "2024년 1월 18일",
+         "sub": "1.17달러",
+         "value": 0.49,
+         "text": "0.49배"
+        },
+        {
+         "label": "2025년 11월 5일",
+         "sub": "8.51달러",
+         "value": 5.37,
+         "text": "5.37배"
+        },
+        {
+         "label": "2026년 11월 17일",
+         "sub": "1.56달러",
+         "value": 0.9,
+         "text": "0.90배",
+         "hi": true
+        }
+       ],
+       "source": "자료: 솔리드파워 10-Q(2026-11-04) · 나스닥",
+       "beats": [
+        3,
+        4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "ad": [
+    6
+   ],
+   "sub": [
+    11
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "숨겨 둔\n**답**",
+     "at": 0,
+     "kicker": "답",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "현금선을 처음 깬 날",
+     "stats": [
+      {
+       "at": 1,
+       "big": "상장 뒤 5번",
+       "label": "직전 5거래일은 모두 위",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "5거래일 안 잠깐 복귀",
+     "stats": [
+      {
+       "at": 3,
+       "big": "5번 중 4번",
+       "label": "현금선 위로 돌아왔다",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "20거래일째 현금선 위",
+     "stats": [
+      {
+       "at": 4,
+       "big": "0번",
+       "label": "5번 모두 아래",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "record_bars",
+      "data": {
+       "title": "현금선을 처음 깬 다섯 번, 20거래일 뒤 네 번이 더 낮았다",
+       "source": "나스닥 일별 종가 · SEC 10-Q · 기준 2026-11-17",
+       "sub": "1배 아래로 처음 마감한 날 대비 20거래일 뒤 종가",
+       "note": "다섯 번 모두 20거래일째에는 현금선 아래였고, 방향은 퀀텀스케이프와 같았음",
+       "unit": "%",
+       "items": [
+        {
+         "label": "2022.12",
+         "sub": "2.80 → 2.03달러",
+         "value": -27.5
+        },
+        {
+         "label": "2023.03",
+         "sub": "2.77 → 2.78달러",
+         "value": 0.4
+        },
+        {
+         "label": "2023.04",
+         "sub": "2.67 → 2.04달러",
+         "value": -23.6
+        },
+        {
+         "label": "2023.07",
+         "sub": "2.60 → 2.11달러",
+         "value": -18.8
+        },
+        {
+         "label": "2023.08",
+         "sub": "2.59 → 2.19달러",
+         "value": -15.4
+        },
+        {
+         "label": "이번 2026.11",
+         "value": null,
+         "text": "12월 15일 판정",
+         "hi": true
+        }
+       ],
+       "tally": "5번 중 4번 더 낮았다",
+       "beats": [
+        5,
+        5,
+        5,
+        5,
+        5
+       ],
+       "tally_beat": 5
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "다섯 번의 날짜와 숫자\n**고정 댓글 리포트 끝 표**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "20거래일 뒤 방향",
+     "stats": [
+      {
+       "at": 7,
+       "big": "5번 모두",
+       "label": "퀀텀스케이프와 같았다",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "2023.8 ~ 2025.6",
+     "stats": [
+      {
+       "at": 8,
+       "big": "약 97%",
+       "label": "464거래일 중 449일 현금보다 쌌다",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 9,
+     "layout": "quote",
+     "text": "현금은 바닥이 아니라\n**지나가는 선**",
+     "at": 9
+    },
+    {
+     "from": 10,
+     "layout": "quote",
+     "text": "현금보다 싸진 주가\n**다른 종목에서도?**",
+     "at": 10
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "다만\n**이번이 다른 점**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "그때와 지금의 현금선",
+       "sub": "한 주당 유동성(달러)",
+       "unit": "",
+       "items": [
+        {
+         "label": "2023년",
+         "value": 2.9,
+         "text": "2.6~2.9달러"
+        },
+        {
+         "label": "지금(9월 말)",
+         "value": 1.73,
+         "text": "약 1.73달러",
+         "hi": true
+        }
+       ],
+       "source": "자료: 솔리드파워 10-Q(2026-11-04) · 나스닥",
+       "beats": [
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "올해",
+     "left": {
+      "at": 2,
+      "head": "좋아진 것",
+      "big": "쓰는 돈 줄임",
+      "lines": [
+       "1월 공모 뒤 판매 0"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "나빠진 것",
+      "big": "매출 -93%",
+      "lines": [
+       "합작법인 미발표"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "진단 이름은 그대로\n**단계의 아래쪽 끝**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 15일",
+       "label": "11.16 뒤 20번째 거래일",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "볼 것 두 가지",
+     "items": [
+      {
+       "no": "1",
+       "at": 3,
+       "text": "종가 1.73달러 위로 돌아왔나"
+      },
+      {
+       "no": "2",
+       "at": 4,
+       "text": "퀀텀스케이프 3.43달러 위인가"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 15일, 현금선 아래 두 갈래가 무겁다",
+       "source": "나스닥 일별 종가 · SEC 10-Q · 기준 2026-11-17",
+       "note": "가능성은 주가 확률이 아니라 종가 자리와 업종 방향 조합에 대한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "1 · 현금선 회복, 업종 반등",
+         "sub": "1.73달러 위 · QS 위",
+         "p": 10,
+         "range": [
+          5,
+          15
+         ]
+        },
+        {
+         "label": "2 · 현금선 회복, 홀로",
+         "sub": "1.73달러 위 · QS 아래",
+         "p": 5,
+         "range": [
+          0,
+          10
+         ]
+        },
+        {
+         "label": "3 · 현금선 아래, 업종 반등",
+         "sub": "1.73달러 아래 · QS 위",
+         "p": 30,
+         "range": [
+          25,
+          35
+         ]
+        },
+        {
+         "label": "4 · 현금선 아래, 업종 약세",
+         "sub": "1.73달러 아래 · QS 아래",
+         "p": 55,
+         "range": [
+          50,
+          60
+         ],
+         "hi": true
+        }
+       ],
+       "decision": "판정: 12월 15일 종가 · 기준선 1.73달러 · 퀀텀스케이프 11월 16일 3.43달러",
+       "beats": [
+        6,
+        6,
+        6
+       ],
+       "decision_beat": 7
+      }
+     }
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "가능성",
+     "stats": [
+      {
+       "at": 8,
+       "big": "주관적 추정",
+       "label": "주가가 오를 확률이 아님",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "틀릴 수 있는 곳",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "회사 소식",
+     "stats": [
+      {
+       "at": 1,
+       "big": "합작법인 · 시운전",
+       "label": "업종과 따로 움직일 수 있다",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "남은 시장 매각 한도",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 5,879만 달러",
+       "label": "9월 말 기준, 올해 사용 0",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "현금선 아래에서 팔면\n**한 주당 현금 감소**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "표본",
+     "stats": [
+      {
+       "at": 4,
+       "big": "5번",
+       "label": "그때와 지금은 회사 크기가 다르다",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "쿠팡 링크\n**설명란·고정 댓글**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    2,
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "회사 소식이 아니라\n**배터리 소형주의 흐름**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "그 흐름이 처음으로",
+     "stats": [
+      {
+       "at": 1,
+       "big": "현금보다 싸게",
+       "label": "11월 16일 1.62달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "네 갈래 판정 기준",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "현금선을 처음 깬 5번 기록표",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 3,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 15일\n**솔리드파워 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 15일, 솔리드파워 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "1.73달러 위"
+      },
+      {
+       "at": 3,
+       "text": "두 가격 사이"
+      },
+      {
+       "at": 4,
+       "text": "1.56달러 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
