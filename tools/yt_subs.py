@@ -49,8 +49,18 @@ except Exception as e:
 if a.watermark:
     try:
         png = mark_png(os.path.abspath("subscribe_mark.png"))
-        yt.watermarks().set(channelId=out["channel_id"], body={"timing": {"type": "offsetFromStart", "offsetMs": 0}, "position": {"type": "corner", "cornerPosition": "bottomRight"}},
-                            media_body=MediaFileUpload(png, mimetype="image/png")).execute()
+        # googleapiclient(httplib2)가 빈 응답 압축 해제에서 'range() arg 3 must not be zero'로 죽음(11-18) → requests로 직접 multipart 업로드
+        import requests
+        from google.auth.transport.requests import Request
+        cred.refresh(Request())
+        meta = json.dumps({"timing": {"type": "offsetFromStart", "offsetMs": 0}, "position": {"type": "corner", "cornerPosition": "bottomRight"}})
+        r = requests.post("https://www.googleapis.com/upload/youtube/v3/watermarks/set",
+                          params={"channelId": out["channel_id"], "uploadType": "multipart"},
+                          headers={"Authorization": f"Bearer {cred.token}"},
+                          files={"metadata": ("metadata", meta, "application/json; charset=UTF-8"), "media": ("mark.png", open(png, "rb"), "image/png")},
+                          timeout=60)
+        if r.status_code >= 300:
+            raise RuntimeError(f"HTTP {r.status_code} {r.text[:150]}")
         out["watermark"] = "set"
     except Exception as e:
         out["watermark"] = f"실패: {str(e)[:200]} (운영자가 Studio > 맞춤설정 > 브랜딩 > 동영상 워터마크에서 넣는다)"
