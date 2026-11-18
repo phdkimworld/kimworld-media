@@ -36,5 +36,15 @@ if follow:
         d = json.load(open(q, encoding='utf-8'))
         txt = d.get('text', '') + json.dumps(d.get('channel_text', {}), ensure_ascii=False)
         if '지난 예측' not in txt: bad.append(f"{os.path.basename(q)}에 '지난 예측' 줄이 없음")
+# 예측 장부 대조(11-18): 리포트 '지난 예측' 적중·빗나감 숫자가 장부 --score와 다르면 경고만(실패 아님)
+if follow:
+    try:
+        import subprocess as _sp
+        _o = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pred_ledger.py'), '--score', _slug], capture_output=True, text=True, timeout=60).stdout
+        _l = re.search(r'적중·일어남 (\d+) · 빗나감·안 일어남 (\d+)', _o)
+        _r = re.search(r'지난 예측[^\n]*?적중 (\d+)[^\n]*?빗나감 (\d+)', rep)
+        if _l and _r and (_l.group(1), _l.group(2)) != (_r.group(1), _r.group(2)):
+            print(f"LEDGER_DIFF 리포트 적중 {_r.group(1)}·빗나감 {_r.group(2)} vs 장부 {_l.group(1)}·{_l.group(2)} — 장부를 --set으로 채우거나 리포트 숫자를 장부에 맞춘다")
+    except Exception: pass
 print('\n'.join(bad) if bad else f"PREV_CALLS_OK {'후속편' if follow else '첫 리포트'}")
 sys.exit(1 if bad else 0)

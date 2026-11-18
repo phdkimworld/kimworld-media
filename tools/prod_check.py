@@ -50,15 +50,21 @@ line = (f"제작 점검 {NOW:%m/%d %H:%M} ET: 정규 {int(r)} · 요청 {int(q)}
         f"(요청 후보 0순위 {tiers['0순위']} · 1순위 {tiers['1순위']} · 2순위 {tiers['2순위']}), "
         f"진행 중 {'; '.join(pending) if pending else '없음'}, 블로거 {pn}/{reports}, 다음 요청 후보 {top_tk or '없음'}, "
         f"7일 핵심 종목 ★{core_wk}(목표 90%·R1′ 핵심 종목 후속편만), 오늘 롱폼 {n_long}/{LONG_CAP}{(' — 하루 상한 초과 %d편(보고에 하루 상한 초과 한 줄)' % (n_long - LONG_CAP)) if n_long > LONG_CAP else (' — 하루 상한 도달: 더 만들면 운영자 하나 더 지시만, 보고에 하루 상한 초과 한 줄' if n_long == LONG_CAP else '')}")
+# 예측 장부(11-18): 하루 첫 실행 때만 리포트 추출 + 판정일 지난 예측 자동 판정(나스닥 종가·EDGAR). 새 판정이 있을 때만 한 줄
+try:
+    _pl = subprocess.run([sys.executable, "tools/pred_ledger.py", "--daily"], cwd=M, capture_output=True, text=True, timeout=240).stdout.strip()
+except Exception: _pl = ""
+if _pl: line += " · " + _pl.splitlines()[-1]
 print(("NOTHING " if full and not pending else "ACTION ") + line)
 if "--cap-history" in sys.argv:  # 과거 STATE로 상한 경고 오탐 확인용
     for day in sorted({c[0] for c in map(cells, rows) if re.fullmatch(r"\d\d-\d\d", c[0])}):
         lr = long_rows(day); print(f"  {day} 롱폼 {len(lr)}{' ⚠ 하루 상한' + (' 초과' if len(lr) > LONG_CAP else ' 도달') if len(lr) >= LONG_CAP else ''}: " + ", ".join(c[1] for c in lr))
 
 # 점검 중 바뀐 통계 스냅샷은 바로 커밋·푸시(세션 종료 때 '커밋 안 된 변경' 알림이 반복되지 않게, 11-12)
-if subprocess.run(["git", "diff", "--quiet", "--", "stats_snapshots.jsonl"], cwd=M).returncode:
-    subprocess.run(["git", "add", "stats_snapshots.jsonl"], cwd=M)
-    subprocess.run(["git", "commit", "-qm", "통계 스냅샷 갱신\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X"], cwd=M, capture_output=True)
+_chg = [f for f in ("stats_snapshots.jsonl", "review/predictions/ledger.jsonl") if subprocess.run(["git", "diff", "--quiet", "--", f], cwd=M).returncode or subprocess.run(["git", "ls-files", "--error-unmatch", f], cwd=M, capture_output=True).returncode]
+if _chg:
+    subprocess.run(["git", "add", *_chg], cwd=M)
+    subprocess.run(["git", "commit", "-qm", "통계 스냅샷·예측 장부 갱신\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X"], cwd=M, capture_output=True)
     for _ in range(3):
         if subprocess.run(["git", "push", "-q", "origin", "HEAD:claude/kim-world-stock-studio-laes-ovy09b"], cwd=M, capture_output=True).returncode == 0: break
         subprocess.run(["git", "pull", "-q", "--rebase", "--autostash", "origin", "claude/kim-world-stock-studio-laes-ovy09b"], cwd=M, capture_output=True)
