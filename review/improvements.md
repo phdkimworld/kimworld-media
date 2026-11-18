@@ -34,6 +34,7 @@
 
 | 회차 | 찾은 틀 | 고친 곳 | 전 → 후 예시 |
 |---|---|---|---|
+| 103 JOBY | 대본·리포트 성적표 문단이 '적중 하나, 빗나감 없음, 진행 중 넷'처럼 결과만 세고 무엇을 걸었는지 빠진 틀(JOBY 94·IREN 102), 위험 단락 끝의 '~도 남아 있습니다' 나열 | 리포트 후속편 첫 두 문단·위험 단락 | '지난 예측 성적은 적중 0, 빗나감 0, 진행 중 7입니다' 단독 → '셋은 확인 항목입니다. 12월 3일 종가가 …, 나머지 넷은 … 네 갈래입니다'로 무엇을 걸었는지 먼저 풀고 성적은 그 뒤(발행 전 심사 2번 반영) |
 | 101 SMR | 이유를 '첫째는 …입니다. 둘째는 …입니다. 셋째는 …입니다'로 셋씩 세는 틀(SMR 91 리포트·LAES 97 위험 단락) · 위험 단락 '먼저·다음은·세 번째는·마지막은'(발행 전 심사 10번) · '이 점이 …의 열쇠입니다' 강조 예고(심사 9번) | 리포트 혼자 약한 이유·위험 단락, 대본 문단 10·11 | '시장이 걱정했을 법한 점이 세 가지 있습니다. 첫째는 매출입니다' → '숫자로 보면 걸리는 곳은 있습니다. 매출부터 보면…', '위험은 네 가지로 봅니다. 먼저…' → '이 판단이 틀릴 수 있는 곳도 있습니다…가장 직접적인 위험은 자금 조달입니다' |
 | 97 LAES | 리포트 장면을 여는 빈 예고 문장('눈에 띄는 점은 …입니다'·'결과는 한쪽으로 기울었습니다')과 위험 단락의 '첫째·둘째·…도 위험·마지막은' 들쭉날쭉 나열(발행 전 모델 심사 8·9번) | 리포트 숨긴 답·위험 단락 | '눈에 띄는 점은 업종과의 관계입니다. 여섯 번 가운데 세 번은…' → '여섯 번 가운데 세 번은…' · 위험은 '크게 세 가지'(현금·일정·조달)로 묶고 나머지는 한 문장 |
 | 95 BTQ | 대본 회사 소개 문단을 여는 안내 틀: PLUG 93 '처음 보시는 분께는 낯선 이름일 수 있습니다'·JOBY 94 '처음 보시는 분을 위해 회사부터 소개하겠습니다'(2회차 연속 같은 머리) | 롱폼 대본 4문단 | 전 '처음 보시는 분께는 낯선 이름일 수 있습니다. 플러그 파워는…' → 후 '비티큐는 캐나다 밴쿠버에 본사를 둔 회사입니다.'로 바로 시작 |
@@ -65,6 +66,7 @@
 
 | 회차 | 절약안 | 적용 위치 | 토큰·도구 호출(직전 대비) |
 |---|---|---|---|
+| 103 JOBY | ① IREN 102 bin(site_pub·tts_mac·after_tts·publish_loop·record)·mk_slides 도우미·mk_meta·mk_shorts·mk_queue·썸네일 mk.py를 sed·부분 치환으로 재사용 ② 리포트 원고 발행을 판정 전 한 번 + youtube_id 연결 때 심사 반영을 함께 올려 사이트 test_build(이번 회차 1회 약 25분)를 한 번 아낌 ③ num_check·prev_calls_check를 TTS 전에 돌려 화면 숫자 수정이 재녹음으로 번지지 않게 | joby4/bin, report 발행 순서 | 도구 호출 약 150회(직전 IREN 102와 비슷), 사이트 검사 대기 약 25분 × 2회가 가장 큰 대기 |
 | 101 SMR | ① SLDP 100 bin(site_pub·tts_mac·after_tts·publish_loop·record·testa)·mk_meta·쇼츠 mk_meta·썸네일 mk.py를 sed·부분 치환으로 재사용 ② 선정 3종목 시세·EDGAR를 한 번의 루프로 ③ 맥 재녹음은 문단 하나만 st_redo(맥 원음을 문단별로 잘라 tmp에 두고 그 문단만 클라우드로) ④ ASR 표기 갈림은 검사기를 고쳐 다음 회차 재녹음을 막음(ca60ad3) | 전체 | 컨테이너 재시작 1회·ASR 재시도 4회로 도구 호출은 직전보다 많음(합성 재실행 6회) |
 | 97 LAES | ① IREN 96·BTQ 95 스크립트(site_pub·tts_mac·mk_slides 도우미·mk_meta·mk_shorts·mk_queue·record·썸네일 mk.py)를 sed·부분 치환으로 재사용 ② TTS 제출 전 pre_tts_check 한 번(PRE_FAIL 2개를 한 번에 고침) ③ 대기는 wait_short.sh 270초 단위 ④ 사이트 test_build는 600초 timeout으로 끊기지 않게 처음부터 백그라운드(첫 시도 7분 낭비) | 회차 전체 | 도구 호출 약 170회(ASR 뭉갬 재녹음 3번·check_slides 박자 2번이 추가 왕복의 대부분) |
 | 95 BTQ | ① PLUG 93 스크립트 일체(bin·mk_slides 도우미·mk_meta·mk_shorts·mk_queue·record·썸네일 mk.py)를 sed 치환으로 복제 ② 움직이는 장면은 합성 전 `anim.py preview`(4초)로 겹침·박자를 먼저 확인 — 전체 합성(약 7분) 뒤 고치는 왕복을 없앰(live_chart 라벨 겹침 1건을 미리보기에서 잡음) ③ 선정 시세 4종목을 한 번에 | 제작 전 과정 | 대본·리포트 외 새로 쓴 코드는 anim 데이터 2개뿐 |
@@ -101,6 +103,7 @@
 
 | 첫 적용 | 이전 실수(회차) | 검사·도구 | 흐름 |
 |---|---|---|---|
+| 103 | 11-18 | JOBY: 운영자 11-18 교차 링크 규칙의 '이어 보기' 띠를 slidekit이 지원하지 않았고, easy_check가 필수 '## 함께 읽기'를 이야기형 위반으로 막음(규칙끼리 충돌) | slidekit make_slide_video.py 문단 'next'+deck 'next_text' 띠, check_slides NEXT(안내 문장에 '편'·'설명란')·NEXTSUB(구독·ad·쇼츠 문장과 겹침 금지, next 쓰는 덱만 검사), easy_check가 부록 맨 끝 '## 함께 읽기' 허용 | smr4 옛 덱 check_slides OK(오탐 0), 사이트 tools/slidekit 커밋 391934c |
 | 101 | 11-18 | SMR: 맥 녹음은 숫자를 바르게 읽었는데 ASR이 '15. 7퍼센트'·'4. 37로'처럼 소수점 뒤를 띄어 써 tts_asr_check가 두 번 CHAIN_FAIL(문단 재녹음 2회) | tts_asr_check.heard_nums에 '소수점 + 띄어쓰기 + 숫자 + 단위'를 한 수로 잇는 줄 추가('1. 2번' 같은 번호 나열은 단위가 없어 그대로) |
 | 95 BTQ | anim 시험(11-16)에서 제목과 'SEC 공시 0건' 괄호가 겹치고 패널 숫자가 상자 밖으로 나감 · 첫 프레임이 비어 video_check 빈 화면 3초 · 서서히 그려지는 선이 정지 16초로 잡힘 | `slidekit/anim.py` 겹침·화면 밖 검사(박자마다·마지막 프레임, ANIM_FAIL로 합성 중단) + `check_slides.py` ANIM·ANIMAD·ANIMTAIL·ANIMBEAT·ANIMN + segments.json `anim` → video_check·still_check·최장 정지 | make_slide_video·chain_long(과거 PLUG·JOBY·LCID 폴더 오탐 0) |
 | 93 PLUG | 87회차 GPUS 쇼츠 렌더가 AssertionError로 죽었는데 chain_long이 CHAIN_DONE을 냄(retro 87 '다음 회차 검사 후보') | `tools/chain_long.sh` 쇼츠 렌더 뒤 `${T}_shorts.mp4` 있음·shorts.json보다 새것·render.log에 Traceback/AssertionError 없음을 확인, 아니면 CHAIN_FAIL shorts_render | 합성 체인 안 자동 · 과거 17개 작업 폴더 render.log 오류 0건(오탐 0), LCID 92 mp4가 shorts.json보다 새것 확인 |
