@@ -2879,6 +2879,27 @@
    ],
    "video": "W3vcgET5izw",
    "shorts": "w0l2EBi4FT8"
+  },
+  {
+   "t": "sldp",
+   "date": "2026.11.17",
+   "layout": "custom",
+   "palette": "navy-lime-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.90배(빨강) 카드 + 배터리 셀 단면·전해질 병·번개",
+    "현금선 → 11.17 종가 1.73 → 1.56달러 / 첫 이탈(빨강) + 같은 그림"
+   ],
+   "video": "K6zvU0sUeak",
+   "shorts": "HoyGjg0pmss"
   }
  ]
 }
