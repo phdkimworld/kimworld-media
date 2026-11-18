@@ -28,6 +28,7 @@
 | 용어 사전 | 318개 항목 | `site/data/glossary.yaml` |
 | 그림 명세(figkit JSON) | 92개(16편 · 비교 27·가격 사건 19·시나리오 16·기록 15·상대 흐름 13·추이 2) | `site/static/figs/` |
 | 그림 이미지 | 267개(WebP·PNG) | `site/static/charts/` |
+| 이북 재료(11-18 지난 리포트·대본 전체에서 채움) | 판정 끝난 예측 21 · 통찰 50(6장 10·7장 8·8장 8·9장 5·10장 6·11장 9·12장 4) · 오답 35 · 공시 36 · 시청자 질문 8(원문 미보관, 요지) · 비유 10(모두 출처 필요) · 쉬운 설명 18 | `media/ebook/materials/*.md`, 월별 판 `media/ebook/editions/2026-11.md` |
 | 그림·검사 도구 | 그림 1(figkit) + 원고 검사 9 | `media/tools/` |
 | 영상 대본 | 82개 파일(롱폼·쇼츠, 회차 폴더 약 27개) | `ws/<회차>/video/narration.txt`, `ws/<회차>/shorts/narration.txt` |
 | 회차 조사 폴더 | 26개(시세 JSON·공시 원문·events 등) | `ws/<회차>/research/` |

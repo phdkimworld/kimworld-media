@@ -4,7 +4,7 @@
 사용:
   python3 tools/ebook_materials.py --sync           # 장부에서 새로 판정된 예측을 ebook/materials/judged.md에 붙임(중복 없음)
   python3 tools/ebook_materials.py --add <파일> --slug <slug> --text "..."   # 회차 재료 한 줄 추가
-        파일: insights(통찰·통섭, 3부) | wrong(아픈 오답 후보, 5장) | filings(공시 사례, 부록 A) | questions(시청자 질문 원문, FAQ) | lens(다른 분야 비유 후보)
+        파일: insights(통찰·통섭, 3부) | wrong(아픈 오답 후보, 5장) | filings(공시 사례, 부록 A) | questions(시청자 질문 원문, FAQ) | lens(다른 분야 비유 후보) | explain(쉬운 설명 문단)
   python3 tools/ebook_materials.py --edition        # 이번 달 판(ebook/editions/YYYY-MM.md): 장부 숫자·재료 수·지난 판 뒤 새로 쌓인 것 요약
   python3 tools/ebook_materials.py --status         # 한 줄 요약(제작 점검·복기용)
 숫자는 장부·리포트에 있는 것만. 판정 끝난 지난 예측만 '책에 실을 재료'로 표시하고, 대기 예측은 싣지 않는다(WRITING_GUIDE 0장).
@@ -15,7 +15,8 @@ M = os.path.join(ROOT, "ebook", "materials"); E = os.path.join(ROOT, "ebook", "e
 LEDGER = os.path.join(ROOT, "review", "predictions", "ledger.jsonl")
 FILES = {"judged": "판정 끝난 예측(2부 성적표·5장 오답 재료, 장부에서 자동)", "insights": "통찰·통섭(3부 6~12장)",
          "wrong": "가장 아팠던 오답 후보(5장)", "filings": "공시 사례(부록 A 공시 도구상자)",
-         "questions": "시청자 질문 원문(FAQ·들어가며)", "lens": "다른 분야 비유 후보(통섭 렌즈, 출처 필수)"}
+         "questions": "시청자 질문 원문(FAQ·들어가며)", "lens": "다른 분야 비유 후보(통섭 렌즈, 출처 필수)",
+         "explain": "쉬운 설명 문단(책에 옮겨 쓸 대본·리포트 문단, 숫자는 그 회차 리포트 기준)"}
 DONE = ("일어남", "빗나감", "안 일어남", "적중")
 
 def path(k): return os.path.join(M, f"{k}.md")
