@@ -138,6 +138,12 @@
      ]
     },
     {
+     "from": 2,
+     "layout": "quote",
+     "text": "12월 4일 종가를\n**네 갈래로**",
+     "at": 2
+    },
+    {
      "from": 3,
      "layout": "stat",
      "title": "실적 날 바닥 아래 갈래",
@@ -152,16 +158,9 @@
     },
     {
      "from": 4,
-     "layout": "stat",
-     "title": "판정",
-     "stats": [
-      {
-       "at": 4,
-       "big": "12월 4일",
-       "label": "아직 진행 중",
-       "tone": "white"
-      }
-     ]
+     "layout": "quote",
+     "text": "판정은 12월 4일\n**아직 진행 중**",
+     "at": 4
     },
     {
      "from": 5,
@@ -176,6 +175,12 @@
       }
      ],
      "sfx": "boom"
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "네비우스와\n**2거래일 모두 함께**",
+     "at": 6
     },
     {
      "from": 7,
