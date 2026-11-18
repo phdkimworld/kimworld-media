@@ -1,0 +1,1423 @@
+ 
+ EX-99.1
+ 2
+ exhibit99-1.htm
+ EXHIBIT 99.1
+ BTQ Technologies Corp.: Exhibit 99.1 - Filed by newsfilecorp.com 
+ BTQ TECHNOLOGIES CORP. 
+ Condensed Interim Consolidated Financial Statements 
+ Three and Nine Months Ended September 30, 2026 and 2025 
+ (Expressed in Canadian dollars) 
+ (unaudited) 
+ BTQ TECHNOLOGIES CORP. Condensed Interim Consolidated Statements of Financial Position (Expressed in Canadian dollars) 
+ September 30, 2026 $ 
+ December 31, 2025 $ 
+ (unaudited) 
+ Assets 
+ Current assets 
+ Cash 
+ 21,573,717 
+ 20,939,224 
+ Short-term investments 
+ 57,500 
+ 57,500 
+ Other receivables 
+ 409,951 
+ 53,354 
+ Prepaid expenses and deposits 
+ 1,102,238 
+ 1,366,009 
+ Total current assets 
+ 23,143,406 
+ 22,416,087 
+ Non-current assets 
+ Deposits 
+ 160,904 
+ - 
+ Property and equipment 
+ 195,882 
+ 19,307 
+ Right-of-use assets (Note 7) 
+ 1,032,531 
+ - 
+ Investments (Note 3) 
+ 12,919,370 
+ 8,136,943 
+ Investment in associate (Note 4) 
+ - 
+ 3,214,662 
+ Intangible assets and goodwill (Note 5 and 8) 
+ 15,335,275 
+ - 
+ Total non-current assets 
+ 29,643,962 
+ 11,370,912 
+ Total assets 
+ 52,787,368 
+ 33,786,999 
+ Liabilities and shareholders' equity 
+ Current liabilities 
+ Accounts payable and accrued liabilities (Note 15) 
+ 9,008,663 
+ 2,151,111 
+ Current portion of lease obligations (Note 9) 
+ 268,637 
+ - 
+ Current portion of contingent consideration (Notes 5 and 6) 
+ 138,635 
+ - 
+ Deferred grant income 
+ 655,185 
+ - 
+ Due to related parties (Note 15) 
+ 26,793 
+ 25,882 
+ Total current liabilities 
+ 10,097,913 
+ 2,176,993 
+ Non-current liabilities 
+ Lease obligations (Note 9) 
+ 882,807 
+ - 
+ Contingent consideration (Notes 5 and 6) 
+ 170,316 
+ - 
+ Total non-current liabilities 
+ 1,053,123 
+ - 
+ Total liabilities 
+ 11,151,036 
+ 2,176,993 
+ Shareholders' equity 
+ Share capital (Note 10) 
+ 134,939,653 
+ 87,804,670 
+ Options reserve (Notes 10 and 11) 
+ 6,355,191 
+ 2,268,450 
+ Warrants reserve 
+ 1,843,488 
+ 1,843,488 
+ RSUs reserve (Note 10 and 13) 
+ 14,365,329 
+ 4,150,202 
+ PSUs reserve (Notes 10 and 14) 
+ 3,879,420 
+ 744,158 
+ Shares to be issued (Notes, 5, 6, and 10) 
+ 1,933,328 
+ 50,000 
+ Share subscriptions receivable (Note 10) 
+ (273,846 
+ ) 
+ - 
+ Deficit 
+ (121,406,231 
+ ) 
+ (65,250,962 
+ ) 
+ Total shareholders' equity 
+ 41,636,332 
+ 31,610,006 
+ Total liabilities and shareholders' equity 
+ 52,787,368 
+ 33,786,999 
+ Nature of operations and going concern (Note 1) 
+ Commitments (Note 22) 
+ Subsequent events (Note 23) 
+ Approved and authorized for issuance on behalf of the Board of Directors on November 16, 2026: 
+ " Olivier Roussy Newton " 
+ Director 
+ "Lionel de Saint-Exupery" 
+ Director 
+ The accompanying notes are an integral part of these condensed interim consolidated financial statements. 
+ 1 
+ BTQ TECHNOLOGIES CORP. Condensed Interim Consolidated Statements of Operations and Comprehensive Loss (Expressed in Canadian dollars) (unaudited) 
+ Three months ended September 30, 
+ Nine months ended September 30, 
+ 2026 
+ 2025 
+ 2026 
+ 2025 
+ $ 
+ $ 
+ $ 
+ $ 
+ Revenue (Note 16) 
+ - 
+ - 
+ - 
+ 315,497 
+ Expenses 
+ Business development, marketing, and promotion (Note 15) 
+ 1,688,332 
+ 1,178,585 
+ 5,815,086 
+ 1,528,263 
+ Consulting fees 
+ 576,138 
+ 331,675 
+ 1,176,347 
+ 452,924 
+ Depreciation 
+ 128,275 
+ 602 
+ 238,417 
+ 1,003 
+ General and administrative (Note 21) 
+ 659,788 
+ 440,983 
+ 1,883,363 
+ 728,194 
+ Professional fees (Note 15) 
+ 5,295,233 
+ 665,231 
+ 11,141,162 
+ 1,852,837 
+ Research and development (Note 15) 
+ 6,754,006 
+ 1,166,429 
+ 11,711,462 
+ 1,879,955 
+ Share-based compensation (Notes 11,13, and 14) 
+ 6,548,297 
+ 4,505,665 
+ 25,912,560 
+ 5,650,905 
+ Transfer agent, regulatory, and listing fees 
+ 146,640 
+ 628,834 
+ 446,671 
+ 768,390 
+ Wages and benefits (Note 15) 
+ 360,556 
+ 49,942 
+ 603,951 
+ 188,822 
+ Total expenses 
+ 22,157,265 
+ 8,967,946 
+ 58,929,019 
+ 13,051,293 
+ Loss before other income (expense) 
+ (22,157,265 
+ ) 
+ (8,967,946 
+ ) 
+ (58,929,019 
+ ) 
+ (12,735,796 
+ ) 
+ Other income (expense) 
+ Foreign exchange gain (loss) 
+ 46,247 
+ (56,078 
+ ) 
+ (169,627 
+ ) 
+ (46,529 
+ ) 
+ Interest income 
+ 12,962 
+ - 
+ 166,487 
+ 79 
+ Interest expense (Note 9) 
+ (45,827 
+ ) 
+ (141 
+ ) 
+ (107,085 
+ ) 
+ (517 
+ ) 
+ Loss on change in fair value of investment (Note 4) 
+ (768,030 
+ ) 
+ - 
+ (768,030 
+ ) 
+ - 
+ Share of income (loss) of equity accounted investee (Note 4) 
+ 27,068 
+ - 
+ (158,776 
+ ) 
+ - 
+ Unrealized gain on investments (Note 3) 
+ 3,402,663 
+ - 
+ 3,810,781 
+ - 
+ Total other income (expense) 
+ 2,675,083 
+ (56,219 
+ ) 
+ 2,773,750 
+ (46,967 
+ ) 
+ Net loss and comprehensive loss for the period 
+ (19,482,182 
+ ) 
+ (9,024,165 
+ ) 
+ (56,155,269 
+ ) 
+ (12,782,763 
+ ) 
+ Loss per share, basic and diluted 
+ (0.13 
+ ) 
+ (0.07 
+ ) 
+ (0.39 
+ ) 
+ (0.10 
+ ) 
+ Weighted average number of common shares outstanding, basic and diluted 
+ 146,987,151 
+ 137,819,668 
+ 143,087,936 
+ 134,164,445 
+ The accompanying notes are an integral part of these condensed interim consolidated financial statements. 
+ 2 
+ BTQ TECHNOLOGIES CORP. Condensed Interim Consolidated Statements of Changes in Shareholders’ Equity (Expressed in Canadian dollars) (unaudited) 
+ Share capital 
+ Options reserve $ 
+ Warrants reserve $ 
+ RSUs reserve $ 
+ PSUs reserve $ 
+ Shares to be issued $ 
+ Share subscriptions receivable $ 
+ Deficit $ 
+ Total shareholders' equity $ 
+ Number of shares 
+ Amount $ 
+ Balance, December 31, 2025 
+ 140,400,930 
+ 87,804,670 
+ 2,268,450 
+ 1,843,488 
+ 4,150,202 
+ 744,158 
+ 50,000 
+ - 
+ (65,250,962 
+ ) 
+ 31,610,006 
+ Shares issued for cash 
+ 5,768,113 
+ 30,032,384 
+ - 
+ - 
+ - 
+ - 
+ - 
+ (273,846 
+ ) 
+ - 
+ 29,758,538 
+ Share issuance costs 
+ - 
+ (1,673,542 
+ ) 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ (1,673,542 
+ ) 
+ Shares issued for acquisition of QPerfect 
+ 2,195,929 
+ 10,182,836 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ 10,182,836 
+ Contingent consideration for acquisition of QPerfect 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ 1,933,328 
+ - 
+ - 
+ 1,933,328 
+ Shares issued for options exercised 
+ 283,750 
+ 233,780 
+ (115,905 
+ ) 
+ - 
+ - 
+ - 
+ (50,000 
+ ) 
+ - 
+ - 
+ 67,875 
+ Shares issued for vested RSUs 
+ 1,072,500 
+ 6,019,525 
+ - 
+ - 
+ (6,019,525 
+ ) 
+ - 
+ - 
+ - 
+ - 
+ - 
+ Shares issued for vested PSUs 
+ 275,000 
+ 2,340,000 
+ - 
+ - 
+ - 
+ (2,340,000 
+ ) 
+ - 
+ - 
+ - 
+ - 
+ Share-based compensation 
+ - 
+ - 
+ 4,202,646 
+ - 
+ 16,234,652 
+ 5,475,262 
+ - 
+ - 
+ - 
+ 25,912,560 
+ Net loss for the period 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ (56,155,269 
+ ) 
+ (56,155,269 
+ ) 
+ Balance, September 30, 2026 
+ 149,996,222 
+ 134,939,653 
+ 6,355,191 
+ 1,843,488 
+ 14,365,329 
+ 3,879,420 
+ 1,933,328 
+ (273,846 
+ ) 
+ (121,406,231 
+ ) 
+ 41,636,332 
+ Share capital 
+ Options reserve $ 
+ Warrants reserve $ 
+ RSUs reserve $ 
+ Deficit $ 
+ Total shareholders' equity $ 
+ Number of shares 
+ Amount $ 
+ Balance, December 31, 2024 
+ 131,833,688 
+ 45,553,931 
+ 1,890,026 
+ 498,876 
+ 640,813 
+ (40,645,089) 
+ 7,938,557 
+ Shares issued for cash 
+ 5,555,555 
+ 39,999,996 
+ - 
+ - 
+ - 
+ - 
+ 39,999,996 
+ Share issuance costs 
+ - 
+ (4,397,257) 
+ - 
+ 1,357,406 
+ - 
+ - 
+ (3,039,851) 
+ Shares issued for options exercised 
+ 787,500 
+ 642,700 
+ (314,825) 
+ - 
+ - 
+ - 
+ 327,875 
+ Shares issued for warrants exercised 
+ 40,437 
+ 28,969 
+ - 
+ (12,794) 
+ - 
+ - 
+ 16,175 
+ Shares issued for vested RSU's 
+ 945,000 
+ 3,220,250 
+ - 
+ - 
+ (3,220,250) 
+ - 
+ - 
+ Share-based compensation 
+ - 
+ - 
+ 828,561 
+ - 
+ 4,822,344 
+ - 
+ 5,650,905 
+ Net loss for the period 
+ - 
+ - 
+ - 
+ - 
+ - 
+ (12,782,763) 
+ (12,782,763) 
+ Balance, September 30, 2025 
+ 139,162,180 
+ 85,048,589 
+ 2,403,762 
+ 1,843,488 
+ 2,242,907 
+ (53,427,852) 
+ 38,110,894 
+ The accompanying notes are an integral part of these condensed interim consolidated financial statements. 
+ 3 
+ BTQ TECHNOLOGIES CORP. Condensed Interim Consolidated Statements of Cash Flows (Expressed in Canadian dollars) (unaudited) 
+ Nine months ended September 30, 2026 $ 
+ Nine months ended September 30, 2025 $ 
+ Operating activities 
+ Net loss for the period 
+ (56,155,269 
+ ) 
+ (12,782,763 
+ ) 
+ Items not involving cash: 
+ Depreciation 
+ 238,417 
+ 1,003 
+ Foreign exchange translation loss (gain) 
+ 40,208 
+ (3,900 
+ ) 
+ Interest expense 
+ 107,085 
+ - 
+ Loss on change in fair value of investment 
+ 768,030 
+ - 
+ Share of loss of equity accounted investee 
+ 158,776 
+ - 
+ Share-based compensation 
+ 25,912,560 
+ 5,650,905 
+ Unrealized gain on investments 
+ (3,810,781 
+ ) 
+ - 
+ Changes in non-cash operating working capital: 
+ Other receivables 
+ (18,424 
+ ) 
+ (4,519 
+ ) 
+ Prepaid expenses and deposits 
+ 128,265 
+ (271,531 
+ ) 
+ Accounts payable and accrued liabilities 
+ 6,769,235 
+ 481,309 
+ Deferred grant income 
+ 268,490 
+ - 
+ Deferred revenue 
+ - 
+ (315,497 
+ ) 
+ Net cash used in operating activities 
+ (25,593,408 
+ ) 
+ (7,244,993 
+ ) 
+ Investing activities 
+ Acquisition of investments 
+ (971,646 
+ ) 
+ - 
+ Acquisition of QPerfect, net of cash acquired 
+ (540,756 
+ ) 
+ - 
+ Proceeds from deposit 
+ - 
+ 5,751 
+ Purchase of property and equipment 
+ (186,972 
+ ) 
+ (12,033 
+ ) 
+ Net cash used in investing activities 
+ (1,699,374 
+ ) 
+ (6,282 
+ ) 
+ Financing activities 
+ Repayment of lease obligations 
+ (225,596 
+ ) 
+ - 
+ Proceeds from issuance of common shares 
+ 29,758,538 
+ 39,999,996 
+ Share issuance costs 
+ (1,673,542 
+ ) 
+ (3,039,851 
+ ) 
+ Proceeds from stock options exercised 
+ 67,875 
+ 327,875 
+ Proceeds from warrants exercised 
+ - 
+ 16,175 
+ Net cash provided by financing activities 
+ 27,927,275 
+ 37,304,195 
+ Change in cash 
+ 634,493 
+ 30,052,920 
+ Cash, beginning of period 
+ 20,939,224 
+ 9,336,892 
+ Cash, end of period 
+ 21,573,717 
+ 39,389,812 
+ Supplemental cash flow information (Note 17) 
+ The accompanying notes are an integral part of these condensed interim consolidated financial statements. 
+ 4 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 1. NATURE OF OPERATIONS AND GOING CONCERN 
+ BTQ Technologies Corp. ("the Company") was incorporated on November 23, 1983 under the Business Corporations Act (British Columbia). The principal activity of the Company is the development of computer-based technology related to post-quantum cryptography, particularly as it applies to blockchain and related technologies, and their protection from the emerging security risk of quantum computing. The Company's registered office is located at Suite 2500, 700 West Georgia Street, Vancouver, BC, Canada, V7Y 1B3. The Company's common shares trade on both Cboe Canada and Nasdaq under the ticker symbol "BTQ". 
+ These condensed interim consolidated financial statements have been prepared on the going concern basis, which assumes that the Company will be able to realize its assets and discharge its liabilities in the normal course of business. During the period ended September 30, 2026, the Company has a net loss of $56,155,269, and negative cash flow from operations of $25,593,408. As at September 30, 2026, the Company has an accumulated deficit of $121,406,231. The Company's ability to continue its operations and to realize its assets at their carrying values is dependent upon obtaining additional financing and generating revenues sufficient to cover its operating costs. Management is of the opinion that sufficient working capital will be obtained from external financing to meet the Company's liabilities and commitments as they become due, although there is a risk that additional financing will not be available on a timely basis or on terms acceptable to the Company. These factors indicate a material uncertainty that may cast significant doubt on the ability of the Company to continue as a going concern. These consolidated financial statements do not reflect any adjustments that may be necessary if the Company is unable to continue as a going concern. Such adjustments could be material. 
+ 2. BASIS OF PRESENTATION AND MATERIAL ACCOUNTING POLICY INFORMATION 
+ Statement of Compliance 
+ These condensed interim consolidated financial statements have been prepared in accordance with IFRS Accounting Standards ("IFRS") as issued by the International Accounting Standards Board ("IASB") applicable to interim financial information, as outlined in International Accounting Standard ("IAS") 34, "Interim Financial Reporting" and using the accounting policies consistent with those in the audited financial statements as at and for the year ended December 31, 2025 except as detailed below. 
+ The condensed interim consolidated financial statements of the Company have been prepared on an accrual basis and are based on historical cost, except for certain financial assets and liabilities that are measured at fair value. 
+ Basis of Presentation 
+ These condensed interim consolidated financial statements include the accounts of the Company and its wholly-owned subsidiaries, BTQ AG, a company incorporated in the Principality of Liechtenstein, BTQ Technologies Australia Pty Ltd, a company incorporated in Australia, BTQ Technologies (USA) Ltd., a company incorporated in the State of Delaware, U.S, and QPerfect SA, a company incorporated in France. 
+ These condensed interim consolidated financial statements include the accounts of the Company and its subsidiaries. All intercompany transactions and balances are eliminated on consolidation. Control exists where the parent entity has power over the investee and is exposed, or has rights, to variable returns from its involvement with the investee and has the ability to affect those returns through its power over the investee. Subsidiaries are included in the financial statements from the date control commences until the date control ceases. 
+ 5 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 2. BASIS OF PRESENTATION AND MATERIAL ACCOUNTING POLICY INFORMATION (continued) 
+ Material Accounting Policies 
+ Business Combinations 
+ The Company accounts for business combinations using the acquisition method when control is transferred and the acquired set of activities and assets meets the definition of a business. In determining whether an acquisition represents a business, the Company assesses whether the acquired set includes, at a minimum, an input and substantive process and whether it has the ability to produce outputs. If the acquisition does not meet the definition of a business, it is accounted for as an asset acquisition. 
+ The consideration transferred is measured at fair value at the acquisition date, as are the identifiable assets acquired and liabilities assumed. When the Company acquires control of a business, any previously held equity interest is re-measured to fair value. Goodwill represents the excess of the consideration transferred over the fair value of the identifiable net assets acquired and is recognized as an asset. Goodwill is subsequently measured at cost less impairment. Contingent consideration is recognized at fair value at the acquisition date and subsequently measured in accordance with applicable standards. 
+ The Company may adjust provisional amounts recognized at the acquisition date during the measurement period, which does not exceed one year from the acquisition date, to reflect new information obtained about facts and circumstances that existed at the acquisition date. 
+ Transaction costs related to acquisitions are expensed as incurred, except for costs related to the issuance of debt or equity instruments. 
+ Intangible Assets 
+ Intangible assets acquired separately are initially recognized at cost. Intangible assets acquired as part of a business combination are initially recognized at their fair value at the acquisition date, provided they meet the recognition criteria under IFRS 3, Business Combinations. 
+ Subsequent to initial recognition, intangible assets are measured at cost less accumulated amortization and accumulated impairment losses. 
+ Expenditures incurred during the research phase of an internally generated project are recognized as an expense as incurred in the consolidated statement of operations and comprehensive loss. Expenditures incurred during the development phase are capitalized only when it meets the definition and the following recognition criteria under IAS 38 Intangible Assets: 
+ • The technical feasibility of completing the intangible asset so that it will be available for use or sale; 
+ • Its intention to complete the intangible asset and use or sell it; 
+ • Its ability to use or sell the intangible asset; 
+ • Its ability to generate probable future economic benefits; 
+ • The availability of adequate technical, financial and other resources to complete the development and use or sell the intangible asset; and 
+ • Its ability to measure reliably the expenditure attributable to the intangible asset during its development. 
+ Where the recognition criteria are not met, development expenditures are recognized as an expense in the consolidated statement of operations and comprehensive loss in the period they are incurred. 
+ 6 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 2. BASIS OF PRESENTATION AND MATERIAL ACCOUNTING POLICY INFORMATION (continued) 
+ Material Accounting Policies (continued) 
+ Impairment of Non-financial Assets 
+ The carrying amount of the Company's non-financial assets is reviewed at each financial reporting date to determine whether there is any indication of impairment. If such indication exists, the recoverable amount of the asset is estimated to determine the extent of the impairment loss. Non-financial assets with finite lives are tested for impairment whenever events or changes in circumstances indicate that their carrying amounts may not be recoverable. In addition, non-financial assets with non-finite useful life and goodwill are subject to an annual impairment assessment. An impairment loss is recognized when the carrying amount of an asset or its Cash Generating Unit ("CGU") exceeds its recoverable amount. 
+ The recoverable amount of an asset or CGU is the greater of its fair value less costs of disposal and value in use. In assessing value in use, the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects the current market assessments of the time value of money and the risks specific to the asset. For an asset that does not generate cash inflows largely independent of those from other assets, the recoverable amount is determined for the CGU to which the asset belongs. 
+ An impairment loss is only reversed if there is an indication that the impairment loss may no longer exist and there has been a change in the estimates used to determine the recoverable amount, however, not to an amount higher than the carrying amount that would have been determined had no impairment loss been recognized in previous years. Any impairment loss is recognized for the amount by which the asset's carrying amount exceeds its recoverable amount in earnings of continuing or discontinued operations, as appropriate. 
+ Goodwill 
+ Goodwill arising from business combinations represents the excess of the consideration transferred, the amount of any non-controlling interest and the fair value of any previously held equity interest over the fair value of the identifiable net assets acquired and liabilities assumed at the acquisition date. 
+ Goodwill is initially recognized at cost and subsequently measured at cost less accumulated impairment losses. Goodwill is not amortized but is tested for impairment annually and whenever events or changes in circumstances indicate that its carrying amount may be impaired. Any impairment loss identified is recognized immediately in the consolidated statement of operations and comprehensive loss. 
+ Leases 
+ Under IFRS 16 - Leases, the Company recognizes a right-of-use asset and a lease liability at the lease commencement date for leases greater than 12 months. The right-of-use asset is initially measured at cost, which comprises the initial amount of the lease liability adjusted for any lease payments made at or before the commencement date, plus any initial direct costs incurred and an estimate of costs to dismantle and remove the underlying asset or to restore the underlying asset or the site on which it is located, less any lease incentives received. Right-of-use assets are subsequently depreciated over lesser of useful economic life and the remaining term of the lease and are carried at cost less accumulated depreciation and impairment. The lease liability is initially measured at the present value of the lease payments that are not paid at the commencement date, discounted using the interest rate implicit in the lease or, if that rate cannot be readily determined, the Company's incremental borrowing rate. Lease liabilities are subsequently reduced by lease payments net of interest expense calculated using the effective interest method. 
+ The Company has elected not to recognize right-of-use assets and lease liabilities for leases of low-value assets and short-term leases. The Company recognizes the lease payments associated with these leases as an expense on a straight-line basis over the lease. 
+ The termination of the lease is accounted for as a decrease in the scope of the lease with remaining lease liability and right-of-use assets derecognized and any gain or loss relating to the termination is recognized in the consolidated statement of operations and comprehensive loss. 
+ 7 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 2. BASIS OF PRESENTATION AND MATERIAL ACCOUNTING POLICY INFORMATION (continued) 
+ Critical Accounting Estimates and Judgments 
+ Business combination 
+ Classification of an acquisition as a business combination or an asset acquisition depends on whether the assets acquired constitute a business, which can be a complex judgment. Whether an acquisition is classified as a business combination or asset acquisition can have a significant impact on the entries made on and after acquisition. In determining the fair value of all identifiable assets, liabilities and consideration, the most significant estimates relate to intangible assets and contingent consideration. For any intangible asset identified, depending on the type of intangible asset and the complexity of determining its fair value, an independent valuation expert or management may develop the fair value, using appropriate valuation techniques, which are generally based on a forecast of the total expected future net cash flows. The evaluations are linked closely to the assumptions made by management regarding the future performance of these assets and any changes in the discount rate applied. The determination of fair value of the contingent consideration is subject to management estimates in relation to a probability of contingent events that the contingent consideration is based on. 
+ Impairment of goodwill 
+ The values associated with goodwill involve significant estimates and assumptions, including those with respect to the determination of cash generating units, future cash inflows and outflows, discount rates, and asset lives. At least annually, the carrying amount of goodwill is reviewed for potential impairment. Among other things, this review considers the recoverable amounts of the CGUs based on the higher of value in use or fair value less costs of disposal using discounted estimated future cash flows. These significant estimates require considerable judgement which could affect the Company's future results if the current estimates of future performance and fair value change. 
+ Determination of Cash-Generating Units 
+ The Company's assets are aggregated into CGUs. CGUs are based on an assessment of the unit's ability to generate independent cash inflows. The determination of these CGUs is based on management's judgment in regard several factors such as shared infrastructure, geographical proximity, exposure to market risk, and materiality. 
+ Recent Accounting Pronouncements 
+ Amendments to the Classification and Measurement of Financial Instruments ("Amendments to IFRS 9 and IFRS 7") 
+ In May 2024, the IASB issued Amendments to IFRS 9 and IFRS 7 which clarify the date of recognition and derecognition of some financial assets and liabilities with a new exception for some financial liabilities settled through an electronic cash transfer system, clarify and add further guidance for assessing whether a financial asset meets the solely payments of principal and interest criterion, add new disclosures for certain instruments with contractual terms that can change cash flows such as instruments with features linked to the achievement of environment, social and governance targets; and update the disclosures for equity instruments designated at FVOCI. Amendments to IFRS 9 and IFRS 7 is effective for periods beginning on or after January 1, 2026. The Company adopted these amendments on January 1, 2026, and they did not have a material impact on the Company's condensed interim consolidated financial statements. 
+ 8 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 2. BASIS OF PRESENTATION AND MATERIAL ACCOUNTING POLICY INFORMATION (continued) 
+ Recent Accounting Pronouncements (continued) 
+ IFRS 18 Presentation and Disclosure in Financial Statements 
+ In April 2024, the IASB issued IFRS 18 - Presentation and Disclosure in Financial Statements which will replace IAS 1, Presentation of Financial Statements. The key new concepts introduced in IFRS 18 relate to the structure of the statement of earnings (loss), required disclosures in the financial statements for certain earnings or loss performance measures that are reported outside an entity's financial statements and enhanced principles on aggregation and disaggregation which apply to the primary financial statements and notes in general. IFRS 18 will apply for reporting periods beginning on or after January 1, 2027, and also applies to comparative information. The Company is still in the process of assessing the impact of this standard on its consolidated financial statements. 
+ Other accounting standards or amendments to existing accounting standards that have been issued but have future effective dates and are not expected to have a significant impact on the Company's consolidated financial statements. 
+ 3. INVESTMENTS 
+ $ 
+ Balance, December 31, 2025 
+ 8,136,943 
+ Additions 
+ 971,646 
+ Unrealized gain 
+ 3,810,781 
+ Balance, September 30, 2026 
+ 12,919,370 
+ During the year ended December 31, 2022, the BTQ AG invested $63,915 (US$50,000) in the form of a Simple Agreement for Future Equity ("SAFE") in the Holonym Foundation ("Holonym"), which is a public benefit corporation in the US. The investment is not traded in an active market. 
+ On January 11, 2023, BTQ AG invested $13,314 (US$10,000) in the form of a SAFE into Cysic Inc., a private company in the US. The investment is not traded in an active market. 
+ On November 18, 2025, the Company. invested $960,821 (KRW1,000,320,000) in the form of a SAFE into Genesis Quantum Inc., a private company in the US. The investment is not traded in an active market. 
+ On December 15, 2025, the Company entered into an agreement in which it acquired 452,058 common shares of ICTK Co., Ltd., a publicly traded company in South Korea for $6,776,806. As at September 30, 2026, the fair market value of the investment was $10,909,674 (December 31, 2025 - $7,098,893), resulting in an unrealized gain of $3,810,781 for the nine months ended September 30, 2026. The investment has a lock up period of two years. 
+ On January 15, 2026, the Company invested $694,320 (US$500,000) in redeemable convertible preferred shares of Keypair Co. Ltd., a private company in South Korea. The investment is not traded in an active market. 
+ On August 17, 2026, The Company acquired 670 common shares of Biyard Co. Ltd., a private company in South Korea for $277,326. The investment is not traded in an active market. 
+ The Company estimated the fair value of these investments and concluded that the carrying value approximates the fair value of the investments as at December 31, 2025 and September 30, 2026. 
+ 9 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 4. INVESTMENT IN ASSOCIATE 
+ On November 7, 2025, the Company entered into an Ordinary Share Subscription Agreement with QPerfect SA ("QPerfect"), wherein the Company acquired 217,865 QPerfect ordinary shares for $3,263,521 (€2,000,000). Concurrent with the completion of this investment, the Company provided notice to exercise its option to acquire the remaining shares of QPerfect which will be paid in cash and common shares of the Company. The Company completed the exercise of its option to acquire the remaining shares of QPerfect. Refer to Note 5. 
+ The Company held a 15.9% interest in QPerfect over which the Company had determined that it held significant influence as: 
+ the Company appointed a director to the Board of Directors and the director has the ability to veto or approve a number of management decisions. 
+ Accordingly, the investment is accounted for using the equity method. 
+ $ 
+ Balance, December 31, 2025 
+ 3,214,662 
+ Share of net loss 
+ (158,776 
+ ) 
+ Loss on change in fair value as at July 7, 2026, prior to acquisition of QPerfect (Note 5) 
+ (768,030 
+ ) 
+ Transfer on closing of acquisition of QPerfect (Note 5) 
+ (2,287,856 
+ ) 
+ Balance, September 30, 2026 
+ - 
+ 5. ACQUISITION OF QPERFECT 
+ On July 7, 2026, the Company completed the acquisition of the remaining 84.1% interest in QPerfect, a quantum computing company based in France, in exchange for the following consideration: 
+ cash payment of $3,306,416 (€2,024,000) (paid); and 
+ issuance of 2,195,929 common shares of the Company (issued). 
+ In addition to the consideration described above, the Company also committed to the following future consideration contingent, both in cash and a fixed number of shares, on reaching certain milestones: 
+ cash payments of up to €440,604; and 
+ issuance of up to 693,450 common shares. 
+ The acquisition has been accounted for as a business combination under IFRS 3, Business Combinations and the results of operations are included in the condensed interim consolidated statement of loss and comprehensive loss from July 7, 2026. At the acquisition date, the determination of certain assets acquired and liabilities assumed remained subject to the completion of information gathering, valuation procedures, and other analyses required by IFRS 3. 
+ Accordingly, certain amounts are based on management's best estimates and assumptions available as of the date these condensed interim consolidated financial statements were prepared and may be subject to revision during the measurement period permitted under IFRS 3. Such revisions may arise from the receipt of additional information about facts and circumstances that existed as of the acquisition date. 
+ Management will finalize the recognition and measurement of assets acquired, liabilities assumed and consideration transferred as additional information becomes available. Any adjustments identified within the IFRS 3 measurement period will be recognized retrospectively. 
+ 10 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 5. ACQUISITION OF QPERFECT (continued) 
+ As at the date of these condensed interim consolidated financial statements, management continues to evaluate, among other matters: 
+ the identification and valuation of certain acquired intangible assets; 
+ the completeness and measurement of assumed liabilities; 
+ income tax balances and acquired tax attributes; and 
+ other acquisition-date estimates requiring additional information or analysis. 
+ The ultimate amounts recorded upon completion of the purchase price allocation may differ from the provisional amounts reflected in these condensed interim consolidated financial statements, and such differences could be material. 
+ The following table summarizes the estimated preliminary fair values of the identifiable assets acquired and liabilities assumed at the date of acquisition: 
+ $ 
+ Consideration: 
+ Cash payment (€2,024,000) 
+ 3,306,416 
+ Fair value of 2,195,929 common shares 
+ 10,182,836 
+ Fair value of previous 15.9% investment in QPerfect (Note 4) 
+ 2,287,856 
+ Contingent consideration - cash 
+ 308,951 
+ Contingent consideration - common shares 
+ 1,933,328 
+ Total consideration 
+ 18,019,387 
+ Assets acquired and liabilities assumed: 
+ Cash 
+ 2,765,660 
+ Amounts receivable 
+ 338,172 
+ Prepaid expenses 
+ 25,398 
+ Property and equipment 
+ 32,236 
+ Right-of-use of asset 
+ 14,446 
+ Intangible assets and goodwill 
+ 15,335,275 
+ Accounts payable and accrued liabilities 
+ (88,316) 
+ Deferred grant income 
+ (386,695) 
+ Lease liability 
+ (16,789) 
+ Total net assets acquired 
+ 18,019,387 
+ The common shares issued as consideration are subject to contractual holding periods between four to twenty-four months, during which these shares may not be transferred, sold, assigned, pledged, or otherwise disposed of. The value of the common shares was estimated by reference to the common share market price on the acquisition date and calculated using a 21.9% discount rate for lack of marketability, as the shares have certain regulatory trading restrictions. The fair value of the contingent consideration is based on management’s best estimate for achieving certain milestones in the future. The fair value of the contingently issuable common shares was estimated by reference to the common share market price on the acquisition date and calculated using a 21.7% to 21.9% discount rate for lack of marketability. 
+ If the acquisition had occurred on January 1, 2026, QPerfect would have contributed an additional net loss $1,170,181 to the consolidated net loss. Since the date of acquisition, QPerfect has contributed a net loss of $707,420 to the consolidated net loss. 
+ 11 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 6. CONTINGENT CONSIDERATION 
+ $ 
+ Liability balance, December 31, 2025 
+ - 
+ Acquired in QPerfect acquisition 
+ 308,951 
+ Liability balance, September 30, 2026 
+ 308,951 
+ Current 
+ 138,635 
+ Non-current 
+ 170,316 
+ Total 
+ 308,951 
+ The contingent consideration as at September 30, 2026 is associated with the acquisition of QPerfect as described in Note 5. The fair value of the contingent cash consideration was estimated at $308,951 as at September 30, 2026. The Company also has contingent share consideration with a fair value of $1,933,328 which is included in shares to be issued as at September 30, 2026. 
+ 7. RIGHT-OF-USE ASSETS 
+ $ 
+ Cost: 
+ Balance, December 31, 2025 
+ - 
+ Additions 
+ 1,213,869 
+ ROU asset from QPerfect acquisition 
+ 14,446 
+ Balance, September 30, 2026 
+ 1,228,315 
+ Accumulated depreciation: 
+ Balance, December 31, 2025 
+ - 
+ Additions 
+ 195,784 
+ Balance, September 30, 2026 
+ 195,784 
+ Carrying amounts: 
+ As at December 31, 2025 
+ - 
+ As at September 30, 2026 
+ 1,032,531 
+ 8. INTANGIBLE ASSETS AND GOODWILL 
+ On July 7, 2026, the Company acquired certain intellectual property and goodwill through its 100% acquisition of QPerfect. 
+ $ 
+ Balance, December 31, 2025 
+ - 
+ Acquired from QPerfect acquisition 
+ 15,335,275 
+ Balance, September 30, 2026 
+ 15,335,275 
+ 12 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 9. LEASE OBLIGATIONS 
+ $ 
+ Balance, December 31, 2025 
+ - 
+ Additions 
+ 1,213,869 
+ Lease liability assumed fr QPerfect 
+ 16,789 
+ Payments 
+ (225,596 
+ ) 
+ Interest 
+ 107,085 
+ Foreign exchange translation loss 
+ 39,297 
+ Balance, September 30, 2026 
+ 1,151,444 
+ Less: current portion 
+ 268,637 
+ Non-current portion 
+ 882,807 
+ On January 1, 2026, the Company entered into a premises lease agreement which gives the Company the right to use an underlying asset located in New York, USA, which expires on December 31, 2030. The Company's obligation to make lease payments arising from the lease is calculated by discounting the fixed lease payments over the lease term at the Company's incremental borrowing rate. The incremental borrowing rate used in the calculation was 14%. 
+ On January 7, 2026, the Company entered into a premises lease agreement which gives the Company the right to use an underlying asset located in Seoul, South Korea, which expires on January 14, 2028. The Company's obligation to make lease payments arising from the lease is calculated by discounting the fixed lease payments over the lease term at the Company's incremental borrowing rate. The incremental borrowing rate used in the calculation was 12%. 
+ On May 15, 2026, the Company entered into a premises lease agreement which gives the Company the right to use an underlying asset located in Oregon, USA which expires on November 30, 2029. The Company's obligation to make lease payments arising from the lease is calculated by discounting the fixed lease payments over the lease term at the Company's incremental borrowing rate. The incremental borrowing rate used in the calculation was 12.5%. 
+ 10. SHARE CAPITAL 
+ Authorized: Unlimited number of common shares without par value 
+ Share transactions during the nine months ended September 30, 2026: 
+ On July 7, 2026, the Company issued 2,195,929 common shares with a fair value of $10,182,836 pursuant to the acquisition of QPerfect. 
+ During the nine months ended September 30, 2026, the Company issued 5,768,113 common shares for proceeds of $30,032,384, of which $273,846 was recorded as shares subscription receivable as at September 30, 2026, under its base shelf prospectus supplement. In connection with the financing, the Company incurred share issuance costs of $1,673,542. 
+ During the nine months ended September 30, 2026, the Company issued 283,750 common shares for proceeds of $117,875 pursuant to the exercise of stock options, of which $50,000 was received during the year ended December 31, 2025. The fair value of stock options exercised of $115,905 was transferred from options reserve to share capital. 
+ During the nine months ended September 30, 2026, the Company issued 1,072,500 common shares pursuant to the settlement of vested restricted share units ("RSUs"). The fair value of vested RSUs of $6,019,525 was transferred from RSUs reserve to share capital. 
+ 13 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 10. SHARE CAPITAL (continued) 
+ Share transactions during the nine months ended September 30, 2026: (continued) 
+ During the nine months ended September 30, 2026, the Company issued 275,000 common shares pursuant to the settlement of vested performance share units ("PSUs"). The fair value of vested PSUs of $2,340,000 was transferred from PSUs reserve to share capital. 
+ Share transactions during the nine months ended September 30, 2025: 
+ During the nine months ended September 30, 2025, the Company issued 787,500 common shares for proceeds of $327,875 pursuant to the exercise of stock options. Upon conversion, the fair value of $314,825 for stock options exercised was transferred from options reserve to share capital. 
+ During the nine months ended September 30, 2025, the Company issued 40,437 common shares for proceeds of $16,175 pursuant to the exercise of share purchase warrants. Upon conversion, the fair value of $12,794 for share purchase warrants exercised was transferred from warrants reserve to share capital. 
+ During the nine months ended September 30, 2025, the Company issued 945,000 common shares pursuant to the conversion of vested RSUs. Upon conversion, the fair value of $3,220,250 for the vested RSUs was transferred from RSUs reserve to share capital. 
+ On July 11, 2025, the Company issued 5,555,555 common shares at $7.20 per share for gross proceeds of $39,999,996. In connection with the financing, the Company incurred share issuance costs of $3,039,851 and issued 138,888 finders' warrants exercisable at $12.60 per common share expiring on July 11, 2030. The fair value of the finders' warrants was determined to be $1,357,406 which was calculated using the Black-Scholes option pricing model with the following assumptions: volatility of 195%, expected life of 5 years, no dividends, and a risk-free rate of 3.06%. 
+ 11. STOCK OPTIONS 
+ The Company has an omnibus plan (the "Plan") for directors, officers, employees, and consultants of the Company. Stock options are exercisable for periods of up to five years, as determined by the Board of Directors of the Company, to purchase common shares of the Company at a price not less than the discounted market price on the date of the grant. The maximum number of shares which may be issuable under the Plan cannot exceed 10% of the total number of issued and outstanding common shares on a non-diluted basis. The following table summarizes the continuity of the Company's stock options: 
+ Number of stock options 
+ Weighted average exercise price $ 
+ Outstanding, December 31, 2025 
+ 2,503,750 
+ 0.75 
+ Granted 
+ 949,000 
+ 6.66 
+ Exercised 
+ (283,750) 
+ 0.42 
+ Expired 
+ (75,000) 
+ 0.35 
+ Outstanding, September 30, 2026 
+ 3,094,000 
+ 2.60 
+ Exercisable, September 30, 2026 
+ 1,266,250 
+ 2.40 
+ 14 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 11. STOCK OPTIONS (continued) 
+ Additional information regarding stock options outstanding as at September 30, 2026, is as follows: 
+ Outstanding 
+ Exercisable 
+ Range of exercise prices $ 
+ Number of stock options 
+ Weighted average remaining contractual life (years) 
+ Weighted average exercise price $ 
+ Number of stock options 
+ Weighted average exercise price $ 
+ 0.27 
+ 300,000 
+ 1.2 
+ 0.27 
+ 75,000 
+ 0.27 
+ 0.40 to 0.45 
+ 1,260,000 
+ 1.4 
+ 0.41 
+ 596,250 
+ 0.40 
+ 0.485 to 0.50 
+ 225,000 
+ 2.4 
+ 0.49 
+ 75,000 
+ 0.49 
+ 0.64 to 0.65 
+ 160,000 
+ 1.3 
+ 0.64 
+ 120,000 
+ 0.64 
+ 1.51 
+ 50,000 
+ 3.2 
+ 1.51 
+ 12,500 
+ 1.51 
+ 4.20 
+ 24,000 
+ 4.6 
+ 4.20 
+ - 
+ - 
+ 4.48 to 4.50 
+ 300,000 
+ 4.3 
+ 4.50 
+ 75,000 
+ 4.50 
+ 5.07 
+ 75,000 
+ 4.8 
+ 5.07 
+ - 
+ - 
+ 6.34 
+ 100,000 
+ 0.8 
+ 6.34 
+ 100,000 
+ 6.34 
+ 7.85 
+ 600,000 
+ 4.3 
+ 7.85 
+ 212,500 
+ 7.85 
+ 3,094,000 
+ 2.4 
+ 2.60 
+ 1,266,250 
+ 2.40 
+ The fair value for stock options granted have been estimated using the Black-Scholes option pricing model assuming no expected dividends or forfeitures and the following weighted average assumptions: 
+ Nine months ended 
+ September 30, 
+ 2026 
+ Nine months ended 
+ September 30, 
+ 2025 
+ Risk-free interest rate 
+ 3.02% 
+ 2.78% 
+ Expected life (in years) 
+ 5 
+ 3 
+ Expected volatility 
+ 202% 
+ 210% 
+ During the nine months ended September 30, 2026, the Company recognized share-based compensation expense of $4,202,646 (2025 - $828,561) with a corresponding increase to options reserve. The weighted average fair value of stock options granted during the nine months ended September 30, 2026 was $6.30 (2025 - $5.72) per option. The weighted average fair value of shares at the time of the stock option exercises during the nine months ended September 30, 2026 was $5.69 (2025 - $4.44) per common share. 
+ 12. SHARE PURCHASE WARRANTS 
+ The following table summarizes the continuity of share purchase warrants: 
+ Number of warrants 
+ Weighted average exercise price $ 
+ Outstanding, December 31, 2025 and September 30, 2026 
+ 306,673 
+ 7.94 
+ 15 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 12. SHARE PURCHASE WARRANTS (continued) 
+ As at September 30, 2026, the following share purchase warrants were outstanding and exercisable: 
+ Number of warrants outstanding 
+ Exercise price $ 
+ Expiry date 
+ 167,785 
+ 4.09 
+ December 19, 2029 
+ 138,888 
+ 12.60 
+ July 11, 2030 
+ 306,673 
+ 13. RESTRICTED SHARE UNITS 
+ A summary of the changes in RSUs is presented below: 
+ Number of RSUs 
+ Balance, December 31, 2025 
+ 3,409,800 
+ Granted 
+ 3,263,312 
+ Settled with shares 
+ (1,072,500 
+ ) 
+ Forfeited 
+ (100,000 
+ ) 
+ Balance, September 30, 2026 
+ 5,500,612 
+ Unvested 
+ 3 , 679,562 
+ Vested, September 30, 2026 
+ 1,821,050 
+ During the nine months ended September 30, 2026, the Company recognized share-based compensation expense of $16,234,652 (2025 - $4,822,344) with a corresponding increase to RSU reserve and $6,019,525 (2025 - $3,220,250) was transferred to share capital upon the vesting of 1,072,500 (2025 - 945,000) RSUs. The weighted average grant date fair value for RSUs granted during the nine months ended September 30, 2026 was $6.17 per RSU (2025 - $5.06). 
+ 14. PERFORMANCE SHARE UNITS 
+ The Company's Plan permits the granting of PSUs to certain eligible service providers from time to time. A summary of the changes in PSUs is presented below: 
+ Number of PSUs 
+ Balance, December 31, 2025 
+ 800,000 
+ Issued 
+ 860,000 
+ Settled with shares 
+ (275,000 
+ ) 
+ Forfeited 
+ (300,000 
+ ) 
+ Balance, September 30, 2026 
+ 1,085,000 
+ Unvested 
+ 1,010,000 
+ Vested, September 30, 2026 
+ 75,000 
+ During the nine months ended September 30, 2026, 860,000 PSUs (2025 - nil) were granted. During the nine months ended September 30, 2026, the Company recognized share-based compensation expense of $5,475,262 (2025 - $nil) with a corresponding increase to PSU reserve, and $2,340,000 (2025 - $nil) was transferred to share capital upon the vesting of 275,000 (2025 - nil) PSUs. The weighted average grant date fair value for PSUs granted during the nine months ended September 30, 2026 was $7.81 per PSU (2025 - $nil). 
+ 16 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 15. RELATED PARTY TRANSACTIONS 
+ Key management personnel are persons responsible for planning, directing, and controlling the activities of an entity, and include all officers and directors of the Company. Key management personnel compensation during the nine months ended September 30, 2026 and 2025 was comprised of the following: 
+ Nine months ended September 30, 2026 $ 
+ Nine months ended September 30, 2025 $ 
+ Business development 
+ 93,494 
+ - 
+ Professional fees 
+ 63,000 
+ 63,000 
+ Research and development 
+ 501,129 
+ 3,249 
+ Wages and benefits 
+ 248,000 
+ 114,221 
+ Total short-term benefits 
+ 905,623 
+ 180,470 
+ Share-based compensation 
+ 4,652,099 
+ 62,517 
+ 5,557,722 
+ 242,987 
+ During the nine months ended September 30, 2026, the Company incurred research and development expenses of $501,129 (2025 - $nil) to its former investment in associate. 
+ As at September 30, 2026, the Company owed $136,594 (December 31, 2025 - $132,170) to the Chief Executive Officer of the Company, of which $109,801 (December 31, 2025 - $106,288) is included in accounts payable and accrued liabilities. 
+ As at September 30, 2026, the Company owed $15,544 (December 31, 2025 - $26,534) to the President and director of the Company (appointed as President on January 1, 2026), which is included in accounts payable and accrued liabilities. 
+ As at September 30, 2026, the Company owed $7,350 (December 31, 2025 - $nil) to the Chief Financial Officer of the Company, which is included in accounts payable and accrued liabilities. 
+ As at September 30, 2026, the Company owed $10,684 (December 31, 2025 - $nil) to the Chief Operating Officer of the Company, which is included in accounts payable and accrued liabilities. 
+ As at September 30, 2026, the Company had prepaid expenses of $nil (December 31, 2025 - $203,970) to its investment in associate. 
+ 16. REVENUE 
+ During the nine months ended September 30, 2026, the Company earned revenue of $nil (2025 - $315,497) from a company controlled by the former Chief Operating Officer of the Company. 
+ A breakdown of the revenue is presented below: 
+ Nine months 
+ ended 
+ September 30, 
+ 2026 
+ $ 
+ Nine months ended 
+ September 30, 
+ 2025 
+ $ 
+ Major goods/service lines 
+ Software license and related consulting services 
+ - 
+ 315,497 
+ Timing of revenue recognition 
+ Software license and services transferred over time 
+ - 
+ 315,497 
+ 17 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 17. SUPPLEMENTAL CASH FLOW INFORMATION 
+ Nine months ended September 30, 2026 $ 
+ Nine months ended September 30, 2025 $ 
+ Non-cash investing and financing activities: 
+ Fair value of common shares issued to acquire QPerfect 
+ 10,182,836 
+ - 
+ Present value of contingent liabilities to acquire QPerfect 
+ 308,951 
+ - 
+ Present value of contingent share consideration to acquire QPerfect 
+ 1,933,328 
+ - 
+ Fair value of finder's warrants 
+ - 
+ 1,357,406 
+ Fair value of stock options exercised transferred from options reserve to share capital 
+ 115,905 
+ 314,825 
+ Fair value of warrants exercised transferred from warrants reserve to share capital 
+ - 
+ 12,794 
+ Shares issued for vested RSUs 
+ 6,019,525 
+ 3,220,250 
+ Shares issued for vested PSUs 
+ 2,340,000 
+ - 
+ Net present value of lease obligations and right-of-use asset 
+ 1,213,869 
+ - 
+ Other receivable acquired - QPerfect acquisition 
+ 338,172 
+ - 
+ Prepaid expenses acquired - QPerfect acquisition 
+ 25,398 
+ - 
+ Right-of-use asset acquired - QPerfect acquisition 
+ 14,446 
+ - 
+ Property and equipment acquired - QPerfect acquisition 
+ 32,236 
+ - 
+ Accounts payable and accrued liabilities assumed - QPerfect acquisition 
+ 88,316 
+ - 
+ Deferred grant income assumed - QPerfect acquisition 
+ 386,695 
+ - 
+ Lease liability assumed - QPerfect acquisition 
+ 16,789 
+ - 
+ 18. FINANCIAL INSTRUMENTS AND RISK MANAGEMENT 
+ (a) Fair Values 
+ Fair value hierarchy 
+ The following provides a description of financial instruments that are measured subsequent to initial recognition at fair value, grouped into Levels 1 to 3 based on the degree to which the fair value is observable: 
+ Level 1 fair value measurements are those derived from quoted prices (unadjusted) in active markets for identical assets or liabilities; 
+ Level 2 fair value measurements are those derived from inputs other than quoted prices included within Level 1 that are observable for the asset or liability, either directly (i.e. as prices) or indirectly (i.e. derived from prices); and 
+ Level 3 fair value measurements are those derived from valuation techniques that include inputs for the asset or liability that are not based on observable market data (unobservable inputs). 
+ Assets and liabilities measured at fair value on a recurring basis were presented on the Company's statement of financial position as at September 30, 2026 and December 31, 2025 as follows: 
+ Fair value measurements using 
+ Quoted prices in active markets for identical instruments (Level 1) $ 
+ Significant other observable inputs (Level 2) $ 
+ Significant unobservable inputs (Level 3) $ 
+ Balance, September 30, 2026 $ 
+ Investments 
+ 10,909,674 
+ - 
+ 2,009,696 
+ 12,919,370 
+ Contingent consideration 
+ - 
+ - 
+ (308,951 
+ ) 
+ (308,951 
+ ) 
+ 18 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 18. FINANCIAL INSTRUMENTS AND RISK MANAGEMENT (continued) 
+ (a) Fair Values (continued) 
+ Fair value measurements using 
+ Quoted prices in active markets for identical instruments (Level 1) $ 
+ Significant other observable inputs (Level 2) $ 
+ Significant unobservable inputs (Level 3) $ 
+ Balance, December 31, 2025 $ 
+ Investments 
+ 7,098,893 
+ - 
+ 1,038,050 
+ 8,136,943 
+ The fair values of the Company's other financial instruments, which include cash, short-term investments, accounts payable and accrued liabilities, and due to related parties, approximate their carrying values due to the relatively short-term maturity of these instruments. 
+ (b) Credit Risk 
+ Financial instruments that potentially subject the Company to a concentration of credit risk consist primarily of cash. The Company limits its exposure to credit loss by placing its cash with high credit quality financial institutions. The carrying amount of financial assets represents the maximum credit exposure. 
+ (c) Foreign Exchange Rate Risk 
+ Foreign currency risk is the risk that the fair value of future cash flows of a financial instrument will fluctuate due to changes in foreign exchange rates. The Company is exposed to foreign currency risk to the extent that monetary assets and liabilities are denominated in a foreign currency. 
+ The following tables indicate the impact of foreign currency exchange risk on net working capital as at September 30, 2026 and December 31, 2025. The tables below also provide a sensitivity analysis of a 10% strengthening of the foreign currency against functional currencies identified which would have increased (decreased) the Company's net loss by the amounts shown in the tables below. A 10% weakening of the foreign currency against the functional currencies would have had the equal but opposite effect as at September 30, 2026 and December 31, 2025. 
+ As at September 30, 2026 
+ EUR 
+ KRW 
+ US$ 
+ Cash 
+ 2,459,678 
+ - 
+ 16,795,861 
+ Other receivables 
+ 268,859 
+ - 
+ - 
+ Investments 
+ - 
+ 10,909,674 
+ - 
+ Accounts payable and accrued liabilities 
+ (319,548 
+ ) 
+ - 
+ (7,439,600 
+ ) 
+ Lease obligations 
+ (16,642 
+ ) 
+ - 
+ (1,133,745 
+ ) 
+ Contingent consideration 
+ (308,951 
+ ) 
+ - 
+ - 
+ Total foreign currency financial assets and liabilities 
+ 2,083,396 
+ 10,909,674 
+ 8,222,516 
+ Impact of a 10% strengthening or weakening of foreign exchange rate 
+ 208,340 
+ 1,090,967 
+ 822,252 
+ As at December 31, 2025 
+ TWD 
+ KRW 
+ US$ 
+ Cash 
+ 1,901 
+ - 
+ 299,885 
+ Investments 
+ - 
+ 7,098,893 
+ - 
+ Accounts payable and accrued liabilities 
+ (8,098 
+ ) 
+ - 
+ (1,072,685 
+ ) 
+ Total foreign currency financial assets and liabilities 
+ (6,197 
+ ) 
+ 7,098,893 
+ (772,800 
+ ) 
+ Impact of a 10% strengthening or weakening of foreign exchange rate 
+ (620 
+ ) 
+ 709,889 
+ (77,280 
+ ) 
+ 19 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 18. FINANCIAL INSTRUMENTS AND RISK MANAGEMENT (continued) 
+ (d) Interest Rate Risk 
+ Interest rate risk is the risk that the fair value of future cash flows of a financial instrument will fluctuate because of changes in market interest rates. The Company is not exposed to significant interest rate risk as it does not have any liabilities with variable rates. 
+ (e) Liquidity Risk 
+ Liquidity risk is the risk that the Company will not be able to meet its financial obligations as they fall due. The Company's objective to managing liquidity risk is to ensure that it has sufficient liquidity available to meet its liabilities when due. The Company relies on raising debt or equity financing in a timely manner. 
+ The following amounts are the contractual maturities of financial liabilities as at September 30, 2026 and December 31, 2025: 
+ As at September 30, 2026 
+ Total $ 
+ Within 1 year $ 
+ Within 2-5 years $ 
+ After 5 years $ 
+ Accounts payable and accrued liabilities 
+ 9,008,663 
+ 9,008,663 
+ - 
+ - 
+ Lease obligations 
+ 1,492,345 
+ 405,172 
+ 1,087,173 
+ - 
+ Contingent consideration 
+ 708,667 
+ 177,167 
+ 354,334 
+ 177,166 
+ Due to related parties 
+ 26,793 
+ 26,793 
+ - 
+ - 
+ 11,236,468 
+ 9,617,795 
+ 1,441,507 
+ 177,166 
+ As at December 31, 2025 
+ Total $ 
+ Within 1 year $ 
+ Within 2-5 years $ 
+ Accounts payable and accrued liabilities 
+ 2,151,111 
+ 2,151,111 
+ - 
+ Due to related parties 
+ 25,882 
+ 25,882 
+ - 
+ 2,176,993 
+ 2,176,993 
+ - 
+ 19. CAPITAL MANAGEMENT 
+ The Company manages its capital to maintain its ability to continue as a going concern and to provide returns to shareholders and benefits to other stakeholders. The capital structure of the Company consists of cash and equity comprised of issued share capital, share-based payment reserve, and warrant reserve. 
+ The Company manages its capital structure and makes adjustments to it in light of economic conditions. The Company, upon approval from its Board of Directors, will balance its overall capital structure through new share issuances or by undertaking other activities as deemed appropriate under the specific circumstances. 
+ The Company is not subject to externally imposed capital requirements and the Company's overall strategy with respect to capital risk management remains unchanged from the year ended December 31, 2025. 
+ 20 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 20. SEGMENTED INFORMATION 
+ The Company has one operating segment, the research and development of computer-based technology related to post-quantum cryptography. The Company's head office is in Canada and operations are in Canada, France, United States, Australia, and Taiwan. Geographic information for non-current assets other than financial instruments is as follows: 
+ September 30, 2026 
+ Canada $ 
+ Australia $ 
+ United States $ 
+ France $ 
+ Total $ 
+ Non-current assets 
+ Property and equipment 
+ 2,224 
+ 14,817 
+ 91,176 
+ 87,665 
+ 195,882 
+ Right-of-use asset 
+ 75,891 
+ - 
+ 944,934 
+ 11,706 
+ 1,032,531 
+ Intangible assets and goodwill 
+ - 
+ - 
+ - 
+ 15,335,275 
+ 15,335,275 
+ December 31, 2025 
+ Canada $ 
+ Australia $ 
+ Total $ 
+ Non-current assets 
+ Property and equipment 
+ 4,269 
+ 15,038 
+ 19,307 
+ Revenue 
+ 315,497 
+ - 
+ 315,497 
+ 21. GENERAL AND ADMINISTRATIVE EXPENSES 
+ The following is a breakdown of general and administrative expenses for the nine months ended September 30, 2026 and 2025: 
+ Nine months 
+ ended 
+ September 30, 
+ 2026 
+ $ 
+ Nine months ended 
+ September 30, 
+ 2025 
+ $ 
+ Insurance 
+ 398,289 
+ 58,814 
+ IT and communications 
+ 271,156 
+ 181,908 
+ Office and miscellaneous 
+ 565,175 
+ 177,631 
+ Rent 
+ 258,843 
+ 233,319 
+ Travel 
+ 389,900 
+ 76,522 
+ 1,883,363 
+ 728,194 
+ 22. COMMITMENTS 
+ As at September 30, 2026, the Company has the following contractual commitments for research and development, contingent consideration, and premises lease obligations: 
+ $ 
+ 2026 
+ 90,499 
+ 2027 
+ 4,328,190 
+ 2028 
+ 3,191,858 
+ 2029 
+ 1,774,478 
+ 2030 
+ 442,222 
+ 2032 
+ 177,166 
+ 21 
+ BTQ TECHNOLOGIES CORP. Notes to the Condensed Interim Consolidated Financial Statements Nine Months Ended September 30, 2026 and 2025 (Expressed in Canadian dollars) (unaudited) 
+ 23. SUBSEQUENT EVENTS 
+ (a) Subsequent to September 30, 2026, the Company issued 1,536,107 common shares for net proceeds of $4,953,897 under its base shelf prospectus supplement. 
+ (b) Subsequent to September 30, 2026, the Company issued 250,000 common shares pursuant to the settlement of RSUs. 
+ 22 
