@@ -79,3 +79,8 @@
 
 - F7(2026-11-16 시청자 @이원-j7, BTQ atbo6XnK2Tw 댓글 "코 들이마시는 소리 듣기 싫다"): 녹음의 숨 들이쉬는 소리. 다음 제작 회차에서 TTS 출력의 숨소리 구간을 찾아 줄이거나 지우는 처리(문장 사이 무음 대체·노이즈 게이트)와 자동 검사를 넣는다. 처리하면 '처리'로. 처리(tools/debreath.py: 문장 사이 0.15초 이상 쉼의 들숨을 10ms 페이드 무음으로, 길이·문장 시각 불변, chain_long 롱폼·쇼츠 자동 + 잔여 숨 경계 10% 초과면 CHAIN_FAIL; BTQ 녹음 잔여 숨 경계 52%→1%, 말소리 프레임 변화 0)
 - F8(2026-11-16 @이원-j7, BTQ 6MGjhhl_qRI "코푸는 소리를 효과음으로"): 잡음형 화면 전환음(whoosh)·상승음(riser) 잡음이 코 소리처럼 들림 → 처리(slidekit sfx.py: whoosh를 맑은 음 미끄럼으로, riser 잡음을 5도 위 음으로, whoosh 음량 절반. 잡음 기반 효과음 새로 넣지 않기)
+
+## F7 구독 전환 시험 (운영자 2026-11-17 "1 3만 수행")
+- 롱폼마다 구독 요청 한 문장 + 화면 아래 '구독' 띠(`"sub"`), A 정체형·B 질문형 번갈아, 설명란 '유튜브 채널:' 줄 → `🔔 구독: …?sub_confirmation=1`. 상세 SKILL V3.95, 기록 review/sub_test.md, 판정 12-01.
+- 이번 주 한 번: `tools/yt_subs.py --watermark`, `--report 7`.
+- 사이트 slidekit 갱신(check_slides SUB/SUBMISS) — `/home/claude/slidekit`을 사이트 저장소 `tools/slidekit`에서 다시 복사해야 적용된다.
