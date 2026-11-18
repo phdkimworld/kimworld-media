@@ -264,16 +264,20 @@ if m.get("playlist", True) and "#Shorts" not in m["description"]:
         out["playlist"] = f"error: {e}"
     # R4 시리즈 재생목록: meta "series": false로 끄고, "series": "<이름>"으로 이름을 바꾼다. 티커 = meta "ticker" 또는 제목의 '(티커)'
     core = _ct.load(); tk = (m.get("ticker") or _ct.ticker_from_title(m["title"]) or "").upper()
-    # 채널 연재(오답노트 등, 2026-11-18): meta "series_title": "<재생목록 이름 그대로>"면 '미스터리 추적'을 붙이지 않고 그 이름으로 찾거나 만든다(롱폼·쇼츠 모두)
     if m.get("series_title"):
-        try:
-            spid, stitle = series_playlist(tk, "", exact=m["series_title"]); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"
-        except HttpError as e:
-            out["series_playlist"] = f"error: {e}"
+        pass  # 아래 연재 재생목록 블록(롱폼·쇼츠 공통)에서 넣는다
     elif m.get("series", True) is not False and (tk in core or isinstance(m.get("series"), str)):
         try:
             name = m["series"] if isinstance(m.get("series"), str) else core[tk]
             spid, stitle = series_playlist(tk, name); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"
         except HttpError as e:
             out["series_playlist"] = f"error: {e}"
+# 채널 연재(오답노트 등, 2026-11-18 운영자 "쇼츠도 '김박사 월드 오답노트' 재생목록에 추가"): meta "series_title"이면 '미스터리 추적'을 붙이지 않고
+# 그 이름 그대로 찾거나 만들어 롱폼·쇼츠 모두 넣는다. 1편 롱폼에서 409 SERVICE_UNAVAILABLE이 한 번 나 20초 뒤 두 번 더 시도
+if m.get("series_title"):
+    for _k in range(3):
+        try:
+            spid, stitle = series_playlist("", "", exact=m["series_title"]); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"; break
+        except HttpError as e:
+            out["series_playlist"] = f"error: {e}"; time.sleep(20)
 done()
