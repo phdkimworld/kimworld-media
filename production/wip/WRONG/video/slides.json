@@ -1,0 +1,1147 @@
+{
+ "ticker": "오답노트1",
+ "name": "김박사 월드",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "SHOPSTRIP",
+ "sub_text": "맞고 틀린 예측까지 모아 패턴을 쌓습니다",
+ "next_text": "이노데이터 · 실스크 편 · 설명란 링크",
+ "midroll": "../kit/wrong_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/wrong_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "김박사 월드 오답노트 1",
+       "left": {
+        "label": "가장 기울었던 쪽",
+        "value": "0/6"
+       },
+       "mid": "그런데",
+       "right": {
+        "label": "점수 전체(브라이어)",
+        "value": "0.176",
+        "tone": "gold"
+       },
+       "question": "자신 있던 쪽만 틀렸다?",
+       "beats": [
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "자신 있던 쪽만\n**골라서 틀렸다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "그 여섯 번에\n**무슨 일이?**",
+     "at": 4,
+     "kicker": "오답노트",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "오늘은 종목이 아니라\n**예측 장부 공개 채점**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "새 연재",
+     "stats": [
+      {
+       "at": 2,
+       "big": "오답노트 1",
+       "label": "김박사 월드 오답노트 · 첫 번째 편",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 18일까지 판정 끝",
+     "stats": [
+      {
+       "at": 3,
+       "big": "21개",
+       "label": "장부에 적힌 예측 303개 중",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "브라이어 점수, 낮을수록 좋다",
+       "sub": "가능성 숫자 19개 · 말한 숫자와 실제 결과의 차이",
+       "unit": "",
+       "decimals": 3,
+       "items": [
+        {
+         "label": "김박사 월드",
+         "sub": "판정 끝 19개",
+         "value": 0.176,
+         "hi": true
+        },
+        {
+         "label": "모두 50%라고 답하면",
+         "sub": "동전 던지기",
+         "value": 0.25
+        }
+       ],
+       "source": "자료: 김박사 월드 예측 장부 · 기준 2026-11-18",
+       "beats": [
+        5,
+        6
+       ]
+      }
+     }
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "질문마다 가장 기울었던 쪽",
+     "stats": [
+      {
+       "at": 7,
+       "big": "0/6",
+       "label": "하나도 맞지 않았다",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "왜 틀린 걸\n**굳이 꺼내 볼까?**",
+     "at": 0,
+     "kicker": "복기",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "기억은\n**맞힌 것만 남긴다**",
+     "at": 1
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "장부 없이는\n**실력과 운을 못 가른다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "틀린 이유에 이름을 붙여야\n**다른 종목에서 피한다**",
+     "at": 4
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "공개 채점은\n**믿어도 될지 재는 자**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "미국 교통안전위원회 규정 49 CFR 831.4",
+     "stats": [
+      {
+       "at": 7,
+       "big": "사실을 찾는 절차",
+       "label": "책임을 가리려는 게 아니다",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 8,
+     "layout": "quote",
+     "text": "오늘 채점도\n**같은 자세로**",
+     "at": 8
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "구간으로\n**나눠 보면**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "말한 숫자와 실제로 일어난 비율",
+       "source": "김박사 월드 예측 장부(판정 끝 21개) · 기준 2026-11-18",
+       "sub": "판정이 끝난 가능성 숫자 19개를 구간별로 묶음",
+       "note": "가운데 구간은 맞는 편, 가장 높게 건 구간이 0/3",
+       "unit": "%",
+       "items": [
+        {
+         "label": "0~20% 구간 · 말한 평균",
+         "sub": "5개",
+         "value": 11,
+         "text": "11%"
+        },
+        {
+         "label": "0~20% 구간 · 실제",
+         "sub": "0/5",
+         "value": 0,
+         "hi": true,
+         "text": "0%"
+        },
+        {
+         "label": "20~40% 구간 · 말한 평균",
+         "sub": "11개",
+         "value": 29,
+         "text": "29%"
+        },
+        {
+         "label": "20~40% 구간 · 실제",
+         "sub": "4/11",
+         "value": 36,
+         "hi": true,
+         "text": "36%"
+        },
+        {
+         "label": "40~60% 구간 · 말한 평균",
+         "sub": "3개",
+         "value": 45,
+         "text": "45%"
+        },
+        {
+         "label": "40~60% 구간 · 실제",
+         "sub": "0/3",
+         "value": 0,
+         "hi": true,
+         "text": "0%"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "자신이 클수록\n**빗나갔다**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "가장 기울었던 쪽 여섯, 모두 빗나감",
+       "source": "김박사 월드 예측 장부(판정 끝 21개) · 기준 2026-11-18",
+       "sub": "그때 건 쪽의 가능성(추정)과 실제 결과",
+       "note": "뉴스케일 하향 연쇄는 35%로 낮게 둔 일이 일어난 경우(안 온다 쪽 65%)",
+       "unit": "%",
+       "items": [
+        {
+         "label": "뉴스케일 10월 25일",
+         "sub": "주식 판매 확인 → 판매 없음",
+         "value": 55,
+         "hi": true,
+         "text": "약 55%"
+        },
+        {
+         "label": "뉴스케일 10월 25일",
+         "sub": "하향 연쇄 안 옴 → 두 곳 하향",
+         "value": 65,
+         "hi": true,
+         "text": "약 65%"
+        },
+        {
+         "label": "이노데이터 10월 28일",
+         "sub": "고객 축소 큰 하락 → -4.1%",
+         "value": 40,
+         "hi": true,
+         "text": "약 40%"
+        },
+        {
+         "label": "세레브라스 10월 28일",
+         "sub": "해제·실적 하락 → 해제 날 +7.8%",
+         "value": 40,
+         "hi": true,
+         "text": "약 40%"
+        },
+        {
+         "label": "세레브라스 11월 5일",
+         "sub": "같은 갈래 → 실적 첫날 +11.2%",
+         "value": 35,
+         "hi": true,
+         "text": "약 35%"
+        },
+        {
+         "label": "뉴스케일 11월 5일",
+         "sub": "실망 하락 → 첫날 +16.2%",
+         "value": 35,
+         "hi": true,
+         "text": "약 35%"
+        }
+       ],
+       "beats": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "근거: 남은 판매 한도",
+     "stats": [
+      {
+       "at": 2,
+       "big": "7억 5,000만 달러",
+       "label": "뉴스케일 10월 25일 리포트",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "뉴스케일 A주 수",
+     "left": {
+      "at": 3,
+      "head": "6월 말",
+      "big": "4억 1,037만 주",
+      "lines": [
+       "3분기 시작"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "9월 말",
+      "big": "4억 1,054만 주",
+      "lines": [
+       "거의 그대로"
+      ],
+      "tone": "gold"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "팔 수 있다 ≠\n**실제로 팔았다**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "두 번째\n**같은 리포트**",
+     "at": 0,
+     "kicker": "오답 2"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "증권사 하향 연쇄",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 35%",
+       "label": "낮게 뒀다 · 안 온다 쪽 약 65%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "B. Riley 목표가 15달러 → 10달러",
+       "sub": "10월 28일 · 11월 3일 웨드부시 매도 의견",
+       "unit": "달러",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "B. Riley 이전 목표가",
+         "value": 15
+        },
+        {
+         "label": "10월 28일 낮춘 목표가",
+         "value": 10,
+         "hi": true
+        }
+       ],
+       "source": "자료: 김박사 월드 리포트·후속 채점표 · 나스닥 종가",
+       "beats": [
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "50% 아래로 둔 일이 일어나면\n**장부는 빗나감**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "오늘은\n**더 엄한 쪽으로**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "next": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "세 번째\n**이노데이터**",
+     "at": 0,
+     "kicker": "오답 3"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "인공지능 학습 데이터를\n**사람 손으로 만든다**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "고객 축소 + 다음 날 15~18% 하락",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 40%",
+       "label": "두 조건을 한 갈래로",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "예상은 15~18% 하락, 실제는 -4.1%",
+       "source": "나스닥 일별 종가 · 김박사 월드 후속 리포트 · 기준 2026-11-18",
+       "sub": "판정한 날의 하루 등락",
+       "unit": "%",
+       "items": [
+        {
+         "label": "이노데이터 실적 다음 날",
+         "sub": "예상은 15~18% 하락",
+         "value": -4.1,
+         "hi": true
+        }
+       ],
+       "beats": [
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "사건은 맞고\n**크기가 틀렸다**",
+     "at": 5,
+     "sfx": "boom"
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "이노데이터 편\n**설명란 링크**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "네 번째 · 다섯 번째\n**세레브라스**",
+     "at": 0,
+     "kicker": "오답 4·5"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "두 리포트 모두 가장 무겁게",
+     "stats": [
+      {
+       "at": 1,
+       "big": "해제 + 실적 하락",
+       "label": "10월 28일 약 40% · 11월 5일 약 35%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "락업 해제\n**묶였던 주식이 풀리는 날**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "하락을 기다린 날, 실제로는 올랐다",
+       "source": "나스닥 일별 종가 · 김박사 월드 후속 리포트 · 기준 2026-11-18",
+       "sub": "판정한 날의 하루 등락",
+       "unit": "%",
+       "items": [
+        {
+         "label": "뉴스케일 실적 첫날",
+         "sub": "4.37 → 5.08달러",
+         "value": 16.2,
+         "hi": true
+        },
+        {
+         "label": "세레브라스 실적 첫날",
+         "sub": "97.75 → 108.72달러",
+         "value": 11.2,
+         "hi": true
+        },
+        {
+         "label": "세레브라스 해제 날",
+         "sub": "11월 9일, 반도체 ETF +7.5%",
+         "value": 7.8,
+         "hi": true
+        },
+        {
+         "label": "이노데이터 실적 다음 날",
+         "sub": "예상은 15~18% 하락",
+         "value": -4.1,
+         "hi": true
+        }
+       ],
+       "beats": [
+        3,
+        4,
+        5,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "ad": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "여섯 번째\n**다시 뉴스케일**",
+     "at": 0,
+     "kicker": "오답 6"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "실적 첫날 하락 + 한 달 뒤 4.41달러 아래",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 35%",
+       "label": "11월 5일 리포트 · 가장 무겁게",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "실적 다음 날 +16.2%",
+       "sub": "뉴스케일 종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "실적 날 11월 5일",
+         "value": 4.37
+        },
+        {
+         "label": "다음 날 11월 6일",
+         "value": 5.08,
+         "hi": true
+        }
+       ],
+       "source": "자료: 김박사 월드 리포트·후속 채점표 · 나스닥 종가",
+       "beats": [
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "여섯 오답 날짜와 숫자\n**고정 댓글 리포트 끝 기록표**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "공통점\n**다섯**",
+     "at": 0,
+     "kicker": "원인",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "원인 1",
+     "stats": [
+      {
+       "at": 1,
+       "big": "이야기 쏠림",
+       "label": "여섯 갈래 모두 '나쁜 일 + 더 빠짐'",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "왜 빠졌나 미스터리를\n**그대로 늘린 갈래**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "원인 2",
+     "stats": [
+      {
+       "at": 4,
+       "big": "할 수 있다 ≠ 했다",
+       "label": "한도·서류만 보고 판매로 읽음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "3분기 보고서로 판매가 확인된 종목",
+       "sub": "11월 보고서를 본 7종목 중",
+       "unit": "종목",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "보고서를 본 종목",
+         "value": 7
+        },
+        {
+         "label": "판매 확인",
+         "value": 3,
+         "hi": true
+        }
+       ],
+       "source": "자료: 김박사 월드 예측 장부 · 기준 2026-11-18",
+       "beats": [
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "원인 3",
+     "stats": [
+      {
+       "at": 0,
+       "big": "알려진 악재",
+       "label": "해제 날 +7.8% · 다음 날 -4.1%",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "원인 4",
+     "stats": [
+      {
+       "at": 2,
+       "big": "두 조건 묶음",
+       "label": "사건 × 반응, 곱해야 하는데",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "원인 5",
+     "stats": [
+      {
+       "at": 4,
+       "big": "실적 첫날 기저율",
+       "label": "같은 일이 과거에 일어난 비율",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 실적 첫날, 7종목 중 5개가 올랐다",
+       "source": "예측 장부 · 나스닥 일별 종가 · 기준 2026-11-18",
+       "sub": "실적 다음 거래일 등락",
+       "note": "플러그 파워만 실적 첫날 6번 모두 하락한 종목 고유 기록",
+       "unit": "%",
+       "items": [
+        {
+         "label": "아이렌",
+         "value": 20.0
+        },
+        {
+         "label": "뉴스케일",
+         "value": 16.2,
+         "hi": true
+        },
+        {
+         "label": "세레브라스",
+         "value": 11.2,
+         "hi": true
+        },
+        {
+         "label": "솔리드파워",
+         "value": 10.8
+        },
+        {
+         "label": "실스크",
+         "value": 7.3
+        },
+        {
+         "label": "이노데이터",
+         "value": -4.1,
+         "hi": true
+        },
+        {
+         "label": "플러그 파워",
+         "value": -9.0
+        }
+       ],
+       "beats": [
+        5,
+        5,
+        5,
+        5,
+        6,
+        6,
+        6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "next": [
+    5
+   ],
+   "sub": [
+    7
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "틀린 쪽만\n**있었던 건 아니다**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "가격 수준은 맞고, 사건 반응은 틀렸다",
+       "source": "예측 장부 · 김박사 월드 후속 리포트 채점표 · 기준 2026-11-18",
+       "sub": "판정이 끝난 경우 가운데 실제로 일어난 비율",
+       "unit": "%",
+       "items": [
+        {
+         "label": "판정선 이탈 쪽",
+         "sub": "실스크 · 솔리드파워 2번 · BTQ",
+         "value": 100,
+         "text": "4/4",
+         "hi": true
+        },
+        {
+         "label": "선을 지킨다 쪽",
+         "sub": "실스크 · 솔리드파워 · 뉴스케일 · 조비",
+         "value": 0,
+         "text": "0/4"
+        },
+        {
+         "label": "사건 반응 유력 갈래",
+         "sub": "뉴스케일 · 이노데이터 · 세레브라스",
+         "value": 0,
+         "text": "0/6"
+        }
+       ],
+       "beats": [
+        1,
+        3,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "실스크 1.145달러 · 솔리드파워 1.62달러",
+     "stats": [
+      {
+       "at": 2,
+       "big": "선 아래로",
+       "label": "11월 16일 종가",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "가격 수준은 맞고\n**사건 반응은 틀렸다**",
+     "at": 4,
+     "sfx": "boom"
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "실스크 편\n**설명란 링크**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "다른 종목에서도\n**이렇게 갈릴까?**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "김박사 월드\n**맞고 틀린 기록을 쌓는 채널**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "shop": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "고친 예측 규칙",
+     "stats": [
+      {
+       "at": 0,
+       "big": "8가지",
+       "label": "다음 리포트부터",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "가장 큰 변화",
+     "items": [
+      {
+       "no": "1",
+       "at": 2,
+       "text": "기저율 먼저, 조정은 ±15%포인트 안"
+      },
+      {
+       "no": "2",
+       "at": 3,
+       "text": "가장 무거운 갈래 40% 이하"
+      },
+      {
+       "no": "3",
+       "at": 4,
+       "text": "사건과 반응 따로"
+      },
+      {
+       "no": "4",
+       "at": 5,
+       "text": "'틀린다면 이유' 한 줄 먼저"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "쿠팡 링크\n**설명란 · 고정 댓글**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "이 기록의\n**한계**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "판정 끝",
+     "stats": [
+      {
+       "at": 1,
+       "big": "21개",
+       "label": "작은 표본",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "40~60% 구간",
+     "stats": [
+      {
+       "at": 2,
+       "big": "0/3",
+       "label": "세 번뿐, 운일 수 있다",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "고친 규칙이 낫다고\n**아직 말하지 않는다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "12월 판정 뒤 · 판정 끝 50개 이상",
+     "stats": [
+      {
+       "at": 4,
+       "big": "오답노트 2",
+       "label": "고친 방식 채점편",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "ad": [
+    5,
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "여섯 번 모두\n**같은 이유**",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "장부의 기록보다\n**그 편의 이야기를 믿었다**",
+     "at": 1,
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "맞힌 것만 기억하면\n**실력과 운을 못 가른다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "김박사 월드\n**맞고 틀린 기록까지 패턴으로**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "오답 여섯 기록표",
+       "at": 5
+      },
+      {
+       "no": "2",
+       "text": "고친 규칙 여덟",
+       "at": 5
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 6,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "여섯 오답의\n**가장 큰 원인은?**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "여섯 오답의 가장 큰 원인은?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "이야기 쏠림"
+      },
+      {
+       "at": 3,
+       "text": "알려진 악재"
+      },
+      {
+       "at": 4,
+       "text": "실적 첫날 기저율"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 미스터리 종목도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
