@@ -63,11 +63,11 @@ def add_to_playlist(pid, vid):
 # 제작팀 권고안 R4(2026-11-16): 핵심 종목 롱폼은 '<시리즈 이름> 미스터리 추적' 재생목록(없으면 공개로 만든다)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import core_tickers as _ct
-def series_playlist(tk, name, create=True):
-    t = f"{name} 미스터리 추적"; pid = playlist_id(t)
+def series_playlist(tk, name, create=True, exact=None):
+    t = exact or f"{name} 미스터리 추적"; pid = playlist_id(t)
     if pid or not create: return pid, t
     r = yt.playlists().insert(part="snippet,status", body={"snippet": {"title": t, "defaultLanguage": "ko",
-        "description": f"{name}({tk}) 주가 미스터리를 사건 순서대로 추적합니다. 회차마다 날짜별 기록표 전체는 무료 리포트 자료실에서: https://drkimworld.com"},
+        "description": (f"{exact}: 판정이 끝난 지난 예측을 장부로 공개 채점하고, 틀린 이유와 고친 예측 규칙을 기록하는 연재입니다. 회차마다 기록표 전체는 무료 리포트에서: https://drkimworld.com" if exact else f"{name}({tk}) 주가 미스터리를 사건 순서대로 추적합니다. 회차마다 날짜별 기록표 전체는 무료 리포트 자료실에서: https://drkimworld.com")},
         "status": {"privacyStatus": "public"}}).execute()
     return r["id"], t
 
@@ -264,7 +264,13 @@ if m.get("playlist", True) and "#Shorts" not in m["description"]:
         out["playlist"] = f"error: {e}"
     # R4 시리즈 재생목록: meta "series": false로 끄고, "series": "<이름>"으로 이름을 바꾼다. 티커 = meta "ticker" 또는 제목의 '(티커)'
     core = _ct.load(); tk = (m.get("ticker") or _ct.ticker_from_title(m["title"]) or "").upper()
-    if m.get("series", True) is not False and (tk in core or isinstance(m.get("series"), str)):
+    # 채널 연재(오답노트 등, 2026-11-18): meta "series_title": "<재생목록 이름 그대로>"면 '미스터리 추적'을 붙이지 않고 그 이름으로 찾거나 만든다(롱폼·쇼츠 모두)
+    if m.get("series_title"):
+        try:
+            spid, stitle = series_playlist(tk, "", exact=m["series_title"]); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"
+        except HttpError as e:
+            out["series_playlist"] = f"error: {e}"
+    elif m.get("series", True) is not False and (tk in core or isinstance(m.get("series"), str)):
         try:
             name = m["series"] if isinstance(m.get("series"), str) else core[tk]
             spid, stitle = series_playlist(tk, name); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"

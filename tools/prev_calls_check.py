@@ -9,7 +9,12 @@ rep = open(R, encoding='utf-8').read(); bad = []
 # 시나리오 절: 옛 형식 '### 5.6 …' 또는 R1.6 말로 쭉 형식 '### 앞으로 일어날 수 있는 일'(2026-10-27, 소제목 번호 없음)
 # 이야기형(style: story, 11-15~) 부록은 '### 5부 표 · 앞으로 일어날 …'·'### 앞으로 일어날 …'처럼 앞에 이름이 붙고, 부록이 글 끝이라 다음 ##가 없을 수 있다(88회차 SERV)
 m = re.search(r'^### (?:5\.6|[^\n]*앞으로 일어날).*?(?=^##|\Z)', rep, re.S | re.M)
-if not m: bad.append("리포트에 시나리오 절('### 5.6' 또는 '### 앞으로 일어날 수 있는 일')이 없음")
+# 결산편 예외(2026-11-18 운영자 '오답노트' 지시: 판정 끝난 지난 예측만 다루고 새 시나리오 표를 두지 않는다): PROB_BASIS=skip 이고
+# 작업 폴더 research/prob_basis.md 에 '예외:' 이유 줄이 있으면 시나리오 절이 없어도 실패가 아니라 SKIP 한 줄
+_pb0 = os.path.join(os.path.dirname(os.path.abspath(V)), 'research', 'prob_basis.md')
+_review = (not m and os.environ.get('PROB_BASIS') == 'skip' and os.path.exists(_pb0) and '예외:' in open(_pb0, encoding='utf-8').read())
+if _review: print('SKIP 시나리오 절 없음(PROB_BASIS=skip, 결산편 예외 — research/prob_basis.md 이유 줄)')
+elif not m: bad.append("리포트에 시나리오 절('### 5.6' 또는 '### 앞으로 일어날 수 있는 일')이 없음")
 else:
     sec = m.group(0)
     sc = sorted(set(re.findall(r'시나리오 \d', sec)))
