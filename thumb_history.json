@@ -2942,6 +2942,27 @@
    ],
    "video": "3c5XFLVO9sM",
    "shorts": "2Q8aj1CO1Vk"
+  },
+  {
+   "t": "smr",
+   "date": "2026.11.18",
+   "layout": "custom",
+   "palette": "navy-teal-amber",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.94배(빨강) 카드 + 원자로 모듈·냉각탑·원자 기호",
+    "11.5 → 11.17 오클로 +16.5% / 혼자 -6.4%(빨강) + 같은 그림"
+   ],
+   "video": "CpGayNCaSHU",
+   "shorts": "YTAvSyJ9kuQ"
   }
  ]
 }
