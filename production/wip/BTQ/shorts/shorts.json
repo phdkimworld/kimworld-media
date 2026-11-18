@@ -25,15 +25,10 @@
        "tone": "white"
       }
      ],
-     "stamp": {
-      "text": "나스닥 BTQ",
-      "tone": "gold"
-     },
      "beats": [
       0.45,
       0.6,
-      0.75,
-      0.88
+      0.75
      ]
     },
     "sfx": [
