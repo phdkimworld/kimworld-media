@@ -359,7 +359,9 @@ def settle(rows):
         if r["kind"] == "check": r["status"] = "일어남" if r["outcome"] else "안 일어남"
         elif r.get("group"):
             r["status"] = ("적중" if r["outcome"] else "빗나감") if r["id"] == top[r["group"]] else ("일어남(보조)" if r["outcome"] else "안 일어남(보조)")
-        else: r["status"] = "적중" if (r["outcome"] == 1) == (r["prob"] >= 50) else "빗나감"
+        # 묶음 없는 시나리오: 50% 이상으로 둔 것만 '콜'(적중/빗나감). 50% 미만은 콜이 아니라 보조(11-18: 35%로 둔 SMR '증권사 하향 연쇄'가 실제로 일어났는데 빗나감으로 세던 오류)
+        elif (r.get("prob") or 0) >= 50: r["status"] = "적중" if r["outcome"] == 1 else "빗나감"
+        else: r["status"] = "일어남(보조)" if r["outcome"] else "안 일어남(보조)"
 
 
 def do_judge(quiet=False):
