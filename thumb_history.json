@@ -2921,6 +2921,27 @@
    ],
    "video": "usFP6dPpDX8",
    "shorts": "zIE8vaqZ9rk"
+  },
+  {
+   "t": "iren",
+   "date": "2026.11.18",
+   "layout": "custom",
+   "palette": "darkteal-rose",
+   "variants": [
+    "card",
+    "bigtext"
+   ],
+   "styles": [
+    "card",
+    "bigtext"
+   ],
+   "main": "a",
+   "concepts": [
+    "회사 소식 없이 2거래일 뒤 / 실적 날 바닥 대비 -12.3%(파랑) 카드 + 서버 랙·GPU·비트코인",
+    "실적 날 바닥 → 11.17 18.03 → 15.805달러 / 바닥 아래 + 같은 그림"
+   ],
+   "video": "3c5XFLVO9sM",
+   "shorts": "2Q8aj1CO1Vk"
   }
  ]
 }
