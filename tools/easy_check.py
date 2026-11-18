@@ -147,7 +147,8 @@ if STORY:
     # 이야기형: 본문(부록 앞)은 소제목·표·상자 없이 이어지는 존댓말 문단, 찾아보는 자료는 끝 부록 하나로
     APPX = '숫자로 다시 보기'
     h2s = re.findall(r'^## (.+)$', body, re.M)
-    if [h.strip() for h in h2s] != [APPX]: bad.append(f"이야기형 ## 는 끝 부록 '## {APPX}' 하나만: {', '.join(h[:15] for h in h2s) or '부록 없음'}")
+    # 부록 맨 끝 '## 함께 읽기'(종목 간 교차 링크, 운영자 11-18 SKILL '종목 간 통섭')는 허용
+    if [h.strip() for h in h2s] not in ([APPX], [APPX, '함께 읽기']): bad.append(f"이야기형 ## 는 끝 부록 '## {APPX}' 하나(+ 맨 끝 '## 함께 읽기')만: {', '.join(h[:15] for h in h2s) or '부록 없음'}")
     story = re.split(r'^## ' + APPX + r'\s*$', body, maxsplit=1, flags=re.M)[0]
     if re.search(r'^#{1,6} ', story, re.M): bad.append('이야기형 본문에 소제목(#·###) → 장면 전환은 문단 첫 문장으로')
     if re.search(r'^\|', story, re.M): bad.append(f"이야기형 본문에 표 → 표는 부록 '## {APPX}'로, 본문에는 숫자를 문장으로")
