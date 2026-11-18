@@ -2,7 +2,7 @@
  "ticker": "오답노트1",
  "name": "김박사 월드",
  "shop": "../kit/shop_card.png",
- "shop_strip": "SHOPSTRIP",
+ "shop_strip": "루테인 · 링크는 설명란에",
  "sub_text": "맞고 틀린 예측까지 모아 패턴을 쌓습니다",
  "next_text": "이노데이터 · 실스크 편 · 설명란 링크",
  "midroll": "../kit/wrong_youtube_midroll_1920x1080.png",
@@ -737,6 +737,12 @@
      ]
     },
     {
+     "from": 1,
+     "layout": "quote",
+     "text": "날짜가 알려진 악재\n**그날 반응은 작거나 반대**",
+     "at": 1
+    },
+    {
      "from": 2,
      "layout": "stat",
      "title": "원인 4",
@@ -748,6 +754,12 @@
        "tone": "down"
       }
      ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "한쪽 확률만큼\n**높게 줬다**",
+     "at": 3
     },
     {
      "from": 4,
@@ -872,26 +884,6 @@
      }
     },
     {
-     "from": 2,
-     "layout": "stat",
-     "title": "실스크 1.145달러 · 솔리드파워 1.62달러",
-     "stats": [
-      {
-       "at": 2,
-       "big": "선 아래로",
-       "label": "11월 16일 종가",
-       "tone": "gold"
-      }
-     ]
-    },
-    {
-     "from": 4,
-     "layout": "quote",
-     "text": "가격 수준은 맞고\n**사건 반응은 틀렸다**",
-     "at": 4,
-     "sfx": "boom"
-    },
-    {
      "from": 5,
      "layout": "quote",
      "text": "실스크 편\n**설명란 링크**",
@@ -937,21 +929,26 @@
      "items": [
       {
        "no": "1",
-       "at": 2,
-       "text": "기저율 먼저, 조정은 ±15%포인트 안"
+       "at": 1,
+       "text": "출발점은 장부 기저율"
       },
       {
        "no": "2",
+       "at": 2,
+       "text": "조정은 ±15%포인트 안"
+      },
+      {
+       "no": "3",
        "at": 3,
        "text": "가장 무거운 갈래 40% 이하"
       },
       {
-       "no": "3",
+       "no": "4",
        "at": 4,
        "text": "사건과 반응 따로"
       },
       {
-       "no": "4",
+       "no": "5",
        "at": 5,
        "text": "'틀린다면 이유' 한 줄 먼저"
       }
