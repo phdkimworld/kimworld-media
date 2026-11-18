@@ -99,6 +99,7 @@
 
 | 첫 적용 | 이전 실수(회차) | 검사·도구 | 흐름 |
 |---|---|---|---|
+| 101 | 11-18 | SMR: 맥 녹음은 숫자를 바르게 읽었는데 ASR이 '15. 7퍼센트'·'4. 37로'처럼 소수점 뒤를 띄어 써 tts_asr_check가 두 번 CHAIN_FAIL(문단 재녹음 2회) | tts_asr_check.heard_nums에 '소수점 + 띄어쓰기 + 숫자 + 단위'를 한 수로 잇는 줄 추가('1. 2번' 같은 번호 나열은 단위가 없어 그대로) |
 | 95 BTQ | anim 시험(11-16)에서 제목과 'SEC 공시 0건' 괄호가 겹치고 패널 숫자가 상자 밖으로 나감 · 첫 프레임이 비어 video_check 빈 화면 3초 · 서서히 그려지는 선이 정지 16초로 잡힘 | `slidekit/anim.py` 겹침·화면 밖 검사(박자마다·마지막 프레임, ANIM_FAIL로 합성 중단) + `check_slides.py` ANIM·ANIMAD·ANIMTAIL·ANIMBEAT·ANIMN + segments.json `anim` → video_check·still_check·최장 정지 | make_slide_video·chain_long(과거 PLUG·JOBY·LCID 폴더 오탐 0) |
 | 93 PLUG | 87회차 GPUS 쇼츠 렌더가 AssertionError로 죽었는데 chain_long이 CHAIN_DONE을 냄(retro 87 '다음 회차 검사 후보') | `tools/chain_long.sh` 쇼츠 렌더 뒤 `${T}_shorts.mp4` 있음·shorts.json보다 새것·render.log에 Traceback/AssertionError 없음을 확인, 아니면 CHAIN_FAIL shorts_render | 합성 체인 안 자동 · 과거 17개 작업 폴더 render.log 오류 0건(오탐 0), LCID 92 mp4가 shorts.json보다 새것 확인 |
 | 91 SMR | 60회차 SMR 리포트가 실적 날 장 마감 직후 값 4.41달러를 '11월 5일 종가'로 적고 판정선으로 씀(공식 종가 4.37) | `tools/close_check.py <리포트.md> <티커>`: 'M월 D일 종가 X달러'를 나스닥 공식 종가와 0.5% 넘게 다르면 CLOSE_DIFF. smr-2026-11에서 6건 잡음, rklb-2026-11·plug-2026-11-2·이번 편 오탐 0 | 리포트 발행 전 easy_check와 함께 |
