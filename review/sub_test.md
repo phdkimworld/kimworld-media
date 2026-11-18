@@ -11,3 +11,4 @@
 | 11-18 | IREN | 3c5XFLVO9sM | A | 322 |
 | 11-18 | SMR | CpGayNCaSHU | A | 364 |
 | 11-18 | JOBY | WBTk2DeqVjA | B | 323 |
+| 11-18 | 오답노트1 | CG8DRq8t1dc | B | 332 |
