@@ -10,3 +10,4 @@
 | 2026-11-17 | BTQ | usFP6dPpDX8 | B | 362~414(13번째 문단 끝 문장) |
 | 11-18 | IREN | 3c5XFLVO9sM | A | 322 |
 | 11-18 | SMR | CpGayNCaSHU | A | 364 |
+| 11-18 | JOBY | WBTk2DeqVjA | B | 323 |
