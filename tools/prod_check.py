@@ -49,7 +49,7 @@ reports = len(glob.glob(f"{SITE}/content/reports/*.md"))
 line = (f"제작 점검 {NOW:%m/%d %H:%M} ET: 정규 {int(r)} · 요청 {int(q)}{' · 정규2 1' if r2 else ''} / 2"
         f"(요청 후보 0순위 {tiers['0순위']} · 1순위 {tiers['1순위']} · 2순위 {tiers['2순위']}), "
         f"진행 중 {'; '.join(pending) if pending else '없음'}, 블로거 {pn}/{reports}, 다음 요청 후보 {top_tk or '없음'}, "
-        f"7일 핵심 종목 ★{core_wk}(목표 70%), 오늘 롱폼 {n_long}/{LONG_CAP}{(' — 하루 상한 초과 %d편(보고에 하루 상한 초과 한 줄)' % (n_long - LONG_CAP)) if n_long > LONG_CAP else (' — 하루 상한 도달: 더 만들면 운영자 하나 더 지시만, 보고에 하루 상한 초과 한 줄' if n_long == LONG_CAP else '')}")
+        f"7일 핵심 종목 ★{core_wk}(목표 90%·R1′ 핵심 종목 후속편만), 오늘 롱폼 {n_long}/{LONG_CAP}{(' — 하루 상한 초과 %d편(보고에 하루 상한 초과 한 줄)' % (n_long - LONG_CAP)) if n_long > LONG_CAP else (' — 하루 상한 도달: 더 만들면 운영자 하나 더 지시만, 보고에 하루 상한 초과 한 줄' if n_long == LONG_CAP else '')}")
 print(("NOTHING " if full and not pending else "ACTION ") + line)
 if "--cap-history" in sys.argv:  # 과거 STATE로 상한 경고 오탐 확인용
     for day in sorted({c[0] for c in map(cells, rows) if re.fullmatch(r"\d\d-\d\d", c[0])}):
