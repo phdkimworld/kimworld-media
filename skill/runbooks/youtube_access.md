@@ -40,7 +40,7 @@
 ## 4. 바꾼 뒤 확인(세션이 하는 일, 키는 출력하지 않음)
 | 확인 | 명령 | 통과 기준 |
 |---|---|---|
-| 업로드 권한 | `python3 tools/upload_guard.py --check`(없으면 yt_api_upload.py의 채널 조회만) | 채널 ID가 나오고 오류 없음 |
+| 키·채널 연결 | `python3 tools/yt_subs.py` (옵션 없이: 채널 조회만) | channel_id·subscribers가 나오고 `error` 없음 |
 | 댓글 권한 | `python3 tools/yt_reply.py --list --days 1` | JSON이 나오고 403 없음 |
 | 분석 권한 | `python3 tools/yt_subs.py --report 7` | `analytics`에 영상별 숫자, 403 아님 |
 | 사이트 쪽 | GitHub Actions `comment-ai.yml`·`yt-shop.yml` 한 번 실행 | 성공 |
