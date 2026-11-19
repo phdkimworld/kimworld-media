@@ -30,7 +30,7 @@ def ticker(title):
 def main():
     snap = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'stats_snapshots.jsonl')
     tok = token(); now = datetime.datetime.now(datetime.timezone.utc)
-    ch = get(tok, 'channels', part='contentDetails', mine='true')['items'][0]
+    ch = get(tok, 'channels', part='contentDetails,statistics', mine='true')['items'][0]
     up = ch['contentDetails']['relatedPlaylists']['uploads']
     ids, pt = [], None
     while True:
@@ -50,7 +50,7 @@ def main():
         lines = [json.loads(l) for l in open(snap) if l.strip()]
         if lines: prev = lines[-1]
     with open(snap, 'a') as f:
-        f.write(json.dumps({'t': now.isoformat(), 'v': {x['id']: x['views'] for x in vids}}) + '\n')
+        f.write(json.dumps({'t': now.isoformat(), 'subs': int(ch.get('statistics', {}).get('subscriberCount', 0)), 'views': int(ch.get('statistics', {}).get('viewCount', 0)), 'v': {x['id']: x['views'] for x in vids}}) + '\n')  # 11-19: 채널 구독자·전체 조회도 남김(구독 전환 판정)
     # 인게이지먼트(운영자 지시 11-05 "종목 컷오프 및 랭킹 시에 인게이지먼트 지표도 반영"): 영상별 최신 좋아요·댓글 수
     json.dump({'t': now.isoformat(), 'e': {x['id']: [x['likes'], x['comments']] for x in vids}}, open(os.path.join(os.path.dirname(snap), 'stats_engagement.json'), 'w'))
     # 지속 시청(운영자 질문 11-05 "지속 시청시간?"): yt-analytics.readonly 범위가 있는 토큰이면 영상별 평균 시청 비율·평균 시청 시간을 받아 둔다. 범위가 없으면(403) 조용히 건너뛴다
