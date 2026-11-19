@@ -1,0 +1,40 @@
+es
+Regulation & Compliance
+Documents
+Videos
+Product Demos
+Graphic Assets
+Blog
+Business Events
+Search 
+the website
+Investors News Releases >
+SEALSQ Signs a LOI to Acquire QuintessenceLabs, with the Objective of Creating a World Leader in the Vertical Quantum Security Stack
+ Nov 18, 2026, 12:34:42 PM
+Geneva, Switzerland, Nov. 18, 2026 (GLOBE NEWSWIRE) --
+Proposed acquisition would combine post-quantum secure semiconductors with quantum random number generation and enterprise key management broadening SEALSQ’s addressable market and creating cross-selling opportunities.
+SEALSQ Corp (NASDAQ: LAES) ("SEALSQ" or "Company"), a company that focuses on developing and selling Semiconductors, PKI, and Post-Quantum technology hardware and software products, today announced that it has signed a non-binding letter of intent (the “LOI”) with QuintessenceLabs Pty. Ltd., an Australian quantum cybersecurity company, leading to exclusive negotiations for the acquisition of 100% of its equity interests. The purchase price is expected to be paid via a combination of cash and SEALSQ shares.
+The proposed acquisition would combine SEALSQ’s secure semiconductors and public key infrastructure with QuintessenceLabs’ capabilities in quantum random number generation, cryptographic key and policy management, entropy distribution and quantum key distribution. Together, these technologies would connect device-level security with enterprise data protection, enabling SEALSQ to address a broader range of customer needs and pursue additional revenue opportunities through cross-selling and integrated security solutions.
+Carlos Moreira, Chairman and CEO of SEALSQ, noted, “Our ambition is to connect trust embedded in silicon with the systems that generate, manage and protect cryptographic keys across an organization. QuintessenceLabs would extend our reach from device-level security into enterprise data protection, opening new markets and creating opportunities to sell a broader portfolio to both companies’ customers. Together, we see an opportunity to make the transition to quantum-resilient security more practical for governments, enterprises and critical infrastructure operators, while translating our complementary capabilities into cross-selling opportunities, joint products and long-term revenue growth.”
+Dr Vikram Sharma, Founder and CEO of QuintessenceLabs, added, “Quantum cyber resilience depends on trust in every cryptographic key, from the device that generates it through delivery to the enterprise systems that rely on it. By combining SEALSQ’s post-quantum secure silicon with our quantum entropy, security credential management and crypto-agility technologies, we will offer customers a practical path to quantum-resilient security. These combined solutions will integrate with and strengthen the cryptographic infrastructure these enterprises already depend on rather than forcing disruptive rip-and-replace programs. We look forward to working with the SEALSQ team to turn this shared vision into real value for our customers, partners and employees.”
+Strategic synergies
+Secure semiconductors and quantum randomness.
+ SEALSQ would explore combining its hardware security platforms, including QS7001, with QuintessenceLabs’ qStream quantum random number generation and qRand entropy management technologies. Potential applications include secure provisioning and cryptographic key generation across connected devices and enterprise systems. Quantum randomness would complement post-quantum algorithms and secure key storage within a layered security architecture.
+Enterprise key management and device identity.
+ QuintessenceLabs’ qCrypt key and policy management platform could complement SEALSQ’s public key infrastructure and hardware roots of trust. Joint solutions would aim to improve coordination of device authentication, certificate management and encryption key lifecycle management across distributed environments.
+Post-quantum migration and crypto-agility.
+ Combining QuintessenceLabs’ cryptographic asset discovery and policy management capabilities with SEALSQ’s post-quantum hardware would create opportunities to help customers identify vulnerable cryptography, prioritize upgrades and deploy quantum-resistant protection. The objective would be a more coordinated migration pathway across enterprise software and connected hardware.
+Secure communications.
+ QuintessenceLabs’ secure key distribution capabilities and work on continuous-variable quantum key distribution could complement SEALSQ’s authentication and endpoint security technologies. Potential joint development would focus on integrating authenticated endpoints, protected keys and secure communications, subject to technical validation and deployment requirements.
+Commercial expansion.
+ The combined portfolio would create cross-selling opportunities between semiconductor customers, device manufacturers and enterprise cybersecurity buyers. Priority markets would include financial services, government, defense, telecommunications, energy and other critical infrastructure sectors.
+Joint engineering and product development.
+ Shared expertise in semiconductor security and quantum cybersecurity could support new products, common integration tools and customer pilots. Opportunities would be assessed through a joint technical roadmap, with development priorities guided by customer demand and validation requirements.
+Transaction process
+Under the LOI, the parties now enter a 60 day period of exclusivity during which the parties will proceed with confirmatory due diligence and the negotiation of a final acquisition agreement under the letter of intent. The exclusivity period is binding under the terms of the LOI. The proposed acquisition would be subject to satisfactory due diligence, required regulatory and board approvals, and the negotiation and execution of mutually acceptable definitive agreements. The parties are targeting completion of the transaction in the first half of 2027, subject to satisfaction of the conditions described above
+The proposed transaction would represent a significant strategic investment for SEALSQ, and the SEALSQ shares to be issued at closing would dilute shareholders' current holdings and be issued at an initial price per share above SEALSQ's recent trading price, subject to post-closing adjustment, with additional shares potentially issuable under an earn-out. The cash and share components and other terms remain subject to negotiation and the execution of definitive agreements.
+The potential commercial and technical benefits described above are strategic objectives only and are not existing integrated offerings. Any realization of these benefits would depend on, among other things, the parties entering into definitive agreements, completion of the proposed acquisition, successful integration, product development and customer adoption.
+About QuintessenceLabs
+QuintessenceLabs
+ delivers quantum-resilient cybersecurity solutions that protect sensitive data, critical infrastructure, and national security interests. Our solutions help organizations reduce cryptographic 
+risk and adapt to changing security requirements through a unified platform for crypto-agility and quantum resilience. From continuous cryptographic visibility and au
