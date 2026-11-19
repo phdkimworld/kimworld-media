@@ -619,7 +619,9 @@ if __name__ == "__main__":
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf): newly = do_judge(quiet=True)
         msg = buf.getvalue().strip()
-        if newly or not os.path.exists(SB_PATH):  # 새 판정이 있을 때만 사이트 성적표 갱신(테스트·빌드가 몇 분 걸려 백그라운드로)
+        # 새 판정이 있을 때만 사이트 성적표 갱신(테스트·빌드가 몇 분 걸려 백그라운드로). 사이트가 이 자료를 읽는 틀(templates/scoreboard.html)이 있을 때만
+        # (11-19: 같은 때 다른 세션이 /scorecard/ — deploy.yml이 빌드마다 장부를 직접 읽음 — 을 올려, /scoreboard/ 사이트 쪽은 운영자 결정 전까지 올리지 않음)
+        if (newly or not os.path.exists(SB_PATH)) and os.path.exists(os.path.join(SITE, "templates", "scoreboard.html")):
             subprocess.Popen([sys.executable, os.path.abspath(__file__), "--push-site"], cwd=MEDIA, start_new_session=True,
                              stdout=open(PUSH_LOG, "a"), stderr=subprocess.STDOUT)
             msg = (msg + " · " if msg else "") + "사이트 성적표 갱신 시작(백그라운드)"
