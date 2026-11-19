@@ -1,0 +1,63 @@
+# 옛 유튜브 영상 설명란 첫 줄에 사이트 종목 페이지 링크(2026-11-19 운영자 "적극사용").
+# 유튜브 키는 이 저장소 비밀값에만 있다(사이트 저장소 Actions에는 없음). 사이트 저장소(공개)를 체크아웃해 scripts/yt_desc.py를 부른다.
+# mode: plan(고르기만, 기본) · apply(바꿈, 한 번 최대 15편) · revert(video_ids의 옛 설명으로 되돌림). 기록은 이 저장소 main의 review/yt_desc_log.json.
+# 세션은 REST로 dispatch: gh api -X POST repos/phdkimworld/kimworld-media/actions/workflows/yt-desc.yml/dispatches -f ref=main -f "inputs[mode]=plan"
+name: YouTube old video links
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan · apply · revert"
+        required: true
+        default: "plan"
+      limit:
+        description: "최대 편수(기본 10, 상한 15)"
+        required: false
+      video_ids:
+        description: "이 영상들만(쉼표·공백). 비우면 7일 조회 증가 상위에서 자동"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: yt-desc
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: phdkimworld/kimworld-site
+          path: site
+      - name: Old video description links
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          LIMIT: ${{ inputs.limit }}
+          VIDEO_IDS: ${{ inputs.video_ids }}
+          DESC_LOG: ${{ github.workspace }}/review/yt_desc_log.json
+        run: |
+          pip install -q pyyaml
+          mkdir -p review
+          python3 site/scripts/yt_desc.py
+      - name: Commit log
+        if: success() && inputs.mode != 'plan'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review/yt_desc_log.json 2>/dev/null || exit 0
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "옛 영상 설명란 링크 기록 $(TZ=America/New_York date '+%Y-%m-%d %H:%M') ET"
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
