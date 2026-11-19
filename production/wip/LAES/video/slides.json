@@ -186,26 +186,45 @@
     },
     {
      "from": 1,
-     "layout": "compare",
+     "layout": "stat",
      "title": "돈을 버는 방식",
+     "stats": [
+      {
+       "at": 1,
+       "big": "보안 칩 판매",
+       "label": "칩을 팔고 대가를 받음",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "어디에 들어가나",
      "left": {
-      "at": 1,
-      "head": "보안 칩 판매",
-      "big": "계량기 · 자동차",
+      "at": 2,
+      "head": "전력 계량기",
+      "big": "자동차",
       "lines": [
-       "공장 장비 · 의료기기"
+       "공장 장비"
       ],
       "tone": "white"
      },
      "right": {
-      "at": 1,
-      "head": "양자내성 칩",
-      "big": "앞세우는 제품",
+      "at": 2,
+      "head": "앞세우는 제품",
+      "big": "양자내성 칩",
       "lines": [
-       "양자 관련주와 한 무리"
+       "양자컴퓨터로도 풀기 어려운 암호"
       ],
       "tone": "gold"
      }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "그래서 시장은\n**양자 관련주와 한 무리로**",
+     "at": 3
     },
     {
      "from": 4,
