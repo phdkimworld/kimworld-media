@@ -22,7 +22,7 @@
 
 ## 장부 표
 <!-- AUTO:장부 -->
-(11-18 `pred_ledger.py --report --ticker LAES`가 쓴 칸)
+(11-19 `pred_ledger.py --report --ticker LAES`가 쓴 칸)
 
 LAES 예측 장부: 예측 19(시나리오 16·확인 3) 판정 끝 4 · 사람 판정 필요 0 · 대기 15 · 판정 불가 0
 | 구간 | 말한 평균 | 실제 | n |
