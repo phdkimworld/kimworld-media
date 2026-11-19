@@ -13,6 +13,8 @@
 | 텔레그램 @drkimworld | `TELEGRAM_BOT_TOKEN` (site) | 새 리포트 게시(telegram.yml) | 만료 없음(BotFather에서 폐기 전까지) | 9장 |
 | 자동 갱신 도구 | `GH_SECRETS_PAT` (site) | token-refresh.yml이 비밀값을 바꿀 때 | 운영자가 정한 만료일 — 만료되면 Threads·인스타 자동 갱신이 멈춤 | 7장 |
 
+**확인 필요(2026-11-19)**: 사이트 저장소 Actions에서 유튜브 키를 읽는 스크립트(yt_comments.available())가 '키 없음'을 냈다 — 사이트 저장소 Secrets에 `YT_*` 세 개가 없거나 이름이 다를 수 있다(미디어 저장소 youtube-upload.yml은 같은 날 성공). 그래서 유튜브 API가 필요한 새 작업은 미디어 저장소 워크플로로 돌린다: `yt-desc.yml`(main 브랜치, 옛 영상 설명란 링크 — plan·apply·revert). 사이트 comment-ai.yml·weekly-ai.yml·yt-shop.yml의 유튜브 부분도 같은 이유로 건너뛰고 있을 수 있으니, 운영자가 사이트 저장소 Settings → Secrets에 `YT_CLIENT_ID`·`YT_CLIENT_SECRET`·`YT_REFRESH_TOKEN`이 있는지 확인한다(1장 '세 곳의 값은 항상 같아야 한다').
+
 공통 규칙: 비밀값은 GitHub Secrets(와 유튜브만 클라우드 환경 변수)에만 둔다. 채팅·커밋·로그·맥으로 옮기지 않는다. 401·403은 다른 계정·키로 우회하지 않고 운영자에게 한 줄로 알린다. 사람에게 관리 권한을 줄 때는 각 플랫폼의 역할 초대를 쓰고 토큰을 건네지 않는다.
 
 # 유튜브
