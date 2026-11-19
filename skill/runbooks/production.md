@@ -32,7 +32,7 @@ blogger.yml이 매시간 3건씩 자동 게시(docs/blogger-guide.md). posted.js
   - 판정 끝난 예측은 prod_check가 매일 judged.md로 옮기고, 매달 1일에 그 달 판(ebook/editions/YYYY-MM.md)을 만든다. 집필팀은 판 단위로 가져간다. 지침은 ebook/WRITING_GUIDE.md, 목록은 ebook/ASSETS.md다.
 - **유력 갈래 보정(11-18)**: 시나리오를 쓰기 전에 `research/prob_basis.md`를 쓴다. 갈래마다 기저율과 n(장부), 조정 근거(±15%p 이내), 유력 갈래의 '틀린다면 이유'를 적는다. 유력 갈래는 40% 이하가 기본이다. 규칙은 review/predictions/README.md '유력 갈래 오답 분석'에 있고, prev_calls_check가 막는다.
 - **R2 하루 상한**: 롱폼 하루 3편 이하(기본 2, 핵심 종목 새 사건이 있을 때만), 쇼츠는 롱폼마다 1편. prod_check 줄의 '오늘 롱폼 n/3'으로 센다. 운영자가 '하나 더'를 지시하면 상한을 넘겨도 지시가 우선이고, 보고에 '하루 상한 초과' 한 줄. 줄어든 시간은 제목·썸네일 시안 비교와 첫 30초 대본에. 시험 C(12-01~, experiments.md)의 4편 주간만 상한 예외(하루 4편, 보고에 '시험 C 4편 주간').
-- **월요일 주간 갱신(권고안 5장)**: 월요일(ET) 첫 제작 점검에서 core_tickers.md '매주 월요일 갱신' 1~3을 먼저 한다(vidIQ channel_videos 롱폼·쇼츠 최신 50편, 없으면 stats_snapshots.jsonl → 핵심/새 종목 2주 조회 표 → 넣기 300회+·빼기 4주 연속 100회 미만 → insights.md 한 줄).
+- **핵심 종목 매일 갱신(11-19, 주간→매일)**: prod_check 하루 첫 실행이 `core_weekly.py --apply`로 2주 창 넣기·28일 창 빼기를 자동 반영(바뀌면 점검 줄에 한 줄). 표 요약이 필요하면 core_tickers.md '매주 월요일 갱신' 1~3을 먼저 한다(vidIQ channel_videos 롱폼·쇼츠 최신 50편, 없으면 stats_snapshots.jsonl → 핵심/새 종목 2주 조회 표 → 넣기 300회+·빼기 4주 연속 100회 미만 → insights.md 한 줄).
 
 ## 2) 하루 2편 결정
 R=0이면 정규 한 편(그날 첫 점검에서 바로, 1-1 순서로 핵심 종목 우선). 두 번째 자리는 요청 후보(0순위 → 1순위 → 2순위 → MSI 10위 안 신규)가 있고 Q=0이면 요청 한 편, 후보가 하나도 없으면 정규 한 편 더('정규2'). 둘 다 찼으면 만들지 않는다. 남은 시간이 적어도 그날 몫은 만든다(10-25).

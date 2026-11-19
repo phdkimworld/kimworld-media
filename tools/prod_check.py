@@ -55,6 +55,12 @@ try:
     _pl = subprocess.run([sys.executable, "tools/pred_ledger.py", "--daily"], cwd=M, capture_output=True, text=True, timeout=240).stdout.strip()
 except Exception: _pl = ""
 if _pl: line += " · " + _pl.splitlines()[-1]
+# 핵심 종목 매일 갱신(11-19 운영자 "갱신은 매일 해"): 하루 첫 실행 때만 2주·28일 창으로 넣기·빼기를 표에 반영, 바뀌면 한 줄
+try:
+    _ct = subprocess.run([sys.executable, "tools/core_weekly.py", "--apply"], cwd=M, capture_output=True, text=True, timeout=60).stdout.strip().splitlines()
+    _ct = [x for x in _ct if x.startswith("핵심 종목 갱신")]
+    if _ct: line += " · " + _ct[-1]
+except Exception: pass
 # 이북 재료(11-18 운영자 "재료는 니가 관리 … 계속 쌓아 나가 주기적으로 업데이트"): 새 판정을 재료로 옮기고, 매달 1일 첫 점검에 그 달 판을 만든다
 try:
     _eb = subprocess.run([sys.executable, "tools/ebook_materials.py", "--sync"], cwd=M, capture_output=True, text=True, timeout=60).stdout.strip()
@@ -68,7 +74,7 @@ if "--cap-history" in sys.argv:  # 과거 STATE로 상한 경고 오탐 확인�
         lr = long_rows(day); print(f"  {day} 롱폼 {len(lr)}{' ⚠ 하루 상한' + (' 초과' if len(lr) > LONG_CAP else ' 도달') if len(lr) >= LONG_CAP else ''}: " + ", ".join(c[1] for c in lr))
 
 # 점검 중 바뀐 통계 스냅샷은 바로 커밋·푸시(세션 종료 때 '커밋 안 된 변경' 알림이 반복되지 않게, 11-12)
-_chg = [f for f in ("stats_snapshots.jsonl", "review/predictions/ledger.jsonl", "ebook/materials/judged.md", f"ebook/editions/{NOW:%Y-%m}.md") if subprocess.run(["git", "diff", "--quiet", "--", f], cwd=M).returncode or subprocess.run(["git", "ls-files", "--error-unmatch", f], cwd=M, capture_output=True).returncode]
+_chg = [f for f in ("stats_snapshots.jsonl", "review/core_tickers.md", "review/predictions/ledger.jsonl", "ebook/materials/judged.md", f"ebook/editions/{NOW:%Y-%m}.md") if subprocess.run(["git", "diff", "--quiet", "--", f], cwd=M).returncode or subprocess.run(["git", "ls-files", "--error-unmatch", f], cwd=M, capture_output=True).returncode]
 if _chg:
     subprocess.run(["git", "add", *_chg], cwd=M)
     subprocess.run(["git", "commit", "-qm", "통계 스냅샷·예측 장부 갱신\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X"], cwd=M, capture_output=True)
