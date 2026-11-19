@@ -64,7 +64,7 @@
 - 발행 뒤: `python3 tools/pred_ledger.py --extract`(같은 리포트를 다시 돌려도 id = slug#해시라 중복 없음).
 - 사건형 판정: `--pending --ticker T`로 id를 보고 `--set ID 1|0 "근거(출처)"`. 조달 서류는 `--judge`가 SEC EDGAR(424B·S-1·F-1, 갈래에 S-3·F-3·등록이 있으면 그것도)로 먼저 본다.
 - 후속편 '지난 예측 성적': `--score <새 slug>`가 앞선 리포트 성적을 낸다. 리포트 숫자와 다르면 `prev_calls_check.py`가 `LEDGER_DIFF` 경고를 낸다.
-- 하루 첫 `prod_check.py` 실행 때 `--daily`(extract + judge)가 조용히 돌고, 새 판정이 있을 때만 한 줄이 붙는다. 그 종목 후속편을 만들 때 그 종목 파일 '기록'에 한 줄을 보탠다.
+- 하루 첫 `prod_check.py` 실행 때 `--daily`(extract + judge)가 조용히 돌고, 새 판정이 있을 때만 한 줄이 붙는다. 새 판정이 있으면 사이트 성적표(https://drkimworld.com/scoreboard/, `data/scoreboard.json`)도 `--push-site`가 백그라운드로 갱신한다. '인용할 만한 종목 횡단 사례'의 판정선 이탈·지킴 줄은 성적표가 그대로 읽으니 형식(`이탈 쪽 예측 a/b 적중, '지킨다' 쪽 c/d (종목, 장부 MM-DD 기준)`)을 지킨다. 그 종목 후속편을 만들 때 그 종목 파일 '기록'에 한 줄을 보탠다.
 
 ## 판정 규칙
 - 갈래 = 가격 부분(판정일 종가 vs 기준가, '까지'·'한 번이라도'·'새 저점'이면 기간 중 한 번) + 사건 부분. 가격 부분이 거짓이면 사건을 몰라도 '안 일어남'. 사건이 남으면 '사람 판정 필요'.
