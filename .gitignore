@@ -2,3 +2,4 @@ __pycache__/
 stats_engagement.json
 stats_retention.json
 tools/tts/sherpa-onnx-*
+.cache/
