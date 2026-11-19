@@ -8,9 +8,7 @@
   python3 tools/pred_ledger.py --pending [--ticker T] # 사람 판정이 필요한 항목 id 목록
   python3 tools/pred_ledger.py --set ID 1|0 "근거"   # 사람 판정(일어남 1 · 안 일어남 0). 'x'면 판정 불가
   python3 tools/pred_ledger.py --score SLUG         # 그 리포트보다 앞선 같은 종목 리포트의 예측 성적(후속편 '지난 예측 성적' 줄과 대조용)
-  python3 tools/pred_ledger.py --daily              # prod_check용: 하루 첫 실행 때만 extract+judge, 새 판정이 있으면 한 줄(+ 사이트 성적표 갱신을 백그라운드로)
-  python3 tools/pred_ledger.py --export-site [PATH] # 사이트 누적 예측 성적표 자료(기본 $KW_SITE/data/scoreboard.json): 판정 끝난 예측과 요약 숫자만
-  python3 tools/pred_ledger.py --push-site          # 사이트 main 최신화 → 내보내기 → 바뀌었으면 test_build + build --strict 통과 뒤 그 파일만 커밋·push
+  python3 tools/pred_ledger.py --daily              # prod_check용: 하루 첫 실행 때만 extract+judge, 새 판정이 있으면 한 줄
 판정 규칙(README.md에 같은 설명):
   - 시나리오는 가격 부분(종가 비교)과 사건 부분(발표·계약·조달)으로 나눈다. 모든 부분이 참이면 일어남, 하나라도 거짓이면 안 일어남.
     가격 부분이 거짓이면 사건 부분을 몰라도 자동으로 '안 일어남'. 사건 부분이 남으면 '사람 판정 필요'.
@@ -478,155 +476,13 @@ def do_set(i, v, note):
     print(f"{r['id']} → {r['status']} ({note})")
 
 
-# ---------- 사이트 누적 예측 성적표(2026-11-19, drkimworld.com/scoreboard/) ----------
-# 담는 것: 판정 끝난 예측과 요약 숫자. 담지 않는 것: 대기 중 예측의 %·문장(앞날 판단처럼 보임) — 대기는 수와 판정 달별 수만.
-SB_PATH = os.path.join(SITE, "data", "scoreboard.json")
-SLUG_RE = re.compile(r"\b([a-z0-9]+-20\d\d-\d\d(?:-\d+)?)\b")
-SIDES_RE = re.compile(r"이탈 쪽 예측 (\d+)/(\d+) 적중, '지킨다' 쪽 (\d+)/(\d+) \(([^,()]+), 장부 (\d\d)-(\d\d) 기준\)")
-
-
-def _site_slugs():
-    out = set()
-    for p in glob.glob(os.path.join(SITE, "content/reports/*.md")):
-        b = os.path.basename(p)
-        if b.startswith("_"): continue
-        head = open(p, encoding="utf-8").read(4000)
-        if re.search(r"(?m)^draft:\s*true", head): continue
-        m = re.search(r"(?m)^date:\s*\"?(\d{4}-\d\d-\d\d)", head)
-        if m and m.group(1) > TODAY.isoformat(): continue  # 예약 공개 전 리포트로는 링크하지 않음
-        out.add(b[:-3])
-    return out
-
-
-def _sb_text(t):
-    head, _, rest = t.partition(" | ")
-    head = re.sub(r"^(시나리오\s*)?\d+\s*·\s*", "", head.strip())
-    cond = rest.split(" | ")[0].strip()
-    if not cond or cond[0] in "-:" or ":" in cond[:12] or len(cond) > 60: cond = ""
-    return head, cond
-
-
-def _sb_note(note, slugs):
-    ev = next((m for m in SLUG_RE.findall(note or "") if m in slugs), None)
-    n = note or ""
-    for m in set(SLUG_RE.findall(n)):
-        n = re.sub(r"(사이트 )?" + re.escape(m) + r"(:\s*|\s*)", "", n)
-    n = re.sub(r"\(\s*\)", "", n)
-    n = re.sub(r"첫날 (\d{4})-(\d\d)-(\d\d) ([\d.]+) vs (\d{4})-(\d\d)-(\d\d) ([\d.]+)",
-               lambda m: f"첫 거래일 {int(m.group(2))}월 {int(m.group(3))}일 종가 {m.group(4)}달러(전 거래일 {m.group(8)}달러)", n)
-    return re.sub(r"\s{2,}", " ", n).strip(" ;,"), ev
-
-
-def export_site(path=None):
-    """사이트 성적표 자료를 쓴다. 숫자가 그대로면 파일을 건드리지 않는다(기준일만 바뀌는 커밋 방지). 반환: 바뀌었으면 True."""
-    path = path or SB_PATH
-    rows = load(); slugs = _site_slugs()
-    sc, calls, hit, br = stats(rows)
-    judged = [r for r in rows if r["outcome"] is not None]
-    pend = [r for r in rows if r["outcome"] is None]
-    cal = []
-    for lo in range(0, 100, 20):
-        b = [r for r in sc if lo <= r["prob"] < lo + 20 or (lo == 80 and r["prob"] == 100)]
-        if b: cal.append({"lo": lo, "hi": lo + 20, "said": round(sum(r["prob"] for r in b) / len(b), 1),
-                          "k": sum(r["outcome"] for r in b), "n": len(b)})
-    tick = []
-    for t in sorted({r["ticker"] for r in rows}):
-        b = [r for r in rows if r["ticker"] == t]; s2, c2, h2, b2 = stats(b)
-        nd = sum(r["outcome"] is not None for r in b)
-        if nd: tick.append({"ticker": t, "n": len(b), "judged": nd, "hit": h2, "calls": len(c2),
-                            "brier": round(b2, 3) if b2 is not None else None, "brier_n": len(s2)})
-    items = []
-    for r in sorted(judged, key=lambda r: (r["published"], r["slug"], r["id"]), reverse=True):
-        txt, cond = _sb_text(r["text"]); note, ev = _sb_note(r.get("note"), slugs)
-        items.append({"id": r["id"], "date": r["published"], "ticker": r["ticker"], "text": txt, "cond": cond,
-                      "prob": r["prob"], "outcome": r["outcome"], "status": r["status"],
-                      "call": r["status"] in ("적중", "빗나감"), "note": note, "by": r.get("by") or "",
-                      "slug": r["slug"] if r["slug"] in slugs else None, "evidence": ev if ev != r["slug"] else None})
-    months = {}
-    for r in pend:
-        k = (r.get("judge_date") or "")[:7] or "미정"
-        months[k] = months.get(k, 0) + 1
-    readme = open(os.path.join(PD, "README.md"), encoding="utf-8").read()
-    m = SIDES_RE.search(readme)
-    if not m: raise SystemExit("README '인용할 만한 종목 횡단 사례'에서 판정선 이탈·지킴 성적 줄을 찾지 못함(형식: '이탈 쪽 예측 4/4 적중, '지킨다' 쪽 0/4 (…, 장부 11-18 기준)')")
-    sides = {"break_hit": int(m.group(1)), "break_n": int(m.group(2)), "hold_happened": int(m.group(3)), "hold_n": int(m.group(4)),
-             "tickers": m.group(5).strip(), "as_of": f"{TODAY.year}-{m.group(6)}-{m.group(7)}"}
-    doc = {
-        "version": 1,
-        "totals": {"predictions": len(rows), "scenarios": sum(r["kind"] == "scenario" for r in rows),
-                   "checks": sum(r["kind"] == "check" for r in rows), "judged": len(judged), "pending": len(pend),
-                   "needs_human": sum(r["status"] == "사람 판정 필요" for r in pend)},
-        "brier": {"value": round(br, 3) if br is not None else None, "n": len(sc), "coin": 0.25},
-        "calls": {"hit": hit, "n": len(calls)},
-        "sides": sides,
-        "calibration": cal,
-        "tickers": tick,
-        "items": items,
-        "pending_by_month": [{"month": k, "n": v} for k, v in sorted(months.items())],
-    }
-    old = None
-    if os.path.exists(path):
-        try: old = json.load(open(path, encoding="utf-8"))
-        except Exception: old = None
-    if old and {k: v for k, v in old.items() if k != "as_of"} == doc: return False
-    doc = {"as_of": TODAY.isoformat(), **doc}
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(doc, f, ensure_ascii=False, indent=1); f.write("\n")
-    return True
-
-
-PUSH_LOG = os.path.join(CACHE, "site_push.log"); PUSH_STATUS = os.path.join(CACHE, "site_push.status")
-
-
-def push_site():
-    """사이트 main 최신화 → 내보내기 → 바뀌었으면 AGENTS.md 2절대로 test_build·build --strict 둘 다 통과한 뒤 data/scoreboard.json만 커밋·push.
-    (AGENTS.md에는 데이터 파일만 바뀐 커밋의 예외가 없다. 빌드는 dist를 건드리지 않게 임시 폴더로.)"""
-    import subprocess, tempfile, shutil
-    def git(*a): return subprocess.run(["git", *a], cwd=SITE, capture_output=True, text=True)
-    def status(s):
-        open(PUSH_STATUS, "w").write(f"{datetime.datetime.now(ZoneInfo('America/New_York')):%m-%d %H:%M} {s}\n"); print(s)
-    git("pull", "-q", "--rebase", "--autostash", "origin", "main")
-    if not export_site(): status("OK 변경 없음"); return True
-    rel = os.path.relpath(SB_PATH, SITE)
-    for attempt in range(3):
-        t = subprocess.run([sys.executable, "tests/test_build.py"], cwd=SITE, capture_output=True, text=True)
-        if t.returncode: status("FAIL test_build: " + (t.stdout.strip().splitlines() or ["?"])[-1][:120]); return False
-        out = tempfile.mkdtemp(prefix="kws-sb-")
-        try: b = subprocess.run([sys.executable, "build.py", "--strict", "--out", out], cwd=SITE, capture_output=True, text=True)
-        finally: shutil.rmtree(out, True)
-        if b.returncode: status("FAIL build --strict: " + (b.stdout.strip().splitlines() or ["?"])[-1][:120]); return False
-        git("add", rel)
-        if git("diff", "--cached", "--quiet", "--", rel).returncode == 0: status("OK 변경 없음"); return True
-        git("-c", "user.name=phdkimworld", "commit", "-qm", f"예측 성적표 자료 갱신({TODAY:%m-%d}, pred_ledger.py --push-site)\n\n"
-            "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01DaUBsG9X6bLavyZrFguf5X", "--", rel)
-        if git("push", "-q", "origin", "HEAD:main").returncode == 0: status("OK push"); return True
-        # push 실패(그새 main이 바뀜): 받아서 다시 검사(바뀐 것이 있으면 test_build부터)
-        git("pull", "-q", "--rebase", "--autostash", "origin", "main")
-    status("FAIL push 3회 실패"); return False
-
-
 if __name__ == "__main__":
     a = sys.argv[1:]
     tk = a[a.index("--ticker") + 1] if "--ticker" in a else None
     if "--daily" in a:
         st = os.path.join(CACHE, "daily_stamp")
-        if os.path.exists(PUSH_STATUS) and " FAIL " in f" {open(PUSH_STATUS).read()}":  # 지난 성적표 갱신 실패는 한 번 알린다
-            print("사이트 성적표 갱신 실패: " + open(PUSH_STATUS).read().strip() + f" (로그 {PUSH_LOG})"); os.replace(PUSH_STATUS, PUSH_STATUS + ".seen")
         if os.path.exists(st) and open(st).read().strip() == TODAY.isoformat(): sys.exit(0)
-        import io, contextlib, subprocess
-        open(st, "w").write(TODAY.isoformat()); do_extract()
-        buf = io.StringIO()
-        with contextlib.redirect_stdout(buf): newly = do_judge(quiet=True)
-        msg = buf.getvalue().strip()
-        # 새 판정이 있을 때만 사이트 성적표 갱신(테스트·빌드가 몇 분 걸려 백그라운드로). 사이트가 이 자료를 읽는 틀(templates/scoreboard.html)이 있을 때만
-        # (11-19: 같은 때 다른 세션이 /scorecard/ — deploy.yml이 빌드마다 장부를 직접 읽음 — 을 올려, /scoreboard/ 사이트 쪽은 운영자 결정 전까지 올리지 않음)
-        if (newly or not os.path.exists(SB_PATH)) and os.path.exists(os.path.join(SITE, "templates", "scoreboard.html")):
-            subprocess.Popen([sys.executable, os.path.abspath(__file__), "--push-site"], cwd=MEDIA, start_new_session=True,
-                             stdout=open(PUSH_LOG, "a"), stderr=subprocess.STDOUT)
-            msg = (msg + " · " if msg else "") + "사이트 성적표 갱신 시작(백그라운드)"
-        if msg: print(msg)
-        sys.exit(0)
+        open(st, "w").write(TODAY.isoformat()); do_extract(); do_judge(quiet=True); sys.exit(0)
     if "--extract" in a:
         n, t = do_extract(); print(f"예측 장부 추출: 새 {n} · 전체 {t}")
     if "--set" in a:
@@ -638,7 +494,3 @@ if __name__ == "__main__":
             if r["status"] == "사람 판정 필요" and (not tk or r["ticker"] == tk.upper()):
                 print(f"{r['id']} | {r['judge_date']} | {r['prob'] if r['prob'] is not None else '-'} | {r['text'][:70]} | {r.get('note','')[:40]}")
     if "--score" in a: do_score(a[a.index("--score") + 1])
-    if "--export-site" in a:
-        i = a.index("--export-site"); pth = a[i + 1] if len(a) > i + 1 and not a[i + 1].startswith("--") else None
-        print(("사이트 성적표 자료 갱신: " if export_site(pth) else "사이트 성적표 자료 그대로: ") + (pth or SB_PATH))
-    if "--push-site" in a: sys.exit(0 if push_site() else 1)
