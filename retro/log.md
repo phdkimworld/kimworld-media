@@ -686,3 +686,4 @@ kim-world-stock-studio 스킬 8장에 따라 회차마다 덧붙인다. 최신 �
 - 오래 걸린 단계: 사이트 test_build 1회 약 25분(다른 제작과 CPU 경합), push 경합으로 재시도.
 - 11-18 오답노트 1(추가, 운영자 "지금 바로 만들어", 하루 상한 초과): 결산편 wrong-2026-11 — 판정 끝 21개, 유력 갈래 0/6, 브라이어 0.176 vs 0.250, 판정선 이탈 4/4. 롱폼 CG8DRq8t1dc · 쇼츠 AiqKi8rECsA · 재생목록 김박사 월드 오답노트(새로 만듦). 복기 이유 문단(49 CFR 831.4 비유, lens.md)·쇼츠 시리즈 표시.
 - 고친 실수: 종목 없는 리포트 자리 없음 → tickers.yaml KWNOTE series·테마 예측 결산·build seo/template 분기 · prev_calls_check 시나리오 절 필수 → PROB_BASIS=skip + prob_basis 예외 줄 · 재생목록 이름에 '미스터리 추적'이 강제로 붙음 → upload meta series_title · 쇼츠 표지 빨간 숫자가 cover_check 밝기(140) 아래 → 흰색 · 사이트 push가 봇 커밋에 밀림(25분 검사 뒤 거절 2회) → 소셜 기록만 바뀌면 재검사 없이 push · 동시 작업 중 media tools 수정분 유실 → 바로 커밋.
+| 11-19 | JOBY 추가(joby-2026-11-4) | 김박사 몰 V3.9-M 첫 JOBY 적용. 사이트 SNS 대기열 push가 25분짜리 test_build 동안 원격 자동 커밋에 밀려 2번 거절 → pull 바뀜 시 검사 1번 후 곧바로 push로 바꿈(bin/site_push.sh). ASR 3문단 인식기 한계 판정, 문단 12 이어 보기 문장 '편' 누락으로 클라우드 재녹음 |
