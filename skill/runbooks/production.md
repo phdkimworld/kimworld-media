@@ -1,6 +1,6 @@
 # 하루 제작 점검 지침 (3시간마다 · `tools/prod_check.py`가 ACTION을 냈을 때만 읽는다)
 
-2026-11-10 토큰 절약 개편: 예약 작업은 먼저 `python3 tools/prod_check.py`를 돌린다. `NOTHING`이면 그 줄만 보고하고 끝낸다. `ACTION`이면 이 문서대로 한다. 묻지 말고 끝까지, 한국어로. 완성된 것은 바로 공개한다. 이 점검이 하루 제작의 유일한 선정 창구다. 작업별로 읽을 문서·도구는 `skill/KNOWHOW.md`(노하우 지도)에 있다 — 에이전트 브리핑에 그 경로를 넘긴다.
+2026-11-10 토큰 절약 개편: 예약 작업은 먼저 `python3 tools/prod_check.py`를 돌린다. `NOTHING`이면 그 줄만 보고하고 끝낸다. `ACTION`이면 이 문서대로 한다. 묻지 말고 끝까지, 한국어로. 완성된 것은 바로 공개한다. 이 점검이 하루 제작의 유일한 선정 창구다. **사이트 push는 `bash /home/user/kimworld-media/tools/site_push.sh`로**(11-20 운영자 "해결해"): test_build·build --strict 통과 직후 실행 — 그 사이 원격에 들어온 변경이 봇 기록 경로(social/posted·open·llm·telegram·blogger·replies, health/, stats/)뿐이면 다시 검사하지 않고 rebase→push, 그 밖이 바뀌었으면 exit 3(그때만 test_build 다시). ENVX 11-20에 push 두 번 실패로 영상 ID 연결이 2시간 늦은 일 방지. 작업별로 읽을 문서·도구는 `skill/KNOWHOW.md`(노하우 지도)에 있다 — 에이전트 브리핑에 그 경로를 넘긴다.
 
 ## 지연 금지·재시작 복구 (최우선, 11-03 "어떤 상황에서도 스케줄된 제작이 지연되지 않도록")
 1. 그날 몫(R·Q)이 비어 있으면 **즉시** 제작을 시작한다. 실적·이벤트 결과를 기다리지 않는다(결과 전이면 그 시점 확정 숫자로, 결과는 다음 후속편에서). 정규·요청은 조사를 병렬로. 두 제작이 동시에 돌면 사이트 저장소는 각자 git worktree(`git -C /home/user/kimworld-site worktree add /home/claude/site-<x> origin/main`, 푸시 `HEAD:main`).
