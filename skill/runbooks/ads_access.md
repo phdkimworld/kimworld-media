@@ -13,7 +13,7 @@
 | 카카오 애드핏(블로거) | **꺼짐**(11-15 블로그 매체 심사 보류 → 운영자 "블로거에선 애드핏 제거", 165글에서 뺌) | — | `blogger.yml` 비밀값 `BLOGGER_ADFIT_UNIT`이 비어 있으면 꺼짐 | — |
 | 구글 애드센스 | 계정 `ca-pub-7488269227696808`, **사이트 승인 전**(재신청 기준 3/5 → 11-22 뒤 4/5, 남은 것 '하루 세션 100') · 자동 광고 꺼둠 · `in_article` 슬롯 | digest '애드센스 재신청' 줄(5개 기준) | 사이트 `ads.yaml adsense` | 없음(공개값) — 콘솔은 운영자만 |
 | 데이블 | 꺼짐(번호 없음) | — | `ads.yaml dable` | — |
-| 유튜브 | YPP 없음(운영자 2026-11-15 "YPP는 불가능해 보여" — YPP 전제 작업 보류) · 영상 속 광고는 김박사 몰 안내만 | biz_digest·vidIQ | 제작 지침 SKILL V3.9-M | `YT_*`(미디어 저장소 Secrets) |
+| 유튜브 | YPP 없음(운영자 2026-11-15 "YPP는 불가능해 보여" — YPP 전제 작업 보류) · 영상 속 광고는 김박사 몰 안내만 | biz_digest·vidIQ | 제작 지침 SKILL V3.9-M | `YT_*`(미디어·사이트 저장소 Secrets, 2026-11-20부터 둘 다) |
 | 직접 협찬 | 보류(운영자 결정 '직접 판매 광고 보류') | — | 운영자 결정 전 아무것도 안 함 | — |
 
 공통: GitHub는 REST만(`gh api …`, 워크플로 실행 `gh api -X POST repos/<저장소>/actions/workflows/<파일>/dispatches -f ref=main -f "inputs[이름]=값"`). 결과는 실행 주석(`check-runs/<job>/annotations`)과 ops-data로 읽는다. 셸은 drkimworld.com·쿠팡·카카오·Azure에 닿지 않는다.
@@ -42,7 +42,7 @@
 ## 2. 김박사 몰 (https://mall.drkimworld.com)
 
 - 구조: `mall/mall.yaml`(컨셉·카테고리 id·하위 ID·주소) → `scripts/mall_build.py --fetch --build dist-mall` → `mall.yml`이 매일 한국 07:10 Cloudflare 워커 정적 자산(`mall/wrangler.toml`, 이름 kimworld-mall)으로 배포. 토큰에 Pages 권한이 없어 워커로 올린다(11-19). 사용자 지정 도메인은 같은 단계가 붙인다.
-- 채널 연결은 모두 고정 주소 `https://drkimworld.com/mall/?utm_source=<채널>&utm_medium=…&utm_content=mall` — 유튜브(새 롱폼 V3.9-M, 옛 영상 `yt-desc.yml` 하루 15편), 블로거(글 끝 한 줄, 기존 182건 백필), 텔레그램(새 리포트 🛒), Threads(끝 댓글), 페이스북(첫 댓글), 사이트 하단 메뉴. 인스타그램은 프로필 링크(운영자 몫).
+- 채널 연결은 모두 고정 주소 `https://drkimworld.com/mall/?utm_source=<채널>&utm_medium=…&utm_content=mall` — 유튜브(새 롱폼 V3.9-M, 옛 영상 사이트 저장소 `yt-desc.yml` 하루 15편), 블로거(글 끝 한 줄, 기존 182건 백필), 텔레그램(새 리포트 🛒), Threads(끝 댓글), 페이스북(첫 댓글), 사이트 하단 메뉴. 인스타그램은 프로필 링크(운영자 몫).
 - 고치기: 카테고리 바꾸기·순서·첫 화면 문구는 `mall.yaml`. 쿠팡 카테고리 id(예: 1012 식품, 1014 생활, 1013 주방, 1015 홈인테리어, 1016 가전디지털, 1017 스포츠, 1019 도서, 1018 자동차, 1002 남성패션, 1024 헬스·건강식품, 1029 반려동물). 고친 뒤 `python3 scripts/mall_build.py --build /tmp/m`과 `tests/test_build.py`.
 - 판정: 매일 점검이 digest '김박사 몰' 줄로 본다. 첫 판정 12-03(클릭 나는 채널·칸은 늘리고 0인 칸은 바꾼다).
 
