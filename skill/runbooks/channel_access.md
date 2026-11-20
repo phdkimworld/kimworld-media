@@ -19,6 +19,7 @@
 
 **해결(2026-11-20)**: 사이트 저장소에 `GH_SECRETS_PAT`가 없던 것을 운영자가 넣었고(kimworld-site 전용, Secrets 읽기·쓰기), 세션이 yt-secrets-sync.yml(mode=pubkey → 세션에서 봉인 → mode=set, run 44770847041 성공)로 사이트 Secrets에 `YT_CLIENT_ID`·`YT_CLIENT_SECRET`·`YT_REFRESH_TOKEN`을 넣었다(클라우드 환경 값과 같음). 같은 때 token-refresh.yml 수동 실행 성공(run 44770906930). 유튜브 갱신 토큰을 새로 받으면 클라우드 환경·미디어 Secrets를 바꾼 뒤 세션이 같은 워크플로로 사이트에도 넣는다(평문은 세션 밖으로 나가지 않음).
 **yt-desc 이전(2026-11-20)**: 사이트 저장소 plan 시험(run 44771640102)에서 키가 잡혀 옛 영상 설명란 링크 통로를 사이트 저장소 `yt-desc.yml`(main, 기록 `social/youtube/desc_log.json` — 미디어 review/yt_desc_log.json 30건 이어받음)로 옮겼다. 미디어 저장소 main의 yt-desc.yml은 더 쓰지 않는다(기록이 둘로 갈리면 같은 영상을 두 번 고를 수 있다).
+**분석 권한 추가(2026-11-20 12:27 ET)**: 운영자가 kimworld 프로젝트에 웹 클라이언트 `kimworld-gh`(리디렉션 OAuth Playground)를 새로 만들고, 범위 youtube·youtube.force-ssl·youtube.upload·yt-analytics.readonly로 갱신 토큰을 받아 세 곳(사이트·미디어 Secrets, 클라우드 환경)의 `YT_*` 세 값을 모두 바꿨다. 확인: 사이트 yt-desc.yml `mode=check`(권한 범위 이름과 분석 API 응답 여부만 주석)에서 네 범위와 분석 API 응답 성공. 이제 `tools/yt_subs.py --report`로 영상별 구독 증가를 읽을 수 있다(구독 시험 A·B 비교). 예전 Desktop 클라이언트는 지우지 않았다(운영자 몫).
 
 공통 규칙: 비밀값은 GitHub Secrets(와 유튜브만 클라우드 환경 변수)에만 둔다. 채팅·커밋·로그·맥으로 옮기지 않는다. 401·403은 다른 계정·키로 우회하지 않고 운영자에게 한 줄로 알린다. 사람에게 관리 권한을 줄 때는 각 플랫폼의 역할 초대를 쓰고 토큰을 건네지 않는다.
 
