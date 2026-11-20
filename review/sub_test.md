@@ -14,3 +14,4 @@
 | 11-18 | 오답노트1 | CG8DRq8t1dc | B | 332 |
 | 11-19 | LAES | 2LuMR4kBlmA | A | 335 |
 | 11-19 | JOBY | m2eALHEvv8c | B | 346 |
+| 11-20 | PLUG | G4LwNPV5bB8 | A | 358 |
