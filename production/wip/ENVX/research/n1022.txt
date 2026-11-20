@@ -1,0 +1,47 @@
+ 
+ envx-20261022 0001828318 False 0001828318 2026-10-12 2026-10-12 
+ UNITED STATES 
+ SECURITIES AND EXCHANGE COMMISSION 
+ WASHINGTON , D.C. 20549 
+ FORM 8-K 
+ CURRENT REPORT 
+ Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 
+ Date of Report (Date of earliest event reported): October 22, 2026 
+ Enovix Corporation 
+ (Exact Name of Registrant as Specified in Its Charter) 
+ Delaware 001-39753 85-3174357 
+ (State or Other Jurisdiction
+of Incorporation) (Commission
+File Number) (IRS Employer
+Identification No.) 
+ 3501 W Warren Avenue 
+ Fremont , California 
+ 94538 
+ (Address of Principal Executive Offices) (Zip Code) 
+ Registrant’s Telephone Number, Including Area Code: ( 510 ) 695-2350 
+ Not Applicable 
+ (Former Name or Former Address, if Changed Since Last Report) 
+ Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: 
+ ☐ Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) 
+ ☐ Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) 
+ ☐ Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) 
+ ☐ Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) 
+ Securities registered pursuant to Section 12(b) of the Act: 
+ Title of each class Trading 
+Symbol(s) Name of each exchange on which registered 
+ Common Stock, par value $0.0001 per share ENVX The Nasdaq Global Select Market 
+ Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§ 230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§ 240.12b-2 of this chapter). 
+ Emerging growth company ☐ 
+ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ 
+ Item 7.01 Regulation FD Disclosure 
+ On October 21, 2026, The Electric published an article in which an officer of Enovix Corporation (the “Company”) stated that the Company “estimated that 2027 revenue will be around $100 million”, and that “[most] of that [revenue] … will be from smartphone customers ….”, and that Enovix “had shipped 50,000 cells to a smartphone maker that was prototyping a new model ….” 
+ The 2027 estimated revenue disclosed in the article was not a Company-authorized disclosure, and investors should not rely on those statements as Company guidance for 2027. The Company expects to provide its updated financial guidance when it releases its third quarter 2026 financial results on November 12, 2026. The Company notes that its current expectation is that revenue growth will be primarily driven by its drone, defense and industrial pipeline, which was $216 million as of the end of the third quarter of 2026, as previously disclosed by the Company. The Company also would like to clarify that the shipments referenced in the article were to a smart eyewear customer, not a smartphone maker, and that, as previously disclosed, the Company had shipped approximately 17,000 production sample cells to that customer as of the end of the third quarter of 2026, out of a 50,000 pack order. 
+ The information in this report is being furnished pursuant to Item 7.01 of Form 8-K and shall not be deemed “filed” for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), or otherwise subject to the liabilities of that section, nor shall such information be deemed incorporated by reference into any filing under the Securities Act of 1933, as amended, or the Exchange Act. 
+ This Form 8-K contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Forward-looking statements relate to future events or our future financial or operating performance and are identified by words such as anticipate, believe, could, estimate, expect, intend, may, might, plan, possible, potential, predict, project, should, will, would and similar expressions. Forward-looking statements in this Form 8-K include, but are not limited to, statements regarding the expected timing of the release of the Company’s third quarter 2026 financial results and updated guidance, and the Company’s expectation that its revenue growth will be primarily driven by its drone, defense and industrial pipeline. Risks, uncertainties and assumptions that could cause actual results to differ materially from the results and events anticipated by such forward-looking statements include risks relating to the Company’s expected drone, defense and industrial pipeline and the conversion of that pipeline into revenue, the timing of the release of the Company’s third quarter 2026 financial results, and other risks described in the disclosures contained in the Company’s filings with the Securities and Exchange Commission (“SEC”), including in the “Risk Factors” and “Management’s Discussion and Analysis of Financial Condition and Results of Operations” sections of its annual report on Form 10-K and quarterly reports on Form 10-Q, and other documents that its has filed, or will file, with the SEC. Any forward-looking statements in this Form 8-K speak only as of the date on which they are made. The Company undertakes no obligation to update or revise any forward-looking statements, whether as a result of new information, future events or otherwise. 
+ SIGNATURE 
+ Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned thereunto duly authorized. 
+ Enovix Corporation 
+ Date: October 22, 2026 
+ By: /s/ Arthi Chakravarthy 
+ Arthi Chakravarthy 
+ Chief Legal Officer 
