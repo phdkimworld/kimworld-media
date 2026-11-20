@@ -280,4 +280,17 @@ if m.get("series_title"):
             spid, stitle = series_playlist("", "", exact=m["series_title"]); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"; break
         except HttpError as e:
             out["series_playlist"] = f"error: {e}"; time.sleep(20)
+# 한국어 자막(운영자 11-20, 시청의 25.6%가 자막을 켜고 봄): meta 폴더의 raw_timing.json(롱폼)·shorts_raw_timing.json(쇼츠)으로 SRT를 만들어 올린다.
+# 실패해도 업로드는 그대로 둔다(결과 captions 한 줄만). meta "captions": false로 끈다. 손으로 다시: python3 tools/yt_captions.py <폴더>
+if m.get("captions", True) is not False:
+    try:
+        import subprocess
+        mdir = os.path.dirname(os.path.abspath(a.meta)); cap = os.path.join(os.path.dirname(os.path.realpath(__file__)), "yt_captions.py")
+        if any(os.path.exists(os.path.join(mdir, f)) for f in ("raw_timing.json", "shorts_raw_timing.json")) and os.path.exists(cap):
+            r = subprocess.run([sys.executable, cap, mdir, "--vid", vid], capture_output=True, text=True, timeout=300)
+            out["captions"] = ((r.stdout.strip().splitlines() or [r.stderr.strip()[-200:]])[-1])[:200]
+        else:
+            out["captions"] = "skip: 타이밍 파일 없음"
+    except Exception as e:
+        out["captions"] = f"error: {str(e)[:150]}"
 done()

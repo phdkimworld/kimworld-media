@@ -74,6 +74,7 @@ requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 too
 - **대기·검사 토큰(11-16 측정: 5분 넘게 놀다 깨면 문맥 35~50만 토큰을 캐시에 다시 써서 회차 비용의 30~36%)**: ① 맥에 TTS를 올리기 전에 `sh tools/pre_tts_check.sh <video> <shorts>` → PRE_OK여야 제출(PRE_FAIL이면 적힌 검사만 `grep -A8 '== 이름' <video>/pre_check.log`로 보고 한 번에 고친다). ② 할 일이 남지 않아 기다릴 때는 백그라운드 완료 알림·긴 until 대신 `sh tools/wait_short.sh '<끝 조건>'`(최대 270초, PENDING이면 곧바로 다시 부름)으로 끊어 기다린다. 예: `sh tools/wait_short.sh 'grep -qE "CHAIN_DONE|CHAIN_FAIL" video/chain.log'`.
 - **숨소리 무음(F7, 11-16 BTQ 시청자 "코 들이마시는 소리")**: 녹음(맥·클라우드 모두) 뒤 `python3 tools/debreath.py raw.wav raw_timing.json`(chain_long이 롱폼·쇼츠 모두 자동) — 문장 사이 쉼의 들숨을 0으로(길이·문장 시각 그대로), DEBREATH_FAIL(잔여 숨 경계 10% 초과)이면 합성하지 않는다. chain_long 없이 직접 합성할 때도 먼저 돌린다.
 - 새 리포트가 지목한 날짜 있는 이벤트는 followups.md 후보 일정표(자동 예약 금지). 시작 때 `df -h /`와 /tmp/kws-* 정리. chain_long.sh는 백그라운드 timeout 7200000, 쇼츠 렌더·TTS·사이트 테스트와 겹치지 않게.
+- **한국어 자막(11-20 운영자, 스튜디오 28일 시청의 25.6%가 자막을 켬)**: 롱폼·쇼츠 업로드 직후 `yt_api_upload.py`가 meta 폴더의 raw_timing.json·shorts_raw_timing.json으로 `tools/yt_captions.py`를 불러 SRT(captions.ko.srt, TTS 한글 숫자→숫자 표기, 출처 숫자 대조)를 '한국어' 자막으로 올린다(결과 `captions`, 400단위, 실패해도 업로드는 그대로). 실패·경로 B면 `python3 tools/yt_captions.py <video 폴더> [--shorts <shorts 폴더>]` 한 번.
 - 유튜브 uploadLimitExceeded면 나머지를 끝내 두고 업로드는 백그라운드 until(30분 간격, 최대 12시간)로 재시도, 성공하면 이후 단계까지 이어서.
 
 ## 5) 보고

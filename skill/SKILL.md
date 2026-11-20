@@ -1769,6 +1769,7 @@ done()
 - **유입 구분자(UTM, 2026-10-14 운영자 지시)**: 스크립트가 설명란과 첫 댓글의 리포트 링크(`https://drkimworld.com/r/<slug>/`)에 `?utm_source=youtube&utm_medium=video&utm_campaign=<slug>&utm_content=<위치>`를 자동으로 붙인다. 위치는 설명란 `description`, 첫(고정) 댓글 `pinned`, 쇼츠는 meta에 `"utm_content": "shorts"`. 원고(description.txt·pinned.txt)에는 맨 주소만 쓴다. 이미 올린 영상은 `python3 /home/claude/yt_api_upload.py --retag=<영상ID>`로 설명란과 채널 첫 댓글에 붙인다(영상당 약 100단위). 사이트 관리자 화면 '유입 분석 → 캠페인(UTM)'에서 위치별 방문·계속 읽은 비율을 본다. **댓글 답글 링크(운영자 지시 2026-10-16 '대댓글도 따로 추적')**: `utm_medium=comment`, `utm_content`는 시청자 댓글 답글 `reply`, 대댓글 답글 `followup`, 종목 요청 답글 `request`. 유튜브는 `tools/yt_reply.py --kind top|followup|request`, SNS는 답글 파일 항목의 `"kind"`로 도구가 자동으로 붙인다(원고에는 맨 주소)
 - 결과 JSON의 `video_id`, `url`, `privacy_after`, `thumbnail`, `comment`를 기록하고, 종료 코드와 함께 V7.1로 판정한다. 영상 ID를 얻으면 곧바로 리포트 머리말 `youtube_id`에 넣고 빌드 검사 후 푸시한다(R6.5)
 - 경로 A는 예약 없이 즉시 게시한다. 영상 파일을 미디어 저장소에 올릴 필요가 없다(`thumb_history.json` 커밋은 그대로 한다). 경로 B로 대체할 때만 V7.2대로 영상과 썸네일을 푸시한다
+- **한국어 자막(운영자 11-20, 자막 25.6%)**: 업로드 직후 스크립트가 `tools/yt_captions.py`로 대본 타이밍 SRT를 '한국어' 자막으로 올린다(출력 `captions`, 같은 이름이 있으면 교체). 실패해도 업로드는 막지 않으며, 손으로는 `python3 tools/yt_captions.py <video 폴더> [--shorts <shorts 폴더>]`(runbooks/production.md)
 - 할당량: 하루 10,000단위 가운데 업로드 한 번이 약 1,600단위(썸네일·댓글 각 50)다. 할당량 오류는 대체 조건 2번으로 처리한다
 - 인증 값이 만료되면(`invalid_grant`) 전달에 "유튜브 API 열쇠가 만료되어 Metricool로 올렸습니다. 다시 로그인해 YT_REFRESH_TOKEN을 바꿔 주세요" 한 줄을 남긴다
 
