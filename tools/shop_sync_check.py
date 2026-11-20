@@ -9,5 +9,10 @@ if not sen: print('SHOP_SYNC_SKIP 쿠팡 문장 없음'); sys.exit(0)
 if not os.path.exists(cand): print('SHOP_SYNC_FAIL kit/shop/candidates.json 없음 — 쿠팡 문장을 쓰기 전에 yt-shop.yml 실행(SKILL V3.9)'); sys.exit(1)
 kw = json.load(open(cand, encoding='utf-8')).get('keyword', '')
 toks = [t[:2] for t in re.split(r'\s+', kw) if len(t) >= 2] or [kw]
-if any(t in s for s in sen for t in toks): print(f'SHOP_SYNC_OK {kw}'); sys.exit(0)
+if any(t in s for s in sen for t in toks):
+    # 11-20 PLUG: 김박사 몰(사진 없는 카드)은 키트 기본 '채널 응원' 대신 회차에 맞는 문구(kit/shop_spec.json "label") — 운영자 지시
+    sp = os.path.join(v, '..', 'kit', 'shop_spec.json')
+    if kw == '김박사 몰' and os.path.exists(sp) and not json.load(open(sp, encoding='utf-8')).get('label'):
+        print("SHOP_SYNC_FAIL kit/shop_spec.json에 'label'(몰 카드 회차 문구) 없음 — 키트 기본 '채널 응원' 대신 회차에 맞게"); sys.exit(1)
+    print(f'SHOP_SYNC_OK {kw}'); sys.exit(0)
 print(f"SHOP_SYNC_FAIL 쿠팡 문장이 상품 '{kw}'과 다름: {sen[0].strip()[:50]}"); sys.exit(1)
