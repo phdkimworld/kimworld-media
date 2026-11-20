@@ -101,11 +101,11 @@ def main():
     out += ["", "## 구독 시험(F9)"]
     st = MEDIA / "review" / "sub_test.md"
     if st.exists():
-        rows = [l for l in st.read_text(encoding="utf-8").splitlines() if re.match(r"^\| 20\d\d-", l)]
-        a = sum(" A " in l or "| A |" in l for l in rows)
+        rows = [l for l in st.read_text(encoding="utf-8").splitlines() if re.match(r"^\| (20\d\d-)?\d\d-\d\d \|", l)]  # 11-17 같은 짧은 날짜도
+        a = sum(re.search(r"\| A \|", l) is not None for l in rows)
         out.append(f"- 기록 {len(rows)}편(A {a} · B {len(rows) - a}) · 판정 12-01 · 기준선 1,000회당 1.1명(vidIQ 채널 구독자로 확인)")
         for l in st.read_text(encoding="utf-8").splitlines():
-            if l.startswith(("워터마크:", "영상별 구독 읽기")):
+            if l.startswith(("워터마크:", "영상별 구독 읽기", "A 합계:")):
                 out.append("- " + l[:120])
 
     out += ["", "## 예측 장부·성적표·전자책"]
