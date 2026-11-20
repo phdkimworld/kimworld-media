@@ -31,11 +31,13 @@ def snaps():
 
 
 def at(S, when):
-    """when 이전 가장 가까운 스냅숏."""
-    best = None
+    """when 이전 가장 가까운 스냅숏. 한 스냅숏에서 빠진 영상(2026-11-20 확인: 수집 때 수십 편씩 빠지는 날이 있음)은
+    그 전 마지막 값으로 채운다 — 안 채우면 빠졌던 옛 영상의 누적 조회 전체가 '증가'로 잡힌다(11-20 7일 37,080 → 실제 26,414)."""
+    best, filled = None, {}
     for t, v in S:
         if t <= when:
-            best = (t, v)
+            filled.update(v)
+            best = (t, dict(filled))
     return best
 
 
