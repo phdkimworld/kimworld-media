@@ -19,6 +19,11 @@ def summary():
     # 1순위: 비공개 저장소 stats/analytics.json(공개 주석에는 숫자가 없을 수 있다). 받기: add_repo(phdkimworld/kimworld) 후
     #   git clone --depth 1 -b ops-data https://github.com/phdkimworld/kimworld /home/claude/kimworld-ops (있으면 git pull)
     pf = os.path.join(PRIVATE, 'stats', 'analytics.json')
+    # 11-20: 로컬 사본이 git 저장소가 아니면 pull이 조용히 실패해 11-12 요약을 8일 동안 읽었다 → 다시 받는다
+    if os.path.isdir(PRIVATE) and not os.path.isdir(os.path.join(PRIVATE, '.git')):
+        tmp = PRIVATE + '.new'
+        os.system(f'rm -rf {tmp} && git clone -q --depth 1 -b ops-data https://github.com/phdkimworld/kimworld {tmp} 2>/dev/null'
+                  f' && rm -rf {PRIVATE}.stale && mv {PRIVATE} {PRIVATE}.stale && mv {tmp} {PRIVATE}')
     if os.path.exists(pf):
         os.system(f'git -C {PRIVATE} pull -q 2>/dev/null')
         import datetime as _dt
