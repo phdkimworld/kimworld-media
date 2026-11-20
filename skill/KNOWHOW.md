@@ -41,6 +41,7 @@
 |---|---|
 | `skill/runbooks/channel_access.md` | 유튜브·Threads·인스타·페이스북·블로거·텔레그램 키 위치, 재발급, 사이트로 키 옮기기(yt-secrets-sync.yml), GH_SECRETS_PAT |
 | `skill/runbooks/ads_access.md` | 쿠팡·김박사 몰·애드핏·애드센스·유료 표시 |
+| `skill/health/HEALTH_CHANNEL.md` | **김박사 건강월드**(영양제 유튜브, 채널 UCNh9…)·김박사 건강몰(health.drkimworld.com) 원문 지침: 정체성·키(`HEALTH_YT_*`, 본 채널 키와 분리·채널 ID 확인)·식품표시광고법 가드레일·기둥·퍼널·측정 |
 | `skill/runbooks/api.md` | API 크레딧(사이트 워크플로로만 사용) |
 | `skill/runbooks/production.md` 지연 금지·재시작 복구 | 컨테이너 재시작·에이전트 이어 가기, 디스크 정리, 업로드 한도 초과 대처 |
 | `review/pending_feedback.md`, `review/followups.md` | 운영자 피드백 처리 상태, 날짜가 정해진 판정 일정 |
