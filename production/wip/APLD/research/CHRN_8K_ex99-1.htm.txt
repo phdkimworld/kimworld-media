@@ -1,0 +1,121 @@
+ 
+ EX-99.1
+ 8
+ ex99-1.htm
+ EX-99.1
+ Exhibit 99.1 
+ ChronoScale
+Announces New Development Partnership to Accelerate AI Compute Capacity Deployment, Supported by a Significant Capital Raise 
+ Initial deployment for a leading
+frontier AI lab 
+ The
+initial deployment carries a total contract value of $7.5 billion over six years 
+ ● Up
+ to $750 million financing with participation by four strategic investors, including among
+ others, Nutanix, Empery Digital Inc., and a storage infrastructure company 
+ ● Financing
+ brings together blue chip participants across the AI infrastructure ecosystem 
+ MENLO
+PARK, Calif., November 18, 2026 — ChronoScale Holdings Corporation (Nasdaq: CHRN) (“ChronoScale” or the
+“Company”), an accelerated compute platform purpose-built to support demanding artificial intelligence workloads, today announced
+that it has entered into definitive agreements to form a 50/50 development partnership with STN, Inc. to develop its Odessa, Texas site and a $750 million financing
+including strategic investors. The partnership’s site will house a large-scale AI infrastructure deployment with a leading frontier
+AI lab. The agreement contemplates AI infrastructure capacity across three phases with the first phase ordered and
+scheduled for deployment in the first half of calendar year 2027. GPU configurations vary by phase. On a blended basis across all three
+phases, the agreement represents approximately $20.8 million of annual revenue per megawatt. Each of the Company and STN will contribute
+$390 million in value to the partnership in exchange for a 50% interest, subject to HSR clearance. 
+ A
+substantial portion of the first phase is backstopped by credit support from an investment-grade technology company and
+is expected to provide up to $7.5 billion in total contract value (“TCV”) to the partnership over six years. 
+ “We
+continue to see frontier AI moving beyond incremental compute expansion toward infrastructure commitments measured in hundreds of megawatts,”
+said Cenly Chen, Chief Executive Officer of ChronoScale. “We believe delivering at this scale requires more than access to technology.
+Capital, strategic partnerships, and operational capabilities are critical to bring complex deployments online in a reliable manner.
+This new agreement and financing, along with the support of our key strategic investors represents to us the confidence placed in our
+ability to execute and establish a strong foundation for ChronoScale’s continued growth.” 
+ $750
+Million Financing 
+ The
+financing consists of $250 million in equity and an up to $500 million convertible preferred facility. A portion of the common equity
+will be initially issued pursuant to a note structure held by Applied Digital Corporation, subject to conversion into underlying shares
+of common equity in Q4 2026. The convertible preferred facility is structured with an initial minimum conversion price of $12 per share
+and may be drawn by the Company over a four-year period, subject to certain customary draw conditions for facilities of this type. Upon
+closing, the Company expects to draw $10 million under the convertible preferred facility, with the remaining capacity
+providing ChronoScale with additional financing to support future deployment requirements. 
+ Four
+strategic investors are participating in the financing: a leading frontier AI lab, Nutanix, Empery Digital Inc., and a storage
+infrastructure company. The equity investments to be made by these blue chip partners, as well as other institutional investors,
+collectively underscore, for us the strategic importance of ChronoScale bringing together the technology, capital and infrastructure
+capabilities required to deliver AI compute at scale. 
+ The
+equity financing is intended to support ChronoScale’s phased infrastructure deployment strategy under the development
+partnership, while the convertible preferred facility is intended to provide financial flexibility as the Company scales its operations
+to meet accelerating customer demand. 
+ Goldman
+Sachs & Co. LLC is serving as exclusive capital markets advisor to ChronoScale and is acting as lead placement agent for the financing.
+Northland Capital Markets is acting as co-placement agent for the financing. Lake Street Capital Markets and B. Riley Securities are
+serving as senior financial advisors, and Lucid Capital Markets and Needham & Company are serving as financial advisors, to ChronoScale. 
+ Development
+Partnership 
+ The
+partnership will be a collaboration between the Company and STN, Inc., the initial developer of the data center campus located
+in Odessa, Texas. The first 65 MW of the planned deployment of this campus is scheduled to be completed in accordance with the deployment
+schedule. The Company has a right of first offer on the remaining 285 MW of capacity at the campus, to support the second and
+third phases of the agreement, if those are ordered. The proceeds of the Company’s common equity financing will fund the initial
+portion of its contribution only, with the balance to be funded from cash on hand, other existing sources of capital, and/or future project
+financing. The Company will manage the partnership in cooperation with representatives from STN. The Company will initially be
+entitled to 50% of the profits and losses from the partnership based on its initial common equity ownership. The closing of the partnership
+and the financing are each expected to occur on November 18, 2026, subject to the satisfaction or waiver of the closing conditions. 
+ Phased
+Deployment and Long-Term Growth 
+ ChronoScale
+is building an end-to-end AI infrastructure ecosystem designed to bring together hyperscalers, storage innovators, hardware manufacturers,
+and AI software companies. Through its expanding AI infrastructure footprint and strategic partnerships, the Company is focused on delivering
+dedicated, production-scale AI environments which it believes are optimized for training, inference, and high-performance computing. 
+ We
+believe the development partnership marks another significant step in ChronoScale’s strategy to establish itself
+as a global provider of large-scale AI infrastructure, supporting the rapidly expanding compute requirements of frontier AI developers
+and enterprise customers. 
+ About
+ChronoScale 
+ ChronoScale
+(Nasdaq: CHRN) is an accelerated compute platform purpose-built to support demanding artificial intelligence workloads. Focused on large-scale
+deployments, the platform delivers dedicated compute environments optimized for performance, consistency, and long-term operational execution,
+with the ability to scale capacity alongside accelerating AI demand. 
+ Forward-Looking
+Statements 
+ This
+press release contains “forward-looking statements” within the meaning of the Private Securities Litigation Reform Act of
+1995, including statements regarding: (i) the consummation and timing of the closings of the partnership and the financing; (ii)
+the expected blended annual revenue per megawatt of $20.8 million, and the Company’s expected share; (iii) the expected
+up to $7.5 billion TCV of the confirmed 65 MW first phase; (iv) potential customer orders for Phases 2 and 3 of the contemplated
+350 MW deployment; (v) first-phase deployment in the first half of 2027 and later phases through 2028; (vi) the Company’s
+right of first offer on the remaining 285 MW and potential development of and customer rights concerning the campus’s planned
+capacity; (vii) partnership contributions, management and benefits; (viii) availability and intended use of financing,
+including the convertible preferred facility; (ix) customer demand; and (x) strategic relationships. These statements use
+words, and variations of words, such as “anticipate,” “believe,” “contemplate,” “could,”
+“expect,” “intend,” “may,” “plan,” “potential,” “scheduled,”
+and “will.” 
+ These
+statements reflect management’s current expectations and assumptions and are not guarantees. Actual results may differ materially
+due to risks including: the risk that the closings of the partnership or the financing do not occur on the anticipated timeline or
+at all; customer or credit support provider nonperformance; contract termination, amendment or nonrenewal; the customer having no
+commitment to order Phases 2 or 3, without which the partnership’s total contract value will be substantially lower; development
+beyond the confirmed 65 MW, including the remaining 285 MW and expansion, being subject to additional customer orders, exercise
+of the Company’s right of first offer and agreement on terms, definitive agreements, necessary land, permits, power and interconnection
+capacity, substantial additional financing on acceptable terms, and third-party cooperation; permitting and regulatory approvals, including
+the permits that may be needed for all phases; construction, equipment, supply chain and deployment delays or cost overruns; power and
+interconnection availability, cost and timing; funding requirements and preferred equity draw conditions; financing-related dilution;
+performance of and relationships with STN, Inc. and other partners; competition and demand for AI infrastructure; and other risks described
+in the Company’s most recent Form 10-K and subsequent Forms 10-Q filed with the SEC. No assurance can be given that additional
+capacity will be ordered, developed or deployed on schedule or at all, or generate anticipated revenue or contract value. 
+ Investors
+should not place undue reliance on forward-looking statements, which speak only as of the date made. Except as required by law, the Company
+undertakes no obligation to update these statements. 
+ Investor
+Relations & Media Contacts 
+ Matt
+Glover or Ralf Esper 
+ Gateway Group, Inc. 
+ (949) 574-3860 
+ CHRN@gateway-grp.com 
