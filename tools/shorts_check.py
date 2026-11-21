@@ -134,6 +134,9 @@ for i, sc in enumerate(scenes):
     last = re.sub(r'\*\*', '', sub.split('\n')[-1]).strip()
     if last and not re.search(r'([다요]|\?)[.!]?$', last):
         bad.append(f"장면 {i+1} 자막 끝 '{last}'가 숫자·명사로 끝남 → '31.7% 내렸습니다'처럼 서술문")
+# 효과음 3~5개(11-21 IREN 107회차: 장면마다 boom을 달아 6개 → anim 렌더 다 끝난 뒤 make_shorts assert로 실패, 다시 렌더). 렌더 전에 센다
+_ev = sum(1 for sc in scenes for e in sc.get('els', []) if e.get('sfx') and not e.get('anim_')) + sum(len((sc.get('anim') or {}).get('sfx', [])) for sc in scenes)
+if _ev > 5: bad.append(f'SFX_MANY 효과음 {_ev}개 > 5(make_shorts 지침 3~5개) — 덜 중요한 장면의 anim sfx를 뺀다')
 # 쇼츠 anim 비율(운영자 11-16 "숏폼도 최대한 애니메이션"): 투표 장면 밖에서 anim 아닌 장면은 1개까지. 첫 장면은 anim(표지 모드) 권장
 na = sum(1 for sc in scenes if sc.get('anim')); still_sc = [i + 1 for i, sc in enumerate(scenes) if not sc.get('anim') and not any(e.get('kind') == 'poll' for e in sc.get('els', []))]
 print(f'ANIMRATIO 쇼츠 anim 장면 {na}/{len(scenes)} · 투표 밖 정지(els) 장면 {still_sc}')
