@@ -21,6 +21,7 @@ if [ -n "$R" ]; then
   c prev_calls_check python3 $M/prev_calls_check.py . "$RS"
 fi
 c krw_unit_check python3 $M/krw_unit_check.py .
+c midroll_check python3 $M/midroll_check.py .
 c thumb_biz_check python3 $M/thumb_biz_check.py thumb/custom
 T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])" 2>/dev/null)
 [ -f ../report/chart.json ] && [ -f "../research/$T.json" ] && c chart_check python3 $M/chart_check.py ../report/chart.json "../research/$T.json"
