@@ -1,0 +1,32 @@
+# xtra3_1121 (11-21 운영자 추가 1편 '하나더', '지금 사도 될까?' 셋째 편) — 1차 조회 요청
+# 막힌 명령: SEC 원문 curl — 자동 모드 분류기 "Unauthorized Access" 거부(우회하지 않음, 스크립트로 감싸 재실행하지 않음).
+# 종목 판단: INOD(이노데이터). 11/20 28.12 1년 최저 + 11/20 새 Form 4(거래일 11/19) = 공시에서 새 근거.
+#   BTQ는 11/17 6-K 뒤 새 제출 0건(지난 편 btq-2026-11-4가 이미 다룸)이라 새 근거 없음.
+# 아래를 실행해 결과를 그대로 /home/claude/xtra3_1121/research/ 에 두면 이어서 진행합니다. (토큰·키 없음, 공개 API만)
+mkdir -p /home/claude/xtra3_1121/research && cd /home/claude/xtra3_1121/research
+NQ='Mozilla/5.0 research'
+UA='Mozilla/5.0 research admin@example.com'
+E=https://www.sec.gov/Archives/edgar/data/903651
+
+# 1) 새 근거: 11/20 Form 4 (원문 XML + 제출 색인)
+curl -s -m 40 -A "$UA" "$E/000110465926130596/tm2630302-1_4seq1.xml" -o f4_1120.xml
+curl -s -m 40 -A "$UA" "$E/000110465926130596/" -o f4_1120_index.htm
+# 2) 3분기 10-Q·실적 발표(현금·고객 비중·수시 판매 계약 판매 여부) — 지난 리포트 inod-2026-11 출처와 같은 문서
+curl -s -m 60 -A "$UA" "$E/000110465926123437/inod-20260930x10q.htm" -o 10q_q3.htm
+curl -s -m 40 -A "$UA" "$E/000110465926123324/tm2628333d1_ex99-1.htm" -o ex991_q3.htm
+# 3) 지난 리포트 뒤 다른 제출: 13G/A 2건·S-8, 이전 Form 4·144(내부자 매매 흐름 비교)
+curl -s -m 40 -A "$UA" "$E/000159588826000158/primary_doc.xml" -o 13ga_1106.xml
+curl -s -m 40 -A "$UA" "$E/000210011926001620/primary_doc.xml" -o 13ga_1030.xml
+curl -s -m 40 -A "$UA" "$E/000110465926119196/tm2628257d1_s8.htm" -o s8_1027.htm
+curl -s -m 40 -A "$UA" "$E/000110465926115510/tm2627444-1_4seq1.xml" -o f4_1013.xml
+curl -s -m 40 -A "$UA" "$E/000110465926107933/tm2625408-2_4seq1.xml" -o f4_0915.xml
+curl -s -m 40 -A "$UA" "$E/000110465926105529/tm2624878-1_4seq1.xml" -o f4_0904.xml
+curl -s -m 40 -A "$UA" "$E/000195004726009388/primary_doc.xml" -o 144_0914.xml
+curl -s -m 40 -A "$UA" "$E/000195004726009124/primary_doc.xml" -o 144_0904.xml
+# 4) 비교 종가 1년(같은 무리·시장) — 종목마다 한 줄
+curl -s -m 40 -A "$NQ" "https://api.nasdaq.com/api/quote/QQQ/historical?assetclass=etf&fromdate=2025-11-01&todate=2026-11-20&limit=300" -o QQQ_1y.json
+curl -s -m 40 -A "$NQ" "https://api.nasdaq.com/api/quote/SOUN/historical?assetclass=stocks&fromdate=2025-11-01&todate=2026-11-20&limit=300" -o SOUN_1y.json
+curl -s -m 40 -A "$NQ" "https://api.nasdaq.com/api/quote/PLTR/historical?assetclass=stocks&fromdate=2025-11-01&todate=2026-11-20&limit=300" -o PLTR_1y.json
+
+# 확인: ls -la /home/claude/xtra3_1121/research ; 끝나면 이 파일 끝에 'DONE <시각>' 한 줄
+DONE 23:13Z (메인 실행)
