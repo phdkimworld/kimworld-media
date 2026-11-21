@@ -44,6 +44,7 @@
 - 구조: `mall/mall.yaml`(컨셉·카테고리 id·하위 ID·주소) → `scripts/mall_build.py --fetch --build dist-mall` → `mall.yml`이 매일 한국 07:10 Cloudflare 워커 정적 자산(`mall/wrangler.toml`, 이름 kimworld-mall)으로 배포. 토큰에 Pages 권한이 없어 워커로 올린다(11-19). 사용자 지정 도메인은 같은 단계가 붙인다.
 - 채널 연결은 모두 고정 주소 `https://drkimworld.com/mall/?utm_source=<채널>&utm_medium=…&utm_content=mall` — 유튜브(새 롱폼 V3.9-M, 옛 영상 사이트 저장소 `yt-desc.yml` 하루 15편), 블로거(글 끝 한 줄, 기존 182건 백필), 텔레그램(새 리포트 🛒), Threads(끝 댓글), 페이스북(첫 댓글), 사이트 하단 메뉴. 인스타그램은 프로필 링크(운영자 몫).
 - 고치기: 카테고리 바꾸기·순서·첫 화면 문구는 `mall.yaml`. 쿠팡 카테고리 id(예: 1012 식품, 1014 생활, 1013 주방, 1015 홈인테리어, 1016 가전디지털, 1017 스포츠, 1019 도서, 1018 자동차, 1002 남성패션, 1024 헬스·건강식품, 1029 반려동물). 고친 뒤 `python3 scripts/mall_build.py --build /tmp/m`과 `tests/test_build.py`.
+- **추적(2026-11-20)**: 채널별 깔때기(입구 도착 → 몰 화면 → 쿠팡 클릭)·화면·칸·입구 세부를 워커 `/v1/mall`(D1 `mall_ev`)이 하루 합계로 모으고, 비공개 ops-data `stats/mall/summary.md`(요약·관찰)와 `stats/mall/history.json`(날짜별 누적)에 매일 쌓인다. 읽기: `gh api "repos/phdkimworld/kimworld/contents/stats/mall/summary.md?ref=ops-data" -H "Accept: application/vnd.github.raw"`. 새 채널은 `/mall/?utm_source=<채널>&utm_campaign=<세부>`.
 - 판정: 매일 점검이 digest '김박사 몰' 줄로 본다. 첫 판정 12-03(클릭 나는 채널·칸은 늘리고 0인 칸은 바꾼다).
 
 ## 3. 카카오 애드핏
