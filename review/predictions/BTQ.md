@@ -19,7 +19,7 @@
 
 ## 장부 표
 <!-- AUTO:장부 -->
-(11-18 `pred_ledger.py --report --ticker BTQ`가 쓴 칸)
+(11-21 `pred_ledger.py --report --ticker BTQ`가 쓴 칸)
 
 BTQ 예측 장부: 예측 22(시나리오 16·확인 6) 판정 끝 2 · 사람 판정 필요 0 · 대기 20 · 판정 불가 0
 | 유형 | 종목 | 판정 | 일어남(기저율) | 말한 평균 | 브라이어 |
