@@ -19,7 +19,7 @@
 
 ## 장부 표
 <!-- AUTO:장부 -->
-(11-20 `pred_ledger.py --report --ticker INOD`가 쓴 칸)
+(11-21 `pred_ledger.py --report --ticker INOD`가 쓴 칸)
 
 INOD 예측 장부: 예측 7(시나리오 7·확인 0) 판정 끝 3 · 사람 판정 필요 4 · 대기 0 · 판정 불가 0
 적중(콜) 0/1=0% · 브라이어 0.247(n=3, 모두 50%면 0.250)
