@@ -1,0 +1,1447 @@
+{
+ "ticker": "SMR",
+ "name": "뉴스케일 파워",
+ "shop": "../kit/h1_card.png",
+ "shop_strip": "오메가3 고르는 법 · 링크는 설명란 둘째 줄",
+ "sub_text": "지금 사도 될까? 근거를 모아 갑니다",
+ "next_text": "솔리드파워(SLDP) · 지난 뉴스케일 편 · 설명란 링크",
+ "midroll": "../kit/smr_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/smr_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "뉴스케일 파워\n**지금 사도 될까?**",
+     "at": 0,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11월 20일 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "3.36달러",
+       "label": "1년 사이 가장 낮은 종가",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "뉴스케일 파워 · 11월 20일",
+       "left": {
+        "label": "한 주당 현금과 투자 자산",
+        "value": "4.34달러"
+       },
+       "mid": "주가는",
+       "right": {
+        "label": "종가",
+        "value": "3.36달러",
+        "tone": "gold"
+       },
+       "question": "현금의 0.77배",
+       "beats": [
+        4,
+        4,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "1년 고점 22.85달러에서 1년 최저 3.36달러로",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "뉴스케일 파워 종가(달러)",
+       "unit": "달러",
+       "points": [
+        [
+         "12.4",
+         22.85,
+         "1년 고점 22.85달러"
+        ],
+        [
+         "11.16",
+         4.27,
+         "현금선 아래 첫 마감"
+        ],
+        [
+         "11.20",
+         3.36,
+         "3.36달러"
+        ]
+       ],
+       "beats": [
+        1,
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "다른 영상이 잘 다루지 않은\n**계약 조건 하나**",
+     "at": 3,
+     "kicker": "오늘의 핵심",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 예측\n**성적부터**",
+     "at": 0,
+     "kicker": "성적표"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 17일 리포트 예측 7개",
+     "stats": [
+      {
+       "at": 1,
+       "big": "진행 중",
+       "label": "12월 판정",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "10월 리포트, 11월 20일 판정 3항목",
+       "sub": "판정 결과",
+       "unit": "개",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "안 일어남",
+         "sub": "낮게 본 업종 반등 · 전력 계약",
+         "value": 2,
+         "hi": true
+        },
+        {
+         "label": "아님",
+         "sub": "확인 항목 5.38달러 위",
+         "value": 1
+        }
+       ],
+       "source": "자료: 김박사 월드 예측 장부 · 기준 2026-11-20",
+       "beats": [
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "지금 자리",
+     "stats": [
+      {
+       "at": 4,
+       "big": "혼자 약한 하락",
+       "label": "지난 리포트가 가장 무겁게 본 갈래",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "예측 성적표",
+     "stats": [
+      {
+       "at": 5,
+       "big": "설명란 링크",
+       "label": "drkimworld.com/scorecard",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "소형 모듈 원자로 설계",
+     "stats": [
+      {
+       "at": 0,
+       "big": "뉴스케일 파워",
+       "label": "NYSE SMR",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "돈을 버는 방식",
+     "items": [
+      {
+       "no": "1",
+       "text": "원자로 모듈 공급",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "설계·엔지니어링",
+       "at": 1
+      },
+      {
+       "no": "?",
+       "text": "확정 주문은 아직",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "3분기 매출",
+       "sub": "만 달러",
+       "unit": "만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "1년 전",
+         "sub": "2025년 3분기",
+         "value": 824.2
+        },
+        {
+         "label": "올해",
+         "sub": "2026년 3분기",
+         "value": 28.1,
+         "hi": true
+        }
+       ],
+       "source": "자료: SEC 10-Q · 기준 2026-11-20",
+       "beats": [
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "그 대신\n**모아 둔 현금이 많다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "11월 20일\n**업종 전체가 무너진 날**",
+     "at": 0,
+     "kicker": "업종"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 20일 하루",
+       "sub": "전날 종가 대비",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "뉴스케일",
+         "value": -11.8,
+         "hi": true
+        },
+        {
+         "label": "센트러스",
+         "value": -9.2
+        },
+        {
+         "label": "오클로",
+         "value": -4.8
+        },
+        {
+         "label": "QQQ",
+         "sub": "나스닥 100 펀드",
+         "value": -5.7
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "1년 고점 대비, 원전주 모두 깊게 빠졌다",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "최근 1년 최고 종가 대비 11월 20일 종가",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "뉴스케일",
+         "value": -85.3,
+         "text": "-85.3%",
+         "hi": true
+        },
+        {
+         "label": "오클로",
+         "value": -82.2,
+         "text": "-82.2%"
+        },
+        {
+         "label": "나노 뉴클리어",
+         "value": -76.6,
+         "text": "-76.6%"
+        },
+        {
+         "label": "센트러스",
+         "value": -75.9,
+         "text": "-75.9%"
+        },
+        {
+         "label": "QQQ",
+         "sub": "나스닥 100 펀드",
+         "value": -19.9,
+         "text": "-19.9%"
+        }
+       ],
+       "beats": [
+        3,
+        3,
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "혼자의 사고가 아니라\n**원전주 전체가 빠진 자리**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    8
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "첫 번째 단서\n**과거 비슷한 순간**",
+     "at": 0,
+     "kicker": "기록",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "1년 최저 + 고점 대비 -60% 아래",
+     "stats": [
+      {
+       "at": 1,
+       "big": "42일",
+       "label": "결과를 알 수 있는 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "1년 최저·고점 대비 -60% 이하였던 날, 그 뒤",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "그날 종가보다 N거래일 뒤 종가가 높았던 날의 비율(겹치는 날 포함)",
+       "note": "250거래일은 2024년 초 바닥 뒤 큰 반등 한 번이 대부분",
+       "unit": "%",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "20거래일 뒤",
+         "sub": "42일 중 16일",
+         "value": 38,
+         "text": "38%",
+         "hi": true
+        },
+        {
+         "label": "60거래일 뒤",
+         "sub": "31일 중 7일",
+         "value": 23,
+         "text": "23%"
+        },
+        {
+         "label": "120거래일 뒤",
+         "sub": "26일 중 10일",
+         "value": 38,
+         "text": "38%"
+        },
+        {
+         "label": "250거래일 뒤",
+         "sub": "15일, 2023·2024년만",
+         "value": 100,
+         "text": "100%"
+        }
+       ],
+       "beats": [
+        3,
+        4,
+        4,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "2023년·2024년 초\n**한 번의 큰 반등 앞**",
+     "at": 6
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "같은 가격, 다른 답\n**얼마나 기다릴 사람인가**",
+     "at": 7
+    },
+    {
+     "from": 8,
+     "layout": "quote",
+     "text": "날짜별 기록표\n**홈페이지 무료 리포트**",
+     "at": 8
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽\n**근거 셋**",
+     "at": 0,
+     "kicker": "사는 쪽 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "금고 속 돈과 회사 전체 값",
+       "source": "SEC 10-Q, 나스닥 종가 · 기준 2026-11-20",
+       "sub": "시가총액(11월 20일)과 9월 말 현금·투자 자산",
+       "unit": "억 달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "시가총액",
+         "sub": "3.36달러 기준",
+         "value": 14.44,
+         "text": "약 14억 4,446만",
+         "hi": true
+        },
+        {
+         "label": "현금과 투자 자산",
+         "sub": "9월 말, 차입금 없음",
+         "value": 18.64,
+         "text": "18억 6,408만"
+        },
+        {
+         "label": "부채를 뺀 금액",
+         "sub": "총부채 4,565만 달러",
+         "value": 18.18,
+         "text": "약 18억 1,843만"
+        }
+       ],
+       "beats": [
+        2,
+        1,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "금고 속 돈 − 회사 전체 값",
+     "stats": [
+      {
+       "at": 3,
+       "big": "현금 > 몸값",
+       "label": "약 4억 1,961만 달러",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "원자로 설계 사업의 값을\n**0보다 낮게**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "부채를 모두 뺀 한 주당",
+     "stats": [
+      {
+       "at": 5,
+       "big": "약 4.23달러",
+       "label": "차입금 없음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 2\n**주주 구성**",
+     "at": 0,
+     "kicker": "사는 쪽 2"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "특수관계사였던 플루어",
+     "stats": [
+      {
+       "at": 1,
+       "big": "A주 전량 정리",
+       "label": "9월 30일까지",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "큰 주주의 물량\n**다시 나올 걱정이 줄었다**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 새 주식 판매",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0주",
+       "label": "회사 판매 없음",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 투자 이익",
+     "stats": [
+      {
+       "at": 4,
+       "big": "1,911만 달러",
+       "label": "쌓아 둔 투자 자산에서",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 3\n**바닥 뒤의 긴 기록**",
+     "at": 0,
+     "kicker": "사는 쪽 3"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2024년 1월 17일",
+     "stats": [
+      {
+       "at": 1,
+       "big": "2.04달러",
+       "label": "1년 최저 새로 씀",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "그 뒤",
+     "left": {
+      "at": 2,
+      "head": "20거래일 뒤",
+      "big": "+37.3%",
+      "lines": [
+       "그날 종가 대비"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "250거래일 뒤",
+      "big": "+920.6%",
+      "lines": [
+       "그날 종가 대비"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "세 근거의 숫자\n**고정 댓글 무료 리포트 표**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽\n**근거 셋**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "1년 최저 자리, 60거래일 뒤",
+     "stats": [
+      {
+       "at": 1,
+       "big": "23%",
+       "label": "더 높았던 비율",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "1년 최저 묶음 첫날, 20거래일 뒤",
+       "sub": "그날 종가 대비",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2023.05.03",
+         "value": -3.1
+        },
+        {
+         "label": "2023.08.21",
+         "value": -13.2
+        },
+        {
+         "label": "2024.01.17",
+         "value": 37.3
+        },
+        {
+         "label": "2026.02.23",
+         "value": -7.1
+        },
+        {
+         "label": "2026.07.07",
+         "value": 5.9
+        },
+        {
+         "label": "2026.10.08",
+         "value": -40.3,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        3,
+        3,
+        3,
+        4,
+        3,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "싸다는 것이\n**곧 바닥은 아니었다**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 2\n**오늘의 핵심**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 2",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "좋은 소식에도\n**값이 붙어 있다**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "좋은 소식에도 값이 붙어 있다: 엔트라1 지급 단계",
+       "source": "SEC 10-Q(9번 주석) · 기준 2026-11-20",
+       "sub": "72기 기준, 2·3단계는 10-Q 비율로 계산한 값",
+       "note": "2·3단계는 아직 부채로 잡지 않음, 회사가 금액을 따로 밝히지 않음",
+       "unit": "억 달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "1단계 지급",
+         "sub": "비구속 합의, 이미 냄",
+         "value": 5.07,
+         "text": "5억 739만"
+        },
+        {
+         "label": "2단계(계산)",
+         "sub": "구속력 있는 전력 계약 때",
+         "value": 11.84,
+         "text": "약 11억 8,392만",
+         "hi": true
+        },
+        {
+         "label": "3단계(계산)",
+         "sub": "원자로 모듈 제조 계약 때",
+         "value": 16.91,
+         "text": "약 16억 9,131만"
+        },
+        {
+         "label": "9월 말 현금과 투자 자산",
+         "value": 18.64,
+         "text": "18억 6,408만"
+        }
+       ],
+       "beats": [
+        3,
+        5,
+        5,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "구속력 있는 TVA 계약",
+     "stats": [
+      {
+       "at": 6,
+       "big": "매출의 출발점",
+       "label": "동시에 큰 지급의 방아쇠",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "계약 소식이 나오면\n**지급 금액과 방식부터**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 3\n**매출과 판매 한도**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 3"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "새 주식을 판 값과 지금 주가",
+       "sub": "달러(한 주)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "올해 상반기 판매",
+         "sub": "평균 단가",
+         "value": 11.14
+        },
+        {
+         "label": "11월 20일 종가",
+         "value": 3.36,
+         "hi": true
+        }
+       ],
+       "source": "자료: SEC 10-Q · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "8월 새 판매 계약",
+     "stats": [
+      {
+       "at": 2,
+       "big": "7억 5,000만 달러",
+       "label": "3분기 판매 0주",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "지금 가격에 다 채우면",
+     "stats": [
+      {
+       "at": 3,
+       "big": "주식 수 약 52%",
+       "label": "늘어난다(계산)",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "현금선보다 낮은 값에 팔면\n**한 주당 현금이 줄어든다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "shop": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "잠깐,\n**건강검진표 숫자 하나**",
+     "at": 0,
+     "kicker": "유료 광고 포함"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "임상 묶음별 중성지방 평균 변화",
+       "sub": "mg/dL · 유료 광고 포함",
+       "unit": "mg/dL",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "해양 오메가3",
+         "sub": "EPA·DHA 하루 2g 넘게 · 8주 이상 · 임상 21개",
+         "value": -56.78,
+         "hi": true
+        },
+        {
+         "label": "아마씨유",
+         "sub": "임상 36개 · 1,959명",
+         "value": -8.04
+        }
+       ],
+       "source": "자료: PMID 41156531 · PMID 42920971",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "식약처 인정 기능성\n**혈중 중성지질 개선·혈행 개선에 도움을 줄 수 있음**",
+     "at": 2,
+     "sub": "EPA와 DHA의 합 0.5~2g · 유료 광고 포함",
+     "sub_at": 2
+    }
+   ]
+  },
+  {
+   "next": [
+    3
+   ],
+   "sub": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "뉴스케일만의\n**장면이 아니다**",
+     "at": 0,
+     "kicker": "같은 패턴"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "솔리드파워 · 배터리",
+     "stats": [
+      {
+       "at": 1,
+       "big": "현금의 0.78배",
+       "label": "같은 날 1년 최저",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "현금선·지지선을 지킨다",
+     "stats": [
+      {
+       "at": 2,
+       "big": "4번 중 0번",
+       "label": "김박사 월드 예측 장부",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "이어 보기",
+     "left": {
+      "at": 3,
+      "head": "솔리드파워 편",
+      "big": "지금 사도 될까",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "지난 뉴스케일 편",
+      "big": "현금선",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "김박사 월드\n**현금보다 싼 주식이 어디로 가는지 셉니다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "판단을 바꿀\n**신호와 날짜**",
+     "at": 0,
+     "kicker": "확인 신호",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 20일 뒤 20거래일째",
+     "stats": [
+      {
+       "at": 1,
+       "big": "12월 21일",
+       "label": "종가 확인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 리포트 판정일",
+     "stats": [
+      {
+       "at": 2,
+       "big": "12월 4일·15일",
+       "label": "함께 확인",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "12월 21일 종가의 기준선",
+       "sub": "달러",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "현금선",
+         "sub": "위면 사는 쪽 강해짐",
+         "value": 4.34
+        },
+        {
+         "label": "11월 20일 종가",
+         "value": 3.36,
+         "hi": true
+        },
+        {
+         "label": "20% 더 낮은 선",
+         "sub": "아래면 사지 않는 쪽 강해짐",
+         "value": 2.69
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "list",
+     "title": "공시 신호",
+     "items": [
+      {
+       "no": "−",
+       "text": "주식 판매 공시: 사지 않는 쪽",
+       "at": 6
+      },
+      {
+       "no": "±",
+       "text": "TVA 계약: 지급 금액과 방식부터",
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사려는 분이\n**먼저 확인할 것**",
+     "at": 0,
+     "kicker": "체크리스트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "사기 전 확인 1~3",
+     "items": [
+      {
+       "no": "1",
+       "text": "한 주당 현금 직접 계산",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "엔트라1 지급 조건 함께 계산",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "주식 판매 공시",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "사기 전 확인 4~5",
+     "items": [
+      {
+       "no": "4",
+       "text": "하루 10% 움직임 견딜 수 있나",
+       "at": 4
+      },
+      {
+       "no": "5",
+       "text": "12월 21일 달력에",
+       "at": 5
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "확인표\n**리포트 끝 부록**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 21일",
+       "label": "11월 20일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 21일, 가장 무거운 갈래도 33%",
+       "source": "SEC 10-Q, 나스닥 종가 · 기준 2026-11-20",
+       "note": "가능성은 주가 확률이 아니라 과거 기록에서 출발한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "4 · 20% 더 하락",
+         "sub": "2.69달러 아래",
+         "p": 30,
+         "range": [
+          25,
+          35
+         ]
+        },
+        {
+         "label": "3 · 1년 최저권 머묾",
+         "sub": "2.69~3.36달러",
+         "p": 33,
+         "range": [
+          28,
+          38
+         ],
+         "hi": true
+        },
+        {
+         "label": "2 · 반등",
+         "sub": "3.36~4.34달러",
+         "p": 29,
+         "range": [
+          24,
+          34
+         ]
+        },
+        {
+         "label": "1 · 현금선 회복",
+         "sub": "4.34달러 위",
+         "p": 8,
+         "range": [
+          5,
+          12
+         ]
+        }
+       ],
+       "decision": "판정: 12월 21일 종가(11월 20일 뒤 20거래일째) · 기준선 4.34·3.36·2.69달러",
+       "beats": [
+        2,
+        3,
+        3,
+        4
+       ],
+       "decision_beat": 1
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주가 확률이 아니라\n**분석자의 주관적 추정**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "최근 20거래일",
+     "stats": [
+      {
+       "at": 0,
+       "big": "8일",
+       "label": "하루 5% 넘게 움직인 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "같은 자리, 다른 결과",
+     "left": {
+      "at": 1,
+      "head": "2024년 1월",
+      "big": "+37.3%",
+      "lines": [
+       "20거래일 뒤"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "2026년 10월",
+      "big": "-40.3%",
+      "lines": [
+       "20거래일 뒤"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "42일은 겹치는 날\n**실제로는 몇 번의 흐름**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "주가만 본 기준\n**현금선 아래 날만 센 것은 아님**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    4,
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "지금 뉴스케일",
+     "left": {
+      "at": 0,
+      "head": "금고 속 돈",
+      "big": "주가보다 많다",
+      "lines": [
+       "현금의 0.77배"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "좋은 소식",
+      "big": "큰 지급 조건",
+      "lines": [
+       "2단계 약 11억 8,392만 달러(계산)"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "12월 21일 종가와 공시로",
+     "items": [
+      {
+       "no": "+",
+       "text": "4.34달러 위, 판매 공시 없음: 사는 쪽",
+       "at": 1
+      },
+      {
+       "no": "−",
+       "text": "2.69달러 아래 또는 판매 공시: 사지 않는 쪽",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결정은 각자의 몫이며,\n**이 영상과 리포트는 판단 근거를 정리한 교육용 자료입니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "사는 쪽 · 사지 않는 쪽 근거 표",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "엔트라1 지급 계산",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "사기 전 확인표",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 5,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 21일\n**뉴스케일 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 21일, 뉴스케일 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "4.34달러 위"
+      },
+      {
+       "at": 3,
+       "text": "3.36~4.34"
+      },
+      {
+       "at": 4,
+       "text": "3.36달러 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 종목과 질문도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
