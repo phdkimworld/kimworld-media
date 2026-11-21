@@ -17,3 +17,5 @@ curl -s -A "$NQ" "https://api.nasdaq.com/api/quote/IWM/historical?assetclass=etf
 curl -s -A "$UA" "https://data.sec.gov/submissions/CIK0001844862.json" -o subs.json
 
 # 확인: ls -la /home/claude/buy1121/research ; 끝나면 이 파일 끝에 'DONE <시각>' 한 줄
+DONE 17:33Z (메인 실행)
+DONE 2026-11-21T17:33:33Z — 메인 실행 결과 대조: SLDP 11/20 1.35(거래량 8,161,116)·11/17~19 일치, AMPX 5.77 일치, SEC 11/4 10-Q 뒤 새 제출 0건 일치 → 리포트 수정 없음
