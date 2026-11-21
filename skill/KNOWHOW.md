@@ -27,7 +27,7 @@
 | 슬라이드·애니메이션·합성 | SKILL V6.4~V6.7(효과음), VIDEO_GUIDE_v1, `skill/runbooks/taste.md`(AI 티 점검), 사이트 `tools/slidekit/`(slide.html·make_slide_video.py·anim 틀 v_*) | `slides_pre_check.py`, `taste_check.py`, `still_check.py`, `video_check.py`, `chain_long.sh`(TTS 뒤 자동 연결) |
 | 썸네일 | SKILL V5(V5.0 사업 시각화·시안 3장), `skill/runbooks/taste.md` 4절, 미디어 `thumb_history.json`, 사이트 `tools/thumbkit/` | `thumb_biz_check.py`, `thumb_name_check.py`, `thumb_overflow_check.py` |
 | 제목·설명·고정댓글 | SKILL V4(제목 A/B 시험 R3·설명 링크 6개 상한), K2(고정댓글 첫 세 줄), V3.9-M(김박사 몰), F9(구독 문장), 성적표 줄 | `plain_check.py`, `ab_group_check.py`, `shop_sync_check.py`, `upload_guard.py` |
-| 영양제 중간광고 | `skill/runbooks/health_midroll.md`(근거: 비공개 phdkimworld/healthworld-ops `research/`, 사이트 `health/health.yaml`, 법: `skill/health/HEALTH_CHANNEL.md` 2장) | health.yaml banned·drop_words 문자열 검사, `plain_check.py`, `taste_check.py` |
+| 영양제 중간광고 | `skill/runbooks/health_midroll.md`(근거: 비공개 phdkimworld/healthworld-ops `research/`, 사이트 `health/health.yaml`, 법: `skill/health/HEALTH_CHANNEL.md` 2장) | `midroll_check.py`(세 문장·광고 문단 quote 금지·banned·drop_words, pre_tts_check 편입), `plain_check.py`, `taste_check.py` |
 | 업로드·자막 | SKILL V7(V7.A API 업로드), production.md 흐름 줄 | `yt_api_upload.py`(업로드 뒤 `yt_captions.py` 한국어 자막 자동), `wait_live.sh`(리포트 열림 확인) |
 | 쇼츠 | SKILL K9(0초 표지 완성), 사이트 `tools/shorts/` | `shorts_check.py` |
 | Threads·인스타·페이스북·카드뉴스 | SKILL K8·K9.1, `skill/runbooks/taste.md` 8·9절, `skill/instagram/INSTAGRAM.md`, production.md 흐름(11-20: 인스타·페북 릴스만, Threads 2글) | `queue_check.py`, `queue_dry.py`, `poll_sync_check.py` |

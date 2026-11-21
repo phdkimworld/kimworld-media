@@ -37,6 +37,7 @@
 - `banned`: 치료·완치·특효·처방·효과 보장·100% 효과·부작용 없·먹으면 낫·약보다. 수익·주가와 영양제를 잇는 말("투자 수익만큼 건강도") 금지. 후기·체험담 지어내기 금지. 특정 브랜드 비방 금지.
 - 본 채널 금지 표현(SKILL 5장)과 겹치는 긴급성("오늘만")도 금지.
 - 검사: 대본·설명·고정댓글에 health.yaml `banned`+`drop_words` 문자열 검사, `plain_check`·`taste_check` 통과.
+- 자동(112회차~): `python3 tools/midroll_check.py <video>`가 녹음 전(pre_tts_check)에 문장 3개 이하, 광고 문단 quote 슬라이드 금지(물음표 표시 — 식약처 문구는 아이콘 없는 카드), 위치, banned·drop_words, 논문 용어 직역을 막는다.
 
 ## 6. 기록과 판정 (네 지표의 '제품 전환')
 - 회차마다 review/improvements.md '네 지표' 표의 제품 전환 줄에 광고 코드(H1~H3)와 위치(초)를 적는다.
