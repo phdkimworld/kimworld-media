@@ -24,12 +24,12 @@
 | 사이트 리포트 | SKILL R장(R0.1 이야기형, R1.5 쓰면서 멈칫할 곳 없애기, 그림 4~6개), production.md ⑧, 사이트 `AGENTS.md` | `easy_check.py`(EASY_OK), `chart_check.py`, `llm_judge.py`, 사이트 `tests/test_build.py`·`build.py --strict`, push는 `tools/site_push.sh` |
 | 롱폼 대본 | SKILL V장(V1~V3 훅·열린 고리·재훅, V2.x 숫자 읽기), MASTER_SOP v2.8, `skill/VIDEO_GUIDE_v1.md` | `group_check.py`, `num_speak_check.py`, `josa_check.py`, `krw_unit_check.py`, `close_check.py`, `ai_feel_check.py`, `pre_tts_check.sh` |
 | 녹음(TTS) | SKILL V6.3, production.md(맥 중계 kwrt) | `tts_asr_check.py`, `tts_fresh_check.py`, `debreath.py`, `script_audio_check.py`, `st_redo.py` |
-| 슬라이드·애니메이션·합성 | SKILL V6.4~V6.7(효과음), VIDEO_GUIDE_v1, 사이트 `tools/slidekit/`(slide.html·make_slide_video.py·anim 틀 v_*) | `slides_pre_check.py`, `still_check.py`, `video_check.py`, `chain_long.sh`(TTS 뒤 자동 연결) |
-| 썸네일 | SKILL V5(V5.0 사업 시각화·시안 3장), 미디어 `thumb_history.json`, 사이트 `tools/thumbkit/` | `thumb_biz_check.py`, `thumb_name_check.py`, `thumb_overflow_check.py` |
+| 슬라이드·애니메이션·합성 | SKILL V6.4~V6.7(효과음), VIDEO_GUIDE_v1, `skill/runbooks/taste.md`(AI 티 점검), 사이트 `tools/slidekit/`(slide.html·make_slide_video.py·anim 틀 v_*) | `slides_pre_check.py`, `taste_check.py`, `still_check.py`, `video_check.py`, `chain_long.sh`(TTS 뒤 자동 연결) |
+| 썸네일 | SKILL V5(V5.0 사업 시각화·시안 3장), `skill/runbooks/taste.md` 4절, 미디어 `thumb_history.json`, 사이트 `tools/thumbkit/` | `thumb_biz_check.py`, `thumb_name_check.py`, `thumb_overflow_check.py` |
 | 제목·설명·고정댓글 | SKILL V4(제목 A/B 시험 R3·설명 링크 6개 상한), K2(고정댓글 첫 세 줄), V3.9-M(김박사 몰), F9(구독 문장), 성적표 줄 | `plain_check.py`, `ab_group_check.py`, `shop_sync_check.py`, `upload_guard.py` |
 | 업로드·자막 | SKILL V7(V7.A API 업로드), production.md 흐름 줄 | `yt_api_upload.py`(업로드 뒤 `yt_captions.py` 한국어 자막 자동), `wait_live.sh`(리포트 열림 확인) |
 | 쇼츠 | SKILL K9(0초 표지 완성), 사이트 `tools/shorts/` | `shorts_check.py` |
-| Threads·인스타·페이스북·카드뉴스 | SKILL K8·K9.1, `skill/instagram/INSTAGRAM.md`, production.md 흐름(11-20: 인스타·페북 릴스만, Threads 2글) | `queue_check.py`, `queue_dry.py`, `poll_sync_check.py` |
+| Threads·인스타·페이스북·카드뉴스 | SKILL K8·K9.1, `skill/runbooks/taste.md` 8·9절, `skill/instagram/INSTAGRAM.md`, production.md 흐름(11-20: 인스타·페북 릴스만, Threads 2글) | `queue_check.py`, `queue_dry.py`, `poll_sync_check.py` |
 | 블로거 | 사이트 `docs/blogger-guide.md`, production.md 0장 | 사이트 blogger.yml |
 | 댓글 답글 | `skill/runbooks/comments.md`(투표·요청·대댓글·스팸·23시 점검), `skill/runbooks/api.md`(AI 답글 크레딧) | `tools/hourly.py`, `yt_reply.py`, `site_comments.py` |
 | 회차 후 복기·개선 | SKILL 8장(8.0 개선 하나 이상·통합 인사이트·AI 느낌 제거·토큰 절약), `review/improvements.md`, `review/experiments.md`, `review/learning.md`, `review/report_learning.md` | `insights.py`, `report_perf.py`, `theme_perf.py`, `episode_check.py` |
