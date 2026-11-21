@@ -1,0 +1,1 @@
+{"id": "rgti1121_redo3p", "tasks": [{"id": "p8", "kind": "tts", "path": "$IN/redo8.txt", "speaker": 6, "speed": 1.15, "steps": 10}, {"id": "p10", "kind": "tts", "path": "$IN/redo10.txt", "speaker": 6, "speed": 1.15, "steps": 10}, {"id": "p11", "kind": "tts", "path": "$IN/redo11.txt", "speaker": 6, "speed": 1.15, "steps": 10}]}
