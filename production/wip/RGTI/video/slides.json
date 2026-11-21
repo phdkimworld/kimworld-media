@@ -996,10 +996,26 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "이번 장면에\n**이름을 붙이면**",
-     "at": 0,
-     "kicker": "패턴"
+     "layout": "compare",
+     "title": "하락한 날의 내부자 매도 신고",
+     "left": {
+      "at": 0,
+      "head": "읽히는 것",
+      "big": "회사 소식",
+      "lines": [
+       "가장 나쁜 날 팔았다"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 0,
+      "head": "이번 실제",
+      "big": "정해진 일정",
+      "lines": [
+       "석 달마다 같은 날"
+      ],
+      "tone": "white"
+     }
     },
     {
      "from": 1,
@@ -1011,40 +1027,17 @@
     },
     {
      "from": 2,
-     "layout": "compare",
-     "title": "하락한 날의 내부자 매도 신고",
-     "left": {
-      "at": 2,
-      "head": "읽히는 것",
-      "big": "회사 소식",
-      "lines": [
-       "가장 나쁜 날 팔았다"
-      ],
-      "tone": "down"
-     },
-     "right": {
-      "at": 2,
-      "head": "이번 실제",
-      "big": "정해진 일정",
-      "lines": [
-       "석 달마다 같은 날"
-      ],
-      "tone": "white"
-     }
+     "layout": "quote",
+     "text": "그날 주가와\n**따로 본다**",
+     "at": 2
     },
     {
      "from": 3,
-     "layout": "quote",
-     "text": "석 달마다 같은 날, 같은 이유\n**그날 주가와 따로 본다**",
-     "at": 3
-    },
-    {
-     "from": 4,
      "layout": "stat",
      "title": "11월 20일 회사 주요 공시",
      "stats": [
       {
-       "at": 4,
+       "at": 3,
        "big": "0건",
        "label": "임원 신고서만",
        "tone": "white"
@@ -1052,11 +1045,11 @@
      ]
     },
     {
-     "from": 5,
+     "from": 4,
      "layout": "compare",
      "title": "세금 매도 금액",
      "left": {
-      "at": 5,
+      "at": 4,
       "head": "8월 20일",
       "big": "약 31만 달러",
       "lines": [
@@ -1065,7 +1058,7 @@
       "tone": "white"
      },
      "right": {
-      "at": 5,
+      "at": 4,
       "head": "11월 20일",
       "big": "약 32만 달러",
       "lines": [
@@ -1075,10 +1068,27 @@
      }
     },
     {
-     "from": 6,
+     "from": 5,
      "layout": "quote",
      "text": "달라진 건\n**주가뿐**",
-     "at": 6
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "list",
+     "title": "내부자 신고가 나오면",
+     "items": [
+      {
+       "no": "1",
+       "text": "주석부터",
+       "at": 6
+      },
+      {
+       "no": "2",
+       "text": "지난 신고서와 나란히",
+       "at": 6
+      }
+     ]
     }
    ]
   },
