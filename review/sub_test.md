@@ -24,3 +24,4 @@
 
 A 합계: — · B 합계: — · 갱신: —
 | 11-20 | ENVX | 9XvR-qdcTUE | B | 375 |
+| 11-21 | APLD | 1TKhp0NOkYU | A | 281 |
