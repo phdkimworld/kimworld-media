@@ -1,0 +1,1327 @@
+{
+ "ticker": "SLDP",
+ "name": "솔리드파워",
+ "shop": "../kit/shop_card.png",
+ "shop_strip": "쿠팡 장보기는 설명란 김박사 몰로",
+ "sub_text": "지금 사도 될까? 근거를 모아 갑니다",
+ "next_text": "뉴스케일(SMR) · 에노빅스(ENVX) 편 · 설명란 링크",
+ "midroll": "../kit/sldp_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/sldp_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "솔리드파워\n**지금 사도 될까?**",
+     "at": 0,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11월 20일 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "1.35달러",
+       "label": "1년 사이 가장 낮은 종가",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "솔리드파워 · 11월 20일",
+       "left": {
+        "label": "한 주당 현금과 증권",
+        "value": "1.73달러"
+       },
+       "mid": "주가는",
+       "right": {
+        "label": "종가",
+        "value": "1.35달러",
+        "tone": "gold"
+       },
+       "question": "현금의 0.78배",
+       "beats": [
+        4,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "현금보다 22% 싼 주식\n**기회일까, 함정일까?**",
+     "at": 5,
+     "kicker": "질문",
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "김박사 월드",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "1년 고점 5.79달러에서 1년 최저 1.35달러로",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "솔리드파워 종가(달러)",
+       "unit": "달러",
+       "points": [
+        [
+         "1.14",
+         5.79,
+         "1년 고점 5.79달러"
+        ],
+        [
+         "11.16",
+         1.62,
+         "현금선 아래 첫 마감"
+        ],
+        [
+         "11.20",
+         1.35,
+         "1.35달러"
+        ]
+       ],
+       "beats": [
+        1,
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "오늘 볼 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "과거 비슷한 순간",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "사는 쪽 근거 3 · 사지 않는 쪽 근거 3",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "판단을 바꿀 신호와 날짜",
+       "at": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "지난 예측\n**성적부터**",
+     "at": 0,
+     "kicker": "성적표"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 17일 리포트 예측 7개",
+     "stats": [
+      {
+       "at": 1,
+       "big": "진행 중",
+       "label": "12월 판정",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "10월 23일 리포트, 11월 20일 판정 4항목",
+       "sub": "판정 결과",
+       "unit": "개",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "맞음",
+         "sub": "1.84달러 아래 · 현금 규모 · 약세",
+         "value": 3,
+         "hi": true
+        },
+        {
+         "label": "안 일어남",
+         "sub": "낮게 본 합작 발표",
+         "value": 1
+        }
+       ],
+       "source": "자료: 김박사 월드 예측 장부 · 기준 2026-11-20",
+       "beats": [
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "예측 성적표",
+     "stats": [
+      {
+       "at": 5,
+       "big": "설명란 링크",
+       "label": "drkimworld.com/scorecard",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "전고체 배터리 고체 전해질",
+     "stats": [
+      {
+       "at": 0,
+       "big": "솔리드파워",
+       "label": "NASDAQ SLDP",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "액체 대신 고체 재료\n**불이 잘 붙지 않는 배터리**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "돈을 버는 방식",
+     "items": [
+      {
+       "no": "1",
+       "text": "전해질 판매",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "셀 설계 기술 사용료",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "삼성SDI 같은 배터리 회사",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "3분기, 매출보다 큰 손실",
+     "left": {
+      "at": 4,
+      "head": "매출",
+      "big": "24만 3,000달러",
+      "lines": [
+       "1년 전보다 -93%"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "순손실",
+      "big": "2,440만 달러",
+      "lines": [
+       "같은 분기"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "첫 번째 열쇠\n**과거 비슷한 순간**",
+     "at": 0,
+     "kicker": "기록",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "주가 ÷ 한 주당 현금",
+     "stats": [
+      {
+       "at": 1,
+       "big": "0.8배 아래",
+       "label": "처음 마감한 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "이번 전 상장 뒤",
+     "stats": [
+      {
+       "at": 2,
+       "big": "3번",
+       "label": "2022.12 · 2023.04 · 2023.09",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "그 세 번의 뒤",
+     "left": {
+      "at": 3,
+      "head": "20거래일 뒤",
+      "big": "1번 더 높음",
+      "lines": [
+       "2022년 12월 +26.7%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "60거래일 뒤",
+      "big": "2번 더 높음",
+      "lines": [
+       "세 번 중"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "record_bars",
+      "data": {
+       "title": "0.8배 아래 첫 마감 세 번, 250거래일 뒤",
+       "source": "나스닥 종가, SEC XBRL · 기준 2026-11-20",
+       "sub": "그날 종가 대비 250거래일 뒤 종가",
+       "note": "세 번 모두 1년 안에 그날보다 41~48% 낮은 바닥을 지났다",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2022.12.19",
+         "sub": "20거래일 뒤 +26.7%",
+         "value": -42.5
+        },
+        {
+         "label": "2023.04.26",
+         "sub": "20거래일 뒤 -2.4%",
+         "value": -24.7
+        },
+        {
+         "label": "2023.09.21",
+         "sub": "20거래일 뒤 -21.7%",
+         "value": -32.8
+        },
+        {
+         "label": "이번 2026.11.20",
+         "value": null,
+         "text": "12월 21일 판정",
+         "hi": true
+        }
+       ],
+       "beats": [
+        5,
+        5,
+        5,
+        6
+       ],
+       "tally": "250거래일 뒤 더 높음 3번 중 0번",
+       "tally_beat": 5
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "현금선의 0.70~0.85배였던 날",
+     "stats": [
+      {
+       "at": 0,
+       "big": "204일",
+       "label": "2022~2026년",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "0.70~0.85배였던 204일, 기다린 기간별 더 높았던 비율",
+       "source": "나스닥 종가, SEC XBRL · 기준 2026-11-20",
+       "sub": "그날 종가 대비 N거래일 뒤 종가가 더 높았던 날의 비율(겹치는 날 포함)",
+       "note": "500거래일은 2025년 큰 반등 한 번이 대부분",
+       "unit": "%",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "20거래일 뒤",
+         "value": 41,
+         "text": "41%"
+        },
+        {
+         "label": "60거래일 뒤",
+         "value": 34,
+         "text": "34%"
+        },
+        {
+         "label": "120거래일 뒤",
+         "value": 25,
+         "text": "25%"
+        },
+        {
+         "label": "250거래일 뒤",
+         "value": 35,
+         "text": "35%",
+         "hi": true
+        },
+        {
+         "label": "500거래일 뒤",
+         "value": 72,
+         "text": "72%"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        2,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "500거래일은\n**2025년 큰 반등 한 번이 대부분**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "같은 가격, 다른 답\n**얼마나 기다릴 사람인가**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽\n**근거 셋**",
+     "at": 0,
+     "kicker": "사는 쪽 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "금고 속 돈과 회사 전체 값",
+       "source": "SEC 10-Q·8-K, 나스닥 종가 · 기준 2026-11-20",
+       "sub": "금고 속 돈이 약 8,816만 달러 더 많다",
+       "unit": "억 달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "유동성",
+         "sub": "9월 말 현금+증권",
+         "value": 3.98,
+         "text": "3억 9,756만"
+        },
+        {
+         "label": "시가총액",
+         "sub": "1.35달러 기준",
+         "value": 3.09,
+         "text": "약 3억 940만",
+         "hi": true
+        },
+        {
+         "label": "부채를 뺀 유동성",
+         "sub": "한 주 약 1.62달러",
+         "value": 3.71,
+         "text": "약 3억 7,134만"
+        },
+        {
+         "label": "연말 예상 유동성 하단",
+         "sub": "한 주 약 1.61달러",
+         "value": 3.69,
+         "text": "약 3억 6,900만"
+        }
+       ],
+       "beats": [
+        1,
+        2,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "부채를 모두 뺀 한 주당",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 1.62달러",
+       "label": "주가는 그 약 0.83배",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 2\n**돈을 쓰는 속도**",
+     "at": 0,
+     "kicker": "사는 쪽 2"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "2026년 현금 투입 전망(상단)",
+       "sub": "만 달러",
+       "unit": "만 달러",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "처음 전망",
+         "sub": "8,500만~1억",
+         "value": 10000
+        },
+        {
+         "label": "낮춘 전망",
+         "sub": "7,500만~8,500만",
+         "value": 8500,
+         "hi": true
+        }
+       ],
+       "source": "자료: SEC 10-Q·8-K · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "올해 1~9월 시장 매각",
+     "stats": [
+      {
+       "at": 2,
+       "big": "0주",
+       "label": "새 주식 판매 없음",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "분기 보고서\n**\"최소 12개월은 충분\"**",
+     "at": 3,
+     "kicker": "회사 설명"
+    }
+   ]
+  },
+  {
+   "ad": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 3\n**바닥 뒤의 긴 기록**",
+     "at": 0,
+     "kicker": "사는 쪽 3"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "trend_line",
+      "data": {
+       "title": "주가를 한 주당 현금으로 나눈 배수",
+       "source": "나스닥 종가, SEC XBRL · 기준 2026-11-20",
+       "sub": "그날 공개된 직전 분기 말 유동성 기준(1배 = 현금선)",
+       "unit": "배",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "2022.12.19",
+         "value": 0.77,
+         "text": "0.77배"
+        },
+        {
+         "label": "2024.01.18",
+         "value": 0.49,
+         "text": "0.49배"
+        },
+        {
+         "label": "2025.04.07",
+         "value": 0.51,
+         "text": "0.51배"
+        },
+        {
+         "label": "2025.11.05",
+         "value": 5.37,
+         "text": "5.37배"
+        },
+        {
+         "label": "2026.11.20",
+         "value": 0.78,
+         "text": "0.78배",
+         "hi": true
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        1,
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "세 근거의 숫자\n**고정 댓글 무료 리포트 표**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽\n**근거 셋**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 1",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "0.8배 첫 진입, 1년 뒤",
+     "stats": [
+      {
+       "at": 1,
+       "big": "3번 중 0번",
+       "label": "더 높았던 횟수",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "현금선 처음 깬 다섯 번",
+     "stats": [
+      {
+       "at": 2,
+       "big": "5번 모두",
+       "label": "20거래일째 현금선 아래",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "싸다는 것이\n**곧 바닥은 아니었다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 2\n**아직 거의 없는 매출**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 2"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "3분기 매출, 1년 전 대비",
+     "stats": [
+      {
+       "at": 1,
+       "big": "-93%",
+       "label": "24만 3,000달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "한 주당 현금이 내려온다",
+       "sub": "달러(한 주당 유동성)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "9월 말",
+         "value": 1.73
+        },
+        {
+         "label": "연말 예상 상단",
+         "value": 1.65
+        },
+        {
+         "label": "연말 예상 하단",
+         "value": 1.61
+        },
+        {
+         "label": "11월 20일 주가",
+         "value": 1.35,
+         "hi": true
+        }
+       ],
+       "source": "자료: SEC 10-Q·8-K · 기준 2026-11-20",
+       "beats": [
+        3,
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 3\n**주식 공급과 업종**",
+     "at": 0,
+     "kicker": "사지 않는 쪽 3"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "남은 시장 매각 한도",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 5,879만 달러",
+       "label": "9월 말 기준",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "현금선보다 낮은 값에 팔면\n**한 주당 현금이 줄어든다**",
+     "at": 2
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 20일 하루",
+       "sub": "전날 종가 대비",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "솔리드파워",
+         "value": -10.0,
+         "hi": true
+        },
+        {
+         "label": "앰프리우스",
+         "value": -9.8
+        },
+        {
+         "label": "QQQ",
+         "sub": "나스닥 대형주 펀드",
+         "value": -5.7
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        4,
+        4,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "next": [
+    3
+   ],
+   "sub": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "솔리드파워만의\n**장면이 아니다**",
+     "at": 0,
+     "kicker": "같은 패턴"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "뉴스케일 · 원전",
+     "stats": [
+      {
+       "at": 1,
+       "big": "시가총액 < 현금",
+       "label": "2024년 3월 뒤 최저",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "에노빅스 · 같은 배터리 무리",
+     "stats": [
+      {
+       "at": 2,
+       "big": "현금과 부채",
+       "label": "함께 봐야 했던 장면",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "이어 보기",
+     "left": {
+      "at": 3,
+      "head": "뉴스케일 편",
+      "big": "현금선",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "에노빅스 편",
+      "big": "공짜 워런트",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "김박사 월드\n**반복되는 패턴을 모아 셉니다**",
+     "at": 4
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "현금보다 싼 주식\n**바닥일까, 1년짜리 함정일까?**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "판단을 바꿀\n**신호와 날짜**",
+     "at": 0,
+     "kicker": "확인 신호",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "현금선 이탈 20거래일째",
+     "stats": [
+      {
+       "at": 1,
+       "big": "12월 15일",
+       "label": "종가 확인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11월 20일 뒤 20거래일째",
+     "stats": [
+      {
+       "at": 2,
+       "big": "12월 21일",
+       "label": "종가 확인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "12월 21일 종가",
+     "left": {
+      "at": 3,
+      "head": "1.73달러 위",
+      "big": "사는 쪽 강해짐",
+      "lines": [
+       "현금선 회복"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 3,
+      "head": "1.17달러 아래",
+      "big": "사지 않는 쪽 강해짐",
+      "lines": [
+       "2024년 저점 아래"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "공시 신호",
+     "left": {
+      "at": 5,
+      "head": "합작법인 계약",
+      "big": "사는 쪽",
+      "lines": [
+       "금액이 붙은 계약 · 새 라인 시운전"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 5,
+      "head": "주식 판매 공시",
+      "big": "사지 않는 쪽",
+      "lines": [
+       "시장 매각 · 공모"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사려는 분이\n**먼저 확인할 것**",
+     "at": 0,
+     "kicker": "체크리스트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "사기 전 확인 1~3",
+     "items": [
+      {
+       "no": "1",
+       "text": "한 주당 현금 직접 계산",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "주식 판매 한도 사용 여부",
+       "at": 1
+      },
+      {
+       "no": "3",
+       "text": "매출이 늘기 시작했나",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "사기 전 확인 4~5",
+     "items": [
+      {
+       "no": "4",
+       "text": "하루 5~10% 움직임 견딜 수 있나",
+       "at": 4
+      },
+      {
+       "no": "5",
+       "text": "12월 15일 · 21일 달력에",
+       "at": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 21일",
+       "label": "11월 20일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 21일, 가장 무거운 갈래도 32%",
+       "source": "SEC 10-Q·8-K, 나스닥 종가 · 기준 2026-11-20",
+       "note": "가능성은 주가 확률이 아니라 과거 기록에서 출발한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "4 · 2024년 저점 아래",
+         "sub": "1.17달러 아래",
+         "p": 30,
+         "range": [
+          25,
+          35
+         ]
+        },
+        {
+         "label": "3 · 1년 최저권 머묾",
+         "sub": "1.17~1.35달러",
+         "p": 32,
+         "range": [
+          27,
+          37
+         ],
+         "hi": true
+        },
+        {
+         "label": "2 · 반등",
+         "sub": "1.35~1.73달러",
+         "p": 30,
+         "range": [
+          25,
+          35
+         ]
+        },
+        {
+         "label": "1 · 현금선 회복",
+         "sub": "1.73달러 위",
+         "p": 8,
+         "range": [
+          5,
+          12
+         ]
+        }
+       ],
+       "decision": "판정: 12월 21일 종가(11월 20일 뒤 20거래일째) · 기준선 1.73·1.35·1.17달러",
+       "beats": [
+        2,
+        3,
+        3,
+        4
+       ],
+       "decision_beat": 1
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주가 확률이 아니라\n**분석자의 주관적 추정**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "shop": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "최근 60거래일",
+     "stats": [
+      {
+       "at": 0,
+       "big": "13일",
+       "label": "하루 5% 넘게 움직인 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2022년 12월 0.8배 첫 진입 뒤",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+26.7%",
+       "label": "20거래일 뒤",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "0.8배 첫 진입 표본",
+     "stats": [
+      {
+       "at": 3,
+       "big": "3번",
+       "label": "작은 표본",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "쿠팡 장보기는\n**설명란 김박사 몰로**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "ad": [
+    4,
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "지금 솔리드파워",
+     "left": {
+      "at": 0,
+      "head": "금고 속 돈",
+      "big": "주가보다 많다",
+      "lines": [
+       "현금선의 0.78배"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "매출",
+      "big": "아직 거의 없다",
+      "lines": [
+       "3분기 -93%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "12월 21일 종가와 공시로",
+     "left": {
+      "at": 1,
+      "head": "1.73달러 위 · 판매 공시 없음",
+      "big": "사는 쪽 강해짐",
+      "lines": [
+       "조건"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "1.17달러 아래 · 판매 공시",
+      "big": "사지 않는 쪽 강해짐",
+      "lines": [
+       "조건"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결정은 각자의 몫이며,\n**이 영상과 리포트는 판단 근거를 정리한 교육용 자료입니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "사는 쪽 · 사지 않는 쪽 근거 표",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "0.8배 첫 진입 세 번 기록표",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "사기 전 확인표",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 5,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 21일\n**솔리드파워 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 21일, 솔리드파워 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "1.73달러 위"
+      },
+      {
+       "at": 3,
+       "text": "1.35~1.73"
+      },
+      {
+       "at": 4,
+       "text": "1.35달러 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 종목과 질문도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
