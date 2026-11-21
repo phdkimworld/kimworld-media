@@ -19,7 +19,7 @@
 
 ## 장부 표
 <!-- AUTO:장부 -->
-(11-20 `pred_ledger.py --report --ticker IREN`가 쓴 칸)
+(11-21 `pred_ledger.py --report --ticker IREN`가 쓴 칸)
 
 IREN 예측 장부: 예측 26(시나리오 20·확인 6) 판정 끝 9 · 사람 판정 필요 2 · 대기 15 · 판정 불가 0
 적중(콜) 0/2=0% · 브라이어 0.143(n=8, 모두 50%면 0.250)
