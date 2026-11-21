@@ -27,3 +27,4 @@ A 합계: — · B 합계: — · 갱신: —
 | 11-21 | APLD | 1TKhp0NOkYU | A | 281 |
 | 11-21 | RGTI | c-8RHgUfHv8 | A | 455 |
 | 11-21 | SLDP | JusnxXSiIVQ | B | 326 |
+| 11-21 | SMR | LtzNialqBF8 | A | 415 |
