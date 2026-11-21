@@ -155,6 +155,11 @@ YT_CLIENT_ID="$HEALTH_YT_CLIENT_ID" YT_CLIENT_SECRET="$HEALTH_YT_CLIENT_SECRET" 
 - 근거: stats.json(영상별 노출·CTR·AVD·시청률, `hw_stats.py`), 쿠팡 하위 ID hm<성분> 클릭·주문과 가이드 유입(utm_source=youtube). 분석값이 없으면 렌더 로그·지난 회차 판정.
 - 반영한 것은 비교 대상과 판정일(7일 뒤)을 적고, 판정일에 유지/되돌림을 정한다. 효능 과장·재촉·추천 문구는 개선안이 될 수 없다.
 
+### 4.5 리서치 자료실 — 다른 세션도 여기서 가져다 쓴다 (2026-11-21 운영자)
+- 위치: 비공개 `phdkimworld/healthworld-ops` `research/` — 지침 `research/README.md`, 편 목록 `INDEX.md`(질문·답·핵심 숫자·영상), 논문 카드 `PAPERS.md`(PubMed 링크·대상·결과·쓴 편), 기계용 `papers.json`.
+- 클라우드 세션은 `add_repo`(phdkimworld/healthworld-ops)로 붙이고 README부터 읽는다. 숫자는 카드의 '결과'(PubMed 초록 확인값)만, 식약처 문구는 사이트 health.yaml에서만.
+- 새 편을 만들면 `research/episodes.json` 한 줄 + `python3 tools/research_index.py`로 색인을 다시 만들어 같은 커밋에 넣는다.
+
 ## 5. 측정과 판단
 매주 월요일: 쇼츠 지속률(70% 미만이면 훅 교체), 롱폼 클릭률(4% 미만이면 썸네일·제목 교체), 건강몰 유입(롱폼 1편당 50 방문, 3.4 캠페인별), 쿠팡 클릭(`hm…`, 건강몰 방문의 10%). 기준 숫자는 첫 가정이며 4주차에 실측으로 바꾼다.
 판단일: 2026-12-21(기둥 조정) · 2027-01-18(퍼널 구조) · 2027-02-15(구독 1,000·YPP 진행도, 주기 결정). 기록은 비공개 ops-data에만(수익 숫자는 이 저장소에 쓰지 않는다).
