@@ -44,6 +44,7 @@
 | (없음) `yt-analytics.readonly` | 영상별 구독 증가, 시청 지속, 유입 경로 | yt_subs.py --report, yt_stats.py 분석 부분 — 지금은 403이라 채널 전체 숫자로 대신함 |
 
 - 공개 조회수·댓글 수는 `force-ssl`로 읽는다. 영상별 구독 기여·시청 지속시간은 분석 권한이 있어야 한다.
+- **분석 자료는 사이트 yt-analytics.yml → ops stats/yt_analytics.json(새 키, 컨테이너 키와 무관)** — 2026-11-21부터. 읽기 `python3 tools/yt_analytics_read.py [--pull] [영상ID…|--sub-test]`(평균 시청 비율·시간·구독 증가·유입 경로). 이 컨테이너의 키는 분석 권한이 없어 위 표의 403이 계속될 수 있다.
 - 수익(`yt-analytics-monetary.readonly`)은 YPP가 없어 쓰지 않는다.
 
 ## 3. 권한을 넓히거나 다시 발급하는 법(운영자가 브라우저에서, 약 15분)

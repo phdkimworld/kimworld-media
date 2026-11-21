@@ -9,6 +9,10 @@
 import os, re, sys, json, glob, datetime as dt
 sys.path.insert(0, os.path.dirname(__file__))
 from report_perf import summary
+try:
+    from yt_analytics_read import avp_map  # 영상별 평균 시청 비율(사이트 yt-analytics.yml → ops stats/yt_analytics.json, 2026-11-21)
+except Exception:
+    avp_map = lambda: {}
 
 SITE = sys.argv[1] if len(sys.argv) > 1 else '/home/user/kimworld-site'
 N = int(sys.argv[2]) if len(sys.argv) > 2 else 10
@@ -60,13 +64,15 @@ def main():
     print(f'통합 인사이트 · 유튜브 스냅숏 {tnow:%m-%d %H:%M}Z · 사이트 요약 {when[:16]}Z (지난 {s.get("days")}일)\n')
     print('## 회차별 깔때기: 롱폼 24h 조회 → 쇼츠 24h → 리포트 페이지뷰(롱폼 24h 대비) · 초/뷰')
     rows = []
+    avp = avp_map()
     for e in episodes():
         l24 = at24.get(e['long'], (None, 0)); s24 = at24.get(e['short'], (None, 0)); sl = slug_of(e['long']); r = pv.get(sl, {})
         conv = (r.get('pv', 0) / l24[0] * 100) if l24[0] else None
         rows.append((e, l24, s24, r, conv))
         print(f"  {e['no']:>2} {e['tk']:<5} {e['group']} {e['kind']}  롱폼 {l24[0] if l24[0] is not None else '-':>5}({l24[1]}h) 지금 {now.get(e['long'], '-'):>5}"
               f" · 쇼츠 {s24[0] if s24[0] is not None else '-':>5} 지금 {now.get(e['short'], '-'):>5}"
-              f" · 리포트 {r.get('pv', 0):>3}pv {('%.1f%%' % conv) if conv is not None else '  -  ':>6} {r.get('secs/pv') or 0:>4.0f}초")
+              f" · 리포트 {r.get('pv', 0):>3}pv {('%.1f%%' % conv) if conv is not None else '  -  ':>6} {r.get('secs/pv') or 0:>4.0f}초"
+              f" · 평균 시청 {('%.0f%%' % avp[e['long']]) if avp.get(e['long']) is not None else '-'}")
     camp = s.get('campaigns', [])
     p7 = posted7(tnow)
     print('\n## 아웃렛별 7일: 게시 수 → 사이트 세션')

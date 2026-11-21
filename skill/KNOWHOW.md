@@ -34,7 +34,7 @@
 | 블로거 | 사이트 `docs/blogger-guide.md`, production.md 0장 | 사이트 blogger.yml |
 | 댓글 답글 | `skill/runbooks/comments.md`(투표·요청·대댓글·스팸·23시 점검), `skill/runbooks/api.md`(AI 답글 크레딧) | `tools/hourly.py`, `yt_reply.py`, `site_comments.py` |
 | 회차 후 복기·개선 | SKILL 8장(8.0 개선 하나 이상·통합 인사이트·AI 느낌 제거·토큰 절약), `review/improvements.md`, `review/experiments.md`, `review/learning.md`, `review/report_learning.md` | `insights.py`, `report_perf.py`, `theme_perf.py`, `episode_check.py` |
-| 통계 보기 | 사이트 `docs/analytics-guide.md`, `stats_snapshots.jsonl`(3시간마다), `review/sub_test.md`(구독 시험) | `yt_stats.py`, `yt_subs.py`, `insights.py`, `traffic_cut.py` |
+| 통계 보기 | 사이트 `docs/analytics-guide.md`, `stats_snapshots.jsonl`(3시간마다), `review/sub_test.md`(구독 시험). 분석 자료는 사이트 yt-analytics.yml → ops stats/yt_analytics.json(새 키, 컨테이너 키와 무관) | `yt_stats.py`, `yt_subs.py`, `insights.py`, `traffic_cut.py`, `yt_analytics_read.py` |
 | 이북 재료 | `ebook/WRITING_GUIDE.md`·`TOC_DRAFT.md`·`ASSETS.md`, `ebook/materials/` | `ebook_materials.py --add/--sync/--status` |
 
 ## 3. 운영·접근 (키·권한·막힐 때)
