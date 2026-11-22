@@ -18,6 +18,7 @@
 | BTQ | BTQ | 양자 | QTUM | IONQ,LAES | - | post-quantum cryptography;quantum computing | post-quantum;quantum;export control;China;tariff | 40-F·6-K 제출(캐나다) |
 | SLDP | 솔리드파워 | 배터리 | LIT | QS,ENVX | - | battery;critical minerals;foreign entity of concern;advanced manufacturing production credit | battery;Inflation Reduction Act;tariff;China;critical mineral;Department of Energy | |
 | JOBY | 조비 | eVTOL | ITA,ARKQ | ACHR | - | powered-lift;advanced air mobility;electric vertical takeoff | FAA;certification;tariff;Department of Defense;China;Toyota | eVTOL 전용 ETF 없음 → ITA(항공우주·방산) |
+| ACHR | 아처 | eVTOL | ITA,ARKQ | JOBY | - | powered-lift;advanced air mobility;electric vertical takeoff | FAA;certification;tariff;Department of Defense;export control;Boeing | eVTOL 전용 ETF 없음 → ITA(항공우주·방산) |
 | SMR | 뉴스케일 | 원전 | URA,NLR | OKLO | - | small modular reactor;nuclear reactor licensing;advanced reactor | NRC;Nuclear Regulatory Commission;Department of Energy;tariff;uranium;TVA | |
 | IREN | 아이렌 | AI 데이터센터·채굴 | WGMI | CIFR,APLD | BTC | data center;digital asset;export controls artificial intelligence | bitcoin;tariff;export control;power;China;Microsoft | |
 | INOD | 이노데이터 | AI 데이터 | IGV | SOUN | - | artificial intelligence | artificial intelligence;regulation;tariff;customer concentration | |
