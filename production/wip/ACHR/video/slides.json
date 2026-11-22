@@ -5,6 +5,17 @@
  "sub_text": "지금 사도 될까? 근거를 모아 갑니다",
  "next_text": "조비 에비에이션(JOBY) · 뉴스케일(SMR) · 설명란 링크",
  "shop_strip": "유산균 균주 이름 · 링크는 설명란 둘째 줄",
+ "outro_promo": [
+  {
+   "tag": "건강 가이드",
+   "title": "유산균 고르는 법",
+   "sub": "설명란 둘째 줄 링크",
+   "url": "health.drkimworld.com",
+   "note": "유료 광고 포함",
+   "color": "#3DDC97"
+  },
+  "alert"
+ ],
  "midroll": "../kit/achr_youtube_midroll_1920x1080.png",
  "midroll_app": "../kit/achr_youtube_midroll_app_1920x1080.png",
  "paras": [
