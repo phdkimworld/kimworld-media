@@ -1,0 +1,579 @@
+
+EX-4.2
+4
+tm2622394d1_ex4-2.htm
+EXHIBIT 4.2
+Exhibit 4.2
+THE SECURITIES REPRESENTED HEREBY HAVE NOT BEEN
+REGISTERED UNDER THE UNITED STATES SECURITIES ACT OF 1933, AS AMENDED (THE “SECURITIES ACT”), OR SECURITIES LAWS OF
+ANY STATE OR OTHER JURISDICTION, AND NEITHER THE SECURITIES NOR ANY INTEREST THEREIN MAY BE SOLD, OFFERED FOR SALE, TRANSFERRED,
+PLEDGED OR OTHERWISE DISPOSED OF EXCEPT PURSUANT TO (A) AN EFFECTIVE REGISTRATION STATEMENT UNDER THE SECURITIES ACT OR SUCH LAWS
+OR, (B) AN OPINION OF COUNSEL THAT SUCH SALE, OFFER FOR SALE, TRANSFER, PLEDGE OR DISPOSITION IS EXEMPT FROM REGISTRATION UNDER THE
+SECURITIES ACT AND SUCH LAWS.
+THIS WARRANT AND THE RIGHTS REPRESENTED HEREBY
+ARE SUBJECT TO THE TERMS AND CONDITIONS OF THAT CERTAIN REGISTRATION RIGHTS AGREEMENT, DATED AS OF [●], 2026, BY AND BETWEEN ARCHER
+AVIATION INC. AND THE BOEING COMPANY (AS AMENDED FROM TIME TO TIME, THE “REGISTRATION RIGHTS AGREEMENT”). ANY
+TRANSFER OF THIS WARRANT IS SUBJECT TO THE CONDITIONS SET FORTH IN SUCH AGREEMENT, INCLUDING THE REQUIREMENT THAT THE TRANSFEREE
+AGREE IN WRITING TO BE BOUND BY THE TERMS OF SUCH AGREEMENT. A COPY OF SUCH AGREEMENT IS ON FILE AT THE PRINCIPAL OFFICE OF ARCHER AVIATION INC.
+THIS WARRANT IS SUBJECT TO CERTAIN CONTRACTUAL
+RESTRICTIONS ON TRANSFER SET FORTH IN SECTION 15. ANY TRANSFER MUST COMPLY WITH SUCH RESTRICTIONS. INFORMATION REGARDING PRIOR TRANSFERS
+OF THIS WARRANT OR ANY PORTION THEREOF MAY BE OBTAINED BY HOLDER BY CONTACTING THE COMPANY AT [__].
+Issued: [_], 2026
+SECOND WARRANT TO PURCHASE SHARES
+OF
+ARCHER
+AVIATION INC.
+THIS CERTIFIES THAT, in connection
+with (i) that certain Equity Purchase Agreement, dated August 9, 2026 (the “Purchase Agreement”), by and
+between ARCHER AVIATION INC., a Delaware corporation (the “Company”),
+THE BOEING COMPANY, a Delaware corporation (“Bravo”) and each of the Companies (as defined in the Purchase Agreement),(ii) that
+certain registration rights agreement, dated [●], 2026, by and between the Company and Bravo (the “Registration Rights
+Agreement”), and (iii) that certain letter agreement, dated [●], 2026, by and between the Company and Bravo (the
+“Side Letter”), and for value received, Bravo or any or some of its registered assigns (each, a “Holder”),
+is entitled, subject to the terms and conditions set forth herein and in the Side Letter, to purchase from the Company, Shares (as defined
+below), in the amounts, at such times and at the price per Share set forth herein. For purposes of this Warrant, the term “Warrant”
+shall include the warrant contemplated in this agreement and any warrants delivered in substitution or exchange therefor. In the event
+of any inconsistency between the terms and conditions of this Warrant and the Side Letter, the terms of the Side Letter shall control.
+Capitalized terms used, but not otherwise defined herein shall have the meanings given to them in the Purchase Agreement.
+1.            Purchase
+of Shares. Subject to the terms and conditions herein (including Section 17), the Holder is entitled, upon surrender of
+this Warrant to the Company, to purchase from the Company up to an aggregate of [●] shares of the Company’s Class A Common
+Stock, par value $0.0001 per share (such type of shares, the “Common Stock”, and such number of shares as adjusted
+pursuant to Section 8 hereof, the “Shares”).
+2.            Exercise
+Price and Exercise Period.
+2.1            Exercise
+Price. The exercise price for the Shares shall be $17.88 per Share or as otherwise adjusted pursuant to Section 8 hereof
+(the “Exercise Price”).
+2.2            Exercisability.
+Subject to Section 17, the Warrant shall become exercisable on [●]1
+(the “Initial Exercise Date”) and shall remain exercisable until the Expiration Date.
+2.3            Expiration
+Date. This Warrant shall be exercisable, in whole or in part at any time and from time to time commencing on the Initial Exercise
+Date and ending at 5:00 p.m. Eastern Time on [●]2 (the “Expiration
+Date”), unless earlier terminated in connection with a Liquidation Event pursuant to Section 4 hereof.
+2.4            Definitions.
+As used herein:
+“Affiliate”
+shall mean a person or entity that directly, or indirectly through one or more intermediaries, controls, or is controlled by, or is under
+common control with, the entity specified. For purposes of this definition, “control” (including the terms “controlled
+by” and “under common control with”) shall mean the possession, directly or indirectly, of the power to direct or cause
+the direction of the management and policies of an entity, whether through the ownership of voting securities, by contract or otherwise,
+for so long as the control exists.
+“business
+day” shall mean any day, other than a Saturday or a Sunday, that is neither a legal holiday nor a day on which banking institutions
+are generally authorized or required by law or regulation to close in the City of New York, New York.
+“Liquidation
+Event” shall mean the occurrence of any of the following: (i) the consolidation of the Company with, or the merger of the
+Company with or into, another “person” or “group” (within the meaning of Rule 13d-3 and Rule 13d-5 under
+the U.S. Securities Exchange Act of 1934, as amended, the “Exchange Act”), or the sale, lease, transfer, conveyance
+or other disposition, in one or a series of related transactions, of all or substantially all of the assets of the Company and its subsidiaries
+taken as a whole, or the consolidation of another “person” with, or the merger of another “person” into, the Company,
+other than in each case pursuant to a transaction in which the “persons” that “beneficially owned” (within the
+meaning of Rule 13d-3 and Rule 13d-5 under the Exchange Act), directly or indirectly, the Voting Shares (as defined below) of
+the Company immediately prior to the transaction “beneficially own,” directly or indirectly, Voting Shares representing at
+least a majority of the total voting power of all outstanding classes of voting stock of the surviving or transferee person; (ii) the
+adoption by the Company of a plan relating to the liquidation or dissolution of the Company; or (iii) the consummation of any transaction
+(including, without limitation, any merger or consolidation) the result of which is that any “person” becomes the “beneficial
+owner” directly or indirectly, of more than 50% of the Voting Shares of the Company (measured by voting power rather than number
+of shares); provided, that for the purposes of this clause (iii), any outstanding shares of the Company’s Class B Common
+Stock, par value $0.0001 per share, shall be treated as shares of Common Stock on an as-converted basis and no effect shall be given to
+the voting power of outstanding shares of the Company’s Class B Common Stock, par value $0.0001 per share, in excess of the
+voting power of such Common Stock; or (iv) the first day on which a majority of the members of the Company’s board of directors
+(the “Board”) does not consist of Continuing Directors (as defined below). For the purposes of this Warrant, (i) “Voting
+Shares” of any person shall mean capital shares or capital stock of such person which ordinarily has voting power for the election
+of directors (or persons performing similar functions) of such person, whether at all times or only so long as no senior class of securities
+has such voting power by reason of any contingency, and (ii) “Continuing Director” shall mean, as of any date
+of determination, any member of the Board who (x) was a member of the Board on the date hereof or (y) was nominated for election
+or elected to the Board with the approval of a majority of the Continuing Directors who were members of the Board at the time of such
+nomination or election and who voted with respect to such nomination or election; provided, that a majority of the members of the
+Board voting with respect thereto shall at the time have been Continuing Directors.
+1
+Note to Draft: Draft to include the date that is twelve (12) months following the Closing Date.
+2
+Note to Draft: Draft to include the date that is forty-eight (48) months following the Closing Date.
+ 2
+3.            Method
+of Exercise.
+3.1            Cash
+Exercise. Prior to the receipt of Stockholder Approval (as defined in Section 17), the right to purchase Shares under
+this Warrant shall not be exercisable. Following the receipt of Stockholder Approval, the right to purchase Shares under this Warrant
+shall be exercised by the Holder, in whole or in part, by the surrender of this Warrant (with the notice of exercise form attached hereto
+as Exhibit A duly executed (the “Exercise Notice”)) at the principal office of the Company, and by the
+payment to the Company, by certified, cashier’s or other check acceptable to the Company or by wire transfer to an account designated
+by the Company, of an amount equal to the aggregate Exercise Price for the Shares being purchased. A cash exercise, shall not be effective
+unless and until the Company has received payment in full of the aggregate Exercise Price for the Shares being purchased; if such payment
+is not received, any purported notice of exercise shall be deemed void and of no force or effect.
+3.2            Net
+Issue Exercise. In lieu of exercising this Warrant, the Holder may elect to receive Shares equal to the value of this Warrant (or
+the portion thereof being canceled) by surrender of this Warrant at the principal office of the Company together with notice of such election,
+in which event the Company shall issue to the Holder a number of Shares computed using the following formula:
+Where: X = the number
+of the Shares to be issued to the Holder.
+Y = the number of
+the Shares purchasable under this Warrant.
+A = the fair market
+value of one Share on the date of determination.
+B = the per share
+Exercise Price (as adjusted to the date of such calculation).
+ 3
+3.3            Automatic
+Cashless Exercise. To the extent that there has not been an exercise by the Holder pursuant to Section 3.1 hereof, any
+portion of the Warrant that remains exercisable but unexercised shall be exercised automatically upon the Expiration Date (including upon
+a Liquidation Event) pursuant to the mechanics described in Section 3.2.
+3.4            Fair
+Market Value. For purposes of Section 3.2 hereof, the per share fair market value of the Shares shall mean: (i) if
+the Common Stock remains publicly traded, the per share fair market value of the Shares shall be the average of the closing prices of
+the Common Stock on the principal exchange on which the Common Stock is listed (i.e. the New York Stock Exchange (“NYSE”))
+or if the Common Stock is not so listed, as quoted on the Over-the-Counter Bulletin Board, in each case for the fifteen trading days ending
+five trading days prior to the date of determination of fair market value; (ii) if the Common Stock is not so publicly traded, the
+per share fair market value of the Shares shall be such fair market value as is determined jointly by the Board (acting in good faith)
+and the Holder; provided, that if the Board and the Holder are unable to agree on the fair market value per share of the Common
+Stock within a reasonable period of time (not to exceed fifteen days from the Company's receipt of the Exercise Notice), such fair market
+value shall be determined by a nationally recognized investment banking, accounting, or valuation firm jointly selected by the Board and
+the Holder acting in good faith. The determination of such firm shall be final and conclusive, and the fees and expenses of such valuation
+firm shall be borne by the Company. In determining per share fair market value of the Shares in accordance with the foregoing clause (ii),
+an orderly sale transaction between a willing buyer and a willing seller shall be assumed, using valuation techniques then prevailing
+in the securities industry without regard to the lack of liquidity of the Shares due to any restrictions (contractual or otherwise) applicable
+thereto or any discount for minority interests and assuming full disclosure of all relevant information and a reasonable period of time
+for effectuating such sale and assuming the sale of all of the issued and outstanding Shares (including fractional interests) calculated
+on a fully diluted basis to include the conversion or exchange of all securities then outstanding that are convertible into or exchangeable
+for Shares and the exercise of all rights and warrants then outstanding and exercisable to purchase shares of Common Stock or securities
+convertible into or exchangeable for shares of Common Stock; provided, that such assumption shall not include those securities,
+rights, and warrants (a) owned or held by or for the account of the Company or any of its subsidiaries, or (b) convertible or
+exchangeable into Common Stock where the conversion, exchange, or exercise price per share is greater than the per share Fair Market Value
+of the Shares.
+4.            Treatment
+of Warrant Upon a Liquidation Event. Without limitation to Holder’s right to elect, in its sole discretion, to exercise (including
+net issue exercise) the Warrant at any time during the Exercise Period and without limitation to any other provision contained herein,
+in the event of a Liquidation Event, either (a) Holder shall affirmatively exercise this Warrant in full with respect to all remaining
+Shares for which the Warrant is then exercisable and such exercise will be deemed effective immediately prior to the consummation of such
+Liquidation Event or (b) if Holder affirmatively elects not to exercise the Warrant, this Warrant will expire upon the consummation
+of such Liquidation Event; provided, however, should Holder not affirmatively elect option (a) or (b), then the Warrant
+will automatically convert in full with respect to all remaining Shares for which the Warrant is then exercisable and such conversion
+will be deemed effective immediately prior to the consummation of such Liquidation Event with payment owed on the full exercise price
+on a cashless basis pursuant to Section 3.2 hereof. The Company shall provide Holder with written notice of the foregoing
+(together with such information as Holder may reasonably request in connection with such contemplated Liquidation Event giving rise to
+such notice), which is to be delivered to Holder not less than ten (10) days prior to the closing or occurrence, as applicable, of
+the proposed Liquidation Event. For the avoidance of doubt, the occurrence of a Liquidation Event is not required for the Holder to exercise
+this Warrant.
+ 4
+5.            Certificates
+for Shares. As soon as practicable upon the exercise of this Warrant (and in any event within three (3) business days), the Company
+shall issue the Holder (i) a certificate (or book-entry entitlement) for the number of Shares so purchased and, (ii) if such
+exercise is in part, a new warrant (dated the date hereof) of like tenor representing the remaining number of Shares purchasable under
+this Warrant. Holder shall be deemed to own and have all of the rights associated with any Shares or other securities or property to which
+it is entitled pursuant to this Warrant upon the exercise of the Warrant in accordance with Section 3 hereof.
+6.            Replacement
+of Warrants. On receipt of evidence reasonably satisfactory to the Company of the loss, theft, destruction or mutilation of this Warrant
+and in the case of loss, theft or destruction, on delivery of an indemnity agreement reasonably satisfactory in form and amount to the
+Company or, in the case of mutilation on surrender and cancellation of this Warrant, the Company shall promptly execute and deliver, in
+lieu of this Warrant, a new warrant of like tenor.
+7.            Issuance
+of Shares. The Company covenants that the Shares, when issued pursuant to the exercise of this Warrant, will be duly and validly issued,
+fully paid and nonassessable and free from all taxes, liens and charges with respect to the issuance thereof.
+8.            Adjustment
+of Exercise Price and Number of Shares. The number of and kind of securities purchasable upon exercise of this Warrant and the Exercise
+Price shall be subject to adjustment from time to time as follows:
+8.1            Merger,
+Consolidation or Sale of Assets. If at any time there shall be a merger or a consolidation of the Company with or into another entity
+when the Company is not the surviving entity, or a sale of all or substantially all of the assets of the Company in one or a series of
+related transactions, then, as part of such merger, consolidation, sale of assets or similar transaction, lawful provision shall be made
+so that the Holder shall thereafter be entitled to receive upon exercise of this Warrant, during the period specified herein and upon
+payment of the aggregate Exercise Price then in effect, the number of shares of stock or other securities or property (including cash)
+of the successor entity resulting from such merger, consolidation, sale or similar transaction, to which the Holder as the holder of Shares
+deliverable upon exercise of this Warrant would have been entitled in such merger, consolidation, sale or similar transaction, if this
+Warrant had been exercised immediately before such merger, consolidation, sale or similar transaction. In any such case, appropriate adjustment
+shall be made in the application of the provisions of this Warrant with respect to the rights and interests of the Holder after the merger,
+consolidation, sale or similar transaction. This provision shall apply to successive mergers or consolidations.
+ 5
+8.2            Reclassification,
+Recapitalization, etc. Upon any reclassification, exchange, substitution, or other event that results in a change of the number
+and/or class of the securities issuable upon exercise of this Warrant (other than a Liquidation Event which is subject to the provisions
+of Section 4), Holder shall be entitled to receive, upon exercise of this Warrant the number and kind of securities and property
+that Holder would have received for the Shares if this Warrant had been exercised immediately before such reclassification, exchange,
+substitution or other event. The Company or its successor shall promptly issue to Holder an amendment to this Warrant setting forth the
+number and kind of such new securities or other property issuable upon exercise of this Warrant as a result of such reclassification,
+exchange, substitution or other event that results in a change of the number and/or class of securities issuable upon exercise of this
+Warrant. The amendment to this Warrant shall provide for adjustments which shall be as nearly equivalent as may be practicable to the
+adjustments provided for in this Section 8 including, without limitation, adjustments to the Exercise Price and to the number
+of securities or property issuable upon exercise of the new Warrant. The provisions of this Section 8 shall similarly apply
+to successive reclassifications, exchanges, substitutions or other events.
+8.3            Split,
+Subdivision or Combination of Shares. If the Company, at any time while this Warrant remains outstanding and unexpired, shall split,
+subdivide or combine the securities as to which purchase rights under this Warrant exist, the Exercise Price shall be proportionately
+decreased in the case of a split or subdivision or proportionately increased in the case of a combination.
+8.4            Common
+Stock Dividends. If the Company, at any time while this Warrant is outstanding and unexpired, pays a dividend with respect to Common
+Stock payable in Shares, or makes any other distribution with respect to Common Stock payable in Shares, then the Exercise Price shall
+be adjusted, from and after the date of determination of the stockholders entitled to receive such dividend or distribution, to that price
+determined by multiplying the Exercise Price in effect immediately prior to such date of determination by a fraction (i) the numerator
+of which shall be the total number of shares of Common Stock outstanding immediately prior to such dividend or distribution, and (ii) the
+denominator of which shall be the total number of shares of Common Stock outstanding immediately after such dividend or distribution.
+8.5            Other
+Dividends. In case the Company, at any time, pays a dividend or makes a distribution on its Common Stock (other than a dividend or
+distribution in Shares), the Holder shall receive the cash, other securities or property which the Holder would have been entitled to
+receive if the Holder had exercised this Warrant immediately prior to the record date for the determination of stockholders entitled to
+receive such dividend or distribution. The amount of any such other securities and property which the Holder shall thereafter be entitled
+to receive upon the exercise of this Warrant shall be subject to adjustment from time to time, in a manner and on terms as nearly equivalent
+as practicable to those contained herein with respect to the Common Stock of the Company. The provisions of this Section 8.7
+shall similarly apply to successive dividends or distributions of the character specified above.
+ 6
+8.6            Adjustment
+of Number of Shares. Whenever an adjustment is made in the Exercise Price pursuant to any of Sections 8.1 through 8.5
+hereof, the total number of Shares acquired upon exercise of this Warrant shall also be adjusted, to the nearest whole share of Common
+Stock, to the product obtained by multiplying the number of Shares purchasable immediately prior to such adjustment in the Exercise Price
+by a fraction (i) the numerator of which shall be the Exercise Price immediately prior to such adjustment, and (ii) the denominator
+of which shall be the Exercise Price immediately after such adjustment.
+8.7            Other
+Adjustment Events. If any event occurs of the type contemplated by the provisions of this Section 8 but not expressly
+provided for by such provisions, then the Board will make an appropriate adjustment in the Exercise Price and the number of Shares so
+as to achieve the intended result of the Warrant; provided, that no such adjustment pursuant to this Section 8.7 will
+increase the Exercise Price or decrease the number of Shares as otherwise determined pursuant to this Section 8.
+8.8            Notice
+of Adjustments; Other Notices. Whenever the Exercise Price or number or type of securities issuable hereunder shall be adjusted pursuant
+to any provision of this Section 8, the Company shall issue and provide to the Holder, subject to the following sentence,
+prior written notice setting forth, in reasonable detail, the event requiring the adjustment, the amount of the adjustment, the method
+by which such adjustment was calculated and the Exercise Price and number of Shares purchasable hereunder after giving effect to such
+adjustment. In addition, so long as this Warrant shall be outstanding, (i) if the Company shall declare any dividend or make any
+distribution upon the Common Stock or (ii) if any capital reorganization of the Company, reclassification of the capital stock of
+the Company, consolidation or merger of the Company with or into another entity, sale, lease or transfer of all or substantially all of
+the property and assets of the Company, or voluntary or involuntary dissolution, liquidation or winding up of the Company shall be effected,
+where such aforementioned events are not within the Liquidation Event, then in each such case, the Company shall cause to be mailed to
+the Holder, at least fifteen (15) days prior to the date specified in (x) or (y) below, as the case may be, a notice containing
+a brief description of the proposed action and stating the date on which (x) a record is to be taken for the purpose of such dividend
+or distribution, or (y) such reclassification, reorganization, consolidation, merger, conveyance, lease, dissolution, liquidation
+or winding up is to take place and the date, if any is to be fixed, as of which the holders of Common Stock or other securities shall
+receive cash or other property deliverable upon such reclassification, reorganization, consolidation, merger, conveyance, dissolution,
+liquidation or winding up.
+9.            Reservation
+of Stock. The Company agrees during the term the rights under this Warrant are exercisable to reserve and keep available from its
+authorized and unissued shares of Common Stock for the purpose of effecting the delivery upon exercise of this Warrant such number of
+validly issued, fully paid and nonassessable Shares as shall from time to time be deliverable upon the exercise of this Warrant.
+10.            No
+Fractional Shares or Scrip. No fractional shares or scrip representing fractional Shares shall be issued upon the exercise of this
+Warrant, but in lieu of such fractional Shares the Company shall make a cash payment therefor on the basis of the Exercise Price then
+in effect.
+ 7
+11.            Representations
+and Warranties of the Company. The Company represents and warrants to the Holder as follows:
+11.1            the
+execution, delivery and performance of this Warrant and the Registration Rights Agreement and the consummation of the transactions contemplated
+hereby (other than the Stockholder Approval contemplated by Section 17 that has not been obtained as of the date hereof) have
+been duly and validly authorized by all necessary corporate action on the part of the Company and its stockholders, and no consent of
+any other person is required to be obtained as a prerequisite to the validity, enforceability and full performance of this Warrant and
+the transactions contemplated hereby. The Company has, at any time, the full legal right, power and authority to execute and deliver this
+Warrant and the Registration Rights Agreement and to perform its obligations hereunder and thereunder.
+11.2            all
+Shares that may be issued upon the exercise of this Warrant shall, upon issuance, be duly authorized, validly issued, fully paid and non-assessable,
+and free of any liens and encumbrances except for restrictions on transfer provided for herein or applicable federal and state securities
+laws. The Company covenants that it shall reserve and keep available out of its authorized and unissued capital stock such number of shares
+of Common Stock and other securities as will be sufficient to permit the exercise in full of this Warrant.
+11.3            the
+Company is not a party to or otherwise subject to any contract or agreement that restricts or otherwise affects its right to execute and
+deliver this Warrant and the Registration Rights Agreement or to perform its obligations hereunder and thereunder (including the issuance
+of Shares), except where all necessary consents or waivers have been obtained. Neither the execution, delivery nor performance of this
+Warrant (including the issuance of Shares) will (i) conflict with, result in a breach of the terms, conditions or provisions of,
+(ii) constitute a default under, result in any violation of, result in the creation of any lien upon any properties of the Company
+under, or (iii) require any consent, approval or other action by or notice to or filing with any court or governmental body pursuant
+to the Company’s certificate of incorporation or bylaws relating to, any award of any arbitrator or any agreement, instrument or
+law to which the Company is subject or by which it is bound.
+11.4            subject
+to Section 17, no consent, approval, order or authorization of, or registration, qualification, designation, declaration or
+filing with, any federal, state or local governmental authority is required on the part of the Company in connection with the consummation
+of the transactions contemplated by this Warrant, except for such filings described herein pursuant to applicable securities laws, which
+have been made or will be made in a timely manner.
+11.5            the
+execution, delivery and performance of this Warrant and the Registration Rights Agreement and the consummation of the transactions contemplated
+by this Warrant and the Registration Rights Agreement will not result in any such violation or be in conflict with or constitute, with
+or without the passage of time and giving of notice, either (i) a default under any such provision, instrument, judgment, order,
+writ, decree, contract or agreement; or (ii) an event which results in the creation of any lien, charge or encumbrance upon any assets
+of the Company or the suspension, revocation, forfeiture, or nonrenewal of any material permit or license applicable to the Company.
+11.6            the
+Company shall take all such actions as may be necessary to ensure that all such Shares are issued without violation by the Company of
+any applicable law or governmental regulation or any requirements of the NYSE or any domestic securities exchange upon which shares of
+Common Stock or other securities constituting the Shares may be listed at the time of such exercise.
+ 8
+12.            Representations
+and Warranties by the Holder. The Holder represents and warrants to the Company as follows:
+12.1            Own
+Account. This Warrant and the Shares issuable upon exercise hereof are being acquired for its own account, for investment and not
+with a view to the public resale or distribution within the meaning of the Securities Act and the Holder has no present intention, and
+upon exercise will have no intention, of selling or engaging in any public distribution of the same except pursuant to a registration
+or exemption. Holder also represents that the Holder has not been formed for the specific purpose of acquiring this Warrant or the Shares.
+12.2            Disclosure
+of Information. The Holder has received or has had full access to all the information it considers necessary or appropriate to make
+an informed investment decision with respect to the acquisition of this Warrant and the Shares. The Holder further has had an opportunity
+to ask questions and receive answers from the Company regarding the terms and conditions of the offering of this Warrant and the Shares
+and to obtain additional information (to the extent the Company possessed such information or could acquire it without unreasonable effort
+or expense) necessary to verify any information furnished to the Holder or to which the Holder has access. Notwithstanding the foregoing,
+the Company shall provide written notice to the Holder reasonably in advance of the occurrence of any Liquidation Events; provided,
+that such notice shall be treated as Confidential Information of the Company and may not be disclosed by Holder except to its legal and
+financial advisors who agree to maintain the confidentiality of such information.
+12.3            Investment
+Experience. The Holder understands that the exercise of this Warrant and the purchase of the Shares involve substantial risk. The
+Holder acknowledges that the Holder can bear the economic risk of such Holder’s investment in this Warrant and the Shares and has
+such knowledge and experience in financial or business matters that the Holder is capable of evaluating the merits and risks of its investment
+in this Warrant and the Shares and/or has a preexisting personal or business relationship with the Company and certain of its officers,
+directors or controlling persons of a nature and duration that enables the Holder to be aware of the character, business acumen and financial
+circumstances of such persons.
+12.4            Accredited
+Investor Status. The Holder is an “accredited investor” within the meaning of Regulation D promulgated under the Securities
+Act.
+12.5            The
+Securities Act. The Holder understands that this Warrant and the Shares issuable upon exercise hereof have not been registered under
+the Securities Act in reliance upon a specific exemption therefrom, which exemption depends upon, among other things, the bona fide nature
+of the Holder’s investment intent as expressed herein. The Holder understands that this Warrant and the Shares issued upon any exercise
+hereof must be held indefinitely unless subsequently registered under the Securities Act and qualified under applicable state securities
+laws, or unless exemptions from such registration and qualification are otherwise available. The Holder further understands that settlement
+of this Warrant is to be made in Shares and, for the elimination of doubt, the fact that the Shares delivered on exercise of this Warrant
+will not be registered under the Securities Act will not in any way require the Company to settle this Warrant otherwise than in Shares.
+ 9
+13.            Rule 144
+Compliance; Legend Removal.
+13.1            If
+the Holder proposes to sell the Shares issuable upon the exercise of this Warrant in compliance with Rule 144 promulgated by the
+Securities and Exchange Commission (the “SEC”), then, upon the Holder’s reasonable request to the Company, the
+Company shall use commercially reasonable efforts to assist with the transaction, including furnishing to the Holder, to the extent accurate,
+a written statement confirming the Company’s compliance with the filing requirements of the SEC as set forth in such Rule 144,
+as may be amended from time to time.
+13.2            Subject
+to receipt from the Holder by the Company of customary representations and other documentation reasonably acceptable to the Company and
+the Company’s transfer agent in connection therewith, and upon the Holder’s reasonable request, the Company shall use commercially
+reasonable efforts to remove any legend from the book entry position or certificate evidencing such Holder’s Shares and the Company
+will, as soon as practicable, if required by the Company’s transfer agent, cause an opinion of the Company’s counsel to be
+provided, in a form reasonably acceptable to the Company’s transfer agent, to the effect that the removal of such restrictive legends
+in such circumstances may be effected under the Securities Act following the earliest of such time as: (i) such Shares have been
+sold pursuant to Rule 144 or (ii) such Shares are eligible for resale under Rule 144(b)(1) or any successor provision
+without the requirement for the Company to be in compliance with the current public information requirement under Rule 144 and without
+volume or manner-of-sale restrictions applicable to the sale or transfer of such Shares.
+14.            Legends.
+This Warrant and the Shares (and the securities issuable, directly or indirectly, upon conversion of the Shares, if any) shall be imprinted
+with a legend in substantially the following form:
+THE SECURITIES REPRESENTED HEREBY HAVE
+NOT BEEN REGISTERED UNDER THE UNITED STATES SECURITIES ACT OF 1933, AS AMENDED (THE “SECURITIES ACT”), OR SECURITIES
+LAWS OF ANY STATE OR OTHER JURISDICTION, AND NEITHER THE SECURITIES NOR ANY INTEREST THEREIN MAY BE SOLD, OFFERED FOR SALE, TRANSFERRED,
+PLEDGED OR OTHERWISE DISPOSED OF EXCEPT PURSUANT TO (A) AN EFFECTIVE REGISTRATION STATEMENT UNDER THE SECURITIES ACT OR SUCH LAWS
+OR, (B) AN OPINION OF COUNSEL THAT SUCH SALE, OFFER FOR SALE, TRANSFER, PLEDGE OR DISPOSITION IS EXEMPT FROM REGISTRATION UNDER THE
+SECURITIES ACT AND SUCH LAWS.
+THIS WARRANT AND THE RIGHTS REPRESENTED
+HEREBY ARE SUBJECT TO THE TERMS AND CONDITIONS OF THAT CERTAIN REGISTRATION RIGHTS AGREEMENT, DATED AS OF [●], 2026, BY AND BETWEEN
+ARCHER AVIATION INC. AND THE BOEING COMPANY (AS AMENDED FROM TIME TO TIME, THE “REGISTRATION RIGHTS AGREEMENT”).
+ANY TRANSFER OF THIS WARRANT IS SUBJECT TO THE CONDITIONS SET FORTH IN SUCH AGREEMENT, INCLUDING THE REQUIREMENT THAT THE TRANSFEREE
+AGREE IN WRITING TO BE BOUND BY THE TERMS OF SUCH AGREEMENT. A COPY OF SUCH AGREEMENT IS ON FILE AT THE PRINCIPAL OFFICE OF ARCHER AVIATION INC.
+ 10
+THIS WARRANT IS SUBJECT TO CERTAIN
+CONTRACTUAL RESTRICTIONS ON TRANSFER SET FORTH IN SECTION 15. ANY TRANSFER MUST COMPLY WITH SUCH RESTRICTIONS. INFORMATION
+REGARDING PRIOR TRANSFERS OF THIS WARRANT OR ANY PORTION THEREOF MAY BE OBTAINED BY HOLDER BY CONTACTING THE COMPANY AT
+[__].
+15.            Warrants
+Transferability. At any time and from time to time prior to the Expiration Date, the Holder may, pursuant to this Section 15,
+Section 16 and subject to the transfer restrictions set forth in the Registration Rights Agreement, sell, assign or transfer
+this Warrant and the Warrant Shares in whole or in part to (i) any Affiliate of the Holder, or (ii) any person that is not an
+Affiliate of the Holder (each such person, a “Third Party Transferee”) that is acquiring Warrants representing at least
+one-sixth (1/6th) of the total Warrant Shares issuable upon exercise of this Warrant as of the original issuance date in such
+transfer; provided, that (A) no Third Party Transferee shall be, or shall be an Affiliate of, a developer, designer or manufacturer
+of vertical take-off and landing aircraft (a “VTOL OEM”), (B) any portion of this Warrant shall not be transferred
+more than three (3) times without the Company’s prior written consent, which such consent shall not be unreasonably withheld,
+(C) any such transfer shall be subject to compliance with applicable securities laws and the requirement that such transferee agrees
+in writing to be bound by the terms of this Warrant and the Registration Rights Agreement (including, for the avoidance of doubt, the
+transfer restrictions applicable to Third Party Transferees set forth in clauses (A) and (B) above), and (D) Holder shall
+give the Company written notice of any such transfer, identifying the transferee and the number of Warrants being transferred, promptly
+following the consummation of such transfer. The Company agrees that it shall use commercially reasonable efforts to promptly assist the
+Holder in making any such transfer in compliance with any applicable federal and state securities laws, including, without limitation,
+taking the actions described in Section 13 mutatis mutandis as such actions apply to the Warrant; provided,
+that in any such transfer, the transferee shall agree to be bound by the terms of this Warrant as if an original holder hereof.
+16.            Compliance
+with Securities Laws on Transfer. This Warrant and the Shares issuable upon exercise of this Warrant (and the securities issuable,
+directly or indirectly, upon conversion of the Shares, if any) may not be transferred or assigned in whole or in part without compliance
+with applicable federal and state securities laws by the transferor and the transferee (including, without limitation, the delivery of
+investment representation letters and legal opinions reasonably satisfactory to the Company, as reasonably requested by the Company).
+The Company shall not require Holder to provide an opinion of counsel if the transfer is to any Affiliate of the Holder; provided,
+that any such transferee is an “accredited investor” as defined in Regulation D promulgated under the Securities Act.
+17.            Compliance
+with NYSE Listing Rule Requirements; Beneficial Ownership Cap; Regulatory Approvals. Notwithstanding anything to the contrary
+in this Warrant:
+17.1            Beneficial
+Ownership Cap. Unless the Holder has expressly waived the restrictions set forth in this this Section 17.1, the Company
+shall not issue, and the Holder shall not be entitled to receive, any Shares under this Warrant to the extent that, after giving effect
+to such issuance and exercise, the Holder (together with its Affiliates and any other persons whose beneficial ownership of Common Stock
+would be aggregated with the Holder’s for purposes of Section 13(d) of the Exchange Act or applicable stock exchange rules)
+would (i) beneficially own a number of shares of Common Stock equal to or exceeding 19.9% of the then-issued and outstanding shares
+of Common Stock, or (ii) be entitled to vote or direct the voting of a number of shares equal to or exceeding 19.9% of the combined
+voting power of all then-issued and outstanding securities of the Company entitled to vote generally in the election of directors. Unless
+the Holder has expressly waived the restrictions set forth in this this Section 17.1, any purported exercise of this Warrant
+in violation of this Section 17.1 shall be null and void to the extent of such excess.
+ 11
+17.2            Stockholder
+Approval. As used in this Warrant, “Stockholder Approval” means the approval of the Company’s stockholders
+under Section 312.03 of the NYSE Listed Company Manual to permit the issuance of Shares upon exercise of this Warrant, if and when
+such approval is obtained. The Company shall seek Stockholder Approval pursuant to the terms and conditions set forth in the Side Letter
+until such Stockholder Approval is obtained.
+17.3            Regulatory
+Approvals. The right to purchase Shares under this Warrant shall not be exercisable, and the Company shall not issue any Shares upon
+exercise of this Warrant, unless and until: (a) all filings, notifications, clearances, approvals, consents, or authorizations required
+under any applicable Antitrust Laws (as defined in the Purchase Agreement) shall have been made, obtained, deemed approved, or waived,
+as applicable, in each case with respect to the issuance of Shares upon exercise of this Warrant (the “Warrant Regulatory Approvals”);
+and (b) no Governmental Order (as defined in the Purchase Agreement) shall have been adopted, promulgated, or entered by any Governmental
+Authority that is in effect and that prohibits or restrains the issuance of Shares upon exercise of this Warrant. For the avoidance of
+doubt, the conditions set forth in this Section 17.3 shall apply in addition to, and not in lieu of, the Stockholder Approval
+requirement and the limitations on beneficial ownership set forth in Sections 17.1 and 17.2, respectively.
+17.4            Regulatory
+Approval Efforts. In connection with the exercise or anticipated exercise of this Warrant, each of the Company and the Holder shall
+(a) as promptly as practicable following the delivery of any Exercise Notice, or at such earlier time as either party determines
+that Warrant Regulatory Approvals may be required, make all filings, notifications, and submissions required to be made under any applicable
+Antitrust Laws in connection with the issuance of Shares upon exercise of this Warrant and (b) use reasonable best efforts to obtain
+the Warrant Regulatory Approvals as promptly as practicable, in each case in accordance with, and subject to the terms and conditions
+set forth in, Section 6.6 of the Purchase Agreement.
+18.            Notices.
+All notices hereunder shall be effective when given, and shall be deemed to be given upon receipt or, if earlier, (a) five (5) days
+after deposit with the U.S. Postal Service or other applicable postal service, if delivered by first class mail, postage prepaid, (b) upon
+delivery, if delivered by hand, (c) one business day after the business day of deposit with Federal Express or similar overnight
+courier, freight prepaid or (d) one business day after email transmission, and shall be addressed at such address as the Holder or
+the Company (as applicable) shall have furnished in writing.
+All communications sent to
+the Company shall be sent to: Archer Aviation Inc., 190 W. Tasman Drive, San Jose, CA 95134, Attention: General Counsel, email: [***],
+with a copy to the Company’s counsel at Fenwick & West LLP, 801 California Street, Mountain View, CA 94041, Attention:
+Patrick Grilli, email: [***].
+ 12
+All communications sent to
+Holder shall be sent to: The Boeing Company, 100 N. Riverside Plaza, Chicago, IL 60606, Attention: Stephen P. Demontmollin, email:
+[***], with a copy to Boeing’s counsel at Mayer Brown LLP, 71 S. Wacker Drive, Chicago, IL 60606, Attention: Jason Quintana
+and Peter Wolf, email: [***] and [***].
+19.            Governing
+Law, Jurisdiction, Waiver of Jury Trial. This Warrant shall be governed by, and construed in accordance with, the laws of the State
+of Delaware applicable to contracts executed in and to be performed in that State. All legal actions and proceedings arising out of or
+relating to this Warrant shall be heard and determined exclusively in any Delaware Chancery Court; provided, that if jurisdiction
+is not then available in the Delaware Chancery Court, then any such legal action may be brought in any federal court located in the State
+of Delaware or any other Delaware state court. The parties hereto hereby (a) irrevocably submit to the exclusive jurisdiction of
+the aforesaid courts for themselves and with respect to their respective properties for the purpose of any action arising out of or relating
+to this Warrant brought by any party hereto, and (b) agree not to commence any action relating thereto except in the courts described
+above in Delaware, other than actions in any court of competent jurisdiction to enforce any judgment, decree or award rendered by any
+such court in Delaware as described herein. Each of the parties further agrees that notice as provided herein shall constitute sufficient
+service of process and the parties further waive any argument that such service is insufficient. Each of the parties hereby irrevocably
+and unconditionally waives, and agrees not to assert, by way of motion or as a defense, counterclaim or otherwise, in any action arising
+from this Warrant or the Shares, (a) any claim that it is not personally subject to the jurisdiction of the courts in Delaware as
+described herein for any reason, (b) that it or its property is exempt or immune from jurisdiction of any such court or from any
+legal process commenced in such courts (whether through service of notice, attachment prior to judgment, attachment in aid of execution
+of judgment, execution of judgment or otherwise) and (c) that (i) the action in any such court is brought in an inconvenient
+forum, (ii) the venue of such action is improper or (iii) this Warrant, or the subject matter hereof, may not be enforced in
+or by such courts. ANY RIGHT TO TRIAL BY JURY WITH RESPECT TO ANY CLAIM OR ACTION ARISING OUT OF THIS WARRANT IS HEREBY WAIVED.
+20.            Equitable
+Relief. Each of the Company and the Holder acknowledges that a breach or threatened breach by such party of any of its obligations
+under this Warrant would give rise to irreparable harm to the other party hereto for which monetary damages would not be an adequate remedy
+and hereby agrees that in the event of a breach or a threatened breach by such party of any such obligations, the other party hereto shall,
+in addition to any and all other rights and remedies that may be available to it in respect of such breach, be entitled to equitable relief,
+including a temporary restraining order, an injunction, specific performance, and any other relief that may be available from a court
+of competent jurisdiction without having to prove the inadequacy of money damages.
+21.            Cumulative
+Remedies. All rights and remedies of each party under this Warrant and under the Side Letter are cumulative and in addition to, and
+not in lieu of, any other rights and remedies available to such party at law, in equity, by contract, or otherwise.
+22.            Amendments
+and Waivers. No modification of or amendment to this Warrant will be effective unless in a writing signed by all of the parties hereto.
+No waiver by the Company or the Holder of any of the provisions hereof shall be effective unless explicitly set forth in writing and signed
+by the party so waiving. Waiver by the Holder of a breach of any provision of this Warrant will not operate as a waiver of any other
+or subsequent breach.
+ 13
+23.            No
+Impairment. The Company shall not, by amendment of its Certificate of Incorporation or through a reorganization, transfer of assets,
+consolidation, merger, dissolution, issue, or sale of securities or any other voluntary action, avoid or seek to avoid the observance
+or performance of any of the terms to be observed or performed under this Warrant by the Company, but shall at all times in good faith
+assist in carrying out of all the provisions of this Warrant and in taking all such action as may be necessary or appropriate to protect
+the Holder’s rights under this Warrant against impairment.
+24.            Counterparts.
+The Warrant may be executed in one or more counterparts, each of which will be deemed an original, but all of which together will constitute
+one and the same instrument. Pdf copies of signature pages shall be binding originals.
+[Signature page follows.]
+ 14
+The Company has caused this
+Warrant to be issued as of the date first written above.
+ | 
+ ARCHER AVIATION INC. | 
+ | 
+ | 
+ | 
+ By: | 
+ | 
+ | 
+ | 
+ Name: | 
+ | 
+ | 
+ Title: | 
+ ACKNOWLEDGED AND AGREED | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ (and the Holder hereby makes the 
+representations
+ and warranties by
+ Holder set forth above): | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ HOLDER: | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ The Boeing Company | 
+ | 
+ | 
+ | 
+ | 
+ | 
+ By: | 
+                | 
+ | 
+                                | 
+ | 
+ Name: | 
+ | 
+ | 
+ | 
+ Title: | 
+ | 
+ | 
+[Signature page to Second Warrant to Purchase Shares of Archer Aviation Inc.]
+EXHIBIT A
+NOTICE OF WARRANT EXERCISE
+ | TO: | Archer Aviation Inc. | 
+190 W. Tasman Drive 
+San Jose, CA 95134
+Capitalized terms used but not defined in this
+Notice of Warrant Exercise have the meanings set forth in the Second Warrant to Purchase Shares of Archer Aviation Inc., issued [●],
+2026 (the “Warrant”).
+1. The undersigned hereby
+elects to purchase __________ Shares, pursuant to the terms of the Warrant.
+2. The undersigned elects
+to exercise the Warrant relating to the Shares by means of a cash payment, and tenders herewith or by concurrent wire transfer payment
+in full for the Exercise Price of the Shares being purchased, together with all applicable transfer taxes, if any.
+3. Please issue a certificate
+or certificates representing said Shares in the name of the undersigned or in such other name as is specified below:
+ | | | 
+ | (Name) | | 
+ | | | 
+ | | | 
+ | | | 
+ | | | 
+ | (Address) | | 
+4.            The
+undersigned hereby represents and warrants that, the aforesaid Shares are being acquired for the account of the undersigned for investment
+and not with a view to resell or for resale, in connection with the distribution thereof, and that the undersigned has no present intention
+of distributing or reselling such Shares and all representations and warranties of the undersigned set forth in the Warrant are true and
+correct as of the date hereof.
+ | | | 
+ | | (Signature) | 
+ | | | 
+ | | | 
+ | | (Name) | 
+ | | | 
+ | | | 
+(Date) | 
+(Title) | | | 
+ 15

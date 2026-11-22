@@ -1,0 +1,315 @@
+
+EX-10.2
+6
+tm2622394d1_ex10-2.htm
+EXHIBIT 10.2
+Exhibit 10.2
+ARCHER AVIATION INC.
+_______, 2026
+THE BOEING COMPANY
+Address: 
+100 N. Riverside Plaza 
+Chicago, IL 60606
+Re:      Letter
+Agreement
+Ladies and Gentlemen:
+Reference is made to (i) that
+certain Equity Purchase Agreement (the “Purchase Agreement”), dated as of August 9, 2026, between Archer
+Aviation Inc., a Delaware corporation (the “Buyer”), and The Boeing Company., a Delaware corporation (the “Seller”),
+(ii) the First Warrant to Purchase Shares, dated as of [●], 2026, by and between the Buyer and the Seller (the “First
+Warrant”), and (iii) the Second Warrant to Purchase Shares, dated as of [●], 2026, by and between the Buyer and
+the Seller (the “Second Warrant”, and together with the First Warrant, the “Warrants”).
+This letter agreement (this “Letter Agreement”) sets forth the additional agreements between the Buyer and the
+Seller, including with respect to certain additional terms applicable to the Warrants, and shall not merge with or supersede the Warrants.
+In the event of any inconsistency between the terms and conditions of this Letter Agreement and the Warrants, the terms of this Letter
+Agreement shall control. Capitalized terms used but not defined herein have the meanings ascribed to such terms in the Purchase Agreement
+or, with respect to the undefined terms used in Section 2 and Section 3, in the applicable Warrant.
+1.            Nomination
+Right. So long as the Seller beneficially owns at least [●]1 of Acquirer Shares (including shares issued upon the
+exercise of any Warrant, and as adjusted for any stock split, dividend, combination, recapitalization or similar event, the “Minimum
+Ownership Threshold”), the following shall apply:
+(a)            Nomination
+Right. The Seller shall have the right to designate one individual for nomination to the board of directors of the Buyer (the “Board”)
+(each such designee, a “Seller Designee”).
+(b)            Buyer
+Obligations. Subject to the terms of this Letter Agreement and applicable law, at each meeting of the Buyer’s stockholders at
+which the class of directors to which the Seller Designee has been assigned is standing for election (each, an “Election Meeting”),
+while the Minimum Ownership Threshold is satisfied, the Buyer shall: (i) include the Seller Designee in its slate of nominees for
+such class; (ii) recommend that the Buyer’s stockholders vote in favor of the election of the Seller Designee to the same extent
+and in the same manner as it recommends other nominees in such class standing for election; and (iii) use commercially reasonable
+efforts to solicit proxies in favor of the election of the Seller Designee consistent with the Buyer’s customary proxy solicitation
+practices. The Seller Designee must be deemed qualified for service on the Board in good faith by the Nominating and Corporate Governance
+Committee of the Board acting reasonably.
+1
+Note to Draft: To be an amount of shares equal to 10% of the Acquirer Shares outstanding as of immediately prior to the issuance
+to Seller at Closing.
+(c)            Initial
+Appointment. The Seller has notified the Buyer in writing of the identity of the initial Seller Designee prior to the signing of the
+Purchase Agreement (the “Initial Seller Designee”). Promptly following the Closing, the Buyer shall cause the
+Board to appoint the Initial Seller Designee to the Board by board resolution, assigned to the class of directors with the longest remaining
+term, to serve for the remainder of such class’s then-current term and until such Seller Designee’s successor is duly elected
+and qualified.
+(d)            Eligibility
+Conditions. Any Seller Designee must, as a condition to nomination or appointment: (i) meet the Buyer’s director qualification
+standards as applied to all directors generally; (ii) complete and return the Buyer’s standard director questionnaire and provide
+such other information as the Buyer may reasonably require for its SEC filings and governance disclosures; (iii) not be subject to
+any legal disqualification from serving as a public company director under applicable law or NYSE rules; and (iv) consent in writing
+to serve as a director. The Buyer shall notify the Seller if a proposed Seller Designee does not satisfy the foregoing conditions, and
+the Seller shall have the right to propose a substitute designee.
+(e)            No
+Committee Guarantee; Independence. The Buyer has no obligation to appoint the Seller Designee to the audit, compensation or nominating &
+corporate governance committees of the Board. Buyer shall use commercially reasonable efforts to appoint the Seller Designee to each other
+committee of the Board, including any special committee, for which such Seller Designee is eligible; provided, however,
+that if the Board establishes a committee solely to consider (i) a proposed contract, transaction or other arrangement between the
+Buyer (or any of its Affiliates), on the one hand, and the Seller (or any of its Affiliates), on the other hand, or (ii) the enforcement
+or waiver of the rights of the Seller (or any of its Affiliates) under any agreement between the Buyer (or any of its Affiliates), on
+the one hand, and the Seller (or any of their Affiliates), on the other hand, then the Board may take such action (upon the advice of
+counsel) that they deem appropriate in good faith to request recusal, or exclusion, of the Seller Designee from participation in such
+committee (and any portion of a Board meeting at which such matters may be discussed by the full Board upon notice to the Initial Seller
+Designee). Nothing herein requires the Buyer to designate the Seller Designee as an “independent” director for NYSE or SEC
+purposes, and if the Seller Designee does not qualify as independent, the Seller acknowledges that the Seller Designee may not serve on
+committees requiring independence under applicable rules.
+(f)            Failure
+to Elect. If applicable law or a regulatory requirement prevents the Buyer from nominating the Seller Designee to the Board or the
+Seller Designee is not elected by the Buyer’s stockholders at any Election Meeting, the Buyer propose a replacement designee who
+must be deemed qualified for service on the Board in good faith by the Nominating and Corporate Governance Committee of the Board acting
+reasonably, and such individual shall become the Seller Designee for all purposes of this Letter Agreement. Until the Seller Designee
+is elected by the Buyer’s stockholders at an Election Meeting to serve on the Board, the Buyer shall invite the Seller Designee
+to attend all Board meetings in a non-voting observer capacity and, in this respect, shall give the Seller Designee copies of all notices,
+minutes, consents, and other materials that it provides to Buyer’s directors at the same time and in the same manner as provided
+to such directors (subject to the confidentiality obligations set forth in Section 1(g) below), and the right of the
+Board to exclude the observer from portions of meetings involving conflicts of interest or competitive sensitivity with respect to Seller
+or if attendance at such meeting or access to such information could reasonably be expected to adversely effect the attorney-client privilege
+between Buyer and its counsel with respect to such matters) for a period of twelve (12) months following such Election Meeting (the “Observer
+Period”). At the next Election Meeting for the Seller Designee’s class following the expiration of the Observer Period,
+the Buyer shall again include the Seller Designee in its nominee slate in accordance with Section 1(b), provided that
+the Minimum Ownership Threshold remains satisfied. If the Seller Designee is not elected at such subsequent Election Meeting, the foregoing
+observer rights and nomination obligations shall apply again for an additional Observer Period, and this process shall repeat for so long
+as the Minimum Ownership Threshold remains satisfied.
+ 2
+(g)            Board
+Observer Confidentiality. While serving in a non-voting observer capacity pursuant to Section 1(f), (i) the Seller
+shall cause the Seller Designee to keep confidential and not disclose any confidential information of Buyer (or its Affiliates) received
+though the Seller’s Designee’s participation as an observer of the Board, unless such confidential information (A) is
+known or becomes known to the public in general (other than as a result of a breach of this Section 1(g) by the Seller
+Designee), (B) is or has been independently developed or conceived by Seller (or its Affiliates) or the Seller Designee without use
+of the confidential information of Buyer (or its Affiliates), (C) is or has been made known or disclosed to the Seller (or its Affiliates)
+or the Seller Designee in a capacity other than as a non-voting observer of the Board, or (D) is or has been made known or disclosed
+to the Seller (or its Affiliates) or the Seller Designee by a third party without a breach of any obligation of confidentiality such third
+party may have to the Buyer (or its Affiliates); provided, however, that the Seller (or its Affiliates) or the Seller Designee
+may disclose such confidential information (x) to Seller’s attorneys, accountants, consultants, and other professionals to
+the extent reasonably necessary to obtain their services in connection with monitoring the Seller’s investment in the Buyer or exercising
+its rights as a stockholder of the Buyer; or (y) as may otherwise be required by Law, provided that the Seller (or its Affiliates)
+or the Seller Designee, as applicable, promptly notifies the Buyer of such disclosure and takes reasonable steps to minimize the extent
+of any such required disclosure; and (ii) neither the Seller nor the Seller Designee shall use any confidential or proprietary information
+of Buyer (or its Affiliates) received though the Seller’s Designee’s participation as an observer of the Board for any competitive
+purpose.
+(h)            Removal;
+Vacancy. The Buyer shall not take any affirmative action to remove the Seller Designee from the Board absent cause or as required
+by applicable law. For purposes of this Section 1(h), “cause” means (i) a felony conviction or plea of nolo
+contendere to a felony, (ii) a finding by a court of competent jurisdiction that the Seller Designee committed fraud, gross negligence,
+or willful misconduct in the performance of the Seller Designee’s duties as a director, or (iii) a finding by a majority of
+the Board of the Seller Designee’s material breach of Buyer’s policies applicable to members of the Board or fiduciary duties
+owed to the Buyer. Upon the occurrence of a finding of cause, the Board shall request that the Seller Designee tender his or her resignation
+from the Board, in which case, Buyer will promptly use commercially reasonable efforts to cause the Seller Designee to tender his or her
+resignation from the Board. If the Seller Designee ceases to serve for any reason while the Minimum Ownership Threshold is satisfied,
+the Seller may designate a replacement (subject to the eligibility conditions in Section 1(d) and the condition that
+the replacement must satisfy the Buyer’s generally applicable director qualification standards as set forth in its corporate governance
+guidelines), and the Buyer shall use commercially reasonable efforts to cause the Board to appoint such replacement.
+(i)            Termination.
+The rights under this Section 1 shall terminate as provided for in Section 4. Upon such termination, if the Seller
+Designee is then serving, the Board may take such action as is necessary to remove the Seller Designee.
+(j)            Indemnification.
+The Buyer shall enter into an indemnification agreement with the Seller Designee on terms and conditions no less favorable than those
+provided to other directors of the Buyer. The Buyer shall maintain directors’ and officers’ liability insurance coverage for
+the Seller Designee on terms no less favorable than the coverage provided to the Buyer’s other directors for so long as the Seller
+Designee serves on the Board and for a period of six (6) years thereafter.
+(k)            Compensation
+and Expenses. The Seller Designee shall not be entitled to receive any compensation from the Buyer for service on the Board. Notwithstanding
+the foregoing, the Buyer shall reimburse the Seller Designee for all reasonable out-of-pocket expenses incurred in connection with service
+on the Board, including travel expenses, in accordance with the Buyer’s expense reimbursement policies applicable to non-employee
+directors.
+ 3
+(l)            Compliance
+Monitoring Plan. Buyer and Seller shall work in good faith to mutually agree upon a written plan and protocol for the parties’
+joint monitoring of compliance with Section 8 of the Clayton Act and the other Antitrust Laws.
+2.            Stockholder
+Approval Covenant. The Buyer shall call a special meeting of its stockholders to be held within sixty (60) days of the Closing Date
+(as extended pursuant to this sentence, the “Special Meeting Deadline”) with the purpose, of among other things,
+obtaining Stockholder Approval and Buyer shall submit such matter in respect of the Stockholder Approval for a stockholder vote and approval
+at such special meeting; provided, however, that the Special Meeting Deadline shall be tolled (but in no event for more than an
+additional thirty (30) days) to the extent that an annual meeting of the Buyer’s stockholders is scheduled to be held within ninety
+(90) days of the Closing Date and Stockholder Approval is included as a matter to be voted on at such annual meeting. The Buyer shall
+use commercially reasonable efforts to obtain Stockholder Approval at such meeting. If Stockholder Approval is not obtained at any such
+special meeting, Buyer shall submit the matter for a stockholder vote and approval at its next annual meeting of stockholders. In connection
+with each such meeting, Buyer (including the Board) shall recommend that stockholders vote in favor thereof and use such other commercially
+reasonable efforts to obtain Stockholder Approval at such meeting. If Stockholder Approval is not obtained prior to or at Buyer’s
+next annual meeting of stockholders, Buyer shall call another special meeting of the stockholders within sixty (60) days after such meeting
+with the purpose of, among other things, obtaining Stockholder Approval and Buyer shall submit such matter in respect of the Stockholder
+Approval for a stockholder vote and approval at such special meeting. If Stockholder Approval has not been obtained following the Buyer’s
+next annual meeting following the Closing Date or at either the special meeting described in the first sentence of this Section 2
+or the immediately preceding sentence, the parties hereto shall confer in good faith and use reasonable efforts to agree upon a mutually
+acceptable plan to obtain Stockholder Approval, which may include additional stockholder meetings, alternative proxy solicitation strategies,
+or other actions reasonably designed to achieve Stockholder Approval. The Buyer shall not take any action, or fail to take any action,
+the primary purpose or effect of which is to impede, delay, or frustrate the obtaining of Stockholder Approval.
+3.            Cash
+Settlement Warrants. Each Warrant shall remain in full force and effect in accordance with its terms. In addition, if Stockholder
+Approval has not been obtained as of the Initial Exercise Date, the following shall apply:
+(a)            Exchange
+for Replacement Warrants. The Warrants shall automatically be exchanged for warrants (the “Replacement Warrants”),
+without any further action or condition (other than the failure to obtain Stockholder Approval as of the Initial Exercise Date), that
+are on the same terms as the Warrants (including, without limitation, all anti-dilution, adjustment and other economic protections, and
+all rights to exercise (but, for the avoidance of doubt, excluding any limitations on the ability to exercise such Replacement Warrants
+prior to the receipt of Stockholder Approval)) except they shall provide for settlement in cash upon exercise (in whole or in part) of
+such Replacement Warrants (a “Cash Settlement”). Upon receipt of Stockholder Approval, the portion of each outstanding
+Replacement Warrant that has not previously been exercised for a Cash Settlement shall automatically convert into the corresponding Warrant,
+and the Holder shall thereafter be entitled to exercise such Warrant for Acquirer Shares in accordance with its original terms.
+(b)            Cash
+Settlement Mechanics. Upon exercise of a Replacement Warrant in whole or in part: (i) the Buyer shall deliver to the Holder the
+Cash Settlement Amount within five (5) Business Days following the date of the exercise of the Replacement Warrant in whole or in
+part, as applicable, (ii) the applicable Exercise Price shall be netted against the Cash Settlement Amount and no separate payment
+of such Exercise Price shall be required, and (iii) if the Buyer fails to deliver the Cash Settlement Amount within such five (5) Business
+Day period, interest shall accrue on the unpaid Cash Settlement Amount at a rate equal to the lesser of (A) the prime rate as published
+by the Wall Street Journal plus 2% per annum and (B) the maximum rate permitted by applicable law, from the date such amount was
+due until paid in full.
+ 4
+(c)            Definitions.
+As used in this Section 3: (i) “Cash Settlement Amount” means, with respect to any cash-settled
+exercise of a Replacement Warrant, an amount equal to (A) the Fair Market Value per Acquirer Share on the date of the exercise of
+the Replacement Warrant, minus (B) the Exercise Price per Share (as adjusted), multiplied by (C) the number of
+Acquirer Shares that would otherwise have been issued; provided, that in no event shall the Cash Settlement Amount be less than
+zero; (ii) “Fair Market Value” means the volume-weighted average price (VWAP) of the Acquirer Shares on
+its primary trading market for the ten (10) trading days immediately preceding the date of the exercise of the Replacement Warrant;
+provided, that such ten (10) trading day period shall not include any trading day on which a Market Disruption Event has occurred;
+and (iii) “Market Disruption Event” means, with respect to any trading day, the occurrence or existence
+of any suspension of, or limitation imposed on, trading in the Acquirer Shares on its primary trading market, or any event that disrupts
+or impairs the ability of market participants to effect transactions in, or obtain market values for, the Acquirer Shares on such trading
+market; provided, however, limitation on the hours or number of days of trading on the primary trading resulting from an
+announced change in the regular business hours of such market shall not be deemed a Market Disruption Event.
+4.            Termination.
+The rights set forth in this Letter Agreement shall terminate automatically, without further action by either party, upon the earliest
+to occur of: (a) with respect to Section 1, the Seller ceasing to satisfy the Minimum Ownership Threshold; provided,
+that if the Seller subsequently re-satisfies the Minimum Ownership Threshold (including through the exercise of any Warrant) within twelve
+(12) months following the date on which the Seller ceased to satisfy the Minimum Ownership Threshold, the rights under Section 1
+shall be automatically reinstated; provided, further, that if an Election Meeting occurs during such twelve (12)-month period
+at a time when the Seller does not satisfy the Minimum Ownership Threshold, the Buyer shall have no obligation to include the Seller Designee
+in its slate of nominees or otherwise comply with Section 1(b) with respect to such Election Meeting, but the Seller’s
+right to reinstatement of the rights under Section 1 shall continue for the remainder of such twelve (12)-month period; provided,
+further, that the Buyer shall have no obligation to include the Seller Designee in its slate of nominees or otherwise comply with Section 1(b) with
+respect to an Election Meeting, if Seller does not re-satisfy the Minimum Ownership Threshold (and notify Buyer of such) at least 30 calendar
+days prior to the Buyer filing its definitive proxy statement with respect to such Election Meeting; provided, further,
+that if the Seller fails to re-satisfy the Minimum Ownership Threshold within such twelve (12)-month period, the rights under Section 1
+shall terminate permanently and shall not be subject to reinstatement; (b) with respect to Section 2 and Section 3,
+as to each Warrant, upon the earliest of (i) such Warrant and any Replacement Warrant issued in connection with such Warrant having
+expired, been fully exercised or otherwise terminated, or (ii) the receipt of Stockholder Approval (as defined in the applicable
+Warrant); and (c) with respect to this Letter Agreement in its entirety, the earliest of (i) the rights under Section 1,
+Section 2 and Section 3 having been terminated in accordance with clauses (a) and (b) above,
+or (ii) the mutual written agreement of the parties.
+5.            Miscellaneous
+Sections.
+(a)            The
+rights of the Seller under this Letter Agreement are personal to the Seller and may not be assigned or transferred, in whole or in part,
+without the prior written consent of the Buyer, and any purported assignment or transfer without such consent shall be null and void;
+provided that the foregoing shall not restrict the transfer of the Warrants to the extent permitted under the terms of the applicable
+Warrant, and in the event of any such transfer (whether in whole or in part), the cash settlement right under Section 3 shall
+automatically transfer to such transferee to the extent relating to the portion of the Warrant so transferred.
+ 5
+(b)            All
+notices hereunder shall be effective when given, and shall be deemed to be given upon receipt or, if earlier, (i) five days after
+deposit with the U.S. Postal Service or other applicable postal service, if delivered by first class mail, postage prepaid, (ii) upon
+delivery, if delivered by hand, (iii) one business day after the business day of deposit with Federal Express or similar overnight
+courier, freight prepaid or (iv) one business day after email transmission, and shall be addressed at such address as the Seller
+or the Buyer (as applicable) shall have furnished in writing.
+All communications sent to
+the Buyer shall be sent to: Archer Aviation Inc., 190 W. Tasman Drive, San Jose, CA 95134, Attention: General Counsel, email: [***], with
+a copy to the Buyer’s counsel at Fenwick & West LLP, 801 California Street, Mountain View, CA 94041, Attention: Patrick
+Grilli, email: [***].
+All communications sent to
+the Seller shall be sent to: The Boeing Company, 100 N. Riverside Plaza, Chicago, IL 60606, Attention: Stephen P. Demontmollin, email:
+[***], with a copy to Boeing’s counsel at Mayer Brown LLP, 71 S. Wacker Drive, Chicago, IL 60606, Attention: Jason Quintana
+and Peter Wolf, email: [***] and [***].
+(c)            This
+Letter Agreement shall be governed by, and construed in accordance with, the laws of the State of Delaware applicable to contracts executed
+in and to be performed in that State. All legal actions and proceedings arising out of or relating to this Letter Agreement shall be heard
+and determined exclusively in any Delaware Chancery Court; provided, that if jurisdiction is not then available in the Delaware
+Chancery Court, then any such legal action may be brought in any federal court located in the State of Delaware or any other Delaware
+state court. The parties hereto hereby (i) irrevocably submit to the exclusive jurisdiction of the aforesaid courts for themselves
+and with respect to their respective properties for the purpose of any action arising out of or relating to this Letter Agreement brought
+by any party hereto, and (ii) agree not to commence any action relating thereto except in the courts described above in Delaware,
+other than actions in any court of competent jurisdiction to enforce any judgment, decree or award rendered by any such court in Delaware
+as described herein. Each of the parties further agrees that notice as provided herein shall constitute sufficient service of process
+and the parties further waive any argument that such service is insufficient. Each of the parties hereby irrevocably and unconditionally
+waives, and agrees not to assert, by way of motion or as a defense, counterclaim or otherwise, in any action arising from this Letter
+Agreement, (x) any claim that it is not personally subject to the jurisdiction of the courts in Delaware as described herein for
+any reason, (y) that it or its property is exempt or immune from jurisdiction of any such court or from any legal process commenced
+in such courts (whether through service of notice, attachment prior to judgment, attachment in aid of execution of judgment, execution
+of judgment or otherwise) and (z) that (i) the action in any such court is brought in an inconvenient forum, (ii) the venue
+of such action is improper or (iii) this Letter Agreement, or the subject matter hereof, may not be enforced in or by such courts.
+ANY RIGHT TO TRIAL BY JURY WITH RESPECT TO ANY CLAIM OR ACTION ARISING OUT OF THIS LETTER AGREEMENT IS HEREBY WAIVED.
+(d)            Each
+of the Buyer and the Seller acknowledges that a breach or threatened breach by such party of any of its obligations under this Letter
+Agreement would give rise to irreparable harm to the other party hereto for which monetary damages would not be an adequate remedy and
+hereby agrees that in the event of a breach or a threatened breach by such party of any such obligations, the other party hereto shall,
+in addition to any and all other rights and remedies that may be available to it in respect of such breach, be entitled to equitable relief,
+including a temporary restraining order, an injunction, specific performance, and any other relief that may be available from a court
+of competent jurisdiction without having to prove the inadequacy of money damages.
+ 6
+(e)            All
+rights and remedies of each party under this Letter Agreement are cumulative and in addition to, and not in lieu of, any other rights
+and remedies available to such party at law, in equity, by contract, or otherwise.
+(f)            No
+modification of or amendment to this Letter Agreement, nor any waiver of any rights under this Letter Agreement, will be effective unless
+in a writing signed by the parties hereto.
+(g)            The
+Seller shall not, by amendment of its Certificate of Incorporation or through a reorganization, transfer of assets, consolidation, merger,
+dissolution, issue, or sale of securities or any other voluntary action, avoid or seek to avoid the observance or performance of any of
+the terms to be observed or performed under this Letter Agreement by the Seller, but shall at all times in good faith assist in carrying
+out of all the provisions of this Letter Agreement and in taking all such action as may be necessary or appropriate to protect the Buyer’s
+rights under this Letter Agreement impairment.
+(h)            The
+parties acknowledge that this Letter Agreement, its terms and the transactions contemplated hereby are subject to the Confidentiality
+Agreement (as defined in the Purchase Agreement). Each party agrees to treat all information relating to this Letter Agreement in accordance
+with the terms of the Confidentiality Agreement and the Restrictive Covenant Agreement.
+(i)            This
+Letter Agreement may be executed in one or more counterparts, each of which will be deemed an original, but all of which together will
+constitute one and the same instrument. Pdf copies of signature pages shall be binding originals.
+[Signature Page Follows]
+ 7
+ Very Truly Yours, | 
+ | 
+ | 
+ | 
+ ARCHER AVIATION INC. | 
+ | 
+ | 
+ | 
+ By: | 
+      | 
+ | 
+ Name: | 
+ | 
+ | 
+ Title: | 
+ | 
+ | 
+ | 
+ | 
+ Agreed and Accepted: | 
+ | 
+ | 
+ | 
+ THE BOEING COMPANY | 
+ | 
+ | 
+ | 
+ By: | 
+ | 
+ | 
+ Name: | 
+ | 
+ | 
+ Title: | 
+ | 
+ | 
+[Signature
+Page to Letter Agreement]

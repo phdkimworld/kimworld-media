@@ -1,0 +1,58 @@
+
+achr-20260924
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+FORM 8-K
+CURRENT REPORT
+Pursuant to Section 13 or 15(d)
+of the Securities Exchange Act of 1934
+Date of Report (Date of earliest event reported): September 18, 2026
+Archer Aviation Inc.
+(Exact Name of Registrant as Specified in its Charter)
+Delaware | 001-39668 | 85-2730902 | 
+(State or other jurisdiction
+of incorporation)
+ | (Commission File Number) | (IRS Employer Identification No.) | 
+190 West Tasman Drive | 
+San Jose, CA
+ | 95134 | 
+(Address of principal executive offices) | (Zip Code) | 
+Registrant’s telephone number, including area code: 650-272-3233
+N/A
+(Former Name or Former Address, if Changed Since Last Report)
+Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:
+☐ | Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) | 
+☐ | Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) | 
+☐ | Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) | 
+☐ | Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) | 
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class | Trading
+Symbol(s)
+ | Name of each exchange
+on which registered
+ | 
+Class A common stock, par value $0.0001 per share | ACHR | New York Stock Exchange | 
+Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (§230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (§240.12b-2 of this chapter).
+Emerging growth company o
+If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. o
+Item 7.01 Regulation FD Disclosure.
+On September 24, 2026, Archer Aviation Inc. (the “Company”) issued a press release announcing the expiration of the required waiting period under the Hart-Scott-Rodino Antitrust Improvements Act of 1976, as amended, with respect to its previously announced transaction with The Boeing Company (“Boeing”) pursuant to which the Company has agreed to acquire all of the equity interests of Wisk Aero LLC, SkyGrid, LLC, and Insitu, Inc., together with certain of their respective related entities (the “Acquisition”). Completion of the Acquisition remains subject to the satisfaction or waiver of certain other closing conditions, including receipt of certain other regulatory approvals, as described more fully in the Form 8-K filed by the Company on August 10, 2026.
+A copy of the press release is attached as Exhibit 99.1 to this Current Report on Form 8-K.
+The information in this Item 7.01 of this Current Report on Form 8-K is being furnished and shall not be deemed “filed” for purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the “Exchange Act”), or otherwise subject to the liabilities of such section, nor shall it be deemed incorporated by reference in any filing under the Exchange Act or the Securities Act of 1933, as amended, except as shall be expressly set forth by specific reference in such filing.
+Forward-looking Statements
+This Current Report on Form 8-K contains certain statements that are not historical facts but are forward-looking statements for purposes of the safe harbor provisions under the Private Securities Litigation Reform Act of 1995. Forward-looking statements generally are accompanied by words such as “believe,” “may,” “will,” “estimate,” “continue,” “anticipate,” “intend,” “expect,” “should,” “would,” “plan,” “predict,” “potential,” “seem,” “seek,” “future,” “outlook,” and similar expressions that predict or indicate future events or trends or that are not statements of historical matters. These forward-looking statements include, but are not limited to, statements regarding future events, including statements about the expected benefits of the Acquisition, the anticipated timing of the closing of the Acquisition and potential impacts on the Company’s business, and other statements that are not historical facts. These statements are based on the current expectations of the Company’s management and are not predictions of actual performance. These forward-looking statements are provided for illustrative purposes only and are not intended to serve as, and must not be relied on, by any investor as a guarantee, an assurance, a prediction or a definitive statement of fact or probability. Actual events and circumstances are difficult or impossible to predict and will differ from assumptions. Many actual events and circumstances are beyond the control of the Company. These forward-looking statements are only predictions and may differ materially from actual results due to a variety of factors. Factors that might cause or contribute to such differences include, but are not limited to: expected benefits from the Acquisition might not be realized within the expected time frames or at all and costs or difficulties relating to integration matters might be greater than expected; any required regulatory approvals and clearances for the Acquisition may be delayed or may not be obtained (or may result in the imposition of conditions); the other closing conditions may be delayed or may not be obtained, or the equity purchase agreement may be terminated; the Company’s or Boeing’s businesses may experience disruptions due to transaction-related uncertainty or other factors making it more difficult to maintain relationships with employees, customers, other business partners or governmental entities; the possibility that the Acquisition is more expensive to complete than anticipated; diversion of management’s attention from ongoing business operations and opportunities as a result of the Acquisition or otherwise; and those factors detailed in the Company’s filings with the SEC, including the Company’s most recent Annual Report on Form 10-K filed with the SEC. Any forward-looking statements contained herein are based on assumptions that the Company believes to be reasonable as of the date they were made. The Company undertakes no obligation to update these statements as a result of new information or future events.
+Item 9.01 Financial Statements and Exhibits.
+(d) Exhibits.
+Exhibit
+Number
+ | Description | 
+99.1 | Press Release
+ | 
+104 | Cover Page Interactive Data File (formatted in the Inline XBRL and contained in Exhibit 101) | 
+SIGNATURE
+Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.
+ARCHER AVIATION INC. | 
+Date: September 24, 2026 | By: | /s/ Eric Lentell | 
+Name: | Eric Lentell | 
+Title: | Chief Strategy Officer | 
