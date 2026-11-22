@@ -79,6 +79,12 @@ def long(v, slides, meta):
     # 48회차 TNXP: 설명란의 '>'(현금 > 시가총액)로 업로드가 invalidDescription 400 → 유튜브는 제목·설명에 < > 를 받지 않는다
     _m = json.load(open(meta, encoding='utf-8'))
     any(c in _m.get('title', '') + desc for c in '<>') and fails.append('제목·설명에 < > 기호(유튜브 400 invalidDescription)')
+    # 매매 질문 제목(운영자 11-22 "매매질문 … 다양하게", skill/runbooks/angles.md): 질문형은 되고 권유·단정·긴급·목표가·보유 여부는 FAIL
+    try:
+        from angle_pick import title_check as _tc
+        _f, _w = _tc(_m.get('title', '')); fails.extend(f'제목 {x}' for x in _f)
+        _w and print('WARN 제목 ' + ' · '.join(_w))
+    except ImportError: pass
     # A10 outro
     out['outro'] = round(seg.get('outro_sec', 0)); out['outro'] < 20 and fails.append(f'outro {out["outro"]}초 < 20초')
     # 브랜드 인트로로 밀린 챕터(brand_shift.py): segments 'brand_intro'와 upload_meta 'brand_shift'가 같아야 한다(mk_meta.py를 다시 돌리면 다시 밀어야 함)
