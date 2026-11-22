@@ -24,3 +24,4 @@
 ## 영상별 집계 (F10 — 숫자는 비공개: phdkimworld/kimworld ops-data `review/sub_test_per_video.md`, 운영자 11-22 "비공개로 옮겨")
 
 - 자료 있는 영상 8/14편 · 1,000회당 구독은 B(질문형) 쪽이 높음 — 관찰 중(12-01 판정) · 갱신 2026-11-22
+| 11-21 | INOD | fzbU46COnbk | B | 341 |
