@@ -24,6 +24,7 @@
 | INOD | 이노데이터 | AI 데이터 | IGV | SOUN | - | artificial intelligence | artificial intelligence;regulation;tariff;customer concentration | |
 | APLD | 어플라이드 디지털 | AI 데이터센터 | WGMI | IREN,CORZ | BTC | data center;export controls artificial intelligence | data center;tariff;power;export control;CoreWeave | |
 | RGTI | 리게티 | 양자 | QTUM | IONQ,QBTS | - | quantum computing;quantum information science | quantum;export control;China;Department of Energy;DARPA | |
+| QBTS | 디웨이브 퀀텀 | 양자 | QTUM | IONQ,RGTI | - | quantum computing;quantum information science;CHIPS and Science Act | quantum;export control;China;tariff;Department of Commerce | |
 | ENVX | 에노빅스 | 배터리 | LIT | SLDP,QS | - | battery;critical minerals | battery;tariff;China;Malaysia;Inflation Reduction Act | |
 | QS | 퀀텀스케이프 | 배터리 | LIT | SLDP,ENVX | - | battery;critical minerals | battery;tariff;China;Volkswagen;Inflation Reduction Act | |
 | LCID | 루시드 | 전기차 | DRIV | RIVN | - | electric vehicle;fuel economy standards | tariff;tax credit;Saudi;electric vehicle | |
