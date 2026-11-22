@@ -27,3 +27,4 @@
 | 11-21 | INOD | fzbU46COnbk | B | 341 |
 | 11-21 | BTQ | oIrfim1wfyY | A | 418 |
 | 11-22 | 패턴 결산 | w-5VJA_M-Fc | B | 374 |
+| 11-22 | BE | VdSWc4jMjzI | A | 428 |
