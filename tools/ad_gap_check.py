@@ -2,7 +2,9 @@
 """롱폼 광고 간격·총량 검사 (운영자 2026-11-22 "유저경험 해치지 않는 한도에서 광고 꽉꽉 채워넣어" — UX 한도).
 합성 뒤(slides_out/segments.json이 생긴 뒤) 돈다. chain_long.sh가 video_check 다음에 부른다.
 
-사용: python3 tools/ad_gap_check.py <video 폴더> [--strict]
+사용: python3 tools/ad_gap_check.py <video 폴더> [--strict] [--retention]
+  --retention: 업로드 뒤(폴더에 video_id) 광고 구간마다 시청 유지 하락(시작 직전 − 끝 1초 뒤, %p)을 한 줄 더 찍는다 —
+    tools/yt_analytics_read.py 유지 곡선(최근 14일 롱폼, 사이트 yt-analytics.yml). AD1 광고 가드 영상 쪽 판정 자료(판정은 사람이, 숫자는 공개 기록에 쓰지 않음)
   → AD_GAP_OK … | AD_GAP_WARN …(기본: 끝 코드 0) | AD_GAP_FAIL …(--strict일 때 끝 코드 1)
   slides_out/yt_midroll_points.txt 에 유튜브 미드롤 광고 권장 시각(장면 전환)을 쓴다(8분 이상만, 업로드 때 운영자 스튜디오 몫).
 
@@ -80,6 +82,12 @@ if dur >= 480:
 
 summ = f'길이 {dur:.0f}초 · 광고 {len(merged)}곳 합계 {total}초({total / dur:.0%}, 상한 {cap}초) · 구간 ' + ', '.join(f'{a:.0f}~{b:.0f} {n}' for a, b, n in merged)
 if pts: summ += f' · 유튜브 미드롤 권장 {len(pts)}곳(slides_out/yt_midroll_points.txt)'
+if '--retention' in sys.argv:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from yt_analytics_read import ret_drop
+    vid = open(os.path.join(V, 'video_id')).read().strip() if os.path.exists(os.path.join(V, 'video_id')) else ''
+    dr = [(a, n, ret_drop(vid, max(0.0, a - 1), b + 1)) for a, b, n in merged] if vid else []
+    print('AD_RETENTION ' + (' · '.join(f'{a:.0f}초 {n} {x:+.1f}%p' for a, n, x in dr if x is not None) or '자료 없음(video_id·유지 곡선 — yt_analytics_read.py --pull)'))
 if bad:
     print(('AD_GAP_FAIL ' if STRICT else 'AD_GAP_WARN ') + ' · '.join(bad) + ' | ' + summ)
     sys.exit(1 if STRICT else 0)

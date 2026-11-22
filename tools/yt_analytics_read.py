@@ -9,8 +9,14 @@
   python3 tools/yt_analytics_read.py                 채널 28·7일 합계 + 영상별 상위 20(평균 시청 비율·시간·구독 증가·유입 상위)
   python3 tools/yt_analytics_read.py <영상ID> ...    그 영상들만
   python3 tools/yt_analytics_read.py --sub-test      review/sub_test.md '영상별 집계'(F10)를 이 자료로 덮어쓴다
+  python3 tools/yt_analytics_read.py --retention <영상ID> [--at 초[,초2]]
+        시청 유지 곡선(2026-11-22~, 최근 14일 롱폼만 — 사이트 yt_analytics.py 'retention'). --at 없으면 10% 간격 요약,
+        --at 초 = 그 시각 유지 비율(audienceWatchRatio, %)·상대 유지(relativeRetentionPerformance), --at a,b = a초 − b초 유지 차(%p).
+        곡선은 길이의 1% 간격 점이라(10분 영상이면 6초) 사이는 직선 보간 — 2.4초 스팅은 점 1~2개 차이로 본다.
+        브랜드 스팅 판정(review/experiments.md 브랜드 줄): --at <brand_intro 시각>,<시각+길이+1>(segments.json 'brand_intro')
   --pull 을 붙이면 먼저 OPS_DIR 에서 git pull
 import:  from yt_analytics_read import get;  get('K6zvU0sUeak') → {views, avp, avd, subs, minutes, title, traffic:[(경로, 조회)...]} 또는 None
+         from yt_analytics_read import ret_at, ret_drop;  ret_at(ID, 초) → (유지 %, 상대 유지) 또는 None · ret_drop(ID, a, b) → %p 또는 None
 """
 import json
 import os
@@ -61,6 +67,56 @@ def avp_map():
     """{영상ID: 평균 시청 비율(%)} — insights.py 등에서 씀."""
     d = load() or {}
     return {v['video']: v.get('averageViewPercentage') for v in d.get('videos', [])}
+
+
+def retention(video_id):
+    """{video, title, published, duration_sec, rows:[[비율, 유지, 상대], …]} 또는 None(최근 14일 롱폼 밖·자료 없음)."""
+    d = load() or {}
+    for r in d.get('retention') or []:
+        if r.get('video') == video_id and r.get('rows'):
+            return r
+    return None
+
+
+def ret_at(video_id, sec):
+    """sec 초 지점 (audienceWatchRatio ×100, relativeRetentionPerformance) — 앞뒤 점 직선 보간."""
+    r = retention(video_id)
+    if not r or not r.get('duration_sec'):
+        return None
+    x, rows = float(sec) / r['duration_sec'], r['rows']
+    if x <= rows[0][0]:
+        return rows[0][1] * 100, rows[0][2]
+    for (x0, a0, p0), (x1, a1, p1) in zip(rows, rows[1:]):
+        if x0 <= x <= x1:
+            w = (x - x0) / (x1 - x0) if x1 > x0 else 0
+            return (a0 + (a1 - a0) * w) * 100, p0 + (p1 - p0) * w
+    return rows[-1][1] * 100, rows[-1][2]
+
+
+def ret_drop(video_id, a, b):
+    """a초 유지 − b초 유지(%p). 광고·스팅 앞뒤 이탈 보기용."""
+    va, vb = ret_at(video_id, a), ret_at(video_id, b)
+    return None if va is None or vb is None else va[0] - vb[0]
+
+
+def show_retention(vid, at=None):
+    r = retention(vid)
+    if not r:
+        print(f'{vid}: 유지 곡선 없음(최근 14일 롱폼만 받음 · 사이트 yt-analytics.yml 실행 뒤 --pull)')
+        return 1
+    print(f"{vid} 유지 곡선 · 길이 {r['duration_sec']}초 · 점 {len(r['rows'])}개 · {r.get('title', '')[:30]}")
+    if at:
+        ts = [float(x) for x in at.split(',')]
+        for t in ts:
+            v = ret_at(vid, t)
+            print(f'  {t:.1f}초: 유지 {v[0]:.1f}% · 상대 유지 {v[1]:.2f}')
+        if len(ts) == 2:
+            print(f'  차이 {ts[0]:.1f}초 → {ts[1]:.1f}초: {ret_drop(vid, ts[0], ts[1]):+.1f}%p(양수 = 그 사이 이탈)')
+    else:
+        for k in range(0, 101, 10):
+            v = ret_at(vid, r['duration_sec'] * k / 100)
+            print(f"  {k:3d}% ({r['duration_sec'] * k / 100:5.0f}초): 유지 {v[0]:5.1f}% · 상대 {v[1]:.2f}")
+    return 0
 
 
 def _fmt(r):
@@ -154,4 +210,6 @@ if __name__ == '__main__':
     pull = '--pull' in args
     args = [a for a in args if a != '--pull']
     load(pull)
+    if args[:1] == ['--retention'] and len(args) > 1:
+        sys.exit(show_retention(args[1], args[args.index('--at') + 1] if '--at' in args[:-1] else None))
     sys.exit(sub_test() if args[:1] == ['--sub-test'] else show(args))

@@ -76,8 +76,9 @@ python3 /home/user/kimworld-media/tools/brand_shift.py . || { echo "CHAIN_FAIL b
 VC=$(python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1); echo "$VC" | tail -3
 echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }
 # 광고 간격·총량(2026-11-22 운영자 "유저경험 해치지 않는 한도에서 광고 꽉꽉" — 첫 30초·outro 없음, 광고 사이 60초, 합계 ≤ min(12%, 75초)).
-# slidekit 쿠팡 띠 배치가 고쳐지기 전(review/ads_max_slidekit_todo.md)에는 경고만 — 고쳐지면 --strict로 올린다. 유튜브 미드롤 권장 시각도 여기서 뽑는다
-python3 /home/user/kimworld-media/tools/ad_gap_check.py . | tail -1
+# 11-22 slidekit 쿠팡 띠 배치 수정(review/ads_max_slidekit_todo.md, 사이트 strip_windows) 적용 → --strict. 유튜브 미드롤 권장 시각도 여기서 뽑는다
+AG=$(python3 /home/user/kimworld-media/tools/ad_gap_check.py . --strict); AGX=$?; echo "$AG" | tail -1
+[ $AGX -eq 0 ] || { echo "CHAIN_FAIL ad_gap_check(광고 간격·총량 — 대본의 안내·중간광고 문단 자리를 60초 떨어뜨림)"; exit 1; }
 if [ -n "$S" ]; then
   wait
   python3 /home/user/kimworld-media/tools/debreath.py "$S/shorts_raw.wav" "$S/shorts_raw_timing.json" || { echo "CHAIN_FAIL debreath shorts"; exit 1; }

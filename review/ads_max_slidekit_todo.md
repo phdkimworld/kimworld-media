@@ -1,6 +1,8 @@
 # slidekit 대기 변경안 — 광고 간격 60초·총량 상한 (2026-11-22 "광고 꽉꽉" UX 한도)
 
-상태: **대기**. 사이트 `tools/slidekit/`은 다른 에이전트가 브랜드 인트로·아웃트로 엔드카드 작업 중이라 그 작업이 끝난 뒤 적용한다(아웃트로 엔드카드 홍보 칸 2개는 그 에이전트 몫 — 여기서 다루지 않음).
+상태: **적용**(2026-11-22, 사이트 `tools/slidekit/make_slide_video.py` `strip_windows()` + 브랜드 스팅 앞뒤 2초·outro(엔드카드) 금지, `check_slides.py` WARN ADGAP, `chain_long.sh` `ad_gap_check.py --strict`). 아래는 적용 전 기록.
+
+이전 상태: 대기. 사이트 `tools/slidekit/`은 다른 에이전트가 브랜드 인트로·아웃트로 엔드카드 작업 중이라 그 작업이 끝난 뒤 적용한다(아웃트로 엔드카드 홍보 칸 2개는 그 에이전트 몫 — 여기서 다루지 않음).
 적용한 뒤: `tools/chain_long.sh`의 `ad_gap_check.py . | tail -1`을 `ad_gap_check.py . --strict … || { echo "CHAIN_FAIL ad_gap_check"; exit 1; }`로 올리고 이 문서 상태를 '적용'으로.
 
 근거: 11-21~22 롱폼 3편 `ad_gap_check.py` — 띠가 영양제 중간광고 시작과 겹침(3편 모두), 광고 사이 22~59초 간격 2~3곳씩, 합계 11~13%. 원인은 `strip_windows()`가 ① 중간광고 문단(사진 없는 'shop' 카드가 든 문단 전체)을 바쁜 구간으로 안 보고 ② 다른 광고와 띠 사이를 0.5초만 띄우고 ③ 띠끼리 30초만 띄우며 ④ '카드 직전' 목표가 중간광고 문단 시작에 떨어지기 때문.
