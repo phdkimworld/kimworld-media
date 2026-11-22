@@ -19,7 +19,7 @@
 | 하려는 일 | 읽을 문서(절) | 강제하는 도구 |
 |---|---|---|
 | **오늘 무엇을 만들까(선정)** | `skill/runbooks/production.md` R1′(핵심 후속편·두 층·탐색 종목·72시간), `review/core_tickers.md`(★ 매일 갱신), `review/selection.md`(지난 판단), `review/requests.md`(시청자 요청) | `tools/prod_check.py`, `core_weekly.py --apply`, `trending.py`(후보 찾기만), `request_rank.py`, `unified_rank.py` |
-| 조사 | SKILL 3장(출처 규칙·병렬 조사·숫자 단일 원천 3.5·직전 리포트 잇기 3.4.1), MASTER_SOP 1장(수급 세 지표·용어 병기) | `tdays.py`(거래일), `verified_table.py`, `biz_digest.py` |
+| 조사 | SKILL 3장(출처 규칙·병렬 조사·숫자 단일 원천 3.5·직전 리포트 잇기 3.4.1·**시장·거시·정책 층 3.6**), MASTER_SOP 1장(수급 세 지표·용어 병기), `review/sector_map.md`(티커 → 업종 ETF·정책 검색어), `review/macro_ctx_sample.md`(SLDP 시험) | `tdays.py`(거래일), `verified_table.py`, `biz_digest.py`, `macro_ctx.py`(시황·금리·달러·유가·VIX·평소 민감도로 예상 vs 실제·다음 FOMC/PCE/CPI·10-K 정책 키워드 → research/macro.md), `macro_check.py`(리포트·대본·쇼츠·Threads 거시 층, 11-23~) |
 | 예측·시나리오 | `review/predictions/README.md` + `<티커>.md`, SKILL 3.4.1·R3 5.6 | `pred_ledger.py --judge --report --ticker T`, `prev_calls_check.py`(prob_basis.md 기저율·틀린다면), `prev_score_sync_check.py` |
 | 사이트 리포트 | SKILL R장(R0.1 이야기형, R1.5 쓰면서 멈칫할 곳 없애기, 그림 4~6개), production.md ⑧, 사이트 `AGENTS.md` | `easy_check.py`(EASY_OK), `chart_check.py`, `llm_judge.py`, 사이트 `tests/test_build.py`·`build.py --strict`, push는 `tools/site_push.sh` |
 | 롱폼 대본 | SKILL V장(V1~V3 훅·열린 고리·재훅, V2.x 숫자 읽기), MASTER_SOP v2.8, `skill/VIDEO_GUIDE_v1.md` | `group_check.py`, `num_speak_check.py`, `josa_check.py`, `krw_unit_check.py`, `close_check.py`, `ai_feel_check.py`, `pre_tts_check.sh` |

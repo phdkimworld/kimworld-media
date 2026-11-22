@@ -724,8 +724,11 @@ def flush_need(tk):
     if not needs:
         return
     os.makedirs(os.path.dirname(NEED), exist_ok=True)
-    with open(NEED, "a", encoding="utf-8") as f:
-        f.write(f"\n# {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} macro_ctx.py {tk} — 막힌 원천(우회하지 않음). 열리면 아래 명령으로 확인 후 다시 실행\n" + "\n".join(needs) + "\n")
+    have = open(NEED, encoding="utf-8").read() if os.path.exists(NEED) else ""
+    new = [n for n in needs if n not in have]  # 같은 막힘은 한 번만
+    if new:
+        with open(NEED, "a", encoding="utf-8") as f:
+            f.write(f"\n# {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} macro_ctx.py {tk} — 막힌 원천(우회하지 않음). 열리면 아래 명령으로 확인 후 다시 실행\n" + "\n".join(new) + "\n")
 
 
 if __name__ == "__main__":

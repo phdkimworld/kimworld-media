@@ -109,7 +109,7 @@ def script(v, sh=None):
     if sh and os.path.exists(os.path.join(sh, "narration.txt")):
         t = open(os.path.join(sh, "narration.txt"), encoding="utf-8").read()
         if not re.search(r"[^.\n]*(민감도|시장|나스닥|업종)[^.\n]*(함께|같이|따라|만큼|비슷)[^.\n]*", t) and not re.search(r"(나스닥|시장|업종|펀드)[가-힣]*도 [^.\n]{0,20}(내렸|올랐|떨어|뛰)", t):
-            bad.append("MACRO_SHORTS 쇼츠에 시장 동반 한 문장(예: '같은 사흘 나스닥도 칠 퍼센트 내렸습니다')이 없음")
+            bad.append("MACRO_SHORTS 쇼츠에 시장 동반 한 문장(예: '같은 세 거래일, 나스닥도 칠 퍼센트 내렸습니다')이 없음")
 
 
 def queue(files):

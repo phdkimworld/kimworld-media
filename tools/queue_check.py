@@ -118,5 +118,8 @@ for f in sys.argv[1:]:
 import subprocess
 pc = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plain_check.py')] + [f for f in sys.argv[1:] if f.endswith('.json')], capture_output=True, text=True).stdout
 if 'PLAIN_FAIL' in pc: bad += ['가독성(plain_check): ' + l.strip() for l in pc.splitlines() if l.startswith(('FAIL', '   '))]
+# 시장·거시 한 줄(운영자 11-22, SKILL K8): publish_at 11-23~ Threads 첫 글·둘째 글 중 하나에 — tools/macro_check.py queue
+mq = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'macro_check.py'), 'queue'] + [f for f in sys.argv[1:] if f.endswith('.json')], capture_output=True, text=True).stdout
+bad += [l.strip() for l in mq.splitlines() if l.startswith('MACRO_THREADS')]
 for b in bad: print('BAD', b)
 print('QUEUE_OK' if not bad else f'QUEUE_FAIL {len(bad)}'); sys.exit(1 if bad else 0)
