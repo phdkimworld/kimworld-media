@@ -13,6 +13,7 @@
 | 티커 | 이름 | 업종 | 업종 ETF | 비교 종목 | 코인 | 정책 검색어 | 10-K 키워드 | 비고 |
 |---|---|---|---|---|---|---|---|---|
 | PLUG | 플러그 파워 | 수소 | HDRO,ICLN | BE,FCEL | - | clean hydrogen;hydrogen production credit;45V | hydrogen;45V;Inflation Reduction Act;tariff;Department of Energy;loan | HDRO 자료 없으면 ICLN(청정에너지) |
+| BE | 블룸 에너지 | 수소·연료전지 발전(데이터센터 전력) | ICLN | PLUG,FCEL,VRT | - | fuel cell;clean hydrogen;investment tax credit;48E | fuel cell;hydrogen;investment tax credit;tariff;data center;Department of Energy | 연료전지 전용 ETF 없음 → ICLN(청정에너지), 데이터센터 전력 비교로 VRT |
 | LAES | 실스크 | 양자 보안 반도체 | QTUM | BTQ,IONQ | - | post-quantum cryptography;quantum computing;export controls semiconductors | post-quantum;quantum;export control;China;tariff;semiconductor | |
 | BTQ | BTQ | 양자 | QTUM | IONQ,LAES | - | post-quantum cryptography;quantum computing | post-quantum;quantum;export control;China;tariff | 40-F·6-K 제출(캐나다) |
 | SLDP | 솔리드파워 | 배터리 | LIT | QS,ENVX | - | battery;critical minerals;foreign entity of concern;advanced manufacturing production credit | battery;Inflation Reduction Act;tariff;China;critical mineral;Department of Energy | |
