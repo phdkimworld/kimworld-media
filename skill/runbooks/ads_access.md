@@ -67,6 +67,10 @@
 - 영상에 김박사 몰(쿠팡) 안내가 있으면 업로드 때 `paid_promo: true`(→ API `paidProductPlacementDetails.hasPaidProductPlacement`) + 설명란 끝 대가성 줄. 옛 영상은 `yt-desc.yml`이 대가성 줄을 함께 넣는다(유료 프로모션 체크는 옛 영상에는 API로 안 바꿈).
 - 유튜브 API 쿼터(하루 1만 단위, 업로드 1건 1,600): 설명란 고치기(약 50단위/편)는 하루 15편 이하.
 
+## 5.5 광고 꽉꽉 + UX 한도 (운영자 2026-11-22 "유저경험 해치지 않는 한도에서 광고 꽉꽉 채워넣어")
+- 감사표·적용·운영자 할 일: `review/ads_max.md`. 광고를 더할 때는 한도부터: 사이트 첫 화면 위·사이 없음, 광고 사이 2.5화면(빌드 `AD_GAP_CHARS`), sticky·팝업 없음, 애드핏 4개 / 롱폼 첫 30초·outro 없음, 광고 사이 60초, 합계 ≤ min(12%, 75초)(`tools/ad_gap_check.py`).
+- 한 번에 하나씩 더하고 사이트 `ads.yaml guard`(기준 7일·판정일·되돌리기)를 같은 커밋에서 고친다. digest '광고 UX 가드'가 되돌릴 것이면 되돌린다(review/experiments.md AD1).
+
 ## 6. 막혔을 때
 
 | 증상 | 할 일 |

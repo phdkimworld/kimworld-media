@@ -20,6 +20,7 @@ if [ -n "$R" ]; then
   RS="/home/user/kimworld-site/content/reports/$(basename "$R")"; [ -f "$RS" ] || RS="$R"
   c prev_calls_check python3 $M/prev_calls_check.py . "$RS"
 fi
+c macro_check python3 $M/macro_check.py script . "$S"
 c krw_unit_check python3 $M/krw_unit_check.py .
 c midroll_check python3 $M/midroll_check.py .
 c thumb_biz_check python3 $M/thumb_biz_check.py thumb/custom

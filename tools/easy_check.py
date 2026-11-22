@@ -584,6 +584,11 @@ if _sn:
 import subprocess as _sp2
 _af = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), p], capture_output=True, text=True)
 if _af.returncode: bad += ['AIFEEL ' + l for l in _af.stdout.split('\n') if l.strip()]
+# 시장·거시·정책 층(운영자 11-22 "시황이나 거시경제 지정학 등 관련된 모든 통찰", SKILL 3.6): data_as_of 11-23~ 리포트만, 지난 리포트 소급 없음
+_mc = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'macro_check.py'), 'report', p], capture_output=True, text=True)
+for _l in _mc.stdout.split('\n'):
+    if _l.startswith('WARN '): warns.append(_l[5:])
+    elif _l.startswith('MACRO_') and not _l.startswith(('MACRO_OK', 'MACRO_SKIP')): bad.append(_l)
 if warns: print('\n'.join('WARN ' + w for w in warns))
 print('\n'.join(bad) if bad else f'EASY_OK 문장 {len(sents)} · 90자↑ {len(longs)} · 숫자 많은 문장 {len(dense)}')
 sys.exit(1 if bad else 0)
