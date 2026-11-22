@@ -599,7 +599,7 @@
   {
    "slides": [
     {
-     "from": 1,
+     "from": 0,
      "anim": {
       "tpl": "compare_bars",
       "data": {
@@ -1322,6 +1322,12 @@
     5
    ],
    "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "정리\n**다섯 기준을 한 번에**",
+     "at": 0
+    },
     {
      "from": 1,
      "layout": "list",
