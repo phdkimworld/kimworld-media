@@ -1,0 +1,61 @@
+{
+ "slug": "<slug>",
+ "asof": "2026-11-20",
+ "source": "나스닥 일별 종가",
+ "figs": [
+  {
+   "n": 3,
+   "type": "relative",
+   "base": "2026-11-13",
+   "to": "2026-11-20",
+   "title": [
+    "디웨이브 퀀텀·업종·시장, 11월 13일 종가 = 100"
+   ],
+   "sub": "같은 기간 함께 움직였는지 보세요",
+   "series": [
+    {
+     "name": "디웨이브 퀀텀",
+     "data": {
+      "file": "../research/macro_px/QBTS.json"
+     }
+    },
+    {
+     "name": "양자 펀드",
+     "data": {
+      "file": "../research/macro_px/QTUM.json"
+     }
+    },
+    {
+     "name": "나스닥 100 펀드",
+     "data": {
+      "file": "../research/macro_px/QQQ.json"
+     }
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "compare",
+   "title": [
+    "평소 민감도로 예상한 움직임과 실제"
+   ],
+   "sub": "11월 13일 → 11월 20일, 기준 나스닥 100 펀드(QQQ)",
+   "items": [
+    {
+     "label": "디웨이브 퀀텀",
+     "sub": "평소 민감도로 예상",
+     "value": -26.6,
+     "text": "-26.6%"
+    },
+    {
+     "label": "디웨이브 퀀텀",
+     "sub": "실제",
+     "value": -31.8,
+     "text": "-31.8%",
+     "hi": true
+    }
+   ],
+   "unit": "%"
+  }
+ ]
+}

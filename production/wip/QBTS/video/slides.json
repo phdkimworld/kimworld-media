@@ -1,0 +1,1645 @@
+{
+ "ticker": "QBTS",
+ "name": "디웨이브 퀀텀",
+ "shop": "../kit/h1b_card.png",
+ "sub_text": "지금 팔아야 될까? 근거를 모아 갑니다",
+ "next_text": "리게티 컴퓨팅(RGTI) · 지난 디웨이브 편 · 설명란 링크",
+ "shop_strip": "오메가3 뒷면 숫자 · 링크는 설명란 둘째 줄",
+ "outro_promo": [
+  {
+   "tag": "건강 가이드",
+   "title": "오메가3 뒷면 숫자 보는 법",
+   "sub": "설명란 둘째 줄 링크",
+   "url": "health.drkimworld.com",
+   "note": "유료 광고 포함",
+   "color": "#3DDC97"
+  },
+  "alert"
+ ],
+ "midroll": "../kit/qbts_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/qbts_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "디웨이브 퀀텀 · 11월 20일",
+       "left": {
+        "label": "7거래일 연속 하락",
+        "value": "-38.8%",
+        "tone": "gold"
+       },
+       "mid": "1년 고점 대비",
+       "right": {
+        "label": "32.19달러에서",
+        "value": "-79.7%"
+       },
+       "question": "지금이라도 팔아야 하나?",
+       "beats": [
+        0,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "1년 고점 32.19달러에서 6.52달러로",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "디웨이브 퀀텀 종가(달러)",
+       "unit": "달러",
+       "points": [
+        [
+         "12.22",
+         32.19,
+         "1년 고점 32.19달러"
+        ],
+        [
+         "9.4",
+         16.58,
+         "상무부 지원 확정 16.58달러"
+        ],
+        [
+         "11.10",
+         10.48,
+         "3분기 실적 10.48달러"
+        ],
+        [
+         "11.20",
+         6.52,
+         "6.52달러"
+        ]
+       ],
+       "beats": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "디웨이브 퀀텀\n**지금 팔아야 될까?**",
+     "at": 0,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "오늘 볼 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "시장 탓은 얼마인가",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "버티는 쪽 근거 3 · 파는 쪽 근거 3",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "판단을 바꿀 날짜",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "중간에 답할 질문",
+     "stats": [
+      {
+       "at": 3,
+       "big": "수주 7배",
+       "label": "왜 주가를 받치지 못했나",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "지난 리포트 뒤",
+       "sub": "종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "10월 15일",
+         "sub": "지난 리포트",
+         "value": 12.815
+        },
+        {
+         "label": "11월 20일",
+         "sub": "-49.1%",
+         "value": 6.52,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "지난 리포트 갈래: 고점 뒤 다섯 번째 실적 하락",
+     "left": {
+      "at": 2,
+      "head": "계기: 매출 제자리",
+      "big": "빗나감",
+      "lines": [
+       "3분기 매출 451만 달러(+20.7%)"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "실적 뒤 하락",
+      "big": "나옴",
+      "lines": [
+       "11월 10일 대비 5거래일 -22.9%"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "지난 리포트",
+     "stats": [
+      {
+       "at": 6,
+       "big": "가능성 % 없음",
+       "label": "채점은 서술로",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "stat",
+     "title": "예측 성적표",
+     "stats": [
+      {
+       "at": 7,
+       "big": "설명란 링크",
+       "label": "drkimworld.com/scorecard",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "만드는 것 · NYSE QBTS",
+     "stats": [
+      {
+       "at": 0,
+       "big": "어닐링 양자컴퓨터",
+       "label": "가장 좋은 조합 찾기",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "잘하는 문제",
+     "items": [
+      {
+       "no": "1",
+       "text": "배송 경로",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "작업 일정 짜기",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "돈 버는 세 갈래",
+     "items": [
+      {
+       "no": "1",
+       "text": "클라우드로 빌려주기",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "고객과 문제 풀기",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "컴퓨터 팔기",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "아직 돈을 버는 단계는 아니다",
+       "sub": "3분기(백만 달러)",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "매출",
+         "value": 4.5,
+         "hi": true
+        },
+        {
+         "label": "순손실",
+         "value": 48.2
+        }
+       ],
+       "source": "자료: SEC 8-K·10-Q · 기준 2026-11-16",
+       "beats": [
+        5,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "11월 10일 실적 발표\n**좋은 소식도**",
+     "at": 0,
+     "kicker": "실적"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "9개월 수주는 7배, 3분기만 보면 줄었다",
+       "source": "디웨이브 실적 발표 자료(2026-11-10) · 기준 2026-11-20",
+       "sub": "백만 달러",
+       "note": "남은 이행 의무(앞으로 매출이 될 계약)는 1년 전 290만 → 3,830만 달러",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2025년 9개월 수주",
+         "value": 5.3,
+         "text": "5.3"
+        },
+        {
+         "label": "2026년 9개월 수주",
+         "value": 37.4,
+         "text": "37.4",
+         "hi": true
+        },
+        {
+         "label": "2025년 3분기 수주",
+         "value": 2.4,
+         "text": "2.4"
+        },
+        {
+         "label": "2026년 3분기 수주",
+         "value": 1.9,
+         "text": "1.9"
+        },
+        {
+         "label": "3분기 매출",
+         "sub": "1년 전 3.7",
+         "value": 4.5,
+         "text": "4.5"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "미국 상무부",
+     "stats": [
+      {
+       "at": 2,
+       "big": "최대 1억 달러",
+       "label": "단계별 지원 · 상무부는 주식 7,095,721주",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "한국",
+     "stats": [
+      {
+       "at": 3,
+       "big": "엘지씨엔에스",
+       "label": "양자컴퓨팅 활용 양해각서",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "그날 종가 10.48달러",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-8.6%",
+       "label": "11월 10일 하루",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "7거래일 연속 하락",
+       "sub": "종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "11월 11일",
+         "value": 10.65
+        },
+        {
+         "label": "11월 13일",
+         "value": 9.56
+        },
+        {
+         "label": "11월 17일",
+         "value": 8.08
+        },
+        {
+         "label": "11월 20일",
+         "sub": "-38.8%",
+         "value": 6.52,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "11월 20일 종가 6.52달러",
+     "stats": [
+      {
+       "at": 2,
+       "big": "1년 7개월 만의 최저",
+       "label": "2025년 4월 22일 6.25달러 뒤",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "같은 기간 회사 서류",
+       "left": {
+        "label": "10-Q와",
+        "value": "임원 3명"
+       },
+       "mid": "세금용",
+       "right": {
+        "label": "회사에 넘긴 주식",
+        "value": "33,976주",
+        "tone": "gold"
+       },
+       "question": "스스로 골라 판 매도는 아님",
+       "beats": [
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "시장 탓은\n**얼마일까**",
+     "at": 0,
+     "kicker": "시장·거시",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "평소 민감도 · 나스닥 100 펀드 기준",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 2.7배",
+       "label": "시장 1% → 평균 2.7%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "하락의 약 84%는 시장 몫",
+       "source": "나스닥 종가, 민감도는 11월 13일 전 250거래일 하루 수익률 회귀 · 기준 2026-11-20",
+       "sub": "11월 13일 종가 → 11월 20일 종가(%)",
+       "note": "차이 -5.2%p는 평소 5거래일 흔들림(±12.2%p) 안",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "디웨이브 예상",
+         "sub": "나스닥 100 펀드 × 평소 민감도 약 2.7배",
+         "value": -26.6,
+         "text": "-26.6%"
+        },
+        {
+         "label": "디웨이브 실제",
+         "value": -31.8,
+         "text": "-31.8%",
+         "hi": true
+        },
+        {
+         "label": "아이온큐 실제",
+         "sub": "같은 양자 무리",
+         "value": -28.3,
+         "text": "-28.3%"
+        },
+        {
+         "label": "리게티 실제",
+         "sub": "같은 양자 무리",
+         "value": -25.6,
+         "text": "-25.6%"
+        },
+        {
+         "label": "양자 펀드(QTUM)",
+         "value": -14.4,
+         "text": "-14.4%"
+        },
+        {
+         "label": "나스닥 100 펀드(QQQ)",
+         "value": -10.5,
+         "text": "-10.5%"
+        }
+       ],
+       "beats": [
+        3,
+        4,
+        4,
+        4,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "5거래일 하락 가운데",
+     "stats": [
+      {
+       "at": 5,
+       "big": "대부분 시장 움직임",
+       "label": "차이 -5.2%p · 평소 흔들림 ±12.2%p 안",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "11월 20일 변동성 지수(VIX)",
+     "stats": [
+      {
+       "at": 6,
+       "big": "35.89",
+       "label": "다음 큰 일정 12월 9일 연준 금리 회의(FOMC)",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "같은 양자 무리",
+       "sub": "11월 13일 → 20일(%)",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "디웨이브",
+         "value": -31.8,
+         "hi": true
+        },
+        {
+         "label": "아이온큐",
+         "value": -28.3
+        },
+        {
+         "label": "리게티",
+         "value": -25.6
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "김박사 월드 핵심 종목 8개 중",
+     "stats": [
+      {
+       "at": 2,
+       "big": "7개",
+       "label": "평소 민감도로 예상한 범위 안",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "회사 하나가 아니라\n**소형 성장주 전체의 일**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "첫 번째 단서\n**과거 비슷한 순간**",
+     "at": 0,
+     "kicker": "기록",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2022년 상장 뒤 7거래일 이상 연속 하락",
+     "stats": [
+      {
+       "at": 1,
+       "big": "8번",
+       "label": "20거래일 뒤를 아는 경우",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "7거래일 연속 하락 8번, 20거래일 뒤",
+       "source": "나스닥 종가(2022-08-08 이후) · 기준 2026-11-20",
+       "sub": "2022년 8월 상장 뒤 8번을 그 뒤 변화로 나눔",
+       "note": "더 높았던 경우 2번(25%), 대부분 주가가 1달러 안팎이던 2022~2023년 기록",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "20% 넘게 오름",
+         "value": 1,
+         "text": "1번"
+        },
+        {
+         "label": "0~20% 오름",
+         "value": 1,
+         "text": "1번"
+        },
+        {
+         "label": "0~20% 내림",
+         "value": 2,
+         "text": "2번"
+        },
+        {
+         "label": "20% 넘게 내림",
+         "value": 4,
+         "text": "4번",
+         "hi": true
+        }
+       ],
+       "beats": [
+        2,
+        2,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "날짜별 기록표",
+     "stats": [
+      {
+       "at": 4,
+       "big": "홈페이지 무료 리포트",
+       "label": "drkimworld.com",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "다만 이 기록에는\n**큰 단서가 붙는다**",
+     "at": 5
+    },
+    {
+     "from": 6,
+     "layout": "compare",
+     "title": "그때와 지금",
+     "left": {
+      "at": 6,
+      "head": "2022~2024년",
+      "big": "주가 1달러 안팎",
+      "lines": [
+       "새 주식 판매 프로그램 진행"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 6,
+      "head": "지금",
+      "big": "판매 프로그램 끝남",
+      "lines": [
+       "10-Q 기준"
+      ],
+      "tone": "up"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "버티는 쪽 1\n**하락의 성격**",
+     "at": 0,
+     "kicker": "버티는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 20일 하루",
+       "sub": "%",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "예상",
+         "sub": "QQQ -5.7% × 약 2.7배",
+         "value": -15.2
+        },
+        {
+         "label": "실제",
+         "value": -10.8,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "회사 고유의 새 나쁜 소식",
+     "stats": [
+      {
+       "at": 3,
+       "big": "기록 없음",
+       "label": "11월 20일까지 SEC 제출 기준",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "버티는 쪽 2\n**시간**",
+     "at": 0,
+     "kicker": "버티는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "현금은 시가총액의 약 20%",
+       "source": "SEC 10-Q·실적 발표 자료(2026-11-10·16), 나스닥 종가 · 기준 2026-11-20",
+       "sub": "백만 달러",
+       "note": "1년 사이 줄어든 현금의 대부분은 1월 퀀텀 서킷 인수 대금 2억 5,280만 달러",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "시가총액",
+         "sub": "11월 20일 6.52달러 × 3억 8,006만 주",
+         "value": 2478.0,
+         "text": "2,478.0",
+         "hi": true
+        },
+        {
+         "label": "9월 말 현금·단기 투자",
+         "value": 503.4,
+         "text": "503.4"
+        },
+        {
+         "label": "1년 전 현금·단기 투자",
+         "sub": "2025년 9월 말",
+         "value": 836.2,
+         "text": "836.2"
+        },
+        {
+         "label": "올해 9개월 영업 현금 유출",
+         "value": 109.0,
+         "text": "109.0"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "단순히 나누면",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 14분기 치",
+       "label": "5억 340만 ÷ 한 분기 약 3,630만 달러",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "상무부 지원금",
+     "stats": [
+      {
+       "at": 4,
+       "big": "5,360만 달러",
+       "label": "9월 4일부터 사용 가능 · 9월 말까지 받은 돈 없음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "버티는 쪽 3\n**쌓이는 계약**",
+     "at": 0,
+     "kicker": "버티는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "앞으로 매출이 될 계약(남은 이행 의무)",
+       "sub": "백만 달러",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2025년 3분기",
+         "value": 2.9
+        },
+        {
+         "label": "2026년 3분기",
+         "value": 38.3,
+         "hi": true
+        }
+       ],
+       "source": "자료: 디웨이브 실적 발표 자료 · 기준 2026-11-10",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "도코모(일본 최대 이동통신사)",
+     "stats": [
+      {
+       "at": 2,
+       "big": "두 번째 실서비스",
+       "label": "피크 위치 등록 신호 65% 감소(회사 발표)",
+       "tone": "up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "영양제도 차트처럼 · 유료 광고 포함",
+     "stats": [
+      {
+       "at": 0,
+       "big": "숫자 하나",
+       "label": "오메가3 고를 때",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "앞면 vs 뒷면 · 유료 광고 포함",
+     "left": {
+      "at": 1,
+      "head": "앞면",
+      "big": "1,000mg",
+      "lines": [
+       "캡슐 하나의 무게일 수 있음"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "뒷면 표",
+      "big": "EPA + DHA 합",
+      "lines": [
+       "이 숫자를 보세요"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "식약처 인정 기능성 · 유료 광고 포함",
+     "items": [
+      {
+       "no": "1",
+       "text": "EPA와 DHA의 합 하루 0.5~2g",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "혈중 중성지질 개선·혈행 개선에 도움을 줄 수 있음",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "고르는 법: 설명란 둘째 줄",
+       "at": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "파는 쪽 1\n**앞의 기록**",
+     "at": 0,
+     "kicker": "파는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "7거래일 연속 하락 8번, 20거래일 뒤",
+       "sub": "번",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "더 낮음",
+         "value": 6,
+         "hi": true
+        },
+        {
+         "label": "더 높음",
+         "value": 2
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "7거래일 -35% 넘게 빠진 6번",
+     "left": {
+      "at": 3,
+      "head": "20거래일 뒤 더 높음",
+      "big": "0번",
+      "lines": [
+       "6번 중"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 3,
+      "head": "20% 넘게 내림",
+      "big": "3번",
+      "lines": [
+       "6번 중"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "파는 쪽 2\n**아직 무거운 몸값**",
+     "at": 0,
+     "kicker": "파는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "11월 20일 6.52달러 기준",
+       "left": {
+        "label": "한 주당 현금",
+        "value": "약 1.32달러"
+       },
+       "mid": "주가는",
+       "right": {
+        "label": "그 약",
+        "value": "4.9배",
+        "tone": "gold"
+       },
+       "question": "시가총액 약 24억 7,800만 달러",
+       "beats": [
+        2,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "수주, 분기로 쪼개 보면",
+       "sub": "3분기 수주(백만 달러)",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2025년 3분기",
+         "value": 2.4
+        },
+        {
+         "label": "2026년 3분기",
+         "value": 1.9,
+         "hi": true
+        }
+       ],
+       "source": "자료: 디웨이브 실적 발표 자료 · 기준 2026-11-10",
+       "beats": [
+        5,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "quote",
+     "text": "계약이 쌓인 속도보다\n**이미 매겨 둔 값이 더 컸다**",
+     "at": 6
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "파는 쪽 3\n**이 종목의 성질**",
+     "at": 0,
+     "kicker": "파는 쪽"
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "시장이 5% 더 빠지면",
+       "sub": "평소 민감도 약 2.7배로 계산(%)",
+       "unit": "%",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "나스닥 100 펀드",
+         "value": -5.0
+        },
+        {
+         "label": "디웨이브 평균",
+         "value": -13,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "최근 20거래일",
+     "stats": [
+      {
+       "at": 3,
+       "big": "하루 5% 넘게 11일",
+       "label": "변동성이 큰 종목",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "9월 말 장부",
+     "left": {
+      "at": 4,
+      "head": "영업권·무형자산",
+      "big": "5억 5,100만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 4,
+      "head": "현금·단기 투자",
+      "big": "5억 340만",
+      "lines": [
+       "달러"
+      ],
+      "tone": "white"
+     }
+    }
+   ]
+  },
+  {
+   "next": [
+    4
+   ],
+   "sub": [
+    6
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "상무부가 받은 값보다 얼마나 아래",
+       "sub": "11월 20일 종가 기준(%)",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "리게티",
+         "sub": "매입가 12.92달러",
+         "value": -44.6
+        },
+        {
+         "label": "디웨이브",
+         "sub": "14.093달러",
+         "value": -53.7,
+         "hi": true
+        }
+       ],
+       "source": "자료: 각 회사 공시, 나스닥 종가 · 기준 2026-11-20",
+       "beats": [
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "정부가 주주라는 사실이\n**바닥이 되지는 않았다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "이어 보기",
+     "left": {
+      "at": 4,
+      "head": "리게티 편",
+      "big": "같은 양자 무리",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 4,
+      "head": "지난 디웨이브 편",
+      "big": "10월 15일",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "크게 흔들린 미국 종목\n**기록으로 끝까지**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "판단을 바꿀\n**신호와 날짜**",
+     "at": 0,
+     "kicker": "확인 신호",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "첫 신호",
+     "stats": [
+      {
+       "at": 1,
+       "big": "12월 9일 FOMC 뒤",
+       "label": "평소 민감도만큼 따라 오르나",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "둘째 신호",
+     "stats": [
+      {
+       "at": 3,
+       "big": "새 주식 판매 공시",
+       "label": "8-K·424B",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "12월 21일 종가의 기준선",
+       "sub": "달러",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "+20% 선",
+         "sub": "위면 버티는 쪽 강해짐",
+         "value": 7.82
+        },
+        {
+         "label": "11월 20일 종가",
+         "value": 6.52,
+         "hi": true
+        },
+        {
+         "label": "-20% 선",
+         "sub": "아래면 파는 쪽 강해짐",
+         "value": 5.22
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        4,
+        5,
+        6
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "팔지 말지 정하기 전에\n**볼 것**",
+     "at": 0,
+     "kicker": "체크리스트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "팔기 전 확인 1~3",
+     "items": [
+      {
+       "no": "1",
+       "text": "산 이유가 아직 살아 있나(10-Q)",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "시장 탓인가 회사 탓인가",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "시장 -5%에 약 -13%를 감당할 수 있나",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "팔기 전 확인 4~5",
+     "items": [
+      {
+       "no": "4",
+       "text": "새 주식 판매 공시",
+       "at": 4
+      },
+      {
+       "no": "5",
+       "text": "12월 21일 달력에",
+       "at": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 21일",
+       "label": "11월 20일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 21일, 가장 무거운 갈래도 35%",
+       "source": "SEC 8-K·10-Q, 나스닥 종가 · 기준 2026-11-20",
+       "note": "가능성은 주가 확률이 아니라 과거 기록에서 출발한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "4 · 크게 더 내림",
+         "sub": "5.22달러 아래(-20% 넘게)",
+         "p": 35,
+         "range": [
+          28,
+          40
+         ],
+         "hi": true
+        },
+        {
+         "label": "3 · 조금 더 내림",
+         "sub": "5.22~6.52달러",
+         "p": 29,
+         "range": [
+          23,
+          35
+         ]
+        },
+        {
+         "label": "2 · 조금 되돌림",
+         "sub": "6.52~7.82달러",
+         "p": 21,
+         "range": [
+          15,
+          27
+         ]
+        },
+        {
+         "label": "1 · 크게 되돌림",
+         "sub": "7.82달러 위(+20% 넘게)",
+         "p": 15,
+         "range": [
+          10,
+          20
+         ]
+        }
+       ],
+       "decision": "판정: 12월 21일 종가(11월 20일 뒤 20거래일째) · 기준선 7.82·6.52·5.22달러",
+       "beats": [
+        1,
+        4,
+        4,
+        4
+       ],
+       "decision_beat": 1
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주가 확률이 아니라\n**분석자의 주관적 추정**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "지금 디웨이브",
+     "left": {
+      "at": 0,
+      "head": "현금",
+      "big": "약 14분기 치",
+      "lines": [
+       "계약도 늘어남"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "몸값",
+      "big": "한 주당 현금의 약 4.9배",
+      "lines": [
+       "시장보다 약 2.7배 흔들림"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "12월 21일까지의 신호로",
+     "items": [
+      {
+       "no": "+",
+       "text": "7.82달러 위 · 시장 반등을 평소만큼: 버티는 쪽",
+       "at": 1
+      },
+      {
+       "no": "−",
+       "text": "5.22달러 아래 · 새 주식 판매: 파는 쪽",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결정은 각자의 몫이며,\n**이 영상과 리포트는 판단 근거를 정리한 교육용 자료입니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "아까 말씀드린 오메가3",
+     "stats": [
+      {
+       "at": 4,
+       "big": "뒷면 숫자 보는 법",
+       "label": "설명란 둘째 줄",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 5,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 21일\n**디웨이브 퀀텀 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 21일, 디웨이브 퀀텀 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "7.82 위"
+      },
+      {
+       "at": 3,
+       "text": "그 사이"
+      },
+      {
+       "at": 4,
+       "text": "6.52 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 종목과 질문도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
