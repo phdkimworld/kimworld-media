@@ -125,10 +125,23 @@ def sub_test():
         rows.append(f"| {vid} | {g} | {v} | {s} | {s / v * 1000:.1f} |" if v else f'| {vid} | {g} | 0 | {s} | - |')
     per = lambda g: f"조회 {sums[g][0]} · 구독 {sums[g][1]} · {sums[g][1] / sums[g][0] * 1000:.1f}/1,000회" if sums[g][0] else '—'
     rg = '~'.join(d.get('range', {}).get('d28', []))
-    body = ('## 영상별 집계 (F10 — 사이트 yt-analytics.yml → ops stats/yt_analytics.json 최근 28일, `tools/yt_analytics_read.py --sub-test`, 하루 첫 제작 세션이 덮어씀)\n\n'
-            '| 영상 ID | A/B | 조회 | 구독 증가 | 1,000회당 |\n| --- | --- | --- | --- | --- |\n' + '\n'.join(rows) +
-            f"\n\nA 합계: {per('A')} · B 합계: {per('B')} · 기간 {rg} · 갱신: {d.get('generated_at', '')[:16]}Z\n")
-    # 절 끝(다음 '## ' 또는 파일 끝)까지 교체
+    # 11-22 운영자 "비공개로 옮겨": 숫자 표는 비공개 ops 저장소에만, 공개 미디어에는 판정만
+    priv = os.path.join(os.environ.get('OPS_DIR', '/home/claude/kimworld-ops'), 'review', 'sub_test_per_video.md')
+    os.makedirs(os.path.dirname(priv), exist_ok=True)
+    open(priv, 'w', encoding='utf-8').write(
+        '# 구독 시험 영상별 집계 (비공개 — tools/yt_analytics_read.py --sub-test가 덮어씀)\n\n'
+        '| 영상 ID | A/B | 조회 | 구독 증가 | 1,000회당 |\n| --- | --- | --- | --- | --- |\n' + '\n'.join(rows) +
+        f"\n\nA 합계: {per('A')} · B 합계: {per('B')} · 기간 {rg} · 갱신: {d.get('generated_at', '')[:16]}Z\n")
+    have = sum(1 for r in rows if not r.endswith('| - | - | - |'))
+    ra = sums['A'][1] / sums['A'][0] if sums['A'][0] else None
+    rb = sums['B'][1] / sums['B'][0] if sums['B'][0] else None
+    if ra is None or rb is None:
+        verdict = '아직 비교할 자료 부족'
+    else:
+        lead = 'B(질문형)' if rb > ra else ('A' if ra > rb else '같음')
+        verdict = f"1,000회당 구독은 {lead} 쪽이 높음 — 관찰 중(12-01 판정)"
+    body = ('## 영상별 집계 (F10 — 숫자는 비공개: phdkimworld/kimworld ops-data `review/sub_test_per_video.md`, 운영자 11-22 "비공개로 옮겨")\n\n'
+            f"- 자료 있는 영상 {have}/{len(rows)}편 · {verdict} · 갱신 {d.get('generated_at', '')[:10]}\n")
     nxt = re.search(r'^## ', tail[1:], re.M)
     rest = tail[1 + nxt.start():] if nxt else ''
     open(SUB_TEST, 'w', encoding='utf-8').write(head + body + ('\n' + rest if rest else ''))

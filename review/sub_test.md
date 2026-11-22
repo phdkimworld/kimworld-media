@@ -21,23 +21,6 @@
 | 11-21 | SLDP | JusnxXSiIVQ | B | 326 |
 | 11-21 | SMR | LtzNialqBF8 | A | 415 |
 
-## 영상별 집계 (F10 — 사이트 yt-analytics.yml → ops stats/yt_analytics.json 최근 28일, `tools/yt_analytics_read.py --sub-test`, 하루 첫 제작 세션이 덮어씀)
+## 영상별 집계 (F10 — 숫자는 비공개: phdkimworld/kimworld ops-data `review/sub_test_per_video.md`, 운영자 11-22 "비공개로 옮겨")
 
-| 영상 ID | A/B | 조회 | 구독 증가 | 1,000회당 |
-| --- | --- | --- | --- | --- |
-| K6zvU0sUeak | B | 200 | 2 | 10.0 |
-| usFP6dPpDX8 | B | 139 | 2 | 14.4 |
-| 3c5XFLVO9sM | A | 16 | 0 | 0.0 |
-| CpGayNCaSHU | A | 19 | 0 | 0.0 |
-| WBTk2DeqVjA | B | 399 | 1 | 2.5 |
-| CG8DRq8t1dc | B | 24 | 0 | 0.0 |
-| 2LuMR4kBlmA | A | 159 | 1 | 6.3 |
-| m2eALHEvv8c | B | 34 | 0 | 0.0 |
-| G4LwNPV5bB8 | A | - | - | - |
-| 9XvR-qdcTUE | B | - | - | - |
-| 1TKhp0NOkYU | A | - | - | - |
-| c-8RHgUfHv8 | A | - | - | - |
-| JusnxXSiIVQ | B | - | - | - |
-| LtzNialqBF8 | A | - | - | - |
-
-A 합계: 조회 194 · 구독 1 · 5.2/1,000회 · B 합계: 조회 796 · 구독 5 · 6.3/1,000회 · 기간 2026-10-25~2026-11-21 · 갱신: 2026-11-22T00:38Z
+- 자료 있는 영상 8/14편 · 1,000회당 구독은 B(질문형) 쪽이 높음 — 관찰 중(12-01 판정) · 갱신 2026-11-22
