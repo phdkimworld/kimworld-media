@@ -71,7 +71,7 @@ tail -1 synth.log
 # video_check 결과의 ✗를 CHAIN_FAIL로 올린다(11-05 IREN 58회차: 쇼츠 mk_meta.py가 없어 검사가 건너뛰어졌고, 정지 4.2초 쇼츠가 그대로 올라감)
 [ -f mk_meta.py ] || { echo "CHAIN_FAIL long mk_meta.py 없음(video_check를 못 함)"; exit 1; }
 python3 mk_meta.py > /dev/null || { echo "CHAIN_FAIL long mk_meta.py 실행 오류"; exit 1; }
-# 브랜드 인트로(11-22)로 밀린 챕터 시각 보정 — mk_meta.py가 raw_timing.json으로 쓴 챕터에 스팅 길이를 더한다(인트로 없으면 건너뜀)
+# 브랜드 인트로(11-22, 기본 0초)로 밀린 챕터 시각 보정 — mk_meta.py가 raw_timing.json으로 쓴 챕터에 인트로 길이를 더한다(00:00은 그대로, 인트로 없으면 건너뜀)
 python3 /home/user/kimworld-media/tools/brand_shift.py . || { echo "CHAIN_FAIL brand_shift(챕터 인트로 보정)"; exit 1; }
 VC=$(python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1); echo "$VC" | tail -3
 echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }

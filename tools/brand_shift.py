@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """설명란 챕터 시각을 브랜드 인트로 길이만큼 민다(2026-11-22 운영자 "인트로 영상을 만들어서 브랜드를 각인", 사이트 slidekit/brand.py).
-합성(make_slide_video.py)이 첫 훅 문단 끝에 2.4초 스팅을 끼우면 그 뒤 나레이션이 모두 2.4초 밀린다. mk_meta.py는 raw_timing.json(원래 녹음 시각)으로
-챕터를 쓰므로, 끼운 시각 이후 챕터에 길이를 더한다(초 올림 — 챕터가 말보다 먼저 시작하지 않게).
+합성(make_slide_video.py)이 영상 맨 앞(0초, 11-22 운영자 "인트로로 브랜드를 각인하라고 했잖아" — 기본)이나 훅 문단 뒤(예전 방식)에 2.4초 인트로를 넣으면
+그 뒤 나레이션이 모두 2.4초 밀린다. mk_meta.py는 raw_timing.json(원래 녹음 시각)으로 챕터를 쓰므로, 끼운 시각 이후 챕터에 길이를 더한다(초 올림 —
+챕터가 말보다 먼저 시작하지 않게). 첫 챕터 00:00은 늘 그대로 둔다(유튜브 챕터는 0:00에서 시작해야 함 — 0초 인트로면 첫 챕터가 인트로를 품는다, '0:00 인트로' 챕터는 만들지 않음).
 사용: python3 tools/brand_shift.py <video 폴더>   (mk_meta.py 바로 뒤, chain_long.sh가 부른다)
 - slides_out/segments.json 'brand_intro' = [시각, 길이]가 없으면(인트로 없음·NO_BRAND) 아무것도 하지 않는다: BRAND_SHIFT_SKIP
 - upload_meta.json 'brand_shift'에 적용한 값을 남겨 두 번 밀지 않는다(mk_meta.py를 다시 돌리면 그 키가 없어져 다시 민다)

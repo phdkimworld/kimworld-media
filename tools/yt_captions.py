@@ -297,7 +297,7 @@ def srt(cues):
 
 
 def long_sents(folder):
-    # 브랜드 인트로(2026-11-22, 사이트 slidekit/brand.py): 합성이 첫 훅 문단 뒤에 2.4초 스팅을 끼우면 뒤 문장이 그만큼 밀린다.
+    # 브랜드 인트로(2026-11-22, 사이트 slidekit/brand.py): 합성이 0초(기본)나 훅 문단 뒤에 2.4초 인트로를 넣으면 뒤 문장이 그만큼 밀린다.
     # 그때 make_slide_video.py가 영상 시간축 문장 시각을 slides_out/timing_video.json에 남기므로 그것을 먼저 쓴다(없으면 raw_timing.json = 인트로 없음)
     tv = os.path.join(folder, "slides_out", "timing_video.json")
     src = tv if os.path.exists(tv) else os.path.join(folder, "raw_timing.json")

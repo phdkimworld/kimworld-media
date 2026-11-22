@@ -13,7 +13,7 @@
         시청 유지 곡선(2026-11-22~, 최근 14일 롱폼만 — 사이트 yt_analytics.py 'retention'). --at 없으면 10% 간격 요약,
         --at 초 = 그 시각 유지 비율(audienceWatchRatio, %)·상대 유지(relativeRetentionPerformance), --at a,b = a초 − b초 유지 차(%p).
         곡선은 길이의 1% 간격 점이라(10분 영상이면 6초) 사이는 직선 보간 — 2.4초 스팅은 점 1~2개 차이로 본다.
-        브랜드 스팅 판정(review/experiments.md 브랜드 줄): --at <brand_intro 시각>,<시각+길이+1>(segments.json 'brand_intro')
+        브랜드 0초 인트로 판정(review/experiments.md 브랜드 줄): --at 5 = 5초 유지 비율 → 그 회차 vs 직전 롱폼 5편 평균(5%p 넘게 낮으면 운영자 보고)
   --pull 을 붙이면 먼저 OPS_DIR 에서 git pull
 import:  from yt_analytics_read import get;  get('K6zvU0sUeak') → {views, avp, avd, subs, minutes, title, traffic:[(경로, 조회)...]} 또는 None
          from yt_analytics_read import ret_at, ret_drop;  ret_at(ID, 초) → (유지 %, 상대 유지) 또는 None · ret_drop(ID, a, b) → %p 또는 None

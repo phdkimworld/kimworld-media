@@ -50,7 +50,7 @@ def long(v, slides, meta):
             if ats and min(ats) > f: bad.append(f'p{pi} {s.get("layout")} {s.get("title", "")}')
     bad and fails.append(f'빈 화면 슬라이드 {len(bad)}개: {bad[:5]}')
     ads = seg.get('ad', [])
-    # 브랜드 인트로 스팅(2026-11-22, brand.py): 목소리 없는 2.4초 워드마크 화면은 빈 화면·정지로 세지 않는다(미드롤처럼 컷 두 개로 본다)
+    # 브랜드 인트로(2026-11-22, brand.py — 기본 0초, 예전 방식은 훅 뒤): 목소리 없는 2.4초 워드마크 화면은 빈 화면·정지로 세지 않는다(미드롤처럼 컷 두 개로 본다)
     bi = seg.get('brand_intro'); ads_x = ads + ([[bi[0], bi[0] + bi[1]]] if bi else [])
     in_ad = lambda t: any(a - 0.5 <= t <= b + 0.5 for a, b in ads_x)
     fr_ = gray_frames(v, 'crop=iw:ih*0.78:0:ih*0.22,')
@@ -83,6 +83,7 @@ def long(v, slides, meta):
     out['outro'] = round(seg.get('outro_sec', 0)); out['outro'] < 20 and fails.append(f'outro {out["outro"]}초 < 20초')
     # 브랜드 인트로로 밀린 챕터(brand_shift.py): segments 'brand_intro'와 upload_meta 'brand_shift'가 같아야 한다(mk_meta.py를 다시 돌리면 다시 밀어야 함)
     if bi and _m.get('brand_shift') != bi: fails.append(f'챕터가 브랜드 인트로({bi[0]:.0f}초 +{bi[1]}초)만큼 안 밀림: python3 tools/brand_shift.py <video 폴더>')
+    # 0초 인트로(11-22 운영자 "인트로로 브랜드를 각인하라고 했잖아")에서도 같다: brand_shift가 첫 챕터 00:00은 그대로 두고 나머지만 민다(위 '00:00' 검사가 첫 챕터를 본다)
     line = (f"검증: 해상도 {out['res']} · 10초 훅 확인 필요(check_10s.png) · 빈 화면 {out['empty']}초 · 최장 정지 {out['still']}초 · "
             f"미드롤 전체화면 {out['ad']} · 움직이는 장면 {len(anims)}컷 · 표기 위반 {out['money']} · 챕터 {out['chap']}개 · outro {out['outro']}초")
     return line, fails
