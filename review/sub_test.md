@@ -28,3 +28,4 @@
 | 11-21 | BTQ | oIrfim1wfyY | A | 418 |
 | 11-22 | 패턴 결산 | w-5VJA_M-Fc | B | 374 |
 | 11-22 | BE | VdSWc4jMjzI | A | 428 |
+| 11-22 | ACHR | 76JW6fhIjEw | B | 362 |
