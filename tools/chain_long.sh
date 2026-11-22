@@ -70,8 +70,14 @@ nice -n 10 python3 /home/claude/slidekit/make_slide_video.py slides.json raw.wav
 tail -1 synth.log
 # video_check 결과의 ✗를 CHAIN_FAIL로 올린다(11-05 IREN 58회차: 쇼츠 mk_meta.py가 없어 검사가 건너뛰어졌고, 정지 4.2초 쇼츠가 그대로 올라감)
 [ -f mk_meta.py ] || { echo "CHAIN_FAIL long mk_meta.py 없음(video_check를 못 함)"; exit 1; }
-python3 mk_meta.py > /dev/null && VC=$(python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1); echo "$VC" | tail -3
+python3 mk_meta.py > /dev/null || { echo "CHAIN_FAIL long mk_meta.py 실행 오류"; exit 1; }
+# 브랜드 인트로(11-22)로 밀린 챕터 시각 보정 — mk_meta.py가 raw_timing.json으로 쓴 챕터에 스팅 길이를 더한다(인트로 없으면 건너뜀)
+python3 /home/user/kimworld-media/tools/brand_shift.py . || { echo "CHAIN_FAIL brand_shift(챕터 인트로 보정)"; exit 1; }
+VC=$(python3 /home/user/kimworld-media/tools/video_check.py long "${T}_slide_video.mp4" slides.json upload_meta.json 2>&1); echo "$VC" | tail -3
 echo "$VC" | grep -q "✗" && { echo "CHAIN_FAIL video_check long"; exit 1; }
+# 광고 간격·총량(2026-11-22 운영자 "유저경험 해치지 않는 한도에서 광고 꽉꽉" — 첫 30초·outro 없음, 광고 사이 60초, 합계 ≤ min(12%, 75초)).
+# slidekit 쿠팡 띠 배치가 고쳐지기 전(review/ads_max_slidekit_todo.md)에는 경고만 — 고쳐지면 --strict로 올린다. 유튜브 미드롤 권장 시각도 여기서 뽑는다
+python3 /home/user/kimworld-media/tools/ad_gap_check.py . | tail -1
 if [ -n "$S" ]; then
   wait
   python3 /home/user/kimworld-media/tools/debreath.py "$S/shorts_raw.wav" "$S/shorts_raw_timing.json" || { echo "CHAIN_FAIL debreath shorts"; exit 1; }

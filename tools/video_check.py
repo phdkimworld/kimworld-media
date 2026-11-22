@@ -50,7 +50,9 @@ def long(v, slides, meta):
             if ats and min(ats) > f: bad.append(f'p{pi} {s.get("layout")} {s.get("title", "")}')
     bad and fails.append(f'빈 화면 슬라이드 {len(bad)}개: {bad[:5]}')
     ads = seg.get('ad', [])
-    in_ad = lambda t: any(a - 0.5 <= t <= b + 0.5 for a, b in ads)
+    # 브랜드 인트로 스팅(2026-11-22, brand.py): 목소리 없는 2.4초 워드마크 화면은 빈 화면·정지로 세지 않는다(미드롤처럼 컷 두 개로 본다)
+    bi = seg.get('brand_intro'); ads_x = ads + ([[bi[0], bi[0] + bi[1]]] if bi else [])
+    in_ad = lambda t: any(a - 0.5 <= t <= b + 0.5 for a, b in ads_x)
     fr_ = gray_frames(v, 'crop=iw:ih*0.78:0:ih*0.22,')
     empty = [i for i, x in enumerate(fr_) if sum(1 for b in x if b > 90) < 6 and not in_ad(i)]
     out['empty'] = len(empty); len(empty) > 2 and fails.append(f'본문 빈 초 {len(empty)}초 {empty[:10]}')
@@ -60,7 +62,7 @@ def long(v, slides, meta):
     # 서서히 그려지는 선은 장면 전환 점수로 안 잡히므로, 움직이는 구간은 정지로 세지 않고 시작·움직임 끝을 컷으로 본다(움직임 끝 뒤 유지 구간은 그대로 셈)
     anims = [(x[0], x[1]) for x in seg.get('anim', [])]
     in_anim = lambda t: any(a <= t <= b for a, b in anims)
-    cuts = sorted(set([0.0] + scene_times(v, 0.04) + [a for a, b in ads] + [b for a, b in ads] + [x for ab in anims for x in ab] + [outro0]))
+    cuts = sorted(set([0.0] + scene_times(v, 0.04) + [a for a, b in ads_x] + [b for a, b in ads_x] + [x for ab in anims for x in ab] + [outro0]))
     gaps = [(a, b) for a, b in zip(cuts, cuts[1:]) if b <= outro0 + 0.1 and not in_ad((a + b) / 2) and not in_anim((a + b) / 2)]
     lg = max(gaps, key=lambda g: g[1] - g[0]) if gaps else (0, 0)
     out['still'] = round(lg[1] - lg[0]); lg[1] - lg[0] > 15 and fails.append(f'정지 {lg[1]-lg[0]:.0f}초({lg[0]:.0f}~{lg[1]:.0f})')
@@ -79,6 +81,8 @@ def long(v, slides, meta):
     any(c in _m.get('title', '') + desc for c in '<>') and fails.append('제목·설명에 < > 기호(유튜브 400 invalidDescription)')
     # A10 outro
     out['outro'] = round(seg.get('outro_sec', 0)); out['outro'] < 20 and fails.append(f'outro {out["outro"]}초 < 20초')
+    # 브랜드 인트로로 밀린 챕터(brand_shift.py): segments 'brand_intro'와 upload_meta 'brand_shift'가 같아야 한다(mk_meta.py를 다시 돌리면 다시 밀어야 함)
+    if bi and _m.get('brand_shift') != bi: fails.append(f'챕터가 브랜드 인트로({bi[0]:.0f}초 +{bi[1]}초)만큼 안 밀림: python3 tools/brand_shift.py <video 폴더>')
     line = (f"검증: 해상도 {out['res']} · 10초 훅 확인 필요(check_10s.png) · 빈 화면 {out['empty']}초 · 최장 정지 {out['still']}초 · "
             f"미드롤 전체화면 {out['ad']} · 움직이는 장면 {len(anims)}컷 · 표기 위반 {out['money']} · 챕터 {out['chap']}개 · outro {out['outro']}초")
     return line, fails
