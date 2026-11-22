@@ -1,0 +1,1475 @@
+{
+ "ticker": "BTQ",
+ "name": "BTQ 테크놀로지스",
+ "shop": "../kit/h3_card.png",
+ "shop_strip": "유산균 고르는 법 · 링크는 설명란 둘째 줄",
+ "sub_text": "지금 사도 될까? 근거를 모아 갑니다",
+ "next_text": "실스크(LAES) · 리게티(RGTI) · 설명란 링크",
+ "midroll": "../kit/btq_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/btq_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "1년 고점 7.11달러에서 1.03달러로, 1달러 선까지 3%",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "BTQ 테크놀로지스 종가(달러)",
+       "unit": "달러",
+       "points": [
+        [
+         "12.4",
+         7.11,
+         "1년 고점 7.11달러"
+        ],
+        [
+         "6.17",
+         5.89,
+         "판매 계약 직전 5.89달러"
+        ],
+        [
+         "10.22",
+         2.04,
+         "계약 뒤 첫 새 최저 2.04달러"
+        ],
+        [
+         "11.20",
+         1.03,
+         "1.03달러"
+        ]
+       ],
+       "beats": [
+        0,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "BTQ 테크놀로지스 · 11월 20일",
+       "left": {
+        "label": "나스닥 1달러 선",
+        "value": "1.00달러"
+       },
+       "mid": "까지 3%",
+       "right": {
+        "label": "종가",
+        "value": "1.03달러",
+        "tone": "gold"
+       },
+       "question": "현금은 두 배인데 왜 새 최저?",
+       "beats": [
+        4,
+        4,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "BTQ 테크놀로지스\n**지금 사도 될까?**",
+     "at": 0,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "오늘 볼 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "지난 편 뒤 바뀐 것",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "사는 쪽 근거 3 · 사지 않는 쪽 근거 3",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "판단을 바꿀 날짜",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "중간에 답할 질문",
+     "stats": [
+      {
+       "at": 3,
+       "big": "두 배가 된 현금",
+       "label": "왜 양쪽에 동시에 놓이나",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "11월 17일 리포트 예측 7개",
+     "stats": [
+      {
+       "at": 0,
+       "big": "진행 중",
+       "label": "모두 12월 판정",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "지켜볼 신호: 10월 22일 새 최저 뒤 20거래일째",
+       "sub": "종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "10월 22일",
+         "sub": "계약 뒤 첫 새 최저",
+         "value": 2.04
+        },
+        {
+         "label": "11월 19일",
+         "sub": "20거래일째 · -44.1%",
+         "value": 1.14,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "판매 중단·큰 조달 공시",
+     "stats": [
+      {
+       "at": 4,
+       "big": "없음",
+       "label": "11월 17일 6-K 두 건 뒤 제출 0건",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "지금 자리",
+     "stats": [
+      {
+       "at": 5,
+       "big": "업종 약세, 함께 아래",
+       "label": "지난 리포트가 가장 무겁게 본 갈래(약 40%)",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "예측 성적표",
+     "stats": [
+      {
+       "at": 6,
+       "big": "설명란 링크",
+       "label": "drkimworld.com/scorecard",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "지난 편 뒤 3거래일, 아이온큐와 거의 같은 폭",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "11월 17일 종가 대비 11월 20일 종가",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "아이온큐",
+         "value": -16.6,
+         "text": "-16.6%"
+        },
+        {
+         "label": "BTQ",
+         "sub": "회사 새 공시 0건",
+         "value": -16.3,
+         "text": "-16.3%",
+         "hi": true
+        },
+        {
+         "label": "리게티",
+         "value": -15.4,
+         "text": "-15.4%"
+        },
+        {
+         "label": "실스크",
+         "value": -11.3,
+         "text": "-11.3%"
+        },
+        {
+         "label": "양자 펀드(QTUM)",
+         "value": -9.0,
+         "text": "-9.0%"
+        },
+        {
+         "label": "QQQ",
+         "sub": "나스닥 100 펀드",
+         "value": -7.4,
+         "text": "-7.4%"
+        }
+       ],
+       "beats": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 17일 뒤 BTQ SEC 제출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0건",
+       "label": "회사 소식 없음",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "이번 하락은\n**업종 흐름**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "양자 시대 보안 기술 · 캐나다 밴쿠버",
+     "stats": [
+      {
+       "at": 0,
+       "big": "BTQ 테크놀로지스",
+       "label": "NASDAQ BTQ",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "큰 갈래",
+     "items": [
+      {
+       "no": "1",
+       "text": "아이씨티케이와 만드는 보안 칩",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "블록체인용 보안 네트워크",
+       "at": 1
+      },
+      {
+       "no": "?",
+       "text": "아직 돈을 버는 단계 아님",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "올해 9개월 매출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0",
+       "label": "순손실 약 5,616만 캐나다달러",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "연구·영업비는",
+     "stats": [
+      {
+       "at": 4,
+       "big": "새 주식 판매로",
+       "label": "메우는 구조",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    8
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "첫 번째 단서\n**과거 비슷한 순간**",
+     "at": 0,
+     "kicker": "기록",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "상장 뒤 새 최저 종가",
+     "stats": [
+      {
+       "at": 2,
+       "big": "18일",
+       "label": "20거래일 뒤를 아는 날",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "상장 뒤 새 최저를 찍은 날, 20거래일 뒤",
+       "source": "나스닥 종가(2025-09-26 상장 뒤) · 기준 2026-11-20",
+       "sub": "새 최저 종가 18일(20거래일 뒤를 아는 날)을 그 뒤 변화로 나눔",
+       "note": "겹치는 날을 모두 센 값, 실제로는 세 번의 흐름",
+       "unit": "일",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "27% 넘게 오름",
+         "sub": "모두 판매 계약 전(2·3월)",
+         "value": 2,
+         "text": "2일"
+        },
+        {
+         "label": "0~27% 오름",
+         "value": 2,
+         "text": "2일"
+        },
+        {
+         "label": "0~20% 내림",
+         "value": 5,
+         "text": "5일"
+        },
+        {
+         "label": "20% 넘게 내림",
+         "sub": "계약 뒤 10월 22·23일 포함",
+         "value": 9,
+         "text": "9일",
+         "hi": true
+        }
+       ],
+       "beats": [
+        3,
+        3,
+        4,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "더 높았던 4일과 계약 뒤",
+     "left": {
+      "at": 5,
+      "head": "판매 계약 전",
+      "big": "2·3월",
+      "lines": [
+       "더 높았던 4일 모두"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 5,
+      "head": "판매 계약 뒤",
+      "big": "-40% 넘게",
+      "lines": [
+       "10월 새 최저, 20거래일 뒤"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "18일은 겹치는 날\n**실제로는 세 번의 흐름**",
+     "at": 7
+    },
+    {
+     "from": 8,
+     "layout": "stat",
+     "title": "날짜별 기록표",
+     "stats": [
+      {
+       "at": 8,
+       "big": "홈페이지 무료 리포트",
+       "label": "drkimworld.com",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 1\n**두 배가 된 현금**",
+     "at": 0,
+     "kicker": "사는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "분기 말 현금",
+       "sub": "만 캐나다달러",
+       "unit": "만",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "6월 말",
+         "value": 973
+        },
+        {
+         "label": "9월 말",
+         "value": 2157,
+         "hi": true
+        }
+       ],
+       "source": "자료: SEC 6-K · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "분기 뒤 11월 16일까지 판매 대금",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 510만",
+       "label": "캐나다달러",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 영업 현금 유출",
+     "stats": [
+      {
+       "at": 3,
+       "big": "약 1,168만",
+       "label": "캐나다달러 · 그 속도면 두 분기 남짓",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "당장 돈이 끊길\n**자리는 아니다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 2\n**하락의 성격**",
+     "at": 0,
+     "kicker": "사는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "BTQ와 아이온큐, 같은 구간",
+       "sub": "구간 수익률(%)",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "BTQ",
+         "sub": "11.13 → 11.17",
+         "value": -14.0,
+         "hi": true
+        },
+        {
+         "label": "아이온큐",
+         "sub": "11.13 → 11.17",
+         "value": -14.0
+        },
+        {
+         "label": "BTQ",
+         "sub": "11.17 → 11.20",
+         "value": -16.3,
+         "hi": true
+        },
+        {
+         "label": "아이온큐",
+         "sub": "11.17 → 11.20",
+         "value": -16.6
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1,
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "업종 때문에 빠진 부분은\n**되돌아올 여지**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    7
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 3\n**사업의 진척**",
+     "at": 0,
+     "kicker": "사는 쪽"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 17일 보도자료",
+     "stats": [
+      {
+       "at": 1,
+       "big": "보안 칩 설계 완료",
+       "label": "QCIM",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "9월 카이아 재단 3년 계약",
+     "stats": [
+      {
+       "at": 2,
+       "big": "첫해 매출 예상",
+       "label": "'여섯 자리 미국 달러'",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "11월 20일 시가총액(달러)",
+     "stats": [
+      {
+       "at": 6,
+       "big": "1억 5,634만",
+       "label": "상장 뒤 최고 대비 -92.7%",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "자체 블록체인 계획",
+     "stats": [
+      {
+       "at": 4,
+       "big": "비트코인 퀀텀",
+       "label": "2027년 상반기 목표 · 아직 계획 단계",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "사는 쪽 · 사지 않는 쪽 근거 표",
+       "at": 7
+      },
+      {
+       "no": "2",
+       "text": "판매 가격 흐름",
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 1\n**열려 있는 판매 창구**",
+     "at": 0,
+     "kicker": "사지 않는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "아까의 질문",
+     "left": {
+      "at": 2,
+      "head": "두 배가 된 현금",
+      "big": "사는 쪽",
+      "lines": [
+       "당장 돈은 있다"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 2,
+      "head": "그 돈의 출처",
+      "big": "새 주식 판매",
+      "lines": [
+       "지금도 이어짐"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "새 주식을 판 한 주 평균 가격",
+       "source": "SEC 6-K(3분기 재무제표·경영진 설명) · 기준 2026-11-20",
+       "sub": "시장 판매 대금 ÷ 판 주식 수(캐나다달러)",
+       "note": "남은 판매 한도 약 1억 1,500만 캐나다달러(11월 16일 기준)",
+       "unit": "캐나다달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "6월",
+         "sub": "판매 계약 첫 달, 57만 9,800주",
+         "value": 7.74,
+         "text": "약 7.74"
+        },
+        {
+         "label": "3분기",
+         "sub": "518만 8,313주",
+         "value": 4.87,
+         "text": "4.87"
+        },
+        {
+         "label": "분기 뒤~11월 16일",
+         "sub": "153만 6,107주",
+         "value": 3.32,
+         "text": "약 3.32",
+         "hi": true
+        }
+       ],
+       "beats": [
+        5,
+        5,
+        5
+       ]
+      }
+     }
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "남은 판매 한도(11월 16일)",
+     "stats": [
+      {
+       "at": 6,
+       "big": "약 1억 1,500만",
+       "label": "캐나다달러 · 시가총액과 같은 자릿수",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 7,
+     "layout": "quote",
+     "text": "오르는 날 새 주식이 나오면\n**업종보다 덜 오른다**",
+     "at": 7
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 2\n**짧은 기록**",
+     "at": 0,
+     "kicker": "사지 않는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "판매 계약 뒤 새 최저, 20거래일 뒤",
+       "sub": "그날 종가 대비(%)",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "10월 22일",
+         "sub": "2.04달러",
+         "value": -44.1,
+         "hi": true
+        },
+        {
+         "label": "10월 23일",
+         "sub": "2.00달러",
+         "value": -48.5
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "김박사 월드 예측 장부",
+     "left": {
+      "at": 2,
+      "head": "판정선을 지킨다",
+      "big": "4번 중 0번",
+      "lines": [
+       "11월 핵심 종목"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 2,
+      "head": "이탈 뒤 회복",
+      "big": "6번 중 1번",
+      "lines": [
+       "20거래일 안"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "1년 최저가\n**곧 바닥은 아니었다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 3\n**1달러 선과 계속기업**",
+     "at": 0,
+     "kicker": "사지 않는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 20일 종가와 1달러 선",
+       "sub": "달러",
+       "unit": "달러",
+       "decimals": 3,
+       "items": [
+        {
+         "label": "BTQ",
+         "value": 1.03,
+         "hi": true
+        },
+        {
+         "label": "나스닥 1달러 선",
+         "sub": "30영업일 연속 아래면 미달 통지",
+         "value": 1.0
+        },
+        {
+         "label": "실스크",
+         "sub": "같은 양자 무리",
+         "value": 0.962
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 재무제표",
+     "stats": [
+      {
+       "at": 3,
+       "big": "중대한 불확실성",
+       "label": "영업을 이어 갈 수 있을지",
+       "tone": "down"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "shop": [
+    1
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "잠깐, 오래 앉아 차트를 보는 생활 · 유료 광고 포함",
+     "stats": [
+      {
+       "at": 0,
+       "big": "+1.5회",
+       "label": "비피더스균 락티스 · 일주일 배변 횟수 평균 변화(연구 14개)",
+       "tone": "gold",
+       "note": "PMID 25099542"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "고를 때 뒷면에서",
+     "stats": [
+      {
+       "at": 2,
+       "big": "균주 이름",
+       "label": "유료 광고 포함 · 설명란 둘째 줄 가이드",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "next": [
+    3
+   ],
+   "sub": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "같은 양자 무리\n**같은 모양**",
+     "at": 0,
+     "kicker": "같은 패턴"
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "11월 20일",
+     "left": {
+      "at": 1,
+      "head": "실스크",
+      "big": "0.962달러",
+      "lines": [
+       "이미 1달러 아래"
+      ],
+      "tone": "down"
+     },
+     "right": {
+      "at": 1,
+      "head": "리게티 컴퓨팅",
+      "big": "7.16달러",
+      "lines": [
+       "9거래일 연속 하락 · 1년 최저"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "김박사 월드 장부 통찰",
+     "stats": [
+      {
+       "at": 2,
+       "big": "내릴 때만 같이",
+       "label": "소형주는 업종 반등을 덜 따라감",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "compare",
+     "title": "이어 보기",
+     "left": {
+      "at": 3,
+      "head": "실스크 편",
+      "big": "1달러 아래",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 3,
+      "head": "리게티 편",
+      "big": "9거래일 하락",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "1달러 선 앞의 주식\n**어디로 가는지 끝까지 셉니다**",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "판단을 바꿀\n**신호와 날짜**",
+     "at": 0,
+     "kicker": "확인 신호",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 20일 뒤 20거래일째",
+     "stats": [
+      {
+       "at": 1,
+       "big": "12월 21일",
+       "label": "종가 확인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "지난 리포트 판정일",
+     "stats": [
+      {
+       "at": 2,
+       "big": "12월 14일·15일",
+       "label": "1.43 · 1.31달러",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "12월 21일 종가의 기준선",
+       "sub": "달러",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "지난 판정선",
+         "sub": "위면 사는 쪽 강해짐",
+         "value": 1.31
+        },
+        {
+         "label": "11월 20일 종가",
+         "value": 1.03,
+         "hi": true
+        },
+        {
+         "label": "20% 더 낮은 선",
+         "sub": "아래면 사지 않는 쪽 강해짐",
+         "value": 0.82
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        3,
+        3,
+        4
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "list",
+     "title": "공시 신호",
+     "items": [
+      {
+       "no": "+",
+       "text": "판매 중단 공시: 사는 쪽",
+       "at": 6
+      },
+      {
+       "no": "−",
+       "text": "한 번에 큰 물량 조달: 사지 않는 쪽",
+       "at": 6
+      },
+      {
+       "no": "!",
+       "text": "1달러 아래 마감: 30영업일 세기",
+       "at": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사려는 분이\n**먼저 확인할 것**",
+     "at": 0,
+     "kicker": "체크리스트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "사기 전 확인 1~3",
+     "items": [
+      {
+       "no": "1",
+       "text": "현금과 분기 뒤 판 주식 수",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "남은 판매 한도 vs 시가총액",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "1달러 선까지 거리",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "사기 전 확인 4~5",
+     "items": [
+      {
+       "no": "4",
+       "text": "하루 10% 움직임 견딜 수 있나",
+       "at": 4
+      },
+      {
+       "no": "5",
+       "text": "12월 14·15·21일 달력에",
+       "at": 5
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "확인표",
+     "stats": [
+      {
+       "at": 6,
+       "big": "리포트 끝 부록",
+       "label": "어디서 · 언제 볼지",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 21일",
+       "label": "11월 20일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 21일, 가장 무거운 갈래도 36%",
+       "source": "SEC 6-K, 나스닥 종가 · 기준 2026-11-20",
+       "note": "가능성은 주가 확률이 아니라 과거 기록에서 출발한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "4 · 20% 더 하락",
+         "sub": "0.82달러 아래",
+         "p": 35,
+         "range": [
+          30,
+          40
+         ]
+        },
+        {
+         "label": "3 · 1달러 근처 머묾",
+         "sub": "0.82~1.03달러",
+         "p": 36,
+         "range": [
+          31,
+          40
+         ],
+         "hi": true
+        },
+        {
+         "label": "2 · 반등",
+         "sub": "1.03~1.31달러",
+         "p": 21,
+         "range": [
+          15,
+          27
+         ]
+        },
+        {
+         "label": "1 · 지난 판정선 회복",
+         "sub": "1.31달러 위",
+         "p": 8,
+         "range": [
+          4,
+          12
+         ]
+        }
+       ],
+       "decision": "판정: 12월 21일 종가(11월 20일 뒤 20거래일째) · 기준선 1.31·1.03·0.82달러",
+       "beats": [
+        2,
+        3,
+        4,
+        4
+       ],
+       "decision_beat": 1
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "quote",
+     "text": "주가 확률이 아니라\n**분석자의 주관적 추정**",
+     "at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "최근 20거래일, 하루 크게 움직인 날",
+       "sub": "일",
+       "unit": "일",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "하루 5% 넘게",
+         "value": 10,
+         "hi": true
+        },
+        {
+         "label": "하루 10% 넘게",
+         "value": 3
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        0
+       ]
+      }
+     }
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "같은 자리, 다른 길",
+     "left": {
+      "at": 1,
+      "head": "업종 되돌림",
+      "big": "반등 칸",
+      "lines": [
+       "판매가 이어져도"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 1,
+      "head": "계약 뒤 새 최저처럼",
+      "big": "-40% 넘게",
+      "lines": [
+       "20거래일 뒤"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "18일은 겹치는 날\n**실제로는 세 번의 흐름**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    4,
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "지금 BTQ",
+     "left": {
+      "at": 0,
+      "head": "현금",
+      "big": "두 배",
+      "lines": [
+       "9월 말, 6월 말 대비"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "그 돈의 출처",
+      "big": "새 주식",
+      "lines": [
+       "판매 창구 열려 있음"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "12월 21일 종가와 공시로",
+     "items": [
+      {
+       "no": "+",
+       "text": "1.31달러 위, 판매 중단: 사는 쪽",
+       "at": 1
+      },
+      {
+       "no": "−",
+       "text": "0.82달러 아래, 큰 조달, 1달러 아래: 사지 않는 쪽",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결정은 각자의 몫이며,\n**이 영상과 리포트는 판단 근거를 정리한 교육용 자료입니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "고정 댓글의 무료 리포트",
+     "items": [
+      {
+       "no": "1",
+       "text": "사는 쪽 · 사지 않는 쪽 근거 표",
+       "at": 4
+      },
+      {
+       "no": "2",
+       "text": "판매 가격 흐름",
+       "at": 4
+      },
+      {
+       "no": "3",
+       "text": "사기 전 확인표",
+       "at": 4
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 5,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 21일\n**BTQ 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 21일, BTQ 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "1.31달러 위"
+      },
+      {
+       "at": 3,
+       "text": "1.03~1.31"
+      },
+      {
+       "at": 4,
+       "text": "1.03달러 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 종목과 질문도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
