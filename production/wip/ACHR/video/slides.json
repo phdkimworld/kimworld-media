@@ -1,0 +1,1531 @@
+{
+ "ticker": "ACHR",
+ "name": "아처 에비에이션",
+ "shop": "../kit/h3_card.png",
+ "sub_text": "지금 사도 될까? 근거를 모아 갑니다",
+ "next_text": "조비 에비에이션(JOBY) · 뉴스케일(SMR) · 설명란 링크",
+ "shop_strip": "유산균 균주 이름 · 링크는 설명란 둘째 줄",
+ "midroll": "../kit/achr_youtube_midroll_1920x1080.png",
+ "midroll_app": "../kit/achr_youtube_midroll_app_1920x1080.png",
+ "paras": [
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "아처 에비에이션 · 11월 20일",
+       "left": {
+        "label": "시가총액의",
+        "value": "약 59% 현금"
+       },
+       "mid": "그런데",
+       "right": {
+        "label": "7거래일 연속 하락",
+        "value": "-40.1%",
+        "tone": "gold"
+       },
+       "question": "현금 많은 회사가 왜 이렇게?",
+       "beats": [
+        0,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "live_chart",
+      "data": {
+       "title": "1년 고점 9.01달러에서 2.91달러로",
+       "source": "나스닥 종가 · 기준 2026-11-20",
+       "sub": "아처 에비에이션 종가(달러)",
+       "unit": "달러",
+       "points": [
+        [
+         "1.22",
+         9.01,
+         "1년 고점 9.01달러"
+        ],
+        [
+         "8.10",
+         6.26,
+         "보잉 3사 인수 발표 6.26달러"
+        ],
+        [
+         "11.9",
+         4.81,
+         "3분기 실적 4.81달러"
+        ],
+        [
+         "11.20",
+         2.91,
+         "2.91달러"
+        ]
+       ],
+       "beats": [
+        1,
+        2,
+        3,
+        4
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "아처 에비에이션\n**지금 사도 될까?**",
+     "at": 0,
+     "kicker": "시청자 질문"
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "오늘 볼 것",
+     "items": [
+      {
+       "no": "1",
+       "text": "시장 탓은 얼마인가",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "사는 쪽 근거 3 · 사지 않는 쪽 근거 3",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "판단을 바꿀 날짜",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "중간에 답할 질문",
+     "stats": [
+      {
+       "at": 3,
+       "big": "넉넉한 현금",
+       "label": "왜 사지 않는 쪽에도 놓이나",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "김박사 월드 첫 아처 편",
+     "stats": [
+      {
+       "at": 0,
+       "big": "지난 예측 없음",
+       "label": "채점할 예측은 이번 편부터",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "고른 이유",
+     "stats": [
+      {
+       "at": 1,
+       "big": "조비와 같은 무리",
+       "label": "핵심 종목 주말 새 공시 0건 · 에어택시",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "지난 예측에서 얻은 규칙",
+       "sub": "장부 11-18 기준 적중 횟수",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "신저가를 깨는 쪽",
+         "sub": "4번 중",
+         "value": 4,
+         "hi": true
+        },
+        {
+         "label": "지킨다는 쪽",
+         "sub": "4번 중",
+         "value": 0
+        }
+       ],
+       "source": "자료: 김박사 월드 예측 장부",
+       "beats": [
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "예측 성적표",
+     "stats": [
+      {
+       "at": 4,
+       "big": "설명란 링크",
+       "label": "drkimworld.com/scorecard",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "만드는 것 · NYSE ACHR",
+     "stats": [
+      {
+       "at": 0,
+       "big": "미드나이트",
+       "label": "전기 수직이착륙기",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "compare",
+     "title": "헬리콥터와 비교",
+     "left": {
+      "at": 1,
+      "head": "헬리콥터",
+      "big": "엔진",
+      "lines": [
+       "제자리 이착륙"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 1,
+      "head": "미드나이트",
+      "big": "전기 모터",
+      "lines": [
+       "제자리 이착륙 · 작은 소리"
+      ],
+      "tone": "up"
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "목표",
+     "stats": [
+      {
+       "at": 2,
+       "big": "에어택시",
+       "label": "2028 로스앤젤레스 올림픽 공식 에어택시",
+       "tone": "blue"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "아직 돈을 버는 단계는 아니다",
+       "sub": "3분기(백만 달러)",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "매출",
+         "value": 5.1,
+         "hi": true
+        },
+        {
+         "label": "순손실",
+         "value": 274.6
+        }
+       ],
+       "source": "자료: SEC 8-K·10-Q · 기준 2026-11-09",
+       "beats": [
+        3,
+        3
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "11월 9일 실적 발표\n**좋은 소식이 여럿**",
+     "at": 0,
+     "kicker": "실적"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "FAA",
+     "stats": [
+      {
+       "at": 1,
+       "big": "시장조사용 감항증명",
+       "label": "로스앤젤레스 시범 운항 길",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "보잉 3사 인수",
+     "stats": [
+      {
+       "at": 2,
+       "big": "승인 약 20개 중 1개 남음",
+       "label": "위스크 · 인시투 · 스카이그리드(회사 발표)",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "9월 말 현금·단기 투자",
+     "stats": [
+      {
+       "at": 3,
+       "big": "13억 5,360만",
+       "label": "달러 · 10-Q",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "7거래일 연속 하락",
+       "sub": "종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "11월 11일",
+         "value": 4.86
+        },
+        {
+         "label": "11월 13일",
+         "value": 4.03
+        },
+        {
+         "label": "11월 18일",
+         "value": 3.23
+        },
+        {
+         "label": "11월 20일",
+         "sub": "-40.1%",
+         "value": 2.91,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        0,
+        0,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "11월 20일 종가 2.91달러",
+     "stats": [
+      {
+       "at": 1,
+       "big": "약 2년 2개월 만의 최저",
+       "label": "2024년 9월 25일과 같은 값",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "같은 기간 회사 서류",
+       "left": {
+        "label": "임원 4명",
+        "value": "세금용 매도"
+       },
+       "mid": "합계",
+       "right": {
+        "label": "발행 주식 7억 8,256만 주 중",
+        "value": "12만 2,248주",
+        "tone": "gold"
+       },
+       "question": "회사의 새 소식은?",
+       "beats": [
+        2,
+        2,
+        2
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "시장 탓은\n**얼마일까**",
+     "at": 0,
+     "kicker": "시장·거시",
+     "sfx": "boom"
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "평소 민감도 · 나스닥 100 펀드 기준",
+     "stats": [
+      {
+       "at": 2,
+       "big": "약 1.7배",
+       "label": "시장 1% → 평균 1.7%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "시장 몫보다 9.9%p 더 빠졌다",
+       "source": "나스닥 종가, 민감도는 11월 13일 전 250거래일 하루 수익률 회귀 · 기준 2026-11-20",
+       "sub": "11월 13일 종가 → 11월 20일 종가(%)",
+       "note": "차이 -9.9%p는 평소 5거래일 흔들림(±8.5%p) 밖",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "아처 예상",
+         "sub": "나스닥 100 펀드 × 평소 민감도 약 1.7배",
+         "value": -17.9,
+         "text": "-17.9%"
+        },
+        {
+         "label": "아처 실제",
+         "value": -27.8,
+         "text": "-27.8%",
+         "hi": true
+        },
+        {
+         "label": "조비 실제",
+         "sub": "같은 에어택시 무리",
+         "value": -29.1,
+         "text": "-29.1%"
+        },
+        {
+         "label": "나스닥 100 펀드(QQQ)",
+         "value": -10.5,
+         "text": "-10.5%"
+        },
+        {
+         "label": "항공우주·방산 펀드(ITA)",
+         "value": -7.5,
+         "text": "-7.5%"
+        }
+       ],
+       "beats": [
+        3,
+        4,
+        4,
+        3,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "최근 20거래일",
+     "stats": [
+      {
+       "at": 5,
+       "big": "하루 5% 넘게 10일",
+       "label": "변동성이 큰 종목",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 6,
+     "layout": "stat",
+     "title": "11월 20일 변동성 지수(VIX)",
+     "stats": [
+      {
+       "at": 6,
+       "big": "35.89",
+       "label": "다음 큰 일정 12월 9일 연준 금리 회의(FOMC)",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "ad": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "평소 민감도로 예상한 것보다 더 빠진 폭",
+       "sub": "11월 13일 → 20일(%p)",
+       "unit": "%p",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "아처",
+         "value": -9.9,
+         "hi": true
+        },
+        {
+         "label": "조비",
+         "sub": "같은 에어택시",
+         "value": -11.9
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        0,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "무리 전체를 끌어내린 공시",
+     "stats": [
+      {
+       "at": 2,
+       "big": "확인 안 됨",
+       "label": "원인은 단정하지 않음",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "조비 편 기록",
+     "stats": [
+      {
+       "at": 3,
+       "big": "1년 최저 경신 4번",
+       "label": "4번 모두 20거래일 뒤 더 낮음",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "날짜별 기록표",
+     "stats": [
+      {
+       "at": 4,
+       "big": "홈페이지 무료 리포트",
+       "label": "drkimworld.com",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "첫 번째 단서\n**과거 비슷한 순간**",
+     "at": 0,
+     "kicker": "기록",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "2020년 상장 뒤 6거래일 이상 연속 하락",
+     "stats": [
+      {
+       "at": 1,
+       "big": "17번",
+       "label": "20거래일 뒤를 아는 경우",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "6거래일 연속 하락 17번, 20거래일 뒤",
+       "source": "나스닥 종가(2020-12-18 이후) · 기준 2026-11-20",
+       "sub": "2020년 12월 상장 뒤 17번을 그 뒤 변화로 나눔",
+       "note": "더 높았던 날 10번(59%), 1년 최저를 새로 쓴 7번은 2번(29%)만 더 높았다",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "20% 넘게 오름",
+         "value": 3,
+         "text": "3번"
+        },
+        {
+         "label": "0~20% 오름",
+         "value": 7,
+         "text": "7번"
+        },
+        {
+         "label": "0~20% 내림",
+         "value": 7,
+         "text": "7번",
+         "hi": true
+        },
+        {
+         "label": "20% 넘게 내림",
+         "value": 0,
+         "text": "0번"
+        }
+       ],
+       "beats": [
+        2,
+        2,
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "조건을 하나 더 붙이면\n**모양이 바뀐다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "compare",
+     "title": "20거래일 뒤 더 높았던 경우",
+     "left": {
+      "at": 4,
+      "head": "연속 하락 전체",
+      "big": "10/17",
+      "lines": [
+       "59%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 4,
+      "head": "1년 최저 경신",
+      "big": "2/7",
+      "lines": [
+       "29%"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "이번 11월 20일",
+     "stats": [
+      {
+       "at": 5,
+       "big": "1년 최저 경신",
+       "label": "2.91달러",
+       "tone": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 1\n**현금**",
+     "at": 0,
+     "kicker": "사는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "시가총액의 약 59%가 현금",
+       "source": "SEC 8-K 실적 보도자료·10-Q(2026-11-09), 나스닥 종가 · 기준 2026-11-20",
+       "sub": "백만 달러",
+       "note": "한 주당 현금 약 1.73달러, 주가는 그 약 1.7배",
+       "unit": "백만 달러",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "시가총액",
+         "sub": "11월 20일 2.91달러 × 7억 8,256만 주",
+         "value": 2277.2,
+         "text": "2,277.2",
+         "hi": true
+        },
+        {
+         "label": "9월 말 현금·단기 투자",
+         "value": 1353.6,
+         "text": "1,353.6"
+        },
+        {
+         "label": "3분기 한 분기에 줄어든 현금",
+         "value": 207.0,
+         "text": "207.0"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "chalk_hook",
+      "data": {
+       "top": "한 주로 나누면",
+       "left": {
+        "label": "현금",
+        "value": "약 1.73달러"
+       },
+       "mid": "주가는",
+       "right": {
+        "label": "그 약",
+        "value": "1.7배",
+        "tone": "gold"
+       },
+       "question": "11월 20일 2.91달러 기준",
+       "beats": [
+        2,
+        2,
+        2
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 2\n**진척**",
+     "at": 0,
+     "kicker": "사는 쪽"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "FAA 형식 인증",
+     "items": [
+      {
+       "no": "1~3",
+       "text": "앞 단계 지남",
+       "at": 1
+      },
+      {
+       "no": "4",
+       "text": "마지막 단계(회사 설명)",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "보잉 거래가 마감되면",
+     "left": {
+      "at": 2,
+      "head": "지금 아처",
+      "big": "510만 달러",
+      "lines": [
+       "3분기 매출"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "인시투",
+      "big": "연 2억 달러+",
+      "lines": [
+       "흑자 · 회사 추정"
+      ],
+      "tone": "up"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사는 쪽 3\n**하락의 성격**",
+     "at": 0,
+     "kicker": "사는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 13일 → 20일 하락 가운데 시장 움직임",
+       "sub": "%",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "실제 하락",
+         "value": -27.8
+        },
+        {
+         "label": "시장 움직임(평소 민감도)",
+         "value": -17.9,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 20일 하루",
+       "sub": "%",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "예상",
+         "sub": "QQQ -5.7% × 약 1.7배",
+         "value": -9.9
+        },
+        {
+         "label": "실제",
+         "value": -9.1,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        2,
+        2
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "shop": [
+    3
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "list",
+     "title": "잠깐, 오래 앉아 차트를 보는 분들의 장 · 유료 광고 포함",
+     "items": [
+      {
+       "no": "1",
+       "text": "연구 14개를 모아 보니",
+       "at": 0
+      },
+      {
+       "no": "2",
+       "text": "배변 주 평균 +1.3회 · 균주에 따라 결과가 갈림",
+       "at": 0
+      },
+      {
+       "no": "!",
+       "text": "PMID 25099542",
+       "at": 0
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "살 때 볼 이름 하나 · 유료 광고 포함",
+     "stats": [
+      {
+       "at": 1,
+       "big": "비피더스균 락티스",
+       "label": "뒷면 균주 이름",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "식약처 인정 기능성 · 유료 광고 포함",
+     "items": [
+      {
+       "no": "1",
+       "text": "유산균 증식 및 유해균 억제·배변활동 원활·장 건강에 도움을 줄 수 있음",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "고르는 법: 설명란 둘째 줄",
+       "at": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 1\n**돈이 나가는 속도**",
+     "at": 0,
+     "kicker": "사지 않는 쪽",
+     "sfx": "boom"
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "3분기 한 분기에 줄어든 현금",
+     "stats": [
+      {
+       "at": 3,
+       "big": "2억 700만 달러",
+       "label": "4분기도 비슷한 손실 전망(회사)",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "3분기 속도 그대로라면",
+     "stats": [
+      {
+       "at": 4,
+       "big": "약 6분기 반",
+       "label": "13억 5,360만 ÷ 2억 700만",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "compare",
+     "title": "아까의 질문",
+     "left": {
+      "at": 5,
+      "head": "넉넉한 현금",
+      "big": "사는 쪽",
+      "lines": [
+       "시가총액의 약 59%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 5,
+      "head": "같은 현금",
+      "big": "줄어드는 시계",
+      "lines": [
+       "한 분기 2억 700만 달러"
+      ],
+      "tone": "down"
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 2\n**늘어나는 주식 수**",
+     "at": 0,
+     "kicker": "사지 않는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "1년 새 20.2% 늘어난 주식 수",
+       "source": "SEC 10-Q(2026-11-09)·8-K(2026-08-10) · 기준 2026-11-20",
+       "sub": "발행 주식(백만 주)",
+       "note": "보잉 몫은 마감 때 조정될 수 있고, 12개월 동안 팔 수 없음",
+       "unit": "백만 주",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "2025년 9월 말",
+         "value": 651.3,
+         "text": "651.3"
+        },
+        {
+         "label": "2026년 9월 말",
+         "value": 782.5,
+         "text": "782.5",
+         "hi": true
+        },
+        {
+         "label": "보잉 거래 마감 뒤",
+         "sub": "11월 4일 주식 수 + 19.75%로 계산",
+         "value": 937.1,
+         "text": "937.1"
+        }
+       ],
+       "beats": [
+        1,
+        1,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "보잉에 줄 주식 매각 제한",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12개월",
+       "label": "그 뒤에는 팔 수 있음",
+       "tone": "white"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사지 않는 쪽 3\n**평소 흔들림을 넘은 하락**",
+     "at": 0,
+     "kicker": "사지 않는 쪽"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "1년 최저 경신 7번, 20거래일 뒤",
+       "sub": "번",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "더 낮음",
+         "value": 5,
+         "hi": true
+        },
+        {
+         "label": "더 높음",
+         "value": 2
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        1,
+        1
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "next": [
+    2
+   ],
+   "sub": [
+    4
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "주가는 한 주당 현금의 몇 배",
+       "sub": "배",
+       "unit": "배",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "뉴스케일",
+         "sub": "11월 20일",
+         "value": 0.77
+        },
+        {
+         "label": "아처",
+         "sub": "11월 20일",
+         "value": 1.68,
+         "hi": true
+        }
+       ],
+       "source": "자료: 각 회사 10-Q, 나스닥 종가 · 기준 2026-11-20",
+       "beats": [
+        0,
+        0
+       ]
+      }
+     }
+    },
+    {
+     "from": 2,
+     "layout": "compare",
+     "title": "이어 보기",
+     "left": {
+      "at": 2,
+      "head": "조비 편",
+      "big": "에어택시",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 2,
+      "head": "뉴스케일 편",
+      "big": "현금 많은 성장주",
+      "lines": [
+       "설명란 링크"
+      ],
+      "tone": "white"
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "연속 하락 뒤의 주식\n**다음 편에서도 같이 셉니다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "판단을 바꿀\n**신호와 날짜**",
+     "at": 0,
+     "kicker": "확인 신호",
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "회사 신호",
+     "items": [
+      {
+       "no": "1",
+       "text": "보잉 인수 마감 공시: 늘어난 주식 수",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "조종사 탑승 천이 비행: 회사 목표 연말",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "11월 20일 뒤 20거래일째",
+     "stats": [
+      {
+       "at": 3,
+       "big": "12월 21일",
+       "label": "종가 확인",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "12월 21일 종가의 기준선",
+       "sub": "달러",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "+20% 선",
+         "sub": "위면 사는 쪽 강해짐",
+         "value": 3.49
+        },
+        {
+         "label": "11월 20일 종가",
+         "value": 2.91,
+         "hi": true
+        },
+        {
+         "label": "-20% 선",
+         "sub": "아래면 사지 않는 쪽 강해짐",
+         "value": 2.33
+        }
+       ],
+       "source": "자료: 나스닥 일별 시세 · 기준 2026-11-20",
+       "beats": [
+        4,
+        4,
+        5
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "사려는 분이\n**먼저 볼 것**",
+     "at": 0,
+     "kicker": "체크리스트"
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "사기 전 확인 1~3",
+     "items": [
+      {
+       "no": "1",
+       "text": "현금과 한 분기에 줄어든 돈",
+       "at": 1
+      },
+      {
+       "no": "2",
+       "text": "보잉 마감 뒤 한 주당 현금",
+       "at": 2
+      },
+      {
+       "no": "3",
+       "text": "천이 비행 완료 발표",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "list",
+     "title": "사기 전 확인 4~5",
+     "items": [
+      {
+       "no": "4",
+       "text": "12월 9일 뒤 시장을 평소만큼 따라가나",
+       "at": 4
+      },
+      {
+       "no": "5",
+       "text": "12월 21일 달력에",
+       "at": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "판정",
+     "stats": [
+      {
+       "at": 0,
+       "big": "12월 21일",
+       "label": "11월 20일 뒤 20거래일째",
+       "tone": "gold"
+      }
+     ],
+     "sfx": "boom"
+    },
+    {
+     "from": 1,
+     "anim": {
+      "tpl": "scenario_bars",
+      "data": {
+       "title": "12월 21일, 가장 무거운 갈래도 36%",
+       "source": "SEC 8-K·10-Q, 나스닥 종가 · 기준 2026-11-20",
+       "note": "가능성은 주가 확률이 아니라 과거 기록에서 출발한 분석자의 주관적 추정(가로선 = 범위)",
+       "items": [
+        {
+         "label": "4 · 크게 더 내림",
+         "sub": "2.33달러 아래(-20% 넘게)",
+         "p": 17,
+         "range": [
+          12,
+          22
+         ]
+        },
+        {
+         "label": "3 · 조금 더 내림",
+         "sub": "2.33~2.91달러",
+         "p": 36,
+         "range": [
+          30,
+          40
+         ],
+         "hi": true
+        },
+        {
+         "label": "2 · 조금 되돌림",
+         "sub": "2.91~3.49달러",
+         "p": 32,
+         "range": [
+          26,
+          38
+         ]
+        },
+        {
+         "label": "1 · 크게 되돌림",
+         "sub": "3.49달러 위(+20% 넘게)",
+         "p": 15,
+         "range": [
+          10,
+          20
+         ]
+        }
+       ],
+       "decision": "판정: 12월 21일 종가(11월 20일 뒤 20거래일째) · 기준선 3.49·2.91·2.33달러",
+       "beats": [
+        1,
+        2,
+        2,
+        2
+       ],
+       "decision_beat": 1
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "주가 확률이 아니라\n**분석자의 주관적 추정**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "ad": [
+    5
+   ],
+   "slides": [
+    {
+     "from": 0,
+     "layout": "compare",
+     "title": "지금 아처",
+     "left": {
+      "at": 0,
+      "head": "현금",
+      "big": "시가총액의 절반 넘게",
+      "lines": [
+       "약 59%"
+      ],
+      "tone": "up"
+     },
+     "right": {
+      "at": 0,
+      "head": "그 현금",
+      "big": "한 분기 2억 달러+ 감소",
+      "lines": [
+       "주식 수는 증가"
+      ],
+      "tone": "down"
+     }
+    },
+    {
+     "from": 1,
+     "layout": "list",
+     "title": "12월 21일까지의 신호로",
+     "items": [
+      {
+       "no": "+",
+       "text": "보잉 마감 · 천이 비행 일정대로: 사는 쪽",
+       "at": 1
+      },
+      {
+       "no": "−",
+       "text": "새 주식 판매 · 일정 지연: 사지 않는 쪽",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "결정은 각자의 몫이며,\n**이 영상과 리포트는 판단 근거를 정리한 교육용 자료입니다**",
+     "at": 3
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "아까 말씀드린 유산균",
+     "stats": [
+      {
+       "at": 4,
+       "big": "고르는 법",
+       "label": "설명란 둘째 줄",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "실시간 알림",
+     "stats": [
+      {
+       "at": 5,
+       "big": "인스타 채널 참여",
+       "label": "또는 홈페이지에서 앱 설치",
+       "tone": "blue"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "투표",
+     "at": 0
+    },
+    {
+     "from": 1,
+     "layout": "quote",
+     "text": "12월 21일\n**아처 에비에이션 종가는 어디에**",
+     "at": 1
+    },
+    {
+     "from": 2,
+     "layout": "poll",
+     "kicker": "투표",
+     "question": "12월 21일, 아처 에비에이션 종가는?",
+     "at": 2,
+     "options": [
+      {
+       "at": 2,
+       "text": "3.49 위"
+      },
+      {
+       "at": 3,
+       "text": "그 사이"
+      },
+      {
+       "at": 4,
+       "text": "2.91 아래"
+      }
+     ],
+     "foot_at": 5
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "layout": "outro",
+     "lines": [
+      {
+       "at": 0,
+       "text": "댓글에 ①·②·③ 번호로"
+      },
+      {
+       "at": 1,
+       "text": "다음 종목과 질문도 댓글에서"
+      },
+      {
+       "at": 2,
+       "text": "김박사 월드"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
