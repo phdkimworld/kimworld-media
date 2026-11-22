@@ -2,7 +2,7 @@
  "ticker": "QBTS",
  "name": "디웨이브 퀀텀",
  "shop": "../kit/h1b_card.png",
- "sub_text": "지금 팔아야 될까? 근거를 모아 갑니다",
+ "sub_text": "팔까, 버틸까? 근거를 모아 갑니다",
  "next_text": "리게티 컴퓨팅(RGTI) · 지난 디웨이브 편 · 설명란 링크",
  "shop_strip": "오메가3 뒷면 숫자 · 링크는 설명란 둘째 줄",
  "outro_promo": [
@@ -37,7 +37,7 @@
         "label": "32.19달러에서",
         "value": "-79.7%"
        },
-       "question": "지금이라도 팔아야 하나?",
+       "question": "팔까, 버틸까?",
        "beats": [
         0,
         2,
@@ -93,7 +93,7 @@
     {
      "from": 0,
      "layout": "quote",
-     "text": "디웨이브 퀀텀\n**지금 팔아야 될까?**",
+     "text": "디웨이브 퀀텀\n**팔까, 버틸까?**",
      "at": 0,
      "kicker": "시청자 질문"
     },
@@ -1311,11 +1311,11 @@
     {
      "from": 1,
      "layout": "stat",
-     "title": "첫 신호",
+     "title": "첫 신호 · 그 뒤 시장 방향",
      "stats": [
       {
        "at": 1,
-       "big": "12월 9일 FOMC 뒤",
+       "big": "12월 9일 FOMC",
        "label": "평소 민감도만큼 따라 오르나",
        "tone": "gold"
       }
