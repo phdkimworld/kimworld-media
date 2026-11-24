@@ -47,7 +47,19 @@
   {
    "em": "세금",
    "subtitle": "보상 주식 일부를\n**세금** 내려고 팔아 왔습니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "석 달마다",
+     "size": 64,
+     "color": "red",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
+     "x": 800,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
@@ -170,7 +182,19 @@
   {
    "em": "절반",
    "subtitle": "나스닥 +7% 날, 조비는 예상의\n**절반** 남짓만 따라갔습니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "예상의 절반",
+     "size": 64,
+     "color": "red",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
+     "x": 780,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
