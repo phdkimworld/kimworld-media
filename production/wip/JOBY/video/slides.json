@@ -934,16 +934,36 @@
     },
     {
      "from": 4,
-     "layout": "stat",
-     "title": "11월 24일 · 같은 에어택시 회사",
-     "stats": [
-      {
-       "at": 4,
-       "big": "아처 -6.2%",
-       "label": "더 내린 이유는 확인 안 됨",
-       "tone": "down"
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "11월 24일 하루",
+       "sub": "%",
+       "unit": "%",
+       "decimals": 1,
+       "items": [
+        {
+         "label": "조비",
+         "value": -8.8,
+         "hi": true
+        },
+        {
+         "label": "아처",
+         "value": -6.2
+        },
+        {
+         "label": "QQQ",
+         "value": -2.2
+        }
+       ],
+       "source": "자료: 나스닥 공식 종가 · 기준 2026-11-24",
+       "beats": [
+        4,
+        4,
+        4
+       ]
       }
-     ]
+     }
     },
     {
      "from": 5,
