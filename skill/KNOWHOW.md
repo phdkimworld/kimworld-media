@@ -35,6 +35,7 @@
 | 쇼츠 | SKILL K9(0초 표지 완성), 사이트 `tools/shorts/` | `shorts_check.py` |
 | Threads·인스타·페이스북·카드뉴스 | SKILL K8·K9.1, `skill/runbooks/taste.md` 8·9절, `skill/instagram/INSTAGRAM.md`, production.md 흐름(11-20: 인스타·페북 릴스만, Threads 2글) | `queue_check.py`, `queue_dry.py`, `poll_sync_check.py` |
 | 블로거 | 사이트 `docs/blogger-guide.md`, production.md 0장 | 사이트 blogger.yml |
+| **영상 안 화면 디자인(11-24)** — 슬라이드·anim·쇼츠 색 체계(상자 없음·강조색 하나·큰 글자는 숫자만·브랜드 위 오른쪽) | `review/slide_design_study.md`(대형 채널 90프레임·전/후), SKILL V6.4 '화면 디자인 체계'·V6.5 디자인 토큰, `skill/runbooks/taste.md` 5절, `review/experiments.md` V1 | 사이트 `tools/slidekit/slide.html`·`templates/anim/lib/kit.css`, check_slides·taste_check |
 | **SNS 디자인(11-24)** — Threads 첫 줄·문단, 릴스 격자 표지, 체험 릴스 끔, 텔레그램 버튼, 블로거 머리·버튼 | `review/sns_design_study.md`(채널별 패턴·근거·전/후), SKILL K8.4, `review/experiments.md` S1 | `queue_check.py` [S1], 사이트 `tools/shorts/reel_cover.py`, `scripts/telegram_post.py`·`blogger_post.py` |
 | 검색 노출(SEO) 점검·서치 콘솔 할 일 | `skill/runbooks/seo.md`(기술 SEO·메타·구조화 데이터·CWV·내부 링크·네이버/구글 메뉴, ECC skills/seo 참고), `review/seo_audit.md`(11-24 감사), 사이트 `AGENTS.md` 검색 노출 줄 | 사이트 `build.py` `seo_audit()`(빌드마다, --strict), `tests/test_build.py` 13절 |
 | 댓글 답글 | `skill/runbooks/comments.md`(투표·요청·대댓글·스팸·23시 점검), `skill/runbooks/api.md`(AI 답글 크레딧) | `tools/hourly.py`, `yt_reply.py`, `site_comments.py` |
