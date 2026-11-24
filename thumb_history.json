@@ -3338,6 +3338,40 @@
    ],
    "video": "MGh3KnhUDAM",
    "shorts": "TDc7e9TXVm8"
+  },
+  {
+   "t": "retro",
+   "date": "2026.11.24",
+   "layout": "v7",
+   "main": "a",
+   "palette": "v7-navy",
+   "note": "11-24 소급 교체(10편): 최근 7일 롱폼 썸네일을 V7 시안 a로 thumbnails.set(숫자·문구는 기존 썸네일과 같은 사실). 11번째에서 429 'uploaded too many thumbnails recently' → 재시도 없이 중단. 원본 review/thumb_backup/<id>.jpg, spec review/thumb_backup/specs/<id>.json",
+   "swapped": {
+    "MGh3KnhUDAM": "2026-11-24T18:16:05Z",
+    "K6zvU0sUeak": "2026-11-24T18:16:20Z",
+    "usFP6dPpDX8": "2026-11-24T18:16:26Z",
+    "CpGayNCaSHU": "2026-11-24T18:16:30Z",
+    "3c5XFLVO9sM": "2026-11-24T18:16:33Z",
+    "WBTk2DeqVjA": "2026-11-24T18:16:35Z",
+    "CG8DRq8t1dc": "2026-11-24T18:16:38Z",
+    "2LuMR4kBlmA": "2026-11-24T18:16:41Z",
+    "m2eALHEvv8c": "2026-11-24T18:16:44Z",
+    "G4LwNPV5bB8": "2026-11-24T18:16:46Z"
+   },
+   "pending": [
+    "9XvR-qdcTUE",
+    "1TKhp0NOkYU",
+    "c-8RHgUfHv8",
+    "JusnxXSiIVQ",
+    "LtzNialqBF8",
+    "fzbU46COnbk",
+    "oIrfim1wfyY",
+    "w-5VJA_M-Fc",
+    "VdSWc4jMjzI",
+    "76JW6fhIjEw",
+    "PVtpl9NWWQk",
+    "zbq6gLjyeVI"
+   ]
   }
  ]
 }
