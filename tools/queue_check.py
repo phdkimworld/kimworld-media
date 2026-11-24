@@ -87,6 +87,32 @@ for f in sys.argv[1:]:
             if re.search(r'\d{4}년 \d{1,2}월 접수', x): bad.append(f'{f}: 답글에 과거 접수 시점(6.2③ "다음 분석 원하는 종목은 댓글로"로)')
             m = re.search(r'\([^)\n]*(×|가능성 구간|평소 거래량 대비|분모)[^)\n]*\)', x)
             if m: bad.append(f'{f}: 답글에 내부 기획 용어 괄호 노출(6.2④ 문장으로 풀기): {m.group(0)[:40]}')
+# S1 SNS 새 형식(2026-11-24 운영자 "다른 SNS 채널들도 비슷한 개선 적용", 미디어 review/sns_design_study.md) — publish_at 11-25~
+#   Threads: 첫 줄은 혼자 서는 한 줄(45자 이하, 뒤에 빈 줄), 문단 100자 이하(휴대폰 5줄). 86글 첫 줄 중앙 60자·문단 최장 중앙 96자였다.
+#   인스타 릴스: 첫 줄 45자 이하(더 보기 앞), 해시태그 5개 이하(인스타 상한), 표지는 격자(3:4)용 cover_ig.jpg(tools/shorts/reel_cover.py),
+#   체험 릴스 금지(팔로워 피드·격자에 안 보임: 21일 릴스 32편 조회 중앙 0). 페이스북 릴스: 첫 줄 45자 이하, 캡션 속 리포트 링크 1개(관련 리포트는 첫 댓글로).
+S1_FROM = '2026-11-25'
+for f in sys.argv[1:]:
+    try: d = json.load(open(f, encoding='utf-8'))
+    except Exception: continue
+    if str(d.get('publish_at', ''))[:10] < S1_FROM: continue
+    ch, t, m = d.get('channels', []), d.get('text', ''), d.get('media') or {}
+    if 'threads' in ch and t.strip():
+        l1 = t.strip().split('\n')[0]
+        if len(l1) > 45: bad.append(f'{f}: [S1] Threads 첫 줄 {len(l1)}자 > 45 — 첫 줄은 종목(티커)+모순 한 줄만, 숫자 설명은 빈 줄 뒤로: {l1[:30]}…')
+        elif '\n\n' not in t.strip()[:len(l1) + 2]: bad.append(f'{f}: [S1] Threads 첫 줄 뒤에 빈 줄(첫 줄이 제목처럼 혼자 보이게)')
+        for para in re.split(r'\n\s*\n', t.strip()):
+            if len(para) > 100: bad.append(f'{f}: [S1] Threads 문단 {len(para)}자 > 100(휴대폰 5줄) — 문단을 나눈다: {para[:24]}…'); break
+    for c in ('instagram', 'facebook'):
+        if c in ch and m.get('type') == 'reels':
+            cap = (d.get('channel_text') or {}).get(c) or t
+            l1 = cap.strip().split('\n')[0]
+            if len(l1) > 45: bad.append(f'{f}: [S1] {c} 릴스 캡션 첫 줄 {len(l1)}자 > 45(더 보기 앞에 잘림): {l1[:30]}…')
+            if c == 'instagram':
+                if len(re.findall(r'(?<![\w/&])#[^\s#]+', cap)) > 5: bad.append(f'{f}: [S1] 인스타 해시태그 5개 초과(인스타 상한 5개)')
+                if not str(m.get('cover', '')).endswith('cover_ig.jpg'): bad.append(f'{f}: [S1] 인스타 릴스 표지는 격자용 cover_ig.jpg(python3 tools/shorts/reel_cover.py shorts.json static/social/<slug>/cover_ig.jpg)')
+                if m.get('trial'): bad.append(f'{f}: [S1] 체험 릴스(trial) 금지 — 팔로워 피드·프로필 격자에 안 보인다')
+            if c == 'facebook' and len(re.findall(r'drkimworld\.com/r/', cap)) > 1: bad.append(f'{f}: [S1] 페이스북 캡션 리포트 링크 {len(re.findall(r"drkimworld[.]com/r/", cap))}개 — 그 회차 리포트 1개만, 관련 리포트는 첫 댓글(replies)로')
 # 쇼츠 표지(cover) 빈 화면 검사(SMR 60회차: ffmpeg -ss 1.5 프레임이 4KB 빈 화면) — 릴스 cover는 15KB 이상이고 밝기 변화가 있어야 한다
 SITE = os.environ.get('KW_SITE', '/home/user/kimworld-site')
 for f in sys.argv[1:]:

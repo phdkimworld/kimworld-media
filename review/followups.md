@@ -7,6 +7,7 @@
 | 11-21 | JOBY 11-19 편(m2eALHEvv8c) 24시간 조회 vs 11-17 편 288 → 같은 종목 72시간 간격 규칙 판정 | 대기 |
 | 11-21 | PLUG 93 리포트 0pv 원인(고정댓글 링크·utm·slug) 확인 | 대기 |
 | 11-28 | IREN 쇼츠 uyQzyqq33_s 7일 조회 vs 직전 IREN 쇼츠 2Q8aj1CO1Vk·y8DyPbb03u4 → 하위층 '롱폼 없이 쇼츠+리포트+Threads' 판정 + 리포트 iren-2026-11-5 7일 pv | 대기 |
+| 12-02 | S1 SNS 새 형식 판정(experiments.md S1): social-comments.yml mode=insights days=7 + 사이트 유입 경로 7일 vs 직전 7일, 인스타 일반 릴스 도달이 캐러셀 중앙 7.5보다 낮으면 카드 1편 재개 제안(review/sns_design_study.md 7장) | 대기 |
 | 12-04 | IREN iren-2026-11-5 네 구간(14.41·11.82·10달러) + iren-2026-11-4 네 갈래(18.03·21.64) 함께 채점 | 대기 |
 | 12-06 | Q1 질문 유형별 CTR·AVD 판정(experiments.md Q1, review/angle_log.md 코드별 — 코드·계열당 3편 이상일 때만, yt_analytics_read.py + 스튜디오 노출 클릭률) | 대기 |
 | 11-24 | IREN 정기 주주총회(16:30 ET 온라인) — 주식 발행 한도 등 조달 안건 확인, iren-2026-11-5 3순위 확인 항목 | 대기 |
