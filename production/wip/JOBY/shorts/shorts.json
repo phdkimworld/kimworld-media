@@ -96,9 +96,16 @@
      "color": "red",
      "anim": "pop",
      "box": true,
-     "at": 0.75,
+     "at": 0.45,
      "x": 800,
      "y": 250
+    },
+    {
+     "kind": "stamp",
+     "text": "QQQ보다 8/16",
+     "color": "red",
+     "at": 0.8,
+     "y": 500
     }
    ],
    "anim": {
@@ -193,6 +200,13 @@
      "at": 0.85,
      "x": 780,
      "y": 250
+    },
+    {
+     "kind": "stamp",
+     "text": "평소 1.7배",
+     "color": "red",
+     "at": 0.45,
+     "y": 500
     }
    ],
    "anim": {
