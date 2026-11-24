@@ -1,1 +1,0 @@
-2026-11-23T15:51:49Z IREN IR 뉴스 페이지(iren.gcs-web.com/news-releases) WebFetch 403 — 우회하지 않음. 회사 발표 확인은 SEC EDGAR(11/19 13G 뒤 제출 0건)와 뉴스 검색으로 대신.
