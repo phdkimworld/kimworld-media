@@ -92,7 +92,7 @@
 
 ## 5. 전/후 예시 (LAES 11-6 회차 + IREN 11-6)
 
-폴더 `/tmp/claude-0/-home-user/4daa7866-678d-5bcc-85e5-eccd4498203b/scratchpad/sns/`(세션 임시 폴더)
+저장소 `review/sns_shots/`(격자 비교·표지·블로거 첫 화면·queue_before/after·텔레그램 전/후), 원본 전부는 `/tmp/claude-0/-home-user/4daa7866-678d-5bcc-85e5-eccd4498203b/scratchpad/sns/`(세션 임시 폴더)
 - 릴스 표지: `laes_cover_before.jpg`·`laes_cover_after.jpg`, `iren_cover_before.jpg`·`iren_cover_after.jpg`, 격자(3:4) 네 장 비교 `grid_before_after.jpg`
 - Threads·인스타·페이스북 글: `queue_before/`(실제 게시본, S1 검사에 8건 걸림) → `queue_after/`(같은 숫자로 다시 쓴 것, QUEUE_OK)
 - 텔레그램: `telegram_before.txt` → `telegram_after.txt`
