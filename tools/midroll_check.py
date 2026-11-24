@@ -53,5 +53,10 @@ WHO = r'분이라면|분들은|분들이|분이시라면|하시는 분|드시는
 SUP = r'mg|밀리그램|그램|함량|뒷면|성분|균주|균|EPA|DHA|이피에이|디에이치에이|루테인|지아잔틴|오메가|유산균|하루 \S+'
 if not re.search(WHO, paras[i]): bad.append('수요(누구) 없음 — "~하시는 분이라면"처럼 조건·상황으로 부를 것(health_midroll 0절)')
 if not re.search(SUP, paras[i]): bad.append('공급(제품 조건) 없음 — 성분·하루 함량·뒷면 숫자 중 하나(health_midroll 0절)')
+for f in ('description.txt', 'pinned.txt'):
+    pp = os.path.join(V, f)
+    if os.path.exists(pp):
+        for l in open(pp, encoding='utf-8').read().splitlines():
+            if '💊' in l and not re.search(WHO + r'|날이 많다면|많으시다면', l): bad.append(f'{f}: 💊 줄에 "누구"(조건·상황) 없음 — "<누구>이라면 — <성분>은 <뒷면 숫자> 하나만"(marketing 3절)')
 if bad: print('MIDROLL_FAIL p%d · ' % (i + 1) + ' · '.join(bad)); sys.exit(1)
 print(f'MIDROLL_OK p{i+1} 문장 {len(sents)} · quote 0 · 위치 약 {pos:.0%} · 금지 낱말 0 · 수요·공급 OK · 긴급성·후기 표지 0(검사 {len(zone)}곳)')

@@ -97,6 +97,18 @@ for f in sys.argv[1:]:
     except Exception: continue
     if str(d.get('publish_at', ''))[:10] < S1_FROM: continue
     ch, t, m = d.get('channels', []), d.get('text', ''), d.get('media') or {}
+    # 11-24 운영자 "광고가 완전히 뜨잖아" + 철학 "수요와 공급을 연결": SNS의 💊·건강몰 줄은 링크 목록 사이에 툭 끼우지 않는다.
+    #  ① 빈 줄로 떨어진 자기 문단 ② 누구(조건·상황 호명) ③ 앞 문단과 잇는 다리(그 회차 장면·시청자 처지) ④ 광고 표시
+    _caps = [t] + [str((d.get('captions') or {}).get(c, '')) for c in ('instagram', 'facebook')]
+    for _c in _caps:
+        for _para in re.split(r'\n\s*\n', _c):
+            if '💊' not in _para and 'health.drkimworld.com' not in _para: continue
+            if 'drkimworld.com/r/' in _para or '텔레그램' in _para or '@drkimworld' in _para:
+                bad.append(f'{f}: [S1·수요공급] 💊 광고 줄이 리포트 링크·텔레그램 목록과 같은 문단 — 빈 줄로 떼고 자기 문단으로')
+            if not re.search(r'분이라면|분들은|하시는 분|드시는 분|보시는 분|이라면|이시라면|신 분|날이 많다면|많으시다면', _para):
+                bad.append(f'{f}: [S1·수요공급] 💊 문단에 "누구"(조건·상황 호명) 없음 — 예: "차트를 오래 보는 날이 많다면" (health_midroll 0절)')
+            if not re.search(r'광고|파트너스', _para):
+                bad.append(f'{f}: [S1·수요공급] 💊 문단에 광고 표시 없음')
     if 'threads' in ch and t.strip():
         l1 = t.strip().split('\n')[0]
         if len(l1) > 45: bad.append(f'{f}: [S1] Threads 첫 줄 {len(l1)}자 > 45 — 첫 줄은 종목(티커)+모순 한 줄만, 숫자 설명은 빈 줄 뒤로: {l1[:30]}…')
