@@ -35,6 +35,7 @@
 | 쇼츠 | SKILL K9(0초 표지 완성), 사이트 `tools/shorts/` | `shorts_check.py` |
 | Threads·인스타·페이스북·카드뉴스 | SKILL K8·K9.1, `skill/runbooks/taste.md` 8·9절, `skill/instagram/INSTAGRAM.md`, production.md 흐름(11-20: 인스타·페북 릴스만, Threads 2글) | `queue_check.py`, `queue_dry.py`, `poll_sync_check.py` |
 | 블로거 | 사이트 `docs/blogger-guide.md`, production.md 0장 | 사이트 blogger.yml |
+| 검색 노출(SEO) 점검·서치 콘솔 할 일 | `skill/runbooks/seo.md`(기술 SEO·메타·구조화 데이터·CWV·내부 링크·네이버/구글 메뉴, ECC skills/seo 참고), `review/seo_audit.md`(11-24 감사), 사이트 `AGENTS.md` 검색 노출 줄 | 사이트 `build.py` `seo_audit()`(빌드마다, --strict), `tests/test_build.py` 13절 |
 | 댓글 답글 | `skill/runbooks/comments.md`(투표·요청·대댓글·스팸·23시 점검), `skill/runbooks/api.md`(AI 답글 크레딧) | `tools/hourly.py`, `yt_reply.py`, `site_comments.py` |
 | 회차 후 복기·개선 | SKILL 8장(8.0 개선 하나 이상·통합 인사이트·AI 느낌 제거·토큰 절약), `review/improvements.md`, `review/experiments.md`, `review/learning.md`, `review/report_learning.md` | `insights.py`, `report_perf.py`, `theme_perf.py`, `episode_check.py` |
 | 통계 보기 | 사이트 `docs/analytics-guide.md`, `stats_snapshots.jsonl`(3시간마다), `review/sub_test.md`(구독 시험). 분석 자료는 사이트 yt-analytics.yml → ops stats/yt_analytics.json(새 키, 컨테이너 키와 무관) | `yt_stats.py`, `yt_subs.py`, `insights.py`, `traffic_cut.py`, `yt_analytics_read.py` |
