@@ -31,3 +31,4 @@
 | 11-22 | ACHR | 76JW6fhIjEw | B | 362 |
 | 11-22 | QBTS | PVtpl9NWWQk | A | 456 |
 | 11-23 | LAES | zbq6gLjyeVI | A | 454 |
+| 11-23 | IREN | MGh3KnhUDAM | A | 357 |
