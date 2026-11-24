@@ -1,0 +1,9677 @@
+[
+{
+"acc": "0001628280-26-056813",
+"filed": "2026-08-13",
+"accept": "2026-08-13T21:03:24.000Z",
+"filer_agent": "0001628280",
+"name": "Paul Sciarra",
+"rel": [
+"Director"
+],
+"shares": 65000.0,
+"value": 495615.0,
+"sale_date": "08/13/2026",
+"nature": [
+"Series B Preferred"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [
+"05/14/2026"
+],
+"broker": "Merrill Lynch"
+},
+{
+"acc": "0001628280-26-060053",
+"filed": "2026-09-02",
+"accept": "2026-09-02T19:03:00.000Z",
+"filer_agent": "0001628280",
+"name": "Paul Sciarra",
+"rel": [
+"Director"
+],
+"shares": 62500.0,
+"value": 417318.75,
+"sale_date": "09/02/2026",
+"nature": [
+"Series B Preferred"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [
+"05/14/2026"
+],
+"broker": "Merrill Lynch"
+},
+{
+"acc": "0001628280-26-064475",
+"filed": "2026-10-02",
+"accept": "2026-10-02T18:31:34.000Z",
+"filer_agent": "0001628280",
+"name": "Paul Sciarra",
+"rel": [
+"Director"
+],
+"shares": 62500.0,
+"value": 380357.0,
+"sale_date": "10/02/2026",
+"nature": [
+"Series B Preferred"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [
+"05/14/2026"
+],
+"broker": "Merrill Lynch"
+},
+{
+"acc": "0001628280-26-068977",
+"filed": "2026-11-02",
+"accept": "2026-11-02T22:24:49.000Z",
+"filer_agent": "0001628280",
+"name": "Paul Sciarra",
+"rel": [
+"Director"
+],
+"shares": 62500.0,
+"value": 310898.56,
+"sale_date": "11/02/2026",
+"nature": [
+"Series B Preferred"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [],
+"broker": "Merrill Lynch"
+},
+{
+"acc": "0001819848-23-000067",
+"filed": "2023-03-16",
+"accept": "2023-03-15T21:55:46.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4314.0,
+"value": 16236.84,
+"sale_date": "03/15/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"03/14/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000104",
+"filed": "2023-04-03",
+"accept": "2023-04-03T22:39:13.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4307.0,
+"value": 18692.38,
+"sale_date": "04/03/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000105",
+"filed": "2023-04-03",
+"accept": "2023-04-03T22:42:11.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 30864.0,
+"value": 133949.76,
+"sale_date": "04/03/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000106",
+"filed": "2023-04-03",
+"accept": "2023-04-03T22:59:22.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5742.0,
+"value": 24920.28,
+"sale_date": "04/03/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000107",
+"filed": "2023-04-03",
+"accept": "2023-04-03T23:01:16.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 15706.0,
+"value": 66171.24,
+"sale_date": "04/03/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan",
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/01/2023",
+"04/03/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000130",
+"filed": "2023-04-13",
+"accept": "2023-04-13T21:34:40.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 18801.0,
+"value": 77487.12,
+"sale_date": "04/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000131",
+"filed": "2023-04-13",
+"accept": "2023-04-13T21:39:33.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5642.0,
+"value": 23253.14,
+"sale_date": "04/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000182",
+"filed": "2023-05-22",
+"accept": "2023-05-22T21:46:50.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3410.0,
+"value": 17490.19,
+"sale_date": "05/22/2023",
+"nature": [
+"Restricted Stock Units granted under issuers 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"05/21/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000212",
+"filed": "2023-06-15",
+"accept": "2023-06-15T21:41:51.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4107.0,
+"value": 31692.34,
+"sale_date": "06/15/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"06/14/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000281",
+"filed": "2023-07-06",
+"accept": "2023-07-06T21:04:54.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4307.0,
+"value": 41045.71,
+"sale_date": "07/06/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000282",
+"filed": "2023-07-06",
+"accept": "2023-07-06T21:05:36.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 30865.0,
+"value": 294143.45,
+"sale_date": "07/06/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/05/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000283",
+"filed": "2023-07-06",
+"accept": "2023-07-06T21:06:33.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5742.0,
+"value": 54721.26,
+"sale_date": "07/06/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000284",
+"filed": "2023-07-06",
+"accept": "2023-07-06T21:07:12.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 17073.0,
+"value": 162705.69,
+"sale_date": "07/06/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan",
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/01/2023",
+"07/03/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000307",
+"filed": "2023-07-13",
+"accept": "2023-07-13T21:36:38.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5633.0,
+"value": 60297.14,
+"sale_date": "07/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000308",
+"filed": "2023-07-13",
+"accept": "2023-07-13T21:37:26.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 21101.0,
+"value": 225870.76,
+"sale_date": "07/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000328",
+"filed": "2023-08-22",
+"accept": "2023-08-22T21:15:14.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3407.0,
+"value": 24313.09,
+"sale_date": "08/22/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"08/21/2023"
+],
+"plan": [],
+"broker": "ETRADE Financial Corporation"
+},
+{
+"acc": "0001819848-23-000336",
+"filed": "2023-09-15",
+"accept": "2023-09-15T21:26:23.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 5968.0,
+"value": 40127.57,
+"sale_date": "09/15/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"09/14/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000374",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:18:49.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 2568.0,
+"value": 15895.92,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000375",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:19:21.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 11341.0,
+"value": 70200.79,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000376",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:19:55.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 3068.0,
+"value": 18990.92,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000377",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:20:30.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2049.0,
+"value": 12683.31,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Unit's granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000378",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:20:59.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 32162.0,
+"value": 199082.78,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000379",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:21:28.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8337.0,
+"value": 51606.03,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000380",
+"filed": "2023-10-02",
+"accept": "2023-10-02T21:22:03.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 12565.0,
+"value": 77777.35,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000399",
+"filed": "2023-10-04",
+"accept": "2023-10-04T21:25:11.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 23050.0,
+"value": 71113.26,
+"sale_date": "10/04/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/03/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000414",
+"filed": "2023-10-13",
+"accept": "2023-10-13T21:25:16.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 26932.0,
+"value": 165217.83,
+"sale_date": "10/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000415",
+"filed": "2023-10-13",
+"accept": "2023-10-13T21:25:57.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5637.0,
+"value": 34580.9,
+"sale_date": "10/13/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000431",
+"filed": "2023-11-22",
+"accept": "2023-11-22T22:47:38.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3409.0,
+"value": 19609.1,
+"sale_date": "11/22/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"11/21/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-23-000445",
+"filed": "2023-12-15",
+"accept": "2023-12-15T22:15:12.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 5855.0,
+"value": 41740.73,
+"sale_date": "12/15/2023",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"12/14/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000008",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:37:44.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 2914.0,
+"value": 18008.52,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000009",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:38:16.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 8978.0,
+"value": 55484.04,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000010",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:38:52.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 2429.0,
+"value": 15011.22,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000011",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:39:23.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2307.0,
+"value": 14257.26,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000012",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:39:54.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 23963.0,
+"value": 148091.34,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000013",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:40:21.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9462.0,
+"value": 58475.16,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000014",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:40:52.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 9947.0,
+"value": 61472.46,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000030",
+"filed": "2024-01-04",
+"accept": "2024-01-04T22:16:04.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 8584.0,
+"value": 51589.84,
+"sale_date": "01/04/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and grant Plan"
+],
+"acq_date": [
+"01/03/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000057",
+"filed": "2024-01-16",
+"accept": "2024-01-16T22:52:41.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9166.0,
+"value": 52400.65,
+"sale_date": "01/16/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan",
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2024",
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000058",
+"filed": "2024-01-16",
+"accept": "2024-01-16T22:53:12.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 23789.0,
+"value": 136192.6,
+"sale_date": "01/16/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan",
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2024",
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000068",
+"filed": "2024-01-17",
+"accept": "2024-01-17T22:13:36.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 4549.0,
+"value": 25883.81,
+"sale_date": "01/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000069",
+"filed": "2024-01-17",
+"accept": "2024-01-17T22:14:07.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 7714.0,
+"value": 43892.66,
+"sale_date": "01/16/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000071",
+"filed": "2024-01-17",
+"accept": "2024-01-17T22:14:45.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2654.0,
+"value": 15101.26,
+"sale_date": "01/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000072",
+"filed": "2024-01-17",
+"accept": "2024-01-17T22:15:18.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 6714.0,
+"value": 38202.66,
+"sale_date": "01/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000073",
+"filed": "2024-01-17",
+"accept": "2024-01-17T22:15:46.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 5633.0,
+"value": 32051.77,
+"sale_date": "01/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000095",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:40:02.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6640.0,
+"value": 39707.2,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000096",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:40:49.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 7925.0,
+"value": 47391.5,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000097",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:41:24.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 3204.0,
+"value": 19159.92,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000098",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:41:54.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2798.0,
+"value": 16732.04,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000099",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:42:44.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 7086.0,
+"value": 42374.28,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000100",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:43:16.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 3204.0,
+"value": 19159.92,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000101",
+"filed": "2024-02-13",
+"accept": "2024-02-13T22:44:03.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 5943.0,
+"value": 35539.14,
+"sale_date": "02/13/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000120",
+"filed": "2024-02-22",
+"accept": "2024-02-22T22:17:47.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3564.0,
+"value": 20511.73,
+"sale_date": "02/22/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"02/21/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000140",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:27:09.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6506.0,
+"value": 35262.52,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000141",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:27:58.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 7562.0,
+"value": 40986.04,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000143",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:30:14.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 3057.0,
+"value": 16568.94,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000145",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:31:47.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2273.0,
+"value": 12319.66,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000147",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:33:19.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 6763.0,
+"value": 36655.46,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000149",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:34:27.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 3057.0,
+"value": 16568.94,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000151",
+"filed": "2024-03-12",
+"accept": "2024-03-12T21:35:28.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 5672.0,
+"value": 30742.24,
+"sale_date": "03/12/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/11/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000167",
+"filed": "2024-03-15",
+"accept": "2024-03-15T21:15:09.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4217.0,
+"value": 21582.85,
+"sale_date": "03/15/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"03/14/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000179",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:16:21.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 10645.0,
+"value": 52373.4,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000180",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:16:55.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 13989.0,
+"value": 68825.88,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000181",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:17:29.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 6084.0,
+"value": 29933.28,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000182",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:18:04.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4503.0,
+"value": 22154.76,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000184",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:18:46.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 29253.0,
+"value": 143924.76,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000185",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:19:20.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 12494.0,
+"value": 61470.48,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000186",
+"filed": "2024-04-02",
+"accept": "2024-04-02T21:19:53.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 14872.0,
+"value": 73170.24,
+"sale_date": "04/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000202",
+"filed": "2024-04-04",
+"accept": "2024-04-04T21:15:07.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 8285.0,
+"value": 41425.0,
+"sale_date": "04/04/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/03/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000217",
+"filed": "2024-04-15",
+"accept": "2024-04-15T21:10:55.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5820.0,
+"value": 27371.9,
+"sale_date": "04/15/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000218",
+"filed": "2024-04-15",
+"accept": "2024-04-15T21:11:37.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 19393.0,
+"value": 91206.75,
+"sale_date": "04/15/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000230",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:45:20.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6443.0,
+"value": 29702.23,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000231",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:45:59.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 7492.0,
+"value": 34538.12,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000232",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:46:33.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 3029.0,
+"value": 13963.69,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000233",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:47:08.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2252.0,
+"value": 10381.72,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000234",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:47:38.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 6700.0,
+"value": 30887.0,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000235",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:48:09.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 3029.0,
+"value": 13963.69,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000236",
+"filed": "2024-04-17",
+"accept": "2024-04-17T20:48:42.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 5621.0,
+"value": 25912.81,
+"sale_date": "04/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/16/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000276",
+"filed": "2024-05-22",
+"accept": "2024-05-22T21:12:12.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3410.0,
+"value": 16540.73,
+"sale_date": "05/22/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"05/21/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000282",
+"filed": "2024-06-17",
+"accept": "2024-06-17T21:14:57.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4217.0,
+"value": 20791.11,
+"sale_date": "06/17/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock and Grant Plan"
+],
+"acq_date": [
+"06/14/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000317",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:09:09.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 8275.0,
+"value": 41039.04,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000318",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:09:44.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 11860.0,
+"value": 58818.48,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000319",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:10:17.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 4732.0,
+"value": 23467.88,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000320",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:10:48.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3503.0,
+"value": 17372.78,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000321",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:11:19.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 31914.0,
+"value": 158274.29,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000322",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:11:51.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9715.0,
+"value": 48180.57,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000323",
+"filed": "2024-07-02",
+"accept": "2024-07-02T22:12:19.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 12513.0,
+"value": 62056.97,
+"sale_date": "07/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000339",
+"filed": "2024-07-05",
+"accept": "2024-07-05T21:42:59.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 11766.0,
+"value": 60830.22,
+"sale_date": "07/05/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/03/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000352",
+"filed": "2024-07-15",
+"accept": "2024-07-15T23:15:03.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5815.0,
+"value": 39336.32,
+"sale_date": "07/15/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000353",
+"filed": "2024-07-15",
+"accept": "2024-07-15T23:15:38.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 24681.0,
+"value": 166957.83,
+"sale_date": "07/15/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000374",
+"filed": "2024-08-22",
+"accept": "2024-08-22T21:49:05.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3412.0,
+"value": 17642.38,
+"sale_date": "08/22/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"08/21/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000385",
+"filed": "2024-09-16",
+"accept": "2024-09-16T21:13:38.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 6025.0,
+"value": 32114.02,
+"sale_date": "09/16/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option Plan"
+],
+"acq_date": [
+"09/14/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000409",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:12:02.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6880.0,
+"value": 39851.71,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000410",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:12:42.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 5585.0,
+"value": 32350.55,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive AwardPlan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000411",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:13:20.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 2911.0,
+"value": 16861.68,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000412",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:13:58.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 26848.0,
+"value": 155514.36,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000413",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:14:35.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8076.0,
+"value": 46779.42,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000414",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:15:13.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 13651.0,
+"value": 79072.05,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000415",
+"filed": "2024-10-02",
+"accept": "2024-10-02T22:18:03.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 12840.0,
+"value": 74374.42,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000433",
+"filed": "2024-10-04",
+"accept": "2024-10-04T21:02:34.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 11764.0,
+"value": 67995.92,
+"sale_date": "10/04/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/03/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000445",
+"filed": "2024-10-11",
+"accept": "2024-10-11T21:30:36.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8413.0,
+"value": 47869.97,
+"sale_date": "10/14/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000446",
+"filed": "2024-10-11",
+"accept": "2024-10-11T21:31:22.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 33924.0,
+"value": 193027.56,
+"sale_date": "10/14/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000484",
+"filed": "2024-11-22",
+"accept": "2024-11-22T22:47:35.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3408.0,
+"value": 21133.2,
+"sale_date": "11/22/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"11/21/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-24-000513",
+"filed": "2024-12-16",
+"accept": "2024-12-16T23:11:00.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 6005.0,
+"value": 45913.89,
+"sale_date": "12/16/2024",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"12/14/2024"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000010",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:27:38.000Z",
+"filer_agent": "0001819848",
+"name": "Sergei Novikov",
+"rel": [
+"Officer"
+],
+"shares": 1835.0,
+"value": 14833.21,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000011",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:30:38.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Officer"
+],
+"shares": 11881.0,
+"value": 96039.96,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000012",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:31:55.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 10855.0,
+"value": 87746.29,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000013",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:32:34.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 23886.0,
+"value": 193082.27,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000014",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:33:09.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4108.0,
+"value": 33206.98,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000016",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:34:07.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 5434.0,
+"value": 43925.69,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000017",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:34:56.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 12016.0,
+"value": 97131.23,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000018",
+"filed": "2025-01-02",
+"accept": "2025-01-02T23:35:31.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6692.0,
+"value": 54094.72,
+"sale_date": "01/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000036",
+"filed": "2025-01-06",
+"accept": "2025-01-06T22:53:36.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Former Officer"
+],
+"shares": 7852.0,
+"value": 76949.6,
+"sale_date": "01/06/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"01/03/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000052",
+"filed": "2025-01-13",
+"accept": "2025-01-13T23:03:09.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine Dehoff",
+"rel": [
+"Officer"
+],
+"shares": 6205.0,
+"value": 50256.8,
+"sale_date": "01/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"01/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000053",
+"filed": "2025-01-13",
+"accept": "2025-01-13T23:03:44.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 21007.0,
+"value": 170144.35,
+"sale_date": "01/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"01/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000071",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:20:33.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1407.0,
+"value": 11749.57,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000072",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:21:12.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1387.0,
+"value": 11582.55,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000073",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:21:51.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 1121.0,
+"value": 9361.24,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000074",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:22:43.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 977.0,
+"value": 8158.72,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000075",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:23:39.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 1655.0,
+"value": 13820.56,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000077",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:24:31.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 1121.0,
+"value": 9361.24,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000078",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:25:05.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Former Officer"
+],
+"shares": 1220.0,
+"value": 10187.97,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000079",
+"filed": "2025-01-15",
+"accept": "2025-01-15T23:25:39.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 212.0,
+"value": 1770.37,
+"sale_date": "01/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000137",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:04:16.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 218.0,
+"value": 1635.67,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000138",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:04:55.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1289.0,
+"value": 9671.79,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000139",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:05:51.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Former Officer"
+],
+"shares": 1161.0,
+"value": 8711.39,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000140",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:07:05.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 1155.0,
+"value": 8666.23,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000141",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:07:44.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 1155.0,
+"value": 8666.39,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000142",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:08:46.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 987.0,
+"value": 7405.82,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000143",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:09:25.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1430.0,
+"value": 10729.92,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000144",
+"filed": "2025-02-11",
+"accept": "2025-02-11T23:10:06.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 1706.0,
+"value": 12800.83,
+"sale_date": "02/11/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000166",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:07:58.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 8628.0,
+"value": 64127.96,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000168",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:10:21.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Former Officer"
+],
+"shares": 8306.0,
+"value": 61734.69,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000169",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:10:53.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 6903.0,
+"value": 51306.83,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000170",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:11:25.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 6903.0,
+"value": 51306.83,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000171",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:11:57.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4331.0,
+"value": 32190.34,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000172",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:12:21.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 10354.0,
+"value": 76956.53,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000173",
+"filed": "2025-02-13",
+"accept": "2025-02-13T23:12:56.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 10785.0,
+"value": 80159.95,
+"sale_date": "02/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000187",
+"filed": "2025-02-24",
+"accept": "2025-02-24T22:36:06.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3442.0,
+"value": 23453.15,
+"sale_date": "02/24/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"02/21/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000205",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:56:27.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 1655.0,
+"value": 10905.7,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000206",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:57:08.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1388.0,
+"value": 9146.29,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000207",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:57:56.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 831.0,
+"value": 5475.91,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000208",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:58:28.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 1121.0,
+"value": 7386.88,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000209",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:59:00.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 1121.0,
+"value": 7386.88,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000210",
+"filed": "2025-03-05",
+"accept": "2025-03-05T22:59:41.000Z",
+"filer_agent": "0001819848",
+"name": "Matthew Field",
+"rel": [
+"Former Officer"
+],
+"shares": 1060.0,
+"value": 6984.92,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000211",
+"filed": "2025-03-05",
+"accept": "2025-03-05T23:00:17.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1252.0,
+"value": 8250.11,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000212",
+"filed": "2025-03-05",
+"accept": "2025-03-05T23:00:48.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 212.0,
+"value": 1396.98,
+"sale_date": "03/05/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000236",
+"filed": "2025-03-17",
+"accept": "2025-03-17T21:52:42.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4220.0,
+"value": 27016.04,
+"sale_date": "03/17/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"03/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000250",
+"filed": "2025-04-02",
+"accept": "2025-04-02T21:54:40.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 4734.0,
+"value": 28388.85,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000251",
+"filed": "2025-04-02",
+"accept": "2025-04-02T21:58:29.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 5831.0,
+"value": 34967.34,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000252",
+"filed": "2025-04-02",
+"accept": "2025-04-02T21:59:03.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3495.0,
+"value": 20958.82,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000253",
+"filed": "2025-04-02",
+"accept": "2025-04-02T21:59:35.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 10882.0,
+"value": 65257.18,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000254",
+"filed": "2025-04-02",
+"accept": "2025-04-02T22:00:00.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9720.0,
+"value": 58288.9,
+"sale_date": "04/01/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/02/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000255",
+"filed": "2025-04-02",
+"accept": "2025-04-02T22:02:58.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 27938.0,
+"value": 167538.6,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000256",
+"filed": "2025-04-02",
+"accept": "2025-04-02T22:03:46.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 1836.0,
+"value": 11010.12,
+"sale_date": "04/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000286",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:00:54.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 212.0,
+"value": 1227.59,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000287",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:01:15.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1252.0,
+"value": 7249.71,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000288",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:01:27.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 1122.0,
+"value": 6496.94,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000289",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:01:34.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 1122.0,
+"value": 6496.94,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000290",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:01:44.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 832.0,
+"value": 4817.7,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000291",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:01:51.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1388.0,
+"value": 8037.22,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000292",
+"filed": "2025-04-08",
+"accept": "2025-04-08T22:02:14.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 2349.0,
+"value": 13601.89,
+"sale_date": "04/08/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000312",
+"filed": "2025-04-14",
+"accept": "2025-04-14T21:44:52.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 5822.0,
+"value": 35166.17,
+"sale_date": "04/14/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/11/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000313",
+"filed": "2025-04-14",
+"accept": "2025-04-14T21:45:30.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 24395.0,
+"value": 147351.22,
+"sale_date": "04/14/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/11/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000346",
+"filed": "2025-05-22",
+"accept": "2025-05-22T21:55:20.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3402.0,
+"value": 22389.62,
+"sale_date": "05/22/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"05/21/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000407",
+"filed": "2025-06-16",
+"accept": "2025-06-16T21:52:27.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4683.0,
+"value": 41682.29,
+"sale_date": "06/16/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"06/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000427",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:19:56.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 6715.0,
+"value": 65960.36,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000428",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:20:30.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 32285.0,
+"value": 317130.32,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000429",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:20:59.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3494.0,
+"value": 34321.0,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000430",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:22:35.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 13790.0,
+"value": 135456.94,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000432",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:23:38.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 8272.0,
+"value": 81254.52,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000433",
+"filed": "2025-07-02",
+"accept": "2025-07-02T22:24:23.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 15440.0,
+"value": 151664.62,
+"sale_date": "07/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000461",
+"filed": "2025-07-14",
+"accept": "2025-07-14T22:00:42.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8262.0,
+"value": 98912.56,
+"sale_date": "07/14/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000462",
+"filed": "2025-07-14",
+"accept": "2025-07-14T22:01:07.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 27538.0,
+"value": 329684.58,
+"sale_date": "07/14/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000508",
+"filed": "2025-08-22",
+"accept": "2025-08-22T21:57:03.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3402.0,
+"value": 49519.96,
+"sale_date": "07/22/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/21/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000525",
+"filed": "2025-09-15",
+"accept": "2025-09-15T22:03:11.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 5987.0,
+"value": 87102.92,
+"sale_date": "09/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"09/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000547",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:04.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3493.0,
+"value": 58606.19,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000548",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:16.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 6715.0,
+"value": 112665.5,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000549",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:27.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 32284.0,
+"value": 541666.86,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000550",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:40.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 13789.0,
+"value": 231354.37,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000551",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:51.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 15439.0,
+"value": 259038.37,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000552",
+"filed": "2025-10-02",
+"accept": "2025-10-02T22:10:58.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 8272.0,
+"value": 138789.13,
+"sale_date": "10/02/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000603",
+"filed": "2025-11-24",
+"accept": "2025-11-24T22:40:08.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4604.0,
+"value": 61294.75,
+"sale_date": "11/24/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"11/21/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-25-000609",
+"filed": "2025-12-15",
+"accept": "2025-12-15T22:41:02.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 5987.0,
+"value": 89736.38,
+"sale_date": "12/15/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"12/14/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000013",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:28:49.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 10484.0,
+"value": 141629.09,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000014",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:29:15.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 5447.0,
+"value": 73583.9,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000015",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:29:45.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 11650.0,
+"value": 157380.67,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000016",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:30:09.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 6585.0,
+"value": 88957.23,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000017",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:30:30.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 23552.0,
+"value": 318165.62,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000018",
+"filed": "2026-01-02",
+"accept": "2026-01-02T23:30:54.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4194.0,
+"value": 56657.04,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000049",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:36:55.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 523.0,
+"value": 7758.63,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000050",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:37:20.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 21493.0,
+"value": 318860.5,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan and 2021 In"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000051",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:37:46.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 7092.0,
+"value": 105213.87,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan and 2021 In"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000052",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:38:17.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1232.0,
+"value": 18277.35,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000053",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:38:34.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1367.0,
+"value": 20279.98,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000054",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:38:52.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 894.0,
+"value": 13261.41,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000055",
+"filed": "2026-01-13",
+"accept": "2026-01-13T23:39:08.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 1630.0,
+"value": 24180.66,
+"sale_date": "01/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000090",
+"filed": "2026-02-02",
+"accept": "2026-02-02T22:43:54.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8194.0,
+"value": 85880.81,
+"sale_date": "02/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000100",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:15.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 510.0,
+"value": 5382.13,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000101",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:24.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 1076.0,
+"value": 11355.24,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000102",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:31.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 1590.0,
+"value": 16779.69,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000103",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:39.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 816.0,
+"value": 8611.52,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000104",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:47.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 1526.0,
+"value": 16104.29,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000105",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:48:57.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 1333.0,
+"value": 14067.52,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000106",
+"filed": "2026-02-10",
+"accept": "2026-02-10T22:49:06.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 1202.0,
+"value": 12685.05,
+"sale_date": "02/10/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000127",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:20.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 8652.0,
+"value": 85455.76,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000128",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:26.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 10382.0,
+"value": 102542.96,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000129",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:34.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 9815.0,
+"value": 96942.71,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000130",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:39.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 4464.0,
+"value": 44090.91,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000131",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:44.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director",
+"10% Owner"
+],
+"shares": 14456.0,
+"value": 142781.84,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000132",
+"filed": "2026-02-13",
+"accept": "2026-02-13T23:25:55.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8539.0,
+"value": 84339.66,
+"sale_date": "02/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"02/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000146",
+"filed": "2026-02-23",
+"accept": "2026-02-23T23:13:14.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3551.0,
+"value": 33982.11,
+"sale_date": "02/23/2026",
+"nature": [
+"Compensation"
+],
+"acq_date": [
+"02/21/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000206",
+"filed": "2026-03-16",
+"accept": "2026-03-16T22:01:49.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 4231.0,
+"value": 42038.65,
+"sale_date": "03/16/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"03/14/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000230",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:22:45.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 1839.0,
+"value": 14985.3,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000231",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:22:53.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9594.0,
+"value": 78177.24,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000232",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:23:00.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director"
+],
+"shares": 15823.0,
+"value": 128935.21,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000233",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:23:09.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 5167.0,
+"value": 42103.22,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000234",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:23:15.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 9350.0,
+"value": 76189.13,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000235",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:23:24.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 12965.0,
+"value": 105646.13,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000236",
+"filed": "2026-04-02",
+"accept": "2026-04-02T22:23:31.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 7696.0,
+"value": 62711.06,
+"sale_date": "04/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000270",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:04.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 526.0,
+"value": 4663.58,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000271",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:14.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 667.0,
+"value": 5913.7,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000272",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:25.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 826.0,
+"value": 7323.41,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000273",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:32.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 357.0,
+"value": 3165.2,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000274",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:37.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 826.0,
+"value": 7323.41,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000275",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:45.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 566.0,
+"value": 5018.22,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000276",
+"filed": "2026-04-08",
+"accept": "2026-04-08T22:53:52.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director"
+],
+"shares": 986.0,
+"value": 8741.99,
+"sale_date": "04/08/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000295",
+"filed": "2026-04-13",
+"accept": "2026-04-13T21:56:39.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 27698.0,
+"value": 227249.74,
+"sale_date": "04/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000296",
+"filed": "2026-04-13",
+"accept": "2026-04-13T21:56:49.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8310.0,
+"value": 68179.87,
+"sale_date": "04/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"04/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000336",
+"filed": "2026-05-22",
+"accept": "2026-05-22T22:02:08.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3486.0,
+"value": 37425.58,
+"sale_date": "05/22/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"05/21/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000343",
+"filed": "2026-06-02",
+"accept": "2026-06-02T21:43:55.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 140716.0,
+"value": 1655853.02,
+"sale_date": "06/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"06/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000344",
+"filed": "2026-06-02",
+"accept": "2026-06-02T21:44:02.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 15201.0,
+"value": 178875.27,
+"sale_date": "06/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"06/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000373",
+"filed": "2026-06-15",
+"accept": "2026-06-15T21:44:05.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 5999.0,
+"value": 58962.77,
+"sale_date": "06/15/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"06/14/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000386",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:38:26.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Officer"
+],
+"shares": 12939.0,
+"value": 115395.75,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000387",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:38:42.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director"
+],
+"shares": 15788.0,
+"value": 140804.39,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000388",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:38:59.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 9330.0,
+"value": 83209.08,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000389",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:39:12.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 5158.0,
+"value": 46001.33,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000390",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:39:40.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 2601.0,
+"value": 23196.87,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000391",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:40:42.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9575.0,
+"value": 85394.1,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000392",
+"filed": "2026-07-02",
+"accept": "2026-07-02T22:40:58.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 7832.0,
+"value": 69849.25,
+"sale_date": "07/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000417",
+"filed": "2026-07-13",
+"accept": "2026-07-13T23:54:17.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8381.0,
+"value": 63118.22,
+"sale_date": "07/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000418",
+"filed": "2026-07-13",
+"accept": "2026-07-13T23:54:22.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 27932.0,
+"value": 210357.62,
+"sale_date": "07/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"07/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000442",
+"filed": "2026-08-24",
+"accept": "2026-08-24T22:32:44.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 3531.0,
+"value": 25924.42,
+"sale_date": "08/24/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"08/21/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000446",
+"filed": "2026-09-02",
+"accept": "2026-09-02T22:04:32.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 37831.0,
+"value": 256264.31,
+"sale_date": "09/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"09/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000459",
+"filed": "2026-09-15",
+"accept": "2026-09-15T21:58:36.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopoulos",
+"rel": [
+"Former Officer"
+],
+"shares": 5771.0,
+"value": 35904.8,
+"sale_date": "09/15/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"09/14/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000482",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:03:20.000Z",
+"filer_agent": "0001819848",
+"name": "Bonny Simi",
+"rel": [
+"Officer"
+],
+"shares": 10890.0,
+"value": 64792.09,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000483",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:03:43.000Z",
+"filer_agent": "0001819848",
+"name": "Didier Papadopolous",
+"rel": [
+"Former Officer"
+],
+"shares": 10857.0,
+"value": 64595.75,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000484",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:04:09.000Z",
+"filer_agent": "0001819848",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 9331.0,
+"value": 55516.53,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000485",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:04:27.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 7663.0,
+"value": 45592.45,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000486",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:04:46.000Z",
+"filer_agent": "0001819848",
+"name": "JoeBen Bevirt",
+"rel": [
+"Officer",
+"Director"
+],
+"shares": 15789.0,
+"value": 93939.61,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000488",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:05:41.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 9575.0,
+"value": 56968.25,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000489",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:06:08.000Z",
+"filer_agent": "0001819848",
+"name": "Rodrigo Brumana",
+"rel": [
+"Officer"
+],
+"shares": 2601.0,
+"value": 15475.14,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000490",
+"filed": "2026-10-02",
+"accept": "2026-10-03T00:06:31.000Z",
+"filer_agent": "0001819848",
+"name": "Sergey Novikov",
+"rel": [
+"Officer"
+],
+"shares": 2965.0,
+"value": 17640.82,
+"sale_date": "10/02/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2021 Incentive Award Plan"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000517",
+"filed": "2026-10-13",
+"accept": "2026-10-13T22:32:19.000Z",
+"filer_agent": "0001819848",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 8279.0,
+"value": 42146.31,
+"sale_date": "10/13/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001819848-26-000535",
+"filed": "2026-11-23",
+"accept": "2026-11-23T23:13:37.000Z",
+"filer_agent": "0001819848",
+"name": "Gregory Bowles",
+"rel": [
+"Officer"
+],
+"shares": 5183.0,
+"value": 20768.05,
+"sale_date": "11/23/2026",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"11/21/2026"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001877282-25-000008",
+"filed": "2025-10-10",
+"accept": "2025-10-10T23:00:54.000Z",
+"filer_agent": "0001877282",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 10197.0,
+"value": 166007.16,
+"sale_date": "10/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001877636-25-000006",
+"filed": "2025-10-10",
+"accept": "2025-10-10T22:59:20.000Z",
+"filer_agent": "0001877636",
+"name": "Eric Allison",
+"rel": [
+"Officer"
+],
+"shares": 33991.0,
+"value": 553373.48,
+"sale_date": "10/13/2025",
+"nature": [
+"Restricted Stock Units granted under issuer's 2016 Stock Option and Grant Plan"
+],
+"acq_date": [
+"10/12/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley"
+},
+{
+"acc": "0001950047-23-000762",
+"filed": "2023-05-18",
+"accept": "2023-05-18T20:34:21.000Z",
+"filer_agent": "0001950047",
+"name": "Katherine DeHoff",
+"rel": [
+"Officer"
+],
+"shares": 28404.0,
+"value": 148552.92,
+"sale_date": "05/18/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/12/2023"
+],
+"plan": [
+"08/23/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-000934",
+"filed": "2023-05-24",
+"accept": "2023-05-24T20:09:57.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7746.0,
+"value": 42835.38,
+"sale_date": "05/24/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"05/24/2023"
+],
+"plan": [
+"08/25/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001047",
+"filed": "2023-05-30",
+"accept": "2023-05-30T20:56:57.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 129047.0,
+"value": 691691.92,
+"sale_date": "05/30/2023",
+"nature": [
+"Previously Exercised Stock Options",
+"Previously Exercised Stock Options",
+"Restricted Stock Units"
+],
+"acq_date": [
+"12/26/2020",
+"07/23/2021",
+"01/01/2023"
+],
+"plan": [
+"02/27/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001298",
+"filed": "2023-06-05",
+"accept": "2023-06-05T20:50:59.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 24141.0,
+"value": 137362.29,
+"sale_date": "06/05/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2022"
+],
+"plan": [
+"11/08/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001536",
+"filed": "2023-06-13",
+"accept": "2023-06-13T20:18:22.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 5141.0,
+"value": 36912.38,
+"sale_date": "06/13/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2022"
+],
+"plan": [
+"08/23/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001598",
+"filed": "2023-06-14",
+"accept": "2023-06-14T20:19:22.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 24142.0,
+"value": 188549.02,
+"sale_date": "06/14/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2022"
+],
+"plan": [
+"11/08/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001739",
+"filed": "2023-06-16",
+"accept": "2023-06-16T20:39:13.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS",
+"rel": [
+"Officer"
+],
+"shares": 50000.0,
+"value": 396500.0,
+"sale_date": "06/16/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001741",
+"filed": "2023-06-16",
+"accept": "2023-06-16T20:39:36.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 5650.0,
+"value": 44804.5,
+"sale_date": "06/16/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2022"
+],
+"plan": [
+"11/08/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001742",
+"filed": "2023-06-16",
+"accept": "2023-06-16T20:39:56.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Officer"
+],
+"shares": 1016117.0,
+"value": 8057807.81,
+"sale_date": "06/16/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001799",
+"filed": "2023-06-20",
+"accept": "2023-06-20T20:54:29.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Officer"
+],
+"shares": 662431.0,
+"value": 4901989.4,
+"sale_date": "06/20/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001833",
+"filed": "2023-06-21",
+"accept": "2023-06-21T20:20:12.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Officer"
+],
+"shares": 495877.0,
+"value": 3624860.87,
+"sale_date": "06/21/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001943",
+"filed": "2023-06-28",
+"accept": "2023-06-28T20:14:00.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 10281.0,
+"value": 65695.59,
+"sale_date": "06/28/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2022"
+],
+"plan": [
+"08/23/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001959",
+"filed": "2023-06-29",
+"accept": "2023-06-29T20:11:22.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 26024.0,
+"value": 233175.04,
+"sale_date": "06/29/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"06/14/2023"
+],
+"plan": [
+"11/08/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001963",
+"filed": "2023-06-29",
+"accept": "2023-06-29T20:19:42.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 77856.0,
+"value": 697589.76,
+"sale_date": "06/29/2023",
+"nature": [
+"Previously Exercised Stock Options"
+],
+"acq_date": [
+"07/23/2021"
+],
+"plan": [
+"02/27/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001966",
+"filed": "2023-06-29",
+"accept": "2023-06-29T20:22:48.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 20000.0,
+"value": 179200.0,
+"sale_date": "06/29/2023",
+"nature": [
+"Exercise of Stock Options"
+],
+"acq_date": [
+"06/29/2023"
+],
+"plan": [
+"08/25/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001972",
+"filed": "2023-06-29",
+"accept": "2023-06-29T20:33:22.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Officer"
+],
+"shares": 1153394.0,
+"value": 10334410.24,
+"sale_date": "06/29/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-001994",
+"filed": "2023-06-30",
+"accept": "2023-06-30T20:17:47.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 57873.0,
+"value": 577572.54,
+"sale_date": "06/30/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/03/2023"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-002197",
+"filed": "2023-07-10",
+"accept": "2023-07-10T20:11:15.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 2412.0,
+"value": 23010.48,
+"sale_date": "07/10/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2023"
+],
+"plan": [
+"08/23/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-002208",
+"filed": "2023-07-10",
+"accept": "2023-07-10T20:15:19.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 6029.0,
+"value": 57516.66,
+"sale_date": "07/10/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2023"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-002330",
+"filed": "2023-07-14",
+"accept": "2023-07-14T20:05:11.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 10432.0,
+"value": 110161.92,
+"sale_date": "07/14/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/12/2023"
+],
+"plan": [
+"08/23/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-002770",
+"filed": "2023-08-04",
+"accept": "2023-08-04T20:15:12.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW A FIELD",
+"rel": [
+"Officer"
+],
+"shares": 52250.0,
+"value": 430540.0,
+"sale_date": "08/04/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/03/2022"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-003398",
+"filed": "2023-08-23",
+"accept": "2023-08-23T20:15:45.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7749.0,
+"value": 54707.94,
+"sale_date": "08/23/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"08/21/2023"
+],
+"plan": [
+"08/25/2022"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004139",
+"filed": "2023-09-18",
+"accept": "2023-09-18T20:04:12.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3574.0,
+"value": 23373.96,
+"sale_date": "09/18/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2023"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004333",
+"filed": "2023-10-02",
+"accept": "2023-10-02T20:12:31.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 12500.0,
+"value": 80625.0,
+"sale_date": "10/02/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/12/2022"
+],
+"plan": [
+"06/14/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004341",
+"filed": "2023-10-02",
+"accept": "2023-10-02T20:14:20.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS",
+"rel": [
+"Officer"
+],
+"shares": 50000.0,
+"value": 322500.0,
+"sale_date": "10/02/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004349",
+"filed": "2023-10-02",
+"accept": "2023-10-02T20:16:07.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Officer"
+],
+"shares": 200000.0,
+"value": 1290000.0,
+"sale_date": "10/02/2023",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004395",
+"filed": "2023-10-04",
+"accept": "2023-10-04T20:07:36.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 4964.0,
+"value": 30429.32,
+"sale_date": "10/04/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2023"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-004758",
+"filed": "2023-11-06",
+"accept": "2023-11-06T21:20:59.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW A FIELD",
+"rel": [
+"Officer"
+],
+"shares": 21000.0,
+"value": 131040.0,
+"sale_date": "11/06/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/03/2022"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-005449",
+"filed": "2023-11-29",
+"accept": "2023-11-29T21:12:21.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 24447.0,
+"value": 145215.18,
+"sale_date": "11/29/2023",
+"nature": [
+"Exercise of Stock Options",
+"Restricted Stock Units"
+],
+"acq_date": [
+"11/29/2023",
+"11/21/2023"
+],
+"plan": [
+"06/15/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-005459",
+"filed": "2023-11-29",
+"accept": "2023-11-29T21:21:58.000Z",
+"filer_agent": "0001950047",
+"name": "CAPRICORN-LIBRA INVESTMENT GROUP LP",
+"rel": [
+"Director"
+],
+"shares": 119001.0,
+"value": 721812.47,
+"sale_date": "11/29/2023",
+"nature": [
+"Private Acquisition from Issuer/Affiliate"
+],
+"acq_date": [
+"08/10/2021"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-005717",
+"filed": "2023-12-06",
+"accept": "2023-12-06T21:20:19.000Z",
+"filer_agent": "0001950047",
+"name": "CAPRICORN-LIBRA INVESTMENT GROUP LP",
+"rel": [
+"Director"
+],
+"shares": 119001.0,
+"value": 765545.33,
+"sale_date": "12/06/2023",
+"nature": [
+"Private Acquisition from Issuer/Affiliate"
+],
+"acq_date": [
+"08/10/2021"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-005808",
+"filed": "2023-12-08",
+"accept": "2023-12-08T21:17:28.000Z",
+"filer_agent": "0001950047",
+"name": "CAPRICORN-LIBRA INVESTMENT GROUP LP",
+"rel": [
+"Director"
+],
+"shares": 119001.0,
+"value": 776291.12,
+"sale_date": "12/08/2023",
+"nature": [
+"Private Acquisition from Issuer/Affiliate"
+],
+"acq_date": [
+"08/10/2021"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-005902",
+"filed": "2023-12-12",
+"accept": "2023-12-12T21:19:00.000Z",
+"filer_agent": "0001950047",
+"name": "CAPRICORN-LIBRA INVESTMENT GROUP LP",
+"rel": [
+"Director"
+],
+"shares": 119001.0,
+"value": 766937.64,
+"sale_date": "12/12/2023",
+"nature": [
+"Private Acquisition from Issuer/Affiliate"
+],
+"acq_date": [
+"08/10/2021"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-006015",
+"filed": "2023-12-14",
+"accept": "2023-12-14T21:07:26.000Z",
+"filer_agent": "0001950047",
+"name": "CAPRICORN-LIBRA INVESTMENT GROUP LP",
+"rel": [
+"Director"
+],
+"shares": 119001.0,
+"value": 854522.38,
+"sale_date": "12/14/2023",
+"nature": [
+"Private Acquisition from Issuer/Affiliate"
+],
+"acq_date": [
+"08/10/2021"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-23-006237",
+"filed": "2023-12-18",
+"accept": "2023-12-18T21:17:07.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3646.0,
+"value": 25048.02,
+"sale_date": "12/18/2023",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"12/14/2023"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-000069",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:39:30.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 12500.0,
+"value": 83125.0,
+"sale_date": "01/02/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/12/2022"
+],
+"plan": [
+"06/14/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-000074",
+"filed": "2024-01-02",
+"accept": "2024-01-02T21:40:24.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 150000.0,
+"value": 997500.0,
+"sale_date": "01/02/2024",
+"nature": [
+"Exercise of Stock Options"
+],
+"acq_date": [
+"01/02/2024"
+],
+"plan": [
+"02/27/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-000165",
+"filed": "2024-01-04",
+"accept": "2024-01-04T21:25:03.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3468.0,
+"value": 20738.64,
+"sale_date": "01/04/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-000168",
+"filed": "2024-01-04",
+"accept": "2024-01-04T21:28:00.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1196000.0,
+"sale_date": "01/04/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-000169",
+"filed": "2024-01-04",
+"accept": "2024-01-04T21:28:21.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 299000.0,
+"sale_date": "01/04/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-001679",
+"filed": "2024-03-01",
+"accept": "2024-03-01T21:36:04.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW FIELD",
+"rel": [
+"Officer"
+],
+"shares": 12500.0,
+"value": 70250.0,
+"sale_date": "03/01/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2022"
+],
+"plan": [
+"11/30/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-002394",
+"filed": "2024-03-15",
+"accept": "2024-03-15T20:29:35.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 202080.0,
+"value": 1032628.8,
+"sale_date": "03/15/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"12/15/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-002465",
+"filed": "2024-03-18",
+"accept": "2024-03-18T20:34:08.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3267.0,
+"value": 16596.36,
+"sale_date": "03/18/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"03/14/2024"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-002785",
+"filed": "2024-04-01",
+"accept": "2024-04-01T20:27:37.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 268000.0,
+"sale_date": "04/01/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-002786",
+"filed": "2024-04-01",
+"accept": "2024-04-01T20:27:46.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1072000.0,
+"sale_date": "04/01/2024",
+"nature": [
+"Conversion Of Membership interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-002946",
+"filed": "2024-04-04",
+"accept": "2024-04-04T20:21:36.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2724.0,
+"value": 13429.32,
+"sale_date": "04/04/2024",
+"nature": [
+"Restricted Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2024",
+"04/01/2024"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-003353",
+"filed": "2024-05-03",
+"accept": "2024-05-03T20:18:18.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2587.0,
+"value": 13918.06,
+"sale_date": "05/03/2024",
+"nature": [
+"Restricted Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"03/14/2024",
+"04/01/2024"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-003355",
+"filed": "2024-05-03",
+"accept": "2024-05-03T20:18:52.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 12500.0,
+"value": 67250.0,
+"sale_date": "05/03/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2022"
+],
+"plan": [
+"06/14/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-003921",
+"filed": "2024-05-20",
+"accept": "2024-05-20T20:23:01.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW FIELD",
+"rel": [
+"Officer"
+],
+"shares": 13953.0,
+"value": 70323.12,
+"sale_date": "05/20/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [
+"11/30/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-004877",
+"filed": "2024-06-18",
+"accept": "2024-06-18T20:27:04.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3267.0,
+"value": 16073.64,
+"sale_date": "06/18/2024",
+"nature": [
+"Restricted Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"06/14/2024",
+"06/14/2024"
+],
+"plan": [
+"03/16/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005157",
+"filed": "2024-07-01",
+"accept": "2024-07-01T20:45:28.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1020000.0,
+"sale_date": "07/01/2024",
+"nature": [
+"Conversion Of Membership interest"
+],
+"acq_date": [
+"11/16/2016"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005158",
+"filed": "2024-07-01",
+"accept": "2024-07-01T20:45:41.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 255000.0,
+"sale_date": "07/01/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005160",
+"filed": "2024-07-01",
+"accept": "2024-07-01T20:46:13.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 23188.0,
+"value": 118258.8,
+"sale_date": "07/01/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005220",
+"filed": "2024-07-03",
+"accept": "2024-07-03T17:11:55.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 7262.0,
+"value": 36019.52,
+"sale_date": "07/03/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005272",
+"filed": "2024-07-08",
+"accept": "2024-07-08T20:16:47.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW FIELD",
+"rel": [
+"Officer"
+],
+"shares": 5642.0,
+"value": 29112.72,
+"sale_date": "07/08/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/03/2024"
+],
+"plan": [
+"11/30/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005335",
+"filed": "2024-07-11",
+"accept": "2024-07-11T20:19:35.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 9488.0,
+"value": 49242.72,
+"sale_date": "07/11/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005336",
+"filed": "2024-07-11",
+"accept": "2024-07-11T20:19:45.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 12500.0,
+"value": 64875.0,
+"sale_date": "07/11/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/12/2022"
+],
+"plan": [
+"06/14/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005340",
+"filed": "2024-07-11",
+"accept": "2024-07-11T20:21:21.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 37824.0,
+"value": 196306.56,
+"sale_date": "07/11/2024",
+"nature": [
+"Exercise of Stock Options",
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/11/2024",
+"01/01/2023"
+],
+"plan": [
+"06/15/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005420",
+"filed": "2024-07-15",
+"accept": "2024-07-15T20:31:18.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 8076.0,
+"value": 53382.36,
+"sale_date": "07/15/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005463",
+"filed": "2024-07-16",
+"accept": "2024-07-16T20:31:40.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 6140.0,
+"value": 42673.0,
+"sale_date": "07/16/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/01/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-005466",
+"filed": "2024-07-16",
+"accept": "2024-07-16T20:32:22.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW FIELD",
+"rel": [
+"Officer"
+],
+"shares": 25000.0,
+"value": 173750.0,
+"sale_date": "07/16/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/03/2022"
+],
+"plan": [
+"11/30/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007186",
+"filed": "2024-09-17",
+"accept": "2024-09-17T20:40:27.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2247.0,
+"value": 11954.04,
+"sale_date": "09/17/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007329",
+"filed": "2024-09-23",
+"accept": "2024-09-23T20:24:49.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 26775.0,
+"value": 138159.0,
+"sale_date": "09/23/2024",
+"nature": [
+"Exercise of Stock Options",
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/23/2024",
+"01/01/2023"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007460",
+"filed": "2024-09-30",
+"accept": "2024-09-30T20:25:51.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Officer"
+],
+"shares": 166666.0,
+"value": 869996.52,
+"sale_date": "09/30/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007526",
+"filed": "2024-10-01",
+"accept": "2024-10-01T20:38:54.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1006000.0,
+"sale_date": "10/01/2024",
+"nature": [
+"Conversion Of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007527",
+"filed": "2024-10-01",
+"accept": "2024-10-01T20:39:31.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 251500.0,
+"sale_date": "10/01/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007540",
+"filed": "2024-10-02",
+"accept": "2024-10-02T20:19:34.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 562.0,
+"value": 2697.6,
+"sale_date": "10/02/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007566",
+"filed": "2024-10-03",
+"accept": "2024-10-03T20:28:38.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 8588.0,
+"value": 52730.32,
+"sale_date": "10/03/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007568",
+"filed": "2024-10-03",
+"accept": "2024-10-03T20:30:17.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 8542.0,
+"value": 52447.88,
+"sale_date": "10/03/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007603",
+"filed": "2024-10-07",
+"accept": "2024-10-07T20:19:42.000Z",
+"filer_agent": "0001950047",
+"name": "MATTHEW FIELD",
+"rel": [
+"Officer"
+],
+"shares": 5643.0,
+"value": 33575.85,
+"sale_date": "10/07/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/03/2024"
+],
+"plan": [
+"11/30/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-007770",
+"filed": "2024-10-16",
+"accept": "2024-10-16T20:22:48.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 27898.0,
+"value": 151207.16,
+"sale_date": "10/16/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2024"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-008770",
+"filed": "2024-11-18",
+"accept": "2024-11-18T22:15:25.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Officer"
+],
+"shares": 166666.0,
+"value": 954996.18,
+"sale_date": "11/18/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-008937",
+"filed": "2024-11-21",
+"accept": "2024-11-21T21:21:49.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 95000.0,
+"value": 589000.0,
+"sale_date": "11/21/2024",
+"nature": [
+"Restricted Stock Units",
+"Previously Exercised Options"
+],
+"acq_date": [
+"10/01/2023",
+"05/30/2023"
+],
+"plan": [
+"03/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-008940",
+"filed": "2024-11-21",
+"accept": "2024-11-21T21:22:33.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2279.0,
+"value": 14129.8,
+"sale_date": "11/21/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-009087",
+"filed": "2024-11-25",
+"accept": "2024-11-25T21:43:05.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7748.0,
+"value": 54933.32,
+"sale_date": "11/25/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"11/21/2024"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-009096",
+"filed": "2024-11-25",
+"accept": "2024-11-25T21:45:02.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1835.0,
+"value": 13010.15,
+"sale_date": "11/25/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2023"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-009590",
+"filed": "2024-12-09",
+"accept": "2024-12-09T21:47:34.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 333332.0,
+"value": 2946654.88,
+"sale_date": "12/09/2024",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-24-009925",
+"filed": "2024-12-17",
+"accept": "2024-12-17T21:25:39.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3382.0,
+"value": 26988.36,
+"sale_date": "12/17/2024",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"12/14/2024"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000095",
+"filed": "2025-01-03",
+"accept": "2025-01-03T21:19:28.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 10801.0,
+"value": 87380.09,
+"sale_date": "01/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000149",
+"filed": "2025-01-06",
+"accept": "2025-01-06T21:28:11.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 7692.0,
+"value": 75150.84,
+"sale_date": "01/06/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2023"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000152",
+"filed": "2025-01-06",
+"accept": "2025-01-06T21:28:40.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 30000.0,
+"value": 293100.0,
+"sale_date": "01/06/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/12/2022"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000159",
+"filed": "2025-01-06",
+"accept": "2025-01-06T21:34:24.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1954000.0,
+"sale_date": "01/06/2025",
+"nature": [
+"conversion of membership interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000160",
+"filed": "2025-01-06",
+"accept": "2025-01-06T21:34:37.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 488500.0,
+"sale_date": "01/06/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000230",
+"filed": "2025-01-13",
+"accept": "2025-01-13T21:26:59.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 333332.0,
+"value": 2913321.68,
+"sale_date": "01/13/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000297",
+"filed": "2025-01-16",
+"accept": "2025-01-16T21:33:20.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1463.0,
+"value": 11850.3,
+"sale_date": "01/16/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"01/14/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000298",
+"filed": "2025-01-16",
+"accept": "2025-01-16T21:33:33.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 9090.0,
+"value": 73629.0,
+"sale_date": "01/16/2025",
+"nature": [
+"Restricted Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"01/01/2025",
+"01/14/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000314",
+"filed": "2025-01-16",
+"accept": "2025-01-16T21:39:57.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 27783.0,
+"value": 225042.3,
+"sale_date": "01/16/2025",
+"nature": [
+"Restricted Stock Units &amp; Performance Stock Units"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000320",
+"filed": "2025-01-17",
+"accept": "2025-01-17T21:15:49.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 31489.0,
+"value": 263562.93,
+"sale_date": "01/17/2025",
+"nature": [
+"Previously Exercised Options",
+"Restricted Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"05/30/2023",
+"01/01/2024",
+"01/16/2024"
+],
+"plan": [
+"03/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000573",
+"filed": "2025-02-03",
+"accept": "2025-02-03T21:19:25.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 333334.0,
+"value": 2753338.84,
+"sale_date": "02/03/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000783",
+"filed": "2025-02-12",
+"accept": "2025-02-12T21:32:12.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 1935.0,
+"value": 14241.6,
+"sale_date": "02/12/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000784",
+"filed": "2025-02-12",
+"accept": "2025-02-12T21:34:21.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1437.0,
+"value": 10576.32,
+"sale_date": "02/12/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"02/10/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000886",
+"filed": "2025-02-14",
+"accept": "2025-02-14T21:22:29.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 10931.0,
+"value": 82856.98,
+"sale_date": "02/14/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"02/12/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-000887",
+"filed": "2025-02-14",
+"accept": "2025-02-14T21:23:00.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 11689.0,
+"value": 88602.62,
+"sale_date": "02/14/2025",
+"nature": [
+"Performance Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"02/10/2025",
+"02/12/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-001621",
+"filed": "2025-03-06",
+"accept": "2025-03-06T21:19:11.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 1969.0,
+"value": 13369.51,
+"sale_date": "03/06/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-001622",
+"filed": "2025-03-06",
+"accept": "2025-03-06T21:19:32.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1463.0,
+"value": 9933.77,
+"sale_date": "03/06/2025",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-001632",
+"filed": "2025-03-06",
+"accept": "2025-03-06T21:28:27.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 9605.0,
+"value": 65217.95,
+"sale_date": "03/06/2025",
+"nature": [
+"Restricted Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"02/21/2025",
+"03/04/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002007",
+"filed": "2025-03-18",
+"accept": "2025-03-18T20:28:12.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3710.0,
+"value": 23855.3,
+"sale_date": "03/18/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"03/14/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002156",
+"filed": "2025-03-24",
+"accept": "2025-03-24T20:23:35.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 166667.0,
+"value": 1106668.88,
+"sale_date": "03/24/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002173",
+"filed": "2025-03-24",
+"accept": "2025-03-24T21:44:09.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 9695.0,
+"value": 64374.8,
+"sale_date": "03/24/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"02/12/2024"
+],
+"plan": [
+"03/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002299",
+"filed": "2025-04-01",
+"accept": "2025-04-01T20:22:58.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 50000.0,
+"value": 301000.0,
+"sale_date": "04/01/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002300",
+"filed": "2025-04-01",
+"accept": "2025-04-01T20:23:13.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 200000.0,
+"value": 1204000.0,
+"sale_date": "04/01/2025",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/17/2023"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002360",
+"filed": "2025-04-03",
+"accept": "2025-04-03T20:35:11.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 7655.0,
+"value": 46236.2,
+"sale_date": "04/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002422",
+"filed": "2025-04-09",
+"accept": "2025-04-09T20:16:53.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 9848.0,
+"value": 52489.84,
+"sale_date": "04/09/2025",
+"nature": [
+"Restricted Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"04/01/2025",
+"04/07/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002423",
+"filed": "2025-04-09",
+"accept": "2025-04-09T20:17:09.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3132.0,
+"value": 16693.56,
+"sale_date": "04/09/2025",
+"nature": [
+"RSU &amp; PSU"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002475",
+"filed": "2025-04-15",
+"accept": "2025-04-15T20:29:46.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 29300.0,
+"value": 176386.0,
+"sale_date": "04/15/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2025"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002508",
+"filed": "2025-04-17",
+"accept": "2025-04-17T20:25:01.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 12382.0,
+"value": 71691.78,
+"sale_date": "04/17/2025",
+"nature": [
+"RSU/PSU"
+],
+"acq_date": [
+"04/01/2024"
+],
+"plan": [
+"03/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002524",
+"filed": "2025-04-21",
+"accept": "2025-04-21T20:18:37.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST U/A DTD12/21/2012",
+"rel": [
+"Director"
+],
+"shares": 166667.0,
+"value": 981668.63,
+"sale_date": "04/21/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-002818",
+"filed": "2025-05-08",
+"accept": "2025-05-08T20:23:28.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2899.0,
+"value": 18611.58,
+"sale_date": "05/08/2025",
+"nature": [
+"RSU &amp; PSU"
+],
+"acq_date": [
+"03/14/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-003201",
+"filed": "2025-05-19",
+"accept": "2025-05-19T20:26:19.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 166667.0,
+"value": 1231669.13,
+"sale_date": "05/19/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-003411",
+"filed": "2025-05-23",
+"accept": "2025-05-23T20:21:45.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7754.0,
+"value": 51486.56,
+"sale_date": "05/23/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"05/21/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004471",
+"filed": "2025-06-18",
+"accept": "2025-06-18T20:26:34.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 4176.0,
+"value": 36122.4,
+"sale_date": "06/18/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"06/14/2025"
+],
+"plan": [
+"03/15/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004537",
+"filed": "2025-06-23",
+"accept": "2025-06-23T20:24:51.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 333334.0,
+"value": 2846672.36,
+"sale_date": "06/23/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004694",
+"filed": "2025-06-30",
+"accept": "2025-06-30T20:19:56.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 300000.0,
+"value": 2832000.0,
+"sale_date": "06/30/2025",
+"nature": [
+"Exercise of Stock Options"
+],
+"acq_date": [
+"06/30/2025"
+],
+"plan": [
+"03/04/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004773",
+"filed": "2025-07-01",
+"accept": "2025-07-01T20:31:18.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 472000.0,
+"value": 4979600.0,
+"sale_date": "07/01/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"08/22/2022"
+],
+"plan": [
+"03/31/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004847",
+"filed": "2025-07-03",
+"accept": "2025-07-03T17:29:00.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7961.0,
+"value": 80883.76,
+"sale_date": "07/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004855",
+"filed": "2025-07-03",
+"accept": "2025-07-03T17:30:39.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 5102.0,
+"value": 51836.32,
+"sale_date": "07/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [
+"03/20/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-004992",
+"filed": "2025-07-14",
+"accept": "2025-07-14T20:19:33.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 500001.0,
+"value": 6020012.04,
+"sale_date": "07/14/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-005020",
+"filed": "2025-07-15",
+"accept": "2025-07-15T20:20:23.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 20823.0,
+"value": 262994.49,
+"sale_date": "07/15/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2025"
+],
+"plan": [
+"06/06/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-005539",
+"filed": "2025-08-08",
+"accept": "2025-08-08T20:04:35.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 173456.0,
+"value": 2992116.0,
+"sale_date": "08/08/2025",
+"nature": [
+"Stock Option Exercise"
+],
+"acq_date": [
+"08/08/2025"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-006345",
+"filed": "2025-08-25",
+"accept": "2025-08-25T20:37:02.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 500001.0,
+"value": 7475014.95,
+"sale_date": "08/25/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/18/2016"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-006349",
+"filed": "2025-08-25",
+"accept": "2025-08-25T20:37:42.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 7754.0,
+"value": 115922.3,
+"sale_date": "08/25/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"08/21/2025"
+],
+"plan": [
+"06/04/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007148",
+"filed": "2025-09-15",
+"accept": "2025-09-15T20:32:19.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 500001.0,
+"value": 7000014.0,
+"sale_date": "09/15/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [
+"06/27/2024"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007209",
+"filed": "2025-09-16",
+"accept": "2025-09-16T20:22:19.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1979.0,
+"value": 27943.48,
+"sale_date": "09/16/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2025"
+],
+"plan": [
+"03/20/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007394",
+"filed": "2025-09-22",
+"accept": "2025-09-22T20:15:59.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 12900.0,
+"value": 213882.0,
+"sale_date": "09/22/2025",
+"nature": [
+"Exercise of Stock Options"
+],
+"acq_date": [
+"09/22/2025"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007395",
+"filed": "2025-09-22",
+"accept": "2025-09-22T20:16:15.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 52907.0,
+"value": 877198.06,
+"sale_date": "09/22/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"08/18/2022"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007657",
+"filed": "2025-10-01",
+"accept": "2025-10-01T20:33:19.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 253600.0,
+"value": 4093104.0,
+"sale_date": "10/01/2025",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/31/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007659",
+"filed": "2025-10-01",
+"accept": "2025-10-01T20:33:49.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 172400.0,
+"value": 2782536.0,
+"sale_date": "10/01/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/05/2023"
+],
+"plan": [
+"03/31/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007733",
+"filed": "2025-10-03",
+"accept": "2025-10-03T20:27:55.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 4776.0,
+"value": 85012.8,
+"sale_date": "10/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007756",
+"filed": "2025-10-03",
+"accept": "2025-10-03T20:39:45.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 5102.0,
+"value": 90815.6,
+"sale_date": "10/03/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [
+"03/20/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-007941",
+"filed": "2025-10-14",
+"accept": "2025-10-14T20:18:51.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 20824.0,
+"value": 349218.48,
+"sale_date": "10/14/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2025"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-009347",
+"filed": "2025-11-25",
+"accept": "2025-11-25T21:24:21.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 3931.0,
+"value": 54601.59,
+"sale_date": "11/25/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"11/21/2025"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-010416",
+"filed": "2025-12-16",
+"accept": "2025-12-16T21:34:05.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1979.0,
+"value": 28082.01,
+"sale_date": "12/16/2025",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"12/14/2025"
+],
+"plan": [
+"03/20/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-25-010756",
+"filed": "2025-12-30",
+"accept": "2025-12-30T21:09:56.000Z",
+"filer_agent": "0001950047",
+"name": "ERIC ALLISON",
+"rel": [
+"Officer"
+],
+"shares": 32448.0,
+"value": 430030.1,
+"sale_date": "12/30/2025",
+"nature": [
+"Restricted Stock"
+],
+"acq_date": [
+"07/12/2023"
+],
+"plan": [],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-000074",
+"filed": "2026-01-02",
+"accept": "2026-01-02T21:32:59.000Z",
+"filer_agent": "0001950047",
+"name": "BONNY SIMI",
+"rel": [
+"Officer"
+],
+"shares": 103588.0,
+"value": 1367361.6,
+"sale_date": "01/02/2026",
+"nature": [
+"Restricted Stock Units",
+"Previously Exercised Stock Options"
+],
+"acq_date": [
+"07/01/2024",
+"04/29/2024"
+],
+"plan": [
+"03/04/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-000147",
+"filed": "2026-01-05",
+"accept": "2026-01-05T21:43:22.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 6429.0,
+"value": 92320.44,
+"sale_date": "01/05/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-000404",
+"filed": "2026-01-14",
+"accept": "2026-01-14T21:24:56.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 804.0,
+"value": 11907.24,
+"sale_date": "01/14/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"01/12/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-000405",
+"filed": "2026-01-14",
+"accept": "2026-01-14T21:25:06.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 5383.0,
+"value": 79722.23,
+"sale_date": "01/14/2026",
+"nature": [
+"Restricted Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"01/01/2026",
+"01/12/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-000421",
+"filed": "2026-01-14",
+"accept": "2026-01-14T21:30:42.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 28260.0,
+"value": 418530.6,
+"sale_date": "01/14/2026",
+"nature": [
+"Restricted and Performance Stock Units"
+],
+"acq_date": [
+"01/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001059",
+"filed": "2026-02-09",
+"accept": "2026-02-09T21:51:25.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TR U/A DTD 12/26/2020",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 121000.0,
+"value": 1272920.0,
+"sale_date": "02/09/2026",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001060",
+"filed": "2026-02-09",
+"accept": "2026-02-09T21:51:38.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST U/A DTD 11/01/2007",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 386182.0,
+"value": 4062634.64,
+"sale_date": "02/09/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001161",
+"filed": "2026-02-11",
+"accept": "2026-02-11T21:30:29.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 816.0,
+"value": 8347.68,
+"sale_date": "02/11/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001164",
+"filed": "2026-02-11",
+"accept": "2026-02-11T21:31:21.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 16235.0,
+"value": 166084.05,
+"sale_date": "02/11/2026",
+"nature": [
+"Restricted and Performance Stock Units"
+],
+"acq_date": [
+"02/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001343",
+"filed": "2026-02-17",
+"accept": "2026-02-17T21:31:25.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 63636.0,
+"value": 629996.4,
+"sale_date": "02/17/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/01/2025"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001365",
+"filed": "2026-02-17",
+"accept": "2026-02-17T21:38:47.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TR U/A DTD 12/26/2020",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 121000.0,
+"value": 1197900.0,
+"sale_date": "02/17/2026",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001366",
+"filed": "2026-02-17",
+"accept": "2026-02-17T21:38:57.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST U/A DTD 11/01/2007",
+"rel": [
+"Director",
+"Officer",
+"10% Stockholder"
+],
+"shares": 386182.0,
+"value": 3823201.8,
+"sale_date": "02/17/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001369",
+"filed": "2026-02-17",
+"accept": "2026-02-17T21:39:38.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 6366.0,
+"value": 63023.4,
+"sale_date": "02/17/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"02/09/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-001719",
+"filed": "2026-02-24",
+"accept": "2026-02-24T21:28:26.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 11530.0,
+"value": 109996.2,
+"sale_date": "02/24/2026",
+"nature": [
+"Performance Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"02/09/2026",
+"02/21/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-002498",
+"filed": "2026-03-11",
+"accept": "2026-03-11T20:42:25.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 1433.0,
+"value": 14158.04,
+"sale_date": "03/11/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"03/09/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-002500",
+"filed": "2026-03-11",
+"accept": "2026-03-11T20:42:55.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 1075.0,
+"value": 10621.0,
+"sale_date": "03/11/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"03/09/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-002502",
+"filed": "2026-03-11",
+"accept": "2026-03-11T20:43:24.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1172.0,
+"value": 11579.36,
+"sale_date": "03/11/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"03/09/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-002740",
+"filed": "2026-03-17",
+"accept": "2026-03-17T20:38:07.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2594.0,
+"value": 25473.08,
+"sale_date": "03/17/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"03/14/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003258",
+"filed": "2026-04-06",
+"accept": "2026-04-06T20:27:25.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 3394.0,
+"value": 28849.0,
+"sale_date": "04/06/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003264",
+"filed": "2026-04-06",
+"accept": "2026-04-06T20:30:33.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 4720.0,
+"value": 40120.0,
+"sale_date": "04/06/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003360",
+"filed": "2026-04-09",
+"accept": "2026-04-09T20:23:50.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 271.0,
+"value": 2338.73,
+"sale_date": "04/09/2026",
+"nature": [
+"Performance Stock Units"
+],
+"acq_date": [
+"04/07/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003435",
+"filed": "2026-04-14",
+"accept": "2026-04-14T20:33:44.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 14295.0,
+"value": 121793.4,
+"sale_date": "04/14/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"04/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003486",
+"filed": "2026-04-15",
+"accept": "2026-04-15T20:39:38.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 39963.0,
+"value": 351674.4,
+"sale_date": "04/15/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"03/04/2025"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003498",
+"filed": "2026-04-15",
+"accept": "2026-04-15T20:44:02.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST U/A DTD 11/01/2007",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 322018.0,
+"value": 2833758.4,
+"sale_date": "04/15/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-003499",
+"filed": "2026-04-15",
+"accept": "2026-04-15T20:44:12.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TR U/A DTD 12/26/2020",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 99000.0,
+"value": 871200.0,
+"sale_date": "04/15/2026",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-004144",
+"filed": "2026-05-06",
+"accept": "2026-05-06T20:32:51.000Z",
+"filer_agent": "0001950047",
+"name": "ERIC ALLISON",
+"rel": [
+"Officer"
+],
+"shares": 74844.0,
+"value": 649645.92,
+"sale_date": "05/06/2026",
+"nature": [
+"Restricted Stock Units",
+"Performance Stock Units"
+],
+"acq_date": [
+"07/12/2024",
+"01/12/2026"
+],
+"plan": [
+"12/30/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-004600",
+"filed": "2026-05-15",
+"accept": "2026-05-15T20:20:39.000Z",
+"filer_agent": "0001950047",
+"name": "JOEBEN BEVIRT 2020 DESCENDANTS TR U/A DTD 12/26/2020",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 99000.0,
+"value": 1053360.0,
+"sale_date": "05/15/2026",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"09/11/2009"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-004611",
+"filed": "2026-05-15",
+"accept": "2026-05-15T20:24:45.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST U/A DTD 11/01/2007",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 322019.0,
+"value": 3426282.16,
+"sale_date": "05/15/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"10/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-005090",
+"filed": "2026-05-26",
+"accept": "2026-05-26T20:45:56.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 4602.0,
+"value": 50253.84,
+"sale_date": "05/26/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"05/21/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-005248",
+"filed": "2026-05-28",
+"accept": "2026-05-28T21:04:20.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 416666.0,
+"value": 4783325.68,
+"sale_date": "05/28/2026",
+"nature": [
+"Previously Exercised Stock Options",
+"Founders Shares"
+],
+"acq_date": [
+"08/15/2016",
+"11/29/2017"
+],
+"plan": [
+"10/09/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-005392",
+"filed": "2026-06-01",
+"accept": "2026-06-01T20:23:57.000Z",
+"filer_agent": "0001950047",
+"name": "SCIARRA MANAGEMENT TRUST",
+"rel": [
+"Director"
+],
+"shares": 83334.0,
+"value": 991674.6,
+"sale_date": "06/01/2026",
+"nature": [
+"Founders Shares"
+],
+"acq_date": [
+"11/29/2017"
+],
+"plan": [
+"10/09/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-005644",
+"filed": "2026-06-04",
+"accept": "2026-06-04T20:28:47.000Z",
+"filer_agent": "0001950047",
+"name": "RODRIGO BRUMANA",
+"rel": [
+"Officer"
+],
+"shares": 78489.0,
+"value": 897129.27,
+"sale_date": "06/04/2026",
+"nature": [
+"Performance Stock Units",
+"Restricted Stock Units"
+],
+"acq_date": [
+"01/12/2026",
+"06/01/2026"
+],
+"plan": [
+"11/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-006207",
+"filed": "2026-06-16",
+"accept": "2026-06-16T20:37:54.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 1975.0,
+"value": 19098.25,
+"sale_date": "06/16/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"06/14/2026"
+],
+"plan": [
+"09/02/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-006867",
+"filed": "2026-07-06",
+"accept": "2026-07-06T20:25:53.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 4724.0,
+"value": 40106.76,
+"sale_date": "07/06/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-007060",
+"filed": "2026-07-14",
+"accept": "2026-07-14T20:31:49.000Z",
+"filer_agent": "0001950047",
+"name": "KATE DEHOFF",
+"rel": [
+"Officer"
+],
+"shares": 14240.0,
+"value": 106515.2,
+"sale_date": "07/14/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-007119",
+"filed": "2026-07-15",
+"accept": "2026-07-15T20:30:12.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 596666.0,
+"value": 4707694.74,
+"sale_date": "07/15/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/05/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-008260",
+"filed": "2026-08-17",
+"accept": "2026-08-17T20:36:34.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 596667.0,
+"value": 4725602.64,
+"sale_date": "08/17/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/05/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-008331",
+"filed": "2026-08-18",
+"accept": "2026-08-18T20:25:09.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 4258.0,
+"value": 33680.78,
+"sale_date": "08/18/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"07/01/2026"
+],
+"plan": [
+"05/19/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-008671",
+"filed": "2026-08-25",
+"accept": "2026-08-25T20:29:41.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 4575.0,
+"value": 32894.25,
+"sale_date": "08/25/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"08/21/2026"
+],
+"plan": [
+"05/13/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-009074",
+"filed": "2026-09-03",
+"accept": "2026-09-03T20:33:34.000Z",
+"filer_agent": "0001950047",
+"name": "RODRIGO BRUMANA",
+"rel": [
+"Officer"
+],
+"shares": 8898.0,
+"value": 60684.36,
+"sale_date": "09/03/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/01/2026"
+],
+"plan": [
+"11/10/2025"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-009532",
+"filed": "2026-09-15",
+"accept": "2026-09-15T20:51:43.000Z",
+"filer_agent": "0001950047",
+"name": "THE JOBY TRUST",
+"rel": [
+"Director",
+"Officer"
+],
+"shares": 606667.0,
+"value": 3822002.1,
+"sale_date": "09/15/2026",
+"nature": [
+"Conversion of Membership Interest"
+],
+"acq_date": [
+"11/21/2016"
+],
+"plan": [
+"03/05/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-009565",
+"filed": "2026-09-16",
+"accept": "2026-09-16T20:30:14.000Z",
+"filer_agent": "0001950047",
+"name": "DIDIER PAPADOPOULOS",
+"rel": [
+"Officer"
+],
+"shares": 2055.0,
+"value": 12597.15,
+"sale_date": "09/16/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"09/14/2026"
+],
+"plan": [
+"05/19/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-009709",
+"filed": "2026-09-21",
+"accept": "2026-09-21T20:31:14.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 6138.0,
+"value": 37564.56,
+"sale_date": "09/21/2026",
+"nature": [
+"Restricted Stock Units",
+"Exercise of Stock Options"
+],
+"acq_date": [
+"07/01/2026",
+"09/21/2026"
+],
+"plan": [
+"05/19/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+},
+{
+"acc": "0001950047-26-010040",
+"filed": "2026-10-05",
+"accept": "2026-10-05T20:42:12.000Z",
+"filer_agent": "0001950047",
+"name": "GREGORY BOWLES",
+"rel": [
+"Officer"
+],
+"shares": 5302.0,
+"value": 31546.9,
+"sale_date": "10/05/2026",
+"nature": [
+"Restricted Stock Units"
+],
+"acq_date": [
+"10/01/2026"
+],
+"plan": [
+"05/19/2026"
+],
+"broker": "Morgan Stanley Smith Barney LLC Executive Financial Services"
+}
+]

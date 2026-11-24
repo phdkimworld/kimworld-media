@@ -1,0 +1,2456 @@
+[
+{
+"base": "2023-03-15",
+"n": 1,
+"val": 16236.84,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 3.79,
+"fwd": 0.06860158311345632,
+"qqq": 0.06770815910079286
+},
+{
+"base": "2023-04-03",
+"n": 4,
+"val": 243733.66,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 4.15,
+"fwd": -0.026506024096385583,
+"qqq": -0.0024051225987817837
+},
+{
+"base": "2023-04-13",
+"n": 2,
+"val": 100740.26,
+"plan": false,
+"company": true,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 4.05,
+"fwd": 0.1703703703703705,
+"qqq": 0.02202587962527791
+},
+{
+"base": "2023-05-17",
+"n": 1,
+"val": 148552.92,
+"plan": true,
+"company": false,
+"names": [
+"KATHERINE DEHOFF"
+],
+"close": 5.23,
+"fwd": 0.5162523900573612,
+"qqq": 0.11820488040589505
+},
+{
+"base": "2023-05-22",
+"n": 1,
+"val": 17490.19,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 5.45,
+"fwd": 0.2587155963302752,
+"qqq": 0.07185167634166567
+},
+{
+"base": "2023-05-23",
+"n": 1,
+"val": 42835.38,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 5.53,
+"fwd": 0.20433996383363473,
+"qqq": 0.09842212622990165
+},
+{
+"base": "2023-05-26",
+"n": 1,
+"val": 691691.92,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 5.36,
+"fwd": 0.19216417910447747,
+"qqq": 0.044288174512055134
+},
+{
+"base": "2023-06-02",
+"n": 1,
+"val": 137362.29,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 5.69,
+"fwd": 0.7978910369068541,
+"qqq": 0.04409981672071073
+},
+{
+"base": "2023-06-12",
+"n": 1,
+"val": 36912.38,
+"plan": true,
+"company": false,
+"names": [
+"KATE DEHOFF"
+],
+"close": 7.18,
+"fwd": 0.45821727019498626,
+"qqq": 0.03420344531054953
+},
+{
+"base": "2023-06-13",
+"n": 1,
+"val": 188549.02,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 7.81,
+"fwd": 0.3521126760563382,
+"qqq": 0.043742773770852894
+},
+{
+"base": "2023-06-15",
+"n": 4,
+"val": 8530804.65,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST"
+],
+"close": 7.93,
+"fwd": 0.28499369482976045,
+"qqq": 0.03335493977205206
+},
+{
+"base": "2023-06-16",
+"n": 1,
+"val": 4901989.4,
+"plan": true,
+"company": false,
+"names": [
+"THE JOBY TRUST"
+],
+"close": 7.4,
+"fwd": 0.35945945945945956,
+"qqq": 0.048405946783355525
+},
+{
+"base": "2023-06-20",
+"n": 1,
+"val": 3624860.87,
+"plan": true,
+"company": false,
+"names": [
+"THE JOBY TRUST"
+],
+"close": 7.31,
+"fwd": 0.15868673050615612,
+"qqq": 0.05110384300899429
+},
+{
+"base": "2023-06-27",
+"n": 1,
+"val": 65695.59,
+"plan": true,
+"company": false,
+"names": [
+"KATE DEHOFF"
+],
+"close": 6.39,
+"fwd": 0.2503912363067293,
+"qqq": 0.03762746337575251
+},
+{
+"base": "2023-06-28",
+"n": 4,
+"val": 11444375.040000001,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"THE JOBY TRUST"
+],
+"close": 8.96,
+"fwd": -0.1305803571428572,
+"qqq": 0.033137652932462736
+},
+{
+"base": "2023-06-29",
+"n": 1,
+"val": 577572.54,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 9.98,
+"fwd": -0.18336673346693388,
+"qqq": 0.054066683158791706
+},
+{
+"base": "2023-07-06",
+"n": 4,
+"val": 552616.11,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 9.26,
+"fwd": -0.11015118790496758,
+"qqq": 0.017226364774397318
+},
+{
+"base": "2023-07-07",
+"n": 2,
+"val": 80527.14,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"KATE DEHOFF"
+],
+"close": 9.54,
+"fwd": -0.14465408805031432,
+"qqq": 0.01583660987330715
+},
+{
+"base": "2023-07-13",
+"n": 3,
+"val": 396329.82,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATE DEHOFF",
+"KATHERINE DEHOFF"
+],
+"close": 10.56,
+"fwd": -0.25284090909090917,
+"qqq": -0.027851773704338667
+},
+{
+"base": "2023-08-03",
+"n": 1,
+"val": 430540.0,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW A FIELD"
+],
+"close": 8.24,
+"fwd": -0.095873786407767,
+"qqq": 0.01123625565156905
+},
+{
+"base": "2023-08-22",
+"n": 2,
+"val": 79021.03,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 7.06,
+"fwd": -0.06232294617563727,
+"qqq": 0.003192250536628416
+},
+{
+"base": "2023-09-15",
+"n": 2,
+"val": 63501.53,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.54,
+"fwd": -0.04892966360856277,
+"qqq": -0.014913297915374546
+},
+{
+"base": "2023-09-29",
+"n": 3,
+"val": 1693125.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"KATE DEHOFF",
+"THE JOBY TRUST"
+],
+"close": 6.45,
+"fwd": -0.18759689922480616,
+"qqq": -0.03617383537555474
+},
+{
+"base": "2023-10-02",
+"n": 7,
+"val": 446237.1,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 6.19,
+"fwd": -0.16801292407108237,
+"qqq": -0.03338315894369703
+},
+{
+"base": "2023-10-03",
+"n": 1,
+"val": 30429.32,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.13,
+"fwd": -0.14029363784665583,
+"qqq": -0.011411022202186483
+},
+{
+"base": "2023-10-04",
+"n": 1,
+"val": 71113.26,
+"plan": false,
+"company": true,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 6.25,
+"fwd": -0.14239999999999997,
+"qqq": -0.00775538568450318
+},
+{
+"base": "2023-10-13",
+"n": 2,
+"val": 199798.72999999998,
+"plan": false,
+"company": true,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 6.22,
+"fwd": -0.16559485530546614,
+"qqq": 0.035890275952693784
+},
+{
+"base": "2023-11-06",
+"n": 1,
+"val": 131040.0,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW A FIELD"
+],
+"close": 5.96,
+"fwd": 0.057046979865771785,
+"qqq": 0.048969421196609186
+},
+{
+"base": "2023-11-22",
+"n": 1,
+"val": 19609.1,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 5.74,
+"fwd": 0.20731707317073167,
+"qqq": 0.04540327129159616
+},
+{
+"base": "2023-11-29",
+"n": 2,
+"val": 867027.6499999999,
+"plan": true,
+"company": false,
+"names": [
+"CAPRICORN-LIBRA INVEST",
+"GREGORY BOWLES"
+],
+"close": 6.07,
+"fwd": 0.13673805601317968,
+"qqq": 0.05512942202611537
+},
+{
+"base": "2023-12-06",
+"n": 1,
+"val": 765545.33,
+"plan": false,
+"company": false,
+"names": [
+"CAPRICORN-LIBRA INVEST"
+],
+"close": 6.31,
+"fwd": -0.03486529318541998,
+"qqq": 0.030385664199454654
+},
+{
+"base": "2023-12-08",
+"n": 1,
+"val": 776291.12,
+"plan": false,
+"company": false,
+"names": [
+"CAPRICORN-LIBRA INVEST"
+],
+"close": 6.57,
+"fwd": -0.0639269406392694,
+"qqq": 0.03462783996736096
+},
+{
+"base": "2023-12-12",
+"n": 1,
+"val": 766937.64,
+"plan": false,
+"company": false,
+"names": [
+"CAPRICORN-LIBRA INVEST"
+],
+"close": 6.41,
+"fwd": -0.06552262090483618,
+"qqq": 0.026789073669952534
+},
+{
+"base": "2023-12-14",
+"n": 1,
+"val": 854522.38,
+"plan": false,
+"company": false,
+"names": [
+"CAPRICORN-LIBRA INVEST"
+],
+"close": 7.1,
+"fwd": -0.1985915492957746,
+"qqq": 0.015196212102431828
+},
+{
+"base": "2023-12-15",
+"n": 1,
+"val": 41740.73,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.87,
+"fwd": -0.1717612809315866,
+"qqq": 0.004613410963635545
+},
+{
+"base": "2023-12-18",
+"n": 1,
+"val": 25048.02,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.83,
+"fwd": -0.18008784773060038,
+"qqq": 0.014518030853886366
+},
+{
+"base": "2024-01-02",
+"n": 9,
+"val": 1451425.0,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATE DEHOFF",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 6.18,
+"fwd": -0.11650485436893199,
+"qqq": 0.035718721279714094
+},
+{
+"base": "2024-01-04",
+"n": 4,
+"val": 1567328.48,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT 2020 DES",
+"MATTHEW FIELD",
+"THE JOBY TRUST"
+],
+"close": 6.05,
+"fwd": -0.054545454545454564,
+"qqq": 0.08259311597860108
+},
+{
+"base": "2024-01-16",
+"n": 2,
+"val": 188593.25,
+"plan": false,
+"company": true,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 5.69,
+"fwd": 0.05096660808435849,
+"qqq": 0.04646903692127369
+},
+{
+"base": "2024-01-17",
+"n": 5,
+"val": 155132.16,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"MATTHEW FIELD"
+],
+"close": 5.69,
+"fwd": 0.09666080843585223,
+"qqq": 0.06387367697256963
+},
+{
+"base": "2024-02-13",
+"n": 7,
+"val": 220064.0,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 5.98,
+"fwd": -0.10535117056856202,
+"qqq": 0.027301365068253425
+},
+{
+"base": "2024-02-22",
+"n": 1,
+"val": 20511.73,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 5.46,
+"fwd": -0.03663003663003661,
+"qqq": 0.01780537357043399
+},
+{
+"base": "2024-03-01",
+"n": 1,
+"val": 70250.0,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 5.47,
+"fwd": -0.06032906764168189,
+"qqq": -0.0014811157738831016
+},
+{
+"base": "2024-03-12",
+"n": 7,
+"val": 189103.8,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 5.42,
+"fwd": -0.12915129151291516,
+"qqq": -0.011923545057025642
+},
+{
+"base": "2024-03-14",
+"n": 1,
+"val": 1032628.8,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 5.11,
+"fwd": -0.09589041095890416,
+"qqq": -0.0019811449651592206
+},
+{
+"base": "2024-03-15",
+"n": 2,
+"val": 38179.21,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 5.08,
+"fwd": -0.07874015748031504,
+"qqq": -0.00659107669616521
+},
+{
+"base": "2024-03-28",
+"n": 2,
+"val": 1340000.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST"
+],
+"close": 5.36,
+"fwd": -0.001865671641791189,
+"qqq": -0.029301141866174163
+},
+{
+"base": "2024-04-02",
+"n": 7,
+"val": 451852.80000000005,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 4.92,
+"fwd": 0.026422764227642226,
+"qqq": -0.03745097594704272
+},
+{
+"base": "2024-04-03",
+"n": 1,
+"val": 13429.32,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 4.93,
+"fwd": 0.05882352941176472,
+"qqq": -0.046550554173264036
+},
+{
+"base": "2024-04-04",
+"n": 1,
+"val": 41425.0,
+"plan": false,
+"company": true,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 4.9,
+"fwd": 0.09795918367346923,
+"qqq": -0.01938714567923916
+},
+{
+"base": "2024-04-15",
+"n": 2,
+"val": 118578.65,
+"plan": false,
+"company": true,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 4.68,
+"fwd": 0.079059829059829,
+"qqq": 0.027884749222846006
+},
+{
+"base": "2024-04-16",
+"n": 7,
+"val": 159349.26,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 4.6,
+"fwd": 0.17173913043478262,
+"qqq": 0.03440037114358607
+},
+{
+"base": "2024-05-02",
+"n": 2,
+"val": 81168.06,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"KATE DEHOFF"
+],
+"close": 5.38,
+"fwd": -0.09479553903345717,
+"qqq": 0.05577418599203554
+},
+{
+"base": "2024-05-17",
+"n": 1,
+"val": 70323.12,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 5.04,
+"fwd": -0.023809523809523836,
+"qqq": 0.07371170533026383
+},
+{
+"base": "2024-05-22",
+"n": 1,
+"val": 16540.73,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 4.87,
+"fwd": 0.06570841889117052,
+"qqq": 0.053696429746988183
+},
+{
+"base": "2024-06-17",
+"n": 2,
+"val": 36864.75,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 4.92,
+"fwd": 0.4349593495934958,
+"qqq": -0.0067826660619305645
+},
+{
+"base": "2024-06-28",
+"n": 3,
+"val": 1393258.8,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST"
+],
+"close": 5.1,
+"fwd": 0.21764705882352953,
+"qqq": -0.031746363048151816
+},
+{
+"base": "2024-07-02",
+"n": 8,
+"val": 445229.53,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 4.96,
+"fwd": 0.20564516129032273,
+"qqq": -0.032670746231878156
+},
+{
+"base": "2024-07-05",
+"n": 2,
+"val": 89942.94,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 5.16,
+"fwd": -0.02131782945736438,
+"qqq": -0.09555385359561441
+},
+{
+"base": "2024-07-10",
+"n": 3,
+"val": 310424.28,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 5.19,
+"fwd": -0.05394990366088637,
+"qqq": -0.13557738189915702
+},
+{
+"base": "2024-07-12",
+"n": 1,
+"val": 53382.36,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.61,
+"fwd": -0.24054462934947063,
+"qqq": -0.08974980801099386
+},
+{
+"base": "2024-07-15",
+"n": 4,
+"val": 422717.14999999997,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 6.95,
+"fwd": -0.27913669064748203,
+"qqq": -0.09023480802176753
+},
+{
+"base": "2024-08-22",
+"n": 1,
+"val": 17642.38,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 4.98,
+"fwd": 0.03614457831325302,
+"qqq": 0.015983994945772295
+},
+{
+"base": "2024-09-16",
+"n": 2,
+"val": 44068.06,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 5.32,
+"fwd": 0.041353383458646586,
+"qqq": 0.05126362944806018
+},
+{
+"base": "2024-09-20",
+"n": 1,
+"val": 138159.0,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 5.16,
+"fwd": 0.08720930232558133,
+"qqq": 0.02493574330486692
+},
+{
+"base": "2024-09-27",
+"n": 1,
+"val": 869996.52,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 5.22,
+"fwd": -0.011494252873563093,
+"qqq": 0.01760657421674372
+},
+{
+"base": "2024-09-30",
+"n": 2,
+"val": 1257500.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST"
+],
+"close": 5.03,
+"fwd": 0.04771371769383692,
+"qqq": 0.015018337533550419
+},
+{
+"base": "2024-10-01",
+"n": 1,
+"val": 2697.6,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 4.8,
+"fwd": 0.043749999999999956,
+"qqq": 0.03925031686994829
+},
+{
+"base": "2024-10-02",
+"n": 9,
+"val": 549982.39,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 6.14,
+"fwd": -0.18729641693811072,
+"qqq": 0.02994086523498285
+},
+{
+"base": "2024-10-04",
+"n": 2,
+"val": 101571.76999999999,
+"plan": true,
+"company": false,
+"names": [
+"MATTHEW FIELD"
+],
+"close": 5.95,
+"fwd": -0.18151260504201683,
+"qqq": 0.00022572437002388313
+},
+{
+"base": "2024-10-11",
+"n": 2,
+"val": 240897.53,
+"plan": false,
+"company": true,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 5.69,
+"fwd": -0.08435852372583486,
+"qqq": 0.04211934490027569
+},
+{
+"base": "2024-10-15",
+"n": 1,
+"val": 151207.16,
+"plan": true,
+"company": false,
+"names": [
+"KATE DEHOFF"
+],
+"close": 5.42,
+"fwd": 0.16605166051660514,
+"qqq": 0.04494244677600068
+},
+{
+"base": "2024-11-18",
+"n": 1,
+"val": 954996.18,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 5.61,
+"fwd": 0.4688057040998217,
+"qqq": 0.07155713771449146
+},
+{
+"base": "2024-11-21",
+"n": 2,
+"val": 603129.8,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.8,
+"fwd": 0.13088235294117645,
+"qqq": 0.02709018178937761
+},
+{
+"base": "2024-11-22",
+"n": 1,
+"val": 21133.2,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 7.09,
+"fwd": 0.07475317348378008,
+"qqq": 0.03376895549536374
+},
+{
+"base": "2024-11-25",
+"n": 2,
+"val": 67943.47,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES"
+],
+"close": 8.2,
+"fwd": 0.007317073170731714,
+"qqq": 0.04613198049704903
+},
+{
+"base": "2024-12-09",
+"n": 1,
+"val": 2946654.88,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 8.53,
+"fwd": 0.11254396248534593,
+"qqq": -0.013610781423484819
+},
+{
+"base": "2024-12-16",
+"n": 1,
+"val": 45913.89,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 7.98,
+"fwd": 0.04887218045112762,
+"qqq": -0.046620956203429986
+},
+{
+"base": "2024-12-17",
+"n": 1,
+"val": 26988.36,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 8.24,
+"fwd": -0.008495145631068013,
+"qqq": -0.02624113475177292
+},
+{
+"base": "2025-01-02",
+"n": 8,
+"val": 620060.35,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD",
+"SERGEI NOVIKOV"
+],
+"close": 8.09,
+"fwd": -0.003708281829418958,
+"qqq": 0.015444015444015413
+},
+{
+"base": "2025-01-03",
+"n": 1,
+"val": 87380.09,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 9.77,
+"fwd": -0.17911975435005123,
+"qqq": 0.01135793898723425
+},
+{
+"base": "2025-01-06",
+"n": 5,
+"val": 2887700.44,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT 2020 DES",
+"KATE DEHOFF",
+"MATTHEW FIELD",
+"THE JOBY TRUST"
+],
+"close": 9.83,
+"fwd": -0.18107833163784326,
+"qqq": 0.004403858618980516
+},
+{
+"base": "2025-01-13",
+"n": 3,
+"val": 3133722.83,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF",
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 7.96,
+"fwd": -0.07537688442211055,
+"qqq": 0.044366642930611544
+},
+{
+"base": "2025-01-15",
+"n": 8,
+"val": 75992.22,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD",
+"SERGEY NOVIKOV"
+],
+"close": 8.1,
+"fwd": -0.06419753086419744,
+"qqq": 0.037158892974646696
+},
+{
+"base": "2025-01-16",
+"n": 3,
+"val": 310521.6,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 8.37,
+"fwd": -0.06451612903225801,
+"qqq": 0.04886177594137364
+},
+{
+"base": "2025-01-17",
+"n": 1,
+"val": 263562.93,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 8.17,
+"fwd": -0.028151774785801664,
+"qqq": 0.03379077701537159
+},
+{
+"base": "2025-02-03",
+"n": 1,
+"val": 2753338.84,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 8.06,
+"fwd": -0.18114143920595538,
+"qqq": -0.04354287699523263
+},
+{
+"base": "2025-02-11",
+"n": 8,
+"val": 68288.04,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD",
+"SERGEY NOVIKOV"
+],
+"close": 7.36,
+"fwd": -0.14266304347826098,
+"qqq": -0.09672531676736296
+},
+{
+"base": "2025-02-12",
+"n": 2,
+"val": 24817.92,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"KATE DEHOFF"
+],
+"close": 7.33,
+"fwd": -0.18281036834924969,
+"qqq": -0.11349611962899864
+},
+{
+"base": "2025-02-13",
+"n": 7,
+"val": 417783.13,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD"
+],
+"close": 7.58,
+"fwd": -0.17678100263852237,
+"qqq": -0.10494495241649549
+},
+{
+"base": "2025-02-14",
+"n": 2,
+"val": 171459.59999999998,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES"
+],
+"close": 7.83,
+"fwd": -0.17879948914431676,
+"qqq": -0.1029081111214345
+},
+{
+"base": "2025-02-24",
+"n": 1,
+"val": 23453.15,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 6.76,
+"fwd": 0.0014792899408284654,
+"qqq": -0.05618712370400292
+},
+{
+"base": "2025-03-05",
+"n": 8,
+"val": 56933.670000000006,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"MATTHEW FIELD",
+"SERGEY NOVIKOV"
+],
+"close": 6.79,
+"fwd": -0.11045655375552288,
+"qqq": -0.0515129180693612
+},
+{
+"base": "2025-03-06",
+"n": 3,
+"val": 88521.23,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 6.64,
+"fwd": -0.14759036144578308,
+"qqq": -0.07689471528062264
+},
+{
+"base": "2025-03-17",
+"n": 2,
+"val": 50871.34,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.43,
+"fwd": -0.0637636080870918,
+"qqq": -0.05238519377757522
+},
+{
+"base": "2025-03-21",
+"n": 1,
+"val": 1106668.88,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 6.64,
+"fwd": -0.125,
+"qqq": -0.09926378837035177
+},
+{
+"base": "2025-03-24",
+"n": 1,
+"val": 64374.8,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 6.77,
+"fwd": -0.12998522895125553,
+"qqq": -0.09411812660498109
+},
+{
+"base": "2025-03-31",
+"n": 2,
+"val": 1505000.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST"
+],
+"close": 6.02,
+"fwd": 0.0897009966777409,
+"qqq": 0.014096221103812923
+},
+{
+"base": "2025-04-02",
+"n": 8,
+"val": 432646.01,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"SERGEY NOVIKOV"
+],
+"close": 6.04,
+"fwd": 0.04470198675496673,
+"qqq": 0.011613987188911157
+},
+{
+"base": "2025-04-08",
+"n": 9,
+"val": 117111.39,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"SERGEY NOVIKOV"
+],
+"close": 5.33,
+"fwd": 0.2045028142589118,
+"qqq": 0.16161130606162577
+},
+{
+"base": "2025-04-14",
+"n": 3,
+"val": 358903.39,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATE DEHOFF",
+"KATHERINE DEHOFF"
+],
+"close": 6.02,
+"fwd": 0.19435215946843876,
+"qqq": 0.12702194631459296
+},
+{
+"base": "2025-04-16",
+"n": 1,
+"val": 71691.78,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 5.79,
+"fwd": 0.23661485319516418,
+"qqq": 0.1690080597955783
+},
+{
+"base": "2025-04-17",
+"n": 1,
+"val": 981668.63,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 5.89,
+"fwd": 0.2546689303904923,
+"qqq": 0.17430758838099525
+},
+{
+"base": "2025-05-07",
+"n": 1,
+"val": 18611.58,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.42,
+"fwd": 0.17757009345794383,
+"qqq": 0.08584729981378025
+},
+{
+"base": "2025-05-16",
+"n": 1,
+"val": 1231669.13,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 7.39,
+"fwd": 0.21786197564276044,
+"qqq": 0.024505762113861573
+},
+{
+"base": "2025-05-22",
+"n": 2,
+"val": 73876.18,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 6.64,
+"fwd": 0.28162650602409633,
+"qqq": 0.03433852140077809
+},
+{
+"base": "2025-06-16",
+"n": 1,
+"val": 41682.29,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 9.0,
+"fwd": 0.8144444444444443,
+"qqq": 0.04304778303917356
+},
+{
+"base": "2025-06-17",
+"n": 1,
+"val": 36122.4,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 8.65,
+"fwd": 1.0485549132947973,
+"qqq": 0.061843199516141034
+},
+{
+"base": "2025-06-20",
+"n": 1,
+"val": 2846672.36,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 8.54,
+"fwd": 0.9718969555035131,
+"qqq": 0.07087675341191635
+},
+{
+"base": "2025-06-27",
+"n": 1,
+"val": 2832000.0,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 9.44,
+"fwd": 0.8177966101694916,
+"qqq": 0.036581583316608546
+},
+{
+"base": "2025-06-30",
+"n": 1,
+"val": 4979600.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT"
+],
+"close": 10.55,
+"fwd": 0.6009478672985782,
+"qqq": 0.028315568124138935
+},
+{
+"base": "2025-07-02",
+"n": 8,
+"val": 918507.84,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF"
+],
+"close": 10.16,
+"fwd": 0.639763779527559,
+"qqq": 0.02579883805374017
+},
+{
+"base": "2025-07-11",
+"n": 1,
+"val": 6020012.04,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 12.04,
+"fwd": 0.382059800664452,
+"qqq": 0.036719595813785366
+},
+{
+"base": "2025-07-14",
+"n": 3,
+"val": 691591.63,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATE DEHOFF",
+"KATHERINE DEHOFF"
+],
+"close": 12.63,
+"fwd": 0.35154394299287395,
+"qqq": 0.02991675805900651
+},
+{
+"base": "2025-08-07",
+"n": 1,
+"val": 2992116.0,
+"plan": false,
+"company": false,
+"names": [
+"BONNY SIMI"
+],
+"close": 17.25,
+"fwd": -0.21971014492753616,
+"qqq": 0.011980886796430168
+},
+{
+"base": "2025-08-22",
+"n": 3,
+"val": 7640457.21,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES",
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 14.95,
+"fwd": 0.0608695652173914,
+"qqq": 0.05285242232984255
+},
+{
+"base": "2025-09-12",
+"n": 1,
+"val": 7000014.0,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 14.0,
+"fwd": 0.16285714285714303,
+"qqq": 0.004840964101864742
+},
+{
+"base": "2025-09-15",
+"n": 2,
+"val": 115046.4,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 14.12,
+"fwd": 0.18767705382436262,
+"qqq": 0.01745876149269887
+},
+{
+"base": "2025-09-19",
+"n": 2,
+"val": 1091080.06,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 16.58,
+"fwd": -0.055488540410132625,
+"qqq": 0.007641611746058041
+},
+{
+"base": "2025-09-30",
+"n": 2,
+"val": 6875640.0,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT",
+"THE JOBY TRUST"
+],
+"close": 16.14,
+"fwd": -0.03283767038413887,
+"qqq": 0.05421656645068862
+},
+{
+"base": "2025-10-02",
+"n": 8,
+"val": 1517948.82,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF"
+],
+"close": 17.8,
+"fwd": -0.0702247191011236,
+"qqq": 0.03354629950638066
+},
+{
+"base": "2025-10-10",
+"n": 2,
+"val": 719380.64,
+"plan": false,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATHERINE DEHOFF"
+],
+"close": 16.28,
+"fwd": -0.08476658476658483,
+"qqq": 0.03433418150975398
+},
+{
+"base": "2025-10-13",
+"n": 1,
+"val": 349218.48,
+"plan": true,
+"company": false,
+"names": [
+"KATE DEHOFF"
+],
+"close": 16.77,
+"fwd": -0.059630292188431744,
+"qqq": 0.03524858391056629
+},
+{
+"base": "2025-11-24",
+"n": 1,
+"val": 61294.75,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 13.89,
+"fwd": 0.02663786897048226,
+"qqq": 0.028009121554630312
+},
+{
+"base": "2025-11-25",
+"n": 1,
+"val": 54601.59,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 13.94,
+"fwd": 0.023672883787661414,
+"qqq": 0.024700684852764887
+},
+{
+"base": "2025-12-15",
+"n": 1,
+"val": 89736.38,
+"plan": false,
+"company": true,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 14.19,
+"fwd": 0.06553911205074003,
+"qqq": 0.014757427850754956
+},
+{
+"base": "2025-12-16",
+"n": 1,
+"val": 28082.01,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 14.07,
+"fwd": 0.08599857853589188,
+"qqq": 0.01639558643236616
+},
+{
+"base": "2025-12-30",
+"n": 1,
+"val": 430030.1,
+"plan": false,
+"company": false,
+"names": [
+"ERIC ALLISON"
+],
+"close": 13.22,
+"fwd": -0.15733736762481088,
+"qqq": 0.016143874206932196
+},
+{
+"base": "2026-01-02",
+"n": 7,
+"val": 2203735.15,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF"
+],
+"close": 14.36,
+"fwd": -0.26462395543175476,
+"qqq": 0.021235647181628403
+},
+{
+"base": "2026-01-05",
+"n": 1,
+"val": 92320.44,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 16.04,
+"fwd": -0.33104738154613456,
+"qqq": -0.002378679266654804
+},
+{
+"base": "2026-01-13",
+"n": 7,
+"val": 507832.39999999997,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 14.81,
+"fwd": -0.31802835921674544,
+"qqq": -0.020966402657128236
+},
+{
+"base": "2026-01-14",
+"n": 3,
+"val": 510160.06999999995,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 15.12,
+"fwd": -0.3465608465608465,
+"qqq": -0.030522153175691957
+},
+{
+"base": "2026-02-02",
+"n": 1,
+"val": 85880.81,
+"plan": false,
+"company": true,
+"names": [
+"KATHERINE DEHOFF"
+],
+"close": 10.56,
+"fwd": -0.0757575757575758,
+"qqq": -0.039224454594818936
+},
+{
+"base": "2026-02-09",
+"n": 2,
+"val": 5335554.640000001,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST U/A DTD"
+],
+"close": 10.69,
+"fwd": -0.07577174929840957,
+"qqq": -0.010662195598385327
+},
+{
+"base": "2026-02-10",
+"n": 7,
+"val": 84985.44,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 10.23,
+"fwd": 0.0,
+"qqq": -0.006181824128738911
+},
+{
+"base": "2026-02-11",
+"n": 2,
+"val": 174431.72999999998,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"KATE DEHOFF"
+],
+"close": 10.1,
+"fwd": -0.035643564356435564,
+"qqq": -0.02585180473324533
+},
+{
+"base": "2026-02-13",
+"n": 6,
+"val": 556153.84,
+"plan": false,
+"company": true,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF"
+],
+"close": 9.9,
+"fwd": -0.008080808080808133,
+"qqq": -0.0025584795321637044
+},
+{
+"base": "2026-02-17",
+"n": 4,
+"val": 5714121.6,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"JOEBEN BEVIRT",
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST U/A DTD"
+],
+"close": 9.99,
+"fwd": -0.006006006006006093,
+"qqq": 0.003342757359055426
+},
+{
+"base": "2026-02-23",
+"n": 1,
+"val": 33982.11,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 9.54,
+"fwd": -0.027253668763102756,
+"qqq": -0.022297600638499504
+},
+{
+"base": "2026-02-24",
+"n": 1,
+"val": 109996.2,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 9.72,
+"fwd": -0.07510288065843629,
+"qqq": -0.03930116636780889
+},
+{
+"base": "2026-03-10",
+"n": 3,
+"val": 36358.4,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS",
+"GREGORY BOWLES",
+"KATE DEHOFF"
+],
+"close": 9.88,
+"fwd": -0.12651821862348178,
+"qqq": -0.0027642035638481
+},
+{
+"base": "2026-03-16",
+"n": 2,
+"val": 67511.73000000001,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 9.82,
+"fwd": -0.10386965376782076,
+"qqq": 0.0470035644092075
+},
+{
+"base": "2026-04-02",
+"n": 9,
+"val": 577716.29,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 8.5,
+"fwd": 0.08823529411764697,
+"qqq": 0.1524325617969844
+},
+{
+"base": "2026-04-08",
+"n": 8,
+"val": 44488.24,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 8.63,
+"fwd": 0.21900347624565453,
+"qqq": 0.14796482370605024
+},
+{
+"base": "2026-04-13",
+"n": 3,
+"val": 417223.01,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATE DEHOFF",
+"KATHERINE DEHOFF"
+],
+"close": 8.52,
+"fwd": 0.26056338028169024,
+"qqq": 0.15533131408024103
+},
+{
+"base": "2026-04-14",
+"n": 3,
+"val": 4056632.8,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT",
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST U/A DTD"
+],
+"close": 8.8,
+"fwd": 0.1920454545454544,
+"qqq": 0.12510340439070955
+},
+{
+"base": "2026-05-05",
+"n": 1,
+"val": 649645.92,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON"
+],
+"close": 8.68,
+"fwd": 0.31682027649769595,
+"qqq": 0.09184137556667316
+},
+{
+"base": "2026-05-14",
+"n": 2,
+"val": 4479642.16,
+"plan": true,
+"company": false,
+"names": [
+"JOEBEN BEVIRT 2020 DES",
+"THE JOBY TRUST U/A DTD"
+],
+"close": 10.64,
+"fwd": -0.1400375939849624,
+"qqq": 0.002153405854485424
+},
+{
+"base": "2026-05-22",
+"n": 2,
+"val": 87679.42,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 10.92,
+"fwd": -0.12545787545787535,
+"qqq": -0.0054213005546729365
+},
+{
+"base": "2026-05-28",
+"n": 1,
+"val": 4783325.68,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 12.3,
+"fwd": -0.2821138211382114,
+"qqq": -0.03953235454051118
+},
+{
+"base": "2026-05-29",
+"n": 1,
+"val": 991674.6,
+"plan": true,
+"company": false,
+"names": [
+"SCIARRA MANAGEMENT TRU"
+],
+"close": 11.9,
+"fwd": -0.27478991596638647,
+"qqq": -0.019273746800124503
+},
+{
+"base": "2026-06-02",
+"n": 2,
+"val": 1834728.29,
+"plan": false,
+"company": true,
+"names": [
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 11.87,
+"fwd": -0.2552653748946925,
+"qqq": -0.028130695829312713
+},
+{
+"base": "2026-06-03",
+"n": 1,
+"val": 897129.27,
+"plan": true,
+"company": false,
+"names": [
+"RODRIGO BRUMANA"
+],
+"close": 11.43,
+"fwd": -0.2572178477690288,
+"qqq": -0.04247457034976687
+},
+{
+"base": "2026-06-15",
+"n": 2,
+"val": 78061.01999999999,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 9.67,
+"fwd": -0.1975180972078594,
+"qqq": -0.03529569892473117
+},
+{
+"base": "2026-07-02",
+"n": 8,
+"val": 603957.53,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOULOS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA"
+],
+"close": 8.49,
+"fwd": -0.15783274440518258,
+"qqq": -0.03453550378894188
+},
+{
+"base": "2026-07-13",
+"n": 3,
+"val": 379991.04,
+"plan": true,
+"company": false,
+"names": [
+"ERIC ALLISON",
+"KATE DEHOFF",
+"KATHERINE DEHOFF"
+],
+"close": 7.48,
+"fwd": 0.17780748663101598,
+"qqq": 0.012827717986905407
+},
+{
+"base": "2026-07-14",
+"n": 1,
+"val": 4707694.74,
+"plan": true,
+"company": false,
+"names": [
+"THE JOBY TRUST"
+],
+"close": 7.89,
+"fwd": 0.06717363751584293,
+"qqq": -0.0017229640539676572
+},
+{
+"base": "2026-08-13",
+"n": 1,
+"val": 495615.0,
+"plan": true,
+"company": false,
+"names": [
+"PAUL SCIARRA"
+],
+"close": 8.26,
+"fwd": -0.22639225181598066,
+"qqq": -0.023481361072028695
+},
+{
+"base": "2026-08-14",
+"n": 1,
+"val": 4725602.64,
+"plan": true,
+"company": false,
+"names": [
+"THE JOBY TRUST"
+],
+"close": 7.92,
+"fwd": -0.20454545454545459,
+"qqq": -0.02994241317520907
+},
+{
+"base": "2026-08-17",
+"n": 1,
+"val": 33680.78,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 7.91,
+"fwd": -0.22503160556257906,
+"qqq": -0.034704810445695844
+},
+{
+"base": "2026-08-24",
+"n": 2,
+"val": 58818.67,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 7.19,
+"fwd": -0.1043115438108484,
+"qqq": 0.05824555442292434
+},
+{
+"base": "2026-09-01",
+"n": 1,
+"val": 417318.75,
+"plan": true,
+"company": false,
+"names": [
+"PAUL SCIARRA"
+],
+"close": 6.69,
+"fwd": -0.09566517189835588,
+"qqq": 0.045404442937086564
+},
+{
+"base": "2026-09-02",
+"n": 2,
+"val": 316948.67,
+"plan": true,
+"company": false,
+"names": [
+"RODRIGO BRUMANA"
+],
+"close": 6.82,
+"fwd": -0.12609970674486803,
+"qqq": 0.04623258699452926
+},
+{
+"base": "2026-09-14",
+"n": 1,
+"val": 3822002.1,
+"plan": true,
+"company": false,
+"names": [
+"THE JOBY TRUST"
+],
+"close": 6.3,
+"fwd": -0.18412698412698414,
+"qqq": 0.0519755210242816
+},
+{
+"base": "2026-09-15",
+"n": 2,
+"val": 48501.950000000004,
+"plan": true,
+"company": false,
+"names": [
+"DIDIER PAPADOPOULOS"
+],
+"close": 6.13,
+"fwd": -0.19249592169657415,
+"qqq": 0.05539784824140592
+},
+{
+"base": "2026-09-18",
+"n": 1,
+"val": 37564.56,
+"plan": true,
+"company": false,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 6.12,
+"fwd": -0.23856209150326801,
+"qqq": -0.016148035206875133
+},
+{
+"base": "2026-10-01",
+"n": 1,
+"val": 380357.0,
+"plan": true,
+"company": false,
+"names": [
+"PAUL SCIARRA"
+],
+"close": 5.96,
+"fwd": -0.1476510067114094,
+"qqq": -0.03596889613627474
+},
+{
+"base": "2026-10-02",
+"n": 9,
+"val": 446067.54,
+"plan": true,
+"company": false,
+"names": [
+"BONNY SIMI",
+"DIDIER PAPADOPOLOUS",
+"ERIC ALLISON",
+"GREGORY BOWLES",
+"JOEBEN BEVIRT",
+"KATHERINE DEHOFF",
+"RODRIGO BRUMANA",
+"SERGEY NOVIKOV"
+],
+"close": 5.95,
+"fwd": -0.17647058823529405,
+"qqq": -0.07883081192134267
+},
+{
+"base": "2026-10-13",
+"n": 1,
+"val": 42146.31,
+"plan": false,
+"company": true,
+"names": [
+"KATHERINE DEHOFF"
+],
+"close": 4.95,
+"fwd": 0.1959595959595959,
+"qqq": -0.0925400433045982
+},
+{
+"base": "2026-11-02",
+"n": 1,
+"val": 310898.56,
+"plan": false,
+"company": false,
+"names": [
+"PAUL SCIARRA"
+],
+"close": 4.81,
+"fwd": null,
+"qqq": null
+},
+{
+"base": "2026-11-23",
+"n": 1,
+"val": 20768.05,
+"plan": false,
+"company": true,
+"names": [
+"GREGORY BOWLES"
+],
+"close": 3.85,
+"fwd": null,
+"qqq": null
+}
+]

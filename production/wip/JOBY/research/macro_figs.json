@@ -1,0 +1,61 @@
+{
+ "slug": "<slug>",
+ "asof": "2026-11-23",
+ "source": "나스닥 일별 종가",
+ "figs": [
+  {
+   "n": 3,
+   "type": "relative",
+   "base": "2026-11-19",
+   "to": "2026-11-23",
+   "title": [
+    "조비·업종·시장, 11월 19일 종가 = 100"
+   ],
+   "sub": "같은 기간 함께 움직였는지 보세요",
+   "series": [
+    {
+     "name": "조비",
+     "data": {
+      "file": "../research/macro_px/JOBY.json"
+     }
+    },
+    {
+     "name": "항공우주·방산 펀드",
+     "data": {
+      "file": "../research/macro_px/ITA.json"
+     }
+    },
+    {
+     "name": "나스닥 100 펀드",
+     "data": {
+      "file": "../research/macro_px/QQQ.json"
+     }
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "type": "compare",
+   "title": [
+    "평소 민감도로 예상한 움직임과 실제"
+   ],
+   "sub": "11월 19일 → 11월 23일, 기준 나스닥 100 펀드(QQQ)",
+   "items": [
+    {
+     "label": "조비",
+     "sub": "평소 민감도로 예상",
+     "value": 1.1,
+     "text": "+1.1%"
+    },
+    {
+     "label": "조비",
+     "sub": "실제",
+     "value": -2.0,
+     "text": "-2.0%",
+     "hi": true
+    }
+   ],
+   "unit": "%"
+  }
+ ]
+}
