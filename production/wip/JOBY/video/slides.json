@@ -669,19 +669,6 @@
      }
     },
     {
-     "from": 1,
-     "layout": "stat",
-     "title": "나스닥 100 펀드보다 나음",
-     "stats": [
-      {
-       "at": 1,
-       "big": "8 / 16",
-       "label": "꼭 절반",
-       "tone": "white"
-      }
-     ]
-    },
-    {
      "from": 2,
      "layout": "compare",
      "title": "크기",
