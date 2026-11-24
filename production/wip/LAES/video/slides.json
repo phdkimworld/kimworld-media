@@ -279,12 +279,12 @@
   {
    "slides": [
     {
-     "from": 1,
+     "from": 0,
      "layout": "stat",
      "title": "만드는 것 · NASDAQ LAES",
      "stats": [
       {
-       "at": 1,
+       "at": 0,
        "big": "보안 반도체",
        "label": "스위스 제네바",
        "tone": "gold"
@@ -1134,12 +1134,12 @@
     {
      "from": 2,
      "layout": "stat",
-     "title": "금액이 크면",
+     "title": "주식 비중이 크면",
      "stats": [
       {
        "at": 2,
-       "big": "한 주의 비율이 작아짐",
-       "label": "희석",
+       "big": "희석",
+       "label": "한 주의 비율이 작아짐",
        "tone": "down"
       }
      ]
