@@ -1,6 +1,6 @@
 # HANDOFF — PLUG 11-24 정규2 (x8_1124, 121회차 B그룹) · 갱신 2026-11-24 17:00 ET
 
-## 지금 상태: ② 리포트 push 중 → llm_judge → 맥 TTS → chain_long → 업로드
+## 지금 상태: ③ 업로드 끝(롱폼 vO2GZt0GbnE, 썸네일만 429로 대기) → publish_loop가 youtube_id·SNS·쇼츠·기록 진행 중(publish.log)
 - **확정 종가 정정**: 16:11 info secondaryData 0.937801은 시간외 체결가(분봉 확인) → 폐기. 공식 종가 = 야후 regularMarketPrice(16:00 ET) **PLUG 0.9314(-6.3%)**, QQQ 638.10 등 — research/events.md 맨 아래 '★ 정정' 절이 단일 원천. **할 일: 나스닥 historical에 11/24가 올라오면 0.9314와 대조**(다르면 리포트 updated).
 - 매매 질문 **N4 '어디까지 떨어질 수 있을까'**(JOBY 같은 날 H1). 제목: `플러그 파워(PLUG) 어디까지 떨어질까? 1달러 아래 3거래일째 0.9314달러, 병합 권한은 7월에 끝났다 #PLUG`(angle_pick --check OK)
 - 판정선: 12/18 종가 1.00 위 26% · 0.927~1.00 24% · 0.838~0.927 20% · 0.838 아래 30%(prob_basis.md)
@@ -14,3 +14,8 @@
 3. `bash bin/publish_loop.sh`(run_in_background) — 업로드 한도면 30분마다 재시도
 ## 막힌 것
 - listingcenter.nasdaq.com 403(NEED.txt) · 나스닥 historical 11/24 게시 지연
+
+## 진행(11-25 00:30Z)
+- 리포트 6642b52·72a8393(모델 심사 반영) push · 맥 TTS 108_kwa_x8_1124_tts1 · chain: video_check long OK(최장 정지 14초)·ad_gap_check --strict OK · 쇼츠 SHORTS_OK·video_check shorts OK
+- 롱폼 vO2GZt0GbnE 공개·첫 댓글·자막·재생목록 OK, **썸네일 429(uploadRateLimitExceeded) → 대기: 한 시간쯤 뒤 `python3 tools/yt_thumb_set.py vO2GZt0GbnE /home/claude/x8_1124/video/thumb/PLUG_thumbnail.jpg`**
+- 새 키트 첫 합성 실패 원인(고쳐서 통과): 목록 지난 줄 50% 흐림이 video_check 빈 화면(밝기>90 픽셀 6개 미만)으로 잡힘 · 상자 없는 평면 화면은 글자만 바뀌어 장면 전환 점수 0.04 미만 → 정지로 셈(quote→quote·list 공개) · chalk_hook·relative_lines는 박자와 상관없이 2~4초만 움직임 → 장면을 stat로 쪼갬
