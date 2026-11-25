@@ -15,6 +15,17 @@
      "color": "red",
      "at": 0.6,
      "y": 500
+    },
+    {
+     "kind": "text",
+     "text": "1.35 → 1.32",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.3,
+     "x": 760,
+     "y": 250
     }
    ],
    "anim": {
@@ -47,7 +58,30 @@
   {
    "em": "4.9%",
    "subtitle": "나스닥은 **4.9%** 올랐는데\n솔리드파워는 내렸습니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "시장과 반대",
+     "size": 60,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.4,
+     "x": 760,
+     "y": 380
+    },
+    {
+     "kind": "text",
+     "text": "회사 서류 0건",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.72,
+     "x": 760,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
@@ -62,7 +96,11 @@
        "value": 3.3
       },
       {
-       "label": "솔리드파워",
+       "label": "예상",
+       "value": 7.6
+      },
+      {
+       "label": "실제",
        "value": -2.2,
        "hi": true
       }
@@ -71,9 +109,10 @@
      "decimals": 1,
      "callout": "회사 서류는 0건",
      "beats": [
-      0.15,
-      0.45,
-      0.8
+      0.1,
+      0.3,
+      0.5,
+      0.7
      ]
     }
    }
@@ -81,7 +120,19 @@
   {
    "em": "11번째",
    "subtitle": "최저 경신 **11번째**\n32.3% 내려왔습니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "10개 중 2개",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.55,
+     "x": 760,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
@@ -124,12 +175,23 @@
    "els": [
     {
      "kind": "text",
-     "text": "2개는 +1% 남짓",
+     "text": "60거래일 뒤",
+     "size": 60,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.25,
+     "x": 760,
+     "y": 380
+    },
+    {
+     "kind": "text",
+     "text": "마지막은 나중에 안다",
      "size": 60,
      "color": "gold",
      "anim": "pop",
      "box": true,
-     "at": 0.75,
+     "at": 0.6,
      "x": 760,
      "y": 250
     }
@@ -145,21 +207,26 @@
        "hi": true
       },
       {
+       "label": "그중 +1% 남짓",
+       "value": 2
+      },
+      {
        "label": "더 낮음",
        "value": 1
       }
      ],
      "unit": "개",
      "decimals": 0,
-     "callout": "2개는 +1% 남짓",
+     "callout": "마지막은 나중에 안다",
      "beats": [
-      0.2,
-      0.6
+      0.1,
+      0.4,
+      0.7
      ]
     },
     "sfx": [
      [
-      0.6,
+      0.35,
       "boom"
      ]
     ]
