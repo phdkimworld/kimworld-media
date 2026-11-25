@@ -15,6 +15,11 @@
 - TTS 끝(110_kwa_sldp1125_tts1) · ASR: 문단 7·13·18 st_redo(18은 '남은 시장 매각 한도, 약 오천구백만'), 남은 MISS 2는 표기 한계 → video/asr_check.ok
 - check_slides(beats·BIG)·still_check(p3·p13 stat 연속) 고쳐 chain 재실행 중(video/chain.log)
 
+## 진행(17:55Z)
+- chain 통과(video_check long 최장 정지 14초·ad_gap_check --strict AD_GAP_OK·midroll OK·plain OK), 쇼츠는 직접 재렌더(video_check shorts 최장 정지 2.8초)
+- 리포트 LIVE https://drkimworld.com/r/sldp-2026-11-5/ · 롱폼 **eeJx0Qv6Pvo** 공개·첫 댓글·자막·재생목록(솔리드파워 미스터리 추적) OK, **썸네일 429** → record.py가 thumb_history.json pending에 기록(재시도 루프 없음): `python3 tools/yt_thumb_set.py eeJx0Qv6Pvo /home/claude/sldp1125/video/thumb/SLDP_thumbnail.jpg`
+- bin/publish_loop.sh 진행 중(publish.log): youtube_id 연결 site push → SNS 대기열 → 쇼츠 → 기록
+
 ## 남은 일(순서)
 1. site_pub SITE_PUSHED 뒤 `python3 tools/llm_judge.py sldp-2026-11-5 --wait 10` → 맞는 지적만 report 고쳐 updated 그대로 둬도 됨(youtube_id 연결 때 함께 push)
 2. TTS_DONE 뒤 `bash bin/after_tts.sh`(run_in_background) → video/after.log 'AFTER_CHAIN_OK'(chain_long: debreath·video_check long/shorts·ad_gap_check·midroll) — 직접 `python3 tools/ad_gap_check.py --strict video` 한 번 더
