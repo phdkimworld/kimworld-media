@@ -1,0 +1,36 @@
+== earnings
+2020-08-04 13:30 8-K react 2020-08-04 +3.7% 20d(base) +53.9% 20d(after react) +52.7% prior20 +118%
+2020-12-17 22:24 8-K react 2020-12-18 +4.4% 20d(base) +73.6% 20d(after react) +54.1% prior20 +77%
+2021-02-12 14:25 8-K react 2021-02-16 +2.8% 20d(base) +3.9% 20d(after react) -21.9% prior20 -21%
+2021-05-07 13:06 8-K react 2021-05-07 +5.9% 20d(base) -9.4% 20d(after react) -10.8% prior20 -14%
+2021-08-17 13:39 8-K react 2021-08-17 -15.1% 20d(base) -10.1% 20d(after react) +9.1% prior20 +6%
+2021-12-15 00:35 8-K react 2021-12-15 +3.3% 20d(base) -30.1% 20d(after react) -34.7% prior20 -41%
+2022-02-09 22:08 10-Q react 2022-02-10 +11.6% 20d(base) +33.0% 20d(after react) +6.7% prior20 +1%
+2022-05-10 21:02 10-Q react 2022-05-11 -11.9% 20d(base) -4.2% 20d(after react) +1.8% prior20 -43%
+2022-08-10 10:16 10-Q react 2022-08-10 +27.8% 20d(base) -8.8% 20d(after react) -24.4% prior20 +12%
+2022-12-15 03:00 10-K react 2022-12-15 -16.7% 20d(base) +13.2% 20d(after react) +43.2% prior20 -12%
+2023-02-09 21:36 10-Q react 2023-02-10 -8.8% 20d(base) -35.8% 20d(after react) -22.8% prior20 +35%
+2023-05-10 20:32 10-Q react 2023-05-11 -13.9% 20d(base) -20.4% 20d(after react) -10.0% prior20 +50%
+2023-08-09 20:36 10-Q react 2023-08-10 +16.0% 20d(base) -10.7% 20d(after react) -24.9% prior20 -24%
+2023-11-30 21:10 8-K react 2023-12-01 +22.4% 20d(base) +76.8% 20d(after react) +42.4% prior20 +51%
+2024-02-08 21:30 10-Q react 2024-02-09 +32.9% 20d(base) +92.8% 20d(after react) +21.2% prior20 +5%
+2024-05-09 13:10 10-Q react 2024-05-09 +1.3% 20d(base) -0.2% 20d(after react) -6.1% prior20 +9%
+2024-08-09 21:11 10-Q react 2024-08-12 -2.6% 20d(base) -22.9% 20d(after react) -16.2% prior20 -28%
+2024-12-03 17:19 10-K react 2024-12-04 +5.2% 20d(base) -32.3% 20d(after react) -26.4% prior20 +42%
+2025-02-06 21:45 10-Q react 2025-02-07 +9.2% 20d(base) -14.9% 20d(after react) -29.6% prior20 -3%
+2025-05-08 21:15 10-Q react 2025-05-09 +6.0% 20d(base) +12.8% 20d(after react) +10.0% prior20 +14%
+2025-08-07 23:46 8-K react 2025-08-08 -6.1% 20d(base) -13.8% 20d(after react) -8.9% prior20 -17%
+2025-11-25 21:46 10-K react 2025-11-26 +13.8% 20d(base) -3.6% 20d(after react) -18.9% prior20 -38%
+2026-02-05 21:45 10-Q react 2026-02-06 +22.0% 20d(base) +11.4% 20d(after react) -4.7% prior20 -31%
+2026-05-11 20:58 10-Q react 2026-05-12 -5.8% 20d(base) +11.7% 20d(after react) +10.6% prior20 +33%
+2026-08-06 21:00 10-Q react 2026-08-07 -3.5% 20d(base) -1.3% 20d(after react) +3.2% prior20 -1%
+1d n 25 median 3.7 up 16 down 9 <= -10% 4 >= +10% 7
+20d from base n 25 median -3.6 up 10 down 15 <= -10% 9 >= +10% 9
+20d from react close n 25 median -6.1 up 11 down 14 <= -10% 10 >= +10% 7
+== shelf
+2020-09-23 13:05 S-3 react 2020-09-23 -14.0% 20d(base) -32.8% 20d(after react) -22.9% prior20 +10%
+2021-03-15 20:20 S-3ASR react 2021-03-16 -22.7% 20d(base) -25.9% 20d(after react) -6.0% prior20 +4%
+2024-01-05 22:04 S-3ASR react 2024-01-08 +5.0% 20d(base) -24.0% 20d(after react) -18.9% prior20 +10%
+1d n 3 median -14.0 up 1 down 2 <= -10% 2 >= +10% 0
+20d from base n 3 median -25.9 up 0 down 3 <= -10% 3 >= +10% 0
+20d from react close n 3 median -18.9 up 0 down 3 <= -10% 2 >= +10% 0
