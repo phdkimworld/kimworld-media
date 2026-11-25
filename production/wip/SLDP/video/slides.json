@@ -480,16 +480,26 @@
     },
     {
      "from": 5,
-     "layout": "stat",
-     "title": "다음 큰 거시 일정 · 연준 금리 회의(FOMC)",
-     "stats": [
-      {
-       "at": 5,
-       "big": "12월 9일",
-       "label": "미 국채 10년 금리 4.91% · 일주일 전보다 낮음",
-       "tone": "white"
-      }
-     ]
+     "layout": "compare",
+     "title": "금리와 다음 거시 일정",
+     "left": {
+      "at": 5,
+      "head": "미 국채 10년 금리",
+      "big": "4.91%",
+      "lines": [
+       "일주일 전보다 낮음"
+      ],
+      "tone": "white"
+     },
+     "right": {
+      "at": 5,
+      "head": "연준 금리 회의(FOMC)",
+      "big": "12월 9일",
+      "lines": [
+       "다음 큰 거시 일정"
+      ],
+      "tone": "gold"
+     }
     }
    ]
   },
