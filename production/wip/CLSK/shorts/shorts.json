@@ -98,7 +98,19 @@
   {
    "em": "980만",
    "subtitle": "석 달만 보면 **980만** 달러\n흑자였습니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "같은 보고서",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.8,
+     "x": 760,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
