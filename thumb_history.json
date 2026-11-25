@@ -3415,6 +3415,42 @@
    ],
    "video": "thqMQOjwjTQ",
    "shorts": "mxC999mM4Bc"
+  },
+  {
+   "t": "sldp",
+   "date": "2026.11.25",
+   "layout": "v7",
+   "palette": "navy-teal-red",
+   "hue": "#0f766e",
+   "variants": [
+    "band",
+    "pillar"
+   ],
+   "styles": [
+    "v7a",
+    "v7b"
+   ],
+   "main": "a",
+   "concepts": [
+    "아래 띠형: 34거래일 종가선(끝 빨강·화살표) / 물타기 해도 될까?(흰색) / 1.32달러 1년 최저(빨강) — 고체 전해질 셀 + '11번째' 1년 최저 서류 오른쪽 위",
+    "옆 기둥형: 왼쪽 물타기 해도 될까? · 1년 최저 · 1.32달러 / 오른쪽 고체 전해질 셀 크게 + 서류"
+   ],
+   "video": "eeJx0Qv6Pvo",
+   "shorts": "kl5hDXE4PYI"
+  }
+ ],
+ "pending": [
+  {
+   "video": "eeJx0Qv6Pvo",
+   "file": "/home/claude/sldp1125/video/thumb/SLDP_thumbnail.jpg",
+   "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
+   "date": "2026-11-25"
+  },
+  {
+   "video": "kl5hDXE4PYI",
+   "file": "/home/claude/sldp1125/shorts/cover.jpg",
+   "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
+   "date": "2026-11-25"
   }
  ]
 }

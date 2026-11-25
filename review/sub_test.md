@@ -34,3 +34,4 @@
 | 11-23 | IREN | MGh3KnhUDAM | A | 357 |
 | 11-24 | PLUG | vO2GZt0GbnE | B | 614 |
 | 11-24 | JOBY | thqMQOjwjTQ | B | 390 |
+| 11-25 | SLDP | eeJx0Qv6Pvo | A | 559 |
