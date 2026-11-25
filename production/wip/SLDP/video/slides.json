@@ -76,10 +76,16 @@
     },
     {
      "from": 5,
-     "layout": "quote",
-     "text": "물타기 = 내린 값에 더 사서\n**평균 산 값을 낮추기**",
-     "at": 5,
-     "kicker": "풀이"
+     "layout": "stat",
+     "title": "물타기 = 내린 값에 더 사서 평균 산 값을 낮추기",
+     "stats": [
+      {
+       "at": 5,
+       "big": "평균 단가↓",
+       "label": "물타기 풀이",
+       "tone": "gold"
+      }
+     ]
     },
     {
      "from": 6,
@@ -94,10 +100,16 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "솔리드파워\n**물타기 해도 될까?**",
-     "at": 0,
-     "kicker": "시청자 질문"
+     "layout": "stat",
+     "title": "김박사 월드 · 오늘의 매매 질문",
+     "stats": [
+      {
+       "at": 0,
+       "big": "물타기?",
+       "label": "솔리드파워 · 1년 최저 1.32달러",
+       "tone": "white"
+      }
+     ]
     },
     {
      "from": 2,

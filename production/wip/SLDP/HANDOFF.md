@@ -10,6 +10,11 @@
 - 대본 video/narration.txt(21문단 12.92KB, GROUP_OK B, PRE_OK 9개, num_check OK, prev_calls OK) · slides.json(mk_slides.py, anim 15/21) · mk_meta.py · 쇼츠 shorts/(mk_shorts.py·mk_meta.py) · SNS sns/mk_queue.py(dry queue_check: 표지 파일만 없음) · 썸네일 video/thumb/SLDP_thumbnail.jpg(make_v7 a) · 영양제 H2 p12 kit/h2_card.png · 미드롤 kit/sldp_youtube_midroll_*.png
 - 맥 TTS id 110_kwa_sldp1125_tts1 (bin/tts_mac.sh, 로그 video/tts_run.log — 'TTS_DONE'이면 끝)
 
+## 진행(17:25Z)
+- 리포트 push b480f2e(SITE_PUSHED) · llm_judge 10개 중 맞는 지적 반영(report/ 원고만, youtube_id 연결 때 함께 push) · EASY_OK
+- TTS 끝(110_kwa_sldp1125_tts1) · ASR: 문단 7·13·18 st_redo(18은 '남은 시장 매각 한도, 약 오천구백만'), 남은 MISS 2는 표기 한계 → video/asr_check.ok
+- check_slides(beats·BIG)·still_check(p3·p13 stat 연속) 고쳐 chain 재실행 중(video/chain.log)
+
 ## 남은 일(순서)
 1. site_pub SITE_PUSHED 뒤 `python3 tools/llm_judge.py sldp-2026-11-5 --wait 10` → 맞는 지적만 report 고쳐 updated 그대로 둬도 됨(youtube_id 연결 때 함께 push)
 2. TTS_DONE 뒤 `bash bin/after_tts.sh`(run_in_background) → video/after.log 'AFTER_CHAIN_OK'(chain_long: debreath·video_check long/shorts·ad_gap_check·midroll) — 직접 `python3 tools/ad_gap_check.py --strict video` 한 번 더
