@@ -55,9 +55,16 @@
      "color": "red",
      "anim": "pop",
      "box": true,
-     "at": 0.85,
+     "at": 0.35,
      "x": 800,
      "y": 250
+    },
+    {
+     "kind": "stamp",
+     "text": "보상 일부",
+     "color": "red",
+     "at": 0.65,
+     "y": 500
     }
    ],
    "anim": {
@@ -79,8 +86,8 @@
      "decimals": 0,
      "callout": "석 달마다 되풀이",
      "beats": [
-      0.2,
-      0.6
+      0.1,
+      0.4
      ]
     }
    }
@@ -104,7 +111,7 @@
      "kind": "stamp",
      "text": "QQQ보다 8/16",
      "color": "red",
-     "at": 0.8,
+     "at": 0.7,
      "y": 500
     }
    ],
@@ -127,8 +134,8 @@
      "decimals": 0,
      "callout": "거의 반반",
      "beats": [
-      0.2,
-      0.6
+      0.15,
+      0.45
      ]
     },
     "sfx": [
@@ -208,7 +215,7 @@
      "color": "red",
      "anim": "pop",
      "box": true,
-     "at": 0.25,
+     "at": 0.12,
      "x": 780,
      "y": 250
     },
@@ -216,7 +223,7 @@
      "kind": "stamp",
      "text": "평소 1.7배",
      "color": "red",
-     "at": 0.6,
+     "at": 0.62,
      "y": 500
     },
     {
@@ -232,26 +239,22 @@
     }
    ],
    "anim": {
-    "tpl": "v_bars",
+    "tpl": "v_stat",
     "data": {
-     "label": "11월 23일 조비(%)",
-     "items": [
+     "label": "11월 23일 조비 · 나스닥 +7.0%",
+     "big": "+6.9%",
+     "tone": "gold",
+     "big_sub": "평소 민감도로 본 예상 +12.0%",
+     "lines": [
       {
-       "label": "예상",
-       "value": 12.0
-      },
-      {
-       "label": "실제",
-       "value": 6.9,
-       "hi": true
+       "text": "예상의 절반 남짓",
+       "tone": "white"
       }
      ],
-     "unit": "%",
-     "decimals": 1,
-     "callout": "평소 민감도 약 1.7배",
      "beats": [
-      0.2,
-      0.7
+      0.1,
+      0.3,
+      0.5
      ]
     }
    }
