@@ -3372,6 +3372,28 @@
     "PVtpl9NWWQk",
     "zbq6gLjyeVI"
    ]
+  },
+  {
+   "t": "plug",
+   "date": "2026.11.24",
+   "layout": "v7",
+   "palette": "navy-electricblue-red",
+   "hue": "#2563eb",
+   "variants": [
+    "band",
+    "pillar"
+   ],
+   "styles": [
+    "v7a",
+    "v7b"
+   ],
+   "main": "a",
+   "concepts": [
+    "아래 띠형: 30거래일 종가선(끝 3거래일 빨강·화살표) / 어디까지 떨어질까?(흰색) / 0.9314달러 1년 최저(빨강) — 수소 탱크·연료전지 + 병합 권한 소멸 서류 오른쪽 위",
+    "옆 기둥형: 왼쪽 어디까지 떨어질까? · 1년 최저 · 0.9314달러 / 오른쪽 수소 탱크·연료전지 크게 + 소멸 서류"
+   ],
+   "video": "vO2GZt0GbnE",
+   "shorts": "C2BhnrYGamg"
   }
  ]
 }

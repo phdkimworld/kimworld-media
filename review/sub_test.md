@@ -32,3 +32,4 @@
 | 11-22 | QBTS | PVtpl9NWWQk | A | 456 |
 | 11-23 | LAES | zbq6gLjyeVI | A | 454 |
 | 11-23 | IREN | MGh3KnhUDAM | A | 357 |
+| 11-24 | PLUG | vO2GZt0GbnE | B | 614 |
