@@ -9,6 +9,9 @@
 4. 운영자 수동 작업 없음(11-08): Studio 전용 작업은 건너뛰고 '운영자 할 일'을 적지 않는다.
 
 
+
+- **당일 확정 종가 원천(11-24·25 사고 2번)**: 나스닥 info `secondaryData`는 장 마감 뒤 시간외 체결가가 섞인다(PLUG 0.9378→공식 0.9314, CLSK 5.08→5.115). 순서: ① 나스닥 historical 그날 행 ② 없으면 야후 `regularMarketPrice`(16:00 정규장) ③ info secondaryData는 분봉으로 16:00 체결인지 확인될 때만.
+
 ## 단계별 문맥 끊기 (11-24 운영자 "알아서 적용해" — ECC strategic-compact(MIT, affaan-m) 참고·각색)
 제작 에이전트가 한 편에 40만~50만 토큰까지 커져 느리고 비싸다(11-23 IREN·LAES). 한 에이전트가 끝까지 붙잡지 않고 **단계마다 넘김 문서를 남긴다**:
 - 단계: ① 조사·대본(research/, narration.txt, slides.json) → ② 녹음·합성(맥 TTS, chain_long) → ③ 리포트 발행·업로드·SNS·기록.
