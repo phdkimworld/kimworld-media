@@ -3458,6 +3458,27 @@
    ],
    "video": "BruKjg6tsA0",
    "shorts": "VyvLuKKhd38"
+  },
+  {
+   "t": "leu",
+   "date": "2026.11.26",
+   "layout": "v7",
+   "palette": "navy-red",
+   "variants": [
+    "band",
+    "pillar"
+   ],
+   "styles": [
+    "v7a",
+    "v7b"
+   ],
+   "main": "a",
+   "concepts": [
+    "아래 띠형: 61거래일 종가선(끝 빨강·화살표) / 오래 들고 가도 될까?(흰색) / $83.19 11월 25일 종가(빨강) — 원심분리기 여섯 대, 칩 우라늄 농축",
+    "옆 기둥형: 왼쪽 오래 들고 가도 될까? · 11월 25일 종가 · $83.19 / 오른쪽 원심분리기 크게"
+   ],
+   "video": "Jp-VjBFMzlw",
+   "shorts": "jAMH1LKYm_I"
   }
  ],
  "pending": [
@@ -3484,6 +3505,18 @@
    "file": "review/thumb_backup/pending/VyvLuKKhd38.jpg",
    "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 쇼츠 표지, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
    "date": "2026-11-25"
+  },
+  {
+   "video": "Jp-VjBFMzlw",
+   "file": "review/thumb_backup/pending/Jp-VjBFMzlw.jpg",
+   "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
+   "date": "2026-11-26"
+  },
+  {
+   "video": "jAMH1LKYm_I",
+   "file": "review/thumb_backup/pending/jAMH1LKYm_I.jpg",
+   "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
+   "date": "2026-11-26"
   }
  ]
 }
