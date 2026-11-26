@@ -66,9 +66,20 @@
      "color": "gold",
      "anim": "pop",
      "box": true,
-     "at": 0.6,
+     "at": 0.55,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "text",
+     "text": "오른 건 정오부터",
+     "size": 60,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.82,
+     "x": 760,
+     "y": 380
     }
    ],
    "anim": {
@@ -77,11 +88,11 @@
      "label": "11월 25일, 전날 종가 대비(%)",
      "items": [
       {
-       "label": "10:00 소식 직전",
+       "label": "10:00",
        "value": -6.6
       },
       {
-       "label": "11:30 소식 뒤 90분",
+       "label": "11:30",
        "value": -8.3
       },
       {
@@ -89,7 +100,7 @@
        "value": 4.2
       },
       {
-       "label": "16:00 종가",
+       "label": "종가",
        "value": 9.9,
        "hi": true
       }

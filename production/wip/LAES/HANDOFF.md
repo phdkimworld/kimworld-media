@@ -1,10 +1,10 @@
-# HANDOFF — LAES 11-26 정규 (laes1126, 124회차 잠정 A그룹) · 갱신 2026-11-26 07:45Z
+# HANDOFF — LAES 11-26 정규 (laes1126, 125회차 B그룹(LEU가 124 A)) · 갱신 2026-11-26 07:45Z
 
 ## 상태: ② 녹음·합성 진행 중 (chain_long 백그라운드)
 - 선정: LAES★ — 11/25 10:02 ET 보도자료·16:57 6-K 유로넥스트 그로스 파리 2차 상장 승인(12/2 거래, 새 주식 없음) + 11/25 종가 1.07 +9.9%(나스닥 historical, 장중 저가 0.8809 -9.6%). 72시간: 지난 롱폼 zbq6gLjyeVI 11-24 02:18Z → 업로드 meta publish_at 2026-11-26T21:20-05:00(쇼츠 21:30).
 - 앵글 N5 '반등 신호일까?' · 영양제 H1 오메가3, 쿠팡 단축 링크 https://link.coupang.com/a/iZkUIIHzEa (mdomlaes, 캐시 --set 완료)
 - 리포트 laes-2026-11-7(EASY_OK, 그림 6장 figkit → /home/claude/site-reg1126 static) — 사이트 worktree에서 test_build·build --strict 실행 중(report/test_build.log·build.log), 통과 뒤 site_push.sh
-- 대본 9.04KB GROUP_OK A · PRE_OK 12개(MIDROLL_DATE=2026-11-26) · 맥 TTS 112_kwa_laes1126_tts1 완료(488.7초) · chain.log
+- 대본 11.41KB GROUP_OK B(A 9.04KB 녹음은 폐기) · PRE_OK 12개(MIDROLL_DATE=2026-11-26) · 맥 TTS 115_kwa_laes1126_tts2 대기(쇼츠는 112 녹음 그대로) · chain.log
 - 썸네일 video/thumb/LAES_thumbnail.jpg(v7) · meta video/mk_meta.py·shorts/mk_meta.py · SNS sns/mk_queue.py(dry QUEUE: cover만 남음)
 
 ## 남은 일

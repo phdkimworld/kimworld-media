@@ -247,6 +247,19 @@
        ]
       }
      }
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11월 24일 보도자료 · 데이터센터 업체와 양자 보안 연결망",
+     "stats": [
+      {
+       "at": 4,
+       "big": "그날 -4.0%",
+       "label": "0.974달러 마감",
+       "tone": "down"
+      }
+     ]
     }
    ]
   },
@@ -307,7 +320,7 @@
       {
        "no": "1",
        "text": "새 주식 없음",
-       "at": 5
+       "at": 4
       },
       {
        "no": "2",
@@ -323,10 +336,83 @@
     },
     {
      "from": 6,
+     "layout": "stat",
+     "title": "보도자료 경고 · 유로넥스트 그로스",
+     "stats": [
+      {
+       "at": 6,
+       "big": "규칙이 다름",
+       "label": "정규 시장(Regulated Market)과 같은 규칙 아님",
+       "tone": "white"
+      }
+     ]
+    },
+    {
+     "from": 7,
      "layout": "quote",
      "text": "이유\n**유럽 본사·연구 인력 가까이, 유로로 거래**",
-     "at": 6,
+     "at": 7,
      "kicker": "보도자료"
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "일주일 전\n**인수 의향서**",
+     "at": 0,
+     "kicker": "11월 18일"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "퀸테센스랩스 인수 의향서 · 11월 18일",
+     "stats": [
+      {
+       "at": 1,
+       "big": "+10.6%",
+       "label": "1.20달러 마감",
+       "tone": "up"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "list",
+     "title": "의향서 단계",
+     "items": [
+      {
+       "no": "1",
+       "text": "구속력 없음 · 60일 단독 협상",
+       "at": 2
+      },
+      {
+       "no": "2",
+       "text": "대금 일부 새 주식",
+       "at": 3
+      },
+      {
+       "no": "3",
+       "text": "금액 밝히지 않음",
+       "at": 3
+      }
+     ]
+    },
+    {
+     "from": 4,
+     "layout": "stat",
+     "title": "11월 20일 · QQQ -5.7%인 날",
+     "stats": [
+      {
+       "at": 4,
+       "big": "-14.1%",
+       "label": "0.962달러 · 1년 최저 종가",
+       "tone": "down"
+      }
+     ],
+     "sfx": "boom"
     }
    ]
   },
@@ -424,69 +510,40 @@
      "anim": {
       "tpl": "compare_bars",
       "data": {
-       "title": "같은 날 양자주 모두 장중에 뒤집혔다",
-       "source": "나스닥 일별 시세 · 기준 2026-11-25",
+       "title": "같은 날 양자주도 장중에 뒤집혔다",
        "sub": "11월 25일 하루 등락(%)",
-       "note": "장중 저가는 아킷 -10.5%, 아이온큐 -9.5%, 리게티 -9.5%, QQQ -4.8%",
        "unit": "%",
        "decimals": 1,
        "items": [
         {
          "label": "아킷 퀀텀",
-         "value": 11.5,
-         "text": "+11.5%"
+         "value": 11.5
         },
         {
          "label": "실스크",
          "value": 9.9,
-         "text": "+9.9%",
          "hi": true
         },
         {
          "label": "아이온큐",
-         "value": 5.1,
-         "text": "+5.1%"
-        },
-        {
-         "label": "퀀텀 컴퓨팅",
-         "value": 5.0,
-         "text": "+5.0%"
-        },
-        {
-         "label": "BTQ",
-         "value": 4.2,
-         "text": "+4.2%"
-        },
-        {
-         "label": "디웨이브 퀀텀",
-         "value": 3.9,
-         "text": "+3.9%"
+         "value": 5.1
         },
         {
          "label": "리게티",
-         "value": 3.4,
-         "text": "+3.4%"
-        },
-        {
-         "label": "양자 펀드(QTUM)",
-         "value": -0.1,
-         "text": "-0.1%"
+         "value": 3.4
         },
         {
          "label": "QQQ",
-         "value": -0.7,
-         "text": "-0.7%"
+         "sub": "장중 -4.8%",
+         "value": -0.7
         }
        ],
+       "source": "자료: 나스닥 종가 · 기준 2026-11-25",
        "beats": [
         2,
         2,
         3,
         3,
-        3,
-        3,
-        3,
-        4,
         4
        ]
       }
@@ -508,10 +565,6 @@
    ]
   },
   {
-   "ad": [
-    4,
-    5
-   ],
    "slides": [
     {
      "from": 0,
@@ -558,19 +611,6 @@
        "big": "2위",
        "label": "+9.9% · 아킷 퀀텀 +11.5% 다음",
        "tone": "gold"
-      }
-     ]
-    },
-    {
-     "from": 4,
-     "layout": "stat",
-     "title": "출처와 표 · 고정 댓글 무료 리포트",
-     "stats": [
-      {
-       "at": 4,
-       "big": "숫자로 다시 보기",
-       "label": "drkimworld.com",
-       "tone": "white"
       }
      ]
     }
@@ -649,6 +689,10 @@
    ]
   },
   {
+   "ad": [
+    5,
+    6
+   ],
    "slides": [
     {
      "from": 0,
@@ -783,6 +827,19 @@
        ]
       }
      }
+    },
+    {
+     "from": 5,
+     "layout": "stat",
+     "title": "출처와 표 · 고정 댓글 무료 리포트",
+     "stats": [
+      {
+       "at": 5,
+       "big": "숫자로 다시 보기",
+       "label": "drkimworld.com",
+       "tone": "white"
+      }
+     ]
     }
    ]
   },
@@ -886,6 +943,135 @@
    ]
   },
   {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "기록 하나 더\n**장중 뒤집기**",
+     "at": 0,
+     "kicker": "기록"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "장중 전날보다 -5% 넘게 → 종가 +8% 넘게",
+     "stats": [
+      {
+       "at": 1,
+       "big": "장중 뒤집기",
+       "label": "11월 25일: -9.6%에서 +9.9%",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "장중 뒤집기 10번, 20거래일 뒤",
+       "sub": "그날 종가 대비(번)",
+       "unit": "번",
+       "decimals": 0,
+       "items": [
+        {
+         "label": "더 높음",
+         "value": 7,
+         "hi": true
+        },
+        {
+         "label": "더 낮음",
+         "value": 3
+        }
+       ],
+       "source": "자료: 나스닥 종가 · 기준 2026-11-25",
+       "beats": [
+        2,
+        2
+       ]
+      }
+     }
+    },
+    {
+     "from": 3,
+     "layout": "quote",
+     "text": "최저 뒤 반등과 겹치는 날이 많아\n**근거 하나로만 센다**",
+     "at": 3
+    }
+   ]
+  },
+  {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "stat",
+     "title": "다시 두 번째 단서",
+     "stats": [
+      {
+       "at": 0,
+       "big": "마음에 걸리는 것",
+       "label": "최저 뒤 반등, 이번 달",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "이번 달 · 같은 모양",
+     "stats": [
+      {
+       "at": 1,
+       "big": "벌써 두 번",
+       "label": "11월 9일 · 11월 18일",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "anim": {
+      "tpl": "compare_bars",
+      "data": {
+       "title": "이번 달 반등일 종가와 지금",
+       "sub": "종가(달러)",
+       "unit": "달러",
+       "decimals": 2,
+       "items": [
+        {
+         "label": "11월 9일 반등일",
+         "value": 1.45
+        },
+        {
+         "label": "11월 18일 반등일",
+         "value": 1.2
+        },
+        {
+         "label": "11월 25일",
+         "sub": "지금",
+         "value": 1.07,
+         "hi": true
+        }
+       ],
+       "source": "자료: 나스닥 종가 · 기준 2026-11-25",
+       "beats": [
+        2,
+        2,
+        3
+       ]
+      }
+     }
+    },
+    {
+     "from": 4,
+     "layout": "quote",
+     "text": "한 달에 세 번\n**앞의 두 번은 버티지 못했다**",
+     "at": 4,
+     "sfx": "boom"
+    }
+   ]
+  },
+  {
    "kind": "ad",
    "shop": [
     3
@@ -949,74 +1135,16 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "다시 두 번째 단서\n**마음에 걸리는 것**",
-     "at": 0
-    },
-    {
-     "from": 1,
      "layout": "stat",
-     "title": "이번 달 · 같은 모양",
+     "title": "사는 쪽 근거",
      "stats": [
       {
-       "at": 1,
-       "big": "벌써 두 번",
-       "label": "11월 9일 · 11월 18일",
-       "tone": "down"
+       "at": 0,
+       "big": "셋",
+       "label": "기록 · 무리 · 현금",
+       "tone": "up"
       }
-     ]
-    },
-    {
-     "from": 2,
-     "anim": {
-      "tpl": "compare_bars",
-      "data": {
-       "title": "이번 달 반등일 종가와 지금",
-       "sub": "종가(달러)",
-       "unit": "달러",
-       "decimals": 2,
-       "items": [
-        {
-         "label": "11월 9일 반등일",
-         "value": 1.45
-        },
-        {
-         "label": "11월 18일 반등일",
-         "value": 1.2
-        },
-        {
-         "label": "11월 25일",
-         "sub": "지금",
-         "value": 1.07,
-         "hi": true
-        }
-       ],
-       "source": "자료: 나스닥 종가 · 기준 2026-11-25",
-       "beats": [
-        2,
-        2,
-        3
-       ]
-      }
-     }
-    },
-    {
-     "from": 4,
-     "layout": "quote",
-     "text": "한 달에 세 번\n**앞의 두 번은 버티지 못했다**",
-     "at": 4,
-     "sfx": "boom"
-    }
-   ]
-  },
-  {
-   "slides": [
-    {
-     "from": 0,
-     "layout": "quote",
-     "text": "사는 쪽\n**근거 셋**",
-     "at": 0,
-     "kicker": "사는 쪽",
+     ],
      "sfx": "boom"
     },
     {
@@ -1144,8 +1272,55 @@
    ]
   },
   {
+   "slides": [
+    {
+     "from": 0,
+     "layout": "quote",
+     "text": "위험도\n**짚고 가기**",
+     "at": 0,
+     "kicker": "위험"
+    },
+    {
+     "from": 1,
+     "layout": "stat",
+     "title": "최근 20거래일 하루 평균 움직임",
+     "stats": [
+      {
+       "at": 1,
+       "big": "6.6%",
+       "label": "평소 민감도 QQQ의 약 2.0배",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "quote",
+     "text": "1달러 아래 종가는 2거래일\n**30영업일 연속 규칙과는 거리**",
+     "at": 2
+    },
+    {
+     "from": 3,
+     "layout": "list",
+     "title": "가장 큰 한계",
+     "items": [
+      {
+       "no": "1",
+       "text": "판정 끝난 최저 뒤 반등은 7번뿐",
+       "at": 3
+      },
+      {
+       "no": "2",
+       "text": "회사 소식과 시장 회복의 몫은 못 가름",
+       "at": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
    "sub": [
-    4
+    5
    ],
    "slides": [
     {
@@ -1182,22 +1357,28 @@
     {
      "from": 2,
      "layout": "quote",
-     "text": "신호인지 아닌지는\n**다음 반응이 정한다**",
+     "text": "무리를 따라 올라온 것\n**지난 습관과 다른 모습**",
      "at": 2
     },
     {
      "from": 3,
      "layout": "quote",
-     "text": "소식과 반등이 겹칠 때\n**먼저 갈라 보기**",
+     "text": "신호인지 아닌지는\n**다음 반응이 정한다**",
      "at": 3
     },
     {
      "from": 4,
+     "layout": "quote",
+     "text": "소식과 반등이 겹칠 때\n**먼저 갈라 보기**",
+     "at": 4
+    },
+    {
+     "from": 5,
      "layout": "stat",
      "title": "같은 방법으로 다른 종목도",
      "stats": [
       {
-       "at": 4,
+       "at": 5,
        "big": "구독",
        "label": "김박사 월드",
        "tone": "gold"
@@ -1292,10 +1473,16 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "판단을 바꿀\n**신호 셋**",
-     "at": 0,
-     "kicker": "확인 신호",
+     "layout": "stat",
+     "title": "판단을 바꿀 확인 신호",
+     "stats": [
+      {
+       "at": 0,
+       "big": "셋",
+       "label": "날짜가 정해진 신호",
+       "tone": "gold"
+      }
+     ],
      "sfx": "boom"
     },
     {
@@ -1317,6 +1504,19 @@
        "no": "3",
        "text": "12월 9일 FOMC 뒤 무리만큼 따라가나",
        "at": 1
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "그 전에 정식 인수 계약·새 주식 판매 서류가 나오면",
+     "stats": [
+      {
+       "at": 2,
+       "big": "앞당김",
+       "label": "판단을 다시 봄",
+       "tone": "white"
       }
      ]
     }
