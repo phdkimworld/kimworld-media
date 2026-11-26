@@ -120,6 +120,7 @@
   3. 그 크롬의 Threads 웹이 **@drkimworld로 로그인**돼 있어야 한다(@phdkimworld면 다른 계정으로 승인됨). 크롬에 인스타 @drkimworld 세션이 있으면 Threads 로그인 화면의 drkimworld 버튼으로 비밀번호 없이 들어간다.
   4. 팝업 'Continue As drkimworld'는 세션이 누를 수 없다(확장 탭 묶음 밖 창) → 운영자가 누른다. 토큰 복사·GitHub 비밀값 붙여넣기도 운영자 몫(세션은 토큰을 입력·출력하지 않는다). GitHub 비밀값 화면이 404면 로그인이 안 된 것.
   5. 넣은 뒤 세션이 ping으로 확인.
+- **휴대폰만으로 재발급(2026-11-26, 삭제 권한 threads_delete 포함)**: 사이트 `threads-connect.yml` + `scripts/threads_connect.py`(인스타 `ig-connect.yml`과 같은 방식). 한 번만 준비: Meta 개발자 → phdkimworld-poster → Threads 사용 사례 → 권한에 threads_delete 추가, 설정의 '리디렉션 콜백 URL'에 `https://drkimworld.com/`, Threads 앱 시크릿을 사이트 비밀값 `THREADS_APP_SECRET`에(운영자). 그다음은 `python3 scripts/threads_connect.py url` 주소를 휴대폰에서 열어 @drkimworld로 허용 → 넘어간 drkimworld.com 주소(?code=…, 1시간·1회용)를 세션에 주면 세션이 threads-connect.yml(code 입력)을 돌리고, 워크플로가 토큰을 출력 없이 `DRKIM_THREADS_ACCESS_TOKEN`에 넣는다. 확인은 threads-drkim.yml ping, 지우기는 mode=delete(ids).
 - 운영자 맥 두 대 모두 Claude in Chrome이 붙어 있다(list_connected_browsers의 Browser 1·2). 운영자가 원격으로 보는 맥이 어느 쪽인지 먼저 확인하고 그 브라우저를 고른다(2026-11-25 Browser 1이 원격 화면 맥).
 
 # 블로거
