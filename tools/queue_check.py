@@ -204,5 +204,22 @@ if 'PLAIN_FAIL' in pc: bad += ['가독성(plain_check): ' + l.strip() for l in p
 # 시장·거시 한 줄(운영자 11-22, SKILL K8): publish_at 11-23~ Threads 첫 글·둘째 글 중 하나에 — tools/macro_check.py queue
 mq = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'macro_check.py'), 'queue'] + [f for f in sys.argv[1:] if f.endswith('.json')], capture_output=True, text=True).stdout
 bad += [l.strip() for l in mq.splitlines() if l.startswith('MACRO_THREADS')]
+# 초반 30분 내 댓글 self_reply(2026-11-26 운영자 공유 'Threads 첫 30분' 팁, marketing.md 3절): 있으면 150자·링크 없음·권유·베팅·AI 언급 없음, 질문으로 끝
+# 같은 규칙이 사이트 scripts/social_publish.py self_reply_problems 에도 있다(게시 단계에서 다시 막음)
+SR_BAN = [(r'https?://|www\.|\.com\b|t\.me/', '링크'), (r'매수|매도|사세요|파세요|담으세요|줍줍|물타기|손절|익절|목표\s*(가|주가)', '매매 권유·목표가'),
+          (r'수익\s*(보장|약속|확실)|확실한\s*수익|무조건|급등\s*확정|원금', '수익 약속'), (r'베팅|배팅|올인|몰빵|도박|대박|떡상|떡락|존버', '베팅 표현'),
+          (r'(?<![A-Za-z])AI(?![A-Za-z])|인공지능|에이아이|GPT|챗봇|자동\s*(답글|댓글)', 'AI 언급'), (r'빚|대출\s*받아|신용\s*(거래|매수)', '빚'),
+          (r'지금\s*당장|서두르|놓치면|마지막\s*기회', '긴급성'), (r'팔로우|맞팔|좋아요\s*(눌러|부탁)|리포스트\s*(해|부탁)|공유\s*부탁', '참여 구걸')]
+for f in sys.argv[1:]:
+    try: d = json.load(open(f, encoding='utf-8'))
+    except Exception: continue
+    sr = d.get('self_reply')
+    if sr is None: continue
+    if 'threads' not in d.get('channels', []): bad.append(f'{f}: self_reply 는 Threads 글에만'); continue
+    if not isinstance(sr, str) or not sr.strip(): bad.append(f'{f}: self_reply 가 비어 있음'); continue
+    if len(sr.strip()) > 150: bad.append(f'{f}: self_reply {len(sr.strip())}자 > 150')
+    for pat, why in SR_BAN:
+        if re.search(pat, sr, re.I): bad.append(f'{f}: self_reply 금지({why}): {sr[:40]}')
+    if not re.search(r'[?？]|주세요|남겨', sr): bad.append(f'{f}: self_reply 는 그 회차 숫자를 묻는 짧은 질문(예: "여러분은 1.07달러, 반등 신호로 보세요 아니면 … 댓글로 의견 주세요")')
 for b in bad: print('BAD', b)
 print('QUEUE_OK' if not bad else f'QUEUE_FAIL {len(bad)}'); sys.exit(1 if bad else 0)
