@@ -1919,16 +1919,10 @@
     },
     {
      "from": 3,
-     "layout": "stat",
-     "title": "실시간 알림",
-     "stats": [
-      {
-       "at": 3,
-       "big": "인스타그램 · 앱",
-       "label": "김박사 월드 채널 참여 · drkimworld.com",
-       "tone": "white"
-      }
-     ]
+     "layout": "quote",
+     "text": "실시간 알림은 인스타그램 채널 참여\n**또는 drkimworld.com 앱 설치**",
+     "at": 3,
+     "kicker": "알림"
     }
    ]
   },
