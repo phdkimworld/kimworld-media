@@ -65,19 +65,19 @@
      "label": "종가(달러)",
      "items": [
       {
-       "label": "25년 10월 최고",
+       "label": "최고",
        "value": 436.0
       },
       {
-       "label": "10월 29일",
+       "label": "10.29",
        "value": 110.55
       },
       {
-       "label": "11월 20일",
+       "label": "11.20",
        "value": 81.43
       },
       {
-       "label": "11월 25일",
+       "label": "11.25",
        "value": 83.19,
        "hi": true
       }
@@ -98,6 +98,17 @@
    "em": "54억",
    "subtitle": "그중 **54억** 달러는\n공장을 지어야 받는 약정입니다",
    "els": [
+    {
+     "kind": "text",
+     "text": "공장을 지어야",
+     "size": 60,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.45,
+     "x": 760,
+     "y": 380
+    },
     {
      "kind": "text",
      "text": "조건부",
@@ -152,30 +163,53 @@
   {
    "em": "2030",
    "subtitle": "경쟁사 넷은 **2030**~2032년\n생산을 목표로 합니다",
-   "els": [],
+   "els": [
+    {
+     "kind": "text",
+     "text": "HALEU는 센트러스 하나",
+     "size": 56,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.5,
+     "x": 640,
+     "y": 380
+    },
+    {
+     "kind": "text",
+     "text": "앞섬은 한두 해",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
+     "x": 700,
+     "y": 250
+    }
+   ],
    "anim": {
     "tpl": "v_bars",
     "data": {
-     "label": "첫 생산·인도 목표까지 남은 해",
+     "label": "첫 생산 목표까지 남은 해(2029~2032년)",
      "items": [
       {
-       "label": "센트러스 2029",
+       "label": "센트러스",
        "value": 3
       },
       {
-       "label": "GLE 2030",
+       "label": "GLE",
        "value": 4
       },
       {
-       "label": "제너럴 매터 2030",
+       "label": "GM",
        "value": 4
       },
       {
-       "label": "오라노 2031",
+       "label": "오라노",
        "value": 5
       },
       {
-       "label": "유렌코 새 공장 2032",
+       "label": "유렌코",
        "value": 6
       }
      ],
@@ -198,12 +232,23 @@
    "els": [
     {
      "kind": "text",
-     "text": "원전주 함께",
-     "size": 60,
+     "text": "우라늄 펀드도 함께",
+     "size": 56,
      "color": "white",
      "anim": "pop",
      "box": true,
-     "at": 0.75,
+     "at": 0.4,
+     "x": 640,
+     "y": 380
+    },
+    {
+     "kind": "text",
+     "text": "원전주 함께",
+     "size": 60,
+     "color": "gold",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
      "x": 760,
      "y": 250
     }
