@@ -37,3 +37,4 @@
 | 11-25 | SLDP | eeJx0Qv6Pvo | A | 559 |
 | 11-25 | CLSK | BruKjg6tsA0 | B | 393 |
 | 11-26 | LEU | Jp-VjBFMzlw | B | 403 |
+| 11-26 | LAES | Y9LNWkLxV3Y | A | 502 |
