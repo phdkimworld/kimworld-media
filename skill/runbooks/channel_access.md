@@ -98,6 +98,7 @@
 
 ## 7-1. 두 번째 Threads 계정 @drkimworld (2026-11-25 연결, 운영자 "다른세션에 접근 지침 작성")
 - **두 계정을 섞지 않는다.** @phdkimworld = 본 채널(리포트 자동 게시, `THREADS_*`, social.yml). @drkimworld = 두 번째 계정(`DRKIM_THREADS_ACCESS_TOKEN`). 다른 쪽 토큰으로 게시하지 않는다.
+- **짝 인스타 = @drkimworld, 이미 연결돼 있다**: 사이트 `IG_ACCESS_TOKEN`·`IG_USER_ID`가 이 인스타 계정이다(리포트 릴스·카드가 instagram.com/drkimworld 로 올라감, 2026-11-25 social.yml ping 정상). 즉 본 채널 리포트는 Threads는 @phdkimworld, 인스타는 @drkimworld로 나간다. @drkimworld Threads 용도를 정할 때 이 인스타와 내용이 겹치는지 먼저 본다.
 - 같은 Meta 앱 **phdkimworld-poster**(앱 ID 1668388958298068, Threads 앱 ID 2171942756723397, 개발 모드)의 **Threads 테스터**로 붙어 있다. 권한: threads_basic·content_publish·manage_insights·manage_replies·read_replies.
 - 키: 사이트 저장소 비밀값 `DRKIM_THREADS_ACCESS_TOKEN`(장기 60일). `token-refresh.yml`이 매달 1·15일 @phdkimworld와 함께 갱신(없으면 경고만 내고 건너뜀). 사용자 ID 비밀값은 없다 — 워크플로가 `me`로 찾는다.
 - **용도: 건강월드(영양제) 전용(2026-11-26 운영자 결정).** 형식은 운영자 승인(`skill/health/HEALTH_CHANNEL.md` 4.17), 이후 건강월드 하루 운영이 하루 1~2개 자동 게시(본문 + 내 답글 reply). 주식 리포트는 올리지 않는다(@phdkimworld 몫).
