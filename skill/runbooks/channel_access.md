@@ -100,7 +100,7 @@
 - **두 계정을 섞지 않는다.** @phdkimworld = 본 채널(리포트 자동 게시, `THREADS_*`, social.yml). @drkimworld = 두 번째 계정(`DRKIM_THREADS_ACCESS_TOKEN`). 다른 쪽 토큰으로 게시하지 않는다.
 - 같은 Meta 앱 **phdkimworld-poster**(앱 ID 1668388958298068, Threads 앱 ID 2171942756723397, 개발 모드)의 **Threads 테스터**로 붙어 있다. 권한: threads_basic·content_publish·manage_insights·manage_replies·read_replies.
 - 키: 사이트 저장소 비밀값 `DRKIM_THREADS_ACCESS_TOKEN`(장기 60일). `token-refresh.yml`이 매달 1·15일 @phdkimworld와 함께 갱신(없으면 경고만 내고 건너뜀). 사용자 ID 비밀값은 없다 — 워크플로가 `me`로 찾는다.
-- **용도는 아직 정하지 않았다(2026-11-25).** 운영자가 정하기 전에는 자동 게시를 붙이지 않는다. 후보: 건강월드(영양제) 전용 / 리포트 나눠 게시 / 기타. 정해지면 여기와 0장 표를 고친다.
+- **용도: 건강월드(영양제) 전용(2026-11-26 운영자 결정).** 형식은 운영자 승인(`skill/health/HEALTH_CHANNEL.md` 4.17), 이후 건강월드 하루 운영이 하루 1~2개 자동 게시(본문 + 내 답글 reply). 주식 리포트는 올리지 않는다(@phdkimworld 몫).
 - 통로(사이트 저장소 `threads-drkim.yml`, REST dispatch):
   ```bash
   # 토큰 확인(결과는 주석 '토큰 정상: @drkimworld')
@@ -110,7 +110,7 @@
   RID=$(gh api "repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/runs?per_page=1" -q '.workflow_runs[0].id')
   for j in $(gh api repos/phdkimworld/kimworld-site/actions/runs/$RID/jobs -q '.jobs[].id'); do gh api repos/phdkimworld/kimworld-site/check-runs/$j/annotations -q '.[].message'; done
   ```
-- 게시 규칙: 공개 글이므로 **본문을 운영자에게 먼저 보여 주고 승인받은 뒤** post. 영양제 글이면 건강월드 지침(`skill/health/HEALTH_CHANNEL.md` 2장 법·정책: 질병 예방·치료 암시 금지, 식약처 인정 문구만, 쿠팡 링크엔 대가성 문구)을 그대로 따른다. 링크에는 `utm_source=threads&utm_medium=post&utm_campaign=<주제>`.
+- 게시 규칙: 4.17 형식 안의 글은 승인 없이 자동 게시(운영자 2026-11-26 "형식만 승인, 이후 자동"), 형식 밖 글은 운영자에게 먼저 보여 준다. 영양제 글이면 건강월드 지침(`skill/health/HEALTH_CHANNEL.md` 2장 법·정책: 질병 예방·치료 암시 금지, 식약처 인정 문구만, 쿠팡 링크엔 대가성 문구)을 그대로 따른다. 링크에는 `utm_source=threads&utm_medium=post&utm_campaign=<주제>`.
 - 401·`invalid_grant`·만료(60일 넘김)면 갱신으로는 안 살아난다 → 운영자에게 재발급 요청. **재발급 순서(실제로 해 본 길):**
   1. Meta 개발자 → phdkimworld-poster → 사용 사례 'Access the Threads API' → 설정 → **User Token Generator** → drkimworld **Generate Access Token**.
   2. 이 버튼은 **작은 팝업 창**에서 승인해야 토큰이 원래 화면에 뜬다. **휴대폰 브라우저·같은 탭 승인은 흰 화면만 나온다**(팝업과 원래 창이 이어져야 함). 데스크톱 크롬에서 할 것.
