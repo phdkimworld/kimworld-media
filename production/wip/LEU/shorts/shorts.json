@@ -15,17 +15,6 @@
      "color": "red",
      "at": 0.65,
      "y": 500
-    },
-    {
-     "kind": "text",
-     "text": "미국 기술 HALEU",
-     "size": 60,
-     "color": "gold",
-     "anim": "pop",
-     "box": true,
-     "at": 0.85,
-     "x": 760,
-     "y": 250
     }
    ],
    "anim": {
@@ -37,7 +26,7 @@
      "big_sub": "최고 종가 대비 · 11월 25일",
      "lines": [
       {
-       "text": "수주 잔고는 오히려 늘었다",
+       "text": "그런데 일감은 쌓여 있다",
        "tone": "white"
       }
      ],
@@ -100,56 +89,33 @@
    "els": [
     {
      "kind": "text",
-     "text": "공장을 지어야",
-     "size": 60,
-     "color": "white",
-     "anim": "pop",
-     "box": true,
-     "at": 0.45,
-     "x": 760,
-     "y": 380
-    },
-    {
-     "kind": "text",
-     "text": "조건부",
-     "size": 60,
+     "text": "공장을 지어야 받는 돈",
+     "size": 76,
      "color": "gold",
      "anim": "pop",
      "box": true,
-     "at": 0.8,
-     "x": 760,
-     "y": 250
+     "at": 0.85,
+     "x": 540,
+     "y": 700
     }
    ],
    "anim": {
-    "tpl": "v_bars",
+    "tpl": "v_stat",
     "data": {
-     "label": "9월 30일 수주 잔고(억 달러)",
-     "items": [
+     "label": "9월 30일 수주 잔고 70억 달러 가운데",
+     "big": "54억 달러",
+     "tone": "gold",
+     "big_sub": "조건부 판매 약정",
+     "lines": [
       {
-       "label": "전체",
-       "value": 70,
-       "text": "70억"
-      },
-      {
-       "label": "조건부",
-       "value": 54,
-       "text": "54억",
-       "hi": true
-      },
-      {
-       "label": "기술 서비스",
-       "value": 8,
-       "text": "8억"
+       "text": "본계약 51억 달러도 이정표를 지나야 효력",
+       "tone": "white"
       }
      ],
-     "unit": "억 달러",
-     "decimals": 0,
-     "callout": "할 수 있다 ≠ 했다",
      "beats": [
-      0.15,
-      0.5,
-      0.85
+      0.05,
+      0.35,
+      0.6
      ]
     },
     "sfx": [
@@ -166,62 +132,33 @@
    "els": [
     {
      "kind": "text",
-     "text": "HALEU는 센트러스 하나",
-     "size": 56,
-     "color": "white",
-     "anim": "pop",
-     "box": true,
-     "at": 0.5,
-     "x": 640,
-     "y": 380
-    },
-    {
-     "kind": "text",
      "text": "앞섬은 한두 해",
-     "size": 60,
+     "size": 76,
      "color": "gold",
      "anim": "pop",
      "box": true,
-     "at": 0.85,
-     "x": 700,
-     "y": 250
+     "at": 0.8,
+     "x": 540,
+     "y": 700
     }
    ],
    "anim": {
-    "tpl": "v_bars",
+    "tpl": "v_stat",
     "data": {
-     "label": "첫 생산 목표까지 남은 해(2029~2032년)",
-     "items": [
+     "label": "경쟁사 넷 · 첫 생산 목표",
+     "big": "2030~2032년",
+     "tone": "gold",
+     "big_sub": "GLE·제너럴 매터·오라노·유렌코",
+     "lines": [
       {
-       "label": "센트러스",
-       "value": 3
-      },
-      {
-       "label": "GLE",
-       "value": 4
-      },
-      {
-       "label": "GM",
-       "value": 4
-      },
-      {
-       "label": "오라노",
-       "value": 5
-      },
-      {
-       "label": "유렌코",
-       "value": 6
+       "text": "센트러스 오클로 인도 2029년",
+       "tone": "white"
       }
      ],
-     "unit": "년",
-     "decimals": 0,
-     "callout": "앞섬은 한두 해",
      "beats": [
-      0.1,
+      0.02,
       0.3,
-      0.5,
-      0.7,
-      0.9
+      0.62
      ]
     }
    }
@@ -229,30 +166,7 @@
   {
    "em": "24",
    "subtitle": "10월 29일 뒤 **24**% 넘게 내렸고\n나스닥 100도 11% 내렸습니다",
-   "els": [
-    {
-     "kind": "text",
-     "text": "우라늄 펀드도 함께",
-     "size": 56,
-     "color": "white",
-     "anim": "pop",
-     "box": true,
-     "at": 0.4,
-     "x": 640,
-     "y": 380
-    },
-    {
-     "kind": "text",
-     "text": "원전주 함께",
-     "size": 60,
-     "color": "gold",
-     "anim": "pop",
-     "box": true,
-     "at": 0.85,
-     "x": 760,
-     "y": 250
-    }
-   ],
+   "els": [],
    "anim": {
     "tpl": "v_bars",
     "data": {
