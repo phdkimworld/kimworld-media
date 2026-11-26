@@ -11,8 +11,8 @@
   {
    "tag": "광고",
    "title": "오메가3 제품 링크",
-   "sub": "EPA+DHA 합 하루 500mg 이상",
-   "url": "설명란 둘째 줄",
+   "sub": "EPA+DHA 하루 500mg 이상",
+   "url": "link.coupang.com/a/iZktLrbsoS",
    "note": "쿠팡 파트너스",
    "color": "#3DDC97"
   },
@@ -726,19 +726,6 @@
      }
     },
     {
-     "from": 2,
-     "layout": "stat",
-     "title": "오라노 · 원자력규제위원회 심사 완료 목표",
-     "stats": [
-      {
-       "at": 2,
-       "big": "2027년 6월",
-       "label": "4월에서 늦춰짐 · 농축 시작 2031년",
-       "tone": "white"
-      }
-     ]
-    },
-    {
      "from": 4,
      "layout": "quote",
      "text": "실물은 앞섰지만 독점이 아니라\n**한두 해 정도의 차이**",
@@ -1399,8 +1386,8 @@
        "beats": [
         1,
         1,
-        2,
-        2
+        1,
+        1
        ]
       }
      }
