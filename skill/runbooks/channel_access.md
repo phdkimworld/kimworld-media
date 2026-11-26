@@ -96,6 +96,29 @@
 - 권한 범위: Threads는 `threads_basic`·`threads_content_publish`·`threads_manage_replies`·`threads_read_replies`, 인스타는 Instagram Login 방식의 게시·댓글 관리, 페이스북은 페이지 게시·댓글 관리. 범위를 넓히려면 Meta 앱 검토와 토큰 재발급이 필요하므로 운영자에게 먼저 알린다.
 - 하지 않는 것: 인스타 DM 홍보(운영자 지시로 금지), 개인 계정 토큰 사용.
 
+## 7-1. 두 번째 Threads 계정 @drkimworld (2026-11-25 연결, 운영자 "다른세션에 접근 지침 작성")
+- **두 계정을 섞지 않는다.** @phdkimworld = 본 채널(리포트 자동 게시, `THREADS_*`, social.yml). @drkimworld = 두 번째 계정(`DRKIM_THREADS_ACCESS_TOKEN`). 다른 쪽 토큰으로 게시하지 않는다.
+- 같은 Meta 앱 **phdkimworld-poster**(앱 ID 1668388958298068, Threads 앱 ID 2171942756723397, 개발 모드)의 **Threads 테스터**로 붙어 있다. 권한: threads_basic·content_publish·manage_insights·manage_replies·read_replies.
+- 키: 사이트 저장소 비밀값 `DRKIM_THREADS_ACCESS_TOKEN`(장기 60일). `token-refresh.yml`이 매달 1·15일 @phdkimworld와 함께 갱신(없으면 경고만 내고 건너뜀). 사용자 ID 비밀값은 없다 — 워크플로가 `me`로 찾는다.
+- **용도는 아직 정하지 않았다(2026-11-25).** 운영자가 정하기 전에는 자동 게시를 붙이지 않는다. 후보: 건강월드(영양제) 전용 / 리포트 나눠 게시 / 기타. 정해지면 여기와 0장 표를 고친다.
+- 통로(사이트 저장소 `threads-drkim.yml`, REST dispatch):
+  ```bash
+  # 토큰 확인(결과는 주석 '토큰 정상: @drkimworld')
+  gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=ping"
+  # 한 글 게시(500자 이내, 운영자가 본문을 승인한 글만)
+  gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=post" -f "inputs[text]=..."
+  RID=$(gh api "repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/runs?per_page=1" -q '.workflow_runs[0].id')
+  for j in $(gh api repos/phdkimworld/kimworld-site/actions/runs/$RID/jobs -q '.jobs[].id'); do gh api repos/phdkimworld/kimworld-site/check-runs/$j/annotations -q '.[].message'; done
+  ```
+- 게시 규칙: 공개 글이므로 **본문을 운영자에게 먼저 보여 주고 승인받은 뒤** post. 영양제 글이면 건강월드 지침(`skill/health/HEALTH_CHANNEL.md` 2장 법·정책: 질병 예방·치료 암시 금지, 식약처 인정 문구만, 쿠팡 링크엔 대가성 문구)을 그대로 따른다. 링크에는 `utm_source=threads&utm_medium=post&utm_campaign=<주제>`.
+- 401·`invalid_grant`·만료(60일 넘김)면 갱신으로는 안 살아난다 → 운영자에게 재발급 요청. **재발급 순서(실제로 해 본 길):**
+  1. Meta 개발자 → phdkimworld-poster → 사용 사례 'Access the Threads API' → 설정 → **User Token Generator** → drkimworld **Generate Access Token**.
+  2. 이 버튼은 **작은 팝업 창**에서 승인해야 토큰이 원래 화면에 뜬다. **휴대폰 브라우저·같은 탭 승인은 흰 화면만 나온다**(팝업과 원래 창이 이어져야 함). 데스크톱 크롬에서 할 것.
+  3. 그 크롬의 Threads 웹이 **@drkimworld로 로그인**돼 있어야 한다(@phdkimworld면 다른 계정으로 승인됨). 크롬에 인스타 @drkimworld 세션이 있으면 Threads 로그인 화면의 drkimworld 버튼으로 비밀번호 없이 들어간다.
+  4. 팝업 'Continue As drkimworld'는 세션이 누를 수 없다(확장 탭 묶음 밖 창) → 운영자가 누른다. 토큰 복사·GitHub 비밀값 붙여넣기도 운영자 몫(세션은 토큰을 입력·출력하지 않는다). GitHub 비밀값 화면이 404면 로그인이 안 된 것.
+  5. 넣은 뒤 세션이 ping으로 확인.
+- 운영자 맥 두 대 모두 Claude in Chrome이 붙어 있다(list_connected_browsers의 Browser 1·2). 운영자가 원격으로 보는 맥이 어느 쪽인지 먼저 확인하고 그 브라우저를 고른다(2026-11-25 Browser 1이 원격 화면 맥).
+
 # 블로거
 
 ## 8. 토큰
