@@ -1,3522 +1,3543 @@
 {
- "runs": [
-  {
-   "t": "tem",
-   "date": "2026.10",
-   "layout": "classic",
-   "palette": "navy-cyan"
-  },
-  {
-   "t": "pltr",
-   "date": "2026.10",
-   "layout": "classic",
-   "palette": "navy-cyan"
-  },
-  {
-   "t": "gpus",
-   "date": "2026.10.10",
-   "layout": "classic",
-   "palette": "navy-gold"
-  },
-  {
-   "t": "serv",
-   "date": "2026.10.10",
-   "layout": "split",
-   "palette": "amber-teal",
-   "variants": [
-    "split",
-    "bignum",
-    "versus"
-   ]
-  },
-  {
-   "t": "amc",
-   "date": "2026.10.11",
-   "layout": "bignum",
-   "palette": "crimson-black",
-   "variants": [
-    "bignum",
-    "versus",
-    "split"
-   ]
-  },
-  {
-   "t": "dnut",
-   "date": "2026.10.11",
-   "layout": "versus",
-   "palette": "violet-pink",
-   "variants": [
-    "versus",
-    "bignum",
-    "split"
-   ]
-  },
-  {
-   "t": "xndu",
-   "date": "2026.10.11",
-   "layout": "split",
-   "palette": "ice-steel",
-   "variants": [
-    "split",
-    "classic",
-    "bignum"
-   ]
-  },
-  {
-   "t": "soun",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "orange-electricblue",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "glnd",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "emerald-violet",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "roc",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "magenta-cyan",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "arqq",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "crimson-gold",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "rdw",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "lime-purple",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "asst",
-   "date": "2026.10.11",
-   "layout": "center",
-   "palette": "amber-teal",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "inj",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "orange-electricblue",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "laes",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "magenta-cyan",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "ionq",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "emerald-violet",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "leu",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "crimson-gold",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "oklo",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "cobalt-orange",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "ses",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "lime-indigo",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "mp",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "rose-teal",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "poet",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "sky-amber",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "dna",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "mint-coral",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "nvax",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "plum-yellow",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "dvlt",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "steel-red",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "sdgr",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "cyan-violet",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "cbrs",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "lava-ice",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "btq",
-   "date": "2026.10.12",
-   "layout": "center",
-   "palette": "emerald-magenta",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ]
-  },
-  {
-   "t": "rxrx",
-   "date": "2026.10.13",
-   "layout": "center",
-   "palette": "orange-electricblue",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ],
-   "main": "angle"
-  },
-  {
-   "t": "smr",
-   "date": "2026.10.13",
-   "layout": "center",
-   "palette": "crimson-gold",
-   "variants": [
-    "scene",
-    "number",
-    "angle"
-   ],
-   "main": "number"
-  },
-  {
-   "t": "stx",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "violet-orange",
-   "variants": [
-    "spike-vs-vault",
-    "founder-door",
-    "scale-korea-vs-abroad"
-   ],
-   "main": "founder-door",
-   "concepts": [
-    "왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고",
-    "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단",
-    "가운데 저울(업비트 vs 해외) + 아래 띠 제목"
-   ],
-   "video": "DtQcp1TJeTU"
-  },
-  {
-   "t": "plug",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "navy-gold-cyan",
-   "variants": [
-    "linked-arrows",
-    "summit-ticket",
-    "open-vault"
-   ],
-   "main": "summit-ticket",
-   "concepts": [
-    "수소 탱크 + 사슬로 묶인 주가·손실 화살표, 오른쪽 위 큰 글자",
-    "꼭대기 산 그래프 위 $7.75 황금 티켓, 아래 띠 질문",
-    "왼쪽 큰 글자 + 오른쪽 열린 금고에서 쏟아지는 주권"
-   ],
-   "video": "avygNvQ96OE"
-  },
-  {
-   "t": "lcid",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "navy-ice",
-   "variants": [
-    "warehouse-rows",
-    "inventory-vs-cap",
-    "minus57-day"
-   ],
-   "main": "warehouse-rows",
-   "concepts": [
-    "조명 아래 끝없이 늘어선 차 창고 + 왼쪽 위 '창고 > 회사'",
-    "팔지 못한 차가 회사보다 비싸다? 재고·시총 비교",
-    "-57% 하루에 무슨 일이? 7월 14일 장중"
-   ],
-   "video": "6EAcG_I4NeI"
-  },
-  {
-   "t": "agnc",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "green-gold",
-   "variants": [
-    "melting-premium-house",
-    "converging-lines-paper",
-    "summit-sale-stamp"
-   ],
-   "main": "melting-premium-house",
-   "concepts": [
-    "초록 장부 집 위 금색 웃돈 지붕이 지폐로 흩어짐, 왼쪽 큰 '웃돈 증발'",
-    "밝은 종이 위 주가 곡선과 장부 점선이 수렴, 1.37배→1.01배",
-    "어두운 산 꼭대기 깃발 + '70만 주 매도' 도장, '꼭대기 이틀 뒤 회장은?'"
-   ],
-   "video": "I3sjmKN_JeY"
-  },
-  {
-   "t": "cifr",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "amber-charcoal / teal / paper-blue",
-   "variants": [
-    "contract-stack-vs-price",
-    "crane-cost-overrun",
-    "google-key-baseline"
-   ],
-   "main": "google-key-baseline",
-   "concepts": [
-    "금색 계약서 더미를 가르는 빨간 하락선, 왼쪽 '계약 +46% / 주가 -47%'",
-    "청록 데이터센터와 크레인, '공사비 +37%' 누가 내나?",
-    "밝은 종이 위 $17.78 기준선 아래로 떨어진 주가선과 열쇠, '주가가 내릴수록 구글에 더 준다?'"
-   ],
-   "video": "Ud3XTOTi5ao"
-  },
-  {
-   "t": "ntla",
-   "date": "2026.10.13",
-   "layout": "custom",
-   "palette": "magenta-violet / paper-red / green-red split",
-   "variants": [
-    "dna-scissors-short-third",
-    "calendar-pdufa",
-    "split-same-numbers"
-   ],
-   "main": "dna-scissors-short-third",
-   "concepts": [
-    "보라 배경 DNA 이중나선과 가위, 왼쪽 '3상 성공했는데 공매도 1/3'",
-    "밝은 배경 2027.3.10 달력, '3상 성공 뒤 공매도 늘었다'",
-    "녹·적 좌우 분할 +23% vs -4.3%, '같은 숫자 다른 반응?'"
-   ],
-   "video": "K35EdjRdO68"
-  },
-  {
-   "t": "crml",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "arctic-blue-red / paper-stamp / dark-amber",
-   "variants": [
-    "greenland-ice-price",
-    "denied-stamp",
-    "sell-tags-peaks"
-   ],
-   "main": "greenland-ice-price",
-   "concepts": [
-    "그린란드 빙산 위 빨간 주가선, 왼쪽 '1년 전 오늘 $29.97 → $6.54'",
-    "문서 위 '부인됨' 도장, '미국 정부 지분? 엿새 +276%'",
-    "어두운 배경 꼭대기마다 SELL 꼬리표, '오를 때마다 누가 팔았나'"
-   ],
-   "video": "WLbHGeT3SxA"
-  },
-  {
-   "t": "cntn",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "vault-green-gold / paper-red-stamp / dark-amber seesaw",
-   "variants": [
-    "vault-coins-buyback-zero",
-    "buyback-doc-zero-stamp",
-    "seesaw-pipe-price"
-   ],
-   "main": "seesaw-pipe-price",
-   "concepts": [
-    "녹색 금고 안 금색 코인 더미, '코인보다 싼 주식 회사는 왜 안 샀나?' + '자사주 매입 0주' 배지",
-    "밝은 종이 문서 '$50,000,000' 위 빨간 '0주' 도장, '5천만 달러 사겠다더니 한 주도 안 샀다?'",
-    "어두운 배경 코인과 주식 시소, 'DRW·ARK가 산 가격 $3.075 → $2.02 · 코인 +5.6% 주식 -45%'"
-   ],
-   "video": "zA_pYmyi-4M"
-  },
-  {
-   "t": "mrvl",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "teal-cyan chart / light-gray price tags / plum-paper contract",
-   "variants": [
-    "v-chart-bottom-day",
-    "two-price-tags",
-    "contract-5897"
-   ],
-   "main": "two-price-tags",
-   "concepts": [
-    "청록 선 차트 $316→$163 바닥에 빨간 점, '반토막 난 바로 그날 구글과 맺은 계약은?'",
-    "밝은 배경 회색·금색 가격표 엔비디아 $91.84 / 구글 $206.58, '같은 주식 두 개의 가격 왜 2배?'",
-    "어두운 보라 배경 계약서 2026.07.29, '구글이 받은 권리 5,897만 주 조건은 $1,200억어치 주문?'"
-   ],
-   "video": "RR4tTFkNOFo"
-  },
-  {
-   "t": "xtia",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "yellow-black redaction / navy-orange spotlight / magenta-cyan drone",
-   "variants": [
-    "redacted-report",
-    "empty-chair-door",
-    "drone-price-drop"
-   ],
-   "main": "redacted-report",
-   "concepts": [
-    "노란 배경 먹칠된 조사 결론 문서 '재무 왜곡: 없음', '조사는 끝났다 무엇을?'",
-    "남색 배경 주황 조명 아래 빈 의자와 열린 문, '200만 주 받고 떠난 CEO'",
-    "자홍·청록 드론과 떨어지는 선 $1.57→$0.72, '-54% CEO 떠난 뒤 사상 최저'"
-   ],
-   "video": "Inm4Ab_eBK0"
-  },
-  {
-   "t": "nne",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "emerald-violet split / deep red reactor glow / ice-blue lab coat",
-   "variants": [
-    "split-47-vs-300man",
-    "8387man-reactor",
-    "cto-labcoat"
-   ],
-   "main": "split-47-vs-300man",
-   "concepts": [
-    "좌우 분할 초록·보라, '투자자는 $47에 샀다 / 창업자는 아홉 달 동안 300만 주 팔았다'",
-    "붉은 원자로 노심 빛, '창업자가 판 주식 $8,387만 · 주가 -74.7%'",
-    "청색 배경 빈 실험복과 빨간 명찰, '기술 책임자 해임 이유는?'"
-   ],
-   "video": "mdPcbBCAlik"
-  },
-  {
-   "ticker": "LHX",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "crimson glow + gold nameplate / teal-orange rocket / navy crossing arrows",
-   "variants": [
-    "ceo-nameplate-19days",
-    "rocket-ipo-2027",
-    "42b-vs-minus38"
-   ],
-   "main": "ceo-nameplate-19days",
-   "concepts": [
-    "붉은 빛과 금색 명패에 빨간 사선, '최대 실적 19일 뒤 CEO 퇴진'",
-    "청록·주황 로켓, '미사일 상장 2027년으로 밀렸다'",
-    "남색 배경 교차 화살표, '$420억 / -38%'"
-   ],
-   "video": "SZxWcs8gPco",
-   "shorts": "Dq3m1P_FA8A"
-  },
-  {
-   "ticker": "INOD",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "electric cyan receipt on black / green-red split / magenta share certificates on indigo",
-   "variants": [
-    "ceo-sold-receipt",
-    "plus86-minus52-split",
-    "3eok-new-shares"
-   ],
-   "main": "ceo-sold-receipt",
-   "concepts": [
-    "검정 배경 청록 빛과 SOLD 영수증, '폭등 직후 CEO가 $1.2억 팔고 퇴진'",
-    "좌우 초록·빨강 분할, '5월 사상 최대 실적 +86% / 6월 고점 → 지금 -52%'",
-    "남보라 배경 자홍 테두리 주식 증서 더미, 'CEO 교체 같은 날 $3억 새 주식 계약'"
-   ],
-   "video": "V8B_wTBQAqk",
-   "shorts": "KAXpGrZc3DU"
-  },
-  {
-   "ticker": "LQDA",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "deep green cash battery / orange gavel on black / purple-teal versus split",
-   "variants": [
-    "cash-battery-381",
-    "gavel-minus57",
-    "ex-president-vs"
-   ],
-   "main": "cash-battery-381",
-   "concepts": [
-    "짙은 초록 배경, 거의 빈 빨간 배터리와 위로 빠지는 화살표, '현금 $3.96억 중 $3.81억 내준다'",
-    "검정 배경 주황 빛과 판사봉, 꺾인 그래프 '매출 사상 최대인데 판결 하나에 -57%'",
-    "보라·청록 분할 VS, '18년 일한 옛 회사 사장 출신 vs 지금 CEO, 소송 6건 결말은 $3.8억'"
-   ],
-   "video": "erpm9tTd5mE",
-   "shorts": "RGIMqU9uNCc"
-  },
-  {
-   "ticker": "BURU",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "orange ticket+red stamp on dark brown / blue blocks merge on dark violet / teal-red falling line",
-   "variants": [
-    "premium-offering-halt",
-    "200-to-1-merge",
-    "minus98-tekne"
-   ],
-   "main": "premium-offering-halt",
-   "concepts": [
-    "어두운 갈색 배경 '공모가 +30%' 표와 빨간 '거래 정지' 도장, '비싸게 판 새 주식 이틀 뒤 장외로'",
-    "보라 배경 파란 블록 18개가 화살표로 하나로, '200주를 1주로 합쳤는데 또 $1 아래'",
-    "청록 배경 빨간 하락선 $41.92→$0.99, '아홉 달 사이 -98%, 방산 회사 인수는 10월 15일?'"
-   ],
-   "video": "ZPNqphDhfLc",
-   "shorts": "DCnu6ZhuGM8"
-  },
-  {
-   "ticker": "BEAM",
-   "date": "2026.10.14",
-   "layout": "custom",
-   "palette": "teal-red DNA strands on dark navy / teal cash bar vs market cap / teal data card with red falling arrow",
-   "variants": [
-    "same-founder-lost",
-    "half-cash-vault",
-    "good-data-drop"
-   ],
-   "main": "same-founder-lost",
-   "concepts": [
-    "남색 배경 DNA 가닥과 '?' 아래 갈라진 빔·프라임 블록, '같은 창업자 회사에 졌다', 5일 -18.5%",
-    "시총 막대 안 청록 현금 48%, '금고는 반 찼는데 -36%'",
-    "'임상 데이터 👍 29명' 카드 아래 빨간 하락 화살표, '좋은 소식 나온 날 -9.5%'"
-   ],
-   "video": "l7_M_1_8M4M",
-   "shorts": "vCVuSrDWYl4"
-  },
-  {
-   "ticker": "QNT",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "gold-red on near-black / gold spike line / gold gauge",
-   "variants": [
-    "press-release-zero",
-    "4x-then-minus29",
-    "one-hour-64"
-   ],
-   "main": "press-release-zero",
-   "concepts": [
-    "검은 배경 기울어진 '미국 은행 결제망 발표문' 종이에 빨간 '\"QNT\" 0번' 도장, 금색 Q 코인, '발표문에 코인 이름 0번, 그런데 일주일 만에 4배'",
-    "금색 급등선 $71→$287→$205, '일주일 4배 그 다음 -29%'",
-    "금색 시계 게이지 '1시간', '$229 → $375', '단 한 시간 +64% 빌린 돈?'"
-   ],
-   "video": "Ug4RhlPJxEM",
-   "shorts": "S_ri3Mduixc"
-  },
-  {
-   "ticker": "AXTI",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "green-red on dark green / green spike line / red-bordered permit card",
-   "variants": [
-    "ceo-sold-minus56",
-    "121x-then-half",
-    "china-permit"
-   ],
-   "main": "ceo-sold-minus56",
-   "concepts": [
-    "짙은 녹색 배경 InP 웨이퍼 원과 'CEO 매도 $2,200만 고점 열흘 뒤' 메모, '실적은 최대 사장은 팔고 -56%'",
-    "녹색 급등락선 $1.16→$140.83→$61.59, '121배 오른 뒤 반토막'",
-    "빨간 테두리 '수출 허가 대기 중 중국 상무부' 카드, '매출 66% 중국', 'AI 공장은 중국에 기회? 족쇄?'"
-   ],
-   "video": "1P9DowNxYJM",
-   "shorts": "LxUPHcfqxmI"
-  },
-  {
-   "ticker": "ERAS",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "purple-red on dark plum / purple-red bar pair / cream letter card",
-   "variants": [
-    "footnote-one-line",
-    "half-then-2x",
-    "morning-letter"
-   ],
-   "main": "footnote-one-line",
-   "concepts": [
-    "짙은 자주 배경 '임상 데이터 62% 폐암 반응률' 카드와 빨간 '각주: 5등급 1건', 아래 화살표 '다음 날 -48%', '숫자는 이겼는데 작은 각주 한 줄'",
-    "빨간 $9.90 막대와 보라 $17.50 막대, '반토막 석 달 뒤 약 2배 값에 $6억 베팅'",
-    "기울어진 '경고장' 종이 '특허 침해 · 영업 비밀 · from 1위 경쟁사', '데이터 날 아침 도착한 편지'"
-   ],
-   "video": "9T6bgTTKcBY",
-   "shorts": "E76_Cm70F1k"
-  },
-  {
-   "ticker": "ZRO",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "cyan-red-gold on navy / vote cards / gold unlock card",
-   "variants": [
-    "bad-news-up-3x",
-    "fee-zero-3x",
-    "unlock-after-3x"
-   ],
-   "main": "bad-news-up-3x",
-   "concepts": [
-    "남색 배경 빨간 상자 '해킹 $2.9억 · 고객 이탈 · 소송'과 위로 뻗는 하늘색 화살표, '악재가 터지면 올랐다 두 달 3배'",
-    "'1~4차 투표 ×' 카드와 '수수료 스위치 OFF', '수수료 몫 0원 그런데 3배'",
-    "금색 테두리 '10월 20일 언락 약 2,400만~3,100만 개', '3배 오른 뒤 닷새 뒤 물량 폭탄?'"
-   ],
-   "video": "M9wG2zt1W_w",
-   "shorts": "OJwUtij12IU"
-  },
-  {
-   "ticker": "KITE",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "violet-gold-red on navy / chain arrow / gold unlock card",
-   "variants": [
-    "own-chain-pay-elsewhere",
-    "no-dollars-on-chain",
-    "unlock-test"
-   ],
-   "main": "own-chain-pay-elsewhere",
-   "concepts": [
-    "보라 'KITE 체인' 상자에서 금색 화살표로 파란 'BASE' 상자, '자기 체인 열고 결제는 남에게 고점 -62%'",
-    "보라 테두리 '체인 위 달러 $1.9 스테이블코인', 'AI 결제 코인 결제가 없다?'",
-    "금색 테두리 '11월 3일 첫 해제 팀·투자자 32억 개 대기', '고점 -62% 진짜 시험은 이제부터'"
-   ],
-   "video": "e1VPt629QP0",
-   "shorts": "uHec6bEqmZw"
-  },
-  {
-   "ticker": "PSQL",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "cyan-teal-red on navy / two bars / gold floor card",
-   "variants": [
-    "day1-2x-minus70",
-    "90pct-left-yet-2x",
-    "hidden-floor-7.80"
-   ],
-   "main": "day1-2x-minus70",
-   "concepts": [
-    "청록 막대 $19.11(첫날)과 빨간 막대 $5.82(10월 14일), '상장 첫날 2배 한 달 반 뒤 -70%'",
-    "하늘색 테두리 '스팩 주주 90.6% 돈 돌려받고 떠남', '열에 아홉이 떠났는데 첫날 2배?'",
-    "금색 테두리 '전환 가격 하한 $7.80' 점선 아래 '$5.82', '숨은 선 $7.80 못 넘는 이유'"
-   ],
-   "video": "LVl6NzS9c0k",
-   "shorts": "pv2wu9_Kk-c"
-  },
-  {
-   "ticker": "CRWV",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "lime-red on dark navy / backlog vs price bars / green-red twin cards / gold insider card",
-   "variants": [
-    "orders3x-price-half",
-    "debt-two-faces",
-    "bigmoney-bought-insiders-sold"
-   ],
-   "main": "orders3x-price-half",
-   "concepts": [
-    "주문 잔고 막대($301억→$1,040억, 연두)와 주가 막대($138→$66, 빨강), '주문 3배 주가 반토막 AI 클라우드의 역설'",
-    "초록 '담보 대출 A3 투자 등급'과 빨강 '회사채 15% 수익률' 두 카드, '같은 회사 빚의 두 얼굴 하루 -15%'",
-    "금색 카드 '엔비디아 $87.20 · 제인 스트리트 $109 / 내부자·대주주 $48억 매도', '큰손은 샀고 내부자는 팔았다'"
-   ],
-   "video": "KmyRwpVBop0",
-   "shorts": "gLuMrC3SQ90"
-  },
-  {
-   "ticker": "KOD",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "teal-gold-red on dark teal / stop→+178% arrow / low-high card / gold insider card",
-   "variants": [
-    "abandoned-drug-178",
-    "minus99-to-71x",
-    "insiders-bought"
-   ],
-   "main": "abandoned-drug-178",
-   "concepts": [
-    "빨간 '2023년 7월 개발 중단' 상자에서 금색 화살표로 청록 '2026년 9월 +178%', '포기한 약이 하루 178% 3년 만의 반전'",
-    "청록 테두리 '최저 종가 $1.40 / 최고 종가 $99.87', '-99%에서 71배 눈 주사 하나로'",
-    "금색 테두리 '발표 사흘 전 CEO 128만 주 행사 / 발표 당일 대주주 194만 주 매수', '가장 잘 아는 사람들이 샀다'"
-   ],
-   "video": "n4NOozuL6gg",
-   "shorts": "YS0M2E7Rf0s"
-  },
-  {
-   "ticker": "STRK",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "teal-red-gold on dark plum / L2 quote box with +150/-37 / orange hack card / gold unlock card",
-   "variants": [
-    "leave-150-then-37",
-    "hacked-then-up",
-    "staking10x-price-83"
-   ],
-   "main": "leave-150-then-37",
-   "concepts": [
-    "보라 테두리 '이더리움 L2 \"떠나겠다\"' 아래 +150%(나흘)·-37%(사흘), '떠나겠다는 말에 나흘 150% 그리고 -37%'",
-    "주황 테두리 '해킹 다음 날 +53% 2년 중 최대 상승', '털렸는데 올랐다? 이상한 코인'",
-    "금색 테두리 '매달 15일 1.27억 개 물량 해제 2027년 3월까지', '스테이킹 10배 가격 -83% 범인은 물량?'"
-   ],
-   "video": "leqQaVYahEg",
-   "shorts": "5TXUur4wkb8"
-  },
-  {
-   "ticker": "AAVE",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "teal-red-gold on dark plum / revenue vs price bars / red bad-debt card / gold buyback card",
-   "variants": [
-    "revenue-quarter-price-2.7x",
-    "not-hacked-biggest-loss",
-    "bought-high-stopped-low"
-   ],
-   "main": "revenue-quarter-price-2.7x",
-   "concepts": [
-    "월 수익 막대($1,533만→$394만, 빨강)와 가격 막대(9.2만→24.9만, 청록), '수익 1/4 가격 2.7배 디파이 1위의 역설'",
-    "빨간 테두리 '남의 해킹 부실채권 맡긴 돈 -80억$ 사흘 만에', '뚫리지 않았는데 최대 피해 그리고 2.7배'",
-    "금색 테두리 '되사기 평균가 $205 / 바닥 직전 중단 2026.04', '비싸게 사고 쌀 때 멈춘 되사기'"
-   ],
-   "video": "IpV00GDBvAw",
-   "shorts": "5e8HlDJCjH0"
-  },
-  {
-   "ticker": "HYPE",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "mint-coral-gold on dark green-black / 38% donut / mint +41% card / coral ATH card",
-   "variants": [
-    "fees-down-price-2x",
-    "trump-5day-41",
-    "biggest-exchange-17"
-   ],
-   "main": "fees-down-price-2x",
-   "concepts": [
-    "코랄 38% 도넛('남이 만든 시장'), '수수료 -37% 가격 2배? 거래 38%를 내준 거래소'",
-    "민트 테두리 '2026.08.19 +19% 그날 하루 / +41% 닷새', '트럼프 한마디에 닷새 +41% 미국으로 가는 문'",
-    "코랄 테두리 '사상 최고 09.22 97달러 / 10.14 81달러', '최대 거래소가 문 연 날부터 -17%?'"
-   ],
-   "video": "mg211yX6to0",
-   "shorts": "DGmeU1dhcm4"
-  },
-  {
-   "t": "iova",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "amber-violet-sky on deep indigo / cells bokeh / amber CEO-buy card",
-   "variants": [
-    "number",
-    "person",
-    "dilution"
-   ],
-   "concepts": [
-    "보라 카드 매출 전망 막대(첫 약속 4.75억 vs 지금 4.2억), '약속보다 낮은 전망 주가 8배?'",
-    "금색 카드 '2025.05.14 2.5만 주 1.69달러 / 2026.10.14 14.21', '임시 대표가 산 값 1.69달러' (주 썸네일)",
-    "분홍 카드 '회사가 판 값 3.07 / 지금 14.21', '싸게 판 1억 주 평균 3달러'"
-   ]
-  },
-  {
-   "t": "fate",
-   "date": "2026.10.15",
-   "layout": "custom",
-   "palette": "cyan-pink-lime on deep teal-black / cells bokeh",
-   "variants": [
-    "number",
-    "pattern",
-    "conflict"
-   ],
-   "concepts": [
-    "분홍 막대 5개(발표 뒤 닷새 -18~-30%), '좋은 데이터 5번 5번 다 하락'",
-    "청록 카드 '학회 예고 +43% / 실제 발표 -30%', '예고엔 오르고 발표엔 빠졌다' (주 썸네일)",
-    "라임 카드 '얀센 최대 30억 / 종료 다음 날 -62%', '30억 달러 협업을 스스로 거절?'"
-   ]
-  },
-  {
-   "t": "tao",
-   "date": "2026.10.16",
-   "layout": "custom",
-   "palette": "orange-green-white on charcoal black / glowing node network (subnets) at edges",
-   "variants": [
-    "contrast",
-    "subsidy",
-    "other-news"
-   ],
-   "main": "contrast",
-   "concepts": [
-    "주황 카드 막대(반감기 닷새 -17.6% 빨강 아래 vs 06.13 하루 +24.3% 초록 위), '반감기엔 -18% 남의 소식 +24%' (주 썸네일)",
-    "하늘색 카드 막대(슈츠 보조금 260만$ vs 매출 39만$), '인공지능 네트워크 보조금 7배'",
-    "초록 카드 막대(06.12 32만 vs 06.13 39.8만), '남의 AI가 멈춘 날 하루 +24%'"
-   ],
-   "video": "AtP-Bvjrb5Y",
-   "shorts": "V0InmSUMPGE"
-  },
-  {
-   "t": "qbts",
-   "date": "2026.10.16",
-   "layout": "custom",
-   "palette": "red-lime-violet on deep violet-black / annealing energy-landscape waves at bottom",
-   "variants": [
-    "drop",
-    "interest",
-    "dilution"
-   ],
-   "main": "drop",
-   "concepts": [
-    "빨강 테두리 카드 막대(2025.10.15 44.78 vs 2026.10.15 12.82), '사상 최대 수주인데 -71% 정부까지 주주로 들였는데?' (주 썸네일)",
-    "노랑 카드 막대(본업 이익 352만$ vs 이자수익 1,081만$), '양자컴퓨터 회사 이자가 3배'",
-    "라임 카드 막대(12.12 3.91 vs 12.18 8.96), '증자가 끝나자 닷새 +117%'"
-   ],
-   "video": "MBDknI3-ics",
-   "shorts": "Kda8ugxDkv4"
-  },
-  {
-   "t": "sls",
-   "date": "2026.10.16",
-   "layout": "custom",
-   "palette": "green-amber-crimson on deep navy / translucent hourglass at right",
-   "variants": [
-    "delay-5x",
-    "same-news",
-    "filing"
-   ],
-   "main": "delay-5x",
-   "concepts": [
-    "초록 카드 막대(2025.10.15 2.18 vs 2026.10.15 11.34), '3상 결과 2년 지연 주가 5배 늦을수록 올랐다?' (주 썸네일)",
-    "빨강 카드 막대(2022.11 -44% vs 2025.12 +74%), '결과 늦어진다는데 닷새 +74%'",
-    "노랑 카드 막대(06.24 9.17 vs 07.01 13.27), '공시 한 장에 닷새 +45% 인수설, 회사는 말이 없다'"
-   ],
-   "video": "H6Ib_74o6Hk",
-   "shorts": "JlRgiEFjfIY"
-  },
-  {
-   "t": "iren",
-   "date": "2026.10.16",
-   "layout": "custom",
-   "palette": "crimson-sky-amber on deep navy / translucent server racks at right",
-   "variants": [
-    "low-anthropic",
-    "sector-drop",
-    "prev-report"
-   ],
-   "main": "low-anthropic",
-   "concepts": [
-    "빨강 카드 막대(엔비디아 권리 70 vs 10.15 종가 30.39), '앤트로픽 고객 보도 52주 최저 같은 주에 무슨 일이?' (주 썸네일)",
-    "빨강 카드 막대(10.14 코어위브 -15% vs 아이렌 -12%), '회사 소식 0건 하루 -12% 빌리는 돈값이 올랐다'",
-    "노랑 카드 막대(10.09 35.19 vs 10.15 30.39), '지난 리포트 닷새 뒤 시나리오 4 업황 악화가 켜졌다'"
-   ],
-   "video": "Pk713RlsJn8",
-   "shorts": "X6z6RdPO6Hg"
-  },
-  {
-   "t": "aehr",
-   "date": "2026.10.16",
-   "layout": "bigtext",
-   "palette": "navy-wafer",
-   "variants": [
-    "bigtext",
-    "card",
-    "scene"
-   ],
-   "main": "a",
-   "experiment": "E1-B"
-  },
-  {
-   "t": "nndm",
-   "date": "2026.10.16",
-   "layout": "card",
-   "palette": "navy-vault",
-   "variants": [
-    "card",
-    "bigtext",
-    "card"
-   ],
-   "main": "a",
-   "experiment": "E1-A"
-  },
-  {
-   "t": "anro",
-   "date": "2026.10.16",
-   "layout": "bigtext",
-   "palette": "navy-brainwave",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B"
-  },
-  {
-   "t": "render",
-   "date": "2026.10.16",
-   "layout": "card",
-   "palette": "navy-gpu-grid",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A"
-  },
-  {
-   "t": "rklb",
-   "date": "2026.10.16",
-   "layout": "bigtext",
-   "palette": "navy-starfield",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B"
-  },
-  {
-   "t": "near",
-   "date": "2026.10.16",
-   "layout": "card",
-   "palette": "navy-grid-green",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A"
-  },
-  {
-   "t": "mbot",
-   "date": "2026.10.16",
-   "layout": "bigtext",
-   "palette": "teal-vessel-red",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B"
-  },
-  {
-   "t": "goss",
-   "date": "2026.10.17",
-   "layout": "card",
-   "palette": "violet-gold",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.10.17",
-   "layout": "bigtext",
-   "palette": "navy-skyblue-amber-battery",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B"
-  },
-  {
-   "t": "rubi",
-   "date": "2026.10.17",
-   "layout": "card",
-   "palette": "ocean-teal-crimson-tanker",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A"
-  },
-  {
-   "t": "tia",
-   "date": "2026.10.17",
-   "layout": "bigtext",
-   "palette": "violet-emerald-magenta-datablocks",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "하루 60달러 / 일주일 +44% 큰 글자 + 데이터 블록 탑",
-    "버는 건 이것뿐인데 + 60달러·+44% 카드",
-    "사실상 공짜인데 / 일주일 +44% (창업자 글 인용 각도)"
-   ]
-  },
-  {
-   "t": "ionq",
-   "date": "2026.10.18",
-   "layout": "custom",
-   "palette": "midnight-gold-crimson-iontrap",
-   "styles": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "concepts": [
-    "같은 큰손이 또 샀다? + $93→$40 카드",
-    "같은 큰손 93→40달러 큰 글자",
-    "반값에 또 20억 / 왜 웃돈?"
-   ]
-  },
-  {
-   "t": "sui",
-   "date": "2026.10.18",
-   "layout": "bigtext",
-   "palette": "aqua-blue-orange-droplet",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "구글·삼성 손잡고 / 2주 -18% 큰 글자 + 물방울·휴대폰",
-    "구글·삼성 손잡았는데 + 2주 -18%·첫날 대비 -25% 카드",
-    "ETF 3개 생겼는데 / 상장가 -25%"
-   ]
-  },
-  {
-   "t": "rdw",
-   "date": "2026.10.18",
-   "layout": "custom",
-   "palette": "crimson-gold-drone",
-   "styles": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "우주주 붕괴 왜 절반만? + 로켓랩 -25%·레드와이어 -12% 카드",
-    "로켓랩 -25% / 여긴 -12% 큰 글자",
-    "남은 판매 한도 4,176만 주"
-   ]
-  },
-  {
-   "t": "laes",
-   "date": "2026.10.19",
-   "layout": "bigtext",
-   "palette": "midnight-cyan-gold-vault",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "매출 +65% / 다음 날 -7% 큰 글자 + 금고",
-    "현금보다 싼 주식? + 주당 현금 $2.07·주가 $1.79 카드",
-    "현금 4.63억 / 시총 4억"
-   ]
-  },
-  {
-   "t": "soun",
-   "date": "2026.10.19",
-   "layout": "custom",
-   "palette": "violet-gold-soundwave",
-   "styles": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "소식 없는데 왜 신저가? + SEC 공시 0건·한 주 -12% 카드",
-    "2024년 9월 이후 최저 / $4.53 큰 글자",
-    "숨은 새 주식 / 3,689만 주"
-   ]
-  },
-  {
-   "t": "xndu",
-   "date": "2026.10.19",
-   "layout": "bigtext",
-   "palette": "violet-magenta-photon-chip",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "공시 0건 / 한 주 -22% 큰 글자 + 빛 칩",
-    "목표가보다 더 아래? + 최저 목표가 $3.75·주가 $3.04 카드",
-    "상장 뒤 최저 / $3.04"
-   ]
-  },
-  {
-   "t": "arqq",
-   "date": "2026.10.19",
-   "layout": "card",
-   "palette": "emerald-gold-lock",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "매출 2배인데 -38%? + 실적 전날 $22.55·7거래일 뒤 $14.02 카드",
-    "7거래일 / -37.8% 큰 글자 + 자물쇠",
-    "NATO 계약 땄는데 / 왜 폭락?"
-   ]
-  },
-  {
-   "t": "btq",
-   "date": "2026.10.20",
-   "layout": "bigtext",
-   "palette": "cyan-gold-shield",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "첫 계약 뒤 / 바닥 1센트 위 큰 글자 + 방패 자물쇠·바닥선 $2.15",
-    "계약 따고 왜 바닥? + 올해 최저 $2.15·10.16 $2.16 카드",
-    "열흘 -17% / $2.16 큰 글자"
-   ]
-  },
-  {
-   "t": "joby",
-   "date": "2026.10.20",
-   "layout": "card",
-   "palette": "navy-sky-city",
-   "variants": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "악재 0건인데 올해 최저? + 1월 증자 발행가 $11.35·지금 $4.61 카드 + 에어택시·도시·지지선 $4.80",
-    "증자 0건 / 열흘 -15% 큰 글자",
-    "현금은 절반 / $4.61 큰 글자"
-   ]
-  },
-  {
-   "t": "rtx",
-   "date": "2026.10.20",
-   "layout": "bigtext",
-   "palette": "graphite-gold-missile",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "일감 사상 최대 / 주가는 -15% 큰 글자 + 미사일·엔진 + 고점 뒤 꺾이는 화살표",
-    "전망 4번 ↑ 주가는 왜? + 수주 잔고 3,400억·고점 대비 -15% 카드",
-    "3,400억 달러 / 그런데? 큰 글자"
-   ]
-  },
-  {
-   "t": "tsla",
-   "date": "2026.10.20",
-   "layout": "card",
-   "palette": "graphite-gold-car",
-   "variants": [
-    "card",
-    "bigtext",
-    "card"
-   ],
-   "styles": [
-    "card",
-    "bigtext",
-    "card"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "판매는 예상 ↑ / 내일 실적은? + 실적 다음 날 평균 ±7.7%·최고가 대비 -25% 카드 + 자동차·꺾이는 화살표",
-    "판매는 예상 ↑ / 주가는 -25% 큰 글자",
-    "실적 다음 날 31번의 기록 + 같은 카드"
-   ]
-  },
-  {
-   "t": "spcx",
-   "date": "2026.10.20",
-   "layout": "bigtext",
-   "palette": "graphite-red-rocket",
-   "variants": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "첫 흑자인데 / 13억 주 풀린다 큰 글자 + 로켓·급등 뒤 꺾이는 화살표",
-    "첫 흑자 ↑ 모레 해제 + 13억 주·매출 예상 대비 +15% 카드",
-    "$225 → $147 / 버틸까? 큰 글자"
-   ]
-  },
-  {
-   "t": "smci",
-   "date": "2026.10.20",
-   "layout": "card",
-   "palette": "graphite-green-server",
-   "variants": [
-    "card",
-    "bigtext",
-    "card"
-   ],
-   "styles": [
-    "card",
-    "bigtext",
-    "card"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "30% 빠진 뒤 / 매출 전망 ↑ + 매출 전망 +40억$·직전 7거래일 -30% 카드 + 서버 랙·반등 화살표",
-    "미리 알린 숫자 / 시간외 +15% 큰 글자",
-    "잠정 실적 12번의 기록 + 같은 카드"
-   ]
-  },
-  {
-   "t": "nflx",
-   "date": "2026.10.21",
-   "layout": "bigtext",
-   "palette": "graphite-red-tv",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "이익은 느는데 / 5연속 하락 큰 글자 + TV·계단식 하락 화살표",
-    "$134 → $69 / 6번째? 큰 글자"
-   ]
-  },
-  {
-   "t": "isrg",
-   "date": "2026.10.21",
-   "layout": "card",
-   "palette": "graphite-red-robot",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "예상 넘었는데 / 왜 빠졌나 + 예상↑·장 전 -7.6% 카드 + 수술 로봇 팔·하락 화살표",
-    "미국 수술 10% / 장 전 -7.6% 큰 글자"
-   ]
-  },
-  {
-   "t": "infq",
-   "date": "2026.10.21",
-   "layout": "bigtext",
-   "palette": "navy-red-atoms",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "정부 1억 달러 / 상장 뒤 최저 + 원자 격자·하락 화살표",
-    "$19.87 → $8.66 / 10% 급등 16번"
-   ]
-  },
-  {
-   "t": "cbrs-2",
-   "date": "2026.10.21",
-   "layout": "card",
-   "palette": "graphite-red-chip",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "풀린 날보다 / 앞뒤가 더 + 해제 날 -5.1%·앞뒤 -10%대 카드 + 칩 격자·하락 화살표",
-    "여드레 -28% / 공모가 아래 큰 글자"
-   ]
-  },
-  {
-   "t": "plug-2",
-   "date": "2026.10.22",
-   "layout": "bigtext",
-   "palette": "teal-orange-h2",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "0주 팔았는데 / 새 저점? + 수소 탱크·H2 분자·하락 화살표, $1.62 → $1.37",
-    "11월 실적 / 5번 중 몇 번?"
-   ]
-  },
-  {
-   "t": "iren-3",
-   "date": "2026.10.23",
-   "layout": "custom",
-   "palette": "cyan-red-gold-rack",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "공시 0건인데 / 급락 세 번 + 오른쪽 카드 -12.2%·-11.2%·-8.4%, 서버 랙과 꺾이는 빨간 선",
-    "1년 전 최고가 $76 → 지금 $25 + 점선 곡선, 서버 랙, '3분의 1, 왜?'"
-   ]
-  },
-  {
-   "t": "qs",
-   "date": "2026.10.23",
-   "layout": "custom",
-   "palette": "violet-gold-red-cell",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "1년 전 $18 → 지금 $4 + 화살표, 층층이 쌓인 전고체 셀(단자·분리막)",
-    "실적 다음 날 +4.3% / 이번엔 지킬까? + 같은 셀"
-   ]
-  },
-  {
-   "t": "laes3",
-   "date": "2026.10.24",
-   "layout": "custom",
-   "palette": "navy-red-cyan",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "양자주 0% vs 씰에스큐 -13% 대비 카드, 칩 실루엣",
-    "혼자 -13% 큰 글자 + 같은 칩"
-   ]
-  },
-  {
-   "t": "eu",
-   "date": "2026.10.24",
-   "layout": "custom",
-   "palette": "navy-amber-red",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "우라늄 캐는데 / 1달러 아래, $4.90 → $0.70 화살표",
-    "사서 팔았다 / 팔수록 손해, $81.85 vs $70.10"
-   ]
-  },
-  {
-   "t": "smr2",
-   "date": "2026.10.25",
-   "layout": "custom",
-   "palette": "teal-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "공시 0건인데 9거래일 -19.7% 카드 + 소형 원자로 모듈",
-    "목표가 5달러 / 주가 아래로 / 낮췄다 + 같은 원자로"
-   ]
-  },
-  {
-   "t": "btbt",
-   "date": "2026.10.25",
-   "layout": "custom",
-   "palette": "violet-red-cyan",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "이더리움 -11% / 주가는 -48% + 이더리움 코인 더미와 자회사 서버 랙",
-    "자회사가 / 끌어내렸다? + 같은 그림"
-   ]
-  },
-  {
-   "t": "oklo2",
-   "date": "2026.10.26",
-   "layout": "custom",
-   "palette": "navy-ice-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "원자력 봄인데 10거래일 -24.1% 카드 + 눈 내리는 밤의 소형 원자로",
-    "증권사 4곳이 / 나흘 만에 / 목표가 하향 + 같은 원자로"
-   ]
-  },
-  {
-   "t": "wimi",
-   "date": "2026.10.26",
-   "layout": "custom",
-   "palette": "black-magenta-lime",
-   "variants": [
-    "bigtext",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "현금 4.6억$ / 몸값 0.1억$ / 왜? + 홀로그램 투사기·금고",
-    "흑자라는데 / 상장 뒤 / 최저가? + 같은 그림"
-   ]
-  },
-  {
-   "t": "sldp3",
-   "date": "2026.10.26",
-   "layout": "custom",
-   "palette": "graphite-cobalt-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "새 라인 돌렸는데 / 1.08배 + 전고체 셀·전해질 분말",
-    "주가 = 통장 값 / 실적 19번 뒤 / 몇 번 올랐나? + 같은 그림"
-   ]
-  },
-  {
-   "t": "glnd2",
-   "date": "2026.10.26",
-   "layout": "custom",
-   "palette": "arctic-teal-crimson",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "트럼프 글 한 줄에 / +76.5% 카드 + 얼음 땅 시추 리그",
-    "+76.5% / 7거래일 뒤 3달러 / 남은 건 뭘까? + 같은 그림"
-   ]
-  },
-  {
-   "t": "anth",
-   "date": "2026.10.26",
-   "layout": "custom",
-   "palette": "ink-clay-ivory",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "첫 영업흑자인데 / 반년 순손실 807억 달러 카드 + 신경망 칩·말풍선·서버",
-    "807억 달러 / 손실의 정체는 / 몸값? + 같은 그림"
-   ]
-  },
-  {
-   "t": "xndu3",
-   "date": "2026.10.27",
-   "layout": "custom",
-   "palette": "indigo-violet-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "국방 호재 날도 / 업종 쉴 때 혼자 -15.8% 카드 + 광자 양자 칩(레이저·도파로·검출기)",
-    "+3.6% 출발 / -7.9% 마감 / 누가 팔았나? + 같은 그림"
-   ]
-  },
-  {
-   "t": "sndk",
-   "date": "2026.10.27",
-   "layout": "custom",
-   "palette": "charcoal-coral-mint",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "석 달 EPS 전망 44달러 / 최고 종가 대비 -46.2% 카드 + SD 카드·SSD·플래시 칩 층",
-    "마진 84.6% / 주가 -46.2% / 왜 떨어졌나? + 같은 그림"
-   ]
-  },
-  {
-   "t": "inod2",
-   "date": "2026.10.28",
-   "layout": "custom",
-   "palette": "navy-amber-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "실적 9일 전 하루 / 10월 27일 종가 -25.3% 카드 + 문서 라벨링·헤드셋 작업자·✓✗ 말풍선",
-    "인도 550명 해고? / 하루 -25.3% / 실적 전에 왜? + 같은 그림"
-   ]
-  },
-  {
-   "t": "cbrs3",
-   "date": "2026.10.28",
-   "layout": "custom",
-   "palette": "teal-white-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "반도체 +2.1%인 날 / 9번째 락업 해제일 -5.7% 카드 + 원판 한 장 칩·서버 랙·빠른 답 화살표",
-    "전날 +10.1% / 해제일 -5.7% / 11월 9일은? + 같은 그림 왼쪽"
-   ]
-  },
-  {
-   "t": "iren4",
-   "date": "2026.10.29",
-   "layout": "custom",
-   "palette": "midnight-violet-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "빚 3.6억 달러 낸 날 / 10월 28일 주가 +5.1% 카드 + 서버 랙·GPU 칩·흐려지는 비트코인",
-    "급락 뒤 나흘 / +13.1% / 8번 중 최대, 그 뒤는? + 같은 그림 왼쪽"
-   ]
-  },
-  {
-   "t": "slnh",
-   "date": "2026.10.29",
-   "layout": "custom",
-   "palette": "navy-sky-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "손잡은 상대는 +8.5% / 같은 날 솔루나 -2.8% 카드 + 풍력 터빈 두 대·전선·데이터센터 랙",
-    "발행 한도 10억 주 / -10.0% / 주식은 더 늘어날까? + 같은 그림 왼쪽"
-   ]
-  },
-  {
-   "t": "leu2",
-   "date": "2026.10.30",
-   "layout": "custom",
-   "palette": "black-yellow-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "공장은 앞섰는데 / 3주 주가 -22.4% 카드 + 원심분리기 기둥·우라늄 원자·방사능 표지",
-    "큰 반등 12번 / 8번 꺾였다 / 이번 +11.2%는? + 같은 그림"
-   ],
-   "video": "1ETBsq2vFWM"
-  },
-  {
-   "t": "tnxp",
-   "date": "2026.10.30",
-   "layout": "custom",
-   "palette": "teal-pink-rose",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "현금보다 싼 회사 / 1년 주가 -72% 카드 / 매출은 10배인데? + 약병·혀 밑 알약·처방전",
-    "좋은 소식 7번 / 5번 내렸다 / 현금은 몸값보다 많다 + 같은 그림"
-   ],
-   "video": "O8temUyKQE4"
-  },
-  {
-   "t": "btq3",
-   "date": "2026.11.01",
-   "layout": "custom",
-   "palette": "violet-lime-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "올해 바닥 깨졌다 / 상장 뒤 최저 종가 $1.98 카드 / 소식은 1건뿐인데? + 자물쇠 박힌 보안 칩·큐비트 궤도",
-    "발표 없는 급락 / 22번 중 4번 / 만 되찾았다 + 같은 그림"
-   ],
-   "video": "atbo6XnK2Tw"
-  },
-  {
-   "t": "qntus2",
-   "date": "2026.11.01",
-   "layout": "custom",
-   "palette": "navy-cyan-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "공모가 $60 → $33.6 / 매출의 385배 카드 / 왜 아직 비쌀까? + 이온트랩 칩·이온 줄·레이저·진공 챔버",
-    "급등 6번 뒤 / 5번 더 낮았다 / 11월 시험 두 개 + 같은 그림"
-   ],
-   "video": "umlKjLg6EsA"
-  },
-  {
-   "t": "laes4",
-   "date": "2026.11.02",
-   "layout": "custom",
-   "palette": "forest-orange-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "보안 시험 통과했는데 / 2024.12 이후 최저 종가 $1.47 카드 / 주가는 왜 내렸나? + 방패·합격 체크 박힌 보안 칩·회로선",
-    "함께 오른 +7.2% / 나흘 만에 0 / 64번 중 11번 + 같은 그림"
-   ],
-   "video": "8iHv7k2iACg"
-  },
-  {
-   "t": "rzlv",
-   "date": "2026.11.02",
-   "layout": "custom",
-   "palette": "black-pink-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "매출은 20배 늘었는데 / 52주 최저 종가 $1.46 카드 / 주가는 왜 바닥? + 장바구니·상품 상자·AI 돋보기",
-    "주식 판매 4번 / 4번 다 / 급등 직후였다 + 같은 그림"
-   ],
-   "video": "Z_X6tH9pwK4"
-  },
-  {
-   "t": "plug",
-   "date": "2026.11.03",
-   "layout": "custom",
-   "palette": "navy-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "업종 -20.5% vs 플러그 -7.1% / 1.31달러 새 저점 카드 / 덜 빠졌는데 왜? + 수소 탱크·전해조",
-    "11월 실적 다섯 번 / 첫날 모두 하락 + 같은 그림"
-   ],
-   "video": "ebxwE4NYVY4"
-  },
-  {
-   "t": "sand",
-   "date": "2026.11.03",
-   "layout": "custom",
-   "palette": "amber-green-teal",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "유의 해제 날 +53% / 60.2원 카드 / 한 달 만에 왜 제자리? + 메타버스 블록·게임 패드",
-    "15번 중 6번 / 30일 안에 제자리 + 같은 그림"
-   ],
-   "video": "1q1BOvgr8cg"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.11.04",
-   "layout": "custom",
-   "palette": "violet-cyan",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "3분기 매출 -93% / 현금값의 1.17배 / 왜 현금값 위일까? + 배터리·전해질",
-    "실적 10번 중 3번 / 20거래일 뒤 + 같은 그림"
-   ],
-   "video": "8LFbFBgyHMI"
-  },
-  {
-   "t": "zs",
-   "date": "2026.11.04",
-   "layout": "custom",
-   "palette": "crimson-slate",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "AI 공포 118 / AI 기대 260 / 지금은 연초 자리? + 클라우드 방패",
-    "1분기 실적 8번 중 3번 + 같은 그림"
-   ],
-   "video": "lAEV-0AMIKk"
-  },
-  {
-   "t": "mrvl",
-   "date": "2026.11.04",
-   "layout": "custom",
-   "palette": "emerald-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "인수 4번 중 3번 상승 / 루멘텀 합병엔 -31.7% 카드 / 왜 이번엔? + 칩 두 개를 빛줄기가 잇는 그림",
-    "루멘텀 가격 -12.1% / 합병 못 믿나 + 같은 그림"
-   ],
-   "video": "_GjsfMEqZlw"
-  },
-  {
-   "t": "iren",
-   "date": "2026.11.05",
-   "layout": "custom",
-   "palette": "navy-cyan-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "실적 하루 전 / 5거래일 만에 -24.7% 카드 / 다음 날은? + 서버 랙 세 개와 GPU 칩",
-    "떨어진 채 맞은 실적 / 4번 / 다음 날은? + 같은 그림"
-   ],
-   "video": "i0MiWn3_378"
-  },
-  {
-   "t": "aeva",
-   "date": "2026.11.05",
-   "layout": "custom",
-   "palette": "violet-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "현금 많다는데 / 고점 대비 -67.6% 카드 / 왜? + 지붕 라이다가 빛줄기를 쏘는 자동차",
-    "시가총액은 현금의 / 4.48배 / 나머지는? + 같은 그림"
-   ],
-   "video": "Z8HhfUTtXrg"
-  },
-  {
-   "t": "cbrs",
-   "date": "2026.11.05",
-   "layout": "custom",
-   "palette": "orange-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-A",
-   "concepts": [
-    "락업 해제 5거래일 / 상장 뒤 최저 -18.0% 카드 / 왜 더 빠졌나? + 웨이퍼 원판 위 큰 칩(WSE)",
-    "해제일 9번 중 / 6번 / 더 떨어졌다 + 같은 그림"
-   ],
-   "video": "TULwdVnuvNU"
-  },
-  {
-   "t": "smr",
-   "date": "2026.11.05",
-   "layout": "custom",
-   "palette": "green-yellow",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "experiment": "E1-B",
-   "concepts": [
-    "주가 = 금고 속 현금? / 한 주당 현금 $4.34 카드 / 실적 뒤엔? + 수조 속 원자로 모듈 세 기",
-    "실적 17번 중 / 7번만 / 한 달 뒤 더 높았다 + 같은 그림"
-   ],
-   "video": "6sh1eCsdPgw"
-  },
-  {
-   "t": "laes",
-   "date": "2026.11.06",
-   "layout": "custom",
-   "palette": "navy-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "현금보다 싼 주가 / 한 주당 현금 $2.07 · 주가 $1.23 카드 / 하루 -14.0%, 왜? + 방패 박힌 보안 칩",
-    "함께 무너진 11번 중 / 4번만 / 한 달 뒤 더 높았다 + 같은 그림"
-   ],
-   "video": "wIb7C7FazCY"
-  },
-  {
-   "t": "aehr",
-   "date": "2026.11.06",
-   "layout": "custom",
-   "palette": "violet-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 +26.5% / 3거래일 뒤 -4.5% 카드 / 수주 때문일까? + 칩 웨이퍼·열선·온도계",
-    "크게 오른 실적 7번 / 이번이 처음 / 3거래일 만에 다 내줬다 + 같은 그림"
-   ],
-   "video": "MLNfdWxTvq8"
-  },
-  {
-   "t": "inod",
-   "date": "2026.11.08",
-   "layout": "custom",
-   "palette": "teal-pink",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "전망 올렸는데 / 실적 다음 날 -4.1% 카드 / 5월엔 +86.0% + 이름표 붙은 데이터 카드 더미 → 신경망(회색 카드 = 끝난 프로그램)",
-    "같은 전망 상향 / 5월 +86.0% / 11월 -4.1% + 같은 그림"
-   ],
-   "video": "dKJa4FE723E",
-   "shorts": "trPzYOg7klA"
-  },
-  {
-   "t": "stx",
-   "date": "2026.11.08",
-   "layout": "custom",
-   "palette": "espresso-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "bigtext",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "본드는 2배 / 가격은 4주 만에 / -21.3% 큰 글자 + 자물쇠 채운 비트코인·사슬·스택스 코인 더미",
-    "새 상품 켜진 날 7번 / 5번은 / 한 달 뒤 더 낮았다 + 같은 그림"
-   ],
-   "video": "miE5i-JZjNo",
-   "note": "65회차 요청 · 몫 11-08 · INOD 청록·분홍과 겹쳐 업로드 직후 썸네일 교체"
-  },
-  {
-   "t": "rdw",
-   "date": "2026.11.09",
-   "layout": "custom",
-   "palette": "cobalt-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "수주잔고 사상 최대인데 / 실적 첫날 -19.8% 카드 / 다음 날 +16.5% + 태양 전지판 날개 위성·출하 대기 상자 위 멈춘 무인기(일시정지 표시)",
-    "같은 3분기 실적 첫날 / 1년 전 -18.1% / 올해 -19.8% + 같은 그림"
-   ],
-   "video": "mn7zZoqtvU4",
-   "note": "66회차 정규 · 몫 11-09 · 직전 INOD 청록·분홍, STX 에스프레소·주황과 다른 코발트·금색"
-  },
-  {
-   "t": "eose",
-   "date": "2026.11.09",
-   "layout": "custom",
-   "palette": "violet-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "매출 +171%인데 / 52주 최고 종가 대비 -90.9% 카드 / 주가 $1.74, 왜? + 등각 아연 배터리 큐브 3개·번개·빨간 하락선",
-    "3분기 매출의 / 82.7%는 / 자기 합작사 + 같은 그림"
-   ],
-   "video": "qDznLvFhJl8",
-   "shorts": "6DRSByhzNtY"
-  },
-  {
-   "t": "joby",
-   "date": "2026.11.09",
-   "layout": "custom",
-   "palette": "emerald-coral",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "기술주 -6.5%인 날 / 실적 뒤 2거래일 +17.4% 카드 / 새 주식 2,017만 주? + 틸트 프로펠러 전기 에어택시·블레이드 헬리콥터·상승 화살표",
-    "새 주식 팔면서 / +17.4% / 한 달 갈까? + 같은 그림"
-   ],
-   "video": "5HB8eoP2AcY"
-  },
-  {
-   "t": "rxrx",
-   "date": "2026.11.09",
-   "layout": "custom",
-   "palette": "scarlet-emerald",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "임상 호재 다음 날 / -16.7% 카드 / 같은 아침 2억 달러 공모 + 세포 사진 웰 플레이트·신경망·알약 캡슐·쌓이는 새 주식 증서·하락 화살표",
-    "호재 +11.2% / 다음 날 -16.7% / 왜 더 크게 빠졌나? + 같은 그림"
-   ],
-   "video": "bBye6yTQX90",
-   "shorts": ""
-  },
-  {
-   "t": "ionq",
-   "date": "2026.11.10",
-   "layout": "custom",
-   "palette": "magenta-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 / +23.4% 카드 / 리게티도 +19%? + 이온 트랩 사슬·스카이워터 웨이퍼·상승 화살표",
-    "실적 없는 리게티도 / +19.3% / 한 달 갈까? + 같은 그림"
-   ],
-   "video": "",
-   "shorts": ""
-  },
-  {
-   "t": "lcid",
-   "date": "2026.11.10",
-   "layout": "custom",
-   "palette": "amber-teal",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "상장 후 최저 뒤 / 두 거래일 +20.8% 카드 / 사우디 돈, 이번엔? + 전기 세단·돈다발·바닥 찍고 오르는 화살표",
-    "사우디 지원 뒤 한 달 / 7번 중 6번 / 더 낮았다 + 같은 그림"
-   ],
-   "video": "em5hhlJM2fw",
-   "shorts": "4ZEDXk6NS58"
-  },
-  {
-   "t": "iren",
-   "date": "2026.11.10",
-   "layout": "custom",
-   "palette": "blue-rose",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 / 실적 날 바닥에서 +20.0% 카드 / 다음 날은 혼자 -1.1%? + 서버 랙·옅은 비트코인 동전·상승 화살표",
-    "업종이 다 오를 때 / -1.1% / 아이렌만 왜? + 같은 그림"
-   ],
-   "video": "RKTldOsF0do",
-   "shorts": "GEsWu8Apklc"
-  },
-  {
-   "t": "nbis",
-   "date": "2026.11.11",
-   "layout": "custom",
-   "palette": "blue-rose",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "매출 +454%인데 / 6월 고점에서 -53.3% 카드 / 11월 12일 실적, 무엇을? + 구름 안 GPU 칩·서버 랙·꺾인 화살표",
-    "실적 날 +34.1% / 석 달 뒤 -48.3% + 같은 그림"
-   ],
-   "video": "7vQWEtf0iJM",
-   "shorts": "EIrGN5CpFis"
-  },
-  {
-   "t": "plug",
-   "date": "2026.11.11",
-   "layout": "custom",
-   "palette": "violet-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 / 주식 0주 팔았는데 -9.0% 카드 / 현금 사용 절반인데 왜? + 수소 탱크·연료전지 지게차·물방울 번개·꺾인 화살표",
-    "실적 앞 5일 +14.5% / 다음 날 -9.0% / 숫자는 예고 그대로 + 같은 그림"
-   ],
-   "video": "Se4OyMbH_2Q",
-   "shorts": "ZCvT4nDGITY"
-  },
-  {
-   "t": "agnc",
-   "date": "2026.11.11",
-   "layout": "custom",
-   "palette": "blue-rose",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "장부 -16.9%인데 / 다음 날 주가 +4.3%(초록) 카드 / 웃돈은 어디에 있었나? + 집·MBS 증서 더미·보증 도장·주가와 장부 저울",
-    "6월 말 배수 1.27배 / 9월 말에도 1.27배 + 같은 그림"
-   ],
-   "video": "t3iCYCzmz5A",
-   "shorts": "yOkGCQ0PYSk"
-  },
-  {
-   "t": "rum",
-   "date": "2026.11.11",
-   "layout": "custom",
-   "palette": "emerald-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "매출 +290%인데 / 8월 고점 뒤 주가 -50.0%(파랑) 카드 / 137억 달러 주문, 돈은? + 재생 화면·GPU 격자·서버 랙·250MW 번개",
-    "실적 첫날 +10% 넘은 / 한 달 뒤 3/3 + 같은 그림"
-   ],
-   "video": "JT4ubTIjjFM",
-   "shorts": "ivLiWOth6FU"
-  },
-  {
-   "t": "ceg",
-   "date": "2026.11.12",
-   "layout": "custom",
-   "palette": "navy-yellow",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "이익 +66%인데 / 실적 날 주가 +10.5%(빨강) 카드 / 같은 날 NRG도 +10.3% + 냉각탑·원자 기호·송전탑·가스 불꽃·55GW",
-    "실적 첫날 +5% 넘은 날 / 한 달 뒤 위 5/6 + 같은 그림"
-   ],
-   "video": "VkCMvnN_JWo",
-   "shorts": "NxMm73q_dUs"
-  },
-  {
-   "t": "btq",
-   "date": "2026.11.12",
-   "layout": "custom",
-   "palette": "gold-cyan",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "아이온큐 +13.4%인데 / BTQ 여덟 거래일 -12.1%(파랑) 카드 / 상장 뒤 첫 갈라짐 + 자물쇠 보안 칩·큐비트 궤도·암호 블록 사슬",
-    "보고서 4번, 20거래일 뒤 / 가장 최근은 -31.1% + 같은 그림"
-   ],
-   "video": "k7hyGKOOpHg",
-   "shorts": "FDVlcaHgs-k"
-  },
-  {
-   "t": "cbrs",
-   "date": "2026.11.13",
-   "layout": "custom",
-   "palette": "teal-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "앞선 실적 2번 급락 / 3번째 실적 뒤 시간외 +18.3%(빨강) 카드 / 이번엔 무엇이 달랐나 + 웨이퍼 칩·AI 클라우드·데이터센터 랙·상승 화살표",
-    "다음 분기 이익률 전망 / 처음으로 상승 / 47~49% + 같은 그림"
-   ],
-   "video": "GFSoL3mAjAs",
-   "shorts": "AiqkRxUzWyo"
-  },
-  {
-   "t": "qs",
-   "date": "2026.11.13",
-   "layout": "custom",
-   "palette": "plum-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "새 셀 공개한 날 / 장중 +5.6%에서 종가 -5.4%(파랑) 카드 / 다음 날 52주 최저 + 셀 단면(양극·분리막·리튬)·배터리 번개·전기차",
-    "장중 반전한 날 / 한 달 뒤 그날 위 3/11 + 같은 그림"
-   ],
-   "video": "ikNDuvCcGmc",
-   "shorts": "Lacins5K1oI"
-  },
-  {
-   "t": "asst",
-   "date": "2026.11.13",
-   "layout": "custom",
-   "palette": "charcoal-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "비트코인 -9.9% 일주일 / 그런데 주가는 -0.4%(파랑) 카드 / 버팀은 바닥일까 + 금고 문·비트코인 동전·쌓인 동전",
-    "비트코인보다 덜 내린 날 / 한 달 뒤 그날 위 0/3 + 같은 그림"
-   ],
-   "video": "vKiYq5mVQhc",
-   "shorts": "2aRglRRVWzc"
-  },
-  {
-   "t": "laes",
-   "date": "2026.11.13",
-   "layout": "custom",
-   "palette": "indigo-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "기조연설 날 -5.3% / 일주일 반등 상승분 91% 반납(파랑) 카드 / 과거 6번 그 뒤는? + 보안 칩 자물쇠 방패·전시회 마이크·되돌림 화살표",
-    "반등을 돌려준 6번 / 저점 다시 깸 6/6 + 같은 그림"
-   ],
-   "video": "fNZTziudMlY",
-   "shorts": "7ubOrKuTcjE"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "teal-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "주가 $1.76 · 현금 $1.73 / 한 주당 현금과의 차이 3센트(파랑) 카드 / 현금선은 바닥일까? + 전고체 셀·지폐 다발·현금선(점선)까지 내려온 빨강 화살표",
-    "현금선에 닿은 4번 / 곧 선을 깸 3/4 + 같은 그림"
-   ],
-   "video": "1Os_1jaoNPY",
-   "shorts": "2BrB5DXMJKc"
-  },
-  {
-   "t": "tem",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "darkgreen-magenta",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 약속은 지켰는데 / 85달러 앞에서 4거래일 -15.2%(파랑) 카드 / 올해 세 번째 벽 + DNA 나선·검사 튜브·데이터 막대",
-    "85달러를 넘은 물결 / 10거래일 뒤 하락 2/2 + 같은 그림"
-   ],
-   "video": "TufF4rDSP8Y",
-   "shorts": "h7hlXNGjQwg"
-  },
-  {
-   "t": "qxo",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "navy-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "이익은 85% 늘었는데 / 인수 1년 반, 비컨 매출 -2.4%(파랑) 카드 / 통합 성적표 + 지붕 슁글 집·단열재 롤·자재 트럭",
-    "하루 +19.2% 뒤 / 한 주당 이익 $0.13 / 1년 전 $0.14 + 같은 그림"
-   ],
-   "video": "q2xG-9ysF_Y",
-   "shorts": "zydIHarEBBM"
-  },
-  {
-   "t": "fig",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "violet-orange",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "전망 넘긴 매출인데 / 실적 다음 날 하루 -16.7%(파랑) 카드 / 4분기 이익률 6% + 브라우저 디자인 캔버스·협업 커서·AI 반짝이",
-    "실적 반응 날 뒤 20거래일 뒤 하락 4/5 + 같은 그림"
-   ],
-   "video": "jwQBYhtdpgc",
-   "shorts": "PeUps1IO138"
-  },
-  {
-   "t": "gpus",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "cyan-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "회사는 0.26달러에 산다는데 / 시장 가격은 $0.17(빨강) 카드 / 82% 웃돈의 진짜 값 + 서버 랙·비트코인 동전·번개",
-    "0.26달러 제안 뒤 4거래일 -11.5% + 같은 그림"
-   ],
-   "video": "3_ShVMxxXzU",
-   "shorts": "4epfNR8kViQ"
-  },
-  {
-   "t": "serv",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "lime-coral",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "전망 올리고 하루 +38.8% / 5거래일 뒤 -18.6%(코랄) 카드 / 전망 속 4분기 숫자 + 바퀴 6개 배달 로봇·보도블록·배달 상자",
-    "매출 전망 1,200만 달러, 주가는 5거래일 -18.6% + 같은 그림"
-   ],
-   "video": "bC4T8UCiI3g",
-   "shorts": "Ka03egQjz58"
-  },
-  {
-   "t": "rklb",
-   "date": "2026.11.14",
-   "layout": "custom",
-   "palette": "deepblue-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "매출은 전망 위로 넘었다 / 그런데 장 전 주가 -5%(앰버) 카드 / 손실표 속 일회성 비용 + 발사대 로켓·태양전지 위성·궤도선",
-    "3분기 매출 전망 상단 돌파, 수주잔고 석 달 +52% + 같은 그림"
-   ],
-   "video": "e4DpYMjv8QQ",
-   "shorts": "CeSrIoSLr0E"
-  },
-  {
-   "t": "inj",
-   "date": "2026.11.15",
-   "layout": "custom",
-   "palette": "navy-sky-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "미국 ETF 상장 9일 / 상장 날 대비 -14.9%(빨강) 카드 / 새 ETF 주식 0주 + 사슬 블록·INJ 코인·나스닥 INJC 시세판",
-    "ETF 상장 첫 주 새 주식 0주 + 같은 그림"
-   ],
-   "video": "Fmetfb7YUeU",
-   "shorts": "xqkrOe5dbR8"
-  },
-  {
-   "t": "smr",
-   "date": "2026.11.15",
-   "layout": "custom",
-   "palette": "emerald-yellow",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 +16.2% / 그런데 3거래일 만에 -14.3%(하늘색) 카드 / 원전주 중 가장 덜 올랐다 + 냉각탑·원자로 모듈 셋·송전탑",
-    "실적 날부터 6거래일 오클로 +24.6% vs SMR +6.6% + 같은 그림"
-   ],
-   "video": "Yt_TFd7kj_s",
-   "shorts": "qmpHnKG-5lY"
-  },
-  {
-   "t": "lcid",
-   "date": "2026.11.15",
-   "layout": "custom",
-   "palette": "navy-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "국부펀드 17.5억 달러 받고 / 그런데 3거래일 만에 -21.6%(빨강) 카드 / 상장 후 최저 종가 + 전기 세단·충전기·돈자루",
-    "빌려줄 돈이 몸값보다 크다: 대출 17.5억 vs 시총 11.7억 + 같은 그림"
-   ],
-   "video": "ayG8c1hAopc",
-   "shorts": "NagFE4c8Ur0"
-  },
-  {
-   "t": "joby",
-   "date": "2026.11.16",
-   "layout": "custom",
-   "palette": "violet-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 뒤 +22.4% 올랐는데 / 4거래일 만에 오른 폭 97%(앰버) 카드 / 돌려주고 실적 전 자리로 + eVTOL 기체·이착륙장·새 주식 더미",
-    "다 돌려준 두 번, 한 달 뒤 +25.4%(빨강) vs -20.5%(파랑) + 같은 그림"
-   ],
-   "video": "VImYbWn0t9U",
-   "shorts": "bpdXBRn44lM"
-  },
-  {
-   "t": "plug",
-   "date": "2026.11.16",
-   "layout": "custom",
-   "palette": "sky-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "블룸 에너지 +3.5%인 3거래일 / 공시 0건인데 -18.7%(빨강) 카드 + 수소 지게차·전해조",
-    "실적 뒤 4거래일 1.50 → 1.11달러 / 1달러까지 약 10%(라임) + 같은 그림"
-   ],
-   "video": "YvS65sXXHrk",
-   "shorts": "lViGrX7_rgE"
-  },
-  {
-   "t": "btq",
-   "date": "2026.11.16",
-   "layout": "custom",
-   "palette": "purple-mint",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "아이온큐 +9.4% 오를 때 / 판매 계약 뒤 평균 +5.3%(민트) 카드 + 자물쇠 보안 칩·원자 궤도",
-    "11.11 → 11.13 1.74 → 1.43달러 / -17.8%(빨강) + 같은 그림"
-   ],
-   "video": "wY3PD2QW0Eo",
-   "shorts": "YAvWecOcw5M"
-  },
-  {
-   "t": "iren",
-   "date": "2026.11.16",
-   "layout": "custom",
-   "palette": "navy-amber-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 다음 날 +20%, 5거래일 뒤 / 실적 날 종가 대비 +0.8%(빨강) 카드 + 서버 랙·그래픽 칩·비트코인",
-    "11.6 → 11.13 21.64 → 18.17달러 / 다 반납(빨강) + 같은 그림"
-   ],
-   "video": "C5RVB02wisg",
-   "shorts": "y8DyPbb03u4"
-  },
-  {
-   "t": "rxrx",
-   "date": "2026.11.17",
-   "layout": "custom",
-   "palette": "navy-pink-teal",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "공모 한 달 뒤, 공모가 아래 / 공모가 대비 -10.6%(빨강) 카드 + 세포 사진 격자·알약·분자",
-    "공모가 → 11.16 종가 3.25 → 2.905달러 / 바닥 4번째(빨강) + 같은 그림"
-   ],
-   "video": "fv2lJbchupw",
-   "shorts": "xI69f49kCj0"
-  },
-  {
-   "t": "laes",
-   "date": "2026.11.17",
-   "layout": "custom",
-   "palette": "navy-amber-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "23개월 만의 최저인데 / 9월 말 현금 ÷ 시가총액 1.8배(앰버) 카드 + 보안 칩 위 자물쇠 방패·양자 궤도",
-    "반등 출발점을 깼다 1.23 → 1.145달러 / 6번 중 5번(빨강) + 같은 그림 왼쪽"
-   ],
-   "video": "W3vcgET5izw",
-   "shorts": "w0l2EBi4FT8"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.11.17",
-   "layout": "custom",
-   "palette": "navy-lime-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.90배(빨강) 카드 + 배터리 셀 단면·전해질 병·번개",
-    "현금선 → 11.17 종가 1.73 → 1.56달러 / 첫 이탈(빨강) + 같은 그림"
-   ],
-   "video": "K6zvU0sUeak",
-   "shorts": "HoyGjg0pmss"
-  },
-  {
-   "t": "btq",
-   "date": "2026.11.17",
-   "layout": "custom",
-   "palette": "black-coral-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "현금은 2배가 됐는데 / 보고서 앞뒤 2거래일 -14.0%(빨강) 아이온큐와 똑같이 카드 + 보안 칩·자물쇠·큐비트 궤도",
-    "7월 뒤 판 새 주식 672만 주 / 1.43 → 1.23달러 + 같은 그림"
-   ],
-   "video": "usFP6dPpDX8",
-   "shorts": "zIE8vaqZ9rk"
-  },
-  {
-   "t": "iren",
-   "date": "2026.11.18",
-   "layout": "custom",
-   "palette": "darkteal-rose",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "회사 소식 없이 2거래일 뒤 / 실적 날 바닥 대비 -12.3%(파랑) 카드 + 서버 랙·GPU·비트코인",
-    "실적 날 바닥 → 11.17 18.03 → 15.805달러 / 바닥 아래 + 같은 그림"
-   ],
-   "video": "3c5XFLVO9sM",
-   "shorts": "2Q8aj1CO1Vk"
-  },
-  {
-   "t": "smr",
-   "date": "2026.11.18",
-   "layout": "custom",
-   "palette": "navy-teal-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.94배(빨강) 카드 + 원자로 모듈·냉각탑·원자 기호",
-    "11.5 → 11.17 오클로 +16.5% / 혼자 -6.4%(빨강) + 같은 그림"
-   ],
-   "video": "CpGayNCaSHU",
-   "shorts": "YTAvSyJ9kuQ"
-  },
-  {
-   "t": "joby",
-   "date": "2026.11.18",
-   "layout": "custom",
-   "palette": "plum-orange-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실적 좋았는데 출발점 아래 / 실적 전 대비 -13.3%(파랑) 카드 + 전기 에어택시 기체·도시",
-    "실적 전 → 11.17 5.05 → 4.38달러 / 3년 반 최저 + 같은 그림"
-   ],
-   "video": "WBTk2DeqVjA",
-   "shorts": "DvdjNuXcg6M"
-  },
-  {
-   "t": "wrong",
-   "date": "2026.11.18",
-   "layout": "custom",
-   "palette": "ink-rose",
-   "variants": [
-    "card"
-   ],
-   "styles": [
-    "card"
-   ],
-   "main": "a",
-   "concepts": [
-    "김박사 월드 오답노트1 / 맞힌 횟수 0/6(빨강) 카드 + 빨간 X 여섯·초록 체크 넷 공책"
-   ],
-   "video": "CG8DRq8t1dc",
-   "shorts": "AiqKi8rECsA"
-  },
-  {
-   "t": "laes",
-   "date": "2026.11.19",
-   "layout": "custom",
-   "palette": "forest-emerald-amber",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "양자주 다 내린 날 혼자 / 11월 18일 하루 +10.6%(초록) 카드 + 보안 칩·자물쇠 방패",
-    "새 주식으로 회사를 산다는데 / 1.085 → 1.20달러 / 혼자 +10.6% + 같은 그림"
-   ],
-   "video": "2LuMR4kBlmA",
-   "shorts": "i7naDmm_8lg"
-  },
-  {
-   "t": "joby",
-   "date": "2026.11.19",
-   "layout": "custom",
-   "palette": "crimson-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "회사 소식 없이 4달러 아래 / 11월 19일 종가 3.935달러(빨강) 카드 + 전기 에어택시 기체·도시",
-    "11.9 고점 → 11.19 6.18 → 3.935달러 / 4달러 바닥? + 같은 그림"
-   ],
-   "video": "m2eALHEvv8c",
-   "shorts": "_B_fLOKVKXU"
-  },
-  {
-   "t": "plug",
-   "date": "2026.11.20",
-   "layout": "custom",
-   "palette": "cobalt-cyan-lime",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "흑자 약속한 날, 1년 반 최저 / 11월 19일 종가 1.03달러(빨강) 카드 + 수소 탱크·연료전지 스택·지게차",
-    "심포지엄 날 7번 모두 고가 아래 마감 / 1달러 앞? + 같은 그림"
-   ],
-   "video": "G4LwNPV5bB8",
-   "shorts": "bKJu4F4ECXs"
-  },
-  {
-   "t": "envx",
-   "date": "2026.11.20",
-   "layout": "custom",
-   "palette": "plum-orange-mint",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "공짜 워런트 다음 날, 상장 뒤 최저 / 11월 19일 종가 1.29달러(빨강) 카드 + 배터리 셀(Si)·드론·스마트 안경",
-    "공짜 선물 2센트 / 주가는 19센트 하락 / 상장 뒤 최저 + 같은 그림"
-   ],
-   "video": "9XvR-qdcTUE",
-   "shorts": "pB_Xv8pw-Ao"
-  },
-  {
-   "t": "apld",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "navy-gold-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "자회사 75억 달러 계약, 그 주에 / 계약 날 +1.6% · 그 뒤 -19.2%(빨강) 카드 + 데이터센터·송전탑·GPU",
-    "계약 날은 +1.6% / 급락 날은 -17.8% / 범인은 누구? + 같은 그림"
-   ],
-   "video": "1TKhp0NOkYU",
-   "shorts": "pJURdIa73h8"
-  },
-  {
-   "t": "rgti",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "navy-sky-gold",
-   "variants": [
-    "bigtext",
-    "card"
-   ],
-   "styles": [
-    "bigtext",
-    "card"
-   ],
-   "main": "a",
-   "concepts": [
-    "임원 셋이 팔았다? / 7.16달러(빨강) / 날짜는 8월에 정해져 있었다 — 그림 왼쪽(희석 냉동기·칩렛·Form 4 세금 매도 도장) 글자 오른쪽",
-    "폭락한 날의 임원 매도 신고 / 발행 주식 대비 0.012%(금색) 카드 + 같은 그림 오른쪽"
-   ],
-   "video": "c-8RHgUfHv8",
-   "shorts": "hNyCLHfSAjs"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "navy-lime-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "지금 사도 될까?(금색 큰 질문) / 주가는 한 주당 현금의 0.78배(라임 카드 오른쪽) / 1.35달러 · 1년 최저(빨강) — 배터리 셀 단면(고체 전해질 층)·전해질 통 왼쪽 아래",
-    "지금 사도 될까? / 현금보다 22% 싼 주식 / 과거 3번, 1년 뒤는? — 그림 오른쪽"
-   ],
-   "video": "JusnxXSiIVQ",
-   "shorts": "qCEWS2S2ZOk"
-  },
-  {
-   "t": "smr",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "navy-sky-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "뉴스케일 파워 SMR / 지금 사도 될까?(금색) / 주가는 현금의 0.77배(하늘색 카드) / 계약하면 11억 달러 지급?(빨강) — 수조 속 원자로 모듈 셋·송전탑",
-    "지금 사도 될까? / 현금의 0.77배 주식 / 좋은 소식에 11억 달러 / 3.36달러 · 1년 최저"
-   ],
-   "video": "LtzNialqBF8",
-   "shorts": "4RZZxOcJRnI"
-  },
-  {
-   "t": "inod",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "green-emerald-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "이노데이터 INOD / 지금 사도 될까?(금색) / 하루 전 이사가 산 값 32.09달러(에메랄드 카드) / 다음 날 28.12 · 1년 최저(빨강) — 모니터 속 라벨 상자·데이터 줄",
-    "지금 사도 될까? / 이사는 32.09에 샀다 / 매출 74%는 두 고객 / 28.12달러 · 1년 최저"
-   ],
-   "video": "fzbU46COnbk",
-   "shorts": "37U835ERqy0"
-  },
-  {
-   "t": "btq",
-   "date": "2026.11.21",
-   "layout": "custom",
-   "palette": "indigo-cyan-pink-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "BTQ 테크놀로지스 BTQ / 지금 사도 될까?(금색) / 1.03달러, 1달러 선까지 3%(하늘색 카드) / 현금 두 배는 새 주식에서(빨강) — 자물쇠 보안 칩·큐비트 궤도 오른쪽",
-    "지금 사도 될까? / 1달러 선까지 3% / 판 값 7.74 → 3.32 / 1.03달러 · 1년 최저 — 그림 왼쪽"
-   ],
-   "video": "oIrfim1wfyY",
-   "shorts": "U0hiQ823CKY"
-  },
-  {
-   "t": "pattern",
-   "date": "2026.11.22",
-   "layout": "custom",
-   "palette": "navy-gold-sky-red",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "김박사 월드 패턴결산 / 내 종목 지금 사도 될까? / 1년 최저 날, 20거래일 뒤 더 높음 49%(금색 카드) / 11종목 모두 1년 최저(빨강) — 함께 꺾인 막대 11개·다섯 칸 체크리스트·돋보기 오른쪽",
-    "지금 사도 될까? / 11종목 1년 최저 / 회사 공시 0건, 시장 -5.7% / 가르는 기준 다섯 — 그림 왼쪽"
-   ],
-   "video": "w-5VJA_M-Fc",
-   "shorts": "Sb1zuLo_RmQ"
-  },
-  {
-   "t": "be",
-   "date": "2026.11.22",
-   "layout": "custom",
-   "palette": "teal-red-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "블룸 에너지 BE / 지금 사도 될까?(금색) / 최고 실적인데 고점 대비 -58.8%(빨강 카드) / 시장의 3배로 흔들렸다(하늘색) — 발전 캐비닛·번개·서버 랙 오른쪽",
-    "지금 사도 될까? / 고점 대비 -58.8% / 매출은 1년 새 2.4배 / 142.39달러 · 하루 -15.3% — 그림 왼쪽"
-   ],
-   "video": "VdSWc4jMjzI",
-   "shorts": "OlsnDDC8b7A"
-  },
-  {
-   "t": "achr",
-   "date": "2026.11.22",
-   "layout": "custom",
-   "palette": "teal-red-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "아처 에비에이션 ACHR / 지금 사도 될까?(금색) / 실적 뒤 7거래일 연속 -40.1%(빨강 카드) / 현금은 시총의 59%(하늘색) — 도심 빌딩·에어택시 기체·착륙장 오른쪽",
-    "지금 사도 될까? / 7거래일 -40.1% / 현금의 1.7배까지 / 2.91달러 · 1년 최저 — 그림 왼쪽"
-   ],
-   "video": "76JW6fhIjEw",
-   "shorts": "yilJ_h4jx2o"
-  },
-  {
-   "t": "qbts",
-   "date": "2026.11.22",
-   "layout": "custom",
-   "palette": "indigo-red-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "디웨이브 퀀텀 QBTS / 팔까, 버틸까?(금색) / 실적 뒤 7거래일 연속 -38.8%(빨강 카드) / 하락의 84%는 시장 탓(하늘색) — 금색 층층 냉각 장치·큐비트 칩 오른쪽",
-    "팔까, 버틸까? / 7거래일 -38.8% / 8번 중 6번은 더 내렸다 / 6.52달러 · 1년 7개월 최저 — 그림 왼쪽"
-   ],
-   "video": "PVtpl9NWWQk",
-   "shorts": "ON72JcfkGi8"
-  },
-  {
-   "t": "laes",
-   "date": "2026.11.23",
-   "layout": "custom",
-   "palette": "purple-cyan-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "실스크 LAES / 판정일까지 버틸까?(금색) / 양자주 두 자릿수 오른 날 +5.5%(하늘색 카드) / 예상의 3분의 1(빨강) — 보안 칩·자물쇠 방패 오른쪽",
-    "판정일까지 버틸까? / 시장 +7.0% · 실스크 +5.5% / 급등 반납 5번 중 4번은 전날 종가 아래 — 그림 왼쪽"
-   ],
-   "video": "zbq6gLjyeVI",
-   "shorts": "jygu5uef0hs"
-  },
-  {
-   "t": "iren",
-   "date": "2026.11.23",
-   "layout": "custom",
-   "palette": "darkgreen-gold-sky",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "아이렌 IREN / 따라 사도 될까?(금색) / 급등 다음 날 · 하루 +23.9%(초록 카드) / 회사 소식 0건 · 시장의 3배(하늘색) — 서버 랙·GPU·비트코인 오른쪽",
-    "따라 사도 될까? / 하루 +23.9% / 급등 15번 중 8번은 되돌림 / 14.64달러 · 소식 0건 — 그림 왼쪽"
-   ],
-   "video": "MGh3KnhUDAM",
-   "shorts": "TDc7e9TXVm8"
-  },
-  {
-   "t": "retro",
-   "date": "2026.11.24",
-   "layout": "v7",
-   "main": "a",
-   "palette": "v7-navy",
-   "note": "11-24 소급 교체(10편): 최근 7일 롱폼 썸네일을 V7 시안 a로 thumbnails.set(숫자·문구는 기존 썸네일과 같은 사실). 11번째에서 429 'uploaded too many thumbnails recently' → 재시도 없이 중단. 원본 review/thumb_backup/<id>.jpg, spec review/thumb_backup/specs/<id>.json · 11-25 18:30Z 재시도: 새 회차 PLUG vO2GZt0GbnE·JOBY thqMQOjwjTQ 설정 + 소급 8편(10편 상한), 남은 4편은 11-26 18:30Z",
-   "swapped": {
-    "MGh3KnhUDAM": "2026-11-24T18:16:05Z",
-    "K6zvU0sUeak": "2026-11-24T18:16:20Z",
-    "usFP6dPpDX8": "2026-11-24T18:16:26Z",
-    "CpGayNCaSHU": "2026-11-24T18:16:30Z",
-    "3c5XFLVO9sM": "2026-11-24T18:16:33Z",
-    "WBTk2DeqVjA": "2026-11-24T18:16:35Z",
-    "CG8DRq8t1dc": "2026-11-24T18:16:38Z",
-    "2LuMR4kBlmA": "2026-11-24T18:16:41Z",
-    "m2eALHEvv8c": "2026-11-24T18:16:44Z",
-    "G4LwNPV5bB8": "2026-11-24T18:16:46Z",
-    "9XvR-qdcTUE": "2026-11-25T18:3xZ",
-    "1TKhp0NOkYU": "2026-11-25T18:3xZ",
-    "c-8RHgUfHv8": "2026-11-25T18:3xZ",
-    "JusnxXSiIVQ": "2026-11-25T18:3xZ",
-    "LtzNialqBF8": "2026-11-25T18:3xZ",
-    "fzbU46COnbk": "2026-11-25T18:3xZ",
-    "oIrfim1wfyY": "2026-11-25T18:3xZ",
-    "w-5VJA_M-Fc": "2026-11-25T18:3xZ"
-   },
-   "pending": [
-    "VdSWc4jMjzI",
-    "76JW6fhIjEw",
-    "PVtpl9NWWQk",
-    "zbq6gLjyeVI"
-   ]
-  },
-  {
-   "t": "plug",
-   "date": "2026.11.24",
-   "layout": "v7",
-   "palette": "navy-electricblue-red",
-   "hue": "#2563eb",
-   "variants": [
-    "band",
-    "pillar"
-   ],
-   "styles": [
-    "v7a",
-    "v7b"
-   ],
-   "main": "a",
-   "concepts": [
-    "아래 띠형: 30거래일 종가선(끝 3거래일 빨강·화살표) / 어디까지 떨어질까?(흰색) / 0.9314달러 1년 최저(빨강) — 수소 탱크·연료전지 + 병합 권한 소멸 서류 오른쪽 위",
-    "옆 기둥형: 왼쪽 어디까지 떨어질까? · 1년 최저 · 0.9314달러 / 오른쪽 수소 탱크·연료전지 크게 + 소멸 서류"
-   ],
-   "video": "vO2GZt0GbnE",
-   "shorts": "C2BhnrYGamg"
-  },
-  {
-   "t": "joby",
-   "date": "2026.11.24",
-   "layout": "custom",
-   "palette": "teal-gold",
-   "variants": [
-    "card",
-    "bigtext"
-   ],
-   "styles": [
-    "card",
-    "bigtext"
-   ],
-   "main": "a",
-   "concepts": [
-    "조비 JOBY / 임원이 판다는데?(금색) / 정책 총괄 매도 신고 5,183주(청록 카드) / 4달러는 아직 아래(빨강) — 에어택시·FORM 144 매도 예정 도장 오른쪽",
-    "임원이 판다, 팔까? / 매도 신고일 뒤 20거래일 43% vs 44% — 그림 왼쪽"
-   ],
-   "video": "thqMQOjwjTQ",
-   "shorts": "mxC999mM4Bc"
-  },
-  {
-   "t": "sldp",
-   "date": "2026.11.25",
-   "layout": "v7",
-   "palette": "navy-teal-red",
-   "hue": "#0f766e",
-   "variants": [
-    "band",
-    "pillar"
-   ],
-   "styles": [
-    "v7a",
-    "v7b"
-   ],
-   "main": "a",
-   "concepts": [
-    "아래 띠형: 34거래일 종가선(끝 빨강·화살표) / 물타기 해도 될까?(흰색) / 1.32달러 1년 최저(빨강) — 고체 전해질 셀 + '11번째' 1년 최저 서류 오른쪽 위",
-    "옆 기둥형: 왼쪽 물타기 해도 될까? · 1년 최저 · 1.32달러 / 오른쪽 고체 전해질 셀 크게 + 서류"
-   ],
-   "video": "eeJx0Qv6Pvo",
-   "shorts": "kl5hDXE4PYI"
-  },
-  {
-   "t": "clsk",
-   "date": "2026.11.25",
-   "layout": "v7",
-   "palette": "navy-red",
-   "variants": [
-    "band",
-    "pillar"
-   ],
-   "styles": [
-    "v7a",
-    "v7b"
-   ],
-   "main": "a",
-   "concepts": [
-    "아래 띠형: 34거래일 종가선(끝 빨강·화살표) / 지금 팔아야 될까?(흰색) / $5.18 실적 다음 날(빨강) — 서버 랙 + 채굴기·비트코인, 칩 AI 데이터센터",
-    "옆 기둥형: 왼쪽 지금 팔아야 될까? · 실적 다음 날 · $5.18 / 오른쪽 서버 랙·채굴기 크게"
-   ],
-   "video": "BruKjg6tsA0",
-   "shorts": "VyvLuKKhd38"
-  },
-  {
-   "t": "leu",
-   "date": "2026.11.26",
-   "layout": "v7",
-   "palette": "navy-red",
-   "variants": [
-    "band",
-    "pillar"
-   ],
-   "styles": [
-    "v7a",
-    "v7b"
-   ],
-   "main": "a",
-   "concepts": [
-    "아래 띠형: 61거래일 종가선(끝 빨강·화살표) / 오래 들고 가도 될까?(흰색) / $83.19 11월 25일 종가(빨강) — 원심분리기 여섯 대, 칩 우라늄 농축",
-    "옆 기둥형: 왼쪽 오래 들고 가도 될까? · 11월 25일 종가 · $83.19 / 오른쪽 원심분리기 크게"
-   ],
-   "video": "Jp-VjBFMzlw",
-   "shorts": "jAMH1LKYm_I"
-  }
- ],
- "pending": [
-  {
-   "video": "eeJx0Qv6Pvo",
-   "file": "/home/claude/sldp1125/video/thumb/SLDP_thumbnail.jpg",
-   "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
-   "date": "2026-11-25"
-  },
-  {
-   "video": "kl5hDXE4PYI",
-   "file": "/home/claude/sldp1125/shorts/cover.jpg",
-   "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
-   "date": "2026-11-25"
-  },
-  {
-   "video": "BruKjg6tsA0",
-   "file": "review/thumb_backup/pending/BruKjg6tsA0.jpg",
-   "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 재시도 루프 없음, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
-   "date": "2026-11-25"
-  },
-  {
-   "video": "VyvLuKKhd38",
-   "file": "review/thumb_backup/pending/VyvLuKKhd38.jpg",
-   "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 쇼츠 표지, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
-   "date": "2026-11-25"
-  },
-  {
-   "video": "Jp-VjBFMzlw",
-   "file": "review/thumb_backup/pending/Jp-VjBFMzlw.jpg",
-   "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
-   "date": "2026-11-26"
-  },
-  {
-   "video": "jAMH1LKYm_I",
-   "file": "review/thumb_backup/pending/jAMH1LKYm_I.jpg",
-   "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
-   "date": "2026-11-26"
-  }
- ]
+  "runs": [
+    {
+      "t": "tem",
+      "date": "2026.10",
+      "layout": "classic",
+      "palette": "navy-cyan"
+    },
+    {
+      "t": "pltr",
+      "date": "2026.10",
+      "layout": "classic",
+      "palette": "navy-cyan"
+    },
+    {
+      "t": "gpus",
+      "date": "2026.10.10",
+      "layout": "classic",
+      "palette": "navy-gold"
+    },
+    {
+      "t": "serv",
+      "date": "2026.10.10",
+      "layout": "split",
+      "palette": "amber-teal",
+      "variants": [
+        "split",
+        "bignum",
+        "versus"
+      ]
+    },
+    {
+      "t": "amc",
+      "date": "2026.10.11",
+      "layout": "bignum",
+      "palette": "crimson-black",
+      "variants": [
+        "bignum",
+        "versus",
+        "split"
+      ]
+    },
+    {
+      "t": "dnut",
+      "date": "2026.10.11",
+      "layout": "versus",
+      "palette": "violet-pink",
+      "variants": [
+        "versus",
+        "bignum",
+        "split"
+      ]
+    },
+    {
+      "t": "xndu",
+      "date": "2026.10.11",
+      "layout": "split",
+      "palette": "ice-steel",
+      "variants": [
+        "split",
+        "classic",
+        "bignum"
+      ]
+    },
+    {
+      "t": "soun",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "orange-electricblue",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "glnd",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "emerald-violet",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "roc",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "magenta-cyan",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "arqq",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "crimson-gold",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "rdw",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "lime-purple",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "asst",
+      "date": "2026.10.11",
+      "layout": "center",
+      "palette": "amber-teal",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "inj",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "orange-electricblue",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "laes",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "magenta-cyan",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "ionq",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "emerald-violet",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "leu",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "crimson-gold",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "oklo",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "cobalt-orange",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "ses",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "lime-indigo",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "mp",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "rose-teal",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "poet",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "sky-amber",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "dna",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "mint-coral",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "nvax",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "plum-yellow",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "dvlt",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "steel-red",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "sdgr",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "cyan-violet",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "cbrs",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "lava-ice",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "btq",
+      "date": "2026.10.12",
+      "layout": "center",
+      "palette": "emerald-magenta",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ]
+    },
+    {
+      "t": "rxrx",
+      "date": "2026.10.13",
+      "layout": "center",
+      "palette": "orange-electricblue",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ],
+      "main": "angle"
+    },
+    {
+      "t": "smr",
+      "date": "2026.10.13",
+      "layout": "center",
+      "palette": "crimson-gold",
+      "variants": [
+        "scene",
+        "number",
+        "angle"
+      ],
+      "main": "number"
+    },
+    {
+      "t": "stx",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "violet-orange",
+      "variants": [
+        "spike-vs-vault",
+        "founder-door",
+        "scale-korea-vs-abroad"
+      ],
+      "main": "founder-door",
+      "concepts": [
+        "왼쪽 큰 질문 + 폭발 가격선 vs 수평 비트코인 금고",
+        "왼쪽 큰 글자 + 바닥 위 빛나는 문과 코인 계단",
+        "가운데 저울(업비트 vs 해외) + 아래 띠 제목"
+      ],
+      "video": "DtQcp1TJeTU"
+    },
+    {
+      "t": "plug",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "navy-gold-cyan",
+      "variants": [
+        "linked-arrows",
+        "summit-ticket",
+        "open-vault"
+      ],
+      "main": "summit-ticket",
+      "concepts": [
+        "수소 탱크 + 사슬로 묶인 주가·손실 화살표, 오른쪽 위 큰 글자",
+        "꼭대기 산 그래프 위 $7.75 황금 티켓, 아래 띠 질문",
+        "왼쪽 큰 글자 + 오른쪽 열린 금고에서 쏟아지는 주권"
+      ],
+      "video": "avygNvQ96OE"
+    },
+    {
+      "t": "lcid",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "navy-ice",
+      "variants": [
+        "warehouse-rows",
+        "inventory-vs-cap",
+        "minus57-day"
+      ],
+      "main": "warehouse-rows",
+      "concepts": [
+        "조명 아래 끝없이 늘어선 차 창고 + 왼쪽 위 '창고 > 회사'",
+        "팔지 못한 차가 회사보다 비싸다? 재고·시총 비교",
+        "-57% 하루에 무슨 일이? 7월 14일 장중"
+      ],
+      "video": "6EAcG_I4NeI"
+    },
+    {
+      "t": "agnc",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "green-gold",
+      "variants": [
+        "melting-premium-house",
+        "converging-lines-paper",
+        "summit-sale-stamp"
+      ],
+      "main": "melting-premium-house",
+      "concepts": [
+        "초록 장부 집 위 금색 웃돈 지붕이 지폐로 흩어짐, 왼쪽 큰 '웃돈 증발'",
+        "밝은 종이 위 주가 곡선과 장부 점선이 수렴, 1.37배→1.01배",
+        "어두운 산 꼭대기 깃발 + '70만 주 매도' 도장, '꼭대기 이틀 뒤 회장은?'"
+      ],
+      "video": "I3sjmKN_JeY"
+    },
+    {
+      "t": "cifr",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "amber-charcoal / teal / paper-blue",
+      "variants": [
+        "contract-stack-vs-price",
+        "crane-cost-overrun",
+        "google-key-baseline"
+      ],
+      "main": "google-key-baseline",
+      "concepts": [
+        "금색 계약서 더미를 가르는 빨간 하락선, 왼쪽 '계약 +46% / 주가 -47%'",
+        "청록 데이터센터와 크레인, '공사비 +37%' 누가 내나?",
+        "밝은 종이 위 $17.78 기준선 아래로 떨어진 주가선과 열쇠, '주가가 내릴수록 구글에 더 준다?'"
+      ],
+      "video": "Ud3XTOTi5ao"
+    },
+    {
+      "t": "ntla",
+      "date": "2026.10.13",
+      "layout": "custom",
+      "palette": "magenta-violet / paper-red / green-red split",
+      "variants": [
+        "dna-scissors-short-third",
+        "calendar-pdufa",
+        "split-same-numbers"
+      ],
+      "main": "dna-scissors-short-third",
+      "concepts": [
+        "보라 배경 DNA 이중나선과 가위, 왼쪽 '3상 성공했는데 공매도 1/3'",
+        "밝은 배경 2027.3.10 달력, '3상 성공 뒤 공매도 늘었다'",
+        "녹·적 좌우 분할 +23% vs -4.3%, '같은 숫자 다른 반응?'"
+      ],
+      "video": "K35EdjRdO68"
+    },
+    {
+      "t": "crml",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "arctic-blue-red / paper-stamp / dark-amber",
+      "variants": [
+        "greenland-ice-price",
+        "denied-stamp",
+        "sell-tags-peaks"
+      ],
+      "main": "greenland-ice-price",
+      "concepts": [
+        "그린란드 빙산 위 빨간 주가선, 왼쪽 '1년 전 오늘 $29.97 → $6.54'",
+        "문서 위 '부인됨' 도장, '미국 정부 지분? 엿새 +276%'",
+        "어두운 배경 꼭대기마다 SELL 꼬리표, '오를 때마다 누가 팔았나'"
+      ],
+      "video": "WLbHGeT3SxA"
+    },
+    {
+      "t": "cntn",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "vault-green-gold / paper-red-stamp / dark-amber seesaw",
+      "variants": [
+        "vault-coins-buyback-zero",
+        "buyback-doc-zero-stamp",
+        "seesaw-pipe-price"
+      ],
+      "main": "seesaw-pipe-price",
+      "concepts": [
+        "녹색 금고 안 금색 코인 더미, '코인보다 싼 주식 회사는 왜 안 샀나?' + '자사주 매입 0주' 배지",
+        "밝은 종이 문서 '$50,000,000' 위 빨간 '0주' 도장, '5천만 달러 사겠다더니 한 주도 안 샀다?'",
+        "어두운 배경 코인과 주식 시소, 'DRW·ARK가 산 가격 $3.075 → $2.02 · 코인 +5.6% 주식 -45%'"
+      ],
+      "video": "zA_pYmyi-4M"
+    },
+    {
+      "t": "mrvl",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "teal-cyan chart / light-gray price tags / plum-paper contract",
+      "variants": [
+        "v-chart-bottom-day",
+        "two-price-tags",
+        "contract-5897"
+      ],
+      "main": "two-price-tags",
+      "concepts": [
+        "청록 선 차트 $316→$163 바닥에 빨간 점, '반토막 난 바로 그날 구글과 맺은 계약은?'",
+        "밝은 배경 회색·금색 가격표 엔비디아 $91.84 / 구글 $206.58, '같은 주식 두 개의 가격 왜 2배?'",
+        "어두운 보라 배경 계약서 2026.07.29, '구글이 받은 권리 5,897만 주 조건은 $1,200억어치 주문?'"
+      ],
+      "video": "RR4tTFkNOFo"
+    },
+    {
+      "t": "xtia",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "yellow-black redaction / navy-orange spotlight / magenta-cyan drone",
+      "variants": [
+        "redacted-report",
+        "empty-chair-door",
+        "drone-price-drop"
+      ],
+      "main": "redacted-report",
+      "concepts": [
+        "노란 배경 먹칠된 조사 결론 문서 '재무 왜곡: 없음', '조사는 끝났다 무엇을?'",
+        "남색 배경 주황 조명 아래 빈 의자와 열린 문, '200만 주 받고 떠난 CEO'",
+        "자홍·청록 드론과 떨어지는 선 $1.57→$0.72, '-54% CEO 떠난 뒤 사상 최저'"
+      ],
+      "video": "Inm4Ab_eBK0"
+    },
+    {
+      "t": "nne",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "emerald-violet split / deep red reactor glow / ice-blue lab coat",
+      "variants": [
+        "split-47-vs-300man",
+        "8387man-reactor",
+        "cto-labcoat"
+      ],
+      "main": "split-47-vs-300man",
+      "concepts": [
+        "좌우 분할 초록·보라, '투자자는 $47에 샀다 / 창업자는 아홉 달 동안 300만 주 팔았다'",
+        "붉은 원자로 노심 빛, '창업자가 판 주식 $8,387만 · 주가 -74.7%'",
+        "청색 배경 빈 실험복과 빨간 명찰, '기술 책임자 해임 이유는?'"
+      ],
+      "video": "mdPcbBCAlik"
+    },
+    {
+      "ticker": "LHX",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "crimson glow + gold nameplate / teal-orange rocket / navy crossing arrows",
+      "variants": [
+        "ceo-nameplate-19days",
+        "rocket-ipo-2027",
+        "42b-vs-minus38"
+      ],
+      "main": "ceo-nameplate-19days",
+      "concepts": [
+        "붉은 빛과 금색 명패에 빨간 사선, '최대 실적 19일 뒤 CEO 퇴진'",
+        "청록·주황 로켓, '미사일 상장 2027년으로 밀렸다'",
+        "남색 배경 교차 화살표, '$420억 / -38%'"
+      ],
+      "video": "SZxWcs8gPco",
+      "shorts": "Dq3m1P_FA8A"
+    },
+    {
+      "ticker": "INOD",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "electric cyan receipt on black / green-red split / magenta share certificates on indigo",
+      "variants": [
+        "ceo-sold-receipt",
+        "plus86-minus52-split",
+        "3eok-new-shares"
+      ],
+      "main": "ceo-sold-receipt",
+      "concepts": [
+        "검정 배경 청록 빛과 SOLD 영수증, '폭등 직후 CEO가 $1.2억 팔고 퇴진'",
+        "좌우 초록·빨강 분할, '5월 사상 최대 실적 +86% / 6월 고점 → 지금 -52%'",
+        "남보라 배경 자홍 테두리 주식 증서 더미, 'CEO 교체 같은 날 $3억 새 주식 계약'"
+      ],
+      "video": "V8B_wTBQAqk",
+      "shorts": "KAXpGrZc3DU"
+    },
+    {
+      "ticker": "LQDA",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "deep green cash battery / orange gavel on black / purple-teal versus split",
+      "variants": [
+        "cash-battery-381",
+        "gavel-minus57",
+        "ex-president-vs"
+      ],
+      "main": "cash-battery-381",
+      "concepts": [
+        "짙은 초록 배경, 거의 빈 빨간 배터리와 위로 빠지는 화살표, '현금 $3.96억 중 $3.81억 내준다'",
+        "검정 배경 주황 빛과 판사봉, 꺾인 그래프 '매출 사상 최대인데 판결 하나에 -57%'",
+        "보라·청록 분할 VS, '18년 일한 옛 회사 사장 출신 vs 지금 CEO, 소송 6건 결말은 $3.8억'"
+      ],
+      "video": "erpm9tTd5mE",
+      "shorts": "RGIMqU9uNCc"
+    },
+    {
+      "ticker": "BURU",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "orange ticket+red stamp on dark brown / blue blocks merge on dark violet / teal-red falling line",
+      "variants": [
+        "premium-offering-halt",
+        "200-to-1-merge",
+        "minus98-tekne"
+      ],
+      "main": "premium-offering-halt",
+      "concepts": [
+        "어두운 갈색 배경 '공모가 +30%' 표와 빨간 '거래 정지' 도장, '비싸게 판 새 주식 이틀 뒤 장외로'",
+        "보라 배경 파란 블록 18개가 화살표로 하나로, '200주를 1주로 합쳤는데 또 $1 아래'",
+        "청록 배경 빨간 하락선 $41.92→$0.99, '아홉 달 사이 -98%, 방산 회사 인수는 10월 15일?'"
+      ],
+      "video": "ZPNqphDhfLc",
+      "shorts": "DCnu6ZhuGM8"
+    },
+    {
+      "ticker": "BEAM",
+      "date": "2026.10.14",
+      "layout": "custom",
+      "palette": "teal-red DNA strands on dark navy / teal cash bar vs market cap / teal data card with red falling arrow",
+      "variants": [
+        "same-founder-lost",
+        "half-cash-vault",
+        "good-data-drop"
+      ],
+      "main": "same-founder-lost",
+      "concepts": [
+        "남색 배경 DNA 가닥과 '?' 아래 갈라진 빔·프라임 블록, '같은 창업자 회사에 졌다', 5일 -18.5%",
+        "시총 막대 안 청록 현금 48%, '금고는 반 찼는데 -36%'",
+        "'임상 데이터 👍 29명' 카드 아래 빨간 하락 화살표, '좋은 소식 나온 날 -9.5%'"
+      ],
+      "video": "l7_M_1_8M4M",
+      "shorts": "vCVuSrDWYl4"
+    },
+    {
+      "ticker": "QNT",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "gold-red on near-black / gold spike line / gold gauge",
+      "variants": [
+        "press-release-zero",
+        "4x-then-minus29",
+        "one-hour-64"
+      ],
+      "main": "press-release-zero",
+      "concepts": [
+        "검은 배경 기울어진 '미국 은행 결제망 발표문' 종이에 빨간 '\"QNT\" 0번' 도장, 금색 Q 코인, '발표문에 코인 이름 0번, 그런데 일주일 만에 4배'",
+        "금색 급등선 $71→$287→$205, '일주일 4배 그 다음 -29%'",
+        "금색 시계 게이지 '1시간', '$229 → $375', '단 한 시간 +64% 빌린 돈?'"
+      ],
+      "video": "Ug4RhlPJxEM",
+      "shorts": "S_ri3Mduixc"
+    },
+    {
+      "ticker": "AXTI",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "green-red on dark green / green spike line / red-bordered permit card",
+      "variants": [
+        "ceo-sold-minus56",
+        "121x-then-half",
+        "china-permit"
+      ],
+      "main": "ceo-sold-minus56",
+      "concepts": [
+        "짙은 녹색 배경 InP 웨이퍼 원과 'CEO 매도 $2,200만 고점 열흘 뒤' 메모, '실적은 최대 사장은 팔고 -56%'",
+        "녹색 급등락선 $1.16→$140.83→$61.59, '121배 오른 뒤 반토막'",
+        "빨간 테두리 '수출 허가 대기 중 중국 상무부' 카드, '매출 66% 중국', 'AI 공장은 중국에 기회? 족쇄?'"
+      ],
+      "video": "1P9DowNxYJM",
+      "shorts": "LxUPHcfqxmI"
+    },
+    {
+      "ticker": "ERAS",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "purple-red on dark plum / purple-red bar pair / cream letter card",
+      "variants": [
+        "footnote-one-line",
+        "half-then-2x",
+        "morning-letter"
+      ],
+      "main": "footnote-one-line",
+      "concepts": [
+        "짙은 자주 배경 '임상 데이터 62% 폐암 반응률' 카드와 빨간 '각주: 5등급 1건', 아래 화살표 '다음 날 -48%', '숫자는 이겼는데 작은 각주 한 줄'",
+        "빨간 $9.90 막대와 보라 $17.50 막대, '반토막 석 달 뒤 약 2배 값에 $6억 베팅'",
+        "기울어진 '경고장' 종이 '특허 침해 · 영업 비밀 · from 1위 경쟁사', '데이터 날 아침 도착한 편지'"
+      ],
+      "video": "9T6bgTTKcBY",
+      "shorts": "E76_Cm70F1k"
+    },
+    {
+      "ticker": "ZRO",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "cyan-red-gold on navy / vote cards / gold unlock card",
+      "variants": [
+        "bad-news-up-3x",
+        "fee-zero-3x",
+        "unlock-after-3x"
+      ],
+      "main": "bad-news-up-3x",
+      "concepts": [
+        "남색 배경 빨간 상자 '해킹 $2.9억 · 고객 이탈 · 소송'과 위로 뻗는 하늘색 화살표, '악재가 터지면 올랐다 두 달 3배'",
+        "'1~4차 투표 ×' 카드와 '수수료 스위치 OFF', '수수료 몫 0원 그런데 3배'",
+        "금색 테두리 '10월 20일 언락 약 2,400만~3,100만 개', '3배 오른 뒤 닷새 뒤 물량 폭탄?'"
+      ],
+      "video": "M9wG2zt1W_w",
+      "shorts": "OJwUtij12IU"
+    },
+    {
+      "ticker": "KITE",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "violet-gold-red on navy / chain arrow / gold unlock card",
+      "variants": [
+        "own-chain-pay-elsewhere",
+        "no-dollars-on-chain",
+        "unlock-test"
+      ],
+      "main": "own-chain-pay-elsewhere",
+      "concepts": [
+        "보라 'KITE 체인' 상자에서 금색 화살표로 파란 'BASE' 상자, '자기 체인 열고 결제는 남에게 고점 -62%'",
+        "보라 테두리 '체인 위 달러 $1.9 스테이블코인', 'AI 결제 코인 결제가 없다?'",
+        "금색 테두리 '11월 3일 첫 해제 팀·투자자 32억 개 대기', '고점 -62% 진짜 시험은 이제부터'"
+      ],
+      "video": "e1VPt629QP0",
+      "shorts": "uHec6bEqmZw"
+    },
+    {
+      "ticker": "PSQL",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "cyan-teal-red on navy / two bars / gold floor card",
+      "variants": [
+        "day1-2x-minus70",
+        "90pct-left-yet-2x",
+        "hidden-floor-7.80"
+      ],
+      "main": "day1-2x-minus70",
+      "concepts": [
+        "청록 막대 $19.11(첫날)과 빨간 막대 $5.82(10월 14일), '상장 첫날 2배 한 달 반 뒤 -70%'",
+        "하늘색 테두리 '스팩 주주 90.6% 돈 돌려받고 떠남', '열에 아홉이 떠났는데 첫날 2배?'",
+        "금색 테두리 '전환 가격 하한 $7.80' 점선 아래 '$5.82', '숨은 선 $7.80 못 넘는 이유'"
+      ],
+      "video": "LVl6NzS9c0k",
+      "shorts": "pv2wu9_Kk-c"
+    },
+    {
+      "ticker": "CRWV",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "lime-red on dark navy / backlog vs price bars / green-red twin cards / gold insider card",
+      "variants": [
+        "orders3x-price-half",
+        "debt-two-faces",
+        "bigmoney-bought-insiders-sold"
+      ],
+      "main": "orders3x-price-half",
+      "concepts": [
+        "주문 잔고 막대($301억→$1,040억, 연두)와 주가 막대($138→$66, 빨강), '주문 3배 주가 반토막 AI 클라우드의 역설'",
+        "초록 '담보 대출 A3 투자 등급'과 빨강 '회사채 15% 수익률' 두 카드, '같은 회사 빚의 두 얼굴 하루 -15%'",
+        "금색 카드 '엔비디아 $87.20 · 제인 스트리트 $109 / 내부자·대주주 $48억 매도', '큰손은 샀고 내부자는 팔았다'"
+      ],
+      "video": "KmyRwpVBop0",
+      "shorts": "gLuMrC3SQ90"
+    },
+    {
+      "ticker": "KOD",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "teal-gold-red on dark teal / stop→+178% arrow / low-high card / gold insider card",
+      "variants": [
+        "abandoned-drug-178",
+        "minus99-to-71x",
+        "insiders-bought"
+      ],
+      "main": "abandoned-drug-178",
+      "concepts": [
+        "빨간 '2023년 7월 개발 중단' 상자에서 금색 화살표로 청록 '2026년 9월 +178%', '포기한 약이 하루 178% 3년 만의 반전'",
+        "청록 테두리 '최저 종가 $1.40 / 최고 종가 $99.87', '-99%에서 71배 눈 주사 하나로'",
+        "금색 테두리 '발표 사흘 전 CEO 128만 주 행사 / 발표 당일 대주주 194만 주 매수', '가장 잘 아는 사람들이 샀다'"
+      ],
+      "video": "n4NOozuL6gg",
+      "shorts": "YS0M2E7Rf0s"
+    },
+    {
+      "ticker": "STRK",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "teal-red-gold on dark plum / L2 quote box with +150/-37 / orange hack card / gold unlock card",
+      "variants": [
+        "leave-150-then-37",
+        "hacked-then-up",
+        "staking10x-price-83"
+      ],
+      "main": "leave-150-then-37",
+      "concepts": [
+        "보라 테두리 '이더리움 L2 \"떠나겠다\"' 아래 +150%(나흘)·-37%(사흘), '떠나겠다는 말에 나흘 150% 그리고 -37%'",
+        "주황 테두리 '해킹 다음 날 +53% 2년 중 최대 상승', '털렸는데 올랐다? 이상한 코인'",
+        "금색 테두리 '매달 15일 1.27억 개 물량 해제 2027년 3월까지', '스테이킹 10배 가격 -83% 범인은 물량?'"
+      ],
+      "video": "leqQaVYahEg",
+      "shorts": "5TXUur4wkb8"
+    },
+    {
+      "ticker": "AAVE",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "teal-red-gold on dark plum / revenue vs price bars / red bad-debt card / gold buyback card",
+      "variants": [
+        "revenue-quarter-price-2.7x",
+        "not-hacked-biggest-loss",
+        "bought-high-stopped-low"
+      ],
+      "main": "revenue-quarter-price-2.7x",
+      "concepts": [
+        "월 수익 막대($1,533만→$394만, 빨강)와 가격 막대(9.2만→24.9만, 청록), '수익 1/4 가격 2.7배 디파이 1위의 역설'",
+        "빨간 테두리 '남의 해킹 부실채권 맡긴 돈 -80억$ 사흘 만에', '뚫리지 않았는데 최대 피해 그리고 2.7배'",
+        "금색 테두리 '되사기 평균가 $205 / 바닥 직전 중단 2026.04', '비싸게 사고 쌀 때 멈춘 되사기'"
+      ],
+      "video": "IpV00GDBvAw",
+      "shorts": "5e8HlDJCjH0"
+    },
+    {
+      "ticker": "HYPE",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "mint-coral-gold on dark green-black / 38% donut / mint +41% card / coral ATH card",
+      "variants": [
+        "fees-down-price-2x",
+        "trump-5day-41",
+        "biggest-exchange-17"
+      ],
+      "main": "fees-down-price-2x",
+      "concepts": [
+        "코랄 38% 도넛('남이 만든 시장'), '수수료 -37% 가격 2배? 거래 38%를 내준 거래소'",
+        "민트 테두리 '2026.08.19 +19% 그날 하루 / +41% 닷새', '트럼프 한마디에 닷새 +41% 미국으로 가는 문'",
+        "코랄 테두리 '사상 최고 09.22 97달러 / 10.14 81달러', '최대 거래소가 문 연 날부터 -17%?'"
+      ],
+      "video": "mg211yX6to0",
+      "shorts": "DGmeU1dhcm4"
+    },
+    {
+      "t": "iova",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "amber-violet-sky on deep indigo / cells bokeh / amber CEO-buy card",
+      "variants": [
+        "number",
+        "person",
+        "dilution"
+      ],
+      "concepts": [
+        "보라 카드 매출 전망 막대(첫 약속 4.75억 vs 지금 4.2억), '약속보다 낮은 전망 주가 8배?'",
+        "금색 카드 '2025.05.14 2.5만 주 1.69달러 / 2026.10.14 14.21', '임시 대표가 산 값 1.69달러' (주 썸네일)",
+        "분홍 카드 '회사가 판 값 3.07 / 지금 14.21', '싸게 판 1억 주 평균 3달러'"
+      ]
+    },
+    {
+      "t": "fate",
+      "date": "2026.10.15",
+      "layout": "custom",
+      "palette": "cyan-pink-lime on deep teal-black / cells bokeh",
+      "variants": [
+        "number",
+        "pattern",
+        "conflict"
+      ],
+      "concepts": [
+        "분홍 막대 5개(발표 뒤 닷새 -18~-30%), '좋은 데이터 5번 5번 다 하락'",
+        "청록 카드 '학회 예고 +43% / 실제 발표 -30%', '예고엔 오르고 발표엔 빠졌다' (주 썸네일)",
+        "라임 카드 '얀센 최대 30억 / 종료 다음 날 -62%', '30억 달러 협업을 스스로 거절?'"
+      ]
+    },
+    {
+      "t": "tao",
+      "date": "2026.10.16",
+      "layout": "custom",
+      "palette": "orange-green-white on charcoal black / glowing node network (subnets) at edges",
+      "variants": [
+        "contrast",
+        "subsidy",
+        "other-news"
+      ],
+      "main": "contrast",
+      "concepts": [
+        "주황 카드 막대(반감기 닷새 -17.6% 빨강 아래 vs 06.13 하루 +24.3% 초록 위), '반감기엔 -18% 남의 소식 +24%' (주 썸네일)",
+        "하늘색 카드 막대(슈츠 보조금 260만$ vs 매출 39만$), '인공지능 네트워크 보조금 7배'",
+        "초록 카드 막대(06.12 32만 vs 06.13 39.8만), '남의 AI가 멈춘 날 하루 +24%'"
+      ],
+      "video": "AtP-Bvjrb5Y",
+      "shorts": "V0InmSUMPGE"
+    },
+    {
+      "t": "qbts",
+      "date": "2026.10.16",
+      "layout": "custom",
+      "palette": "red-lime-violet on deep violet-black / annealing energy-landscape waves at bottom",
+      "variants": [
+        "drop",
+        "interest",
+        "dilution"
+      ],
+      "main": "drop",
+      "concepts": [
+        "빨강 테두리 카드 막대(2025.10.15 44.78 vs 2026.10.15 12.82), '사상 최대 수주인데 -71% 정부까지 주주로 들였는데?' (주 썸네일)",
+        "노랑 카드 막대(본업 이익 352만$ vs 이자수익 1,081만$), '양자컴퓨터 회사 이자가 3배'",
+        "라임 카드 막대(12.12 3.91 vs 12.18 8.96), '증자가 끝나자 닷새 +117%'"
+      ],
+      "video": "MBDknI3-ics",
+      "shorts": "Kda8ugxDkv4"
+    },
+    {
+      "t": "sls",
+      "date": "2026.10.16",
+      "layout": "custom",
+      "palette": "green-amber-crimson on deep navy / translucent hourglass at right",
+      "variants": [
+        "delay-5x",
+        "same-news",
+        "filing"
+      ],
+      "main": "delay-5x",
+      "concepts": [
+        "초록 카드 막대(2025.10.15 2.18 vs 2026.10.15 11.34), '3상 결과 2년 지연 주가 5배 늦을수록 올랐다?' (주 썸네일)",
+        "빨강 카드 막대(2022.11 -44% vs 2025.12 +74%), '결과 늦어진다는데 닷새 +74%'",
+        "노랑 카드 막대(06.24 9.17 vs 07.01 13.27), '공시 한 장에 닷새 +45% 인수설, 회사는 말이 없다'"
+      ],
+      "video": "H6Ib_74o6Hk",
+      "shorts": "JlRgiEFjfIY"
+    },
+    {
+      "t": "iren",
+      "date": "2026.10.16",
+      "layout": "custom",
+      "palette": "crimson-sky-amber on deep navy / translucent server racks at right",
+      "variants": [
+        "low-anthropic",
+        "sector-drop",
+        "prev-report"
+      ],
+      "main": "low-anthropic",
+      "concepts": [
+        "빨강 카드 막대(엔비디아 권리 70 vs 10.15 종가 30.39), '앤트로픽 고객 보도 52주 최저 같은 주에 무슨 일이?' (주 썸네일)",
+        "빨강 카드 막대(10.14 코어위브 -15% vs 아이렌 -12%), '회사 소식 0건 하루 -12% 빌리는 돈값이 올랐다'",
+        "노랑 카드 막대(10.09 35.19 vs 10.15 30.39), '지난 리포트 닷새 뒤 시나리오 4 업황 악화가 켜졌다'"
+      ],
+      "video": "Pk713RlsJn8",
+      "shorts": "X6z6RdPO6Hg"
+    },
+    {
+      "t": "aehr",
+      "date": "2026.10.16",
+      "layout": "bigtext",
+      "palette": "navy-wafer",
+      "variants": [
+        "bigtext",
+        "card",
+        "scene"
+      ],
+      "main": "a",
+      "experiment": "E1-B"
+    },
+    {
+      "t": "nndm",
+      "date": "2026.10.16",
+      "layout": "card",
+      "palette": "navy-vault",
+      "variants": [
+        "card",
+        "bigtext",
+        "card"
+      ],
+      "main": "a",
+      "experiment": "E1-A"
+    },
+    {
+      "t": "anro",
+      "date": "2026.10.16",
+      "layout": "bigtext",
+      "palette": "navy-brainwave",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B"
+    },
+    {
+      "t": "render",
+      "date": "2026.10.16",
+      "layout": "card",
+      "palette": "navy-gpu-grid",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A"
+    },
+    {
+      "t": "rklb",
+      "date": "2026.10.16",
+      "layout": "bigtext",
+      "palette": "navy-starfield",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B"
+    },
+    {
+      "t": "near",
+      "date": "2026.10.16",
+      "layout": "card",
+      "palette": "navy-grid-green",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A"
+    },
+    {
+      "t": "mbot",
+      "date": "2026.10.16",
+      "layout": "bigtext",
+      "palette": "teal-vessel-red",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B"
+    },
+    {
+      "t": "goss",
+      "date": "2026.10.17",
+      "layout": "card",
+      "palette": "violet-gold",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.10.17",
+      "layout": "bigtext",
+      "palette": "navy-skyblue-amber-battery",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B"
+    },
+    {
+      "t": "rubi",
+      "date": "2026.10.17",
+      "layout": "card",
+      "palette": "ocean-teal-crimson-tanker",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A"
+    },
+    {
+      "t": "tia",
+      "date": "2026.10.17",
+      "layout": "bigtext",
+      "palette": "violet-emerald-magenta-datablocks",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "하루 60달러 / 일주일 +44% 큰 글자 + 데이터 블록 탑",
+        "버는 건 이것뿐인데 + 60달러·+44% 카드",
+        "사실상 공짜인데 / 일주일 +44% (창업자 글 인용 각도)"
+      ]
+    },
+    {
+      "t": "ionq",
+      "date": "2026.10.18",
+      "layout": "custom",
+      "palette": "midnight-gold-crimson-iontrap",
+      "styles": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "concepts": [
+        "같은 큰손이 또 샀다? + $93→$40 카드",
+        "같은 큰손 93→40달러 큰 글자",
+        "반값에 또 20억 / 왜 웃돈?"
+      ]
+    },
+    {
+      "t": "sui",
+      "date": "2026.10.18",
+      "layout": "bigtext",
+      "palette": "aqua-blue-orange-droplet",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "구글·삼성 손잡고 / 2주 -18% 큰 글자 + 물방울·휴대폰",
+        "구글·삼성 손잡았는데 + 2주 -18%·첫날 대비 -25% 카드",
+        "ETF 3개 생겼는데 / 상장가 -25%"
+      ]
+    },
+    {
+      "t": "rdw",
+      "date": "2026.10.18",
+      "layout": "custom",
+      "palette": "crimson-gold-drone",
+      "styles": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "우주주 붕괴 왜 절반만? + 로켓랩 -25%·레드와이어 -12% 카드",
+        "로켓랩 -25% / 여긴 -12% 큰 글자",
+        "남은 판매 한도 4,176만 주"
+      ]
+    },
+    {
+      "t": "laes",
+      "date": "2026.10.19",
+      "layout": "bigtext",
+      "palette": "midnight-cyan-gold-vault",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "매출 +65% / 다음 날 -7% 큰 글자 + 금고",
+        "현금보다 싼 주식? + 주당 현금 $2.07·주가 $1.79 카드",
+        "현금 4.63억 / 시총 4억"
+      ]
+    },
+    {
+      "t": "soun",
+      "date": "2026.10.19",
+      "layout": "custom",
+      "palette": "violet-gold-soundwave",
+      "styles": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "소식 없는데 왜 신저가? + SEC 공시 0건·한 주 -12% 카드",
+        "2024년 9월 이후 최저 / $4.53 큰 글자",
+        "숨은 새 주식 / 3,689만 주"
+      ]
+    },
+    {
+      "t": "xndu",
+      "date": "2026.10.19",
+      "layout": "bigtext",
+      "palette": "violet-magenta-photon-chip",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "공시 0건 / 한 주 -22% 큰 글자 + 빛 칩",
+        "목표가보다 더 아래? + 최저 목표가 $3.75·주가 $3.04 카드",
+        "상장 뒤 최저 / $3.04"
+      ]
+    },
+    {
+      "t": "arqq",
+      "date": "2026.10.19",
+      "layout": "card",
+      "palette": "emerald-gold-lock",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "매출 2배인데 -38%? + 실적 전날 $22.55·7거래일 뒤 $14.02 카드",
+        "7거래일 / -37.8% 큰 글자 + 자물쇠",
+        "NATO 계약 땄는데 / 왜 폭락?"
+      ]
+    },
+    {
+      "t": "btq",
+      "date": "2026.10.20",
+      "layout": "bigtext",
+      "palette": "cyan-gold-shield",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "첫 계약 뒤 / 바닥 1센트 위 큰 글자 + 방패 자물쇠·바닥선 $2.15",
+        "계약 따고 왜 바닥? + 올해 최저 $2.15·10.16 $2.16 카드",
+        "열흘 -17% / $2.16 큰 글자"
+      ]
+    },
+    {
+      "t": "joby",
+      "date": "2026.10.20",
+      "layout": "card",
+      "palette": "navy-sky-city",
+      "variants": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "악재 0건인데 올해 최저? + 1월 증자 발행가 $11.35·지금 $4.61 카드 + 에어택시·도시·지지선 $4.80",
+        "증자 0건 / 열흘 -15% 큰 글자",
+        "현금은 절반 / $4.61 큰 글자"
+      ]
+    },
+    {
+      "t": "rtx",
+      "date": "2026.10.20",
+      "layout": "bigtext",
+      "palette": "graphite-gold-missile",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "일감 사상 최대 / 주가는 -15% 큰 글자 + 미사일·엔진 + 고점 뒤 꺾이는 화살표",
+        "전망 4번 ↑ 주가는 왜? + 수주 잔고 3,400억·고점 대비 -15% 카드",
+        "3,400억 달러 / 그런데? 큰 글자"
+      ]
+    },
+    {
+      "t": "tsla",
+      "date": "2026.10.20",
+      "layout": "card",
+      "palette": "graphite-gold-car",
+      "variants": [
+        "card",
+        "bigtext",
+        "card"
+      ],
+      "styles": [
+        "card",
+        "bigtext",
+        "card"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "판매는 예상 ↑ / 내일 실적은? + 실적 다음 날 평균 ±7.7%·최고가 대비 -25% 카드 + 자동차·꺾이는 화살표",
+        "판매는 예상 ↑ / 주가는 -25% 큰 글자",
+        "실적 다음 날 31번의 기록 + 같은 카드"
+      ]
+    },
+    {
+      "t": "spcx",
+      "date": "2026.10.20",
+      "layout": "bigtext",
+      "palette": "graphite-red-rocket",
+      "variants": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "첫 흑자인데 / 13억 주 풀린다 큰 글자 + 로켓·급등 뒤 꺾이는 화살표",
+        "첫 흑자 ↑ 모레 해제 + 13억 주·매출 예상 대비 +15% 카드",
+        "$225 → $147 / 버틸까? 큰 글자"
+      ]
+    },
+    {
+      "t": "smci",
+      "date": "2026.10.20",
+      "layout": "card",
+      "palette": "graphite-green-server",
+      "variants": [
+        "card",
+        "bigtext",
+        "card"
+      ],
+      "styles": [
+        "card",
+        "bigtext",
+        "card"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "30% 빠진 뒤 / 매출 전망 ↑ + 매출 전망 +40억$·직전 7거래일 -30% 카드 + 서버 랙·반등 화살표",
+        "미리 알린 숫자 / 시간외 +15% 큰 글자",
+        "잠정 실적 12번의 기록 + 같은 카드"
+      ]
+    },
+    {
+      "t": "nflx",
+      "date": "2026.10.21",
+      "layout": "bigtext",
+      "palette": "graphite-red-tv",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "이익은 느는데 / 5연속 하락 큰 글자 + TV·계단식 하락 화살표",
+        "$134 → $69 / 6번째? 큰 글자"
+      ]
+    },
+    {
+      "t": "isrg",
+      "date": "2026.10.21",
+      "layout": "card",
+      "palette": "graphite-red-robot",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "예상 넘었는데 / 왜 빠졌나 + 예상↑·장 전 -7.6% 카드 + 수술 로봇 팔·하락 화살표",
+        "미국 수술 10% / 장 전 -7.6% 큰 글자"
+      ]
+    },
+    {
+      "t": "infq",
+      "date": "2026.10.21",
+      "layout": "bigtext",
+      "palette": "navy-red-atoms",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "정부 1억 달러 / 상장 뒤 최저 + 원자 격자·하락 화살표",
+        "$19.87 → $8.66 / 10% 급등 16번"
+      ]
+    },
+    {
+      "t": "cbrs-2",
+      "date": "2026.10.21",
+      "layout": "card",
+      "palette": "graphite-red-chip",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "풀린 날보다 / 앞뒤가 더 + 해제 날 -5.1%·앞뒤 -10%대 카드 + 칩 격자·하락 화살표",
+        "여드레 -28% / 공모가 아래 큰 글자"
+      ]
+    },
+    {
+      "t": "plug-2",
+      "date": "2026.10.22",
+      "layout": "bigtext",
+      "palette": "teal-orange-h2",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "0주 팔았는데 / 새 저점? + 수소 탱크·H2 분자·하락 화살표, $1.62 → $1.37",
+        "11월 실적 / 5번 중 몇 번?"
+      ]
+    },
+    {
+      "t": "iren-3",
+      "date": "2026.10.23",
+      "layout": "custom",
+      "palette": "cyan-red-gold-rack",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "공시 0건인데 / 급락 세 번 + 오른쪽 카드 -12.2%·-11.2%·-8.4%, 서버 랙과 꺾이는 빨간 선",
+        "1년 전 최고가 $76 → 지금 $25 + 점선 곡선, 서버 랙, '3분의 1, 왜?'"
+      ]
+    },
+    {
+      "t": "qs",
+      "date": "2026.10.23",
+      "layout": "custom",
+      "palette": "violet-gold-red-cell",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "1년 전 $18 → 지금 $4 + 화살표, 층층이 쌓인 전고체 셀(단자·분리막)",
+        "실적 다음 날 +4.3% / 이번엔 지킬까? + 같은 셀"
+      ]
+    },
+    {
+      "t": "laes3",
+      "date": "2026.10.24",
+      "layout": "custom",
+      "palette": "navy-red-cyan",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "양자주 0% vs 씰에스큐 -13% 대비 카드, 칩 실루엣",
+        "혼자 -13% 큰 글자 + 같은 칩"
+      ]
+    },
+    {
+      "t": "eu",
+      "date": "2026.10.24",
+      "layout": "custom",
+      "palette": "navy-amber-red",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "우라늄 캐는데 / 1달러 아래, $4.90 → $0.70 화살표",
+        "사서 팔았다 / 팔수록 손해, $81.85 vs $70.10"
+      ]
+    },
+    {
+      "t": "smr2",
+      "date": "2026.10.25",
+      "layout": "custom",
+      "palette": "teal-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "공시 0건인데 9거래일 -19.7% 카드 + 소형 원자로 모듈",
+        "목표가 5달러 / 주가 아래로 / 낮췄다 + 같은 원자로"
+      ]
+    },
+    {
+      "t": "btbt",
+      "date": "2026.10.25",
+      "layout": "custom",
+      "palette": "violet-red-cyan",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "이더리움 -11% / 주가는 -48% + 이더리움 코인 더미와 자회사 서버 랙",
+        "자회사가 / 끌어내렸다? + 같은 그림"
+      ]
+    },
+    {
+      "t": "oklo2",
+      "date": "2026.10.26",
+      "layout": "custom",
+      "palette": "navy-ice-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "원자력 봄인데 10거래일 -24.1% 카드 + 눈 내리는 밤의 소형 원자로",
+        "증권사 4곳이 / 나흘 만에 / 목표가 하향 + 같은 원자로"
+      ]
+    },
+    {
+      "t": "wimi",
+      "date": "2026.10.26",
+      "layout": "custom",
+      "palette": "black-magenta-lime",
+      "variants": [
+        "bigtext",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "현금 4.6억$ / 몸값 0.1억$ / 왜? + 홀로그램 투사기·금고",
+        "흑자라는데 / 상장 뒤 / 최저가? + 같은 그림"
+      ]
+    },
+    {
+      "t": "sldp3",
+      "date": "2026.10.26",
+      "layout": "custom",
+      "palette": "graphite-cobalt-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "새 라인 돌렸는데 / 1.08배 + 전고체 셀·전해질 분말",
+        "주가 = 통장 값 / 실적 19번 뒤 / 몇 번 올랐나? + 같은 그림"
+      ]
+    },
+    {
+      "t": "glnd2",
+      "date": "2026.10.26",
+      "layout": "custom",
+      "palette": "arctic-teal-crimson",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "트럼프 글 한 줄에 / +76.5% 카드 + 얼음 땅 시추 리그",
+        "+76.5% / 7거래일 뒤 3달러 / 남은 건 뭘까? + 같은 그림"
+      ]
+    },
+    {
+      "t": "anth",
+      "date": "2026.10.26",
+      "layout": "custom",
+      "palette": "ink-clay-ivory",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "첫 영업흑자인데 / 반년 순손실 807억 달러 카드 + 신경망 칩·말풍선·서버",
+        "807억 달러 / 손실의 정체는 / 몸값? + 같은 그림"
+      ]
+    },
+    {
+      "t": "xndu3",
+      "date": "2026.10.27",
+      "layout": "custom",
+      "palette": "indigo-violet-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "국방 호재 날도 / 업종 쉴 때 혼자 -15.8% 카드 + 광자 양자 칩(레이저·도파로·검출기)",
+        "+3.6% 출발 / -7.9% 마감 / 누가 팔았나? + 같은 그림"
+      ]
+    },
+    {
+      "t": "sndk",
+      "date": "2026.10.27",
+      "layout": "custom",
+      "palette": "charcoal-coral-mint",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "석 달 EPS 전망 44달러 / 최고 종가 대비 -46.2% 카드 + SD 카드·SSD·플래시 칩 층",
+        "마진 84.6% / 주가 -46.2% / 왜 떨어졌나? + 같은 그림"
+      ]
+    },
+    {
+      "t": "inod2",
+      "date": "2026.10.28",
+      "layout": "custom",
+      "palette": "navy-amber-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "실적 9일 전 하루 / 10월 27일 종가 -25.3% 카드 + 문서 라벨링·헤드셋 작업자·✓✗ 말풍선",
+        "인도 550명 해고? / 하루 -25.3% / 실적 전에 왜? + 같은 그림"
+      ]
+    },
+    {
+      "t": "cbrs3",
+      "date": "2026.10.28",
+      "layout": "custom",
+      "palette": "teal-white-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "반도체 +2.1%인 날 / 9번째 락업 해제일 -5.7% 카드 + 원판 한 장 칩·서버 랙·빠른 답 화살표",
+        "전날 +10.1% / 해제일 -5.7% / 11월 9일은? + 같은 그림 왼쪽"
+      ]
+    },
+    {
+      "t": "iren4",
+      "date": "2026.10.29",
+      "layout": "custom",
+      "palette": "midnight-violet-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "빚 3.6억 달러 낸 날 / 10월 28일 주가 +5.1% 카드 + 서버 랙·GPU 칩·흐려지는 비트코인",
+        "급락 뒤 나흘 / +13.1% / 8번 중 최대, 그 뒤는? + 같은 그림 왼쪽"
+      ]
+    },
+    {
+      "t": "slnh",
+      "date": "2026.10.29",
+      "layout": "custom",
+      "palette": "navy-sky-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "손잡은 상대는 +8.5% / 같은 날 솔루나 -2.8% 카드 + 풍력 터빈 두 대·전선·데이터센터 랙",
+        "발행 한도 10억 주 / -10.0% / 주식은 더 늘어날까? + 같은 그림 왼쪽"
+      ]
+    },
+    {
+      "t": "leu2",
+      "date": "2026.10.30",
+      "layout": "custom",
+      "palette": "black-yellow-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "공장은 앞섰는데 / 3주 주가 -22.4% 카드 + 원심분리기 기둥·우라늄 원자·방사능 표지",
+        "큰 반등 12번 / 8번 꺾였다 / 이번 +11.2%는? + 같은 그림"
+      ],
+      "video": "1ETBsq2vFWM"
+    },
+    {
+      "t": "tnxp",
+      "date": "2026.10.30",
+      "layout": "custom",
+      "palette": "teal-pink-rose",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "현금보다 싼 회사 / 1년 주가 -72% 카드 / 매출은 10배인데? + 약병·혀 밑 알약·처방전",
+        "좋은 소식 7번 / 5번 내렸다 / 현금은 몸값보다 많다 + 같은 그림"
+      ],
+      "video": "O8temUyKQE4"
+    },
+    {
+      "t": "btq3",
+      "date": "2026.11.01",
+      "layout": "custom",
+      "palette": "violet-lime-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "올해 바닥 깨졌다 / 상장 뒤 최저 종가 $1.98 카드 / 소식은 1건뿐인데? + 자물쇠 박힌 보안 칩·큐비트 궤도",
+        "발표 없는 급락 / 22번 중 4번 / 만 되찾았다 + 같은 그림"
+      ],
+      "video": "atbo6XnK2Tw"
+    },
+    {
+      "t": "qntus2",
+      "date": "2026.11.01",
+      "layout": "custom",
+      "palette": "navy-cyan-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "공모가 $60 → $33.6 / 매출의 385배 카드 / 왜 아직 비쌀까? + 이온트랩 칩·이온 줄·레이저·진공 챔버",
+        "급등 6번 뒤 / 5번 더 낮았다 / 11월 시험 두 개 + 같은 그림"
+      ],
+      "video": "umlKjLg6EsA"
+    },
+    {
+      "t": "laes4",
+      "date": "2026.11.02",
+      "layout": "custom",
+      "palette": "forest-orange-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "보안 시험 통과했는데 / 2024.12 이후 최저 종가 $1.47 카드 / 주가는 왜 내렸나? + 방패·합격 체크 박힌 보안 칩·회로선",
+        "함께 오른 +7.2% / 나흘 만에 0 / 64번 중 11번 + 같은 그림"
+      ],
+      "video": "8iHv7k2iACg"
+    },
+    {
+      "t": "rzlv",
+      "date": "2026.11.02",
+      "layout": "custom",
+      "palette": "black-pink-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "매출은 20배 늘었는데 / 52주 최저 종가 $1.46 카드 / 주가는 왜 바닥? + 장바구니·상품 상자·AI 돋보기",
+        "주식 판매 4번 / 4번 다 / 급등 직후였다 + 같은 그림"
+      ],
+      "video": "Z_X6tH9pwK4"
+    },
+    {
+      "t": "plug",
+      "date": "2026.11.03",
+      "layout": "custom",
+      "palette": "navy-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "업종 -20.5% vs 플러그 -7.1% / 1.31달러 새 저점 카드 / 덜 빠졌는데 왜? + 수소 탱크·전해조",
+        "11월 실적 다섯 번 / 첫날 모두 하락 + 같은 그림"
+      ],
+      "video": "ebxwE4NYVY4"
+    },
+    {
+      "t": "sand",
+      "date": "2026.11.03",
+      "layout": "custom",
+      "palette": "amber-green-teal",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "유의 해제 날 +53% / 60.2원 카드 / 한 달 만에 왜 제자리? + 메타버스 블록·게임 패드",
+        "15번 중 6번 / 30일 안에 제자리 + 같은 그림"
+      ],
+      "video": "1q1BOvgr8cg"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.11.04",
+      "layout": "custom",
+      "palette": "violet-cyan",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "3분기 매출 -93% / 현금값의 1.17배 / 왜 현금값 위일까? + 배터리·전해질",
+        "실적 10번 중 3번 / 20거래일 뒤 + 같은 그림"
+      ],
+      "video": "8LFbFBgyHMI"
+    },
+    {
+      "t": "zs",
+      "date": "2026.11.04",
+      "layout": "custom",
+      "palette": "crimson-slate",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "AI 공포 118 / AI 기대 260 / 지금은 연초 자리? + 클라우드 방패",
+        "1분기 실적 8번 중 3번 + 같은 그림"
+      ],
+      "video": "lAEV-0AMIKk"
+    },
+    {
+      "t": "mrvl",
+      "date": "2026.11.04",
+      "layout": "custom",
+      "palette": "emerald-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "인수 4번 중 3번 상승 / 루멘텀 합병엔 -31.7% 카드 / 왜 이번엔? + 칩 두 개를 빛줄기가 잇는 그림",
+        "루멘텀 가격 -12.1% / 합병 못 믿나 + 같은 그림"
+      ],
+      "video": "_GjsfMEqZlw"
+    },
+    {
+      "t": "iren",
+      "date": "2026.11.05",
+      "layout": "custom",
+      "palette": "navy-cyan-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "실적 하루 전 / 5거래일 만에 -24.7% 카드 / 다음 날은? + 서버 랙 세 개와 GPU 칩",
+        "떨어진 채 맞은 실적 / 4번 / 다음 날은? + 같은 그림"
+      ],
+      "video": "i0MiWn3_378"
+    },
+    {
+      "t": "aeva",
+      "date": "2026.11.05",
+      "layout": "custom",
+      "palette": "violet-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "현금 많다는데 / 고점 대비 -67.6% 카드 / 왜? + 지붕 라이다가 빛줄기를 쏘는 자동차",
+        "시가총액은 현금의 / 4.48배 / 나머지는? + 같은 그림"
+      ],
+      "video": "Z8HhfUTtXrg"
+    },
+    {
+      "t": "cbrs",
+      "date": "2026.11.05",
+      "layout": "custom",
+      "palette": "orange-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-A",
+      "concepts": [
+        "락업 해제 5거래일 / 상장 뒤 최저 -18.0% 카드 / 왜 더 빠졌나? + 웨이퍼 원판 위 큰 칩(WSE)",
+        "해제일 9번 중 / 6번 / 더 떨어졌다 + 같은 그림"
+      ],
+      "video": "TULwdVnuvNU"
+    },
+    {
+      "t": "smr",
+      "date": "2026.11.05",
+      "layout": "custom",
+      "palette": "green-yellow",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "experiment": "E1-B",
+      "concepts": [
+        "주가 = 금고 속 현금? / 한 주당 현금 $4.34 카드 / 실적 뒤엔? + 수조 속 원자로 모듈 세 기",
+        "실적 17번 중 / 7번만 / 한 달 뒤 더 높았다 + 같은 그림"
+      ],
+      "video": "6sh1eCsdPgw"
+    },
+    {
+      "t": "laes",
+      "date": "2026.11.06",
+      "layout": "custom",
+      "palette": "navy-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "현금보다 싼 주가 / 한 주당 현금 $2.07 · 주가 $1.23 카드 / 하루 -14.0%, 왜? + 방패 박힌 보안 칩",
+        "함께 무너진 11번 중 / 4번만 / 한 달 뒤 더 높았다 + 같은 그림"
+      ],
+      "video": "wIb7C7FazCY"
+    },
+    {
+      "t": "aehr",
+      "date": "2026.11.06",
+      "layout": "custom",
+      "palette": "violet-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 +26.5% / 3거래일 뒤 -4.5% 카드 / 수주 때문일까? + 칩 웨이퍼·열선·온도계",
+        "크게 오른 실적 7번 / 이번이 처음 / 3거래일 만에 다 내줬다 + 같은 그림"
+      ],
+      "video": "MLNfdWxTvq8"
+    },
+    {
+      "t": "inod",
+      "date": "2026.11.08",
+      "layout": "custom",
+      "palette": "teal-pink",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "전망 올렸는데 / 실적 다음 날 -4.1% 카드 / 5월엔 +86.0% + 이름표 붙은 데이터 카드 더미 → 신경망(회색 카드 = 끝난 프로그램)",
+        "같은 전망 상향 / 5월 +86.0% / 11월 -4.1% + 같은 그림"
+      ],
+      "video": "dKJa4FE723E",
+      "shorts": "trPzYOg7klA"
+    },
+    {
+      "t": "stx",
+      "date": "2026.11.08",
+      "layout": "custom",
+      "palette": "espresso-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "bigtext",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "본드는 2배 / 가격은 4주 만에 / -21.3% 큰 글자 + 자물쇠 채운 비트코인·사슬·스택스 코인 더미",
+        "새 상품 켜진 날 7번 / 5번은 / 한 달 뒤 더 낮았다 + 같은 그림"
+      ],
+      "video": "miE5i-JZjNo",
+      "note": "65회차 요청 · 몫 11-08 · INOD 청록·분홍과 겹쳐 업로드 직후 썸네일 교체"
+    },
+    {
+      "t": "rdw",
+      "date": "2026.11.09",
+      "layout": "custom",
+      "palette": "cobalt-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "수주잔고 사상 최대인데 / 실적 첫날 -19.8% 카드 / 다음 날 +16.5% + 태양 전지판 날개 위성·출하 대기 상자 위 멈춘 무인기(일시정지 표시)",
+        "같은 3분기 실적 첫날 / 1년 전 -18.1% / 올해 -19.8% + 같은 그림"
+      ],
+      "video": "mn7zZoqtvU4",
+      "note": "66회차 정규 · 몫 11-09 · 직전 INOD 청록·분홍, STX 에스프레소·주황과 다른 코발트·금색"
+    },
+    {
+      "t": "eose",
+      "date": "2026.11.09",
+      "layout": "custom",
+      "palette": "violet-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "매출 +171%인데 / 52주 최고 종가 대비 -90.9% 카드 / 주가 $1.74, 왜? + 등각 아연 배터리 큐브 3개·번개·빨간 하락선",
+        "3분기 매출의 / 82.7%는 / 자기 합작사 + 같은 그림"
+      ],
+      "video": "qDznLvFhJl8",
+      "shorts": "6DRSByhzNtY"
+    },
+    {
+      "t": "joby",
+      "date": "2026.11.09",
+      "layout": "custom",
+      "palette": "emerald-coral",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "기술주 -6.5%인 날 / 실적 뒤 2거래일 +17.4% 카드 / 새 주식 2,017만 주? + 틸트 프로펠러 전기 에어택시·블레이드 헬리콥터·상승 화살표",
+        "새 주식 팔면서 / +17.4% / 한 달 갈까? + 같은 그림"
+      ],
+      "video": "5HB8eoP2AcY"
+    },
+    {
+      "t": "rxrx",
+      "date": "2026.11.09",
+      "layout": "custom",
+      "palette": "scarlet-emerald",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "임상 호재 다음 날 / -16.7% 카드 / 같은 아침 2억 달러 공모 + 세포 사진 웰 플레이트·신경망·알약 캡슐·쌓이는 새 주식 증서·하락 화살표",
+        "호재 +11.2% / 다음 날 -16.7% / 왜 더 크게 빠졌나? + 같은 그림"
+      ],
+      "video": "bBye6yTQX90",
+      "shorts": ""
+    },
+    {
+      "t": "ionq",
+      "date": "2026.11.10",
+      "layout": "custom",
+      "palette": "magenta-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 / +23.4% 카드 / 리게티도 +19%? + 이온 트랩 사슬·스카이워터 웨이퍼·상승 화살표",
+        "실적 없는 리게티도 / +19.3% / 한 달 갈까? + 같은 그림"
+      ],
+      "video": "",
+      "shorts": ""
+    },
+    {
+      "t": "lcid",
+      "date": "2026.11.10",
+      "layout": "custom",
+      "palette": "amber-teal",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "상장 후 최저 뒤 / 두 거래일 +20.8% 카드 / 사우디 돈, 이번엔? + 전기 세단·돈다발·바닥 찍고 오르는 화살표",
+        "사우디 지원 뒤 한 달 / 7번 중 6번 / 더 낮았다 + 같은 그림"
+      ],
+      "video": "em5hhlJM2fw",
+      "shorts": "4ZEDXk6NS58"
+    },
+    {
+      "t": "iren",
+      "date": "2026.11.10",
+      "layout": "custom",
+      "palette": "blue-rose",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 / 실적 날 바닥에서 +20.0% 카드 / 다음 날은 혼자 -1.1%? + 서버 랙·옅은 비트코인 동전·상승 화살표",
+        "업종이 다 오를 때 / -1.1% / 아이렌만 왜? + 같은 그림"
+      ],
+      "video": "RKTldOsF0do",
+      "shorts": "GEsWu8Apklc"
+    },
+    {
+      "t": "nbis",
+      "date": "2026.11.11",
+      "layout": "custom",
+      "palette": "blue-rose",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "매출 +454%인데 / 6월 고점에서 -53.3% 카드 / 11월 12일 실적, 무엇을? + 구름 안 GPU 칩·서버 랙·꺾인 화살표",
+        "실적 날 +34.1% / 석 달 뒤 -48.3% + 같은 그림"
+      ],
+      "video": "7vQWEtf0iJM",
+      "shorts": "EIrGN5CpFis"
+    },
+    {
+      "t": "plug",
+      "date": "2026.11.11",
+      "layout": "custom",
+      "palette": "violet-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 / 주식 0주 팔았는데 -9.0% 카드 / 현금 사용 절반인데 왜? + 수소 탱크·연료전지 지게차·물방울 번개·꺾인 화살표",
+        "실적 앞 5일 +14.5% / 다음 날 -9.0% / 숫자는 예고 그대로 + 같은 그림"
+      ],
+      "video": "Se4OyMbH_2Q",
+      "shorts": "ZCvT4nDGITY"
+    },
+    {
+      "t": "agnc",
+      "date": "2026.11.11",
+      "layout": "custom",
+      "palette": "blue-rose",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "장부 -16.9%인데 / 다음 날 주가 +4.3%(초록) 카드 / 웃돈은 어디에 있었나? + 집·MBS 증서 더미·보증 도장·주가와 장부 저울",
+        "6월 말 배수 1.27배 / 9월 말에도 1.27배 + 같은 그림"
+      ],
+      "video": "t3iCYCzmz5A",
+      "shorts": "yOkGCQ0PYSk"
+    },
+    {
+      "t": "rum",
+      "date": "2026.11.11",
+      "layout": "custom",
+      "palette": "emerald-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "매출 +290%인데 / 8월 고점 뒤 주가 -50.0%(파랑) 카드 / 137억 달러 주문, 돈은? + 재생 화면·GPU 격자·서버 랙·250MW 번개",
+        "실적 첫날 +10% 넘은 / 한 달 뒤 3/3 + 같은 그림"
+      ],
+      "video": "JT4ubTIjjFM",
+      "shorts": "ivLiWOth6FU"
+    },
+    {
+      "t": "ceg",
+      "date": "2026.11.12",
+      "layout": "custom",
+      "palette": "navy-yellow",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "이익 +66%인데 / 실적 날 주가 +10.5%(빨강) 카드 / 같은 날 NRG도 +10.3% + 냉각탑·원자 기호·송전탑·가스 불꽃·55GW",
+        "실적 첫날 +5% 넘은 날 / 한 달 뒤 위 5/6 + 같은 그림"
+      ],
+      "video": "VkCMvnN_JWo",
+      "shorts": "NxMm73q_dUs"
+    },
+    {
+      "t": "btq",
+      "date": "2026.11.12",
+      "layout": "custom",
+      "palette": "gold-cyan",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "아이온큐 +13.4%인데 / BTQ 여덟 거래일 -12.1%(파랑) 카드 / 상장 뒤 첫 갈라짐 + 자물쇠 보안 칩·큐비트 궤도·암호 블록 사슬",
+        "보고서 4번, 20거래일 뒤 / 가장 최근은 -31.1% + 같은 그림"
+      ],
+      "video": "k7hyGKOOpHg",
+      "shorts": "FDVlcaHgs-k"
+    },
+    {
+      "t": "cbrs",
+      "date": "2026.11.13",
+      "layout": "custom",
+      "palette": "teal-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "앞선 실적 2번 급락 / 3번째 실적 뒤 시간외 +18.3%(빨강) 카드 / 이번엔 무엇이 달랐나 + 웨이퍼 칩·AI 클라우드·데이터센터 랙·상승 화살표",
+        "다음 분기 이익률 전망 / 처음으로 상승 / 47~49% + 같은 그림"
+      ],
+      "video": "GFSoL3mAjAs",
+      "shorts": "AiqkRxUzWyo"
+    },
+    {
+      "t": "qs",
+      "date": "2026.11.13",
+      "layout": "custom",
+      "palette": "plum-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "새 셀 공개한 날 / 장중 +5.6%에서 종가 -5.4%(파랑) 카드 / 다음 날 52주 최저 + 셀 단면(양극·분리막·리튬)·배터리 번개·전기차",
+        "장중 반전한 날 / 한 달 뒤 그날 위 3/11 + 같은 그림"
+      ],
+      "video": "ikNDuvCcGmc",
+      "shorts": "Lacins5K1oI"
+    },
+    {
+      "t": "asst",
+      "date": "2026.11.13",
+      "layout": "custom",
+      "palette": "charcoal-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "비트코인 -9.9% 일주일 / 그런데 주가는 -0.4%(파랑) 카드 / 버팀은 바닥일까 + 금고 문·비트코인 동전·쌓인 동전",
+        "비트코인보다 덜 내린 날 / 한 달 뒤 그날 위 0/3 + 같은 그림"
+      ],
+      "video": "vKiYq5mVQhc",
+      "shorts": "2aRglRRVWzc"
+    },
+    {
+      "t": "laes",
+      "date": "2026.11.13",
+      "layout": "custom",
+      "palette": "indigo-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "기조연설 날 -5.3% / 일주일 반등 상승분 91% 반납(파랑) 카드 / 과거 6번 그 뒤는? + 보안 칩 자물쇠 방패·전시회 마이크·되돌림 화살표",
+        "반등을 돌려준 6번 / 저점 다시 깸 6/6 + 같은 그림"
+      ],
+      "video": "fNZTziudMlY",
+      "shorts": "7ubOrKuTcjE"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "teal-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "주가 $1.76 · 현금 $1.73 / 한 주당 현금과의 차이 3센트(파랑) 카드 / 현금선은 바닥일까? + 전고체 셀·지폐 다발·현금선(점선)까지 내려온 빨강 화살표",
+        "현금선에 닿은 4번 / 곧 선을 깸 3/4 + 같은 그림"
+      ],
+      "video": "1Os_1jaoNPY",
+      "shorts": "2BrB5DXMJKc"
+    },
+    {
+      "t": "tem",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "darkgreen-magenta",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 약속은 지켰는데 / 85달러 앞에서 4거래일 -15.2%(파랑) 카드 / 올해 세 번째 벽 + DNA 나선·검사 튜브·데이터 막대",
+        "85달러를 넘은 물결 / 10거래일 뒤 하락 2/2 + 같은 그림"
+      ],
+      "video": "TufF4rDSP8Y",
+      "shorts": "h7hlXNGjQwg"
+    },
+    {
+      "t": "qxo",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "navy-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "이익은 85% 늘었는데 / 인수 1년 반, 비컨 매출 -2.4%(파랑) 카드 / 통합 성적표 + 지붕 슁글 집·단열재 롤·자재 트럭",
+        "하루 +19.2% 뒤 / 한 주당 이익 $0.13 / 1년 전 $0.14 + 같은 그림"
+      ],
+      "video": "q2xG-9ysF_Y",
+      "shorts": "zydIHarEBBM"
+    },
+    {
+      "t": "fig",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "violet-orange",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "전망 넘긴 매출인데 / 실적 다음 날 하루 -16.7%(파랑) 카드 / 4분기 이익률 6% + 브라우저 디자인 캔버스·협업 커서·AI 반짝이",
+        "실적 반응 날 뒤 20거래일 뒤 하락 4/5 + 같은 그림"
+      ],
+      "video": "jwQBYhtdpgc",
+      "shorts": "PeUps1IO138"
+    },
+    {
+      "t": "gpus",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "cyan-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "회사는 0.26달러에 산다는데 / 시장 가격은 $0.17(빨강) 카드 / 82% 웃돈의 진짜 값 + 서버 랙·비트코인 동전·번개",
+        "0.26달러 제안 뒤 4거래일 -11.5% + 같은 그림"
+      ],
+      "video": "3_ShVMxxXzU",
+      "shorts": "4epfNR8kViQ"
+    },
+    {
+      "t": "serv",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "lime-coral",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "전망 올리고 하루 +38.8% / 5거래일 뒤 -18.6%(코랄) 카드 / 전망 속 4분기 숫자 + 바퀴 6개 배달 로봇·보도블록·배달 상자",
+        "매출 전망 1,200만 달러, 주가는 5거래일 -18.6% + 같은 그림"
+      ],
+      "video": "bC4T8UCiI3g",
+      "shorts": "Ka03egQjz58"
+    },
+    {
+      "t": "rklb",
+      "date": "2026.11.14",
+      "layout": "custom",
+      "palette": "deepblue-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "매출은 전망 위로 넘었다 / 그런데 장 전 주가 -5%(앰버) 카드 / 손실표 속 일회성 비용 + 발사대 로켓·태양전지 위성·궤도선",
+        "3분기 매출 전망 상단 돌파, 수주잔고 석 달 +52% + 같은 그림"
+      ],
+      "video": "e4DpYMjv8QQ",
+      "shorts": "CeSrIoSLr0E"
+    },
+    {
+      "t": "inj",
+      "date": "2026.11.15",
+      "layout": "custom",
+      "palette": "navy-sky-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "미국 ETF 상장 9일 / 상장 날 대비 -14.9%(빨강) 카드 / 새 ETF 주식 0주 + 사슬 블록·INJ 코인·나스닥 INJC 시세판",
+        "ETF 상장 첫 주 새 주식 0주 + 같은 그림"
+      ],
+      "video": "Fmetfb7YUeU",
+      "shorts": "xqkrOe5dbR8"
+    },
+    {
+      "t": "smr",
+      "date": "2026.11.15",
+      "layout": "custom",
+      "palette": "emerald-yellow",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 +16.2% / 그런데 3거래일 만에 -14.3%(하늘색) 카드 / 원전주 중 가장 덜 올랐다 + 냉각탑·원자로 모듈 셋·송전탑",
+        "실적 날부터 6거래일 오클로 +24.6% vs SMR +6.6% + 같은 그림"
+      ],
+      "video": "Yt_TFd7kj_s",
+      "shorts": "qmpHnKG-5lY"
+    },
+    {
+      "t": "lcid",
+      "date": "2026.11.15",
+      "layout": "custom",
+      "palette": "navy-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "국부펀드 17.5억 달러 받고 / 그런데 3거래일 만에 -21.6%(빨강) 카드 / 상장 후 최저 종가 + 전기 세단·충전기·돈자루",
+        "빌려줄 돈이 몸값보다 크다: 대출 17.5억 vs 시총 11.7억 + 같은 그림"
+      ],
+      "video": "ayG8c1hAopc",
+      "shorts": "NagFE4c8Ur0"
+    },
+    {
+      "t": "joby",
+      "date": "2026.11.16",
+      "layout": "custom",
+      "palette": "violet-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 뒤 +22.4% 올랐는데 / 4거래일 만에 오른 폭 97%(앰버) 카드 / 돌려주고 실적 전 자리로 + eVTOL 기체·이착륙장·새 주식 더미",
+        "다 돌려준 두 번, 한 달 뒤 +25.4%(빨강) vs -20.5%(파랑) + 같은 그림"
+      ],
+      "video": "VImYbWn0t9U",
+      "shorts": "bpdXBRn44lM"
+    },
+    {
+      "t": "plug",
+      "date": "2026.11.16",
+      "layout": "custom",
+      "palette": "sky-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "블룸 에너지 +3.5%인 3거래일 / 공시 0건인데 -18.7%(빨강) 카드 + 수소 지게차·전해조",
+        "실적 뒤 4거래일 1.50 → 1.11달러 / 1달러까지 약 10%(라임) + 같은 그림"
+      ],
+      "video": "YvS65sXXHrk",
+      "shorts": "lViGrX7_rgE"
+    },
+    {
+      "t": "btq",
+      "date": "2026.11.16",
+      "layout": "custom",
+      "palette": "purple-mint",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "아이온큐 +9.4% 오를 때 / 판매 계약 뒤 평균 +5.3%(민트) 카드 + 자물쇠 보안 칩·원자 궤도",
+        "11.11 → 11.13 1.74 → 1.43달러 / -17.8%(빨강) + 같은 그림"
+      ],
+      "video": "wY3PD2QW0Eo",
+      "shorts": "YAvWecOcw5M"
+    },
+    {
+      "t": "iren",
+      "date": "2026.11.16",
+      "layout": "custom",
+      "palette": "navy-amber-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 다음 날 +20%, 5거래일 뒤 / 실적 날 종가 대비 +0.8%(빨강) 카드 + 서버 랙·그래픽 칩·비트코인",
+        "11.6 → 11.13 21.64 → 18.17달러 / 다 반납(빨강) + 같은 그림"
+      ],
+      "video": "C5RVB02wisg",
+      "shorts": "y8DyPbb03u4"
+    },
+    {
+      "t": "rxrx",
+      "date": "2026.11.17",
+      "layout": "custom",
+      "palette": "navy-pink-teal",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "공모 한 달 뒤, 공모가 아래 / 공모가 대비 -10.6%(빨강) 카드 + 세포 사진 격자·알약·분자",
+        "공모가 → 11.16 종가 3.25 → 2.905달러 / 바닥 4번째(빨강) + 같은 그림"
+      ],
+      "video": "fv2lJbchupw",
+      "shorts": "xI69f49kCj0"
+    },
+    {
+      "t": "laes",
+      "date": "2026.11.17",
+      "layout": "custom",
+      "palette": "navy-amber-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "23개월 만의 최저인데 / 9월 말 현금 ÷ 시가총액 1.8배(앰버) 카드 + 보안 칩 위 자물쇠 방패·양자 궤도",
+        "반등 출발점을 깼다 1.23 → 1.145달러 / 6번 중 5번(빨강) + 같은 그림 왼쪽"
+      ],
+      "video": "W3vcgET5izw",
+      "shorts": "w0l2EBi4FT8"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.11.17",
+      "layout": "custom",
+      "palette": "navy-lime-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.90배(빨강) 카드 + 배터리 셀 단면·전해질 병·번개",
+        "현금선 → 11.17 종가 1.73 → 1.56달러 / 첫 이탈(빨강) + 같은 그림"
+      ],
+      "video": "K6zvU0sUeak",
+      "shorts": "HoyGjg0pmss"
+    },
+    {
+      "t": "btq",
+      "date": "2026.11.17",
+      "layout": "custom",
+      "palette": "black-coral-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "현금은 2배가 됐는데 / 보고서 앞뒤 2거래일 -14.0%(빨강) 아이온큐와 똑같이 카드 + 보안 칩·자물쇠·큐비트 궤도",
+        "7월 뒤 판 새 주식 672만 주 / 1.43 → 1.23달러 + 같은 그림"
+      ],
+      "video": "usFP6dPpDX8",
+      "shorts": "zIE8vaqZ9rk"
+    },
+    {
+      "t": "iren",
+      "date": "2026.11.18",
+      "layout": "custom",
+      "palette": "darkteal-rose",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "회사 소식 없이 2거래일 뒤 / 실적 날 바닥 대비 -12.3%(파랑) 카드 + 서버 랙·GPU·비트코인",
+        "실적 날 바닥 → 11.17 18.03 → 15.805달러 / 바닥 아래 + 같은 그림"
+      ],
+      "video": "3c5XFLVO9sM",
+      "shorts": "2Q8aj1CO1Vk"
+    },
+    {
+      "t": "smr",
+      "date": "2026.11.18",
+      "layout": "custom",
+      "palette": "navy-teal-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "회사 값보다 현금이 더 많다 / 한 주당 현금 대비 0.94배(빨강) 카드 + 원자로 모듈·냉각탑·원자 기호",
+        "11.5 → 11.17 오클로 +16.5% / 혼자 -6.4%(빨강) + 같은 그림"
+      ],
+      "video": "CpGayNCaSHU",
+      "shorts": "YTAvSyJ9kuQ"
+    },
+    {
+      "t": "joby",
+      "date": "2026.11.18",
+      "layout": "custom",
+      "palette": "plum-orange-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실적 좋았는데 출발점 아래 / 실적 전 대비 -13.3%(파랑) 카드 + 전기 에어택시 기체·도시",
+        "실적 전 → 11.17 5.05 → 4.38달러 / 3년 반 최저 + 같은 그림"
+      ],
+      "video": "WBTk2DeqVjA",
+      "shorts": "DvdjNuXcg6M"
+    },
+    {
+      "t": "wrong",
+      "date": "2026.11.18",
+      "layout": "custom",
+      "palette": "ink-rose",
+      "variants": [
+        "card"
+      ],
+      "styles": [
+        "card"
+      ],
+      "main": "a",
+      "concepts": [
+        "김박사 월드 오답노트1 / 맞힌 횟수 0/6(빨강) 카드 + 빨간 X 여섯·초록 체크 넷 공책"
+      ],
+      "video": "CG8DRq8t1dc",
+      "shorts": "AiqKi8rECsA"
+    },
+    {
+      "t": "laes",
+      "date": "2026.11.19",
+      "layout": "custom",
+      "palette": "forest-emerald-amber",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "양자주 다 내린 날 혼자 / 11월 18일 하루 +10.6%(초록) 카드 + 보안 칩·자물쇠 방패",
+        "새 주식으로 회사를 산다는데 / 1.085 → 1.20달러 / 혼자 +10.6% + 같은 그림"
+      ],
+      "video": "2LuMR4kBlmA",
+      "shorts": "i7naDmm_8lg"
+    },
+    {
+      "t": "joby",
+      "date": "2026.11.19",
+      "layout": "custom",
+      "palette": "crimson-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "회사 소식 없이 4달러 아래 / 11월 19일 종가 3.935달러(빨강) 카드 + 전기 에어택시 기체·도시",
+        "11.9 고점 → 11.19 6.18 → 3.935달러 / 4달러 바닥? + 같은 그림"
+      ],
+      "video": "m2eALHEvv8c",
+      "shorts": "_B_fLOKVKXU"
+    },
+    {
+      "t": "plug",
+      "date": "2026.11.20",
+      "layout": "custom",
+      "palette": "cobalt-cyan-lime",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "흑자 약속한 날, 1년 반 최저 / 11월 19일 종가 1.03달러(빨강) 카드 + 수소 탱크·연료전지 스택·지게차",
+        "심포지엄 날 7번 모두 고가 아래 마감 / 1달러 앞? + 같은 그림"
+      ],
+      "video": "G4LwNPV5bB8",
+      "shorts": "bKJu4F4ECXs"
+    },
+    {
+      "t": "envx",
+      "date": "2026.11.20",
+      "layout": "custom",
+      "palette": "plum-orange-mint",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "공짜 워런트 다음 날, 상장 뒤 최저 / 11월 19일 종가 1.29달러(빨강) 카드 + 배터리 셀(Si)·드론·스마트 안경",
+        "공짜 선물 2센트 / 주가는 19센트 하락 / 상장 뒤 최저 + 같은 그림"
+      ],
+      "video": "9XvR-qdcTUE",
+      "shorts": "pB_Xv8pw-Ao"
+    },
+    {
+      "t": "apld",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "navy-gold-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "자회사 75억 달러 계약, 그 주에 / 계약 날 +1.6% · 그 뒤 -19.2%(빨강) 카드 + 데이터센터·송전탑·GPU",
+        "계약 날은 +1.6% / 급락 날은 -17.8% / 범인은 누구? + 같은 그림"
+      ],
+      "video": "1TKhp0NOkYU",
+      "shorts": "pJURdIa73h8"
+    },
+    {
+      "t": "rgti",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "navy-sky-gold",
+      "variants": [
+        "bigtext",
+        "card"
+      ],
+      "styles": [
+        "bigtext",
+        "card"
+      ],
+      "main": "a",
+      "concepts": [
+        "임원 셋이 팔았다? / 7.16달러(빨강) / 날짜는 8월에 정해져 있었다 — 그림 왼쪽(희석 냉동기·칩렛·Form 4 세금 매도 도장) 글자 오른쪽",
+        "폭락한 날의 임원 매도 신고 / 발행 주식 대비 0.012%(금색) 카드 + 같은 그림 오른쪽"
+      ],
+      "video": "c-8RHgUfHv8",
+      "shorts": "hNyCLHfSAjs"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "navy-lime-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "지금 사도 될까?(금색 큰 질문) / 주가는 한 주당 현금의 0.78배(라임 카드 오른쪽) / 1.35달러 · 1년 최저(빨강) — 배터리 셀 단면(고체 전해질 층)·전해질 통 왼쪽 아래",
+        "지금 사도 될까? / 현금보다 22% 싼 주식 / 과거 3번, 1년 뒤는? — 그림 오른쪽"
+      ],
+      "video": "JusnxXSiIVQ",
+      "shorts": "qCEWS2S2ZOk"
+    },
+    {
+      "t": "smr",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "navy-sky-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "뉴스케일 파워 SMR / 지금 사도 될까?(금색) / 주가는 현금의 0.77배(하늘색 카드) / 계약하면 11억 달러 지급?(빨강) — 수조 속 원자로 모듈 셋·송전탑",
+        "지금 사도 될까? / 현금의 0.77배 주식 / 좋은 소식에 11억 달러 / 3.36달러 · 1년 최저"
+      ],
+      "video": "LtzNialqBF8",
+      "shorts": "4RZZxOcJRnI"
+    },
+    {
+      "t": "inod",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "green-emerald-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "이노데이터 INOD / 지금 사도 될까?(금색) / 하루 전 이사가 산 값 32.09달러(에메랄드 카드) / 다음 날 28.12 · 1년 최저(빨강) — 모니터 속 라벨 상자·데이터 줄",
+        "지금 사도 될까? / 이사는 32.09에 샀다 / 매출 74%는 두 고객 / 28.12달러 · 1년 최저"
+      ],
+      "video": "fzbU46COnbk",
+      "shorts": "37U835ERqy0"
+    },
+    {
+      "t": "btq",
+      "date": "2026.11.21",
+      "layout": "custom",
+      "palette": "indigo-cyan-pink-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "BTQ 테크놀로지스 BTQ / 지금 사도 될까?(금색) / 1.03달러, 1달러 선까지 3%(하늘색 카드) / 현금 두 배는 새 주식에서(빨강) — 자물쇠 보안 칩·큐비트 궤도 오른쪽",
+        "지금 사도 될까? / 1달러 선까지 3% / 판 값 7.74 → 3.32 / 1.03달러 · 1년 최저 — 그림 왼쪽"
+      ],
+      "video": "oIrfim1wfyY",
+      "shorts": "U0hiQ823CKY"
+    },
+    {
+      "t": "pattern",
+      "date": "2026.11.22",
+      "layout": "custom",
+      "palette": "navy-gold-sky-red",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "김박사 월드 패턴결산 / 내 종목 지금 사도 될까? / 1년 최저 날, 20거래일 뒤 더 높음 49%(금색 카드) / 11종목 모두 1년 최저(빨강) — 함께 꺾인 막대 11개·다섯 칸 체크리스트·돋보기 오른쪽",
+        "지금 사도 될까? / 11종목 1년 최저 / 회사 공시 0건, 시장 -5.7% / 가르는 기준 다섯 — 그림 왼쪽"
+      ],
+      "video": "w-5VJA_M-Fc",
+      "shorts": "Sb1zuLo_RmQ"
+    },
+    {
+      "t": "be",
+      "date": "2026.11.22",
+      "layout": "custom",
+      "palette": "teal-red-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "블룸 에너지 BE / 지금 사도 될까?(금색) / 최고 실적인데 고점 대비 -58.8%(빨강 카드) / 시장의 3배로 흔들렸다(하늘색) — 발전 캐비닛·번개·서버 랙 오른쪽",
+        "지금 사도 될까? / 고점 대비 -58.8% / 매출은 1년 새 2.4배 / 142.39달러 · 하루 -15.3% — 그림 왼쪽"
+      ],
+      "video": "VdSWc4jMjzI",
+      "shorts": "OlsnDDC8b7A"
+    },
+    {
+      "t": "achr",
+      "date": "2026.11.22",
+      "layout": "custom",
+      "palette": "teal-red-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "아처 에비에이션 ACHR / 지금 사도 될까?(금색) / 실적 뒤 7거래일 연속 -40.1%(빨강 카드) / 현금은 시총의 59%(하늘색) — 도심 빌딩·에어택시 기체·착륙장 오른쪽",
+        "지금 사도 될까? / 7거래일 -40.1% / 현금의 1.7배까지 / 2.91달러 · 1년 최저 — 그림 왼쪽"
+      ],
+      "video": "76JW6fhIjEw",
+      "shorts": "yilJ_h4jx2o"
+    },
+    {
+      "t": "qbts",
+      "date": "2026.11.22",
+      "layout": "custom",
+      "palette": "indigo-red-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "디웨이브 퀀텀 QBTS / 팔까, 버틸까?(금색) / 실적 뒤 7거래일 연속 -38.8%(빨강 카드) / 하락의 84%는 시장 탓(하늘색) — 금색 층층 냉각 장치·큐비트 칩 오른쪽",
+        "팔까, 버틸까? / 7거래일 -38.8% / 8번 중 6번은 더 내렸다 / 6.52달러 · 1년 7개월 최저 — 그림 왼쪽"
+      ],
+      "video": "PVtpl9NWWQk",
+      "shorts": "ON72JcfkGi8"
+    },
+    {
+      "t": "laes",
+      "date": "2026.11.23",
+      "layout": "custom",
+      "palette": "purple-cyan-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "실스크 LAES / 판정일까지 버틸까?(금색) / 양자주 두 자릿수 오른 날 +5.5%(하늘색 카드) / 예상의 3분의 1(빨강) — 보안 칩·자물쇠 방패 오른쪽",
+        "판정일까지 버틸까? / 시장 +7.0% · 실스크 +5.5% / 급등 반납 5번 중 4번은 전날 종가 아래 — 그림 왼쪽"
+      ],
+      "video": "zbq6gLjyeVI",
+      "shorts": "jygu5uef0hs"
+    },
+    {
+      "t": "iren",
+      "date": "2026.11.23",
+      "layout": "custom",
+      "palette": "darkgreen-gold-sky",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "아이렌 IREN / 따라 사도 될까?(금색) / 급등 다음 날 · 하루 +23.9%(초록 카드) / 회사 소식 0건 · 시장의 3배(하늘색) — 서버 랙·GPU·비트코인 오른쪽",
+        "따라 사도 될까? / 하루 +23.9% / 급등 15번 중 8번은 되돌림 / 14.64달러 · 소식 0건 — 그림 왼쪽"
+      ],
+      "video": "MGh3KnhUDAM",
+      "shorts": "TDc7e9TXVm8"
+    },
+    {
+      "t": "retro",
+      "date": "2026.11.24",
+      "layout": "v7",
+      "main": "a",
+      "palette": "v7-navy",
+      "note": "11-24 소급 교체(10편): 최근 7일 롱폼 썸네일을 V7 시안 a로 thumbnails.set(숫자·문구는 기존 썸네일과 같은 사실). 11번째에서 429 'uploaded too many thumbnails recently' → 재시도 없이 중단. 원본 review/thumb_backup/<id>.jpg, spec review/thumb_backup/specs/<id>.json · 11-25 18:30Z 재시도: 새 회차 PLUG vO2GZt0GbnE·JOBY thqMQOjwjTQ 설정 + 소급 8편(10편 상한), 남은 4편은 11-26 18:30Z",
+      "swapped": {
+        "MGh3KnhUDAM": "2026-11-24T18:16:05Z",
+        "K6zvU0sUeak": "2026-11-24T18:16:20Z",
+        "usFP6dPpDX8": "2026-11-24T18:16:26Z",
+        "CpGayNCaSHU": "2026-11-24T18:16:30Z",
+        "3c5XFLVO9sM": "2026-11-24T18:16:33Z",
+        "WBTk2DeqVjA": "2026-11-24T18:16:35Z",
+        "CG8DRq8t1dc": "2026-11-24T18:16:38Z",
+        "2LuMR4kBlmA": "2026-11-24T18:16:41Z",
+        "m2eALHEvv8c": "2026-11-24T18:16:44Z",
+        "G4LwNPV5bB8": "2026-11-24T18:16:46Z",
+        "9XvR-qdcTUE": "2026-11-25T18:3xZ",
+        "1TKhp0NOkYU": "2026-11-25T18:3xZ",
+        "c-8RHgUfHv8": "2026-11-25T18:3xZ",
+        "JusnxXSiIVQ": "2026-11-25T18:3xZ",
+        "LtzNialqBF8": "2026-11-25T18:3xZ",
+        "fzbU46COnbk": "2026-11-25T18:3xZ",
+        "oIrfim1wfyY": "2026-11-25T18:3xZ",
+        "w-5VJA_M-Fc": "2026-11-25T18:3xZ"
+      },
+      "pending": [
+        "VdSWc4jMjzI",
+        "76JW6fhIjEw",
+        "PVtpl9NWWQk",
+        "zbq6gLjyeVI"
+      ]
+    },
+    {
+      "t": "plug",
+      "date": "2026.11.24",
+      "layout": "v7",
+      "palette": "navy-electricblue-red",
+      "hue": "#2563eb",
+      "variants": [
+        "band",
+        "pillar"
+      ],
+      "styles": [
+        "v7a",
+        "v7b"
+      ],
+      "main": "a",
+      "concepts": [
+        "아래 띠형: 30거래일 종가선(끝 3거래일 빨강·화살표) / 어디까지 떨어질까?(흰색) / 0.9314달러 1년 최저(빨강) — 수소 탱크·연료전지 + 병합 권한 소멸 서류 오른쪽 위",
+        "옆 기둥형: 왼쪽 어디까지 떨어질까? · 1년 최저 · 0.9314달러 / 오른쪽 수소 탱크·연료전지 크게 + 소멸 서류"
+      ],
+      "video": "vO2GZt0GbnE",
+      "shorts": "C2BhnrYGamg"
+    },
+    {
+      "t": "joby",
+      "date": "2026.11.24",
+      "layout": "custom",
+      "palette": "teal-gold",
+      "variants": [
+        "card",
+        "bigtext"
+      ],
+      "styles": [
+        "card",
+        "bigtext"
+      ],
+      "main": "a",
+      "concepts": [
+        "조비 JOBY / 임원이 판다는데?(금색) / 정책 총괄 매도 신고 5,183주(청록 카드) / 4달러는 아직 아래(빨강) — 에어택시·FORM 144 매도 예정 도장 오른쪽",
+        "임원이 판다, 팔까? / 매도 신고일 뒤 20거래일 43% vs 44% — 그림 왼쪽"
+      ],
+      "video": "thqMQOjwjTQ",
+      "shorts": "mxC999mM4Bc"
+    },
+    {
+      "t": "sldp",
+      "date": "2026.11.25",
+      "layout": "v7",
+      "palette": "navy-teal-red",
+      "hue": "#0f766e",
+      "variants": [
+        "band",
+        "pillar"
+      ],
+      "styles": [
+        "v7a",
+        "v7b"
+      ],
+      "main": "a",
+      "concepts": [
+        "아래 띠형: 34거래일 종가선(끝 빨강·화살표) / 물타기 해도 될까?(흰색) / 1.32달러 1년 최저(빨강) — 고체 전해질 셀 + '11번째' 1년 최저 서류 오른쪽 위",
+        "옆 기둥형: 왼쪽 물타기 해도 될까? · 1년 최저 · 1.32달러 / 오른쪽 고체 전해질 셀 크게 + 서류"
+      ],
+      "video": "eeJx0Qv6Pvo",
+      "shorts": "kl5hDXE4PYI"
+    },
+    {
+      "t": "clsk",
+      "date": "2026.11.25",
+      "layout": "v7",
+      "palette": "navy-red",
+      "variants": [
+        "band",
+        "pillar"
+      ],
+      "styles": [
+        "v7a",
+        "v7b"
+      ],
+      "main": "a",
+      "concepts": [
+        "아래 띠형: 34거래일 종가선(끝 빨강·화살표) / 지금 팔아야 될까?(흰색) / $5.18 실적 다음 날(빨강) — 서버 랙 + 채굴기·비트코인, 칩 AI 데이터센터",
+        "옆 기둥형: 왼쪽 지금 팔아야 될까? · 실적 다음 날 · $5.18 / 오른쪽 서버 랙·채굴기 크게"
+      ],
+      "video": "BruKjg6tsA0",
+      "shorts": "VyvLuKKhd38"
+    },
+    {
+      "t": "leu",
+      "date": "2026.11.26",
+      "layout": "v7",
+      "palette": "navy-red",
+      "variants": [
+        "band",
+        "pillar"
+      ],
+      "styles": [
+        "v7a",
+        "v7b"
+      ],
+      "main": "a",
+      "concepts": [
+        "아래 띠형: 61거래일 종가선(끝 빨강·화살표) / 오래 들고 가도 될까?(흰색) / $83.19 11월 25일 종가(빨강) — 원심분리기 여섯 대, 칩 우라늄 농축",
+        "옆 기둥형: 왼쪽 오래 들고 가도 될까? · 11월 25일 종가 · $83.19 / 오른쪽 원심분리기 크게"
+      ],
+      "video": "Jp-VjBFMzlw",
+      "shorts": "jAMH1LKYm_I"
+    },
+    {
+      "date": "2026-11-26",
+      "ticker": "LAES",
+      "slug": "laes-2026-11-7",
+      "video": "Y9LNWkLxV3Y",
+      "shorts": "OndIj2OZzzo",
+      "design": "v7 원리판(a) — 실스크 LAES / 반등 신호일까? / +9.9% 장중 -9.6%에서(초록) — 보안 칩·자물쇠 방패 + 파리 상장 12.2 카드 '제자리' 도장",
+      "set": "pending 429"
+    }
+  ],
+  "pending": [
+    {
+      "video": "eeJx0Qv6Pvo",
+      "file": "/home/claude/sldp1125/video/thumb/SLDP_thumbnail.jpg",
+      "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
+      "date": "2026-11-25"
+    },
+    {
+      "video": "kl5hDXE4PYI",
+      "file": "/home/claude/sldp1125/shorts/cover.jpg",
+      "reason": "thumbnails.set 429(한도) — 재시도 루프 없음, 나중에 tools/yt_thumb_set.py",
+      "date": "2026-11-25"
+    },
+    {
+      "video": "BruKjg6tsA0",
+      "file": "review/thumb_backup/pending/BruKjg6tsA0.jpg",
+      "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 재시도 루프 없음, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
+      "date": "2026-11-25"
+    },
+    {
+      "video": "VyvLuKKhd38",
+      "file": "review/thumb_backup/pending/VyvLuKKhd38.jpg",
+      "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 쇼츠 표지, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
+      "date": "2026-11-25"
+    },
+    {
+      "video": "Jp-VjBFMzlw",
+      "file": "review/thumb_backup/pending/Jp-VjBFMzlw.jpg",
+      "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
+      "date": "2026-11-26"
+    },
+    {
+      "video": "jAMH1LKYm_I",
+      "file": "review/thumb_backup/pending/jAMH1LKYm_I.jpg",
+      "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 한 번만 시도, 11-26 18:30Z 예약 재시도가 처리",
+      "date": "2026-11-26"
+    },
+    {
+      "video": "Y9LNWkLxV3Y",
+      "file": "review/thumb_backup/pending/Y9LNWkLxV3Y.jpg",
+      "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 1회 시도, 18:30Z 예약 재시도가 처리",
+      "date": "2026-11-26"
+    },
+    {
+      "video": "OndIj2OZzzo",
+      "file": "review/thumb_backup/pending/OndIj2OZzzo.jpg",
+      "reason": "thumbnails.set 429(한도, 11-26 18:30Z까지) — 1회 시도, 18:30Z 예약 재시도가 처리",
+      "date": "2026-11-26"
+    }
+  ]
 }
