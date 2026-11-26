@@ -42,13 +42,16 @@ for a, k, b in d['segments']:
 win = []  # (시작, 끝, 이름)
 for a, k, b in segs:
     if k and k[0] == 'AD': win.append((a, b, 'shop카드' if k[1] == 'shop' else '사이트안내(전체)'))
+    elif k and k[0] == 'AG': win.append((a, b, '영양제 중간광고'))  # 광고 표지(11-26)
     elif len(k) == 4: win.append((a, b, '사이트안내(배너)'))
 for t in d.get('shop_strip_at') or []:
     win.append((float(t), float(t) + STRIP_SEC, '쿠팡·몰 띠'))
-mid = [i for i, p in enumerate(deck.get('paras', [])) if p.get('shop') and i < len(paras) and '유료 광고' in paras[i]]
+mid = [i for i, p in enumerate(deck.get('paras', [])) if (p.get('shop') or p.get('kind') == 'ad') and i < len(paras) and '유료 광고' in paras[i]]
 for i in mid[:1]:
     xs = [(a, b) for a, k, b in segs if k and k[0] == i]
     if xs: win.append((min(x[0] for x in xs), max(x[1] for x in xs), '영양제 중간광고'))
+# 2026-11-26 광고 구분(slidekit 문단 "kind": "ad"): 앞 '광고' 표지·무음 0.8초와 뒤 무음 0.6초까지 광고 구간으로 센다(segments 'ad_kind')
+if d.get('ad_kind'): win.append((float(d['ad_kind'][0]), float(d['ad_kind'][1]), '영양제 중간광고'))
 win.sort()
 merged = []
 for a, b, n in win:

@@ -14,6 +14,27 @@ V = sys.argv[1] if len(sys.argv) > 1 else '.'
 seg = json.load(open(os.path.join(V, 'slides_out', 'segments.json'), encoding='utf-8'))
 bi = seg.get('brand_intro')
 mp = os.path.join(V, 'upload_meta.json')
+# 2026-11-26 광고 구분(slidekit 문단 "kind": "ad"): 광고 앞 0.8초·뒤 0.6초 무음만큼 뒤 챕터도 민다(segments 'ad_gaps' = [[영상 시각, 길이]…], upload_meta 'ad_gap_shift')
+def ad_gap_shift():
+    gaps = seg.get('ad_gaps') or []
+    if not gaps: return
+    meta = json.load(open(mp, encoding='utf-8'))
+    if meta.get('ad_gap_shift') == gaps: print('AD_GAP_SHIFT_OK 이미 적용', gaps); return
+    k = [0]
+    def fx(m):
+        mm, ss = int(m.group(1)), int(m.group(2)); t = mm * 60 + ss
+        if t == 0: return m.group(0)
+        # 앞 무음: 광고 챕터 자체(표지 = 광고 시작)는 그대로, 그 뒤 챕터만 민다. 뒤 무음: 광고 끝 이후 챕터를 민다(앞 무음을 더한 시각으로 비교)
+        t2 = float(t)
+        for j, (at, sec) in enumerate(gaps):
+            if t2 >= (at + 1.0 if j == 0 else at - 0.5): t2 += sec
+        if t2 == t: return m.group(0)
+        k[0] += 1; t = int(math.ceil(t2)); return f'{t // 60:02d}:{t % 60:02d}{m.group(3)}'
+    meta['description'] = re.sub(r'^(\d{1,2}):(\d{2})(\s)', fx, meta['description'], flags=re.M)
+    meta['ad_gap_shift'] = gaps
+    json.dump(meta, open(mp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print(f'AD_GAP_SHIFT_OK 챕터 {k[0]}개 (광고 무음 {gaps})')
+import atexit; atexit.register(ad_gap_shift)
 if not bi: print('BRAND_SHIFT_SKIP 인트로 없음'); sys.exit(0)
 meta = json.load(open(mp, encoding='utf-8'))
 if meta.get('brand_shift') == bi: print('BRAND_SHIFT_OK 이미 적용', bi); sys.exit(0)

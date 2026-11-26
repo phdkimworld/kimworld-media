@@ -52,6 +52,8 @@ def long(v, slides, meta):
     ads = seg.get('ad', [])
     # 브랜드 인트로(2026-11-22, brand.py — 기본 0초, 예전 방식은 훅 뒤): 목소리 없는 2.4초 워드마크 화면은 빈 화면·정지로 세지 않는다(미드롤처럼 컷 두 개로 본다)
     bi = seg.get('brand_intro'); ads_x = ads + ([[bi[0], bi[0] + bi[1]]] if bi else [])
+    # 2026-11-26 광고 구분: '광고' 표지(무음 0.8초)·광고 뒤 무음 0.6초는 의도한 숨 고르기 — 빈 화면·정지로 세지 않고 앞뒤를 컷으로 본다
+    ads_x += [[a, a + s_] for a, s_ in seg.get('ad_gaps') or []]
     in_ad = lambda t: any(a - 0.5 <= t <= b + 0.5 for a, b in ads_x)
     fr_ = gray_frames(v, 'crop=iw:ih*0.78:0:ih*0.22,')
     empty = [i for i, x in enumerate(fr_) if sum(1 for b in x if b > 90) < 6 and not in_ad(i)]

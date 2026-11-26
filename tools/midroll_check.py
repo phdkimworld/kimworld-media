@@ -8,13 +8,14 @@ quote 틀의 '?' 표시가 문구 옆에 붙었다. 이 두 가지와 health.yam
 - narration·description·pinned에 health.yaml banned·drop_words 0건, 광고 문단에 논문 용어 직역('묶음'·'코호트'·'메타분석에서'·'WMD') 0건(주식 쪽 '1년 최저 묶음'은 허용)
 - 11-22(marketing.md 6절): 문장 상한 4(health_midroll 9절 2번). 광고 문단·마무리 안내 문단('고르는 법'·'설명란 둘째 줄')·설명란/고정댓글의 💊·건강몰 줄에
   거짓 긴급성 낱말과 지어낸 후기 표지 0건(주식 문단은 보지 않음 — 오탐 방지)
+- 11-26 AD2(health_midroll 10절): 회차 data_as_of 11-26~ — kind "ad", '제품 링크는 설명란', 💊 줄 쿠팡 직접 링크·구분선·광고·파트너스 문장. 옵션 --date YYYY-MM-DD, --compat(옛 규칙만)
 """
 import json, os, re, sys
 V = sys.argv[1]
 H = '/home/user/kimworld-site/health/health.yaml'
 paras = [p for p in open(os.path.join(V, 'narration.txt'), encoding='utf-8').read().split('\n\n') if p.strip()]
 deck = json.load(open(os.path.join(V, 'slides.json'), encoding='utf-8'))
-idx = [i for i, p in enumerate(deck['paras']) if p.get('shop') and i < len(paras) and '유료 광고' in paras[i]]
+idx = [i for i, p in enumerate(deck['paras']) if (p.get('shop') or p.get('kind') == 'ad') and i < len(paras) and '유료 광고' in paras[i]]
 if not idx: print('MIDROLL_SKIP 광고 문단 없음'); sys.exit(0)
 i = idx[0]; bad = []
 sents = [s for s in re.split(r'(?<=[.?!])\s+', paras[i].strip()) if s]
@@ -58,5 +59,56 @@ for f in ('description.txt', 'pinned.txt'):
     if os.path.exists(pp):
         for l in open(pp, encoding='utf-8').read().splitlines():
             if '💊' in l and not re.search(WHO + r'|날이 많다면|많으시다면', l): bad.append(f'{f}: 💊 줄에 "누구"(조건·상황) 없음 — "<누구>이라면 — <성분>은 <뒷면 숫자> 하나만"(marketing 3절)')
+# AD2(2026-11-26 운영자 "광고는 시각적으로나 호흡으로나 딱 구분되는게 더 이목을 끌거 같아. 링크는 이제 몰이 아니라 제품 링크를 바로 달기로 했어." — health_midroll 10절)
+#   회차 날짜(리포트 data_as_of, 없으면 --date/MIDROLL_DATE) 11-26~만. 옛 회차는 그대로(--compat이면 날짜와 상관없이 옛 규칙만)
+#   ① slides.json 광고 문단 "kind": "ad"(slidekit 광고 화면·앞뒤 무음) ② 대본 광고 문단에 '제품 링크는 설명란'(4칸 ④ 행동)
+#   ③ 설명란·고정댓글·쇼츠 설명란 💊 줄: 쿠팡 제품 직접 링크(link.coupang.com), 건강몰 가이드 링크 금지, '광고' 표시, 구분선 줄 + 빈 줄로 뗀 자기 구역,
+#      리포트·텔레그램 링크와 다른 구역 ④ 글 전체에 쿠팡 파트너스 문장 ⑤ 누구(조건·상황)는 위 검사 그대로
+AD2_FROM = '2026-11-26'
+def ep_date():
+    for k, a in enumerate(sys.argv):
+        if a == '--date' and k + 1 < len(sys.argv): return sys.argv[k + 1]
+    if os.environ.get('MIDROLL_DATE'): return os.environ['MIDROLL_DATE']
+    try:
+        slug = re.search(r'drkimworld\.com/r/([a-z0-9\-]+)/', open(os.path.join(V, 'description.txt'), encoding='utf-8').read()).group(1)
+        site = os.environ.get('KW_SITE', '/home/user/kimworld-site')
+        fm = open(os.path.join(site, 'content', 'reports', slug + '.md'), encoding='utf-8').read(3000)
+        return re.search(r'^data_as_of:\s*["\']?(\d{4}-\d\d-\d\d)', fm, re.M).group(1)
+    except Exception:  # 리포트가 아직 사이트에 없으면(녹음 전) 대본 파일 날짜
+        import datetime as _dt
+        return _dt.datetime.fromtimestamp(os.path.getmtime(os.path.join(V, 'narration.txt'))).strftime('%Y-%m-%d')
+DIV = re.compile(r'^\s*(?:[─━—–\-=·]{3,}|[─━—–\-]+\s*광고\s*[─━—–\-]+)\s*$')
+def ad2_text(name, txt):
+    out = []; L = txt.split('\n')
+    pills = [k for k, l in enumerate(L) if '💊' in l]
+    if not pills: out.append(f'{name}: 💊 줄 없음'); return out
+    for k in pills:
+        l = L[k]
+        if 'health.drkimworld.com' in l: out.append(f'{name}: 💊 줄에 건강몰 가이드 링크 — 쿠팡 제품 직접 링크로(tools/product_link.py)')
+        if not re.search(r'https://link\.coupang\.com/(a|re)/', l): out.append(f'{name}: 💊 줄에 쿠팡 제품 직접 링크(link.coupang.com) 없음')
+        if '광고' not in l: out.append(f"{name}: 💊 줄에 '광고' 표시 없음")
+        j = k - 1
+        while j >= 0 and L[j].strip() and not DIV.match(L[j]): j -= 1  # 💊 구역 첫 줄 위로
+        if j < 0 or not DIV.match(L[j]): out.append(f'{name}: 💊 구역 앞에 구분선 줄 없음("─────" 또는 "— 광고 —")')
+        else:
+            if j > 0 and L[j - 1].strip(): out.append(f'{name}: 구분선 줄 앞에 빈 줄 없음(리포트 링크와 떼기)')
+            blk_end = k
+            while blk_end + 1 < len(L) and L[blk_end + 1].strip(): blk_end += 1
+            blk = '\n'.join(L[j + 1:blk_end + 1])
+            if re.search(r'drkimworld\.com/r/|텔레그램|t\.me/', blk): out.append(f'{name}: 💊 구역 안에 리포트·텔레그램 링크 — 빈 줄로 뗀다')
+    if not re.search(r'쿠팡 ?파트너스 활동의 일환', txt): out.append(f'{name}: 쿠팡 파트너스 문장("…쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.") 없음')
+    return out
+DATE = ep_date()
+NEW = '--compat' not in sys.argv and DATE is not None and DATE >= AD2_FROM
+if NEW:
+    if deck['paras'][i].get('kind') != 'ad': bad.append('slides.json 광고 문단에 "kind": "ad" 없음(광고 화면·앞뒤 무음 — slidekit)')
+    if not re.search(r'제품 링크는 설명란', paras[i]): bad.append("광고 문단 행동 문장 — '<조건> 맞는 제품 링크는 설명란 둘째 줄'(4칸 ④)")
+    for f in ('description.txt', 'pinned.txt'):
+        pp = os.path.join(V, f)
+        if os.path.exists(pp): bad += ad2_text(f, open(pp, encoding='utf-8').read())
+    sm = os.path.join(os.path.dirname(os.path.abspath(V)), 'shorts', 'upload_meta.json')
+    if os.path.exists(sm):
+        try: bad += ad2_text('쇼츠 설명란', json.load(open(sm, encoding='utf-8')).get('description', ''))
+        except Exception as e: bad.append(f'쇼츠 upload_meta 읽기 실패: {e}')
 if bad: print('MIDROLL_FAIL p%d · ' % (i + 1) + ' · '.join(bad)); sys.exit(1)
-print(f'MIDROLL_OK p{i+1} 문장 {len(sents)} · quote 0 · 위치 약 {pos:.0%} · 금지 낱말 0 · 수요·공급 OK · 긴급성·후기 표지 0(검사 {len(zone)}곳)')
+print(f'MIDROLL_OK p{i+1} 문장 {len(sents)} · quote 0 · 위치 약 {pos:.0%} · 금지 낱말 0 · 수요·공급 OK · 긴급성·후기 표지 0(검사 {len(zone)}곳) · ' + (f'AD2 제품 직접 링크·구분선·광고 화면 OK({DATE})' if NEW else f'AD2 대상 아님(회차 {DATE or "날짜 모름"}{" · --compat" if "--compat" in sys.argv else ""})'))

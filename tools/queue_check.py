@@ -125,6 +125,51 @@ for f in sys.argv[1:]:
                 if not str(m.get('cover', '')).endswith('cover_ig.jpg'): bad.append(f'{f}: [S1] 인스타 릴스 표지는 격자용 cover_ig.jpg(python3 tools/shorts/reel_cover.py shorts.json static/social/<slug>/cover_ig.jpg)')
                 if m.get('trial'): bad.append(f'{f}: [S1] 체험 릴스(trial) 금지 — 팔로워 피드·프로필 격자에 안 보인다')
             if c == 'facebook' and len(re.findall(r'drkimworld\.com/r/', cap)) > 1: bad.append(f'{f}: [S1] 페이스북 캡션 리포트 링크 {len(re.findall(r"drkimworld[.]com/r/", cap))}개 — 그 회차 리포트 1개만, 관련 리포트는 첫 댓글(replies)로')
+# AD2(2026-11-26 운영자 "광고는 시각적으로나 호흡으로나 딱 구분되는게 더 이목을 끌거 같아. 링크는 이제 몰이 아니라 제품 링크를 바로 달기로 했어.") — publish_at 11-26~
+#   💊 문단: ① 구분선 줄(─── 또는 '— 광고 —')로 시작하거나 바로 앞 문단이 구분선, 앞뒤 빈 줄 ② 그 회차 이야기 뒤(첫 문단 아님), 리포트·텔레그램 링크와 다른 문단
+#   ③ 누구(조건·상황) ④ '광고' 표시 + 쿠팡 파트너스 문장("쿠팡 파트너스 활동의 일환으로") ⑤ 링크는 쿠팡 제품 직접(link.coupang.com) — 건강몰 가이드 링크 금지.
+#   인스타 캡션은 URL 금지라 ⑤ 대신 링크 없음(프로필 링크 안내만). 답글(Threads 둘째 글)도 본다.
+AD2_FROM = '2026-11-26'
+DIV = re.compile(r'^\s*(?:[─━—–\-=·]{3,}|[─━—–\-]+\s*광고\s*[─━—–\-]+)\s*$')
+WHO_S = r'분이라면|분들은|하시는 분|드시는 분|보시는 분|이라면|이시라면|신 분|날이 많다면|많으시다면'
+def ad2_problems(name, txt, ig=False):
+    out = []
+    paras = [x for x in re.split(r'\n\s*\n', txt.strip())]
+    for k, para in enumerate(paras):
+        if '💊' not in para: continue
+        lines = [l for l in para.split('\n') if l.strip()]
+        body = [l for l in lines if not DIV.match(l)]
+        has_div = (lines and DIV.match(lines[0])) or (k > 0 and all(DIV.match(l) for l in paras[k - 1].split('\n') if l.strip()))
+        if not has_div: out.append(f'{name}: [AD2] 💊 문단 앞에 구분선 줄 없음 — 빈 줄 + "─────" 또는 "— 광고 —" 줄 + 빈 줄 없이 💊 문단')
+        if k == 0 or (k == 1 and has_div and not (lines and DIV.match(lines[0]))): out.append(f'{name}: [AD2] 💊 문단이 맨 앞 — 그 회차 이야기 뒤에 둔다')
+        if re.search(r'drkimworld\.com/r/|텔레그램|t\.me/|@drkimworld', '\n'.join(body)): out.append(f'{name}: [AD2] 💊 문단 안에 리포트·텔레그램 링크 — 링크 목록과 다른 문단으로')
+        if not re.search(WHO_S, para): out.append(f'{name}: [AD2] 💊 문단에 "누구"(조건·상황) 없음')
+        if '광고' not in para: out.append(f"{name}: [AD2] 💊 문단에 '광고' 표시 없음")
+        if not re.search(r'쿠팡 ?파트너스 활동의 일환', txt): out.append(f'{name}: [AD2] 쿠팡 파트너스 문장("이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.") 없음')
+        if 'health.drkimworld.com' in para: out.append(f'{name}: [AD2] 💊 문단에 건강몰 가이드 링크 — 11-26부터 쿠팡 제품 직접 링크(tools/product_link.py)')
+        if ig:
+            if 'http' in para: out.append(f'{name}: [AD2] 인스타 캡션 💊 문단에 URL(인스타는 프로필 링크 안내만)')
+        elif not re.search(r'https://link\.coupang\.com/(a|re)/', para): out.append(f'{name}: [AD2] 💊 문단에 쿠팡 제품 직접 링크(link.coupang.com) 없음')
+    return out
+def ad2_date(d):
+    # 회차 날짜 = 글이 가리키는 리포트 data_as_of(사이트 content/reports), 못 찾으면 publish_at — 옛 회차 글은 늦게 올라가도 옛 규칙
+    allt = json.dumps(d, ensure_ascii=False)
+    for slug in re.findall(r'drkimworld\.com/r/([a-z0-9\-]+)/', allt)[:1]:  # 첫 리포트 링크 = 그 회차(관련 리포트 링크는 뒤에)
+        try:
+            fm = open(os.path.join(os.environ.get('KW_SITE', '/home/user/kimworld-site'), 'content', 'reports', slug + '.md'), encoding='utf-8').read(3000)
+            return re.search(r'^data_as_of:\s*["\']?(\d{4}-\d\d-\d\d)', fm, re.M).group(1)
+        except Exception: pass
+    return str(d.get('publish_at', ''))[:10]
+for f in sys.argv[1:]:
+    try: d = json.load(open(f, encoding='utf-8'))
+    except Exception: continue
+    if ad2_date(d) < AD2_FROM: continue
+    ig_only = d.get('channels') == ['instagram']
+    srcs = [('본문', d.get('text', ''), ig_only)] + [(f'답글{i + 1}', r.get('text', ''), False) for i, r in enumerate(d.get('replies', []))]
+    srcs += [(f'channel_text.{c}', v, c == 'instagram') for c, v in (d.get('channel_text') or {}).items()]
+    srcs += [(f'captions.{c}', v, c == 'instagram') for c, v in (d.get('captions') or {}).items()]
+    for nm, txt, ig in srcs:
+        bad += ad2_problems(f'{f} {nm}', str(txt or ''), ig)
 # 쇼츠 표지(cover) 빈 화면 검사(SMR 60회차: ffmpeg -ss 1.5 프레임이 4KB 빈 화면) — 릴스 cover는 15KB 이상이고 밝기 변화가 있어야 한다
 SITE = os.environ.get('KW_SITE', '/home/user/kimworld-site')
 for f in sys.argv[1:]:
