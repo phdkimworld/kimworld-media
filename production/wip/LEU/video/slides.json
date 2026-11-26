@@ -8,14 +8,7 @@
  "next_text": "뉴스케일(SMR) 편 · 지난 센트러스 편 · 설명란 링크",
  "shop_strip": "오메가3 500mg 제품 · 설명란 둘째 줄",
  "outro_promo": [
-  {
-   "tag": "광고",
-   "title": "오메가3 제품 링크",
-   "sub": "EPA+DHA 하루 500mg 이상",
-   "url": "link.coupang.com/a/iZktLrbsoS",
-   "note": "쿠팡 파트너스",
-   "color": "#3DDC97"
-  },
+  "health",
   "scorecard"
  ],
  "midroll": "../kit/leu_youtube_midroll_1920x1080.png",
