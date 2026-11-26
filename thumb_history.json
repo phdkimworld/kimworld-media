@@ -3457,6 +3457,12 @@
    "file": "review/thumb_backup/pending/BruKjg6tsA0.jpg",
    "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 재시도 루프 없음, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
    "date": "2026-11-25"
+  },
+  {
+   "video": "VyvLuKKhd38",
+   "file": "review/thumb_backup/pending/VyvLuKKhd38.jpg",
+   "reason": "thumbnails.set 429(한도, 11-25 18:30Z 이동 창) — 쇼츠 표지, 11-26 18:30Z 예약 재시도가 새 회차 몫으로 처리",
+   "date": "2026-11-25"
   }
  ]
 }
