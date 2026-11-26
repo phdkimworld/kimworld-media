@@ -3345,7 +3345,7 @@
    "layout": "v7",
    "main": "a",
    "palette": "v7-navy",
-   "note": "11-24 소급 교체(10편): 최근 7일 롱폼 썸네일을 V7 시안 a로 thumbnails.set(숫자·문구는 기존 썸네일과 같은 사실). 11번째에서 429 'uploaded too many thumbnails recently' → 재시도 없이 중단. 원본 review/thumb_backup/<id>.jpg, spec review/thumb_backup/specs/<id>.json · 11-25 18:30Z 재시도: 새 회차 PLUG vO2GZt0GbnE·JOBY thqMQOjwjTQ 설정 + 소급 8편(10편 상한), 남은 4편은 11-26 18:30Z",
+   "note": "11-24 소급 교체(10편): 최근 7일 롱폼 썸네일을 V7 시안 a로 thumbnails.set(숫자·문구는 기존 썸네일과 같은 사실). 11번째에서 429 'uploaded too many thumbnails recently' → 재시도 없이 중단. 원본 review/thumb_backup/<id>.jpg, spec review/thumb_backup/specs/<id>.json · 11-25 18:30Z 재시도: 새 회차 PLUG vO2GZt0GbnE·JOBY thqMQOjwjTQ 설정 + 소급 8편(10편 상한), 남은 4편은 11-26 18:30Z · 11-26 운영자 \"지나간건 썸네일 안 고쳐도 되니까\" → 남은 소급 폐기",
    "swapped": {
     "MGh3KnhUDAM": "2026-11-24T18:16:05Z",
     "K6zvU0sUeak": "2026-11-24T18:16:20Z",
@@ -3366,7 +3366,7 @@
     "oIrfim1wfyY": "2026-11-25T18:3xZ",
     "w-5VJA_M-Fc": "2026-11-25T18:3xZ"
    },
-   "pending": [
+   "dropped": [
     "VdSWc4jMjzI",
     "76JW6fhIjEw",
     "PVtpl9NWWQk",
