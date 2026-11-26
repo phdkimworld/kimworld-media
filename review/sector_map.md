@@ -23,6 +23,7 @@
 | IREN | 아이렌 | AI 데이터센터·채굴 | WGMI | CIFR,APLD | BTC | data center;digital asset;export controls artificial intelligence | bitcoin;tariff;export control;power;China;Microsoft | |
 | INOD | 이노데이터 | AI 데이터 | IGV | SOUN | - | artificial intelligence | artificial intelligence;regulation;tariff;customer concentration | |
 | APLD | 어플라이드 디지털 | AI 데이터센터 | WGMI | IREN,CORZ | BTC | data center;export controls artificial intelligence | data center;tariff;power;export control;CoreWeave | |
+| CLSK | 클린스파크 | AI 데이터센터·채굴 | WGMI | IREN,APLD,CORZ | BTC | data center;digital asset | bitcoin;data center;power;ERCOT;convertible | |
 | RGTI | 리게티 | 양자 | QTUM | IONQ,QBTS | - | quantum computing;quantum information science | quantum;export control;China;Department of Energy;DARPA | |
 | QBTS | 디웨이브 퀀텀 | 양자 | QTUM | IONQ,RGTI | - | quantum computing;quantum information science;CHIPS and Science Act | quantum;export control;China;tariff;Department of Commerce | |
 | ENVX | 에노빅스 | 배터리 | LIT | SLDP,QS | - | battery;critical minerals | battery;tariff;China;Malaysia;Inflation Reduction Act | |
