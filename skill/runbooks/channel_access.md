@@ -107,7 +107,9 @@
   # 토큰 확인(결과는 주석 '토큰 정상: @drkimworld')
   gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=ping"
   # 한 글 게시(500자 이내, 운영자가 본문을 승인한 글만)
-  gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=post" -f "inputs[text]=..."
+  gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=post" -f "inputs[text]=..." -f "inputs[reply]=..."   # reply(내 답글)는 비워도 됨
+  # 예비: 건강몰 가이드로 자동 작성한 글 미리보기/게시(정기 실행 없음 — 정기 게시는 건강월드 매일 운영 4.17)
+  gh api -X POST repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/dispatches -f ref=main -f "inputs[mode]=preview"
   RID=$(gh api "repos/phdkimworld/kimworld-site/actions/workflows/threads-drkim.yml/runs?per_page=1" -q '.workflow_runs[0].id')
   for j in $(gh api repos/phdkimworld/kimworld-site/actions/runs/$RID/jobs -q '.jobs[].id'); do gh api repos/phdkimworld/kimworld-site/check-runs/$j/annotations -q '.[].message'; done
   ```
