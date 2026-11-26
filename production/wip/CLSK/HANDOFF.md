@@ -1,6 +1,6 @@
 # HANDOFF — CLSK 11-25 요청 1편 (clsk1125, 122회차 A그룹) · 2단계 갱신 2026-11-25 23:10Z
 
-## 지금 상태: ② 리포트 발행·녹음 끝 → 합성(chain_long) 진행 중
+## 지금 상태: ③ 업로드·답글·기록 끝 → 사이트 push(youtube_id·SNS 대기열) 진행 중
 - 11/25 종가 **5.18**(+1.3%): 야후 regularMarketPrice(21:00:02Z) = 나스닥 info 'Closed at 4:00 PM' 5.18, 1분봉 15:59 5.17·16:00 뒤 5.23(시간외). historical 11/25 행은 16:12 ET에 없음. 칸 = 4.89~5.63(갈래 2). 같은 무리 QQQ 633.93·IREN 12.85·APLD 12.29·CORZ 10.82(표엔 안 넣음). EDGAR 11/24 3건 뒤 새 제출 없음 → research/events.md 6절
 - 매매 질문 H1 그대로(11/25 > 4.60이라 E8 조건 아님). 제목 `클린스파크(CLSK) 지금 팔아야 될까? 실적 다음 날 5.18달러, 같은 날 판매 창구를 열었다 #CLSK` ANGLE_TITLE_OK
 - 리포트 https://drkimworld.com/r/clsk-2026-11/ — 사이트 main 4601090(모델 심사 10개 중 맞는 지적 반영: 내부 용어·공시 표현·22억 7,600만 통일·위험 문단). EASY_OK·CLOSE_OK. 사이트 worktree /home/claude/site-clsk
@@ -15,8 +15,9 @@
 - 기록 media d28f6b6: STATE·experiments 122·thumb_history·improvements·sub_test(B 393초)·followups(12-02·12-23)·ad_log H3 290초·angle_log H1·ledger·predictions/CLSK.md·sector_map CLSK·filings S-3ASR
 
 ## 진행 중 (마지막)
-- 사이트 push: worktree /home/claude/site-clsk 로컬 커밋 2개(youtube_id 연결 38caeca + SNS 대기열 4건 static/social/clsk-2026-11·social/queue/clsk-2026-11*.json)를 `bin/site_pub.sh`가 test_build·build --strict 뒤 site_push.sh 중 → report/site_pub3.log 끝 SITE_PUSHED 확인
-  - 끊겼으면: `cd /home/claude/site-clsk && bash /home/claude/clsk1125/bin/site_pub.sh "SNS 대기열·youtube_id" social/queue` (커밋 없음이면 그대로 테스트·push). worktree가 사라졌으면 새 worktree에서 youtube_id: "BruKjg6tsA0" 넣고, `KW_QUEUE=<worktree>/social/queue python3 sns/mk_queue.py <ET 지금>` + static/social/clsk-2026-11/(CLSK_shorts.mp4·cover.jpg·cover_ig.jpg는 shorts/ 또는 wip) → queue_check → push
+- 사이트 0556efd: youtube_id(BruKjg6tsA0) 연결 + SNS 대기열 4건 push 완료
+- 운영자 11-26 광고 분리 지시: 아직 안 나간 Threads 둘째 글(publish_at 11-25 22:04 ET = 11-26 03:04Z)의 💊 블록을 '— 광고 —' 구분선·빈 줄로 링크 목록과 떼고 쿠팡 파트너스 고지 한 번 넣음(QUEUE_OK). **site-clsk 로컬 커밋 b4262a3(origin/main 3abf976 위), 아직 push 안 됨** — 원격에 빌드 관련 변경이 계속 들어와 site_push.sh가 exit 3 → 재검사를 되풀이하다 백그라운드 시간 제한으로 끊김. 남은 일: `cd /home/claude/site-clsk && bash /home/claude/clsk1125/bin/site_pub.sh "재시도" social/queue/clsk-2026-11-th2.json`(test_build 약 35분) — 03:04Z 전에 못 올라가면 둘째 글은 옛 형식(💊 자기 문단, 가이드 링크)으로 게시됨(공개 뒤에는 고치지 않음).
+  - 직접 상품 링크: health/catalog.json `best`가 비어 있고, probiotics 후보 이름에 '비피더스균 락티스'가 확인되는 상품이 없어 가이드 링크 유지(검증 안 된 상품 링크를 넣지 않음). 롱폼·쇼츠 설명란·고정댓글은 이미 공개 → 손대지 않음. 영상 합성도 끝나 광고 앞뒤 쉼은 다음 회차부터.
 - 그 뒤 정리: `cd /home/user/kimworld-media && git rm -rq production/wip/CLSK && git -c user.name=phdkimworld commit -m "CLSK wip 정리" && git push origin HEAD:claude/kim-world-stock-studio-laes-ovy09b`, `git -C /home/user/kimworld-site worktree remove --force /home/claude/site-clsk`
 
 ## 재시작 복구
