@@ -20,6 +20,7 @@
 | JOBY | 조비 | eVTOL | ITA,ARKQ | ACHR | - | powered-lift;advanced air mobility;electric vertical takeoff | FAA;certification;tariff;Department of Defense;China;Toyota | eVTOL 전용 ETF 없음 → ITA(항공우주·방산) |
 | ACHR | 아처 | eVTOL | ITA,ARKQ | JOBY | - | powered-lift;advanced air mobility;electric vertical takeoff | FAA;certification;tariff;Department of Defense;export control;Boeing | eVTOL 전용 ETF 없음 → ITA(항공우주·방산) |
 | SMR | 뉴스케일 | 원전 | URA,NLR | OKLO | - | small modular reactor;nuclear reactor licensing;advanced reactor | NRC;Nuclear Regulatory Commission;Department of Energy;tariff;uranium;TVA | |
+| LEU | 센트러스 에너지 | 원전·우라늄 농축 | URA,NLR | SMR,OKLO,CCJ | - | uranium enrichment;HALEU;centrifuge | Department of Energy;NRC;Russian uranium;import ban;waiver;HALEU;tariff | |
 | IREN | 아이렌 | AI 데이터센터·채굴 | WGMI | CIFR,APLD | BTC | data center;digital asset;export controls artificial intelligence | bitcoin;tariff;export control;power;China;Microsoft | |
 | INOD | 이노데이터 | AI 데이터 | IGV | SOUN | - | artificial intelligence | artificial intelligence;regulation;tariff;customer concentration | |
 | APLD | 어플라이드 디지털 | AI 데이터센터 | WGMI | IREN,CORZ | BTC | data center;export controls artificial intelligence | data center;tariff;power;export control;CoreWeave | |
