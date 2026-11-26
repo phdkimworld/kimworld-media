@@ -7,6 +7,7 @@
 |---|---|---|---|---|
 | 유튜브 @drkimworld | `YT_CLIENT_ID`·`YT_CLIENT_SECRET`·`YT_REFRESH_TOKEN` (media·site 저장소 + 클라우드 환경 변수) | 업로드·답글·재생목록·통계(미디어 tools/yt_*.py, 사이트 comment-ai·weekly-ai·yt-shop) | 갱신 토큰은 오래 감. 동의 화면 '테스트'면 7일 | 아래 1~6장 |
 | Threads | `THREADS_ACCESS_TOKEN`·`THREADS_USER_ID` (site) | 게시·댓글 목록·답글(social.yml·social-comments.yml·comment-ai.yml·weekly-ai.yml) | 장기 토큰 60일 → `token-refresh.yml`이 매달 1·15일 자동 갱신 | 7장 |
+| Threads 두 번째(@drkimworld, 2026-11-25) | `DRKIM_THREADS_ACCESS_TOKEN` (site) | 토큰 확인·한 글 게시(`threads-drkim.yml` mode ping/post) — 용도(어떤 글을 올릴지)는 운영자가 정한 뒤 붙인다 | 60일 → `token-refresh.yml`이 같이 갱신 | 7장 |
 | 인스타그램 | `IG_ACCESS_TOKEN`·`IG_USER_ID` (site) | 릴스·카드 게시·댓글(social.yml·social-comments.yml·weekly-ai.yml), 권한 확인 `ig-perm-check.yml` | 60일 → 같은 자동 갱신 | 7장 |
 | 페이스북 페이지 | `FB_PAGE_TOKEN`·`FB_PAGE_ID` (site) | 릴스·카드 게시·댓글(social.yml·social-comments.yml·comment-ai.yml·weekly-ai.yml) | 시스템 사용자(kimworld-bot) 토큰 — 만료 없음 | 7장 |
 | 블로거 | `BLOGGER_REFRESH_TOKEN`·`BLOGGER_CLIENT_SECRET`(또는 `GOOGLE_CLIENT_ID`·`GOOGLE_CLIENT_SECRET`) (site) | 리포트 게시(blogger.yml) | Google 갱신 토큰(유튜브와 같은 규칙) | 8장, 사이트 docs/blogger-guide.md |
