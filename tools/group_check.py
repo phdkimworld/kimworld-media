@@ -28,7 +28,7 @@ _n = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__fil
 if _n.returncode: bad += [l for l in _n.stdout.split('\n') if l.startswith('NUMSPEAK ')]
 # 'AI 느낌' 틀(문단 끝 질문 반복·'그렇다면'·상투어) — SKILL 8.0.2, 74회차 PLUG
 _f = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), sys.argv[1]], capture_output=True, text=True)
-if _f.returncode: bad += [l for l in _f.stdout.split('\n') if l.startswith('AIFEEL ')]
+if _f.returncode: bad += ['AIFEEL ' + l for l in _f.stdout.split('\n') if l.strip() and not l.startswith('WARN ')]  # 11-27: ai_feel_check 줄은 'AIFEEL '로 시작하지 않아 지금까지 실패가 빠져 있었음
 # 숫자+단위 뒤 조사 받침(76회차 RUM '십육 회이' — 일괄 치환 뒤 녹음 직전까지 남음)
 _j = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'josa_check.py'), sys.argv[1]], capture_output=True, text=True)
 if _j.returncode: bad += [l for l in _j.stdout.split('\n') if l.startswith('JOSA ')]

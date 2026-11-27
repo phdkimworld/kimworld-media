@@ -10,9 +10,12 @@ SKILL 0.2(R1.5 '쓰면서 멈칫할 곳을 없앤다'를 모든 출력물에)의
   DOTS   가운뎃점 나열 '·'가 3개 이상 들어간 문장: 0개(해시태그 줄·챕터 줄·핵심 요약 한 줄은 예외로 두지 않는다 — 문장으로 나눈다).
   LONG   공백 포함 90자 넘는 문장 비율 15% 이하(대본은 귀로 듣는 글이라 같은 기준).
   CALC   '(1+2)'·'A+B=' 처럼 기호로 계산을 대신한 곳: 0개.
+  AITELL tools/ai_tells.py 'AI 티' 어휘(이중 피동·자기 이야기·과장어·챗봇 잔재 등, 11-27 taste.md 13절): 0개.
 끝 줄에 PLAIN_OK 또는 PLAIN_FAIL.
 """
 import sys, os, re, json, glob
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ai_tells import STOCK2
 
 SPLIT = re.compile(r'(?<=[.!?。])\s+|\n+')
 URL = re.compile(r'https?://\S+')
@@ -55,9 +58,11 @@ for f in files(sys.argv[1:]):
     calc = [s for s in S if re.search(r'\(\s*\d[\d.,]*\s*[+×x*]\s*\d|\d\s*\+\s*\d[\d.,]*\s*=', s)]
     long_ = [s for s in S if len(s) > 90]
     lr = len(long_) / len(S)
-    bad = bool(arrow or dots or calc or lr > 0.15)
+    aitell = [(m.group(0), why) for s in S for rx, why in STOCK2 for m in [re.search(rx, s)] if m]  # 11-27 AI 티 어휘(ai_tells.py, taste.md 13절)
+    bad = bool(arrow or dots or calc or lr > 0.15 or aitell)
     ok &= not bad
     print(f"{'FAIL' if bad else 'ok  '} {f}: 문장 {len(S)} · 화살표 {len(arrow)} · 가운뎃점 나열 {len(dots)} · 기호 계산 {len(calc)} · 90자 초과 {len(long_)}({lr:.0%})")
+    for w, why in aitell[:3]: print(f"   AITELL: '{w}' — {why}")
     for tag, L in (('ARROW', arrow), ('DOTS', dots), ('CALC', calc)):
         for s in L[:3]: print(f"   {tag}: {s[:80]}")
     if lr > 0.15:

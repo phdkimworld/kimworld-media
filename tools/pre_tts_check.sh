@@ -28,5 +28,6 @@ T=$(python3 -c "import json;print(json.load(open('slides.json'))['ticker'])" 2>/
 [ -f ../report/chart.json ] && [ -f "../research/$T.json" ] && c chart_check python3 $M/chart_check.py ../report/chart.json "../research/$T.json"
 c thumb_name_check python3 $M/thumb_name_check.py thumb/custom
 c thumb_overflow_check python3 $M/thumb_overflow_check.py thumb/custom
+c thumb_taste_check python3 $M/thumb_taste_check.py thumb/custom  # 11-27 taste.md 13절: 글자 그라데이션·글자색 4계열·느낌표
 [ -z "$F" ] && { echo "PRE_OK ${N}개"; exit 0; }
 echo "PRE_FAIL $F (자세한 건 $L — 해당 '== 이름' 아래만 grep -A8로 본다)"; exit 1

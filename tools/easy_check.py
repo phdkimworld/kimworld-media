@@ -583,7 +583,7 @@ if _sn:
 # 86회차 FIG: 리포트에도 'AI 느낌' 틀 검사(ai_feel_check)를 함께 — 지금까진 대본(group_check)만 돌았음
 import subprocess as _sp2
 _af = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ai_feel_check.py'), p], capture_output=True, text=True)
-if _af.returncode: bad += ['AIFEEL ' + l for l in _af.stdout.split('\n') if l.strip()]
+if _af.returncode: bad += ['AIFEEL ' + l for l in _af.stdout.split('\n') if l.strip() and not l.startswith('WARN ')]
 # 시장·거시·정책 층(운영자 11-22 "시황이나 거시경제 지정학 등 관련된 모든 통찰", SKILL 3.6): data_as_of 11-23~ 리포트만, 지난 리포트 소급 없음
 _mc = _sp2.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'macro_check.py'), 'report', p], capture_output=True, text=True)
 for _l in _mc.stdout.split('\n'):
