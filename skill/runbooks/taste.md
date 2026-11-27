@@ -248,6 +248,8 @@
 | unslop (github.com/heydamir/unslop) | AI가 만든 듯한 웹 화면을 진단하고 다시 디자인하는 순서, signs.md 티 목록 | CC BY 4.0, Damir Sokolovsky (@heydamir) |
 | im-not-ai (github.com/epoko77-ai/im-not-ai) | 한국어 AI 글 윤문: 티 분류표(A~J), 사람 글 오탐률을 잰 어휘표, 과윤문 막는 장치 | MIT, Copyright (c) 2026 epoko77-ai |
 
+건강 채널 글은 같은 날 따로 만든 `tools/kr_style_check.py`(im-not-ai 규칙, skill/health/HEALTH_CHANNEL.md)가 본다. 이 절의 검사는 주식 채널 대본·리포트·설명·SNS·화면용이다.
+
 이 절의 규칙 문장은 위 원본을 각색한 것이다. CC BY 4.0인 unslop 부분은 출처 표기를 지우지 않는다.
 
 **한국어 글 (검사로 옮김)**
