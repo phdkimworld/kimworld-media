@@ -206,6 +206,7 @@ mq = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspat
 bad += [l.strip() for l in mq.splitlines() if l.startswith('MACRO_THREADS')]
 # 초반 30분 내 댓글 self_reply(2026-11-26 운영자 공유 'Threads 첫 30분' 팁, marketing.md 3절): 있으면 150자·링크 없음·권유·베팅·AI 언급 없음, 질문으로 끝
 # 같은 규칙이 사이트 scripts/social_publish.py self_reply_problems 에도 있다(게시 단계에서 다시 막음)
+SIGN = '— 김박사 월드 · 공시로 읽는 미국 주식'
 SR_BAN = [(r'https?://|www\.|\.com\b|t\.me/', '링크'), (r'매수|매도|사세요|파세요|담으세요|줍줍|물타기|손절|익절|목표\s*(가|주가)', '매매 권유·목표가'),
           (r'수익\s*(보장|약속|확실)|확실한\s*수익|무조건|급등\s*확정|원금', '수익 약속'), (r'베팅|배팅|올인|몰빵|도박|대박|떡상|떡락|존버', '베팅 표현'),
           (r'(?<![A-Za-z])AI(?![A-Za-z])|인공지능|에이아이|GPT|챗봇|자동\s*(답글|댓글)', 'AI 언급'), (r'빚|대출\s*받아|신용\s*(거래|매수)', '빚'),
@@ -221,6 +222,8 @@ for f in sys.argv[1:]:
     for pat, why in SR_BAN:
         if re.search(pat, sr, re.I): bad.append(f'{f}: self_reply 금지({why}): {sr[:40]}')
     if not re.search(r'[?？]|주세요|남겨', sr): bad.append(f'{f}: self_reply 는 그 회차 숫자를 묻는 짧은 질문(예: "여러분은 1.07달러, 반등 신호로 보세요 아니면 … 댓글로 의견 주세요")')
+    # 시그니처(11-27 운영자 공유 billy___ssam '자신만의 시그니처 포인트'): 새 회차(11-28~)는 self_reply 끝 줄에 서명
+    if (ad2_date(d) if 'ad2_date' in globals() else '9999') >= '2026-11-28' and not sr.strip().endswith(SIGN): bad.append(f'{f}: self_reply 끝에 서명 "{SIGN}" 필요(marketing.md 3-1)')
 # T20 Threads 20가지 방법(2026-11-27 운영자 공유 인포그래픽 "스레드를 키우는 20가지 방법", marketing.md 3-2) — 새 회차만(회차 날짜 11-28~)
 #   ① 첫 줄 훅 40자 이하 + "hook" 6가지 중 하나 ② 본문 마지막 줄은 질문(?) ③ 결론은 댓글에: 본문 링크 없음, 리포트 링크는 답글에 정확히 1개
 #   ④ "topic_tag" 정확히 하나(1~50자, '.'·'&'·'#' 없음, 본문 해시태그 없음) ⑤ 둘째 글·관찰 글은 KST 07–09·12–13·18–19·20–24시
