@@ -1,13 +1,19 @@
-# HANDOFF — PLUG 11-27 정규 (plug1127, 126회차 A그룹) · 갱신 2026-11-27
+# HANDOFF — PLUG 11-27 정규 (plug1127, 126회차 A그룹) · 갱신 2026-11-27 09:35Z
 
-## 상태
-- 선정·STATE·selection 커밋 cdf5050(미디어). 리포트 report/plug-2026-11-6.md EASY_OK, 그림 6장(figs/) → bin/site_pub.sh(로그 report/site_pub.log)
-- 대본 video/narration.txt 9.08KB GROUP_OK A · slides.json(mk_slides.py) · 쇼츠 shorts/ · PRE_OK 14개 · 썸네일 video/thumb/PLUG_thumbnail.jpg(make_v7 a) · 메타 mk_meta.py(롱폼·쇼츠) · SNS sns/mk_queue.py(T20) · H2 카드 kit/h2_card.png · 쿠팡 mdluplug https://link.coupang.com/a/i0Y2a9ZczY
-- 맥 TTS 117_kwa_plug1127_tts1 제출(video/tts_start 시각) → bin/tts_mac.sh 대기(로그 video/tts_run.log)
-- 확정 숫자 원천: research/PLUG_long.json(나스닥 historical 11/25 1.065), research/*_5m.json(야후 5분봉), research/macro.md, research/base.py, research/prob_basis.md
-- 가정: 126회차 A그룹(근거: 직전 125 B, 같은 날 RZLV 대본 12.9KB = B → 127)
+## 상태: 영상 공개 완료, 사이트 2차 push만 대기(사용자 확인 필요)
+- 리포트 LIVE https://drkimworld.com/r/plug-2026-11-6/ (HTTP 200, 4ee6c14) · 모델 심사 9개 중 맞는 지적 반영본은 아래 미푸시 커밋에 있음
+- 롱폼 0OAr1e2zr8s 공개·썸네일 ok·첫 댓글·자막 148큐·재생목록 '플러그 파워 미스터리 추적'
+- 쇼츠 aoY2i9aHBc8 공개·첫 댓글·자막 · 썸네일 429 → review/thumb_backup/pending/aoY2i9aHBc8.jpg, send_later trig_01HCa7z4wfn9bG6hvs6fuMT1(11-28 08:50Z)
+- 미디어 기록 커밋 2cd621a(STATE·selection·experiments·improvements·ad_log·angle_log H6·sub_test·followups·thumb_history·ebook)
 
-## 남은 일
-1. TTS_DONE 뒤 `bash bin/after_tts.sh`(chain_long → video_check·plain_check, 로그 video/after.log, chain video/chain.log)
-2. `bash bin/publish_loop.sh`(wait_live → 롱폼 업로드·썸네일(429면 pending) → youtube_id push → SNS 대기열 → 쇼츠 → 기록 record.py)
-3. llm_judge plug-2026-11-6 지적 반영 · 블로거(blogger.yml slug) · 정리(production/wip/PLUG, worktree /dev/shm/site-plug1127, /dev/shm/plug1127)
+## 막힌 것 (사용자 확인 필요)
+1. 사이트 worktree /dev/shm/site-plug1127 미푸시 커밋 2개: 90f6334(youtube_id + 심사 반영) · 11a61c8(SNS 대기열 4건 + static/social/plug-2026-11-6)
+   - site_push exit 3 두 번: 1회 build.py(원격 7b510d1), 2회 content/reports/rzlv-2026-11-2.md(RZLV 에이전트) → 규칙 4대로 반복 중단
+   - 잇는 법: cd /dev/shm/site-plug1127 && git pull --rebase origin main && python3 tests/test_build.py && python3 build.py --strict && rm -rf dist && bash /home/user/kimworld-media/tools/site_push.sh
+   - Threads 둘째 글 publish_at 04:40 ET가 지났으면 push 전에 scripts/social_publish.py --next-slot 다시 → python3 /dev/shm/plug1127/sns/mk_queue.py <지금 ET> <slot> → queue_check
+2. 맥 TTS 117·118 exit 2: 로그 "✗ ollama 서버가 응답하지 않음" — relay tools/mac.py가 모든 묶음에 Ollama 확인을 넣는데 새 인텔 맥엔 Ollama 없음. mac.py 수정은 권한 거부 → 클라우드 TTS로 대체(16분 15초)
+
+## 남은 일 (push 뒤)
+- 블로거 blogger.yml slug=plug-2026-11-6 (blogger-guide 2-1·2-4)
+- pred_ledger --extract '새 0'(로컬 사이트 체크아웃 미갱신 추정) → 사이트 반영 뒤 다시
+- 정리: production/wip/PLUG, worktree /dev/shm/site-plug1127, /dev/shm/plug1127
