@@ -588,68 +588,40 @@
     },
     {
      "from": 2,
-     "layout": "list",
+     "layout": "compare",
      "title": "11월 자료에 있는 것",
-     "items": [
-      {
-       "no": "1",
-       "text": "자사주 매입 한도 최대 3억 달러",
-       "at": 2
-      },
-      {
-       "no": "2",
-       "text": "한 해 약 6,000만 달러 비용 절감",
-       "at": 2
-      },
-      {
-       "no": "3",
-       "text": "2027년 6월 조정 EBITDA 흑자 목표",
-       "at": 2
-      }
-     ]
+     "left": {
+      "at": 2,
+      "head": "자사주 매입 한도",
+      "big": "최대 3억 달러",
+      "lines": [
+       "주주 승인·법원 확인"
+      ],
+      "tone": "gold"
+     },
+     "right": {
+      "at": 2,
+      "head": "비용 절감",
+      "big": "약 6,000만 달러",
+      "lines": [
+       "2027년 6월 흑자 목표"
+      ],
+      "tone": "white"
+     }
     },
     {
      "from": 3,
-     "anim": {
-      "tpl": "compare_bars",
-      "data": {
-       "title": "11월 자료에 나온 횟수",
-       "sub": "낱말·숫자(번)",
-       "unit": "번",
-       "decimals": 0,
-       "items": [
-        {
-         "label": "먼로",
-         "value": 0
-        },
-        {
-         "label": "대출",
-         "value": 0
-        },
-        {
-         "label": "만기",
-         "value": 0
-        },
-        {
-         "label": "차환",
-         "value": 0
-        },
-        {
-         "label": "매출 전망 3억 6,000만",
-         "value": 0,
-         "hi": true
-        }
-       ],
-       "source": "자료: 6-K 99.1 투자자 발표(2026-11-19)",
-       "beats": [
-        3,
-        3,
-        3,
-        3,
-        4
-       ]
+     "layout": "stat",
+     "title": "11월 19일 자료 · 먼로·대출·만기·차환",
+     "stats": [
+      {
+       "at": 3,
+       "big": "0번",
+       "label": "매출 전망 3억 6,000만 달러도 다시 안 실림",
+       "tone": "down"
       }
-     }
+     ],
+     "sfx": "boom"
     }
    ]
   },
@@ -657,10 +629,16 @@
    "slides": [
     {
      "from": 0,
-     "layout": "quote",
-     "text": "시장도\n**같이 보기**",
-     "at": 0,
-     "kicker": "시장·거시"
+     "layout": "stat",
+     "title": "시장·거시 · 10월 30일 → 11월 25일",
+     "stats": [
+      {
+       "at": 0,
+       "big": "QQQ -8.2%",
+       "label": "나스닥 100 펀드",
+       "tone": "white"
+      }
+     ]
     },
     {
      "from": 1,
@@ -1946,23 +1924,40 @@
     },
     {
      "from": 1,
-     "layout": "list",
-     "title": "사기 전에 확인할 것",
-     "items": [
+     "layout": "stat",
+     "title": "하나 · 대출 처리 공시",
+     "stats": [
       {
-       "no": "1",
-       "text": "대출 처리 공시 · 새 주식 포함 여부",
-       "at": 1
-      },
+       "at": 1,
+       "big": "새 주식 포함?",
+       "label": "12월 31일 전 6-K",
+       "tone": "gold"
+      }
+     ]
+    },
+    {
+     "from": 2,
+     "layout": "stat",
+     "title": "둘 · 종가",
+     "stats": [
       {
-       "no": "2",
-       "text": "0.77달러 아래 마감",
-       "at": 2
-      },
+       "at": 2,
+       "big": "0.77달러 아래?",
+       "label": "11월 25일 장중 최저",
+       "tone": "down"
+      }
+     ]
+    },
+    {
+     "from": 3,
+     "layout": "stat",
+     "title": "셋 · 하루 흔들림",
+     "stats": [
       {
-       "no": "3",
-       "text": "큰 흔들림을 감당할 수 있나",
-       "at": 3
+       "at": 3,
+       "big": "감당할 수 있나",
+       "label": "VIX 28.29 · 소형주",
+       "tone": "white"
       }
      ]
     }
