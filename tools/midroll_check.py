@@ -9,6 +9,9 @@ quote 틀의 '?' 표시가 문구 옆에 붙었다. 이 두 가지와 health.yam
 - 11-22(marketing.md 6절): 문장 상한 4(health_midroll 9절 2번). 광고 문단·마무리 안내 문단('고르는 법'·'설명란 둘째 줄')·설명란/고정댓글의 💊·건강몰 줄에
   거짓 긴급성 낱말과 지어낸 후기 표지 0건(주식 문단은 보지 않음 — 오탐 방지)
 - 11-26 AD2(health_midroll 10절): 회차 data_as_of 11-26~ — kind "ad", '제품 링크는 설명란', 💊 줄 쿠팡 직접 링크·구분선·광고·파트너스 문장. 옵션 --date YYYY-MM-DD, --compat(옛 규칙만)
+- 11-27 AD3(health_midroll 10.6, RZLV 전환 분석 반영): 회차 data_as_of 11-28~ — ① 광고 문단 슬라이드에 '근거 질' 문구 없음(근거 질 메모는 리포트·건강 가이드)
+  ② product 카드 'why'는 health.yaml 기능성 문구 그대로 ③ 하루 값(원) 주장은 '기준일'과 함께만 ④ 대본 행동 문장·마무리 한 문장에 '고정댓글 둘째 줄'
+  ⑤ 마무리 한 문장은 정리·투표 문단보다 앞, 같은 문단의 교육용 고지 문장보다 앞 ⑥ 고정댓글·설명란: 리포트 링크 줄 바로 다음 구역이 💊 구역(빈 줄·구분선만 사이에)
 """
 import json, os, re, sys
 V = sys.argv[1]
@@ -102,7 +105,7 @@ DATE = ep_date()
 NEW = '--compat' not in sys.argv and DATE is not None and DATE >= AD2_FROM
 if NEW:
     if deck['paras'][i].get('kind') != 'ad': bad.append('slides.json 광고 문단에 "kind": "ad" 없음(광고 화면·앞뒤 무음 — slidekit)')
-    if not re.search(r'제품 링크는 설명란', paras[i]): bad.append("광고 문단 행동 문장 — '<조건> 맞는 제품 링크는 설명란 둘째 줄'(4칸 ④)")
+    if not re.search(r'제품 링크는 (고정 ?댓글 둘째 줄[·,과와 ]*)?설명란', paras[i]): bad.append("광고 문단 행동 문장 — '<조건> 맞는 제품 링크는 설명란 둘째 줄'(4칸 ④)")
     for f in ('description.txt', 'pinned.txt'):
         pp = os.path.join(V, f)
         if os.path.exists(pp): bad += ad2_text(f, open(pp, encoding='utf-8').read())
@@ -110,5 +113,43 @@ if NEW:
     if os.path.exists(sm):
         try: bad += ad2_text('쇼츠 설명란', json.load(open(sm, encoding='utf-8')).get('description', ''))
         except Exception as e: bad.append(f'쇼츠 upload_meta 읽기 실패: {e}')
+AD3_FROM = '2026-11-28'
+NEW3 = NEW and DATE >= AD3_FROM
+def report_first(name, txt):
+    out = []; L = txt.split('\n'); nz = [k for k, l in enumerate(L) if l.strip()]
+    rep_k = next((k for k in nz[:2] if 'drkimworld.com/r/' in L[k]), None)
+    if rep_k is None: return [f'{name}: 리포트 링크가 첫 두 줄 안에 없음']
+    pill = next((k for k, l in enumerate(L) if '💊' in l), None)
+    if pill is None or pill < rep_k: return out
+    mid = [L[k] for k in range(rep_k + 1, pill) if L[k].strip() and not DIV.match(L[k])]
+    if mid: out.append(f'{name}: 리포트 링크 줄과 💊 줄 사이에 다른 줄 {len(mid)}개("{mid[0][:20]}…") — 💊 구역을 리포트 링크 바로 다음으로(빈 줄·구분선만)')
+    return out
+if NEW3:
+    ad_txt = json.dumps(deck['paras'][i].get('slides', []), ensure_ascii=False)
+    if re.search(r'근거\s*(의\s*)?질', ad_txt): bad.append("광고 문단 슬라이드에 '근거 질' 문구 — 광고 화면은 고르는 기준(제품 이름 표기)으로, 근거 질 메모는 리포트·건강 가이드에(AD3)")
+    try:
+        mfds = set(re.findall(r'\{text: "([^"]+)", dose', open(H, encoding='utf-8').read()))
+    except Exception: mfds = set()
+    for sl in deck['paras'][i].get('slides', []):
+        if sl.get('layout') == 'product' and sl.get('why'):
+            w = re.sub(r'^\s*식약처\s*[:：]\s*', '', sl['why']).strip()
+            if mfds and w not in mfds: bad.append(f"product 'why'가 health.yaml 기능성 문구와 다름: {w[:30]}…(식약처 문구는 그대로)")
+    PRICE = r'(하루|1일)\s*(약\s*)?[\d,]+\s*원|[\d,]+\s*원\s*/\s*일|하루\s*\S+\s*원꼴'
+    for name, txt in [('광고 슬라이드', ad_txt), (f'narration p{i+1}', paras[i])] + [z for z in zone if z[0] in ('description.txt', 'pinned.txt')]:
+        if re.search(PRICE, txt) and '기준일' not in txt: bad.append(f'{name}: 하루 값(원) 주장에 기준일 없음 — 확인된 가격과 기준일이 없으면 쓰지 않는다(AD3)')
+    if not re.search(r'제품 링크는 고정 ?댓글 둘째 줄', paras[i]): bad.append("광고 문단 행동 문장 — '제품 링크는 고정댓글 둘째 줄·설명란 둘째 줄'(AD3, 고정댓글 둘째 줄이 먼저)")
+    close = [j for j, p in enumerate(paras) if j != i and re.search(r'아까 말씀드린|제품 링크는', p) and '둘째 줄' in p]
+    summ = next((j for j, p in enumerate(paras) if j > i and re.match(r'\s*(정리하면|마지막으로 투표|투표 하나)', p)), None)
+    if not close: bad.append("마무리 한 문장(아까 말씀드린 … 제품 링크는 고정댓글 둘째 줄·설명란 둘째 줄) 없음(9절 1번)")
+    for j in close:
+        if summ is not None and j >= summ: bad.append(f'마무리 한 문장이 p{j+1}(정리·투표 p{summ+1} 이후) — 정리·투표 앞 문단 끝으로(AD3)')
+        ss = [x for x in re.split(r'(?<=[.?!])\s+', paras[j].strip()) if x]
+        k_ad = next((k for k, x in enumerate(ss) if re.search(r'아까 말씀드린|제품 링크는', x)), None)
+        k_leg = next((k for k, x in enumerate(ss) if re.search(r'교육용|결정은 각자', x)), None)
+        if k_ad is not None and k_leg is not None and k_ad > k_leg: bad.append(f'p{j+1}: 마무리 광고 문장이 교육용 고지 문장 뒤 — 고지 앞으로(AD3)')
+        if k_ad is not None and not re.search(r'고정 ?댓글 둘째 줄', ss[k_ad]): bad.append(f"p{j+1}: 마무리 한 문장에 '고정댓글 둘째 줄' 없음(AD3)")
+    for f in ('description.txt', 'pinned.txt'):
+        pp = os.path.join(V, f)
+        if os.path.exists(pp): bad += report_first(f, open(pp, encoding='utf-8').read())
 if bad: print('MIDROLL_FAIL p%d · ' % (i + 1) + ' · '.join(bad)); sys.exit(1)
-print(f'MIDROLL_OK p{i+1} 문장 {len(sents)} · quote 0 · 위치 약 {pos:.0%} · 금지 낱말 0 · 수요·공급 OK · 긴급성·후기 표지 0(검사 {len(zone)}곳) · ' + (f'AD2 제품 직접 링크·구분선·광고 화면 OK({DATE})' if NEW else f'AD2 대상 아님(회차 {DATE or "날짜 모름"}{" · --compat" if "--compat" in sys.argv else ""})'))
+print(f'MIDROLL_OK p{i+1} 문장 {len(sents)} · quote 0 · 위치 약 {pos:.0%} · 금지 낱말 0 · 수요·공급 OK · 긴급성·후기 표지 0(검사 {len(zone)}곳) · ' + (f'AD2 제품 직접 링크·구분선·광고 화면 OK({DATE})' + (' · AD3 근거 질 문구·식약처 문구·마무리 위치·💊 둘째 구역 OK' if NEW3 else '') if NEW else f'AD2 대상 아님(회차 {DATE or "날짜 모름"}{" · --compat" if "--compat" in sys.argv else ""})'))

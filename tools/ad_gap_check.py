@@ -10,7 +10,7 @@
 
 광고로 세는 화면(겹치면 하나로 합침):
   - 사이트 안내 전체 화면(segments 'ad' = ('AD','rep'|'app'))·쿠팡/몰 카드(('AD','shop'))·사이트 안내 하단 배너(키 4칸 'B')
-  - 쿠팡·몰 짧은 띠(shop_strip_at, 6초씩)
+  - 쿠팡·몰 짧은 띠(shop_strip_at, 6초씩) — 11-27~ 새 렌더(segments 'strip_rule': 'last2')는 마지막 2분 밖이면 실패
   - 영양제 중간광고 문단 전체(slides.json 'shop' 문단 중 대본에 '유료 광고'가 든 문단 — midroll_check와 같은 기준)
   세지 않는 것: 구독 띠·이어 보기 띠(채널 안 안내), 마무리 직전 '고르는 법' 한 문장(화면은 본문 그대로)
 
@@ -68,6 +68,10 @@ for a, b, n in merged:
     if b > outro0 + 0.5: bad.append(f'outro 안 광고 {n} {a:.0f}~{b:.0f}초(outro {outro0:.0f}초~)')
 for (a1, b1, n1), (a2, b2, n2) in zip(merged, merged[1:]):
     if a2 - b1 < GAP: bad.append(f'간격 {a2 - b1:.0f}초<{GAP:.0f}: {n1}({b1:.0f}) → {n2}({a2:.0f})')
+# 11-27: slidekit이 'strip_rule': 'last2'로 만든 영상(새 회차)은 띠가 마지막 2분 안에만(11:22 영상 08:06 띠 → health_midroll 9절 1번). 옛 segments.json은 이 키가 없어 보지 않는다
+if d.get('strip_rule') == 'last2':
+    for t in d.get('shop_strip_at') or []:
+        if float(t) < dur - 120.0 - 0.5: bad.append(f'띠 {float(t):.0f}초가 마지막 2분({dur - 120:.0f}초~) 밖')
 if total > cap: bad.append(f'광고 화면 합계 {total}초 > 상한 {cap}초(길이 {dur:.0f}초의 {SHARE:.0%}·최대 {CAP:.0f}초)')
 
 # 유튜브 미드롤 광고 권장 시각: 8분 이상만. 문단 경계(장면 전환) 중 첫 60초·outro 앞 60초 밖, 우리 광고 구간 ±20초 밖, 2분 이상 간격
