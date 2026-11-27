@@ -1,4 +1,32 @@
 {
+ "mdluplug": {
+  "at": "2026-11-27 07:03Z",
+  "code": "H2",
+  "cond": "루테인 하루 10~20mg",
+  "ing": "lutein",
+  "long": "https://link.coupang.com/re/AFFSDP?lptag=AF4489672&subid=hmlutein&pageKey=6291340472&itemId=11392085555&vendorItemId=71528884576&traceid=V0-153-dd08fc5c17092c7d&requestid=20261125001318613014629546&token=31850C%7CGM&pt=0&slot=1",
+  "name": "Jarrow Formulas 루테인 20MG 120정",
+  "pid": "6291340472",
+  "set_at": "2026-11-27 07:03Z",
+  "short": "https://link.coupang.com/a/i0Y2a9ZczY",
+  "ticker": "PLUG",
+  "why": "이름 표기 루테인 20mg",
+  "www": "https://www.coupang.com/vp/products/6291340472?itemId=11392085555&vendorItemId=71528884576"
+ },
+ "mdlurzlv": {
+  "at": "2026-11-27 07:00Z",
+  "code": "H2",
+  "cond": "루테인 하루 10~20mg",
+  "ing": "lutein",
+  "long": "https://link.coupang.com/re/AFFSDP?lptag=AF4489672&subid=hmlutein&pageKey=6291340472&itemId=11392085555&vendorItemId=71528884576&traceid=V0-153-dd08fc5c17092c7d&requestid=20261125001318613014629546&token=31850C%7CGM&pt=0&slot=1",
+  "name": "Jarrow Formulas 루테인 20MG 120정",
+  "pid": "6291340472",
+  "set_at": "2026-11-27 07:02Z",
+  "short": "https://link.coupang.com/a/i0Y9Qhnl9g",
+  "ticker": "RZLV",
+  "why": "이름 표기 루테인 20mg",
+  "www": "https://www.coupang.com/vp/products/6291340472?itemId=11392085555&vendorItemId=71528884576"
+ },
  "mdomlaes": {
   "at": "2026-11-26 07:09Z",
   "code": "H1",
