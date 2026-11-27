@@ -63,7 +63,7 @@
      "kind": "stamp",
      "text": "12.31 만기",
      "color": "red",
-     "at": 0.36,
+     "at": 0.5,
      "y": 520
     },
     {
@@ -73,7 +73,7 @@
      "color": "white",
      "anim": "pop",
      "box": true,
-     "at": 0.85,
+     "at": 0.3,
      "x": 760,
      "y": 380
     }
