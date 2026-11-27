@@ -58,6 +58,17 @@
      "at": 0.6,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "text",
+     "text": "현금의 약 3배",
+     "size": 56,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
+     "x": 760,
+     "y": 380
     }
    ],
    "anim": {
@@ -99,6 +110,17 @@
      "at": 0.6,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "text",
+     "text": "11월 25일까지",
+     "size": 56,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.88,
+     "x": 760,
+     "y": 380
     }
    ],
    "anim": {
@@ -142,6 +164,17 @@
      "at": 0.6,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "text",
+     "text": "만기와 같은 날",
+     "size": 56,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.85,
+     "x": 760,
+     "y": 380
     }
    ],
    "anim": {
