@@ -133,3 +133,7 @@ requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 too
 4) site_push exit 3은 바뀐 경로 확인 → pull --rebase → test_build 1회 → site_push. 또 3이면 반복 말고 보고.
 5) '완료'는 이번에 새로 돌린 확인 출력(exit code·ID·URL)을 읽은 뒤에만, 보고 첫 줄에 그 증거. 전문: skill/runbooks/production.md '에이전트 작업 규칙'.
 ```
+
+## 조회·구독 전환 복기 (11-27 운영자 공유 '조회수 높은 유형 + 구독자 전환 높은 유형으로 만든다')
+- 주간 복기(월)와 정규 선정 때 `tools/yt_analytics_read.py`의 영상별 조회와 `subscribersGained`를 함께 보고, '조회 상위 유형'(종목·매매 질문 앵글·제목 틀)과 '구독 전환 상위 유형'(1,000조회당 구독 순증)을 따로 3개씩 적는다(review/improvements.md). 다음 정규 회차는 두 목록에 모두 든 유형을 우선한다.
+- 업로드 수는 하루 롱폼 2 + 쇼츠 2(=4) 유지. 더 늘리는 것은 운영자 지시가 있을 때만.
