@@ -113,3 +113,20 @@ requests.md 그 행의 모든 스레드에 완료 답글: 유튜브 `python3 too
 9. JSON·장부는 필요한 필드만 뽑아 본다(python -c / jq / grep).
 10. 무거운 계산(TTS·렌더 일부)은 맥·스크립트가, 세션은 요약만 읽는다.
 11. 사용자 보고는 판정 먼저, 숫자에 분모, 과정 재설명 없음.
+
+## 에이전트 작업 규칙 (11-27 운영자 공유 스킬 저장소에서 각색 — 토큰 규칙 11·단계별 HANDOFF와 겹치는 것은 뺌)
+출처(요지만 각색, 원문 복사 없음): multica-ai/andrej-karpathy-skills `CLAUDE.md`(MIT) · obra/superpowers systematic-debugging·verification-before-completion·writing-plans(MIT, © 2025 Jesse Vincent) · mattpocock/skills diagnosing-bugs(MIT, © 2026 Matt Pocock).
+- **시작 전(가정 드러내기, Karpathy 1)** 1. 첫 줄에 '목표 · 끝났다는 증거(명령·파일·URL) · 건드릴 범위(저장소·파일)'. 2. 브리핑에 없는 판단(숫자 원천·날짜·대상 파일)은 '가정: …(근거 파일)'로 HANDOFF.md와 보고에 남긴다. 해석이 둘이면 runbook·STATE에 근거 있는 쪽, 근거 없으면 '사용자 확인 필요' — 숫자·공개물은 추측으로 정하지 않는다. 3. 3단계 넘는 일은 '단계 → 확인 명령' 짧은 계획을 먼저 쓰고 따른다(superpowers writing-plans).
+- **범위(외과적 변경, Karpathy 2·3)** 4. 바뀐 줄은 모두 브리핑 요청 하나로 거슬러 올라가야 한다. 옆 코드 정리·리팩터·서식·'하는 김에' 개선 금지, 발견하면 보고에 한 줄. 5. 새 스크립트·옵션보다 기존 도구(skill/KNOWHOW.md) 최소 수정. 브리핑에 없는 저장소는 건드리지 않는다.
+- **실패 대응(superpowers systematic-debugging · mattpocock diagnosing-bugs)** 6. '아마 X' 금지: 에러 원문·로그 tail을 먼저 읽고 그 줄을 인용한 뒤 원인 하나. 근거 줄 없는 수정은 하지 않는다. 7. 고치기 전에 실패를 재현하는 가장 빠른 명령을 정하고, 한 번에 한 가지만 바꾼 뒤 같은 명령으로 통과를 본다(묶음 수정 금지). 8. 고침이 새 문제를 낳거나 2번 실패하면 세 번째 대신 멈추고 가설·인용 로그를 HANDOFF.md에(토큰 규칙 8 보강).
+- **site_push exit 3(RETEST)** 9. 오류가 아니라 '원격 비기록 경로 변경'이다. `git log --stat HEAD..origin/main`으로 바뀐 경로를 보고 → `git pull --rebase` → test_build 1회(백그라운드, 결과로 판정) → 곧바로 site_push. 또 exit 3이면 반복하지 말고 바뀐 경로와 함께 '사용자 확인 필요'(메인 세션이 겹치는 작업을 조정).
+- **완료 선언(superpowers verification-before-completion)** 10. '완료·성공·올라감'은 이번에 새로 돌린 확인 출력(exit code·실패 수·영상 ID·HTTP 200·파일 크기)을 읽은 뒤에만. '될 것·아마·보인다'는 미완료. 11. 하위 에이전트·스크립트의 성공 보고도 결과물로 확인하고, 일부만 확인했으면 그렇게 적는다. 12. 보고 첫 줄 판정 옆에 증거 하나(명령 → 결과).
+
+**브리핑 꼬리** (메인 세션이 모든 에이전트 브리핑 끝에 그대로 붙인다):
+```
+1) 첫 줄: 목표 · 끝났다는 증거(명령/파일/URL) · 건드릴 범위. 브리핑에 없는 판단은 '가정: …(근거)'로 적고, 근거 없으면 정하지 말고 보고.
+2) 범위 밖(옆 코드 정리·다른 저장소·'하는 김에' 개선)은 건드리지 말고 보고에 한 줄.
+3) 실패하면 로그 원문부터 읽고 그 줄을 인용해 원인 하나 → 한 가지만 고쳐 같은 명령으로 재확인. 2번 실패하면 멈추고 HANDOFF.md.
+4) site_push exit 3은 바뀐 경로 확인 → pull --rebase → test_build 1회 → site_push. 또 3이면 반복 말고 보고.
+5) '완료'는 이번에 새로 돌린 확인 출력(exit code·ID·URL)을 읽은 뒤에만, 보고 첫 줄에 그 증거. 전문: skill/runbooks/production.md '에이전트 작업 규칙'.
+```
