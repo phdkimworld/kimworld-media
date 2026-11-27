@@ -61,6 +61,17 @@
    "els": [
     {
      "kind": "text",
+     "text": "09:45 둘 다 바닥",
+     "size": 60,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.3,
+     "x": 760,
+     "y": 380
+    },
+    {
+     "kind": "text",
      "text": "시장보다 먼저",
      "size": 60,
      "color": "gold",
@@ -69,6 +80,13 @@
      "at": 0.6,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "stamp",
+     "text": "11시 +2.4%",
+     "color": "red",
+     "at": 0.82,
+     "y": 500
     }
    ],
    "anim": {
@@ -164,9 +182,20 @@
      "color": "gold",
      "anim": "pop",
      "box": true,
-     "at": 0.6,
+     "at": 0.5,
      "x": 760,
      "y": 250
+    },
+    {
+     "kind": "text",
+     "text": "2025년 4월은 다음 날",
+     "size": 56,
+     "color": "white",
+     "anim": "pop",
+     "box": true,
+     "at": 0.8,
+     "x": 760,
+     "y": 380
     }
    ],
    "anim": {
@@ -174,6 +203,10 @@
     "data": {
      "label": "1달러 회복 4번, 20거래일 안(번)",
      "items": [
+      {
+       "label": "1달러 회복",
+       "value": 4
+      },
       {
        "label": "다시 1달러 아래",
        "value": 2,
@@ -189,7 +222,8 @@
      "callout": "절반은 반납",
      "beats": [
       0.1,
-      0.4
+      0.38,
+      0.62
      ]
     },
     "sfx": [
