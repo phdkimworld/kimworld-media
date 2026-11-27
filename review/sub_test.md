@@ -38,3 +38,4 @@
 | 11-25 | CLSK | BruKjg6tsA0 | B | 393 |
 | 11-26 | LEU | Jp-VjBFMzlw | B | 403 |
 | 11-26 | LAES | Y9LNWkLxV3Y | A | 502 |
+| 11-27 | RZLV | KWKxP5tST9g | B | 565 |

@@ -3488,9 +3488,37 @@
    "shorts": "OndIj2OZzzo",
    "design": "v7 원리판(a) — 실스크 LAES / 반등 신호일까? / +9.9% 장중 -9.6%에서(초록) — 보안 칩·자물쇠 방패 + 파리 상장 12.2 카드 '제자리' 도장",
    "set": "pending 429"
+  },
+  {
+   "t": "rzlv",
+   "date": "2026.11.27",
+   "layout": "v7",
+   "palette": "navy-red",
+   "variants": [
+    "band",
+    "pillar"
+   ],
+   "styles": [
+    "v7a",
+    "v7b"
+   ],
+   "main": "a",
+   "concepts": [
+    "아래 띠형: 24거래일 종가선(끝 빨강·화살표) / 더 내려갈까?(흰색) / -40% 4주 만에(빨강) — 장바구니·검색창 + 대출 만기 12.31 발표 전 카드, 칩 쇼핑 소프트웨어",
+    "옆 기둥형: 왼쪽 더 내려갈까? · -40% / 오른쪽 장바구니·대출 카드"
+   ],
+   "video": "KWKxP5tST9g",
+   "shorts": "GcujdTq6zkw"
   }
  ],
- "pending": [],
+ "pending": [
+  {
+   "video": "GcujdTq6zkw",
+   "file": "review/thumb_backup/pending/GcujdTq6zkw.jpg",
+   "reason": "thumbnails.set 429(한도) — 새 회차 전용, 마지막 설정 +24시간 send_later 재시도",
+   "date": "2026-11-27"
+  }
+ ],
  "quota_log": [
   {
    "at": "2026-11-26T18:31Z",

@@ -39,3 +39,4 @@
 | TEM | 템퍼스 AI | AI 헬스케어 | IGV,XBI | RXRX | - | laboratory developed tests;artificial intelligence | FDA;laboratory developed;Medicare;tariff | |
 | ASST | 스트라이브 | 비트코인 금고 | WGMI | MSTR | BTC | digital asset | bitcoin;digital asset;tariff | |
 | GPUS | 하이퍼스케일 데이터 | AI 데이터센터·채굴 | WGMI | IREN | BTC | data center;digital asset | bitcoin;data center;power | |
+| RZLV | 리졸브 AI | AI 쇼핑 소프트웨어 | IWM | SOUN | | e-commerce;payments | e-commerce;payments;digital asset | 11-27 첫 등록(macro_ctx 경고) |
