@@ -270,6 +270,20 @@ if m.get("playlist", True) and "#Shorts" not in m["description"]:
         try:
             name = m["series"] if isinstance(m.get("series"), str) else core[tk]
             spid, stitle = series_playlist(tk, name); add_to_playlist(spid, vid); out["series_playlist"] = f"ok: {stitle}"
+            # 11-27 운영자 공유 '유튜브 최적화 팁 3: 설명란에 재생목록 링크': 설명란에 이 종목 연재 재생목록 한 줄(없을 때만)
+            try:
+                _url = f"https://www.youtube.com/playlist?list={spid}"
+                _v = yt.videos().list(part="snippet", id=vid).execute()["items"][0]["snippet"]
+                if _url not in _v.get("description", ""):
+                    _d = _v.get("description", "")
+                    _line = f"▶ {stitle} 전편 모아 보기: {_url}"
+                    _i = _d.find("\n#")
+                    _d = (_d[:_i] + "\n" + _line + _d[_i:]) if _i > 0 else (_d + "\n\n" + _line)
+                    yt.videos().update(part="snippet", body={"id": vid, "snippet": {"title": _v["title"], "description": _d[:5000],
+                        "categoryId": _v["categoryId"], "tags": _v.get("tags", []), "defaultLanguage": _v.get("defaultLanguage", "ko")}}).execute()
+                    out["desc_playlist_link"] = "ok"
+            except HttpError as e:
+                out["desc_playlist_link"] = f"error: {e}"
         except HttpError as e:
             out["series_playlist"] = f"error: {e}"
 # 채널 연재(오답노트 등, 2026-11-18 운영자 "쇼츠도 '김박사 월드 오답노트' 재생목록에 추가"): meta "series_title"이면 '미스터리 추적'을 붙이지 않고
