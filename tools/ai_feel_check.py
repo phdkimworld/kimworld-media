@@ -12,6 +12,9 @@
 #    STOCK2(실패, 기준 코퍼스 0건): 이중 피동·'단순한 X를 넘어'·의의 과장·결말 공식·자기 이야기·과장어·챗봇 잔재·사전 은유
 #    개수(실패/경고): 'A가 아니라 B' 5↑/4, '~다는 것입니다·뜻입니다' 4↑/3, 같은 '~수 있습니다' 5↑/4, '결국' 3↑/2, '즉' 3↑, 본문 대시(—) 3↑,
 #    이중 조사('에서의·으로부터의', '앞으로의' 제외) 3↑/2, '짚다' 3↑/2, '…을 가르는 기준·두 축' 경고 2↑, 문장 머리 같은 낱말 세 문장 연속 경고
+#  - 11-27 content-skills(artemnovitckii/content-skills, MIT) viral-hooks·storytelling에서 옮김(taste.md 14절), 최근 50 대본에서 0건:
+#    대본(narration*) 첫 문장이 인사·예고('안녕하세요·여러분·오늘은·자,·잠깐·이번 영상·끝까지 보시면·믿기 어려')로 열리면 실패(훅 DELAY),
+#    '그리고·그 뒤·이어서·또' 로 여는 문장 3연속은 경고('그리고 나서' 나열 → 그런데·그래서로 잇기)
 #    경고(WARN)는 종료 코드에 넣지 않는다. 연결어미 뒤 쉼표(im-not-ai C-11)는 TTS 숨 자리라 넣지 않았다(리포트도 11~33개가 기본 문체).
 import sys, re
 STOCK = ['흥미롭게도', '주목할 점은', '주목할 만한', '결론적으로', '에 있어서', '를 통해', '을 통해', '하는 것이 중요합니다', '라는 점입니다', '살펴보도록 하겠습니다', '반론도 있습니다']  # '반론도 있습니다' 81회차 LAES: BTQ 77·CEG 78·QS 79·CBRS 80 대본 4편 모두 반론 문단을 같은 말로 엶
@@ -53,6 +56,12 @@ for p in sys.argv[1:]:
     hs = [(s.split() or [''])[0] for s in ss]
     for i in range(len(hs) - 2):
         if hs[i] == hs[i+1] == hs[i+2] and len(hs[i]) > 1: warn.append(f"{p}: 세 문장 연속 '{hs[i]}'로 시작 — 합치거나 주어·행동으로 열기(humanizer 7)"); break
+    if 'narration' in __import__('os').path.basename(p) and ss and re.match(r'(안녕하세요|여러분|오늘은|오늘도|자,|잠깐|이번 영상|끝까지 보시면|믿기 어려)', ss[0]):
+        bad.append(f"{p}: 첫 문장이 인사·예고로 시작('{ss[0][:20]}') — 회사 이름과 핵심 모순(숫자)으로 바로 열기(V1 훅, viral-hooks DELAY)")
+    run = 0
+    for x_ in ss:
+        run = run + 1 if re.match(r'(그리고|그 뒤|그 다음|이어서|또한?)[ ,]', x_) else 0
+        if run >= 3: warn.append(f"{p}: '그리고·그 뒤·이어서'로 여는 문장 3연속 — 사건 나열 대신 '그런데·그래서'로 긴장 잇기(storytelling)"); break
     nb = len(re.findall('그렇다면', t))
     if nb > 2: bad.append(f"{p}: 다리 말 '그렇다면' {nb}번 > 2 — 장면·숫자·이유로 바로 넘기기(직전 6회차 대본·리포트 4~6번씩)")
     for w in STOCK:
