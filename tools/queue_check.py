@@ -75,7 +75,7 @@ for f in sys.argv[1:]:
     # SNS 스레드 지침 6장(2026-10-29, SLNH 스레드 조회 11회 진단)
     if 'threads' in d.get('channels', []):
         first = re.split(r'(?<=[.?!다])\s', t.strip(), maxsplit=1)[0]
-        if not re.search(r'\([A-Z]{1,5}(?:\.[A-Z]{1,2})?\)', first): bad.append(f'{f}: 첫 문장에 종목명(티커) 병기 없음(6.2①): {first[:40]}')
+        if d.get('kind') != 'observe' and not re.search(r'\([A-Z]{1,5}(?:\.[A-Z]{1,2})?\)', first): bad.append(f'{f}: 첫 문장에 종목명(티커) 병기 없음(6.2①): {first[:40]}')
         bl = [l.strip() for l in t.split('\n') if re.match(r'\s*[·•\-]\s', l)]
         if len(bl) > 3: bad.append(f'{f}: 숫자 불릿 {len(bl)}개 > 3(6.2② 모바일 첫 화면에 투표가 잘림)')
         for l in bl:
@@ -221,5 +221,97 @@ for f in sys.argv[1:]:
     for pat, why in SR_BAN:
         if re.search(pat, sr, re.I): bad.append(f'{f}: self_reply 금지({why}): {sr[:40]}')
     if not re.search(r'[?？]|주세요|남겨', sr): bad.append(f'{f}: self_reply 는 그 회차 숫자를 묻는 짧은 질문(예: "여러분은 1.07달러, 반등 신호로 보세요 아니면 … 댓글로 의견 주세요")')
+# T20 Threads 20가지 방법(2026-11-27 운영자 공유 인포그래픽 "스레드를 키우는 20가지 방법", marketing.md 3-2) — 새 회차만(회차 날짜 11-28~)
+#   ① 첫 줄 훅 40자 이하 + "hook" 6가지 중 하나 ② 본문 마지막 줄은 질문(?) ③ 결론은 댓글에: 본문 링크 없음, 리포트 링크는 답글에 정확히 1개
+#   ④ "topic_tag" 정확히 하나(1~50자, '.'·'&'·'#' 없음, 본문 해시태그 없음) ⑤ 둘째 글·관찰 글은 KST 07–09·12–13·18–19·20–24시
+#   ⑥ 관찰 글("kind": "observe", 공감 8:홍보 2): 링크·광고·홍보 없음, 숫자는 "source"(그 회차 리포트 slug 또는 조사 파일)에 있는 것만, 하루 1개 이하
+#   ⑦ 둘째 글(-th2): 저장할 만한 요약 — '· ' 줄 3개, 그중 하나는 다음 확인 날짜(○월 ○일)
+T20_FROM = '2026-11-28'
+HOOKS = {
+    '숫자대비': (lambda l: len(re.findall(r'\d+(?:[.,]\d+)?', l)) >= 2, '숫자 둘 이상(예: "매출 3배, 주가는 -24%")'),
+    '의외': (lambda l: bool(re.search(r'\d|그런데|인데|오히려|정작|없이', l)), '숫자 또는 뒤집는 말(인데·그런데·오히려·없이)'),
+    '질문': (lambda l: bool(re.search(r'[?？]\s*$', l)), '첫 줄이 ?로 끝남'),
+    '놓치는것': (lambda l: bool(re.search(r'놓치는|안 보는|모르는|지나치는|건너뛰는|빠뜨리는', l)), "'대부분이 놓치는/안 보는' 말"),
+    '비교': (lambda l: bool(re.search(r'vs|VS|보다|대비|차이|같은 날|와 [^ ]+ 중|과 [^ ]+ 중', l)), "vs·보다·대비·차이"),
+    '경고': (lambda l: bool(re.search(r'주의|조심|함정|착시|오해|착각|위험|헷갈', l)), '주의·함정·착시·오해 같은 말(긴급성 낱말 없이)'),
+}
+T20_HOOK_BAN = SR_BAN[1:]  # 링크 말고 self_reply 금지 목록 그대로(권유·목표가·수익 약속·베팅·AI·빚·긴급성·참여 구걸)
+PEAKS_KST = ((7 * 60, 9 * 60), (12 * 60, 13 * 60), (18 * 60, 19 * 60), (20 * 60, 24 * 60))
+def t20_kind(f, d):
+    if d.get('kind') == 'observe': return 'observe'
+    return 'th2' if re.search(r'-th2\.json$', f) else 'th1'
+def t20_kst(d):
+    from datetime import datetime, timedelta, timezone
+    try:
+        t = datetime.fromisoformat(str(d.get('publish_at', '')))
+        if t.tzinfo is None: t = t.replace(tzinfo=timezone(timedelta(hours=-5)))
+        return t.astimezone(timezone(timedelta(hours=9)))
+    except Exception: return None
+def t20_source_text(src):
+    if not src: return None
+    cands = [os.path.join(os.environ.get('KW_SITE', '/home/user/kimworld-site'), 'content', 'reports', src + '.md'),
+             src if os.path.isabs(src) else os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), src)]
+    for c in cands:
+        if os.path.isfile(c): return open(c, encoding='utf-8').read()
+    return None
+def t20_problems(f, d, siblings=()):
+    out, k = [], t20_kind(f, d)
+    t = d.get('text', '').strip()
+    lines = [l for l in t.split('\n') if l.strip()]
+    l1 = lines[0].strip() if lines else ''
+    reps = [r.get('text', '') for r in d.get('replies', []) or []]
+    if len(l1) > 40: out.append(f'{f}: [T20①] 첫 줄 훅 {len(l1)}자 > 40 — 멈추게 하는 한 줄만(marketing.md 3-2): {l1[:30]}…')
+    hk = d.get('hook')
+    if hk not in HOOKS: out.append(f'{f}: [T20①] "hook" 은 {"·".join(HOOKS)} 중 하나(marketing.md 3-2 표): {hk!r}')
+    elif not HOOKS[hk][0](l1): out.append(f'{f}: [T20①] 훅 \'{hk}\'인데 첫 줄에 {HOOKS[hk][1]} 없음: {l1[:30]}')
+    for pat, why in T20_HOOK_BAN:
+        if re.search(pat, l1, re.I): out.append(f'{f}: [T20①] 첫 줄 훅 금지({why}): {l1[:30]}')
+    if not lines or not re.search(r'[?？]', lines[-1]): out.append(f'{f}: [T20②] 본문 마지막 줄은 질문(?)으로 끝낸다(중립 "A일까, B일까?"): {(lines[-1] if lines else "")[:30]}')
+    if re.search(r'https?://|www\.|drkimworld\.com|t\.me/', t) or d.get('link_attachment'): out.append(f'{f}: [T20③] 본문에 링크 — 결론·리포트 링크는 답글(replies)로')
+    tag = d.get('topic_tag')
+    if not isinstance(tag, str) or not 1 <= len(tag.strip()) <= 50 or re.search(r'[.&#]', tag): out.append(f'{f}: [T20④] "topic_tag" 하나(1~50자, . & # 없이, 예: 미국주식·양자컴퓨터·반도체): {tag!r}')
+    if re.search(r'(?<![\w/&])#[^\s#]+', '\n'.join([t] + reps)): out.append(f'{f}: [T20④] Threads 본문·답글 해시태그 금지 — 주제는 topic_tag 하나로')
+    if k in ('th2', 'observe'):
+        kt = t20_kst(d)
+        if kt and not any(a <= kt.hour * 60 + kt.minute < b for a, b in PEAKS_KST):
+            out.append(f'{f}: [T20⑤] {k} publish_at KST {kt:%H:%M} — 07–09·12–13·18–19·20–24시 안으로(사이트 python3 scripts/social_publish.py --next-slot)')
+    if k == 'observe':
+        if d.get('channels') != ['threads']: out.append(f'{f}: [T20⑥] 관찰 글은 "channels": ["threads"]만')
+        allx = '\n'.join([t] + reps + [str(d.get('self_reply') or '')])
+        if re.search(r'https?://|www\.|\.com\b|t\.me/', allx): out.append(f'{f}: [T20⑥] 관찰 글에 링크 금지(공감 8:홍보 2)')
+        if re.search(r'💊|광고|쿠팡|파트너스|리포트|영상|구독|텔레그램|@drkimworld|앱 설치|김박사', allx): out.append(f'{f}: [T20⑥] 관찰 글에 광고·홍보(리포트·영상·구독·텔레그램·💊) 금지')
+        if reps: out.append(f'{f}: [T20⑥] 관찰 글은 이어지는 답글 없이 한 글(self_reply만 선택)')
+        if d.get('poll'): out.append(f'{f}: [T20⑥] 관찰 글에 투표 금지(그날 회차 투표와 겹침)')
+        src = t20_source_text(d.get('source'))
+        if src is None: out.append(f'{f}: [T20⑥] 관찰 글 "source"(리포트 slug 또는 조사 파일 경로) 출처 파일 없음: {d.get("source")!r}')
+        else:
+            norm = src.replace(',', '')
+            for n in re.findall(r'\d+(?:[.,]\d+)*', t):
+                if n.replace(',', '') not in norm: out.append(f'{f}: [T20⑥] 숫자 {n} 가 출처({d.get("source")})에 없음 — 지어낸 숫자 금지'); break
+        kt = t20_kst(d)
+        same = [s for s in siblings if os.path.abspath(s) != os.path.abspath(f) and kt and t20_kst_file(s) == kt.date()]
+        if same: out.append(f'{f}: [T20⑥] 관찰 글은 KST 하루 1개 이하 — 같은 날 {os.path.basename(same[0])}')
+    else:
+        rl = sum(len(re.findall(r'drkimworld\.com/r/', x)) for x in reps)
+        if rl != 1: out.append(f'{f}: [T20③] 리포트 링크는 답글에 정확히 1개(지금 {rl}개) — 관련 리포트 링크는 Threads에서 빼고 결론+그 회차 링크 하나만')
+    if k == 'th2':
+        bl = [l.strip() for l in t.split('\n') if re.match(r'\s*·\s', l)]
+        if len(bl) < 3: out.append(f"{f}: [T20⑦] 둘째 글은 저장할 만한 요약 — '· ' 줄 3개(지금 {len(bl)}개)")
+        elif not any(re.search(r'\d{1,2}월 \d{1,2}일', l) for l in bl): out.append(f'{f}: [T20⑦] 둘째 글 요약 줄 하나는 다음 확인 날짜(○월 ○일)')
+    return out
+def t20_kst_file(s):
+    try:
+        d = json.load(open(s, encoding='utf-8'))
+        if d.get('kind') != 'observe': return None
+        kt = t20_kst(d); return kt.date() if kt else None
+    except Exception: return None
+for f in sys.argv[1:]:
+    try: d = json.load(open(f, encoding='utf-8'))
+    except Exception: continue
+    if 'threads' not in d.get('channels', []): continue
+    if (d.get('kind') == 'observe' and str(d.get('publish_at', ''))[:10] < T20_FROM) or (d.get('kind') != 'observe' and ad2_date(d) < T20_FROM): continue
+    qd = os.path.dirname(os.path.abspath(f))
+    sib = [os.path.join(x, n) for x in (qd, os.path.join(os.path.dirname(qd), 'posted')) if os.path.isdir(x) for n in os.listdir(x) if n.endswith('.json')]
+    bad += t20_problems(f, d, sib)
 for b in bad: print('BAD', b)
 print('QUEUE_OK' if not bad else f'QUEUE_FAIL {len(bad)}'); sys.exit(1 if bad else 0)

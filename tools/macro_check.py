@@ -120,6 +120,8 @@ def queue(files):
         d = json.load(open(f, encoding="utf-8"))
         if "threads" not in (d.get("channels") or ["threads"]):
             continue
+        if d.get("kind") == "observe":  # 관찰 글(marketing.md 3-2)은 회차 글이 아니다
+            continue
         if not FORCE and str(d.get("publish_at", ""))[:10] < START:
             continue
         texts = [d.get("text", "")]
