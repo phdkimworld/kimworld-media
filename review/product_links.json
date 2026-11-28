@@ -27,6 +27,20 @@
   "why": "이름 표기 루테인 20mg",
   "www": "https://www.coupang.com/vp/products/6291340472?itemId=11392085555&vendorItemId=71528884576"
  },
+ "mdombtq": {
+  "at": "2026-11-28 06:50Z",
+  "code": "H1",
+  "cond": "EPA·DHA 합 하루 500mg 이상",
+  "ing": "omega3",
+  "long": "https://link.coupang.com/re/AFFSDP?lptag=AF4489672&subid=hmomega&pageKey=9392378613&itemId=12932887739&vendorItemId=70393847077&traceid=V0-153-487643acbf1706d8&clickBeacon=242f0340-ea9a-11f1-ae3f-a95bfef81a28%7E3&requestid=20261128043837730262308927&token=31850C%7CMIXED&pt=1&slot=2",
+  "name": "나우푸드 울트라 오메가 3 500 EPA 250 DHA 소프트젤, 180정, 1개",
+  "pid": "9392378613",
+  "set_at": "2026-11-28 06:57Z",
+  "short": "https://link.coupang.com/a/i2Dl06blca",
+  "ticker": "BTQ",
+  "why": "이름 표기 EPA+DHA 750mg",
+  "www": "https://www.coupang.com/vp/products/9392378613?itemId=12932887739&vendorItemId=70393847077"
+ },
  "mdomlaes": {
   "at": "2026-11-26 07:09Z",
   "code": "H1",
@@ -52,6 +66,20 @@
   "set_at": "2026-11-26 07:05Z",
   "short": "https://link.coupang.com/a/iZktLrbsoS",
   "ticker": "LEU",
+  "why": "이름 표기 EPA+DHA 750mg",
+  "www": "https://www.coupang.com/vp/products/9392378613?itemId=12932887739&vendorItemId=70393847077"
+ },
+ "mdomxndu": {
+  "at": "2026-11-28 06:55Z",
+  "code": "H1",
+  "cond": "EPA·DHA 합 하루 500mg 이상",
+  "ing": "omega3",
+  "long": "https://link.coupang.com/re/AFFSDP?lptag=AF4489672&subid=hmomega&pageKey=9392378613&itemId=12932887739&vendorItemId=70393847077&traceid=V0-153-487643acbf1706d8&clickBeacon=242f0340-ea9a-11f1-ae3f-a95bfef81a28%7E3&requestid=20261128043837730262308927&token=31850C%7CMIXED&pt=1&slot=2",
+  "name": "나우푸드 울트라 오메가 3 500 EPA 250 DHA 소프트젤, 180정, 1개",
+  "pid": "9392378613",
+  "set_at": "2026-11-28 06:58Z",
+  "short": "https://link.coupang.com/a/i2Dl06blca",
+  "ticker": "XNDU",
   "why": "이름 표기 EPA+DHA 750mg",
   "www": "https://www.coupang.com/vp/products/9392378613?itemId=12932887739&vendorItemId=70393847077"
  }
