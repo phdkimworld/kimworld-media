@@ -20,3 +20,4 @@
 | 2026-11-27 | rzlv-2026-11-2 | KWKxP5tST9g | H2 | lutein | 354 | H2 첫 쿠팡 직접 링크 mdlurzlv(Jarrow 루테인 20mg) + kind ad 광고 화면·앞뒤 무음 + product 카드(호가창과 차트를 하루 종일 띄워 두시는 분 → 루테인 하루 10~20mg → 식약처 → 설명란 둘째 줄) · 위치 매출 문단 뒤(50%) |
 | 2026-11-27 | plug-2026-11-6 | 0OAr1e2zr8s | H2 | lutein | 295 | H2 첫 쿠팡 직접 링크(mdluplug) + kind ad 광고 화면·앞뒤 무음 + product 카드(하루 종일 차트와 호가창을 띄워 두시는 분 → 루테인 하루 10~20mg → 식약처 → 설명란 둘째 줄) + 위치 첫 단서 답 직후 + 💊 구분선·파트너스 문장 |
 | 2026-11-28 | btq-2026-11-6 | AcDHNWE7ijs | H1 | omega3 | 267 | kind ad 광고 화면·product 카드(pick 이름 표기)·고정댓글 둘째 구역 💊(AD3)·쿠팡 직접 링크 mdombtq |
+| 2026-11-28 | xndu-2026-11 | 3IA5LLB97f4 | H1 | omega3 | 406 | kind ad 광고 화면·product 카드(pick 이름 표기 EPA 500·DHA 250, 180정)·−56.78 stat·식약처 문구 목록·고정댓글 둘째 구역 💊(AD3)·쿠팡 직접 링크 mdomxndu |
