@@ -3577,14 +3577,7 @@
    "thumb_set": "ok(업로드 직후 1회)"
   }
  ],
- "pending": [
-  {
-   "video": "GcujdTq6zkw",
-   "file": "review/thumb_backup/pending/GcujdTq6zkw.jpg",
-   "reason": "thumbnails.set 429(한도) — 새 회차 전용, 마지막 설정 +24시간 send_later 재시도",
-   "date": "2026-11-27"
-  }
- ],
+ "pending": [],
  "quota_log": [
   {
    "at": "2026-11-26T18:31Z",
