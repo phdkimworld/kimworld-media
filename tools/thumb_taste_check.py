@@ -6,6 +6,8 @@
 #  - THUMB_COLORS   (실패): 글자 요소(.t) 색 계열 4개 이상(흰색 계열은 하나로 셈). V5.7 '글자색 둘', 11-24 이후 시안은 2~3
 #  - THUMB_BANG     (실패): 화면 글자에 느낌표
 #  - THUMB_FLAT     (경고): 가장 큰 글자와 둘째 크기 비가 1.25배 미만(위계 없음)
+#  - THUMB_V8_POS   (실패): V8 틀(<body data-layout="v8">, 11-28~ taste.md 15절)의 고정 위치가 어긋남 — 인용 (40,34), 글자 상자 (32,456,828×236)
+#                          + 상자 오른쪽 끝 880 초과(재생 시간 자리), 인용 따옴표 안 22자 초과
 # 기준: 2026-11-27 최근 30시안 — 그라데이션 글자 0, 느낌표 0, 4계열은 V5.7 전 b안 대부분(11-23 이전), 11-24 이후 6회차 0 · 1.25배 미만 경고 2(wk1122·joby1124 b).
 import sys, os, re, glob, colorsys
 
@@ -38,6 +40,19 @@ for h in sorted(glob.glob(os.path.join(D, '[ab].html'))):
         txt += re.sub('<[^>]+>', '', inner)
     if len(cols) >= 4: fails.append(f'{n} THUMB_COLORS 글자색 {len(cols)}계열 ≥ 4 — 흰색 + 강조 하나(V5.7), 좋은·나쁜 숫자 색 나눔만 예외')
     if '!' in txt or '！' in txt: fails.append(f'{n} THUMB_BANG 느낌표 — 평서 문구로')
+    if 'data-layout="v8"' in s:
+        qm = re.search(r'<div class="t q[^"]*"[^>]*style="left:(\d+)px;top:(\d+)px[^"]*"[^>]*>"([^<]*)"</div>', body)
+        bm = re.search(r'<div class="box" id="tbox" style="left:(\d+)px;top:(\d+)px;width:(\d+)px;height:(\d+)px"', body)
+        if not qm: fails.append(f'{n} THUMB_V8_POS 인용 줄 없음 — 왼쪽 위 "…" 한 줄')
+        else:
+            if (int(qm.group(1)), int(qm.group(2))) != (40, 34): fails.append(f'{n} THUMB_V8_POS 인용 위치 ({qm.group(1)},{qm.group(2)}) ≠ (40,34)')
+            ql = len(re.sub(r'&[a-z]+;|&#\d+;', 'x', qm.group(3)))
+            if ql > 22: fails.append(f'{n} THUMB_V8_POS 인용 {ql}자 > 22자')
+        if not bm: fails.append(f'{n} THUMB_V8_POS 글자 상자(#tbox) 없음')
+        else:
+            x, y, w, h = map(int, bm.groups())
+            if (x, y, w, h) != (32, 456, 828, 236): fails.append(f'{n} THUMB_V8_POS 글자 상자 ({x},{y},{w}×{h}) ≠ (32,456,828×236)')
+            if x + w > 880: fails.append(f'{n} THUMB_V8_POS 글자 상자 오른쪽 끝 {x + w} > 880(재생 시간 자리)')
     sz = sorted(sizes, reverse=True)
     if len(sz) >= 2 and sz[0] / sz[1] < 1.25: warns.append(f'{n} THUMB_FLAT 큰 글자 {sz[0]}px / 둘째 {sz[1]}px = {sz[0] / sz[1]:.2f}배 < 1.25 — 주인공 한 줄을 더 크게')
 for m in fails: print('FAIL', m)

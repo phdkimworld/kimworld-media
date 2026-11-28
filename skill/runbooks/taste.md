@@ -312,3 +312,24 @@ SKILL.md V5·thumb_history의 '직전 두 회차와 다른 색조·구도' 규�
 - 고정: 글꼴(Noto Sans CJK KR 900), 글자 위치(큰 숫자 한 줄 + 질문 두 줄, 같은 자리), 로고·채널 표지 위치, 배경 바탕(V7 남색).
 - 바꾸는 것: 종목별 강조색 하나만. 같은 종목 후속편은 같은 강조색(연재 알아보기), 다른 종목끼리는 겹쳐도 된다. 색은 thumb_history의 그 종목 첫 회차 색을 따른다.
 - 그림(장면)은 종목 내용에 맞게 바꾸되 글자 영역을 침범하지 않는다. 시안 3장은 문구·숫자만 달리하고 틀은 같다.
+
+**V8 캐릭터판 (11-28 운영자 승인, 11-28 이후 새 회차부터. 공개한 영상 썸네일은 바꾸지 않는다)** — 사이트 저장소 `tools/thumbkit/make_v8.py spec.json <폴더> --png`. 시안 그림 review/brand/thumb_layout_mock.jpg, 견본 review/brand/thumb_v8_RZLV·PLUG·LEU.jpg.
+
+| 요소 | 위치(1280×720, px) | 글자 |
+| --- | --- | --- |
+| 인용 한 줄 `"…"` (spec `quote`, 따옴표 안 22자 이하) | left 40, top 34, 최대 폭 720 | 34px 500, #D5DEE8 |
+| 사업 칩 `biz-chip` (2~10자) | left 40, top 96 | 26px 800, 남색 글자/연회색 바탕 |
+| 브랜드 '김박사 월드' | right 34, top 30 (V7과 같음) | 34px 900 금색 |
+| 장면: 주가선 | (40,170) 300×240 | — |
+| 장면: 사업 그림 `#biz` | (400,86) 400×380 | — |
+| 캐릭터 `assets/drkim_character.png` | 높이 634(88%), 바닥 맞춤, left 826(오른쪽 끝 넘침은 잘림) | — |
+| 글자 상자 `#tbox` (강조색 테두리 5px, 바탕 거의 검정) | (32,456) 828×236 → 오른쪽 끝 860 < 880 | — |
+| 1줄 = 종목명(`name-tag`) + 핵심 숫자 | 상자 안 (28,26) | 84px 900, 강조색(넘치면 56px까지 줄임) |
+| 2줄 = 질문 | 상자 안 (28,128) | 84px 900, 흰색 |
+| 티커 칩 `ticker-tag` | left 56, top 430 (상자 위 테두리에 걸침) | 40px 900, 남색 글자/강조색 바탕 |
+
+- 바탕: 고정 남색 세로 그라데이션(#2c4a72→#112540) + 캐릭터 뒤 고정 연한 조명. 종목별로 바뀌는 것은 강조색(상자 테두리·1줄·티커 칩)뿐이고, 주가선 끝 색은 V7처럼 방향색(상승 초록·하락 빨강).
+- 강조색: spec `accent`가 없으면 thumb_history.json에서 그 종목 첫 회차의 `accent`, 없으면 그 회차 `palette` 이름의 첫 색 낱말(navy·black 같은 바탕 낱말은 건너뜀; 예 RZLV black-pink-gold→분홍 #FF6FB1, PLUG navy-gold-cyan→금색 #F5B83D, LEU crimson-gold→진홍 #FF4D5E), 기록이 없는 새 종목은 대체 목록(라임·시안·호박·분홍·하늘·주황·청록·보라)에서 티커로 고른다. 출력 폴더 meta.json의 `accent`를 그 회차 thumb_history 기록에 `"accent"`로 적는다.
+- 캐릭터 불투명 부분이 글자 상자·티커 칩과 겹치면 make_v8이 V8_CHAR_OVERLAP으로 멈춘다. 장면 그림은 캐릭터 밑으로 들어가도 되지만 글자 위로는 올라오지 않는다(글자 상자가 맨 위).
+- 검사: thumb_taste_check THUMB_V8_POS(위 고정 위치·상자 끝 880·인용 22자), thumb_name_check는 V8에서 회사명 56px·티커 36px 이상 + 글자 상자 근처(top ≥ 400), thumb_biz_check·thumb_overflow_check는 그대로.
+- 320px 폭 미리보기에서 1·2줄과 티커가 읽혀야 한다(review/brand/thumb_v8_preview_320.jpg). 인용 줄은 큰 화면용 보조 문구다.
